@@ -211,16 +211,16 @@
 
 ### Added
 
-- Major converted CI distilled from v7.3.
+- Rollback-safe Free/Go Major distilled from v7.3 so a plan downgrade does not restore v6.2 semantics.
 
 ### Changed
 
 - Compressed subject structure, terminology, evidence, updating, epistemic state, response modes, ambiguity, depth, and domain style into five rule blocks.
 - Allowed English when clearly more recognizable or precise, while rejecting common use alone as sufficient justification.
 
-### Removed
+### Deployment trade-offs
 
-- Explicit freshness, context-isolation, technical/non-technical, jargon, discriminator/falsifier, and correctness-over-style rules.
+- Omitted explicit freshness, context-isolation, technical/non-technical, jargon, discriminator/falsifier, and correctness-over-style rules to meet the narrower character budget.
 
 ### Fixed / Regression Protection
 

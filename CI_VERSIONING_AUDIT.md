@@ -2,7 +2,7 @@
 
 ## 0. Audit scope and evidence rules
 
-This audit covers the 17 supplied version files, the supplied one-line `Changelog.txt`, and the design-rationale document. The version files are the primary evidence. `Changelog.txt` is used only for the stated provenance of the converted v6.3 major. `ci_design_rationale_v3_vi_invariant.md` is treated as explanatory evidence for the current architecture, not as another runtime CI version.
+This audit covers the 17 supplied version files, the supplied one-line `Changelog.txt`, the design-rationale document, and the author's supplied deployment context. The version files are the primary evidence for textual and semantic changes. The deployment context is authoritative for design intent: the two era folders are separate character-budget targets, and converted v6.3 is an intentional rollback-safe distillation of v7.3 for returning to Free/Go without falling back to v6.2 semantics. `ci_design_rationale_v3_vi_invariant.md` is explanatory evidence for the current architecture, not another runtime CI version.
 
 Evidence labels used below:
 
@@ -32,13 +32,14 @@ Version type is derived from numeric naming unless stronger evidence exists. The
 | v7.1 | Patch | v7.0 | Vietnamese priority, updating, freshness | Strengthens terminology, adds premise-propagation and mandatory freshness search. |
 | v7.2 | Patch | v7.1 | Terminology exception, epistemic alternatives, domain style | Relaxes over-broad translation and adds anti-premature-collapse guidance. |
 | v7.3 | Patch with architectural effect | v7.2 | Modularization, precedence, response routing | Preserves the main rule set but makes hierarchy and guardrail precedence explicit. |
-| v6.3 converted | **Major** | v7.3 | Full converted CI | User-confirmed Major. Directly described as “distilled from 7.3” in `Changelog.txt`. It is a conversion branch, not the parent of v7.0. |
+| v6.3 converted | **Major** | v7.3 | Full converted CI | User-confirmed Major and rollback-safe Free/Go profile. It intentionally distills v7.3 so a plan downgrade does not restore v6.2 semantics. It is not the parent of v7.0. |
 
 ### Inventory observations
 
 - **Observation:** 17 version files are present: 8 classified Majors and 9 Patches under the evidence rule above.
 - **Observation:** the dataset contains no separate file named plain `v6.3`; the complete filename identifies the converted major.
 - **Observation:** `chatgptv7.3.txt` is a separate source and is not interchangeable with the converted v6.3 major.
+- **Observation from author context:** `ChatGPT Go-Free Era` and `ChatGPT Plus+ Era` are distinct deployment targets shaped by plan character budgets, not merely chronological folders.
 - **Uncertain:** the files contain no timestamps, parent fields, or release metadata for the early patch chains.
 - **Inference:** `v2.0 → v2.1 → v2.2`, `v6.0 → v6.1 → v6.2`, and `v7.0 → v7.1 → v7.2 → v7.3` are high-confidence sequential patch chains because each later file preserves and edits the immediately preceding rule set.
 
@@ -83,7 +84,7 @@ The history has six broad architectural eras rather than 17 redesigns:
 - **Regression candidate in v5.1:** v5.0’s explicit time-sensitive verification rule disappears and does not return until v7.1.
 - **Regression candidate in v6.1:** the explicit falsifier requirement for every non-trivial conclusion disappears; it returns in v7.0 and is later scoped in v7.3.
 - **Regression candidate in v7.3:** “Search before answering” becomes the broader “verify when recency could affect the answer,” weakening the specified mechanism while keeping the freshness guarantee.
-- **Conversion losses in v6.3 converted:** freshness, chat isolation, technical/non-technical handling, explicit discriminator/falsifier rules, and correctness-over-style precedence are omitted. The conversion source does not say whether those losses are intentional.
+- **Intentional conversion trade-offs in v6.3 converted:** freshness, chat isolation, technical/non-technical handling, explicit discriminator/falsifier rules, and correctness-over-style precedence are omitted to fit the Free/Go character budget. These omissions create residual parity risks to test, but are not confirmed regressions by themselves.
 
 ## 4. Normalized rule identities
 
@@ -506,9 +507,10 @@ Material architecture evolution without replacing the rule family: precedence is
 - R03 is relaxed further: English may remain when clearly more recognizable or precise, while common use alone remains insufficient.
 - v7.3’s detailed hierarchy is compressed to “Subject structure is primary; terminology supports it.”
 
-#### Regression candidates
+#### Intentional deployment trade-offs and residual risks
 
-- Omission of R10, R11, R12, and R21 removes explicit guarantees. Whether this is deliberate conversion scope or regression is **not determined from source**.
+- Omission of R10, R11, R12, and R21 removes explicit guarantees as part of deliberate semantic distillation for the Free/Go character budget.
+- The remaining risk is behavioral parity: a regression is confirmed only if representative output tests show that an omitted guarantee now fails.
 
 #### Architectural effect
 
@@ -692,9 +694,9 @@ v7.3 is a semantic and precedence change, not a lexical rewrite. It prevents the
 | v6.2 | R12 | Technical mechanism/trade-offs and non-technical no-motive inference | Sentence removed until v7.0 | Medium | Regression candidate | v6.1 line 10; absent v6.2 |
 | v7.1 | R03 | Keep English when translation is genuinely necessary | “Every word” Vietnamese if a Vietnamese word exists; only no-equivalent exception | Medium | Regression candidate; repaired v7.2 | v7.1 line 5 vs v7.2 line 5 |
 | v7.3 | R11 | Search before answering whenever recency could plausibly matter | Verify when recency could affect the answer | Medium | Regression candidate | v7.2 line 21 vs v7.3 line 40 |
-| converted v6.3 | R10/R11/R12/R21 | Explicit context, freshness, topic-specific, discriminator/falsifier guards | Omitted from the converted major | Medium | Regression candidate / intent uncertain | v7.3 lines 18, 34–44 vs converted lines 1–9 |
+| converted v6.3 | R10/R11/R12/R21 | Explicit context, freshness, topic-specific, discriminator/falsifier guards | Omitted to meet the Free/Go deployment budget | Medium residual parity risk | Intentional semantic compression; regression unconfirmed | v7.3 lines 18, 34–44 vs converted lines 1–9 plus author-supplied deployment context |
 
-Risk is assigned only where the behavioral consequence follows directly from the removed/contradictory guarantee. No source establishes author intent.
+Risk is assigned only where the behavioral consequence follows directly from a removed or contradictory guarantee. Author intent is established for the v7.3 → converted v6.3 deployment step, but not inferred for unrelated historical removals.
 
 ## 10. Patch integration report
 
@@ -742,7 +744,9 @@ The lineage is visible at v2.2, becomes architectural at v5.0, is briefly contra
 
 ### Failure-mode coverage
 
-Coverage is widest in v7.3: unsupported claims, premise updates, epistemic collapse, mode displacement, ambiguity, technical jargon, stale facts, cross-chat leakage, over-structuring, and style/correctness conflict are all represented. The converted v6.3 major intentionally or unintentionally narrows explicit coverage; the source does not establish which.
+Coverage is widest in v7.3: unsupported claims, premise updates, epistemic collapse, mode displacement, ambiguity, technical jargon, stale facts, cross-chat leakage, over-structuring, and style/correctness conflict are all represented. The converted v6.3 major intentionally narrows explicit coverage to fit the Free/Go deployment budget while preserving the optimized invariant core. Its remaining question is tested behavioral parity, not unknown design intent.
+
+The full rationale for the two deployment targets and rollback-safe distillation is documented in `CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md`.
 
 ## 12. Visual rule-state legend
 

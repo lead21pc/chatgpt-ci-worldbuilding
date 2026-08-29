@@ -2,7 +2,7 @@
 
 ## 0. Phạm vi và quy tắc bằng chứng
 
-Bản kiểm toán này bao phủ 17 tệp phiên bản, `Changelog.txt` và tài liệu giải thích thiết kế được cung cấp. Các tệp phiên bản là bằng chứng chính. `Changelog.txt` chỉ được dùng để xác lập nguồn gốc của bản chính v6.3 chuyển đổi. `ci_design_rationale_v3_vi_invariant.md` là tài liệu giải thích kiến trúc hiện tại, không phải một phiên bản CI thực thi riêng.
+Bản kiểm toán này bao phủ 17 tệp phiên bản, `Changelog.txt`, tài liệu giải thích thiết kế và bối cảnh triển khai do tác giả cung cấp. Các tệp phiên bản là bằng chứng chính cho thay đổi văn bản/ngữ nghĩa. Bối cảnh triển khai có thẩm quyền đối với design intent: hai thư mục là hai mục tiêu ngân sách ký tự, còn v6.3 chuyển đổi là bản chưng cất rollback-safe từ v7.3 để khi quay về Free/Go không phải quay lại semantics v6.2. `ci_design_rationale_v3_vi_invariant.md` là tài liệu giải thích kiến trúc, không phải phiên bản CI thực thi riêng.
 
 Nhãn bằng chứng:
 
@@ -32,13 +32,14 @@ Loại phiên bản được suy ra từ cách đánh số, trừ khi có bằng
 | v7.1 | Patch | v7.0 | Ưu tiên tiếng Việt, cập nhật, độ mới | Tăng cường thuật ngữ, lan truyền thay đổi tiền đề và tìm kiếm thông tin mới. |
 | v7.2 | Patch | v7.1 | Ngoại lệ thuật ngữ, khả năng thay thế, phong cách lĩnh vực | Làm mềm dịch thuật quá mức và chống kết luận nguyên nhân quá sớm. |
 | v7.3 | Patch có tác động kiến trúc | v7.2 | Mô-đun hóa, thứ tự ưu tiên, định tuyến | Giữ họ quy tắc chính nhưng làm rõ thứ bậc bất biến và rào chắn. |
-| v6.3 chuyển đổi | **Major** | v7.3 | Toàn bộ CI chuyển đổi | Được xác nhận là Major và được `Changelog.txt` mô tả là “distilled from 7.3”. Đây là nhánh chuyển đổi, không phải bản cha của v7.0. |
+| v6.3 chuyển đổi | **Major** | v7.3 | Toàn bộ CI chuyển đổi | Major rollback-safe cho Free/Go. Bản này cố ý chưng cất v7.3 để việc hạ gói không khôi phục semantics v6.2; không phải bản cha của v7.0. |
 
 ### Quan sát về danh mục
 
 - Có 17 tệp phiên bản: 8 Major và 9 Patch theo quy tắc bằng chứng trên.
 - Không có tệp `v6.3` đơn giản; toàn bộ tên tệp xác định bản chính chuyển đổi.
 - `chatgptv7.3.txt` là nguồn độc lập, không thể thay thế cho bản v6.3 chuyển đổi.
+- Theo bối cảnh tác giả, `ChatGPT Go-Free Era` và `ChatGPT Plus+ Era` là hai mục tiêu triển khai theo ngân sách ký tự, không chỉ là thư mục thời kỳ.
 - Các tệp không chứa thời gian phát hành, trường `parent` hoặc siêu dữ liệu lineage cho các chuỗi patch sớm.
 - Chuỗi `v2.0 → v2.1 → v2.2`, `v6.0 → v6.1 → v6.2` và `v7.0 → v7.1 → v7.2 → v7.3` có độ tin cậy cao vì mỗi bản sau giữ và sửa trực tiếp bộ quy tắc ngay trước đó.
 
@@ -81,7 +82,7 @@ Lịch sử có sáu thời kỳ kiến trúc lớn, không phải 17 lần thi�
 - **Ứng viên hồi quy ở v5.1:** quy tắc kiểm chứng thông tin có tính thời điểm của v5.0 biến mất tới v7.1.
 - **Ứng viên hồi quy ở v6.1:** yêu cầu nêu điều kiện bác bỏ cho mọi kết luận không tầm thường biến mất, trở lại ở v7.0 và được giới hạn phạm vi ở v7.3.
 - **Ứng viên hồi quy ở v7.3:** “tìm kiếm trước khi trả lời” đổi thành “kiểm chứng khi độ mới có thể ảnh hưởng”, làm yếu cơ chế cụ thể nhưng giữ bảo đảm về độ mới.
-- **Mất mát khi chuyển đổi sang v6.3:** bỏ độ mới, cô lập hội thoại, xử lý kỹ thuật/phi kỹ thuật, điều kiện phân biệt/bác bỏ và ưu tiên đúng đắn hơn văn phong. Nguồn không xác định việc bỏ này có chủ đích hay không.
+- **Trade-off chuyển đổi có chủ đích ở v6.3:** bỏ độ mới, cô lập hội thoại, xử lý kỹ thuật/phi kỹ thuật, điều kiện phân biệt/bác bỏ và ưu tiên đúng đắn hơn văn phong để vừa ngân sách Free/Go. Đây là rủi ro parity cần kiểm thử, chưa phải hồi quy đã xác nhận.
 
 ## 4. Định danh quy tắc đã chuẩn hóa
 
@@ -264,9 +265,9 @@ Lịch sử có sáu thời kỳ kiến trúc lớn, không phải 17 lần thi�
 **So với:** v7.3
 
 - **Đã giữ/nén:** hai bất biến tiếng Việt, trạng thái bằng chứng, lan truyền cập nhật, trạng thái nhận thức, các khả năng còn phù hợp, ba kiểu phản hồi, ngưỡng mơ hồ, giả định nhỏ nhất và văn phong theo lĩnh vực.
-- **Đã bỏ:** độ mới, cô lập ngữ cảnh, kỹ thuật/phi kỹ thuật, rào chắn jargon, điều kiện phân biệt/bác bỏ, ưu tiên đúng đắn hơn văn phong và quy tắc làm mềm rào chắn chung.
+- **Đã bỏ theo trade-off triển khai:** độ mới, cô lập ngữ cảnh, kỹ thuật/phi kỹ thuật, rào chắn jargon, điều kiện phân biệt/bác bỏ, ưu tiên đúng đắn hơn văn phong và quy tắc làm mềm rào chắn chung để vừa ngân sách Free/Go.
 - **Thay đổi:** tiếng Anh được giữ khi rõ ràng dễ nhận biết hoặc chính xác hơn; sự phổ biến đơn thuần vẫn không đủ.
-- **Tác động kiến trúc:** chuyển đổi lớn bằng chưng cất ngữ nghĩa; giữ lõi bất biến nhưng giảm đáng kể độ phủ failure mode.
+- **Tác động kiến trúc:** chuyển đổi lớn bằng chưng cất ngữ nghĩa có chủ đích; giữ lõi v7.3 để việc hạ gói không quay về v6.2, đồng thời chấp nhận rủi ro parity do giảm độ phủ rõ.
 
 ## 6. Tiến hóa kiến trúc giữa các Major
 
@@ -393,7 +394,7 @@ flowchart LR
 | v6.2 | R12 | Cơ chế/đánh đổi kỹ thuật và cấm suy diễn động cơ | Bị bỏ tới v7.0 | Trung bình | Ứng viên hồi quy |
 | v7.1 | R03 | Giữ tiếng Anh khi dịch thực sự không phù hợp | Ép mọi từ có tương đương tiếng Việt | Trung bình | Ứng viên, sửa ở v7.2 |
 | v7.3 | R11 | Tìm kiếm trước khi trả lời khi độ mới có thể quan trọng | Chỉ yêu cầu kiểm chứng | Trung bình | Ứng viên hồi quy |
-| v6.3 chuyển đổi | R10/R11/R12/R21 | Ngữ cảnh, độ mới, rào chắn theo chủ đề và bác bỏ rõ ràng | Bị bỏ khỏi bản chuyển đổi | Trung bình | Ứng viên; chủ đích chưa rõ |
+| v6.3 chuyển đổi | R10/R11/R12/R21 | Ngữ cảnh, độ mới, rào chắn theo chủ đề và bác bỏ rõ ràng | Bị bỏ để vừa ngân sách triển khai Free/Go | Rủi ro parity trung bình | Nén ngữ nghĩa có chủ đích; hồi quy chưa xác nhận |
 
 Không suy diễn ý định tác giả từ việc quy tắc bị bỏ. Mức rủi ro chỉ được gán khi hệ quả hành vi đi trực tiếp từ bảo đảm bị mất hoặc xung đột.
 
@@ -439,7 +440,9 @@ v3 dùng ba câu hỏi; v3.1 thêm tính trọng yếu; v5 giữ nhiều cách h
 
 ### Độ phủ failure mode
 
-v7.3 có độ phủ rộng nhất: phát biểu thiếu bằng chứng, cập nhật tiền đề, sụp đổ trạng thái nhận thức, kiểu phản hồi lấn nhiệm vụ, mơ hồ, jargon kỹ thuật, dữ liệu cũ, rò ngữ cảnh liên hội thoại, over-structure và xung đột đúng đắn/văn phong. Major v6.3 chuyển đổi thu hẹp độ phủ rõ ràng; nguồn không xác định đây là chủ đích hay hồi quy.
+v7.3 có độ phủ rộng nhất: phát biểu thiếu bằng chứng, cập nhật tiền đề, sụp đổ trạng thái nhận thức, kiểu phản hồi lấn nhiệm vụ, mơ hồ, jargon kỹ thuật, dữ liệu cũ, rò ngữ cảnh liên hội thoại, over-structure và xung đột đúng đắn/văn phong. Major v6.3 cố ý thu hẹp độ phủ rõ để vừa ngân sách Free/Go nhưng giữ lõi tối ưu của v7.3. Câu hỏi còn lại là parity hành vi qua kiểm thử, không phải intent thiết kế.
+
+Kiến trúc hai mục tiêu triển khai và vai trò rollback-safe của v6.3 được giải thích đầy đủ trong `CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md`.
 
 ## 12. Chỉ mục bằng chứng nguồn
 

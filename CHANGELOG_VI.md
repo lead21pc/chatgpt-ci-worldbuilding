@@ -211,16 +211,16 @@
 
 ### Đã thêm
 
-- Major CI chuyển đổi được chưng cất từ v7.3.
+- Major rollback-safe cho Free/Go được chưng cất từ v7.3 để việc hạ gói không khôi phục semantics v6.2.
 
 ### Thay đổi
 
 - Nén cấu trúc chủ thể, thuật ngữ, bằng chứng, cập nhật, trạng thái nhận thức, kiểu phản hồi, mơ hồ, độ sâu và văn phong lĩnh vực thành năm khối quy tắc.
 - Cho phép giữ tiếng Anh khi rõ ràng dễ nhận biết hoặc chính xác hơn, nhưng không coi sự phổ biến đơn thuần là lý do đủ.
 
-### Đã bỏ
+### Trade-off triển khai
 
-- Quy tắc rõ về độ mới, cô lập ngữ cảnh, kỹ thuật/phi kỹ thuật, jargon, điều kiện phân biệt/bác bỏ và ưu tiên đúng đắn hơn văn phong.
+- Bỏ cách phát biểu rõ về độ mới, cô lập ngữ cảnh, kỹ thuật/phi kỹ thuật, jargon, điều kiện phân biệt/bác bỏ và ưu tiên đúng đắn hơn văn phong để vừa ngân sách ký tự hẹp hơn.
 
 ### Đã sửa / Bảo vệ chống hồi quy
 
