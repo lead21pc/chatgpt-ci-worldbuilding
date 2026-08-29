@@ -1,0 +1,1 @@
+6.3: distilled from 7.3; restored post-hoc pronoun guard; relaxed claim→Audit; revised Vietnamese terminology
