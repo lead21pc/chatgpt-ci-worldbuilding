@@ -1,0 +1,173 @@
+<section id="ci-rule-evolution-20260829" aria-labelledby="ci-viz-title">
+  <h2 id="ci-viz-title">Version lineage and rule evolution</h2>
+
+  <div class="table-responsive" aria-label="Version lineage">
+    <table class="table table-sm ci-lineage-table">
+      <thead>
+        <tr>
+          <th scope="col">Path</th>
+          <th scope="col">v1</th>
+          <th scope="col">v2</th>
+          <th scope="col">v2.1</th>
+          <th scope="col">v2.2</th>
+          <th scope="col">v3</th>
+          <th scope="col">v3.1</th>
+          <th scope="col">v4</th>
+          <th scope="col">v5</th>
+          <th scope="col">v5.1</th>
+          <th scope="col">v6</th>
+          <th scope="col">v6.1</th>
+          <th scope="col">v6.2</th>
+          <th scope="col">v7</th>
+          <th scope="col">v7.1</th>
+          <th scope="col">v7.2</th>
+          <th scope="col">v7.3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Mainline</th>
+          <td>●</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>●</td>
+        </tr>
+        <tr>
+          <th scope="row">Conversion</th>
+          <td colspan="15"></td>
+          <td class="text-nowrap">↓ v6.3 converted Major</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card ci-selection" aria-live="polite">
+    <span class="text-muted">Selected state</span>
+    <strong id="ci-selection-title">Select a matrix cell</strong>
+    <span id="ci-selection-detail" class="text-small">Each cell shows one source-grounded rule state.</span>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-sm ci-matrix" aria-describedby="ci-matrix-help">
+      <thead id="ci-matrix-head"></thead>
+      <tbody id="ci-matrix-body"></tbody>
+    </table>
+  </div>
+
+  <div class="viz-row ci-legend" id="ci-matrix-help" aria-label="State legend">
+    <span><b>A</b> Added</span>
+    <span><b>S</b> Semantic change</span>
+    <span><b>L</b> Lexical/structural</span>
+    <span><b>P</b> Patched</span>
+    <span><b>U</b> Preserved</span>
+    <span><b>R</b> Removed</span>
+    <span><b>M</b> Merged</span>
+    <span><b>—</b> Not present</span>
+  </div>
+
+  <style>
+    #ci-rule-evolution-20260829 { width: 100%; }
+    #ci-rule-evolution-20260829 h2 { margin-bottom: 0.75rem; }
+    #ci-rule-evolution-20260829 .ci-lineage-table,
+    #ci-rule-evolution-20260829 .ci-matrix { min-width: 940px; }
+    #ci-rule-evolution-20260829 .ci-lineage-table th,
+    #ci-rule-evolution-20260829 .ci-lineage-table td { text-align: center; vertical-align: middle; }
+    #ci-rule-evolution-20260829 .ci-lineage-table th:first-child { text-align: left; }
+    #ci-rule-evolution-20260829 .ci-selection { display: flex; gap: 0.5rem; align-items: baseline; flex-wrap: wrap; margin: 0.75rem 0; }
+    #ci-rule-evolution-20260829 .ci-matrix th { vertical-align: bottom; }
+    #ci-rule-evolution-20260829 .ci-matrix th:first-child { min-width: 250px; }
+    #ci-rule-evolution-20260829 .ci-matrix td { text-align: center; vertical-align: middle; }
+    #ci-rule-evolution-20260829 .ci-matrix .btn { min-width: 2rem; padding-inline: 0.4rem; }
+    #ci-rule-evolution-20260829 .ci-matrix .state-A { background: color-mix(in srgb, var(--viz-series-2) 24%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-S { background: color-mix(in srgb, var(--viz-series-3) 24%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-L { background: color-mix(in srgb, var(--viz-series-4) 20%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-P { background: color-mix(in srgb, var(--viz-series-1) 20%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-U { background: color-mix(in srgb, var(--muted) 70%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-R { background: color-mix(in srgb, var(--destructive) 20%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-M { background: color-mix(in srgb, var(--viz-series-5) 20%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-none { color: var(--muted-foreground); }
+    #ci-rule-evolution-20260829 .ci-legend { margin-top: 0.75rem; gap: 0.85rem; }
+    @media (max-width: 420px) {
+      #ci-rule-evolution-20260829 .ci-selection { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+
+  <script>
+    (() => {
+      const root = document.getElementById('ci-rule-evolution-20260829');
+      const versions = ['v1','v2','v2.1','v2.2','v3','v3.1','v4','v5','v5.1','v6','v6.1','v6.2','v7','v7.1','v7.2','v7.3','v6.3c'];
+      const versionLabels = { 'v6.3c': 'v6.3 converted' };
+      const meanings = {
+        A: 'Added', S: 'Semantic change', L: 'Lexical or structural change',
+        P: 'Patched', U: 'Preserved', R: 'Removed', M: 'Merged into another rule', '—': 'Not present'
+      };
+      const rules = [
+        ['R01','Vietnamese output baseline',['A','S','U','U','R','—','—','—','—','M','M','M','M','M','M','M','M']],
+        ['R02','Subject-centered Vietnamese syntax',['—','—','—','—','—','—','—','—','—','A','S','U','S','L','U','S','U']],
+        ['R03','Vietnamese terminology',['—','—','—','—','—','—','—','—','—','—','—','A','S','S','S','S','S']],
+        ['R04','Objective-claim evidence',['A','R','—','—','—','—','—','A','U','S','P','U','S','U','U','S','P']],
+        ['R05','Epistemic-state separation',['—','—','—','A','R','—','—','A','U','S','U','U','S','U','S','S','P']],
+        ['R06','Plausible alternatives / discriminators',['—','—','—','—','—','—','—','A','U','S','U','U','S','U','S','S','P']],
+        ['R07','Inform / Evaluate / Audit routing',['—','—','—','—','—','—','—','A','U','S','S','U','S','U','U','S','P']],
+        ['R08','Material ambiguity threshold',['—','—','—','—','A','S','U','S','U','S','S','U','S','U','U','S','P']],
+        ['R09','Evidence-based updating',['—','—','—','—','—','—','—','—','—','—','—','—','—','A','U','S','P']],
+        ['R10','Chat / context isolation',['—','—','—','—','—','—','—','—','—','—','A','U','S','U','U','S','R']],
+        ['R11','Freshness verification',['A','R','—','—','—','—','—','A','R','—','—','—','—','A','U','S','R']],
+        ['R12','Technical / non-technical handling',['—','—','—','—','—','—','—','A','U','U','U','R','A','U','U','S','R']],
+        ['R13','Domain-matched depth and style',['—','—','—','—','—','—','—','A','U','U','R','—','—','—','A','S','P']],
+        ['R14','Critical directness / anti-smoothing',['A','S','P','P','S','P','S','M','U','U','U','U','U','U','U','M','M']],
+        ['R15','Concision / conditional structure',['—','A','P','P','S','U','U','S','U','S','P','U','S','U','U','S','P']],
+        ['R16','Task and truth scope',['—','—','—','—','—','—','—','—','A','S','M','M','M','M','M','M','M']],
+        ['R17','Hardware multi-source validation',['A','R','—','—','—','—','—','—','—','—','—','—','—','—','—','—','—']],
+        ['R18','Trigger / format precedence system',['A','R','—','—','—','—','—','—','—','—','—','—','—','—','—','—','—']],
+        ['R19','Failure Scan / Expansion Options',['—','A','U','P','R','—','—','—','—','—','—','—','—','—','—','—','—']],
+        ['R20','No unsupported character / motive inference',['—','—','—','—','A','U','U','S','U','U','U','R','A','U','U','S','R']],
+        ['R21','Non-trivial conclusion falsifiability',['—','—','—','—','—','—','—','—','—','A','R','—','A','U','U','S','R']],
+        ['R22','Conditional MECE',['—','—','—','—','—','—','—','—','A','S','R','—','—','—','—','—','—']]
+      ];
+
+      const head = root.querySelector('#ci-matrix-head');
+      const body = root.querySelector('#ci-matrix-body');
+      const title = root.querySelector('#ci-selection-title');
+      const detail = root.querySelector('#ci-selection-detail');
+
+      const headerRow = document.createElement('tr');
+      const conceptHeader = document.createElement('th');
+      conceptHeader.scope = 'col';
+      conceptHeader.textContent = 'Rule / concept';
+      headerRow.appendChild(conceptHeader);
+      versions.forEach((version) => {
+        const th = document.createElement('th');
+        th.scope = 'col';
+        th.textContent = versionLabels[version] || version;
+        headerRow.appendChild(th);
+      });
+      head.appendChild(headerRow);
+
+      rules.forEach(([id, concept, states]) => {
+        const row = document.createElement('tr');
+        const label = document.createElement('th');
+        label.scope = 'row';
+        label.textContent = `${id} · ${concept}`;
+        row.appendChild(label);
+
+        states.forEach((state, index) => {
+          const cell = document.createElement('td');
+          const button = document.createElement('button');
+          const version = versionLabels[versions[index]] || versions[index];
+          button.type = 'button';
+          button.className = `btn btn-ghost viz-tile state-${state === '—' ? 'none' : state}`;
+          button.textContent = state;
+          button.setAttribute('aria-label', `${id}, ${concept}, ${version}: ${meanings[state]}`);
+          button.addEventListener('click', () => {
+            root.querySelectorAll('.ci-matrix button[aria-pressed="true"]').forEach((active) => active.setAttribute('aria-pressed', 'false'));
+            button.setAttribute('aria-pressed', 'true');
+            title.textContent = `${id} · ${concept}`;
+            detail.textContent = `${version}: ${meanings[state]}. See the text audit for evidence and semantic detail.`;
+          });
+          button.setAttribute('aria-pressed', 'false');
+          cell.appendChild(button);
+          row.appendChild(cell);
+        });
+        body.appendChild(row);
+      });
+    })();
+  </script>
+</section>
