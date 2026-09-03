@@ -2,7 +2,7 @@
 
 ## 0. Phạm vi và quy tắc bằng chứng
 
-Bản kiểm toán này bao phủ 17 tệp phiên bản, `Changelog.txt`, tài liệu giải thích thiết kế và bối cảnh triển khai do tác giả cung cấp. Các tệp phiên bản là bằng chứng chính cho thay đổi văn bản/ngữ nghĩa. Bối cảnh triển khai có thẩm quyền đối với design intent: hai thư mục là hai mục tiêu ngân sách ký tự, còn v6.3 chuyển đổi là bản chưng cất rollback-safe từ v7.3 để khi quay về Free/Go không phải quay lại semantics v6.2. `ci_design_rationale_v3_vi_invariant.md` là tài liệu giải thích kiến trúc, không phải phiên bản CI thực thi riêng.
+Bản kiểm toán này bao phủ 19 tệp phiên bản, `Changelog.txt`, tài liệu giải thích thiết kế và bối cảnh triển khai do tác giả cung cấp. Các tệp phiên bản là bằng chứng chính cho thay đổi văn bản/ngữ nghĩa. Bối cảnh triển khai có thẩm quyền đối với design intent: hai thư mục là hai mục tiêu ngân sách ký tự, còn v6.3 chuyển đổi là bản chưng cất rollback-safe từ v7.3 để khi quay về Free/Go không phải quay lại semantics v6.2. `ci_design_rationale_v3_vi_invariant.md` là tài liệu giải thích kiến trúc, không phải phiên bản CI thực thi riêng.
 
 Nhãn bằng chứng:
 
@@ -32,16 +32,18 @@ Loại phiên bản được suy ra từ cách đánh số, trừ khi có bằng
 | v7.1 | Patch | v7.0 | Ưu tiên tiếng Việt, cập nhật, độ mới | Tăng cường thuật ngữ, lan truyền thay đổi tiền đề và tìm kiếm thông tin mới. |
 | v7.2 | Patch | v7.1 | Ngoại lệ thuật ngữ, khả năng thay thế, phong cách lĩnh vực | Làm mềm dịch thuật quá mức và chống kết luận nguyên nhân quá sớm. |
 | v7.3 | Patch có tác động kiến trúc | v7.2 | Mô-đun hóa, thứ tự ưu tiên, định tuyến | Giữ họ quy tắc chính nhưng làm rõ thứ bậc bất biến và rào chắn. |
+| v7.3.1 | Patch | v7.3 | Định dạng cuối tệp | Đồng nhất ngữ nghĩa với v7.3; khác biệt byte duy nhất là không có ký tự xuống dòng cuối. |
+| v7.4 | Patch có tác động kiến trúc | v7.3.1 | Định tuyến theo vai trò, phạm vi sự thật, suy luận kỹ thuật, văn phong | Thay thứ bậc bất biến/rào chắn bằng `vai trò → kiểu phản hồi → suy luận → lập trường`, khôi phục phạm vi hệ do người dùng định nghĩa và bỏ một số rào chắn rõ. |
 | v6.3 chuyển đổi | **Major** | v7.3 | Toàn bộ CI chuyển đổi | Major rollback-safe cho Free/Go. Bản này cố ý chưng cất v7.3 để việc hạ gói không khôi phục semantics v6.2; không phải bản cha của v7.0. |
 
 ### Quan sát về danh mục
 
-- Có 17 tệp phiên bản: 8 Major và 9 Patch theo quy tắc bằng chứng trên.
+- Có 19 tệp phiên bản: 8 Major và 11 Patch theo quy tắc bằng chứng trên.
 - Không có tệp `v6.3` đơn giản; toàn bộ tên tệp xác định bản chính chuyển đổi.
-- `chatgptv7.3.txt` là nguồn độc lập, không thể thay thế cho bản v6.3 chuyển đổi.
+- `chatgpt v7.3.txt` là nguồn độc lập, không thể thay thế cho bản v6.3 chuyển đổi.
 - Theo bối cảnh tác giả, `ChatGPT Go-Free Era` và `ChatGPT Plus+ Era` là hai mục tiêu triển khai theo ngân sách ký tự, không chỉ là thư mục thời kỳ.
 - Các tệp không chứa thời gian phát hành, trường `parent` hoặc siêu dữ liệu lineage cho các chuỗi patch sớm.
-- Chuỗi `v2.0 → v2.1 → v2.2`, `v6.0 → v6.1 → v6.2` và `v7.0 → v7.1 → v7.2 → v7.3` có độ tin cậy cao vì mỗi bản sau giữ và sửa trực tiếp bộ quy tắc ngay trước đó.
+- Chuỗi `v2.0 → v2.1 → v2.2`, `v6.0 → v6.1 → v6.2` và `v7.0 → v7.1 → v7.2 → v7.3 → v7.3.1 → v7.4` có độ tin cậy cao. v7.3.1 khác ở mức byte nhưng đồng nhất ngữ nghĩa với v7.3; v7.4 mới là lần viết lại thực chất.
 
 ## 2. Lineage phiên bản
 
@@ -53,6 +55,7 @@ flowchart LR
     V4 --> V5["v5.0 Major"] --> V51["v5.1 Patch"] --> V6["v6.0 Major"]
     V6 --> V61["v6.1 Patch"] --> V62["v6.2 Patch"] --> V7["v7.0 Major"]
     V7 --> V71["v7.1 Patch"] --> V72["v7.2 Patch"] --> V73["v7.3 Patch có tác động kiến trúc"]
+    V73 --> V731["v7.3.1 Patch chỉ định dạng"] --> V74["v7.4 Patch có tác động kiến trúc"]
     V73 -->|"chưng cất / chuyển đổi"| C63["v6.3 chuyển đổi Major"]
 ```
 
@@ -60,14 +63,15 @@ Cạnh cuối được xác lập trực tiếp bởi `ChatGPT Go-Free Era/Chang
 
 ## 3. Tóm tắt điều hành
 
-Lịch sử có sáu thời kỳ kiến trúc lớn, không phải 17 lần thiết kế lại:
+Lịch sử có bảy thời kỳ kiến trúc lớn, không phải 19 lần thiết kế lại:
 
 1. **v1.0 — giao thức thực chứng chuyên biệt:** gộp kiểm chứng phần cứng thời gian thực, xác thực ba thành phần, trích xuất thô, trigger lệnh, đầu ra cạn kiệt và tiếng Việt bắt buộc vào một khối đơn.
 2. **v2.x — giao thức biên tập gọn:** thay hệ phần cứng bằng Biên tập viên cấp cao, giới hạn độ dài, kết luận trước, quét lỗi và hướng mở rộng. v2.1 tinh chỉnh lặp ý/phản ứng xã hội; v2.2 nén hệ thống và thêm phân biệt sự thật/suy luận/giả định.
 3. **v3.x–v4.0 — bộ phản biện đối kháng:** bỏ khung biên tập để chuyển sang phản biện trực diện. v3.1 thêm kiến trúc, ROI và xếp hạng rủi ro. v4.0 giới hạn phản biện vào các trường hợp ảnh hưởng trọng yếu tới quyết định.
 4. **v5.x — kiến trúc nhận thức và nhận biết nhiệm vụ:** phản biện không còn là mặc định. Hệ thống thêm quan sát/suy luận/giả định/kết luận, các cách hiểu thay thế, Cung cấp thông tin/Đánh giá/Kiểm tra, phong cách theo lĩnh vực và kiểm chứng thông tin có tính thời điểm.
 5. **v6.x–v7.2 — bộ quy tắc “bộ não thứ hai” được mở rộng:** v6.0 thêm định tuyến chính xác, khả năng bác bỏ và quy tắc đại từ nhưng tạo xung đột về tiền đề. v6.1 sửa xung đột, thêm cô lập hội thoại và nâng quy tắc tiếng Việt từ xóa đại từ thành dựng câu theo chủ thể. v6.2 thêm thuật ngữ tiếng Việt. v7.0 mở rộng cách vận hành; v7.1 thêm lan truyền cập nhật và độ mới; v7.2 sửa quy tắc thuật ngữ và tăng cường xử lý mơ hồ/phong cách.
-6. **v7.3 và v6.3 chuyển đổi — thứ bậc bất biến/rào chắn rõ ràng:** v7.3 đặt cấu trúc chủ thể và thuật ngữ ở tầng bất biến, các quy tắc còn lại là rào chắn có thể làm mềm, và tính đúng đắn cao hơn văn phong. v6.3 chuyển đổi chưng cất kiến trúc này thành năm khối, giữ lõi nhưng bỏ nhiều rào chắn vận hành.
+6. **v7.3 và v6.3 chuyển đổi — thứ bậc bất biến/rào chắn cùng hai mục tiêu triển khai:** v7.3 đặt cấu trúc chủ thể và thuật ngữ ở tầng bất biến, thêm kiểm chứng khả năng sản phẩm/runtime và đặt tính đúng đắn cao hơn văn phong. v6.3 chuyển đổi chưng cất kiến trúc v7.3 cho mục tiêu Free/Go.
+7. **v7.3.1–v7.4 — chuẩn hóa no-op rồi chuyển sang topology theo vai trò:** v7.3.1 chỉ đổi định dạng EOF. v7.4 thay thứ bậc có tên bằng `vai trò → kiểu phản hồi → suy luận → lập trường`, khôi phục phạm vi sự thật cho hệ do người dùng định nghĩa và tăng chiều sâu kỹ thuật, nhưng bỏ lan truyền cập nhật, cô lập hội thoại và một số rào chắn ngôn ngữ rõ.
 
 ### Bất biến ứng viên quan trọng
 
@@ -82,34 +86,36 @@ Lịch sử có sáu thời kỳ kiến trúc lớn, không phải 17 lần thi�
 - **Ứng viên hồi quy ở v5.1:** quy tắc kiểm chứng thông tin có tính thời điểm của v5.0 biến mất tới v7.1.
 - **Ứng viên hồi quy ở v6.1:** yêu cầu nêu điều kiện bác bỏ cho mọi kết luận không tầm thường biến mất, trở lại ở v7.0 và được giới hạn phạm vi ở v7.3.
 - **Ứng viên hồi quy ở v7.3:** “tìm kiếm trước khi trả lời” đổi thành “kiểm chứng khi độ mới có thể ảnh hưởng”, làm yếu cơ chế cụ thể nhưng giữ bảo đảm về độ mới.
+- **Ứng viên hồi quy ở v7.4:** lan truyền cập nhật và cô lập liên hội thoại biến mất; rào chắn xóa đại từ hậu kỳ cùng thứ bậc ngôn ngữ có tên bị bỏ; yêu cầu điều kiện bác bỏ chung bị thu hẹp về kết luận kỹ thuật quan trọng.
 - **Trade-off chuyển đổi có chủ đích ở v6.3:** bỏ độ mới, cô lập hội thoại, xử lý kỹ thuật/phi kỹ thuật, điều kiện phân biệt/bác bỏ và ưu tiên đúng đắn hơn văn phong để vừa ngân sách Free/Go. Đây là rủi ro parity cần kiểm thử, chưa phải hồi quy đã xác nhận.
 
 ## 4. Định danh quy tắc đã chuẩn hóa
 
-| ID | Khái niệm chuẩn hóa | Xuất hiện đầu | Hoạt động patch | Trạng thái tại v7.3 / v6.3 chuyển đổi | Ghi chú |
+| ID | Khái niệm chuẩn hóa | Xuất hiện đầu | Hoạt động patch | Trạng thái tại v7.4 / v6.3 chuyển đổi | Ghi chú |
 | --- | --- | --- | --- | --- | --- |
 | R01 | Nền tảng đầu ra tiếng Việt | v1.0 | Giữ tới v2.2; vắng mặt v3–v5; tái cấu trúc qua R02/R03 từ v6 | Đã sửa đổi | Không đồng nhất “trả lời bằng tiếng Việt” với cấu trúc tiếng Việt. |
-| R02 | Cú pháp tiếng Việt lấy chủ thể nội dung làm trung tâm | v6.0 | v6.1 tăng cường; v7.3 đặt thành bất biến chính | Đang hoạt động | Giữ ở v7.3 và bản chuyển đổi. |
-| R03 | Thuật ngữ tiếng Việt và ngoại lệ tiếng Anh cần thiết | v6.2 | v7.1 tăng mạnh; v7.2 làm mềm; v7.3 hệ thống hóa; bản chuyển đổi làm mềm thêm | Đã sửa đổi | Cường độ ràng buộc thay đổi đáng kể. |
-| R04 | Kiểm chứng phát biểu khách quan | Tiền thân v1; dạng tổng quát v5 | v6.0 xung đột; v6.1 tách phát biểu/ý kiến; v7.3 giữ trạng thái bằng chứng | Đang hoạt động | Ý kiến và quan sát ngôi thứ nhất được coi là đầu vào. |
-| R05 | Tách quan sát/suy luận/giả định/kết luận | Tiền thân v2.2; dạng đầy đủ v5 | Mở rộng v7.2–v7.3; nén ở bản chuyển đổi | Đang hoạt động | Cùng một lineage dù đổi ngôn ngữ và thuật ngữ. |
-| R06 | Giữ các khả năng còn phù hợp và điều kiện phân biệt | v5.0 | v6 thêm bác bỏ; v7.2 chống thay một kết luận sớm bằng kết luận sớm khác; v7.3 thêm điều kiện phân biệt | Đã sửa đổi | Bản chuyển đổi bỏ chi tiết về điều kiện phân biệt. |
-| R07 | Cung cấp thông tin / Đánh giá / Kiểm tra | v5.0 | v6 bắt buộc đúng một kiểu; v7.3 dùng một kiểu chính và phát biểu không tự ép Kiểm tra | Đã sửa đổi | Thay đổi precedence đáng kể ở v7.3. |
+| R02 | Cú pháp tiếng Việt lấy chủ thể nội dung làm trung tâm | v6.0 | v6.1 tăng cường; v7.3 đặt thành bất biến chính; v7.4 bỏ rào chắn hậu kỳ và ưu tiên có tên | Đã sửa đổi / làm yếu | Lõi còn ở v7.4; dạng mạnh hơn của v7.3 còn trong bản chuyển đổi. |
+| R03 | Thuật ngữ tiếng Việt và ngoại lệ tiếng Anh cần thiết | v6.2 | v7.1 tăng mạnh; v7.2 làm mềm; v7.3 hệ thống hóa; v7.4 đơn giản hóa; bản chuyển đổi làm mềm theo độ nhận biết | Đã sửa đổi / làm yếu | v7.4 bỏ nhãn bất biến hỗ trợ và mệnh đề “phổ biến không đủ”. |
+| R04 | Kiểm chứng phát biểu khách quan | Tiền thân v1; dạng tổng quát v5 | v6.0 xung đột; v6.1 tách phát biểu/ý kiến; v7.3 giữ trạng thái; v7.4 để vai trò phát biểu chọn kiểu | Đang hoạt động / đã sửa đổi | v7.4 vẫn không tự động tán thành đầu vào chưa kiểm chứng. |
+| R05 | Tách quan sát/suy luận/giả định/kết luận | Tiền thân v2.2; dạng đầy đủ v5 | Mở rộng v7.2–v7.3; v7.4 ràng buộc theo ảnh hưởng; nén ở bản chuyển đổi | Đang hoạt động / đã sửa đổi | v7.4 chỉ biểu hiện rõ khi đúng đắn hoặc quyết định bị ảnh hưởng. |
+| R06 | Giữ các khả năng còn phù hợp và điều kiện phân biệt | v5.0 | v6 thêm bác bỏ; v7.2 chống kết luận sớm; v7.3 thêm điều kiện phân biệt; v7.4 ràng buộc theo ích lợi | Đã sửa đổi | Bản chuyển đổi bỏ chi tiết về điều kiện phân biệt. |
+| R07 | Cung cấp thông tin / Đánh giá / Kiểm tra | v5.0 | v6 bắt buộc đúng một kiểu; v7.3 dùng một kiểu chính; v7.4 chèn vai trò trước kiểu và lập trường sau suy luận | Đã sửa đổi | v7.4 tiếp tục đổi topology nhưng giữ phát biểu không ép Kiểm tra. |
 | R08 | Ngưỡng làm rõ khi mơ hồ có tính trọng yếu | Tiền thân v3.0 | v3.1 thêm trọng yếu; v6 siết; v7.3 cho phép giả định nhỏ nhất | Đang hoạt động | Tránh chặn nhiệm vụ vì mơ hồ không ảnh hưởng kết luận. |
-| R09 | Chỉ cập nhật theo bằng chứng mới và lan truyền thay đổi tiền đề | v7.1 | Giữ qua v7.2–v7.3; nén ở bản chuyển đổi | Đang hoạt động | Bảo đảm mới của nhánh v7. |
-| R10 | Cô lập hội thoại/ngữ cảnh | v6.1 | Giữ tới v7.3; bỏ trong bản chuyển đổi | Bị bỏ ở bản chuyển đổi | v7.3 cho phép nhập ngữ cảnh khi người dùng nêu rõ. |
-| R11 | Kiểm chứng thông tin mới/có tính thời điểm | v1 chuyên biệt; v5 tổng quát | Bỏ v2; bỏ v5.1; trở lại v7.1; làm mềm v7.3; bỏ ở bản chuyển đổi | Bị bỏ ở bản chuyển đổi | Không phải bất biến lịch sử. |
-| R12 | Xử lý kỹ thuật và phi kỹ thuật | v5.0 | Bỏ v6.2; trở lại v7.0; mở rộng ở v7.3; bỏ ở bản chuyển đổi | Bị bỏ ở bản chuyển đổi | Rào chắn không suy diễn động cơ ổn định khi quy tắc tồn tại. |
+| R09 | Chỉ cập nhật theo bằng chứng mới và lan truyền thay đổi tiền đề | v7.1 | Giữ qua v7.3 và bản chuyển đổi; bỏ ở v7.4 | Bị bỏ ở v7.4 | Hồ sơ fallback giữ một safeguard không còn rõ trong mainline Plus. |
+| R10 | Cô lập hội thoại/ngữ cảnh | v6.1 | Giữ tới v7.3; bỏ ở v7.4 và bản chuyển đổi | Đã bỏ | v7.4 không có quy tắc thay thế cho cô lập liên hội thoại. |
+| R11 | Kiểm chứng thông tin mới/có tính thời điểm | v1 chuyên biệt; v5 tổng quát | Bỏ v2/v5.1; trở lại v7.1; làm mềm v7.3; mở rộng danh mục v7.4; bỏ ở bản chuyển đổi | Hoạt động ở v7.4; bỏ ở bản chuyển đổi | v7.4 gắn kiểm chứng với ảnh hưởng trọng yếu của độ mới. |
+| R12 | Xử lý kỹ thuật và phi kỹ thuật | v5.0 | Bỏ v6.2; trở lại v7.0; mở rộng v7.3; tách giữa Kỹ thuật và Văn phong ở v7.4; bỏ ở bản chuyển đổi | Hoạt động ở v7.4; bỏ ở bản chuyển đổi | v7.4 tăng cơ chế kỹ thuật và mở rộng cấm suy diễn cá nhân. |
 | R13 | Độ sâu và văn phong theo lĩnh vực | v5.0 | Bỏ v6.1–v7.1; trở lại v7.2; mô-đun hóa v7.3 | Đang hoạt động | Bản chuyển đổi giữ dạng nén. |
 | R14 | Phản biện trực diện và chống làm mềm xã hội | v1.0 | v4 thêm điều kiện trọng yếu; v5 chuyển vào kiểu Kiểm tra | Đã hợp nhất | Không còn là văn phong toàn cục. |
 | R15 | Ngắn gọn, mật độ và cấu trúc có điều kiện | v2.0 | Giới hạn câu biến mất v3; chuyển thành giá trị thông tin từng câu; v7.3 làm mềm biểu hiện báo cáo | Đang hoạt động | Từ giới hạn độ dài sang giá trị thông tin. |
-| R16 | Phạm vi nhiệm vụ và phạm vi sự thật | v5.1 | v6.0 mở quá rộng; v6.1 thay bằng tách phát biểu/ý kiến | Đã hợp nhất | Phân bố vào R04, R07 và R08. |
+| R16 | Phạm vi nhiệm vụ và phạm vi sự thật | v5.1 | v6.0 mở quá rộng; v6.1 thay thế; v7.4 khôi phục cho hệ do người dùng định nghĩa | Được khôi phục | Tính nhất quán nội bộ và độ đúng thực tế được tách phạm vi trở lại. |
 | R17 | Xác thực phần cứng đa nguồn và dữ liệu thô | v1.0 | Bỏ ở v2.0 | Đã bỏ | Không có tương đương đầy đủ về ba nguồn/SKU/benchmark. |
 | R18 | Hệ trigger và precedence định dạng | v1.0 | Bỏ ở v2.0 | Đã bỏ | Gồm `@Update`, `@Current`, `@Full`, `@Logic`, `@Crit`, `@Table`, `@Step`, `EXIT_CORE`. |
 | R19 | Quét lỗi và hướng mở rộng | v2.0 | Giữ đến v2.2; bỏ ở v3.0 | Đã bỏ | Mô-đun đầu ra, không phải bất biến lâu dài. |
-| R20 | Không suy diễn tính cách/động cơ thiếu bằng chứng | v3.0 | Tổng quát hóa ở v5; bỏ v6.2; trở lại v7; bỏ rõ ràng trong bản chuyển đổi | Đã sửa đổi | Bản chuyển đổi chỉ giữ gián tiếp qua kỷ luật bằng chứng. |
-| R21 | Khả năng bác bỏ kết luận không tầm thường | v6.0 | Bỏ v6.1–v6.2; trở lại v7.0; giới hạn ở v7.3; bỏ ở bản chuyển đổi | Bị bỏ ở bản chuyển đổi | Giới hạn phạm vi giảm độ nặng bề mặt. |
+| R20 | Không suy diễn tính cách/động cơ thiếu bằng chứng | v3.0 | Tổng quát hóa ở v5; trở lại v7; v7.4 mở rộng tới động cơ/sở thích/cảm xúc/danh tính/đặc điểm; bỏ trong bản chuyển đổi | Hoạt động ở v7.4; bỏ ở bản chuyển đổi | v7.4 chuyển rào chắn vào Văn phong. |
+| R21 | Khả năng bác bỏ kết luận không tầm thường | v6.0 | Bỏ v6.1–v6.2; trở lại v7.0; giới hạn v7.3; thu hẹp về kết luận kỹ thuật quan trọng ở v7.4; bỏ trong bản chuyển đổi | Đã sửa đổi ở v7.4; bỏ ở bản chuyển đổi | Kết luận hệ trọng nói chung không còn cùng độ phủ rõ. |
 | R22 | MECE khi có ích | v5.1 | Làm có điều kiện ở v6.0; bỏ v6.1 | Đã bỏ | Không có tương đương chính xác về sau. |
+| R23 | Kiểm chứng khả năng sản phẩm/runtime có thể kiểm tra từ bên ngoài | v7.3 | Thêm vào v7.3 hiện hành; giữ nguyên v7.3.1; hợp nhất vào Suy luận/Thông tin hiện hành ở v7.4 | Đã sửa đổi | Kiểm chứng trực tiếp còn; ưu tiên tài liệu nhà cung cấp/trạng thái trực tiếp bị bỏ. |
 
 ## 5. Changelog theo từng phiên bản
 
@@ -256,8 +262,32 @@ Lịch sử có sáu thời kỳ kiến trúc lớn, không phải 17 lần thi�
 
 - **Đã thêm:** mô-đun có tên cho bằng chứng, cập nhật, trạng thái nhận thức, kiểu phản hồi, mơ hồ, độ mới, ngữ cảnh, độ sâu/văn phong và ưu tiên.
 - **Đã thêm precedence:** cấu trúc chủ thể là bất biến chính, thuật ngữ là bất biến hỗ trợ, các quy tắc khác là rào chắn có thể làm mềm; đúng đắn cao hơn văn phong.
+- **Đã thêm kiểm chứng sản phẩm/runtime:** phải kiểm chứng claim có thể kiểm tra từ bên ngoài trước khi dùng làm tiền đề; ưu tiên tài liệu nhà cung cấp hoặc trạng thái sản phẩm trực tiếp và không suy diễn khả năng từ tính năng lân cận.
 - **Thay đổi ngữ nghĩa:** phát biểu đơn thuần không ép Kiểm tra; mơ hồ không trọng yếu có thể dùng giả định nhỏ nhất; Cung cấp thông tin có thể thêm đánh giá khi cần.
 - **Làm yếu cơ chế độ mới:** “tìm kiếm trước khi trả lời” thành “kiểm chứng khi độ mới có thể ảnh hưởng”.
+
+### v7.3.1
+
+**Loại:** Patch
+
+**So với:** v7.3
+
+- **Thay đổi định dạng:** bỏ ký tự xuống dòng cuối tệp.
+- **Tác động ngữ nghĩa/kiến trúc:** không có; so sánh bỏ qua khoảng trắng cuối dòng cho kết quả đồng nhất với v7.3.
+
+### v7.4
+
+**Loại:** Patch có tác động kiến trúc
+
+**So với:** v7.3.1
+
+- **Đã thêm topology:** `vai trò → kiểu phản hồi → suy luận → lập trường`; vai trò của claim quyết định kiểu trước khi suy luận quyết định đồng ý, giới hạn, bất định hay phản đối.
+- **Đã thêm phạm vi sự thật:** định nghĩa/bất biến của framework, kiến trúc, hệ hư cấu và mô hình khái niệm do người dùng định nghĩa có thẩm quyền bên trong mô hình, trừ khi nhiệm vụ chuyển sang độ đúng thực tế.
+- **Đã tăng chiều sâu kỹ thuật:** cơ chế, quan hệ nhân quả, giả định, đánh đổi, failure mode, bằng chứng định lượng và điều kiện làm kết luận quan trọng không còn đúng.
+- **Đã mở rộng:** danh mục thông tin hiện hành, lệnh cấm suy diễn khả năng từ tính năng lân cận, và biên văn phong cho phép phép tương tự/ẩn dụ kỹ thuật/hài khô/mỉa mai khi tự nhiên.
+- **Đã thay đổi:** gộp cấu trúc chủ thể và thuật ngữ vào một mô-đun; mở rộng Đánh giá/Kiểm tra; trạng thái nhận thức và khả năng thay thế trở thành ràng buộc theo ảnh hưởng hoặc ích lợi.
+- **Đã bỏ/làm yếu:** rào chắn xóa đại từ hậu kỳ, thứ bậc bất biến chính/hỗ trợ có tên, toàn bộ quy tắc lan truyền cập nhật, cô lập liên hội thoại, ưu tiên nguồn nhà cung cấp/trạng thái trực tiếp và điều kiện bác bỏ chung ngoài phạm vi kỹ thuật.
+- **Tác động kiến trúc:** chuyển từ hierarchy cố định của v7.3 sang pipeline xử lý theo vai trò. Tính thích ứng và khả năng kiểm tra suy luận kỹ thuật tăng, nhưng độ phủ một số failure mode giảm.
 
 ### v6.3 chuyển đổi
 
@@ -316,12 +346,11 @@ flowchart LR
 - v6.1 cung cấp tách phát biểu/ý kiến, ngữ cảnh, định tuyến theo tin nhắn và cấu trúc chủ thể; v6.2 cung cấp thuật ngữ.
 - v7.0 tích hợp hai patch và khôi phục kỹ thuật/phi kỹ thuật cùng khả năng bác bỏ. Văn phong theo lĩnh vực chỉ trở lại ở v7.2.
 
-### v7.0 → v6.3 chuyển đổi qua v7.1–v7.3
+### v7.0 → v7.4 và nhánh v7.3 → v6.3 chuyển đổi
 
-- v7.1 thêm cập nhật/độ mới và siết thuật ngữ.
-- v7.2 sửa thuật ngữ và xử lý mơ hồ.
-- v7.3 tạo thứ bậc bất biến/rào chắn.
-- v6.3 chuyển đổi chưng cất thứ bậc này nhưng bỏ nhiều rào chắn, làm giảm độ phủ failure mode rõ ràng.
+- Mainline: v7.1 thêm cập nhật/độ mới và siết thuật ngữ; v7.2 sửa thuật ngữ/mơ hồ; v7.3 tạo thứ bậc bất biến/rào chắn và thêm kiểm chứng sản phẩm/runtime; v7.3.1 chỉ đổi định dạng; v7.4 thay hierarchy bằng pipeline theo vai trò.
+- Nhánh chuyển đổi: v6.3 tách từ v7.3, không phải v7.4, và chưng cất lõi v7.3 cho ngân sách Free/Go.
+- Precedence đổi từ `cấu trúc chủ thể → thuật ngữ → rào chắn` ở v7.3 thành `vai trò → kiểu phản hồi → suy luận → lập trường` ở v7.4; đúng đắn vẫn cao hơn văn phong.
 
 ## 7. Tiến hóa bất biến
 
@@ -331,8 +360,9 @@ flowchart LR
 - **v6.0:** bỏ đại từ khi câu vẫn rõ.
 - **v6.1:** phải dựng câu từ đầu quanh chủ thể đang bàn; xóa đại từ sau khi viết là không đủ.
 - **v7.3:** thành bất biến chính, có ngoại lệ khi người nói/nghe thực sự là chủ thể.
+- **v7.4:** giữ cách dựng câu quanh chủ thể nhưng bỏ cảnh báo xóa đại từ hậu kỳ và nhãn ưu tiên bất biến chính.
 - **v6.3 chuyển đổi:** được giữ ở vị trí đầu và mức ưu tiên cao nhất.
-- **Đánh giá:** bất biến đã xác nhận của kiến trúc hiện tại, không phải toàn bộ lịch sử.
+- **Đánh giá:** lõi vẫn là bất biến hiện hành, nhưng ngôn ngữ thực thi rõ đã yếu hơn v7.3.
 
 ### Thuật ngữ tiếng Việt — R03
 
@@ -340,14 +370,16 @@ flowchart LR
 - **v7.1:** dạng mạnh nhất, ép mọi từ có tương đương tiếng Việt.
 - **v7.2:** làm mềm khi dịch gây sai nghĩa/gượng.
 - **v7.3:** tiếng Việt thắng khi cả hai đều dùng được; chấp nhận ngoại lệ chính xác, mơ hồ, hiếm hoặc không tự nhiên.
+- **v7.4:** giữ tiếng Việt tự nhiên và ngoại lệ chính xác/mơ hồ/hiếm, nhưng bỏ mệnh đề “phổ biến không đủ” và “tiếng Việt thắng khi cả hai cùng dùng được”.
 - **v6.3 chuyển đổi:** thêm ngoại lệ “dễ nhận biết hoặc chính xác hơn”.
-- **Đánh giá:** lõi được giữ nhưng cường độ dao động; v7.1 mạnh nhất.
+- **Đánh giá:** lõi được giữ nhưng cường độ dao động; v7.1 mạnh nhất, v7.4 bỏ nhãn bất biến hỗ trợ.
 
 ### Bằng chứng và trạng thái nhận thức — R04/R05/R06
 
 - v1 có kiểm chứng chuyên biệt; v2.2 có tiền thân fact/inference/assumption; v5 tạo mô hình đầy đủ.
 - v6.0 thêm bác bỏ nhưng tự mâu thuẫn về tiền đề; v6.1 sửa.
 - v7.2–v7.3 chống thu gọn sớm các cách giải thích và yêu cầu bằng chứng phân biệt khi cần.
+- v7.4 giữ trạng thái nhận thức khi đúng đắn/quyết định bị ảnh hưởng, nhưng bỏ safeguard lan truyền cập nhật và làm khả năng thay thế phụ thuộc ích lợi.
 - Bản chuyển đổi giữ các trạng thái và khả năng thay thế nhưng bỏ chi tiết phân biệt/bác bỏ.
 
 ### Định tuyến kiểu phản hồi — R07
@@ -355,6 +387,7 @@ flowchart LR
 - v5 mô tả ba kiểu không có mặc định.
 - v6 bắt buộc đúng một kiểu và phát biểu/quyết định mặc định Kiểm tra.
 - v7.3 dùng một kiểu chính; phát biểu đơn thuần không ép Kiểm tra; rào chắn bằng chứng chạy độc lập.
+- v7.4 để vai trò phát biểu chọn kiểu và suy luận chọn lập trường; phát biểu vẫn không ép Kiểm tra.
 - Bản chuyển đổi giữ precedence của v7.3 ở dạng nén.
 
 ## 8. Tóm tắt thay đổi ngữ nghĩa và từ vựng
@@ -372,6 +405,8 @@ flowchart LR
 - v7 → v7.1: thêm lan truyền cập nhật, tìm kiếm độ mới và siết thuật ngữ.
 - v7.1 → v7.2: làm mềm thuật ngữ; tăng xử lý mơ hồ và văn phong lĩnh vực.
 - v7.2 → v7.3: thay đổi thứ bậc, precedence, kiểu chính, độ mềm rào chắn và cơ chế độ mới.
+- v7.3 → v7.3.1: không đổi hành vi; chỉ khác định dạng EOF.
+- v7.3.1 → v7.4: hierarchy bất biến chuyển thành pipeline theo vai trò; thêm phạm vi sự thật do người dùng định nghĩa và suy luận kỹ thuật; bỏ cập nhật, cô lập hội thoại và một số safeguard ngôn ngữ.
 - v7.3 → v6.3 chuyển đổi: nén lớn, bỏ rào chắn rõ ràng và làm mềm thuật ngữ.
 
 ### Thay đổi chủ yếu về cấu trúc/từ vựng
@@ -380,6 +415,7 @@ flowchart LR
 - Heading mô-đun ở v7.3 là cấu trúc; mục `PRIORITY` là ngữ nghĩa.
 - Đổi tiếng Việt/tiếng Anh không bị coi là Added/Removed khi định danh và hành vi vẫn giữ.
 - Ký tự `s` cuối v7.2 là lỗi từ vựng.
+- Việc thiếu ký tự xuống dòng cuối v7.3.1 chỉ là định dạng.
 - Nhiều phần mở rộng ở v7.0 chỉ bổ sung định nghĩa vận hành, không tạo rule identity mới.
 
 ## 9. Báo cáo hồi quy
@@ -394,6 +430,11 @@ flowchart LR
 | v6.2 | R12 | Cơ chế/đánh đổi kỹ thuật và cấm suy diễn động cơ | Bị bỏ tới v7.0 | Trung bình | Ứng viên hồi quy |
 | v7.1 | R03 | Giữ tiếng Anh khi dịch thực sự không phù hợp | Ép mọi từ có tương đương tiếng Việt | Trung bình | Ứng viên, sửa ở v7.2 |
 | v7.3 | R11 | Tìm kiếm trước khi trả lời khi độ mới có thể quan trọng | Chỉ yêu cầu kiểm chứng | Trung bình | Ứng viên hồi quy |
+| v7.4 | R02/R03 | Xóa đại từ hậu kỳ là không đủ; hierarchy chính/hỗ trợ có tên; phổ biến tiếng Anh không đủ | Giữ lõi nhưng bỏ rào chắn thực thi và hierarchy có tên | Trung bình | Ứng viên / làm yếu ràng buộc |
+| v7.4 | R09 | Chỉ đổi kết luận khi có sự kiện/nguồn/suy luận mới; lan truyền thay đổi tiền đề | Bỏ toàn bộ mô-đun cập nhật | Cao | Ứng viên hồi quy |
+| v7.4 | R10 | Hội thoại độc lập trừ khi ngữ cảnh được nhập rõ | Bỏ quy tắc cô lập | Trung bình | Ứng viên hồi quy |
+| v7.4 | R21 | Nêu điều kiện làm kết luận hệ trọng/bất định/liên quan quyết định thay đổi | Chỉ còn điều kiện cho kết luận kỹ thuật quan trọng | Trung bình | Ứng viên / thu hẹp phạm vi |
+| v7.4 | R23 | Ưu tiên tài liệu nhà cung cấp hoặc trạng thái sản phẩm trực tiếp | Còn kiểm chứng trực tiếp nhưng bỏ ưu tiên nguồn | Thấp–trung bình | Ứng viên / precedence nguồn yếu hơn |
 | v6.3 chuyển đổi | R10/R11/R12/R21 | Ngữ cảnh, độ mới, rào chắn theo chủ đề và bác bỏ rõ ràng | Bị bỏ để vừa ngân sách triển khai Free/Go | Rủi ro parity trung bình | Nén ngữ nghĩa có chủ đích; hồi quy chưa xác nhận |
 
 Không suy diễn ý định tác giả từ việc quy tắc bị bỏ. Mức rủi ro chỉ được gán khi hệ quả hành vi đi trực tiếp từ bảo đảm bị mất hoặc xung đột.
@@ -411,28 +452,30 @@ Không suy diễn ý định tác giả từ việc quy tắc bị bỏ. Mức r
 | v7.1 | Thuật ngữ mạnh, cập nhật, tìm kiếm độ mới | Cao | Cập nhật/độ mới vào v7.3; thuật ngữ được thay | Tích hợp / Sửa đổi |
 | v7.2 | Sửa thuật ngữ, khả năng thay thế, văn phong | Cao | Tích hợp vào v7.3 qua viết lại mô-đun | Tích hợp / Sửa đổi |
 | v7.3 | Thứ bậc bất biến, precedence rào chắn, phát biểu không ép Kiểm tra | Cao về kiến trúc | Tích hợp vào Major v6.3 chuyển đổi nhưng mất vài rào chắn | Tích hợp / Nén |
+| v7.3.1 | Định dạng cuối tệp | Không có | Không có Major sau; semantics đi nguyên vẹn vào v7.4 | No-op / Được giữ |
+| v7.4 | Định tuyến theo vai trò, phạm vi hệ do người dùng định nghĩa, suy luận kỹ thuật, văn phong và các safeguard bị bỏ | Cao về kiến trúc | Chưa có Major sau; v6.3 chuyển đổi tách từ v7.3 | Mainline Plus hiện tại / Không có trong bản chuyển đổi |
 
 ## 11. Tóm tắt tiến hóa kiến trúc
 
 ### Kiến trúc
 
-CI đi từ giao thức chuyên biệt đơn khối (v1), qua persona và mẫu đầu ra (v2–v4), tới bộ định tuyến nhiệm vụ trên nền rào chắn nhận thức (v5–v7), rồi thành thứ bậc bất biến/rào chắn rõ ràng (v7.3). Major v6.3 chuyển đổi giữ lõi nhưng giảm số mô-đun.
+CI đi từ giao thức chuyên biệt đơn khối (v1), qua persona và mẫu đầu ra (v2–v4), tới bộ định tuyến nhiệm vụ trên nền rào chắn nhận thức (v5–v7), thành hierarchy bất biến/rào chắn ở v7.3, rồi chuyển sang pipeline theo vai trò với phạm vi sự thật do người dùng định nghĩa ở v7.4. Major v6.3 chuyển đổi vẫn là nhánh chưng cất từ v7.3, không phải v7.4.
 
 ### Độ chính xác ngữ nghĩa
 
-Độ chính xác tăng mạnh tại v5 nhờ trạng thái nhận thức, tại v6.1 nhờ tách khách quan/chủ quan, tại v7.2 nhờ chống thu gọn nguyên nhân sớm và tại v7.3 nhờ trạng thái bằng chứng/điều kiện phân biệt có tên. Bản chuyển đổi giữ lõi nhưng mất một số chi tiết vận hành.
+Độ chính xác tăng mạnh tại v5 nhờ trạng thái nhận thức, v6.1 nhờ tách khách quan/chủ quan, v7.2 nhờ chống thu gọn nguyên nhân sớm, v7.3 hiện hành nhờ trạng thái bằng chứng cùng kiểm chứng sản phẩm/runtime, và v7.4 nhờ tách vai trò/kiểu/suy luận/lập trường. v7.4 đồng thời mất một số safeguard cập nhật/ngữ cảnh.
 
 ### Cường độ ràng buộc
 
-Cường độ không tăng theo một chiều. v3 siết phản biện, v4 thêm cổng. v6 siết định tuyến, v7.3 làm mềm cưỡng ép kiểu phản hồi. v7.1 siết thuật ngữ mạnh, v7.2 và bản chuyển đổi thêm ngoại lệ đúng đắn/tự nhiên.
+Cường độ không tăng theo một chiều. v3 siết phản biện, v4 thêm cổng. v6 siết định tuyến, v7.3 làm mềm cưỡng ép kiểu phản hồi, v7.4 làm rõ pipeline nhưng làm yếu vài safeguard. v7.1 siết thuật ngữ mạnh; v7.2, v7.4 và bản chuyển đổi làm mềm theo các cách khác nhau.
 
 ### Precedence
 
-v1 có precedence lệnh/định dạng. v5 thay bằng chọn kiểu nhiệm vụ. v6 có định tuyến nhưng lỗi xung đột tiền đề. v7.3 rõ nhất: cấu trúc chủ thể → thuật ngữ → rào chắn suy luận/ngữ cảnh/trình bày, với đúng đắn cao hơn văn phong.
+v1 có precedence lệnh/định dạng. v5 thay bằng chọn kiểu nhiệm vụ. v6 có định tuyến nhưng lỗi xung đột tiền đề. v7.3 dùng `cấu trúc chủ thể → thuật ngữ → rào chắn`; v7.4 thay bằng `vai trò → kiểu phản hồi → suy luận → lập trường`, vẫn đặt đúng đắn cao hơn văn phong.
 
 ### Mô-đun hóa và dư thừa
 
-v1 đơn khối; v2 dùng mô-đun đầu ra; v3/v4 lặp ràng buộc văn xuôi; v5/v6 nén thành khái niệm; v7.0–v7.2 mở rộng chi tiết; v7.3 tách mô-đun; v6.3 chuyển đổi nén lại theo ngữ nghĩa.
+v1 đơn khối; v2 dùng mô-đun đầu ra; v3/v4 lặp ràng buộc văn xuôi; v5/v6 nén thành khái niệm; v7.0–v7.2 mở rộng chi tiết; v7.3 tách mô-đun; v7.4 nhóm lại theo thứ tự xử lý và phạm vi sự thật; v6.3 chuyển đổi nén riêng từ v7.3.
 
 ### Xử lý mơ hồ
 
@@ -440,7 +483,7 @@ v3 dùng ba câu hỏi; v3.1 thêm tính trọng yếu; v5 giữ nhiều cách h
 
 ### Độ phủ failure mode
 
-v7.3 có độ phủ rộng nhất: phát biểu thiếu bằng chứng, cập nhật tiền đề, sụp đổ trạng thái nhận thức, kiểu phản hồi lấn nhiệm vụ, mơ hồ, jargon kỹ thuật, dữ liệu cũ, rò ngữ cảnh liên hội thoại, over-structure và xung đột đúng đắn/văn phong. Major v6.3 cố ý thu hẹp độ phủ rõ để vừa ngân sách Free/Go nhưng giữ lõi tối ưu của v7.3. Câu hỏi còn lại là parity hành vi qua kiểm thử, không phải intent thiết kế.
+v7.3 hiện hành có độ phủ failure mode rõ rộng nhất: claim thiếu bằng chứng, suy diễn khả năng sản phẩm, cập nhật tiền đề, sụp đổ trạng thái nhận thức, kiểu phản hồi lấn nhiệm vụ, mơ hồ, jargon kỹ thuật, dữ liệu cũ, rò ngữ cảnh, over-structure và xung đột đúng đắn/văn phong. v7.4 xử lý tốt hơn nhầm vai trò/kiểu, phạm vi sự thật và khả năng kiểm tra kỹ thuật, nhưng bỏ safeguard cập nhật, cô lập và ngôn ngữ. Major v6.3 cố ý chưng cất từ v7.3; không nên đánh giá như thể đã chứa v7.4.
 
 Kiến trúc hai mục tiêu triển khai và vai trò rollback-safe của v6.3 được giải thích đầy đủ trong `CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md`.
 
@@ -461,7 +504,9 @@ Kiến trúc hai mục tiêu triển khai và vai trò rollback-safe của v6.3 
 - `ChatGPT Plus+ Era/chatgpt v7.0.txt:1-17`
 - `ChatGPT Plus+ Era/chatgpt v7.1.txt:1-23`
 - `ChatGPT Plus+ Era/chatgpt v7.2.txt:1-25`
-- `ChatGPT Plus+ Era/chatgptv7.3.txt:1-52`
+- `ChatGPT Plus+ Era/chatgpt v7.3.txt:1-54`
+- `ChatGPT Plus+ Era/chatgpt v7.3.1.txt:1-54`
+- `ChatGPT Plus+ Era/chatgpt v7.4.txt:1-71`
 - `ChatGPT Go-Free Era/chatgpt v6.3_7.3 converted.txt:1-9`
 - `ChatGPT Go-Free Era/Changelog.txt:1`
 - `ChatGPT Plus+ Era/ci_design_rationale_v3_vi_invariant.md` — chỉ dùng làm tài liệu giải thích kiến trúc.

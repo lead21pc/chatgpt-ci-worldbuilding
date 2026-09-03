@@ -2,7 +2,7 @@
 
 ## 1. Mục đích của tài liệu
 
-Tài liệu này giải thích **vì sao** bộ Custom Instructions (CI) phát triển từ v1 đến v7.3, vì sao lịch sử được chia thành `ChatGPT Go-Free Era` và `ChatGPT Plus+ Era`, và vì sao `v6.3_7.3 converted` là một Major có chủ đích thay vì một patch tuần tự sau v6.2.
+Tài liệu này giải thích **vì sao** bộ Custom Instructions (CI) phát triển từ v1 đến v7.4, vì sao lịch sử được chia thành `ChatGPT Go-Free Era` và `ChatGPT Plus+ Era`, và vì sao `v6.3_7.3 converted` là một Major có chủ đích thay vì một patch tuần tự sau v6.2.
 
 Changelog trả lời câu hỏi “văn bản nào đã thay đổi”. Bản kiểm toán trả lời “semantics, precedence và guarantee nào đã thay đổi”. Tài liệu này bổ sung lớp còn thiếu: **kiến trúc được thiết kế để đạt hành vi gì dưới hai ngân sách ký tự khác nhau**.
 
@@ -12,7 +12,7 @@ Tài liệu dùng bốn lớp bằng chứng:
 
 1. **Bối cảnh thiết kế do tác giả cung cấp:** hai thư mục là hai mục tiêu triển khai theo giới hạn ký tự của gói; thiết kế này có chủ đích.
 2. **Design rationale:** `ChatGPT Plus+ Era/ci_design_rationale_v3_vi_invariant.md` xác định hai bất biến tiếng Việt, các rào chắn suy luận và thứ tự ưu tiên.
-3. **Nguồn phiên bản:** 17 tệp CI cho thấy quy tắc được thêm, nén, làm mềm, tách hoặc hợp nhất như thế nào.
+3. **Nguồn phiên bản:** 19 tệp CI cho thấy quy tắc được thêm, nén, làm mềm, tách hoặc hợp nhất như thế nào.
 4. **Đo trực tiếp:** số ký tự của từng tệp cho thấy áp lực nén ở nhánh Go/Free và việc giải nén kiến trúc ở nhánh Plus.
 
 Khi bối cảnh thiết kế trực tiếp giải thích intent, intent đó có ưu tiên cao hơn suy luận trước đây chỉ dựa trên diff văn bản.
@@ -88,7 +88,7 @@ Các rào chắn không được phép:
 - làm worldbuilding hoặc văn xuôi mang giọng kỹ thuật;
 - lấn át hai bất biến tiếng Việt.
 
-v7.3 là phiên bản đầu tiên làm precedence này hoàn toàn rõ: rào chắn có thể được làm mềm khi chúng chỉ làm đầu ra cứng hơn mà không bảo vệ tính đúng đắn; bất biến không được làm mềm theo cách đó; tính đúng đắn cao hơn văn phong.
+v7.3 là phiên bản đầu tiên làm precedence này hoàn toàn rõ: rào chắn có thể được làm mềm khi chúng chỉ làm đầu ra cứng hơn mà không bảo vệ tính đúng đắn; bất biến không được làm mềm theo cách đó; tính đúng đắn cao hơn văn phong. v7.4 giữ “đúng đắn cao hơn văn phong” nhưng thay hierarchy có tên bằng pipeline `vai trò → kiểu phản hồi → suy luận → lập trường`. Vì thế, sơ đồ trên vẫn là triết lý thiết kế gốc tới v7.3 và của nhánh v6.3 chuyển đổi, không phải mô tả nguyên văn topology v7.4.
 
 ## 5. Giới hạn ký tự là ràng buộc kiến trúc
 
@@ -128,16 +128,18 @@ Số dưới đây là độ dài chuỗi được đọc từ tệp, gồm xu�
 | v7.0 | Plus | 3.753 |
 | v7.1 | Plus | 4.209 |
 | v7.2 | Plus | 4.903 |
-| v7.3 | Plus | 4.511 |
+| v7.3 | Plus | 4.999 |
+| v7.3.1 | Plus | 4.997 |
+| v7.4 | Plus | 4.583 |
 | v6.3 chuyển đổi | Go/Free | 1.501 |
 
 Từ v2.2 đến v6.2, phần lớn tệp hội tụ quanh khoảng 1.500 ký tự. Đây là dấu vết của tối ưu dưới ngân sách hẹp, không phải sự trùng hợp về văn phong.
 
-v7.3 có 4.511 ký tự. v6.3 chuyển đổi có 1.501 ký tự, tương đương **33,3%** kích thước v7.3. Bản chuyển đổi không chỉ “rút gọn câu”; nó thực hiện nén ngữ nghĩa xấp xỉ ba lần.
+Tại thời điểm v6.3 được chưng cất, bản v7.3 lịch sử có 4.511 ký tự; 1.501 ký tự của v6.3 tương đương **33,3%** baseline đó. Bản v7.3 hiện hành đã được bổ sung safeguard kiểm chứng sản phẩm/runtime và có 4.999 ký tự; so với trạng thái hiện hành này, v6.3 bằng **30,0%**. Hai tỷ lệ đo hai mốc khác nhau và không thay đổi provenance: v6.3 vẫn được chưng cất từ v7.3, không phải từ v7.4.
 
 Các bản sớm vượt vùng 1.500 ký tự không phủ định vai trò của giới hạn ở giai đoạn sau. Nguồn không ghi đủ lịch sử thay đổi giới hạn hoặc cách từng bản được sử dụng; kết luận chắc chắn chỉ là từ v2.2 trở đi, pattern nén quanh ngân sách này rất rõ.
 
-## 6. Tiến hóa thiết kế từ v1 tới v7.3
+## 6. Tiến hóa thiết kế từ v1 tới v7.4
 
 ### 6.1. v1.0 — xác lập thái độ thực chứng bằng quy tắc chuyên biệt
 
@@ -203,33 +205,51 @@ Plus cho phép các rule nén ở v6 được mở thành đặc tả vận hàn
 
 Độ dài tăng không phải mục tiêu. Độ dài là chi phí của việc làm rõ điều kiện kích hoạt, ngoại lệ và quan hệ precedence mà kernel Go/Free không thể diễn đạt an toàn.
 
-### 6.7. v7.3 — kiến trúc đích có thứ bậc rõ
+### 6.7. v7.3 — kiến trúc đích của giai đoạn hierarchy
 
-v7.3 hoàn thiện ba thay đổi kiến trúc:
+v7.3 hoàn thiện ba thay đổi kiến trúc, sau đó bản hiện hành bổ sung safeguard thứ tư:
 
 1. **Bất biến được tách khỏi rào chắn.** Cấu trúc chủ thể là bất biến chính; thuật ngữ là bất biến hỗ trợ.
 2. **Kỷ luật bằng chứng không chiếm quyền nhiệm vụ.** Một phát biểu đơn thuần không ép Kiểm tra; rào chắn bằng chứng chạy trong mọi kiểu.
 3. **Bề mặt được làm mềm có điều kiện.** Trạng thái nhận thức, falsifiability, cấu trúc và độ sâu chỉ xuất hiện khi bảo vệ tính đúng đắn hoặc giúp kiểm tra suy luận.
+4. **Claim sản phẩm/runtime phải được kiểm chứng.** Không được suy diễn khả năng chưa nêu từ tính năng lân cận, UI, kiến trúc có vẻ hợp lý hoặc bằng chứng một phần.
 
 v7.3 không phải phiên bản “nhiều rule nhất”. Nó là phiên bản phân biệt rõ rule nào không được hy sinh và rule nào có thể biểu hiện mềm theo ngữ cảnh.
+
+### 6.8. v7.3.1–v7.4 — no-op định dạng và đổi topology
+
+v7.3.1 chỉ bỏ ký tự xuống dòng cuối tệp. Không có rule, semantics hay precedence nào thay đổi.
+
+v7.4 là Patch có tác động kiến trúc thực:
+
+1. **Pipeline thay hierarchy.** `vai trò → kiểu phản hồi → suy luận → lập trường` tách việc nhận diện claim khỏi việc chọn nhiệm vụ và khỏi kết luận đồng ý/phản đối.
+2. **Phạm vi sự thật trở lại.** Định nghĩa và bất biến của hệ do người dùng tạo có thẩm quyền nội bộ; tính nhất quán nội bộ được tách khỏi độ đúng thực tế.
+3. **Kỹ thuật được làm sâu hơn.** Cơ chế, nhân quả, giả định, đánh đổi, failure mode, dữ liệu định lượng và điều kiện hiệu lực được yêu cầu khi hữu ích.
+4. **Văn phong linh hoạt hơn.** Phép tương tự, ẩn dụ kỹ thuật, hài khô và mỉa mai được phép khi tự nhiên.
+5. **Một số safeguard rõ biến mất.** Lan truyền cập nhật, cô lập hội thoại, cảnh báo xóa đại từ hậu kỳ, hierarchy bất biến có tên và ưu tiên nguồn sản phẩm trực tiếp không còn được phát biểu đầy đủ.
+
+v7.4 không phủ định triết lý dual-target. Nó là bước tiến tiếp trên nhánh đặc tả Plus. Hiện chưa có nguồn cho thấy v6.3 đã được chưng cất lại từ v7.4.
 
 ## 7. Hai nhánh triển khai sau v7.3
 
 ```mermaid
 flowchart TD
     A["v6.2 · kernel Go/Free"] -->|"giải nén trên Plus"| B["v7.0"]
-    B --> C["v7.1"] --> D["v7.2"] --> E["v7.3 · đặc tả đầy đủ"]
+    B --> C["v7.1"] --> D["v7.2"] --> E["v7.3 · baseline chưng cất"]
+    E --> I["v7.3.1 · chỉ định dạng"] --> J["v7.4 · mainline Plus hiện tại"]
     E -->|"chưng cất ngữ nghĩa theo ngân sách hẹp"| F["v6.3 converted · Major Go/Free"]
-    E --> G["Tiếp tục dùng khi có Plus"]
+    J --> G["Tiếp tục dùng khi có Plus"]
     F --> H["Fallback khi quay về Free/Go"]
 ```
 
 Lineage này có hai ý nghĩa khác nhau:
 
-- `v7.0 → v7.3` là nhánh phát triển và kiểm thử với ngân sách rộng.
+- `v7.0 → v7.4` là nhánh phát triển và kiểm thử với ngân sách rộng.
 - `v7.3 → v6.3 converted` là bước biên dịch/chưng cất sang hồ sơ triển khai hẹp.
 
 Vì vậy, số `v6.3` không diễn tả thứ tự thời gian trước v7.0. Nó diễn tả nhánh tương thích Go/Free thuộc họ v6 nhưng mang semantics đã tối ưu từ v7.3.
+
+Từ v7.4 trở đi xuất hiện **độ lệch thế hệ có chủ đích nhưng chưa được đồng bộ**: hồ sơ Plus có topology và truth scope mới, còn hồ sơ Go/Free vẫn phản ánh v7.3. Nếu v7.4 trở thành baseline ổn định, cần một bước chưng cất và kiểm thử parity riêng; không được mặc nhiên tuyên bố v6.3 đã chứa các thay đổi này.
 
 ## 8. Vai trò của v6.3 chuyển đổi
 
@@ -295,6 +315,16 @@ Không nên gọi nó là regression đã xác nhận nếu đầu ra chưa ch�
 | Mục tiêu | Dễ kiểm tra và sửa failure mode | Tối đa hóa guarantee trên mỗi ký tự |
 
 Hai phiên bản phải được đánh giá bằng cùng một chuẩn hành vi. Khác biệt nằm ở cách mã hóa chuẩn, không nằm ở việc hạ chuẩn cho gói thấp hơn.
+
+### 9.1. v7.4 chưa phải baseline của hồ sơ Go/Free
+
+v7.4 thay đổi topology và tập safeguard sau thời điểm chưng cất. Vì vậy, so sánh đúng hiện tại là:
+
+- **parity lịch sử:** v7.3 ↔ v6.3 chuyển đổi;
+- **tiến hóa mainline:** v7.3 → v7.3.1 → v7.4;
+- **khoảng cách cần đánh giá tương lai:** những semantics v7.4 nào nên được đưa vào một hồ sơ Go/Free mới, và safeguard v7.3 nào không nên mất khi nén lại.
+
+Đặc biệt, pipeline theo vai trò và truth scope của v7.4 là ứng viên giá trị cao; việc bỏ update propagation và context isolation là rủi ro cần kiểm thử trước khi dùng v7.4 làm nguồn chưng cất mới.
 
 ## 10. Tiêu chí parity giữa hai hồ sơ
 
@@ -383,12 +413,16 @@ Hai hồ sơ nên dùng cùng bộ mẫu gồm ít nhất:
 16. thông tin có tính thời điểm;
 17. ngữ cảnh từ hội thoại/dự án khác không được người dùng nhập;
 18. phát biểu xuất hiện trong yêu cầu Cung cấp thông tin nhưng không nên ép Kiểm tra.
+19. claim về khả năng/giới hạn sản phẩm có tính thời điểm, gồm một trường hợp chỉ có bằng chứng lân cận;
+20. framework hoặc thế giới hư cấu do người dùng định nghĩa, tách tính nhất quán nội bộ khỏi độ đúng thực tế;
+21. bằng chứng mới thay đổi một tiền đề, để phát hiện mất lan truyền cập nhật ở v7.4;
+22. nội dung từ chat khác không được nhập, để phát hiện mất cô lập ngữ cảnh.
 
 Kết quả cần được ghi theo vi phạm quan sát được, không dùng đánh giá chung như “model này giỏi tiếng Việt” hoặc “prompt dài hơn nên tốt hơn”.
 
 ## 14. Kết luận thiết kế
 
-Lịch sử CI không phải một đường tăng độ dài từ v1 đến v7.3. Nó là quá trình chuyển từ rule chuyên biệt sang kiến trúc hành vi có thứ bậc, trong khi liên tục chịu ràng buộc của ngân sách ký tự.
+Lịch sử CI không phải một đường tăng độ dài từ v1 đến v7.4. Nó là quá trình chuyển từ rule chuyên biệt sang kiến trúc hành vi có thứ bậc, rồi sang pipeline xử lý theo vai trò, trong khi liên tục chịu ràng buộc của ngân sách ký tự.
 
 `ChatGPT Plus+ Era` cho phép semantics được giải nén, mô-đun hóa và kiểm tra rõ. `ChatGPT Go-Free Era` buộc cùng triết lý phải được mã hóa với mật độ cao hơn.
 
@@ -396,4 +430,4 @@ v6.3 chuyển đổi là cầu nối giữa hai môi trường:
 
 > **Quay về gói có ngân sách hẹp mà không quay về trạng thái thiết kế v6.2.**
 
-Đây là mục tiêu kiến trúc có chủ đích. Thành công của bản chuyển đổi không được đo bằng việc nó ngắn đến đâu, mà bằng việc các bất biến và failure mode quan trọng của v7.3 còn được giữ tới mức nào trong đầu ra thực tế.
+Đây là mục tiêu kiến trúc có chủ đích. Thành công của bản chuyển đổi không được đo bằng việc nó ngắn đến đâu, mà bằng việc các bất biến và failure mode quan trọng của baseline v7.3 còn được giữ tới mức nào trong đầu ra thực tế. v7.4 mở một chu kỳ thiết kế mới trên Plus; nó chỉ trở thành chuẩn chung cho hai mục tiêu sau khi có bước chưng cất và kiểm thử parity tương ứng.

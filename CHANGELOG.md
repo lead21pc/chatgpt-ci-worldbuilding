@@ -200,12 +200,52 @@
 - Made remaining rules context-sensitive guardrails and placed correctness above style.
 - Prevented a claim alone from forcing Audit mode.
 - Allowed the smallest reasonable assumption when ambiguity is immaterial.
+- Required verification before using externally checkable product/runtime capabilities, limits, versions, prices, policies, or current behavior as premises.
+- Preferred provider documentation or direct product state for product claims and prohibited inferring unstated capability from adjacent features or plausible architecture.
 
 ### Changed
 
 - Changed freshness from mandatory search to verification when recency could affect the answer.
 - Scoped epistemic-state display and falsifying conditions to cases where they matter.
 - Allowed limited judgment in Inform when needed.
+
+## v7.3.1
+
+### Patched
+
+- Normalized end-of-file formatting by removing the final newline.
+
+### Changed
+
+- No CI semantic, rule, precedence, or architectural behavior changed from v7.3.
+
+## v7.4
+
+### Added
+
+- Added an explicit `role → mode → reasoning → stance` pipeline so the role of a claim selects the response mode before reasoning determines agreement, qualification, uncertainty, or disagreement.
+- Added a separate truth scope for user-defined frameworks, architectures, fictional systems, and conceptual models.
+- Expanded technical discussion to require mechanisms, causal links, assumptions, trade-offs, failure modes, useful quantitative evidence, and conditions under which important conclusions stop holding.
+- Expanded the current-information rule and retained the prohibition on inferring capabilities or limits from adjacent features when direct verification is needed.
+- Allowed analogies, technical metaphors, dry humor, and irony when natural and useful.
+
+### Changed
+
+- Merged subject structure and terminology into one language module while preserving subject-centered Vietnamese as the default construction.
+- Reframed claim handling around the claim's role in the current request; a claim still does not force Audit mode.
+- Expanded Evaluate and Audit while keeping one primary response mode selected from the actual ask.
+- Made epistemic-state separation conditional on whether correctness or decisions are affected.
+
+### Removed
+
+- Removed the explicit post-hoc pronoun-deletion guard and the named primary/supporting invariant hierarchy.
+- Removed the explicit rule that conclusions change only with new facts, sources, or reasoning and that premise changes must propagate.
+- Removed explicit cross-chat context isolation.
+- Removed the provider-documentation/direct-product-state preference while retaining direct verification requirements.
+
+### Fixed / Regression Protection
+
+- Preserved correctness over style, viable alternatives when useful, and the rule that the presence of a claim alone does not select Audit.
 
 ## v6.3 converted
 

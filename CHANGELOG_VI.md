@@ -200,12 +200,52 @@
 - Biến các quy tắc còn lại thành rào chắn phụ thuộc ngữ cảnh và đặt tính đúng đắn cao hơn văn phong.
 - Ngăn một phát biểu đơn thuần ép hệ thống vào kiểu Kiểm tra.
 - Cho phép dùng giả định hợp lý nhỏ nhất khi mơ hồ không trọng yếu.
+- Yêu cầu kiểm chứng trước khi dùng khả năng, giới hạn, phiên bản, giá, chính sách hoặc hành vi hiện tại của sản phẩm/runtime có thể kiểm tra từ bên ngoài làm tiền đề.
+- Ưu tiên tài liệu nhà cung cấp hoặc trạng thái sản phẩm trực tiếp cho claim sản phẩm; cấm suy diễn khả năng chưa được nêu từ tính năng lân cận hoặc kiến trúc có vẻ hợp lý.
 
 ### Thay đổi
 
 - Đổi độ mới từ tìm kiếm bắt buộc sang kiểm chứng khi độ mới có thể ảnh hưởng câu trả lời.
 - Chỉ biểu hiện đầy đủ trạng thái nhận thức và điều kiện bác bỏ khi chúng có ý nghĩa.
 - Cho phép đánh giá giới hạn trong kiểu Cung cấp thông tin khi cần.
+
+## v7.3.1
+
+### Đã vá
+
+- Chuẩn hóa định dạng cuối tệp bằng cách bỏ ký tự xuống dòng cuối cùng.
+
+### Thay đổi
+
+- Không có thay đổi ngữ nghĩa, quy tắc, precedence hoặc kiến trúc CI so với v7.3.
+
+## v7.4
+
+### Đã thêm
+
+- Thêm pipeline rõ ràng `vai trò → kiểu phản hồi → suy luận → lập trường`: vai trò của phát biểu chọn kiểu phản hồi trước, suy luận mới quyết định đồng ý, giới hạn, bất định hay phản đối.
+- Thêm phạm vi sự thật riêng cho framework, kiến trúc, hệ hư cấu và mô hình khái niệm do người dùng định nghĩa.
+- Mở rộng thảo luận kỹ thuật với cơ chế, quan hệ nhân quả, giả định, đánh đổi, failure mode, bằng chứng định lượng khi hữu ích và điều kiện làm kết luận quan trọng không còn đúng.
+- Mở rộng quy tắc thông tin hiện hành và giữ lệnh cấm suy diễn khả năng/giới hạn từ tính năng lân cận khi cần kiểm chứng trực tiếp.
+- Cho phép phép tương tự, ẩn dụ kỹ thuật, hài khô và mỉa mai khi tự nhiên, có ích.
+
+### Thay đổi
+
+- Gộp cấu trúc chủ thể và thuật ngữ vào một mô-đun ngôn ngữ, vẫn giữ câu tiếng Việt xoay quanh chủ thể làm mặc định.
+- Tái cấu trúc xử lý phát biểu theo vai trò của nó trong yêu cầu hiện tại; phát biểu vẫn không tự ép Kiểm tra.
+- Mở rộng Đánh giá và Kiểm tra, đồng thời vẫn chọn một kiểu chính từ yêu cầu thực tế.
+- Chỉ yêu cầu tách trạng thái nhận thức khi tính đúng đắn hoặc quyết định bị ảnh hưởng.
+
+### Đã bỏ
+
+- Bỏ rào chắn rõ về xóa đại từ hậu kỳ và thứ bậc bất biến chính/hỗ trợ có tên.
+- Bỏ quy tắc rõ rằng kết luận chỉ đổi khi có sự kiện, nguồn hoặc suy luận mới và thay đổi tiền đề phải được lan truyền.
+- Bỏ cô lập ngữ cảnh liên hội thoại rõ ràng.
+- Bỏ ưu tiên tài liệu nhà cung cấp/trạng thái sản phẩm trực tiếp nhưng vẫn giữ yêu cầu kiểm chứng trực tiếp.
+
+### Đã sửa / Bảo vệ chống hồi quy
+
+- Giữ ưu tiên đúng đắn hơn văn phong, các khả năng còn phù hợp khi hữu ích và quy tắc phát biểu đơn thuần không chọn Kiểm tra.
 
 ## v6.3 chuyển đổi
 
