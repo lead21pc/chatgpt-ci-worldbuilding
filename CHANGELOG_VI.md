@@ -247,6 +247,31 @@
 
 - Giữ ưu tiên đúng đắn hơn văn phong, các khả năng còn phù hợp khi hữu ích và quy tắc phát biểu đơn thuần không chọn Kiểm tra.
 
+## v7.4.1
+
+### Đã thêm
+
+- Thêm lệnh cấm rõ đối với jargon tiếng Anh không cần thiết và code-switching giữa câu khi tiếng Việt truyền đạt cùng ý nghĩa.
+- Chỉ cho phép jargon chuyên biệt khi không có cách diễn đạt tiếng Việt thông thường rõ ngang hàng; phải giải nghĩa bằng tiếng Việt ở lần đầu và không được buộc người đọc tra cứu bên ngoài mới hiểu.
+
+### Thay đổi
+
+- Tách mô-đun ngôn ngữ đã gộp của v7.4 trở lại hai bất biến cấu trúc chủ thể và thuật ngữ của v7.3.
+- Đặt toàn bộ chính sách tiếng Việt, ngoại lệ tiếng Anh, jargon và code-switching dưới một rule thuật ngữ duy nhất.
+- Giới hạn `TECHNICAL / NON-TECHNICAL` vào chiều sâu suy luận kỹ thuật, bằng chứng định lượng và rào chắn suy diễn cá nhân thiếu bằng chứng.
+- Giữ pipeline `vai trò → kiểu phản hồi → suy luận → lập trường`, phân tích kỹ thuật mở rộng, độ phủ thông tin hiện hành và truth scope cho hệ do người dùng định nghĩa của v7.4 ở dạng đặc hơn.
+
+### Khôi phục / Bảo vệ chống hồi quy
+
+- Khôi phục rào chắn chống xóa đại từ hậu kỳ và toàn bộ ràng buộc ưu tiên tiếng Việt của v7.3.
+- Khôi phục kiểm chứng phát biểu khách quan và sản phẩm/runtime, gồm ưu tiên nguồn nhà cung cấp/trạng thái trực tiếp và chống suy diễn từ bằng chứng lân cận hoặc một phần.
+- Khôi phục cập nhật kết luận theo bằng chứng, lan truyền thay đổi tiền đề, bảo vệ trạng thái nhận thức, điều kiện thay đổi kết luận nói chung, ranh giới đánh giá của Inform, Audit trước tối ưu và hierarchy bất biến/rào chắn.
+
+### Đã bỏ / Chủ đích không khôi phục
+
+- Bỏ toàn bộ mô-đun `STYLE` của v7.4 để sở thích trình bày không tiêu tốn ngân sách hoặc vượt các guarantee hành vi.
+- Không khôi phục `CONTEXT` của v7.3 vì ChatGPT memory chưa thể thực thi cô lập hội thoại nhất quán; v7.4.1 không tuyên bố một guarantee cô lập sai.
+
 ## v6.3 chuyển đổi
 
 ### Đã thêm

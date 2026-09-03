@@ -247,6 +247,31 @@
 
 - Preserved correctness over style, viable alternatives when useful, and the rule that the presence of a claim alone does not select Audit.
 
+## v7.4.1
+
+### Added
+
+- Added an explicit ban on unnecessary English jargon and mid-sentence code-switching when Vietnamese carries the same meaning.
+- Required specialized jargon to have no equally clear ordinary Vietnamese wording, be defined in plain Vietnamese on first use, and never require external lookup to understand the answer.
+
+### Changed
+
+- Split v7.4's merged language module back into the v7.3 subject-structure and terminology invariants.
+- Made the terminology rule the single authority for Vietnamese, English exceptions, jargon, and code-switching.
+- Limited `TECHNICAL / NON-TECHNICAL` to technical reasoning depth, quantitative evidence, and unsupported personal inference.
+- Retained v7.4's `role → mode → reasoning → stance` routing, expanded technical analysis, current-information coverage, and user-defined-system truth scope in a denser form.
+
+### Restored / Regression Protection
+
+- Restored the post-hoc pronoun-deletion guard and the full Vietnamese-first terminology constraints from v7.3.
+- Restored explicit objective-claim and product/runtime verification, including provider/direct-state preference and protection against inference from adjacent or partial evidence.
+- Restored evidence-based conclusion updates, premise propagation, explicit epistemic-state protection, general conclusion-change conditions, Inform's judgment boundary, Audit-before-optimization, and the invariant/guardrail priority hierarchy.
+
+### Removed / Intentional Omissions
+
+- Removed v7.4's complete `STYLE` module so presentation preferences cannot consume budget or outrank behavioral guarantees.
+- Did not restore v7.3's `CONTEXT` rule because ChatGPT memory cannot enforce strict chat isolation consistently; no false isolation guarantee is claimed.
+
 ## v6.3 converted
 
 ### Added
