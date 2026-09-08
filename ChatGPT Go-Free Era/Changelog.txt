@@ -1,0 +1,3 @@
+6.3: distilled from 7.3; restored post-hoc pronoun guard; relaxed claim→Audit; revised Vietnamese terminology
+6.4: distilled from 7.4.1; restored evidence, updating, routing, ambiguity and jargon controls within 1,500 characters
+6.4.1: distilled from 7.4.2; made reasoning and cross-domain depth core; softened language and removed standalone current-information handling
