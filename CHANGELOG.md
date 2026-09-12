@@ -354,10 +354,77 @@
 
 ### Experimental change
 
-- Doubled the maximum new specialized-term budget from two to four per response; all other CI wording is unchanged.
+- Initially doubled the maximum new specialized-term budget from two to four per response while leaving all other CI wording unchanged.
 - Retained Vietnamese-first translation, narrow exceptions, first-use definitions, and the ban on inferring vocabulary from technical subject matter or a guessed reader profile.
+- A later same-version repair attempt counted four distinct specialized terms across the whole response and added an utterance-role guard. User testing reported that the stricter count made jargon density substantially worse; this failed state is preserved as v8.0.1 and superseded by v8.1.
 
 ### Verification boundary
 
-- Structural checks passed at 4,992 characters with CRLF and no UTF-8 BOM.
-- Runtime behavior remains under A/B test; the four-term ceiling may be treated as permission or a target rather than merely a maximum.
+- The initial isolated variant passed structural checks at 4,992 characters; the later failed repair passed at 4,977. Both used CRLF without a UTF-8 BOM.
+- Runtime testing rejected the numerical terminology ceiling as a reliable control: it could be bypassed by domain/reuse classification or treated as permission, a compression target, or a quota.
+
+## v8.1
+
+### Major behavioral patch
+
+- Removed the two/four-term runtime ceiling. Counts remain external evaluation measures rather than instructions the model must apply to semantic categories.
+- Replaced self-counting with direct behavior: use only terminology the task needs, name a concept only when the exact term improves precision or identification, otherwise explain it in ordinary Vietnamese, and never cluster specialized labels. Technical and worldbuilding contexts do not relax this rule.
+- Added an utterance-role gate: questions, requests, reports, and preferences call for an answer or action rather than agreement. “Đúng” may open a response only when affirming a supported proposition is useful, never as generic acknowledgment.
+
+### Failure classification
+
+- Upgraded FM-22 from regression risk to user-reported behavioral regression in v8.0.1 and retired its numerical control in v8.1.
+- Added FM-23 for automatic affirmation caused by treating non-propositions as claims awaiting agreement.
+
+### Verification boundary
+
+- Structural checks passed at 4,956 characters with CRLF, a final CRLF, no trailing whitespace, and no UTF-8 BOM.
+- User testing reported improved jargon density for FM-22, but generic “Đúng” openings persisted; FM-23 therefore failed runtime validation in v8.1.
+
+## v8.1.1
+
+### Experimental branch
+
+- Initially changed only the response-opening control from v8.1, preserving its reasoning mechanisms for a controlled comparison.
+- Removed the literal “Đúng” token and its positive permission from the CI. Responses must start with the answer, action, or concrete finding and may not be prefaced by agreement, validation, praise, or restatement.
+- When explicitly asked whether a proposition is correct, the answer must come from evidence; otherwise the response takes no opening stance.
+- Identified a deeper long-conversation trigger: treating additions as silent updates could still admit an objective claim as a working premise before it was checked, then propagate it through later conclusions.
+- Replaced silent premise admission with an evidence gate. Additions remain context rather than confirmed premises; a materially supporting objective claim is compared with its underlying source or independent evidence, and neither the claim nor repetition counts as evidence.
+- Restricted updates to supported facts, explicit scoped assumptions, or supported corrections, with dependent conclusions updated only after that basis changes.
+- User testing then reproduced paragraph-by-paragraph lookup interruption: untranslated English labels and label clusters carried the argument even though v8.1 prohibited unnecessary terminology and external lookup.
+- The subsequent meaning-first/no-external-lookup wording also failed user runtime testing and was replaced rather than treated as validated.
+- The new language control operates at clause level: write complete Vietnamese clauses; do not use Vietnamese grammar as connective tissue around English semantic content, label lists, or mixed-language formulas; translate meaning-bearing English; and retain exact English only for narrowly defined reproduction needs. Prior use is not a current request to retain a term, and any allowed label follows a complete Vietnamese explanation without carrying it.
+
+### Verification boundary
+
+- Structural checks passed at 4,903 characters with CRLF, a final CRLF, no trailing whitespace, and no UTF-8 BOM.
+- The v8.1→v8.1.1 comparison changes only lines 14, 22, 28, and 40. The revised premise controls remain under test for FM-06/FM-12/FM-23; the clause-level language control remains under test for FM-03/FM-05/FM-21. FM-04, FM-07, FM-13, FM-15, and the retired numeric-control failure FM-22 remain regression checks.
+
+## v8.2
+
+### Official three-invariant release
+
+- Replaced the broad `TASK FIDELITY` and `REASONING INTEGRITY` pair with three ordered invariants: `CONTROL GROUNDING`, `DISCOURSE FIDELITY`, and `EPISTEMIC NON-ESCALATION`.
+- Required a valid basis before changing task stage, conversational operation, claim status, or reader assumptions. Topic, terminology, repetition, coherence, familiarity, and perceived usefulness cannot authorize those changes by themselves.
+- Selected the conversational operation before applying truth-status controls. Statements, additions, and corrections do not automatically request agreement, judgment, synthesis, or closure.
+- Kept exploration and accumulation provisional until synthesis or finalization is requested or required by the selected operation.
+- Limited truth evaluation to requested judgments and objective claims on which the operation depends; separated interaction ambiguity from proposition uncertainty.
+
+### Vietnamese baseline
+
+- Preserved the clause-level ban on using Vietnamese as connective tissue around English semantic content.
+- Removed the separate subject-structure condition and restored a compact form of v7.3 `VIETNAMESE — TERMINOLOGY`: Vietnamese is the baseline across prose, headings, lists, explanations, and technical discussion, while shorter or field-common English creates no exception.
+- Retained narrow exact-form exceptions for proper names, code, quotes, commands, identifiers, and terms explicitly requested in the current turn.
+
+### Explanation breadth and depth
+
+- Preserved the general depth floor, non-bare conclusions, and the requirement that anti-padding must not remove needed support.
+- Added a coverage check: evidence or counterexamples must prevent the user's frame or a neat pair from being treated as exhaustive by default; relevance rather than a fixed count determines scope.
+- Discarded a pre-release two-part-control rewrite after user testing reported shorter answers and excessive adherence to the user's explanatory frame.
+
+### Accepted residual and verification
+
+- Generic “Đúng” acknowledgment remains an accepted residual rather than an active wording target.
+- The user confirmed the final behavior stable in current testing.
+- Structural checks passed at 4,997 characters with CRLF, a final CRLF, no trailing whitespace, and no UTF-8 BOM. SHA-256: `DAE18153E3CD436D2A473A4816794F0314611D347A4CD2BF0D34E3B684C3EFEF`.
+- Stability is user-reported runtime evidence for the tested environment, not a guarantee across models, product layers, memory states, or future releases.

@@ -37,6 +37,6 @@ Avoid padding and repetition without removing support needed to understand the a
 
 LANGUAGE
 
-Write Vietnamese; translate English except proper names, code, quotes, commands, identifiers, or user-requested terms. Familiarity, brevity, technical/worldbuilding context, or a guessed reader profile never licenses English or denser terminology. Across all explanatory prose, use at most four distinct specialized terms total, new or reused, English or Vietnamese; the ceiling is not a target. Exact identifiers are exempt only when needed and license no adjacent jargon. Define retained terms in plain Vietnamese on first use; explain further concepts without naming specialized terms.
+Write Vietnamese; translate English except proper names, code, quotes, commands, identifiers, or user-requested terms. Familiarity, brevity, or a guessed reader profile never licenses English. Use only specialized terminology the task needs. Name a concept only when its exact term improves precision or identification; otherwise explain it in ordinary Vietnamese. Do not cluster terms or let one technical label license adjacent jargon; technical and worldbuilding contexts do not relax this rule. Explain retained terms in plain Vietnamese on first use when needed.
 
 Center Vietnamese sentences on the discussed subject from the start; use speaker/listener pronouns only when they are the subject.

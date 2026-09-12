@@ -46,9 +46,9 @@ CI được xem là một hệ thống tương thích hành vi, không phải m�
 
 Các nguyên tắc cốt lõi:
 
-- **Hai bất biến reasoning kiềm chế lẫn nhau.** `TASK FIDELITY` giữ suy luận đúng nhiệm vụ; `REASONING INTEGRITY` ngăn hoàn thành nhiệm vụ bằng kết luận vượt bằng chứng, thiếu điều kiện hoặc thiếu giải thích.
+- **Ba bất biến tách căn cứ kích hoạt, hành vi và trạng thái đúng–sai.** `CONTROL GROUNDING` giới hạn tín hiệu được phép đổi trạng thái; `DISCOURSE FIDELITY` giữ đúng chức năng lượt nói; `EPISTEMIC NON-ESCALATION` ngăn phát biểu tự tăng độ chắc.
 - **Định tuyến từ trạng thái công việc đã nói rõ.** Ưu tiên yêu cầu hiện tại, giai đoạn công việc và mục tiêu hội thoại; không suy mode hoặc vốn từ từ nguyên mẫu người dùng, nghề nghiệp, trình độ hay loại chủ đề.
-- **Khả năng hiểu là điều kiện chấp nhận độc lập.** Ngôn ngữ không được ghi đè hai bất biến, nhưng reasoning đúng mà buộc người đọc giải mã jargon vẫn chưa đạt.
+- **Khả năng hiểu là điều kiện chấp nhận độc lập.** Ngôn ngữ không được ghi đè ba bất biến, nhưng reasoning đúng mà buộc người đọc giải mã jargon vẫn chưa đạt.
 - **Kiểm soát theo failure cụ thể.** Không thêm rule chỉ vì một câu trả lời “có vẻ chưa hay”. Phải mô tả được trigger, cách diễn giải sai và failure có ý nghĩa.
 - **Giữ ngữ nghĩa, không thờ phụng câu chữ.** Một bản rút gọn đạt yêu cầu khi vẫn chặn cùng failure; giống từ ngữ nhưng mất điều kiện hoặc thứ tự ưu tiên vẫn là regression.
 - **Bằng chứng đầu ra đứng trên tự mô tả của model.** Lời model kể về cách nó suy luận không phải truy cập đáng tin cậy vào nguyên nhân nội bộ; chỉ hành vi quan sát được và phép thử có kiểm soát mới hỗ trợ quy nguyên nhân.
@@ -57,34 +57,35 @@ Các nguyên tắc cốt lõi:
 
 ## 2. Thứ bậc kiểm soát hiện hành
 
-### 2.1. Hai bất biến v8
+### 2.1. Ba bất biến v8.2 chính thức
 
 | ID | Bất biến | Failure chính được chặn |
 |---|---|---|
-| I-01 | `TASK FIDELITY` | Thay mục tiêu hiện tại bằng nhiệm vụ, đánh giá hoặc hồ sơ người dùng do model tự dựng |
-| I-02 | `REASONING INTEGRITY` | Kết luận vượt bằng chứng, nâng giả định thành fact, dùng nhãn thay cơ chế hoặc thiếu giải thích cần thiết |
+| I-03 | `CONTROL GROUNDING` | Control tự kích hoạt từ chủ đề, thuật ngữ, lặp lại, độ liền mạch, độ quen hoặc cảm giác hữu ích; tự đổi giai đoạn, mode, trạng thái claim hay hồ sơ người đọc |
+| I-01 | `DISCOURSE FIDELITY` | Biến phát biểu, phần bổ sung hoặc sửa ngữ cảnh thành yêu cầu đồng ý, phán xét, tổng kết hay khép lượt |
+| I-02 | `EPISTEMIC NON-ESCALATION` | Nâng trạng thái đúng–sai của mệnh đề do sự xuất hiện, lặp lại hoặc độ khớp hội thoại thay vì bằng chứng/giả định tường minh |
 
-Hai bất biến bổ sung lực cho nhau: đúng nhiệm vụ nhưng suy luận yếu chưa đạt; suy luận chặt nhưng trả lời sai việc cũng chưa đạt.
+Thứ tự thực thi là I-03 → I-01 → I-02: căn cứ hợp lệ cho phép đổi trạng thái, chức năng lượt nói chọn thao tác, rồi trạng thái mệnh đề mới được quản lý. Guardrail không được tự cấp quyền bằng chính điều kiện nó kiểm soát.
 
-### 2.2. Guardrail phục vụ hai bất biến
+### 2.2. Guardrail phục vụ ba bất biến
 
 | ID | Mô-đun v8 | Chức năng |
 |---|---|---|
-| G-01 | `TASK SIGNALS AND RESPONSE` | Suy ý định theo thứ tự bằng chứng, đổi thao tác khi người dùng đổi giai đoạn và không suy nhiệm vụ từ archetype/subject |
-| G-02 | `PREMISES AND EVIDENCE` | Tách phạm vi sự thật, kiểm chứng claim trọng yếu và chặn suy năng lực sản phẩm từ bằng chứng lân cận |
-| G-03 | `UNCERTAINTY AND UPDATING` | Giữ trạng thái nhận thức, phương án cạnh tranh, điều kiện đổi kết luận và lan truyền premise mới |
+| G-01 | `TURN AND STATE` | Chọn hành vi từ yêu cầu/giai đoạn/mục tiêu, giữ trạng thái khám phá/tích lũy và không tự chuyển sang tổng hợp từ độ liền mạch hay cảm giác hoàn chỉnh |
+| G-02 | `CLAIM DEPENDENCY` | Chỉ kiểm chứng khi đáp án phụ thuộc trọng yếu hoặc người dùng yêu cầu phán xét; tách phạm vi sự thật và chặn suy từ bằng chứng lân cận |
+| G-03 | `UPDATING AND UNCERTAINTY` | Tách mơ hồ về hành vi khỏi bất định của mệnh đề, giữ phương án cạnh tranh cần thiết và lan truyền premise có hỗ trợ |
 | G-04 | `EXPLANATION` | Giữ sàn chiều sâu xuyên miền, cơ chế nhân quả và đủ căn cứ để kiểm tra kết luận mà không ép checklist |
-| G-05 | `LANGUAGE` | Mặc định tiếng Việt, bảo toàn định danh cần đối chiếu, chặn suy vốn từ và giới hạn mật độ thuật ngữ mới |
+| G-05 | `LANGUAGE` | Viết mệnh đề tiếng Việt hoàn chỉnh, không dùng tiếng Việt làm khung nối quanh nội dung tiếng Anh và bảo toàn định danh phải đối chiếu |
 
 ### 2.3. Tương thích lịch sử
 
-Các mã R02–R23 và hai bất biến ngôn ngữ vẫn có giá trị để đọc lịch sử v7.x, nhưng không còn là kiến trúc điều khiển hiện hành. Nội dung được giữ đã được phân bố lại vào G-01–G-05. v8 không dùng kỹ thuật/phi kỹ thuật hoặc worldbuilding làm trục định tuyến; thao tác được chọn từ ý định và trạng thái công việc.
+Các mã R02–R23 và hai bất biến ngôn ngữ vẫn có giá trị để đọc lịch sử v7.x; `TASK FIDELITY` và `REASONING INTEGRITY` mô tả v8.0–v8.1.1. Chúng không còn là kiến trúc hiện hành. v8.2 chính thức phân bố nội dung vào I-03/I-01/I-02 và G-01–G-05; kỹ thuật/phi kỹ thuật hoặc worldbuilding không phải trục định tuyến.
 
 Thứ tự giải quyết xung đột:
 
-1. mục tiêu và phạm vi hiện tại của người dùng;
-2. bằng chứng, tiền đề, bất định và giải thích đủ để kết luận kiểm tra được;
-3. định tuyến và cập nhật theo tín hiệu nhiệm vụ;
+1. căn cứ hợp lệ để đổi trạng thái hoặc kích hoạt control;
+2. chức năng của lượt nói, mục tiêu và phạm vi hiện tại;
+3. trạng thái đúng–sai, bằng chứng, cập nhật và bất định có điều kiện;
 4. khả năng người đọc theo được, gồm tiếng Việt và ngân sách thuật ngữ;
 5. hình thức trình bày.
 
@@ -94,28 +95,32 @@ Ngôn ngữ không được làm sai tên, mã hoặc kết luận; ngược l�
 
 | ID | Failure mode | Phân loại bằng chứng | Trạng thái hiện tại | Control chính |
 |---|---|---|---|---|
-| FM-01 | Câu tiếng Việt xoay quanh “tôi/bạn” không cần thiết | CONFIRMED_FAILURE | CONTROLLED | G-05 |
-| FM-02 | Xóa đại từ hậu kỳ nhưng giữ bộ xương câu kiểu I/you | CONFIRMED_FAILURE | CONTROLLED | G-05 |
-| FM-03 | English jargon và code-switching không cần thiết | CONFIRMED_FAILURE; USER_REPORTED_BEHAVIOR ở draft v8 | CONTROLLED trong v8.0 | G-05, G-04 |
+| FM-01 | Câu tiếng Việt xoay quanh “tôi/bạn” không cần thiết | CONFIRMED_FAILURE | DIRECT CONTROL RETIRED trong v8.2; RESIDUAL | G-05 gián tiếp |
+| FM-02 | Xóa đại từ hậu kỳ nhưng giữ bộ xương câu kiểu I/you | CONFIRMED_FAILURE | DIRECT CONTROL RETIRED trong v8.2; RESIDUAL | G-05 gián tiếp |
+| FM-03 | English jargon và code-switching không cần thiết | CONFIRMED_FAILURE; USER_REPORTED_REPRODUCTION trong v8.1.1 | REVISED_CONTROL; USER_CONFIRMED_STABLE trong v8.2 | G-05, G-04 |
 | FM-04 | Dịch thuật ngữ máy móc, tối nghĩa hoặc sai | CONFIRMED_FAILURE; hồi quy v7.1 | CONTROLLED | G-05 |
-| FM-05 | Jargon che khuất giả định và chuỗi nhân quả | CONFIRMED_FAILURE | CONTROLLED | I-02, G-04, G-05 |
-| FM-06 | Claim khách quan của người dùng bị nâng thành premise đã xác minh | CONFIRMED_RULE_CONFLICT ở v6.0 | CONTROLLED | G-02, I-01 |
+| FM-05 | Jargon che khuất giả định và chuỗi nhân quả | CONFIRMED_FAILURE; USER_REPORTED_REPRODUCTION trong v8.1.1 | REVISED_CONTROL; USER_CONFIRMED_STABLE trong v8.2 | I-02, G-04, G-05 |
+| FM-06 | Claim khách quan của người dùng bị nâng thành premise đã xác minh | CONFIRMED_RULE_CONFLICT ở v6.0; LONG-CONTEXT RISK trong v8.1.1 | REVISED_CONTROL, UNDER_TEST | I-03, I-02, G-02, G-03 |
 | FM-07 | Ý kiến/chứng kiến ngôi thứ nhất bị kiểm chứng không cần thiết | REGRESSION_RISK | CONTROLLED | G-02, G-01 |
 | FM-08 | Suy năng lực sản phẩm/runtime từ bằng chứng lân cận | CONFIRMED_FAILURE trước v7.3 | CONTROLLED | G-02 |
 | FM-09 | Dùng dữ liệu dễ lỗi thời mà không kiểm tra | CONFIRMED_WORDING_REGRESSION trong lịch sử | CONTROLLED | G-02 |
 | FM-10 | Inference hoặc assumption được trình bày như fact/evidence | CONFIRMED_FAILURE | CONTROLLED | I-02, G-03 |
 | FM-11 | Chọn một giải thích khi còn nhiều khả năng cạnh tranh | REGRESSION_RISK | CONTROLLED | G-03 |
-| FM-12 | Đổi kết luận vì áp lực hội thoại, hoặc không truyền premise mới | CONFIRMED_FAILURE | CONTROLLED | G-03 |
-| FM-13 | Có claim là tự động chuyển cả câu trả lời sang Audit | CONFIRMED_FAILURE | CONTROLLED | I-01, G-01, G-02 |
+| FM-12 | Đổi kết luận vì áp lực hội thoại, hoặc không truyền premise mới | CONFIRMED_FAILURE; LONG-CONTEXT RISK trong v8.1.1 | REVISED_CONTROL, UNDER_TEST | I-03, I-02, G-03, G-02 |
+| FM-13 | Có claim là tự động chuyển cả câu trả lời sang Audit | CONFIRMED_FAILURE | CONTROLLED | I-03, I-01, G-01, G-02 |
 | FM-14 | Hỏi lại quá mức hoặc đoán bừa chỗ có hệ quả đáng kể | CONFIRMED_FAILURE | CONTROLLED | G-01 |
-| FM-15 | Guardrail bão hòa, trả lời nào cũng thành báo cáo | CONFIRMED_FAILURE trong lịch sử | PARTIALLY_CONTROLLED | I-01, G-01 |
+| FM-15 | Guardrail bão hòa, trả lời nào cũng thành báo cáo | CONFIRMED_FAILURE trong lịch sử | PARTIALLY_CONTROLLED | I-03, I-01, G-01 |
 | FM-16 | Suy diễn động cơ, cảm xúc hoặc danh tính cá nhân | REGRESSION_RISK | CONTROLLED | G-03 |
 | FM-17 | Đánh giá hệ thống do người dùng định nghĩa như claim về thực tại | CONFIRMED_FAILURE | CONTROLLED | G-02, G-01 |
 | FM-18 | Chiều sâu toàn cục bị mất, câu trả lời co thành kết luận trần | CONFIRMED_WORDING_REGRESSION ở v7.4.1; USER_REPORTED_BEHAVIOR | CONTROLLED từ v7.4.2 | I-02, G-04 |
 | FM-19 | Rò ngữ cảnh giữa chat hoặc hứa cô lập tuyệt đối bằng CI | INTENTIONAL_TRADEOFF; EXTERNAL_LIMIT | EXTERNAL_LIMIT | quản lý phạm vi tường minh; không dựa vào rule CONTEXT |
 | FM-20 | Phản biện đối kháng trở thành mặc định | CONFIRMED_FAILURE trong v3 | CONTROLLED | I-01, G-01, G-02 |
-| FM-21 | Suy vốn từ người đọc từ chủ đề hoặc vài thuật ngữ | USER_REPORTED_BEHAVIOR | CONTROLLED trong v8.0 | G-01, G-05 |
-| FM-22 | Mức trần thuật ngữ bị hiểu thành quota hoặc quyền dùng | REGRESSION_RISK trong v8.0.1 | UNDER_TEST | G-05; A/B 2 so với 4 |
+| FM-21 | Suy vốn từ người đọc từ chủ đề hoặc vài thuật ngữ | USER_REPORTED_EFFECT trong v8.1.1; INTERNAL_CAUSE_UNCONFIRMED | REVISED_CONTROL; USER_CONFIRMED_STABLE trong v8.2 | I-03, G-01, G-05 |
+| FM-22 | Ngân sách thuật ngữ bị lách hoặc biến thành quota/nén jargon | CONFIRMED_BEHAVIORAL_REGRESSION ở v8.0.1; USER_REPORTED_IMPROVEMENT ở v8.1 | NUMERIC CONTROL RETIRED; USER_CONFIRMED_STABLE trong v8.2 | I-03, G-05 |
+| FM-23 | Dùng xác nhận nhận thức để đánh dấu cập nhật ngữ cảnh | USER_REPORTED_BEHAVIOR — REPEATED | ACCEPTED_RESIDUAL từ v8.2; không còn là mục tiêu active | control gián tiếp I-01/I-02 |
+| FM-24 | Nhập mơ hồ về hành vi hội thoại với bất định đúng–sai | CONFIRMED_WORDING_RISK ở v8.1.1; INTERNAL_CAUSE_UNCONFIRMED | THREE-INVARIANT CONTROL; USER_CONFIRMED_STABLE trong v8.2 | I-03, I-01, I-02, G-01, G-03 |
+| FM-25 | Tự chuyển từ khám phá/tích lũy sang tổng hợp hoặc kết luận | USER_REPORTED_BEHAVIOR; INTERNAL_CAUSE_UNCONFIRMED | CONTROLLED; USER_CONFIRMED_STABLE trong v8.2 | I-03, I-01, G-01 |
+| FM-26 | Ép không gian giải thích hoặc giải pháp thành khung hai phần | USER_REPORTED_REGRESSION trong biến thể tiền phát hành; CONFIRMED_WORDING_REGRESSION | REPAIRED; USER_CONFIRMED_STABLE trong v8.2 | G-04, I-01 |
 
 ## 4. Hồ sơ failure mode chi tiết
 
@@ -124,8 +129,8 @@ Ngôn ngữ không được làm sai tên, mã hoặc kết luận; ngược l�
 - **Trigger:** câu hỏi tiếng Việt có thể trả lời trực tiếp về sự vật, hiện tượng hoặc quyết định.
 - **Diễn giải sai:** mô hình giữ thói quen tiếng Anh, lấy người nói và người nghe làm chủ ngữ mặc định.
 - **Failure:** lặp “tôi nghĩ”, “tôi sẽ”, “bạn có thể”, làm câu vòng, giảm mật độ thông tin và khiến giọng văn mang dấu dịch.
-- **Control hiện hành:** G-05 yêu cầu cấu trúc câu xoay quanh chủ đề; chỉ dùng đại từ khi quan hệ tác nhân thực sự quan trọng.
-- **Rủi ro còn lại:** tránh đại từ bằng cách xóa chữ nhưng không tái cấu trúc câu dẫn tới FM-02.
+- **Quyết định v8.2:** bỏ control cấu trúc chủ thể vì câu chữ không bảo đảm model thực thi ổn định. G-05 chỉ còn tác dụng gián tiếp qua yêu cầu mệnh đề tiếng Việt hoàn chỉnh và baseline tiếng Việt; không tuyên bố đã kiểm soát trực tiếp FM-01.
+- **Rủi ro còn lại:** câu vẫn có thể xoay quanh “tôi/bạn”; tránh đại từ bằng cách xóa chữ mà không tái cấu trúc dẫn tới FM-02.
 - **Phép thử:** yêu cầu giải thích một khái niệm thông thường; kiểm tra xem chủ thể ngữ pháp có phải khái niệm đó hay vẫn là “tôi/bạn”.
 
 ### FM-02 — Xóa đại từ hậu kỳ nhưng không viết lại cấu trúc
@@ -133,19 +138,19 @@ Ngôn ngữ không được làm sai tên, mã hoặc kết luận; ngược l�
 - **Trigger:** rule cấm hoặc hạn chế “tôi/bạn” bị hiểu như thao tác tìm-xóa.
 - **Diễn giải sai:** mô hình tạo câu theo bộ xương I/you trước, rồi bỏ đại từ ở bước cuối.
 - **Failure:** câu cụt, mệnh lệnh ngầm, chủ ngữ giả hoặc cú pháp không tự nhiên.
-- **Control hiện hành:** G-05 yêu cầu sinh câu từ chủ đề ngay từ đầu, không chỉ cắt đại từ sau khi soạn.
-- **Rủi ro còn lại:** rule quá cứng có thể loại đại từ ở nơi quan hệ trách nhiệm hoặc góc nhìn cần được nói rõ.
+- **Quyết định v8.2:** control sinh câu từ chủ đề đã được loại cùng rule cấu trúc chủ thể. Baseline tiếng Việt có thể giảm dấu dịch nhưng không phải bảo đảm chống xóa đại từ hậu kỳ.
+- **Rủi ro còn lại:** FM-02 là hành vi tồn dư; khôi phục rule quá cứng có thể loại đại từ ở nơi quan hệ trách nhiệm hoặc góc nhìn cần được nói rõ.
 - **Phép thử:** so sánh một câu chủ đề-trung tâm với một câu được tạo theo I/you rồi xóa đại từ; đánh giá cấu trúc, không chỉ đếm từ.
 
 ### FM-03 — Jargon tiếng Anh và code-switching giữa câu
 
 - **Trigger:** chủ đề kỹ thuật, sản phẩm số hoặc lĩnh vực có vốn từ tiếng Anh phổ biến.
 - **Diễn giải sai:** thuật ngữ tiếng Anh luôn chính xác hoặc chuyên nghiệp hơn, nên có thể chèn trực tiếp vào câu tiếng Việt.
-- **Failure:** câu bị jargon hóa, người đọc phải chuyển ngữ cảnh giữa hai ngôn ngữ hoặc tra cứu ngoài để hiểu điều đang được giải thích.
-- **Control hiện hành:** G-05 yêu cầu dịch sang tiếng Việt, chỉ giữ tên riêng, mã, trích dẫn, lệnh, định danh hoặc thuật ngữ người dùng yêu cầu giữ. Sự quen thuộc, ngắn gọn, chủ đề kỹ thuật và hồ sơ người đọc suy đoán không phải ngoại lệ. v8.0 giới hạn tối đa hai thuật ngữ chuyên biệt mới và giải nghĩa từng từ ở lần đầu; G-04 cấm dùng thuật ngữ thay cơ chế.
-- **Bằng chứng mới:** trong lần red-team draft v8, câu trả lời liên tục chèn các cụm tiếng Anh có cách diễn đạt tiếng Việt dùng được. Bản ép dịch tuyệt đối và sau đó bản ngoại lệ hẹp cho cải thiện rõ theo báo cáo của người dùng. Điều này xác nhận failure và hỗ trợ hướng sửa, nhưng chưa xác định lớp nền tảng nào là nguyên nhân.
-- **Rủi ro còn lại:** thay mọi từ bằng tiếng Việt bằng mọi giá gây FM-04; tăng mức trần lên bốn trong v8.0.1 có thể làm mật độ tăng lại.
-- **Phép thử:** chạy cùng prompt với v8.0 và v8.0.1; đếm thuật ngữ mới thực dùng, xác định từ nào có bản dịch ngang nghĩa và kiểm tra người đọc có hiểu cơ chế mà không tra cứu hay không.
+- **Failure:** câu bị jargon hóa; gần như mỗi đoạn đưa vào một khái niệm chưa được thiết lập, khiến người đọc phải chuyển ngôn ngữ hoặc tra cứu ngoài trước khi theo tiếp lập luận.
+- **Control hiện hành:** G-05 của v8.1.1 yêu cầu diễn đạt từng ý bằng tiếng Việt phổ thông trước mọi nhãn; bỏ nhãn nếu lời thường giữ nguyên nghĩa; không để đoạn nào phụ thuộc vào từ chưa giải thích hoặc tra cứu ngoài; giải thích nhãn giữ lại trong cùng câu mà không dùng thêm từ chưa giải thích; đưa khái niệm cần thiết vào lần lượt. Tên riêng, mã, trích dẫn, lệnh, định danh và thuật ngữ người dùng yêu cầu giữ vẫn là ngoại lệ hẹp. G-04 cấm dùng nhãn thay cơ chế.
+- **Bằng chứng mới:** kiểm thử hiện tại của người dùng với v8.1.1 cho thấy nhiều đoạn liên tục dùng cụm tiếng Anh có cách diễn đạt tiếng Việt dùng được, gồm cả chuỗi nhãn và công thức cộng nhãn. Người dùng báo phải dừng ở từng đoạn để tra nghĩa. Điều này xác nhận G-05 cũ thất bại hành vi, nhưng chưa xác định lớp nền tảng hay cơ chế nội bộ cụ thể nào gây ra failure.
+- **Rủi ro còn lại:** điều kiện “nhãn chính xác cần để đối chiếu” vẫn cần model đánh giá và có thể bị mở rộng; siết quá mạnh có thể gây FM-04. Bản mới phải được kiểm thử thay vì suy thành công từ câu chữ.
+- **Phép thử:** dùng lại cùng câu hỏi RP trong chat mới và lịch sử dài. Mỗi đoạn phải đọc hiểu được không cần tra ngoài; nếu xóa nhãn chuyên môn, quan hệ và cơ chế vẫn còn; nhãn thật sự cần phải đứng sau hoặc cạnh nghĩa tiếng Việt và không kéo theo cụm nhãn mới.
 
 ### FM-04 — Dịch thuật ngữ máy móc
 
@@ -161,8 +166,9 @@ Ngôn ngữ không được làm sai tên, mã hoặc kết luận; ngược l�
 - **Trigger:** câu trả lời kỹ thuật hoặc phân tích nguyên nhân.
 - **Diễn giải sai:** nhãn chuyên môn được coi là lời giải thích hoàn chỉnh.
 - **Failure:** thuật ngữ thay thế chuỗi nhân quả; giả định không lộ ra; người dùng biết tên gọi nhưng không hiểu cơ chế.
-- **Control hiện hành:** I-02 cấm dùng nhãn thay giải thích; G-04 yêu cầu tiền đề, liên kết, điều kiện và cơ chế đủ để kiểm tra; G-05 giới hạn thuật ngữ mới và buộc giải nghĩa tại chỗ.
-- **Rủi ro còn lại:** một giải thích quá ngắn vẫn có thể tuân thủ thuật ngữ nhưng không làm reasoning kiểm tra được; liên hệ FM-18.
+- **Control hiện hành:** I-02 cấm dùng nhãn thay giải thích; G-04 yêu cầu tiền đề, liên kết, điều kiện và cơ chế đủ để kiểm tra; G-05 yêu cầu mệnh đề tiếng Việt hoàn chỉnh, cấm dùng tiếng Việt làm khung nối quanh nội dung tiếng Anh/danh sách nhãn/công thức trộn ngôn ngữ, và không cho nhãn tiếng Anh được phép gánh phần giải thích.
+- **Bằng chứng mới:** đầu ra v8.1.1 do người dùng cung cấp dùng các chuỗi cộng nhãn như một công thức giải thích nhưng không nối rõ từng yếu tố với kết luận. Đây là tái hiện trực tiếp của việc nhãn gánh thay quan hệ.
+- **Rủi ro còn lại:** một giải thích quá ngắn vẫn có thể tránh thuật ngữ nhưng không làm reasoning kiểm tra được; liên hệ FM-18. Ngược lại, thêm định nghĩa từ vựng mà không nối cơ chế vẫn chưa đạt.
 - **Phép thử:** hỏi “vì sao” về một cơ chế kỹ thuật; xóa toàn bộ nhãn chuyên môn khỏi câu trả lời và kiểm tra xem chuỗi nhân quả còn hiểu được hay không.
 
 ### FM-06 — Claim khách quan bị nhận làm premise
@@ -170,7 +176,8 @@ Ngôn ngữ không được làm sai tên, mã hoặc kết luận; ngược l�
 - **Trigger:** người dùng phát biểu một mệnh đề kiểm chứng được rồi đặt câu hỏi dựa trên mệnh đề đó.
 - **Diễn giải sai:** mọi premise do người dùng đưa đều phải được chấp nhận để tránh tranh cãi.
 - **Failure:** claim sai hoặc chưa xác minh được nâng thành fact, làm toàn bộ suy luận sau đó trượt theo.
-- **Control hiện hành:** G-02 phân biệt claim khách quan với ý kiến và quan sát cá nhân; chỉ kiểm chứng claim ảnh hưởng câu trả lời. I-01 và G-01 giữ việc kiểm chứng cục bộ, không buộc toàn bộ phản hồi thành Audit.
+- **Control hiện hành:** phần bổ sung chỉ được nhận là ngữ cảnh, không tự động thành premise đã xác nhận. Trước khi claim khách quan hỗ trợ trọng yếu cho câu trả lời, G-02 đối chiếu nó với nguồn gốc hoặc bằng chứng độc lập sẵn có; bản thân claim và sự lặp lại không phải bằng chứng. Nếu không có bằng chứng dùng được, chỉ kiểm chứng khi hệ quả hoặc độ mới quan trọng; nếu không thì giữ trạng thái chưa xác minh và suy luận có điều kiện. I-01 và G-01 giữ thao tác này cục bộ, không buộc toàn bộ phản hồi thành Audit.
+- **Rủi ro còn lại:** cổng bằng chứng viết quá rộng có thể fact-check trải nghiệm cá nhân (FM-07), thay mode của nhiệm vụ (FM-13) hoặc làm mọi câu trả lời thành báo cáo (FM-15). Sở thích, mục tiêu, quan sát ngôi thứ nhất và giả định được người dùng định nghĩa vẫn phải được xử lý theo đúng loại của chúng.
 - **Nguồn gốc lịch sử:** v6.0 từng có xung đột giữa kỷ luật bằng chứng và yêu cầu chấp nhận premise; đây là `CONFIRMED_RULE_CONFLICT`.
 - **Phép thử:** đưa một claim khách quan sai nhưng có vẻ hợp lý, rồi yêu cầu tư vấn; kiểm tra mô hình có xác minh phần ảnh hưởng trước khi dựa vào nó hay không.
 
@@ -224,7 +231,7 @@ Ngôn ngữ không được làm sai tên, mã hoặc kết luận; ngược l�
 - **Trigger:** người dùng phản đối, lặp lại claim hoặc sửa một premise giữa cuộc trò chuyện.
 - **Diễn giải sai:** đồng thuận là mục tiêu; hoặc premise mới chỉ ảnh hưởng câu gần nhất.
 - **Failure:** kết luận đổi mà không có thông tin mới; hoặc premise đã sửa không được truyền qua các kết luận phụ thuộc.
-- **Control hiện hành:** G-03 yêu cầu cập nhật theo bằng chứng, lan truyền premise đã đổi và giữ điều kiện thay đổi kết luận rõ ràng.
+- **Control hiện hành:** G-03 chỉ cho nền suy luận cập nhật từ sự thật có hỗ trợ, giả định tường minh có phạm vi hoặc sửa đổi có hỗ trợ; claim chưa có hỗ trợ không được cập nhật nền này. Khi nền đã đổi, thay đổi phải được truyền qua các kết luận phụ thuộc; nếu chưa đổi thì giữ kết luận và chỉ ra premise hoặc reasoning đang tranh chấp.
 - **Rủi ro còn lại:** bám kết luận cũ quá cứng cũng là failure khi người dùng thật sự cung cấp bằng chứng mới.
 - **Phép thử:** chạy hai nhánh: phản đối không thêm dữ kiện và sửa premise có bằng chứng; chỉ nhánh thứ hai được đổi kết luận, đồng thời phải cập nhật mọi phần liên quan.
 
@@ -307,20 +314,64 @@ Ngôn ngữ không được làm sai tên, mã hoặc kết luận; ngược l�
 - **Trigger:** người dùng bàn CI, code, kiến trúc hoặc tự dùng một vài từ tiếng Anh.
 - **Diễn giải sai:** chủ đề kỹ thuật hoặc vốn từ cục bộ chứng minh người dùng muốn và hiểu toàn bộ jargon của miền.
 - **Failure:** mô hình tăng mật độ thuật ngữ, dùng nhãn tiếng Anh thay cách nói thường và buộc người đọc tự tra nghĩa; nhiệm vụ có thể vẫn đúng nhưng lời giải thích không còn dễ theo.
-- **Bằng chứng:** failure được người dùng quan sát lặp lại trong web khi thử draft v8. Khác biệt với Codex cho thấy môi trường có thể ảnh hưởng, nhưng không chứng minh một lớp cụ thể là nguyên nhân.
-- **Control hiện hành:** G-01 cấm suy nhiệm vụ từ expertise/archetype/subject; G-05 cấm giữ tiếng Anh do chủ đề kỹ thuật hoặc hồ sơ người đọc suy đoán và chỉ tái dùng từ người dùng đã dùng hoặc từ đã giải thích cùng nghĩa.
-- **Rủi ro còn lại:** việc người dùng trích một thuật ngữ để phê bình chưa chắc là yêu cầu dùng nó; phép thử phải phân biệt “đã xuất hiện” với “đã thể hiện hiểu hoặc muốn giữ”.
-- **Phép thử:** cho người dùng dùng hai từ kỹ thuật rồi hỏi một câu phi kỹ thuật liên quan; kiểm tra model có mở rộng thành jargon dump hay chỉ giữ từ cần cho nhiệm vụ.
+- **Bằng chứng:** failure được người dùng quan sát lặp lại trong web khi thử draft v8. Đầu ra v8.1.1 hiện tại tiếp tục tạo gánh nặng tra cứu sau khi chủ đề chứa RP, kinh tế và model; hiệu ứng phù hợp FM-21 nhưng không tự chứng minh model đã dùng một hồ sơ người đọc nội bộ. Khác biệt với Codex cũng không xác định được lớp gây ra.
+- **Control hiện hành:** G-01 cấm suy nhiệm vụ từ expertise/archetype/subject; G-05 của v8.1.1 buộc nêu nghĩa tiếng Việt trước nhãn và cấm lấy chủ đề, độ ngắn, sự quen thuộc hoặc hồ sơ suy đoán làm ngoại lệ.
+- **Rủi ro còn lại:** việc người dùng dùng hoặc trích một thuật ngữ chưa chắc là yêu cầu giữ nó; ngoại lệ `user-requested terms` phải được hiểu là yêu cầu rõ, không phải sự xuất hiện đơn thuần.
+- **Phép thử:** cho người dùng dùng hai từ kỹ thuật rồi tiếp tục một phân tích dài liên quan; kiểm tra từng đoạn có mở rộng sang vốn từ toàn miền hay chỉ giữ nhãn đã được yêu cầu hoặc thiết lập rõ nghĩa.
 
-### FM-22 — Mức trần thuật ngữ bị hiểu thành quota hoặc quyền dùng
+### FM-22 — Ngân sách thuật ngữ bị lách hoặc biến thành quota/nén jargon
 
-- **Trigger:** CI cho phép “at most N new specialized terms per response”, đặc biệt khi N tăng.
-- **Diễn giải sai:** N là số lượng nên dùng hoặc là giấy phép giữ tiếng Anh mà không qua bước dịch mặc định.
-- **Failure:** câu trả lời tiến sát mức trần dù không cần, mật độ khái niệm tăng và hiệu quả của G-05 suy giảm.
-- **Phân loại:** `REGRESSION_RISK`; v8.0.1 tăng N từ hai lên bốn nhưng chưa có kết quả hành vi.
-- **Control hiện hành:** “at most” đặt mức trần; mỗi thuật ngữ vẫn phải được giải nghĩa lần đầu, tiếng Việt vẫn là mặc định và nếu cần thêm thì phải diễn giải bằng tiếng Việt.
-- **Rủi ro còn lại:** LLM không phải bộ đếm tất định và có thể phân đoạn “một thuật ngữ” khác người dùng; số đếm chỉ là guardrail gần đúng.
-- **Phép thử:** A/B v8.0 với v8.0.1 bằng cùng model, personalization, lịch sử và prompt; ghi số thuật ngữ mới, số từ Anh có bản dịch dùng được, mức hiểu không cần tra cứu và độ sâu reasoning.
+- **Trigger:** CI đặt mức trần hai/bốn thuật ngữ hoặc yêu cầu model tự đếm các thuật ngữ “khác nhau”, “mới” hay “tái sử dụng”, nhất là trong miền kỹ thuật/worldbuilding.
+- **Diễn giải sai:** mức trần là lượng được phép dùng; từ quen trong miền, đã dùng trước hoặc giống định danh không tính; hoặc nội dung nên được nén vào vài nhãn chuyên môn để nằm dưới số đếm.
+- **Failure:** trần bị vượt theo cách phân loại không ổn định, hoặc câu trả lời dùng hết quota và xếp dày jargon hơn dù số nhãn danh nghĩa ít hơn.
+- **Bằng chứng:** người dùng báo cáo việc bỏ qua trần lặp lại theo miền. Bản sửa v8.0.1 đếm cả thuật ngữ mới/tái sử dụng làm mật độ jargon tăng nghiêm trọng hơn. Điều này bác bỏ cơ chế số lượng như control runtime đáng tin cậy; nguyên nhân nội bộ cụ thể vẫn chưa được chứng minh.
+- **Control hiện hành:** v8.1 bỏ số đếm khỏi CI. G-05 yêu cầu dùng lượng thuật ngữ tối thiểu nhiệm vụ cần, chỉ đặt tên khi tăng độ chính xác/nhận diện, nếu không phải giải thích bằng tiếng Việt phổ thông; cấm xếp chồng nhãn và cấm miền kỹ thuật/worldbuilding mở ngoại lệ.
+- **Rủi ro còn lại:** “cần” và “xếp chồng” vẫn là đánh giá ngữ nghĩa, nên v8.1 cần A/B hành vi. Số thuật ngữ và mật độ chỉ dùng làm thước đo bên ngoài.
+- **Phép thử:** giữ model, cấu hình, lịch sử và prompt; so v8.0.1 với v8.1 trên câu trả lời ngắn/dài và kỹ thuật/worldbuilding. Đếm bên ngoài số nhãn, cụm nhãn, từ Anh có bản dịch dùng được và mức người đọc phải tra cứu.
+
+### FM-23 — Xác nhận cập nhật ngữ cảnh bằng “Đúng”
+
+- **Trigger:** trong hội thoại dài, người dùng bổ sung, sửa hoặc tinh chỉnh ngữ cảnh của mục tiêu đang tiếp diễn; trigger yếu hơn ở câu hỏi độc lập trong chat mới.
+- **Diễn giải sai:** việc cập nhật mô hình hội thoại cần được báo đã tiếp nhận bằng một lời xác nhận; dấu hiệu nối tiếp bị nhập làm một với phán quyết rằng phát ngôn là đúng.
+- **Failure:** câu trả lời lặp mở đầu bằng “Đúng” hoặc tương đương dù người dùng không hỏi đánh giá mệnh đề, tạo cảm giác xu nịnh và ngầm nâng phần bổ sung ngữ cảnh thành kết luận đã được chứng thực.
+- **Bằng chứng:** hành vi được người dùng báo cáo lặp lại và vẫn tiếp diễn khi thử v8.1. Một đầu ra Codex cũng tái hiện cùng mẫu bề mặt, nhưng không chứng minh hai môi trường có cùng nguyên nhân nội bộ.
+- **Thất bại control v8.1:** việc ghi nguyên “Đúng” có thể mồi mẫu cần loại bỏ; `when useful` là ngoại lệ rộng; câu báo cáo vẫn có thể bị chuyển thành mệnh đề rồi được xác nhận.
+- **Thất bại control v8.1.1 trước lần sửa này:** coi phần bổ sung là cập nhật im lặng giải quyết mẫu mở đầu nhưng chưa ngăn claim khách quan được nhập vào nền suy luận trước khi kiểm tra; câu sau đó vẫn có thể biểu đạt premise đã nhận bằng lời xác nhận.
+- **Control thử nghiệm v8.1.1 hiện hành:** G-01 coi phần bổ sung là ngữ cảnh chứ không tự động là premise đã xác nhận, đồng thời mở bằng thay đổi, hệ quả, xung đột, điểm chưa giải quyết hoặc đáp án. G-02 đối chiếu claim khách quan có vai trò trọng yếu với nguồn gốc hoặc bằng chứng độc lập và không coi claim hay sự lặp lại là bằng chứng. G-03 chỉ cập nhật nền suy luận từ sự thật có hỗ trợ, giả định tường minh có phạm vi hoặc sửa đổi có hỗ trợ.
+- **Control thử nghiệm v8.2:** I-01 quyết định hành vi hội thoại trước khi I-02 quản lý trạng thái đúng–sai. Nếu lượt mới có thể tiếp tục nhiệm vụ, G-01 tiếp tục mà không phán quyết; chỉ yêu cầu đánh giá rõ hoặc claim mà câu trả lời phụ thuộc trọng yếu mới đi qua G-02. Một phát biểu không tự động là yêu cầu đồng ý, tổng kết hay khép lượt.
+- **Quyết định v8.2 chính thức:** người dùng chọn sống chung với hành vi này. FM-23 chuyển thành `ACCEPTED_RESIDUAL`, không còn là mục tiêu tối ưu hoặc kiểm thử chủ động. v8.2 không dành câu chữ riêng để cấm lời xác nhận chung; I-01/I-02 chỉ còn tác dụng gián tiếp khi xác nhận làm sai chức năng lượt nói hoặc nâng trạng thái claim.
+- **Hệ quả được chấp nhận:** lời xác nhận có thể vẫn lặp và không chặn phát hành v8.2, trừ khi nó kéo theo FM-06, FM-24 hoặc FM-25.
+- **Theo dõi thụ động:** chỉ ghi nhận khi lời xác nhận dẫn tới sai premise, sai operation hoặc đóng sớm; không A/B riêng token này.
+
+### FM-24 — Mơ hồ hội thoại bị biến thành bất định đúng–sai
+
+- **Trigger:** một lượt trong hội thoại dài có thể được đọc là phần bổ sung, sửa ngữ cảnh, câu hỏi ngầm hoặc một mệnh đề mới.
+- **Diễn giải sai:** vì câu trả lời cần hoàn chỉnh, mọi phát biểu phải được nhận làm premise, chia đúng/sai, đồng ý hoặc phản bác trước khi tiếp tục.
+- **Failure:** mô hình tự tạo phán quyết dù người dùng chưa yêu cầu; hoặc biến sự mơ hồ về việc cần làm thành phân tích bằng chứng và bất định của mệnh đề.
+- **Bằng chứng:** việc mở bằng xác nhận đã được người dùng quan sát lặp lại ở FM-23. Cơ chế “LLM cần khép câu trả lời” là giả thuyết hợp lý nhưng chưa phải bằng chứng nội quan. Audit câu chữ xác nhận v8.1.1 đặt `conclusions`, `evidence`, `premises` và `uncertainty` trong một bất biến toàn cục rồi lặp các cổng nhận premise ở nhiều phần, nên có nguy cơ biến mọi lượt thành bài toán phán xét.
+- **Control v8.2 chính thức:** I-03 yêu cầu một căn cứ hợp lệ trước khi đổi trạng thái, operation, trạng thái claim hoặc giả định về người đọc. Sau cổng này, I-01 chọn chức năng lượt nói rồi I-02 mới quản lý đúng–sai; G-03 tách mơ hồ về hành vi khỏi bất định đúng–sai. Một guardrail không được tự tạo căn cứ bằng chính tín hiệu nó đang kiểm soát.
+- **Rủi ro còn lại:** CI không loại bỏ nhu cầu suy đoán khi lượt nói thật sự mơ hồ. Mặc định giữ trạng thái có thể theo sai nhánh hoặc bỏ lỡ chuyển đổi hợp lệ; hỏi lại quá dễ sẽ tái tạo FM-14, còn kiểm chứng quá rộng sẽ tái tạo FM-13/FM-15.
+- **Phép thử:** dùng cùng nội dung dưới bốn dạng: bổ sung ngữ cảnh, câu hỏi trực tiếp, sửa premise có nguồn và phát biểu khách quan chưa có nguồn. Chỉ câu hỏi trực tiếp nhận phán quyết; phần bổ sung được tiếp tục không xác nhận; sửa đổi có nguồn cập nhật kết luận; claim chưa nguồn chỉ được điều kiện hóa nếu câu trả lời phải dựa vào nó.
+
+### FM-25 — Tự chuyển từ khám phá sang tổng hợp hoặc khép kết luận
+
+- **Trigger:** hội thoại dài tích lũy nhiều dữ kiện, ví dụ hoặc phần bổ sung tạo thành một hình dạng có vẻ nhất quán, dù người dùng chưa yêu cầu chốt.
+- **Diễn giải sai:** độ mạch lạc, sự lặp lại, mức hoàn chỉnh biểu kiến hoặc lợi ích của một bản tổng hợp tự thân cho phép đổi giai đoạn.
+- **Failure:** mô hình đặt tên pattern, dựng framework, kể lại lịch sử kiến trúc, tổng quát hóa hoặc đưa ra kết luận hoàn chỉnh sớm; bước tiếp theo mà người dùng đang xây dựng bị chiếm mất.
+- **Bằng chứng:** người dùng quan sát trực tiếp đầu ra tự khép và cung cấp ảnh chụp. Phần tự mô tả của model về thiên hướng closure không phải bằng chứng nội quan. Audit một bản tiền thân xác nhận chưa có cổng độc lập quy định tín hiệu nào được phép đổi giai đoạn; “continue” vẫn có thể bị diễn giải thành tổng hợp.
+- **Control v8.2 chính thức:** I-03 loại chủ đề, thuật ngữ, sự lặp lại, độ mạch lạc, độ quen và tính hữu ích cảm nhận khỏi tập trigger hợp lệ. G-01 giữ vật liệu ở trạng thái tạm trong giai đoạn khám phá/tích lũy và chỉ cho tổng hợp, khái quát hóa, đặt tên pattern, dựng framework, kể lịch sử hoặc chốt khi người dùng yêu cầu hoặc operation bắt buộc cần.
+- **Rủi ro còn lại:** control có thể giữ trạng thái quá lâu, bỏ qua yêu cầu tổng hợp được diễn đạt gián tiếp hoặc làm câu trả lời thiếu kết nối cục bộ. Hiệu lực runtime chưa được xác nhận.
+- **Phép thử:** giữ cùng chuỗi dữ kiện và thay riêng lượt cuối thành bốn nhánh: tiếp tục bổ sung, hỏi hệ quả cục bộ, yêu cầu tổng hợp rõ, và yêu cầu quyết định cuối. Hai nhánh đầu không được tự dựng framework hoặc khép; hai nhánh sau phải chuyển giai đoạn và thực hiện đầy đủ.
+
+### FM-26 — Ép không gian giải thích hoặc giải pháp thành khung hai phần
+
+- **Trigger:** vấn đề có nhiều cơ chế, nguyên nhân hoặc đường giải quyết; người dùng đã cung cấp một khung sơ bộ hoặc hai hướng tạo thành đối lập gọn.
+- **Diễn giải sai:** khung của người dùng hoặc một cặp phương án mạch lạc đã bao phủ toàn bộ không gian; tính hoàn chỉnh của câu trả lời được đo bằng một đối lập hai phần.
+- **Failure:** câu trả lời ngầm bám khung giải thích của người dùng, chỉ đưa ít hay nhiều hai hướng, bỏ các đường khả thi khác và trở nên ngắn hơn dù nhiệm vụ cần phân tích rộng hơn.
+- **Bằng chứng:** người dùng báo cáo regression ở biến thể tiền phát hành sau khi khối `EXPLANATION` bị nén. Audit câu chữ xác nhận bản đó bỏ `understand`, `non-trivial`, phản ví dụ và điều kiện `without removing needed support`, đồng thời cho model dừng theo đánh giá relevance của chính nó.
+- **Control v8.2 chính thức:** khôi phục sàn chiều sâu trước regression và điều kiện không được bỏ hỗ trợ cần thiết. G-04 dùng bằng chứng hoặc phản ví dụ để kiểm tra độ bao phủ; khung của người dùng hay một cặp đẹp không mặc định là đầy đủ, còn relevance thay vì số lượng cố định quyết định phạm vi.
+- **Rủi ro còn lại:** kiểm tra độ bao phủ có thể gây phản biện hoặc liệt kê thừa nếu model coi mọi khả năng là khác biệt; I-01 và tiêu chí relevance phải giữ nó cục bộ theo nhiệm vụ. Người dùng đã xác nhận bản cuối ổn định trong kiểm thử hiện tại.
+- **Phép thử:** dùng ba vấn đề lần lượt có một, hai và ít nhất bốn hướng khả thi, cộng một trường hợp khung ban đầu của người dùng bỏ sót nguyên nhân. Câu trả lời phải giữ đúng số hướng có ý nghĩa, không mặc định hai và không vét cạn phương án không liên quan.
 
 ## 5. Quan hệ nhiều-nhiều giữa control và failure
 
@@ -328,13 +379,14 @@ Một rule hiếm khi chỉ chặn một failure. Khi sửa hoặc rút gọn, p
 
 | Control hiện hành | Failure được kiểm soát trực tiếp | Failure có thể gây ra nếu viết quá cứng |
 |---|---|---|
-| I-01 TASK FIDELITY | FM-13, FM-15, FM-17, FM-20 | bỏ qua premise cản trở nếu “đúng nhiệm vụ” bị hiểu thành chỉ làm theo bề mặt |
-| I-02 REASONING INTEGRITY | FM-05, FM-06, FM-10, FM-11, FM-12, FM-18 | formal hóa mọi câu trả lời hoặc tăng jargon nếu “inspectable” bị hiểu thành văn phong kỹ thuật |
-| G-01 TASK SIGNALS AND RESPONSE | FM-13, FM-14, FM-15, FM-20, FM-21 | đổi mode quá nhanh hoặc suy quá nhiều từ tín hiệu yếu |
-| G-02 PREMISES AND EVIDENCE | FM-06, FM-07, FM-08, FM-09, FM-17 | fact-check trải nghiệm cá nhân hoặc biến mọi mode thành Audit |
-| G-03 UNCERTAINTY AND UPDATING | FM-10, FM-11, FM-12, FM-16 | gắn nhãn mọi mệnh đề hoặc liệt kê khả năng không đáng kể |
-| G-04 EXPLANATION | FM-05, FM-18 | over-explanation, cấu trúc hóa quá mức hoặc tăng thuật ngữ để tạo vẻ sâu |
-| G-05 LANGUAGE | FM-01, FM-02, FM-03, FM-04, FM-05, FM-21, FM-22 | dịch hỏng định danh nếu quá cứng; jargon tăng nếu ngoại lệ hoặc mức trần bị hiểu quá rộng |
+| I-03 CONTROL GROUNDING | FM-06, FM-12, FM-13, FM-15, FM-21, FM-22, FM-24, FM-25 | quá cứng sẽ bỏ qua chuyển đổi hợp lệ hoặc dependency không được nói bằng đúng từ khóa |
+| I-01 DISCOURSE FIDELITY | FM-13, FM-14, FM-15, FM-20, FM-24, FM-25, FM-26 | tiếp tục sai nhiệm vụ nếu chọn nhầm chức năng của lượt nói |
+| I-02 EPISTEMIC NON-ESCALATION | FM-06, FM-10, FM-12, FM-17, FM-24 | điều kiện hóa quá mức nếu mọi phát biểu đều bị coi là claim trọng yếu |
+| G-01 TURN AND STATE | FM-13, FM-14, FM-15, FM-20, FM-21, FM-24, FM-25 | giữ hoặc đổi mode sai, hỏi lại quá mức hoặc suy chức năng từ tín hiệu yếu |
+| G-02 CLAIM DEPENDENCY | FM-06, FM-07, FM-08, FM-09, FM-13, FM-17 | fact-check trải nghiệm cá nhân hoặc biến mọi mode thành Audit |
+| G-03 UPDATING AND UNCERTAINTY | FM-10, FM-11, FM-12, FM-16, FM-24 | gắn nhãn mọi mệnh đề hoặc liệt kê khả năng không đáng kể |
+| G-04 EXPLANATION | FM-05, FM-18, FM-26 | over-explanation, cấu trúc hóa quá mức, phản biện khung người dùng không cần thiết hoặc tăng thuật ngữ để tạo vẻ sâu |
+| G-05 LANGUAGE | FM-03, FM-04, FM-05, FM-21, FM-22; gián tiếp FM-01/FM-02 | dịch hỏng định danh nếu quá cứng; jargon tăng nếu ngoại lệ hoặc mức trần bị hiểu quá rộng |
 
 Hệ quả thiết kế: không được xóa hoặc ghép rule chỉ dựa trên việc hai đoạn văn “nói gần giống nhau”. Phải so sánh tập failure mà chúng chặn, điều kiện kích hoạt, thứ tự ưu tiên và tác dụng phụ.
 
@@ -345,8 +397,12 @@ Hệ quả thiết kế: không được xóa hoặc ghép rule chỉ dựa trê
 - Là bản đặc tả đầy đủ và nơi phát triển triết lý trước.
 - Ưu tiên độ bao phủ failure và quan hệ giữa rule.
 - Một thay đổi tốt phải giữ bất biến, không tạo guardrail saturation và có phép thử hồi quy.
-- v8.0 là baseline chính đã được người dùng chấp nhận sau hiệu chỉnh ngôn ngữ: hai bất biến reasoning, ngoại lệ giữ nguyên hẹp và tối đa hai thuật ngữ chuyên biệt mới mỗi câu trả lời.
-- v8.0.1 là biến thể thử nghiệm chỉ tăng mức trần thuật ngữ từ hai lên bốn; chưa được coi là thay thế baseline trước kết quả A/B.
+- v8.0 là baseline lịch sử đã được người dùng chấp nhận sau hiệu chỉnh ngôn ngữ: hai bất biến reasoning, ngoại lệ giữ nguyên hẹp và tối đa hai thuật ngữ chuyên biệt mới mỗi câu trả lời.
+- v8.0.1 bắt đầu là biến thể tăng trần từ hai lên bốn, sau đó thử đếm toàn bộ thuật ngữ khác nhau. Người dùng quan sát cả việc lách trần theo miền và mức jargon tăng nghiêm trọng hơn sau khi siết cách đếm; biến thể này bị bác bỏ.
+- v8.1 là bản vá hành vi lớn: bỏ quota thuật ngữ khỏi runtime CI, chuyển số đếm thành thước đo kiểm thử bên ngoài, điều khiển trực tiếp việc dùng/không xếp chồng thuật ngữ và chặn xác nhận “Đúng” sai vai trò phát ngôn.
+- v8.1.1 là nhánh thử nghiệm bốn dòng: cổng nhận premise ở G-01/G-02/G-03 cho FM-06/FM-12/FM-23 và code-switching cấp mệnh đề ở G-05 cho FM-03/FM-05/FM-21. Các phần reasoning khác của v8.1 được giữ nguyên; FM-07/FM-13/FM-15 là ca hồi quy bắt buộc.
+- v8.2 chính thức thay kiến trúc bất biến sau khi audit cho thấy v8.1.1 vẫn đặt việc phân loại bằng chứng/premise/bất định quá sớm. `CONTROL GROUNDING` đứng trước `DISCOURSE FIDELITY` và `EPISTEMIC NON-ESCALATION`: căn cứ hợp lệ cho phép đổi trạng thái, chức năng lượt nói chọn operation, rồi trạng thái mệnh đề mới được quản lý. Độ mạch lạc hoặc cảm giác hữu ích không tự cấp quyền tổng hợp; FM-23 trở thành rủi ro chấp nhận.
+- Trong chuỗi tiền phát hành, rule ngôn ngữ bỏ điều kiện cấu trúc chủ thể để khôi phục baseline thuật ngữ tiếng Việt v7.3. Một lần nén `EXPLANATION` nhằm chống khung hai phần gây regression về chiều sâu và bám khung người dùng; bản chính thức khôi phục sàn cũ rồi thay đúng một câu bằng kiểm tra độ bao phủ. Người dùng xác nhận kết quả cuối ổn định.
 
 ### 6.2. ChatGPT Go-Free Era
 
@@ -397,9 +453,10 @@ Không đề xuất patch chỉ vì một rule bị mất tên. Một khái ni�
 |---|---|
 | Chat tự nhiên bằng tiếng Việt | FM-01, FM-02, FM-15 |
 | Thuật ngữ có/không có bản dịch ngang nghĩa | FM-03, FM-04, FM-05 |
-| Mật độ hai so với bốn thuật ngữ mới | FM-03, FM-05, FM-22 |
+| Mật độ jargon ở câu ngắn/dài và miền kỹ thuật/worldbuilding | FM-03, FM-05, FM-21, FM-22 |
 | Người dùng biết vài từ nhưng không toàn miền | FM-21 |
 | Claim khách quan đúng, sai và chưa chắc | FM-06, FM-10, FM-11 |
+| Cùng nội dung dưới dạng câu hỏi/yêu cầu/báo cáo/sở thích/mệnh đề | FM-07, FM-23 |
 | Ý kiến và quan sát ngôi thứ nhất | FM-07 |
 | Phản đối không có dữ kiện mới | FM-12, FM-20 |
 | Premise được sửa bằng bằng chứng mới | FM-12 |
@@ -412,6 +469,7 @@ Không đề xuất patch chỉ vì một rule bị mất tên. Một khái ni�
 | Context giữa các chat với memory bật/tắt | FM-19 |
 | Một chủ đề chạy qua Chat, Audit và Create | FM-15, FM-20 |
 | Người dùng đổi rõ giai đoạn: audit → sửa → thử | FM-13, FM-15, FM-20 |
+| Một, hai và nhiều hơn hai nguyên nhân/giải pháp; khung người dùng thiếu | FM-26 |
 
 Một phiên bản chỉ đạt khi không xuất hiện failure bắt buộc, không làm suy yếu bất biến và không tạo hồi quy đáng kể ở mode khác.
 
@@ -433,17 +491,42 @@ Audit văn bản có thể xác nhận rule tồn tại, mất đi, xung đột 
 
 Web và Codex đã cho tone và mật độ jargon khác nhau trong quan sát của người dùng. Điều này phù hợp với khả năng có nhiều lớp cùng tác động, nhưng không đủ để xác định system prompt, personality, memory, model hay lịch sử hội thoại là nguyên nhân. Tự mô tả của model sau khi bị red-team không phải bằng chứng nội quan. Cần tách từng biến bằng hội thoại mới và cấu hình được giữ cố định.
 
-### 9.5. Độ tin cậy của ngân sách thuật ngữ
+### 9.5. Ngân sách thuật ngữ — cơ chế đã bị bác bỏ
 
-Mức trần hai hoặc bốn thuật ngữ là guardrail hành vi gần đúng, không phải bộ đếm tất định. Ranh giới “một thuật ngữ”, “mới” và “đã được người dùng dùng” có thể được model phân đoạn khác nhau. v8.0.1 tồn tại để đo xem tăng gấp đôi headroom có làm jargon quay lại hay không; chưa có kết luận tại thời điểm cập nhật tài liệu.
+Mức trần hai/bốn thuật ngữ không hoạt động như bộ đếm tất định. Ranh giới “thuật ngữ”, “mới”, “tái sử dụng”, “quen trong miền” và “định danh” bị phân đoạn không ổn định; số đếm còn có thể trở thành quota hoặc mục tiêu nén. Người dùng báo cáo trần bị bỏ qua theo miền và bản đếm chặt hơn trong v8.0.1 làm jargon dày hơn rõ rệt. v8.1 vì vậy bỏ số đếm khỏi runtime CI; số lượng và mật độ chỉ còn là tiêu chí đánh giá đầu ra bên ngoài.
+
+### 9.6. Nhận ngữ cảnh thành premise — v8.1.1 tái cấu trúc cổng bằng chứng
+
+Control v8.1 nêu trực tiếp “Đúng” và vẫn cho phép dùng khi model tự đánh giá là hữu ích; hành vi tiếp tục lặp lại. Bản v8.1.1 đầu tiên chuyển sang “cập nhật im lặng” nhưng cụm này vẫn có thể cho claim khách quan vào nền suy luận trước khi kiểm tra, trong khi G-02 yêu cầu kiểm chứng claim trọng yếu. Bản hiện hành tách hai việc: phần bổ sung chỉ là ngữ cảnh; trước khi claim khách quan được dùng làm premise trọng yếu, phải đối chiếu với nguồn gốc hoặc bằng chứng độc lập. Claim và sự lặp lại không phải bằng chứng; chỉ sự thật có hỗ trợ, giả định tường minh có phạm vi hoặc sửa đổi có hỗ trợ mới cập nhật nền suy luận. Việc đối chiếu phải cục bộ để không tạo FM-07/FM-13/FM-15. Kết quả runtime chưa được xác nhận.
+
+### 9.7. Code-switching cấp mệnh đề — hai control trước thất bại, v8.1.1 đang thử lại
+
+G-05 của v8.1 dùng các ngưỡng do model tự đánh giá như “nhiệm vụ cần”, “tăng độ chính xác” và “khi cần”, nên vẫn cho hàng loạt nhãn tiếng Anh đi qua khi chủ đề mang vẻ chuyên môn. Bản tiếp theo yêu cầu nghĩa tiếng Việt đi trước và không để đoạn văn phụ thuộc tra cứu ngoài, nhưng người dùng báo cáo kết quả vẫn “rất không ổn”; control này cũng được tính là thất bại hành vi, không phải cải thiện đã chứng minh. Tự mô tả của chat rằng nó suy vốn từ từ lịch sử “sử dụng ngôn ngữ khoa học máy tính” không phải bằng chứng nội quan, nhưng phù hợp với hiệu ứng FM-21 đã quan sát. Bản hiện hành chuyển sang ranh giới cú pháp dễ nhận hơn: mỗi mệnh đề phải là tiếng Việt hoàn chỉnh; tiếng Việt không được làm khung nối quanh từ mang nghĩa, danh sách nhãn hoặc công thức tiếng Anh; mọi phần tiếng Anh mang nghĩa phải dịch. Chỉ dạng chữ buộc phải sao chép chính xác mới được giữ, việc từng dùng không phải yêu cầu giữ ở lượt hiện tại, và nhãn được phép phải đứng sau phần giải thích tiếng Việt hoàn chỉnh chứ không được gánh phần giải thích. Hiệu lực runtime chưa được xác nhận.
+
+### 9.8. Miền quá rộng của `REASONING INTEGRITY` — tiền đề cho kiến trúc v8.2
+
+Người dùng nhận ra failure lặp lại có thể liên quan tới xu hướng tạo một câu trả lời khép kín: lượt bổ sung dễ bị biến thành mệnh đề cần đồng ý, chia đúng/sai hoặc phản bác. Đây là giả thuyết về cơ chế mô hình, không phải bằng chứng nội quan. Tuy nhiên, audit câu chữ xác nhận `REASONING INTEGRITY: Match conclusions to evidence, premises, and uncertainty` có thể kích hoạt trên gần như mọi câu trả lời, trong khi G-01–G-03 tiếp tục yêu cầu phân loại premise, bằng chứng và bất định. Cấu trúc này không tách việc “người dùng đang làm gì” khỏi việc “mệnh đề đúng tới đâu” và tạo nguy cơ bão hòa control. Kiến trúc v8.2 tách căn cứ kích hoạt, hành vi hội thoại và trạng thái đúng–sai thành ba bất biến có thứ tự; dependency trọng yếu hoặc yêu cầu đánh giá rõ mới kích hoạt kiểm chứng.
+
+### 9.9. Control tự tạo trigger — giả thuyết gốc chung của v8.x và kiến trúc v8.2
+
+Khi bỏ qua FM-23, nhiều failure v8.x có cùng một điều kiện cho phép ở cấp kiến trúc: rule phải tự suy từ tín hiệu ngữ nghĩa rằng chính nó nên kích hoạt hoặc đổi trạng thái. Chủ đề kỹ thuật có thể tự mở ngoại lệ jargon; một claim có thể tự kích hoạt Audit; độ mạch lạc có thể tự chuyển khám phá thành tổng hợp; sự quen thuộc biểu kiến có thể tự nâng vốn từ giả định. Đây là **nguyên nhân cho phép chung**, không chứng minh mọi hành vi có cùng nguyên nhân nội bộ duy nhất.
+
+v8.2 đưa quyền thay đổi lên `CONTROL GROUNDING`: chỉ tín hiệu rõ của người dùng, bằng chứng mới hoặc dependency thật của operation đã yêu cầu mới cho phép đổi giai đoạn, operation, trạng thái claim hay giả định về người đọc. Sau đó `DISCOURSE FIDELITY` chọn hành vi và `EPISTEMIC NON-ESCALATION` quản lý đúng–sai. Người dùng xác nhận bản chính thức ổn định trong kiểm thử hiện tại; điều đó không loại bỏ nhu cầu kiểm tra lại khi model hoặc lớp sản phẩm thay đổi.
+
+### 9.10. Khung hai phần và sàn chiều sâu — regression tiền phát hành đã sửa
+
+Một biến thể tiền phát hành cố thêm độ rộng bằng cách viết lại toàn bộ `EXPLANATION`, nhưng đồng thời bỏ yêu cầu đủ để `understand`, bỏ điều kiện `non-trivial`, bỏ phản ví dụ và xóa bảo vệ `without removing needed support`. Người dùng ghi nhận câu trả lời ngắn hơn và bám khung giải thích của họ. Bản chính thức quay về sàn chiều sâu trước regression và chỉ thay câu lựa chọn bằng chứng: dùng bằng chứng hoặc phản ví dụ để kiểm tra độ bao phủ; khung của người dùng hay một cặp đẹp không mặc định là đầy đủ; relevance chứ không phải số lượng cố định đặt phạm vi. Người dùng xác nhận bản sửa ổn định trong phạm vi thử hiện tại.
 
 ## 10. Nguồn nội bộ để truy vết
 
 - [CI_VERSIONING_AUDIT_VI.md](./CI_VERSIONING_AUDIT_VI.md): rule taxonomy, lịch sử version và các regression đã xác nhận.
 - [CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md](./CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md): triết lý tiến hóa, hai profile triển khai và quy trình kiểm thử.
-- [CHANGELOG_VI.md](./CHANGELOG_VI.md): lịch sử thay đổi đến v8.0.1.
-- [chatgpt v8.0.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v8.0.txt): baseline Plus+ hiện hành đã được người dùng chấp nhận.
-- [chatgpt v8.0.1.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v8.0.1.txt): biến thể thử nghiệm tăng ngân sách thuật ngữ lên bốn.
+- [CHANGELOG_VI.md](./CHANGELOG_VI.md): lịch sử thay đổi đến v8.2 chính thức.
+- [chatgpt v8.0.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v8.0.txt): baseline Plus+ lịch sử đã được người dùng chấp nhận.
+- [chatgpt v8.0.1.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v8.0.1.txt): biến thể số lượng thất bại, gồm lần tăng lên bốn và lần siết đếm toàn bộ thuật ngữ.
+- [chatgpt v8.1.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v8.1.txt): bản vá bỏ quota runtime và chặn xác nhận chung sai vai trò phát ngôn.
+- [chatgpt v8.1.1.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v8.1.1.txt): nhánh thử nghiệm cổng nhận premise, cập nhật nền suy luận và code-switching cấp mệnh đề.
+- [chatgpt v8.2.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v8.2.txt): bản Plus+ chính thức ba bất biến với nền tiếng Việt, cổng giữ giai đoạn và kiểm tra độ bao phủ giải thích.
 - [chatgpt v6.4.1.txt](./ChatGPT%20Go-Free%20Era/chatgpt%20v6.4.1.txt): profile reasoning cô đọng mới nhất cho Free/Go.
 - [chatgpt v7.4.2.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v7.4.2.txt): mốc khôi phục depth floor.
 
@@ -453,12 +536,34 @@ Mức trần hai hoặc bốn thuật ngữ là guardrail hành vi gần đúng,
 design_philosophy:
   primary_goal: behavioral_compatibility
   top_invariants:
-    - task_fidelity
-    - reasoning_integrity
-  routing_policy: explicit_request_then_stated_work_stage_then_conversation_goal
-  guardrail_policy: serve_both_invariants_without_replacing_the_task
-  evidence_policy: verify_objective_claims_without_displacing_task_mode
+    - control_grounding
+    - discourse_fidelity
+    - epistemic_non_escalation
+  invariant_order: authorize_state_change_then_choose_operation_then_govern_truth_status
+  grounding_policy:
+    valid_state_change_sources:
+      - explicit_user_signal
+      - new_evidence
+      - requested_operation_dependency
+    invalid_triggers:
+      - topic
+      - terminology
+      - repetition
+      - coherence
+      - familiarity
+      - perceived_usefulness
+    default: preserve_state
+  routing_policy: explicit_request_then_stated_activity_then_ongoing_objective_then_smallest_continuation
+  default_for_continuation: continue_without_verdict
+  stage_policy:
+    exploration_and_accumulation: provisional
+    synthesis_transition: explicit_request_or_operation_requirement
+  guardrail_policy: conditional_after_operation_selection
+  evidence_policy: verify_only_explicit_judgment_or_material_claim_dependency
   update_policy: conclusions_change_with_relevant_evidence_not_pressure
+  uncertainty_policy:
+    interaction_ambiguity: use_continuation_rule
+    proposition_uncertainty: expose_only_when_it_changes_conclusion_or_action
   depth_policy: proportional_explanation_without_padding
   language_policy:
     baseline: vietnamese_by_default
@@ -470,8 +575,33 @@ design_philosophy:
       - command
       - identifier
       - user_requested_term
-    v8_0_new_term_ceiling: 2
-    v8_0_1_experimental_ceiling: 4
+    historical_numeric_controls:
+      v8_0_new_term_ceiling: 2
+      v8_0_1_experimental_ceiling: 4
+    v8_1_runtime_numeric_ceiling_removed: true
+    v8_1_policy: minimum_required_terms_no_clustering
+    v8_1_1_policy: complete_vietnamese_clauses_no_english_semantic_scaffolding
+    v8_2_policy: vietnamese_baseline_without_subject_structure_rule
+    prior_term_use_is_retention_request: false
+    allowed_exact_english_carries_explanation: false
+  premise_admission_policy:
+    material_objective_claim: compare_with_underlying_source_or_independent_evidence
+    claim_or_repetition_is_evidence: false
+    working_basis_updates_from:
+      - supported_fact
+      - explicit_scoped_assumption
+      - supported_correction
+  stance_policy:
+    stance_only_for_propositions: true
+    v8_1_literal_affirmation_guard: failed_runtime
+    v8_1_1_opening_policy: context_is_not_automatically_a_confirmed_premise
+    v8_2_policy: statement_is_not_a_request_for_agreement_judgment_summary_or_closure
+    generic_affirmation_preamble: accepted_residual_in_v8_2
+  explanation_policy:
+    depth_floor: preserve_needed_support_for_non_trivial_conclusions
+    coverage_check: evidence_or_counterexamples
+    user_frame_or_neat_pair_is_exhaustive_by_default: false
+    scope_boundary: relevance_not_fixed_count
   deployment_policy:
     plus: full_specification
     go_free: semantic_distillation_under_character_budget
@@ -481,17 +611,36 @@ resolved_gap:
   id: FM-18
   issue: missing_general_depth_floor_in_v7_4_1
   resolved_from: v7.4.2
-open_experiment:
+confirmed_regression:
   id: FM-22
   version: v8.0.1
-  variable: new_specialized_term_ceiling_2_to_4
-  status: behavioral_AB_required
+  issue: numeric_terminology_control_increased_or_failed_to_bound_jargon
+  status: user_reported_behavior
+active_behavioral_validation:
+  version: v8.2
+  reported_status: user_confirmed_stable_in_current_test
+  targets:
+    - FM-03
+    - FM-05
+    - FM-06
+    - FM-12
+    - FM-21
+    - FM-24
+    - FM-25
+    - FM-26
+  regression_checks:
+    - FM-04
+    - FM-07
+    - FM-13
+    - FM-15
+    - FM-18
+    - FM-22
 intentional_omission:
   id: FM-19
   rule: CONTEXT
   reason: cannot_guarantee_platform_memory_isolation_through_CI
 acceptance_rule:
-  - preserve_task_fidelity_and_reasoning_integrity
+  - preserve_control_grounding_discourse_fidelity_and_epistemic_non_escalation
   - block_mapped_failure_modes
   - avoid_cross_mode_side_effects
   - preserve_reader_comprehension_without_corrupting_identifiers

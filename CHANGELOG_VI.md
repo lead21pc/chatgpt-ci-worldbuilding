@@ -354,10 +354,77 @@
 
 ### Thay đổi thử nghiệm
 
-- Tăng gấp đôi ngân sách thuật ngữ chuyên biệt mới từ hai lên bốn mỗi câu trả lời; toàn bộ câu chữ CI khác không đổi.
+- Ban đầu tăng gấp đôi ngân sách thuật ngữ chuyên biệt mới từ hai lên bốn mỗi câu trả lời và giữ nguyên toàn bộ câu chữ CI khác.
 - Giữ mặc định dịch sang tiếng Việt, ngoại lệ hẹp, giải nghĩa ở lần đầu và lệnh cấm suy vốn từ từ chủ đề kỹ thuật hoặc hồ sơ người đọc suy đoán.
+- Một lần sửa tiếp trong cùng phiên bản chuyển sang đếm bốn thuật ngữ chuyên biệt khác nhau trên toàn câu trả lời và thêm chốt phân loại phát ngôn. Kiểm thử của người dùng cho thấy cách đếm chặt hơn làm mật độ jargon tăng mạnh; trạng thái thất bại này được giữ làm v8.0.1 và bị v8.1 thay thế.
 
 ### Ranh giới kiểm chứng
 
-- Kiểm tra cấu trúc đạt 4.992 ký tự, CRLF và không có BOM UTF-8.
-- Hành vi runtime vẫn đang A/B test; mức trần bốn thuật ngữ có thể bị hiểu thành quyền dùng hoặc mục tiêu dùng thay vì chỉ là giới hạn tối đa.
+- Biến thể cô lập ban đầu đạt kiểm tra cấu trúc ở 4.992 ký tự; bản sửa thất bại sau đó đạt 4.977 ký tự. Cả hai dùng CRLF và không có BOM UTF-8.
+- Kiểm thử hành vi đã bác bỏ mức trần số lượng như một control đáng tin cậy: nó có thể bị lách qua cách phân loại miền/tái sử dụng hoặc bị hiểu thành quyền dùng, mục tiêu nén hay quota.
+
+## v8.1
+
+### Bản vá hành vi lớn
+
+- Bỏ mức trần hai/bốn thuật ngữ khỏi runtime CI. Số đếm chỉ còn là thước đo đánh giá bên ngoài, không phải phép phân loại ngữ nghĩa mà model phải tự thực hiện.
+- Thay tự đếm bằng hành vi trực tiếp: chỉ dùng thuật ngữ nhiệm vụ cần, chỉ đặt tên khái niệm khi tên chính xác cải thiện độ chính xác hoặc khả năng nhận diện, nếu không thì giải thích bằng tiếng Việt phổ thông, và không xếp chồng nhãn chuyên biệt. Miền kỹ thuật và worldbuilding không làm mềm rule này.
+- Thêm chốt phân loại phát ngôn: câu hỏi, yêu cầu, báo cáo và sở thích cần câu trả lời hoặc hành động, không cần sự đồng ý. Chỉ được mở bằng “Đúng” khi xác nhận một mệnh đề có căn cứ là hữu ích, không dùng làm lời xác nhận chung.
+
+### Phân loại failure
+
+- Nâng FM-22 từ nguy cơ hồi quy thành hồi quy hành vi do người dùng báo cáo ở v8.0.1 và loại bỏ control số lượng trong v8.1.
+- Thêm FM-23 cho việc tự động xác nhận do coi phát ngôn không phải mệnh đề là claim đang chờ đồng ý.
+
+### Ranh giới kiểm chứng
+
+- Kiểm tra cấu trúc đạt 4.956 ký tự, CRLF, có CRLF cuối file, không có khoảng trắng cuối dòng và không có BOM UTF-8.
+- Kiểm thử của người dùng cho thấy mật độ jargon đã cải thiện đối với FM-22, nhưng cách mở bằng “Đúng” vẫn lặp lại; FM-23 vì vậy thất bại ở runtime v8.1.
+
+## v8.1.1
+
+### Nhánh thử nghiệm
+
+- Ban đầu chỉ thay control mở đầu so với v8.1, giữ nguyên cơ chế reasoning để so sánh có kiểm soát.
+- Bỏ chuỗi “Đúng” và quyền dùng nó khỏi CI. Câu trả lời phải bắt đầu bằng câu trả lời, hành động hoặc phát hiện cụ thể; không được mở màn bằng đồng ý, xác nhận, khen hay nhắc lại lời người dùng.
+- Khi người dùng hỏi rõ một mệnh đề có đúng không, câu trả lời phải dựa trên bằng chứng; ngoài trường hợp đó không lấy lập trường làm câu mở đầu.
+- Nhận diện trigger sâu hơn trong hội thoại dài: coi phần bổ sung là cập nhật im lặng vẫn có thể đưa claim khách quan vào nền suy luận trước khi kiểm tra, rồi truyền nó sang các kết luận sau.
+- Thay việc tự động nhận premise bằng cổng bằng chứng. Phần bổ sung chỉ là ngữ cảnh, chưa phải premise đã xác nhận; claim khách quan có vai trò trọng yếu phải được đối chiếu với nguồn gốc hoặc bằng chứng độc lập, còn bản thân claim và sự lặp lại không phải bằng chứng.
+- Chỉ cập nhật nền suy luận bằng sự thật có hỗ trợ, giả định tường minh có phạm vi, hoặc sửa đổi có hỗ trợ; chỉ sau đó mới truyền thay đổi qua các kết luận phụ thuộc.
+- Kiểm thử của người dùng sau đó tái hiện việc phải dừng tra cứu ở gần như mỗi đoạn: các nhãn tiếng Anh chưa dịch và cụm nhãn gánh phần lập luận dù v8.1 đã cấm thuật ngữ không cần thiết và việc buộc người đọc tra ngoài.
+- Cách viết nghĩa tiếng Việt trước/không phụ thuộc tra ngoài sau đó cũng thất bại trong kiểm thử hành vi của người dùng, nên đã được thay chứ không được coi là đạt.
+- Control ngôn ngữ mới hoạt động ở cấp mệnh đề: viết mệnh đề tiếng Việt hoàn chỉnh; không dùng ngữ pháp tiếng Việt làm khung nối quanh nội dung tiếng Anh, danh sách nhãn hoặc công thức trộn ngôn ngữ; dịch phần tiếng Anh mang nghĩa và chỉ giữ nguyên tiếng Anh khi thật sự phải sao chép đúng dạng. Việc từng dùng một từ không phải yêu cầu hiện tại phải giữ nó; nhãn được phép chỉ đứng sau lời giải thích tiếng Việt hoàn chỉnh và không được gánh phần giải thích.
+
+### Ranh giới kiểm chứng
+
+- Kiểm tra cấu trúc đạt 4.903 ký tự, CRLF, có CRLF cuối file, không có khoảng trắng cuối dòng và không có BOM UTF-8.
+- So sánh v8.1→v8.1.1 chỉ thay các dòng 14, 22, 28 và 40. Các control premise mới vẫn đang thử với FM-06/FM-12/FM-23; control ngôn ngữ cấp mệnh đề vẫn đang thử với FM-03/FM-05/FM-21. FM-04, FM-07, FM-13, FM-15 và failure của control số lượng đã loại bỏ ở FM-22 vẫn là ca hồi quy.
+
+## v8.2
+
+### Bản phát hành chính thức với ba bất biến
+
+- Thay cặp bất biến rộng `TASK FIDELITY` và `REASONING INTEGRITY` bằng ba bất biến có thứ tự: `CONTROL GROUNDING`, `DISCOURSE FIDELITY` và `EPISTEMIC NON-ESCALATION`.
+- Yêu cầu căn cứ hợp lệ trước khi đổi giai đoạn nhiệm vụ, thao tác hội thoại, trạng thái claim hoặc giả định về người đọc. Chủ đề, thuật ngữ, sự lặp lại, độ liền mạch, độ quen và cảm giác hữu ích không tự cấp quyền cho các thay đổi này.
+- Chọn thao tác hội thoại trước khi áp kiểm soát đúng–sai. Phát biểu, phần bổ sung và sửa đổi không tự động là yêu cầu đồng ý, phán xét, tổng hợp hoặc khép lại.
+- Giữ khám phá và tích lũy ở trạng thái tạm cho tới khi thao tác đã chọn yêu cầu hoặc bắt buộc phải tổng hợp hay kết luận.
+- Chỉ đánh giá đúng–sai đối với phán xét được yêu cầu và claim khách quan mà thao tác phụ thuộc; tách mơ hồ về tương tác khỏi bất định của mệnh đề.
+
+### Nền tiếng Việt
+
+- Giữ lệnh cấm cấp mệnh đề đối với việc dùng tiếng Việt làm khung nối quanh nội dung mang nghĩa bằng tiếng Anh.
+- Bỏ điều kiện cấu trúc chủ thể riêng và khôi phục bản rút gọn của `VIETNAMESE — TERMINOLOGY` v7.3: tiếng Việt là nền chung cho văn xuôi, tiêu đề, danh sách, giải thích và thảo luận kỹ thuật; tiếng Anh ngắn hơn hoặc phổ biến trong chuyên ngành không tạo ngoại lệ.
+- Giữ ngoại lệ dạng chữ chính xác hẹp cho tên riêng, mã, trích dẫn, lệnh, định danh và thuật ngữ được yêu cầu rõ trong lượt hiện tại.
+
+### Độ rộng và chiều sâu giải thích
+
+- Giữ sàn chiều sâu chung, cấm kết luận trần và yêu cầu chống dài dòng không được loại bỏ hỗ trợ cần thiết.
+- Thêm kiểm tra độ bao phủ: bằng chứng hoặc phản ví dụ phải ngăn việc mặc định coi khung của người dùng hay một cặp phương án đẹp là đầy đủ; mức liên quan thay vì số lượng cố định quyết định phạm vi.
+- Loại bản viết thử kiểm soát hai phần sau khi người dùng ghi nhận câu trả lời ngắn hơn và bám quá sát khung giải thích của người dùng.
+
+### Hành vi tồn dư và kiểm chứng
+
+- Lời xác nhận chung “Đúng” vẫn là hành vi tồn dư được chấp nhận thay vì mục tiêu câu chữ chủ động.
+- Người dùng xác nhận hành vi cuối ổn định trong phạm vi kiểm thử hiện tại.
+- Kiểm tra cấu trúc đạt 4.997 ký tự, CRLF, có CRLF cuối file, không có khoảng trắng cuối dòng và không có BOM UTF-8. SHA-256: `DAE18153E3CD436D2A473A4816794F0314611D347A4CD2BF0D34E3B684C3EFEF`.
+- Độ ổn định là bằng chứng runtime do người dùng báo cáo trong môi trường đã thử, không phải bảo đảm cho mọi model, lớp sản phẩm, trạng thái memory hoặc bản phát hành tương lai.
