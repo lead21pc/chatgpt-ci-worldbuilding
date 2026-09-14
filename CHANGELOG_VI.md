@@ -428,3 +428,30 @@
 - Người dùng xác nhận hành vi cuối ổn định trong phạm vi kiểm thử hiện tại.
 - Kiểm tra cấu trúc đạt 4.997 ký tự, CRLF, có CRLF cuối file, không có khoảng trắng cuối dòng và không có BOM UTF-8. SHA-256: `DAE18153E3CD436D2A473A4816794F0314611D347A4CD2BF0D34E3B684C3EFEF`.
 - Độ ổn định là bằng chứng runtime do người dùng báo cáo trong môi trường đã thử, không phải bảo đảm cho mọi model, lớp sản phẩm, trạng thái memory hoặc bản phát hành tương lai.
+
+## v8.4
+
+### Bản phát hành chính thức
+
+- Thăng bản thử nội bộ `v8.3.1 extended` thành v8.4 sau khi kiểm thử của người dùng cho kết quả thành công ngoài dự tính.
+- Xóa hai tên hiện vật thử nghiệm v8.3.1; v8.4 là hiện vật phát hành duy nhất của vòng sửa này.
+
+### Thứ bậc kiểm soát và tiến trình nhiệm vụ
+
+- Thu hẹp `CONTROL GROUNDING`: chỉ tín hiệu rõ của người dùng hoặc bằng chứng mới được đổi giai đoạn nhiệm vụ, trạng thái phát biểu hay giả định về người đọc; một phần phụ thuộc của thao tác không thể tự cấp quyền cho thay đổi mà nó cần.
+- Làm rõ thứ tự bất biến: grounding giới hạn thay đổi trạng thái, discourse chọn thao tác và các bước con cần thiết, còn kiểm soát nhận thức quản lý đúng–sai. Không kiểm soát nào được tự cấp quyền thông qua chính thứ nó kiểm soát.
+- Chỉ cho phép phán xét, tổng hợp, tóm tắt hoặc khép lại khi cần để thực hiện thao tác đã chọn, đồng thời giữ quá trình khám phá và tích lũy ở trạng thái tạm.
+- Đặt mục tiêu đang tiếp diễn sau yêu cầu rõ và giai đoạn công việc đã nêu; việc thu nhỏ phạm vi hành động không được làm mất phần giải thích nhiệm vụ cần.
+
+### Hiệu chỉnh phát biểu, sản phẩm và bất định
+
+- Định nghĩa lại việc kiểm tra phát biểu như giới hạn phụ thuộc thay vì khuôn giải thích: suy ra cơ chế và điều kiện từ bằng chứng của nhiệm vụ cùng các định nghĩa, không mặc định khung của người dùng đã đầy đủ.
+- Siết kiểm tra sản phẩm/runtime thay đổi: dùng tài liệu nhà cung cấp hoặc trạng thái trực tiếp cho sự kiện có vai trò phụ thuộc, chỉ coi giao diện là bằng chứng cho đúng phần nó hiển thị, và cấm suy rộng từ tính năng lân cận, kiến trúc, phép tương tự hoặc bằng chứng một phần.
+- Bộc lộ bất định của mệnh đề khi nó làm thay đổi cách hiểu, kết luận hoặc hành động; bất định về thao tác hội thoại thì giữ nguyên trạng thái.
+- Cấm rõ việc gán nguyên mẫu người dùng hoặc vốn hiểu biết rộng từ bằng chứng thưa; chỉ thích ứng theo sở thích đã nêu hoặc hiểu biết đã thể hiện về đúng khái niệm đang xét.
+
+### Ranh giới kiểm chứng
+
+- Người dùng xác nhận v8.4 thành công ngoài dự tính trong phạm vi kiểm thử runtime hiện tại.
+- Hiện vật được chấp nhận có 4.976 ký tự và 4.990 byte UTF-8, dùng CRLF, có CRLF cuối file, không có khoảng trắng cuối dòng và không có BOM UTF-8. SHA-256: `1E87964846B2C3E88FF3C143ED19210ACC239A438B36285FE659615BE5CF6712`.
+- Thành công runtime là bằng chứng cho môi trường đã thử, không phải bảo đảm cho mọi model, lớp sản phẩm, trạng thái memory hoặc bản phát hành tương lai.

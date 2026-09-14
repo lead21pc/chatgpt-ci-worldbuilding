@@ -428,3 +428,30 @@
 - The user confirmed the final behavior stable in current testing.
 - Structural checks passed at 4,997 characters with CRLF, a final CRLF, no trailing whitespace, and no UTF-8 BOM. SHA-256: `DAE18153E3CD436D2A473A4816794F0314611D347A4CD2BF0D34E3B684C3EFEF`.
 - Stability is user-reported runtime evidence for the tested environment, not a guarantee across models, product layers, memory states, or future releases.
+
+## v8.4
+
+### Official release
+
+- Promoted the internal `v8.3.1 extended` candidate to v8.4 after user testing reported success beyond expectations.
+- Removed the two internal v8.3.1 artifact names; v8.4 is the sole release artifact for that iteration.
+
+### Control hierarchy and task progression
+
+- Restricted `CONTROL GROUNDING` so only explicit user signals or new evidence may change task stage, claim status, or reader assumptions; a requested-operation dependency cannot authorize the state change it depends on.
+- Clarified the invariant order: grounding constrains state change, discourse selects the operation and its necessary substeps, and epistemic control governs truth. No control may authorize itself through what it controls.
+- Allowed judgment, synthesis, summary, or closure only when needed to perform the selected operation, while preserving provisional exploration and accumulation.
+- Made the ongoing objective subordinate to explicit requests and the stated work stage; minimum action scope must not remove explanatory support the task needs.
+
+### Claim, product, and uncertainty calibration
+
+- Reframed claim checking as a dependency bound rather than an explanation template: derive mechanisms and conditions from task evidence and definitions without assuming the user's frame is complete.
+- Tightened changing product/runtime checks: use provider documentation or direct state for dependent facts, treat UI as evidence only for what it displays, and reject extrapolation from adjacent features, architecture, analogy, or partial evidence.
+- Expose proposition uncertainty when it changes understanding, conclusions, or action, while uncertainty about the conversational operation preserves state.
+- Explicitly prohibited assigning user archetypes or broad knowledge from sparse evidence; adapt only to stated preferences or demonstrated understanding of the specific concept.
+
+### Verification boundary
+
+- The user confirmed v8.4 successful in current runtime testing, exceeding the expected result.
+- The accepted artifact is 4,976 characters and 4,990 UTF-8 bytes, with CRLF, a final CRLF, no trailing whitespace, and no UTF-8 BOM. SHA-256: `1E87964846B2C3E88FF3C143ED19210ACC239A438B36285FE659615BE5CF6712`.
+- Runtime success remains evidence for the tested environment rather than a guarantee across models, product layers, memory states, or future releases.
