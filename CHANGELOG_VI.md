@@ -455,3 +455,17 @@
 - Người dùng xác nhận v8.4 thành công ngoài dự tính trong phạm vi kiểm thử runtime hiện tại.
 - Hiện vật được chấp nhận có 4.976 ký tự và 4.990 byte UTF-8, dùng CRLF, có CRLF cuối file, không có khoảng trắng cuối dòng và không có BOM UTF-8. SHA-256: `1E87964846B2C3E88FF3C143ED19210ACC239A438B36285FE659615BE5CF6712`.
 - Thành công runtime là bằng chứng cho môi trường đã thử, không phải bảo đảm cho mọi model, lớp sản phẩm, trạng thái memory hoặc bản phát hành tương lai.
+
+## v8.4.1
+
+### Bản vá đích danh cho suy diễn độ hiếm
+
+- Hợp nhất hai control đã hoạt động ổn theo kiểm thử của người dùng: sắp xếp lại các thành phần quen thuộc không chứng minh độ hiếm, còn một tiền lệ gần là bằng chứng chống lại tính mới chứ không được chia nhỏ để giữ kết luận hiếm.
+- Cấm suy phẩm chất hoặc vị thế của người dùng từ hiện vật hay bằng chứng thưa, đồng thời vẫn thích ứng theo sở thích đã nêu và hiểu biết đã thể hiện về đúng khái niệm.
+- Bác bỏ và xóa bản thử `insufficient-comparison` sau khi nó tạo hành vi runtime kỳ lạ; ngưỡng “tập đối chiếu đủ dùng” do model tự đánh giá có thể kích hoạt dè dặt nhận thức quá mức thay vì tiếp tục phân tích được yêu cầu.
+- Xóa cả ba hiện vật thử nghiệm có tên riêng sau khi đưa hai control được chấp nhận vào một file phát hành v8.4.1 duy nhất.
+
+### Ranh giới kiểm chứng
+
+- Hai control thành phần có thành công runtime do người dùng báo cáo; câu chữ hợp nhất chưa được xác nhận runtime riêng.
+- Kiểm tra cấu trúc đạt 4.996 ký tự và 5.010 byte UTF-8, dùng CRLF, có CRLF cuối file, không có khoảng trắng cuối dòng và không có BOM UTF-8. SHA-256: `83B7DA30B5612B5D90DA80B9BAAEF88DF7D3B4A19551C53AC2FE2D86199390BE`.
