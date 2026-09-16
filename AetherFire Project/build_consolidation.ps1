@@ -123,6 +123,27 @@ function Replace-Required {
     return $Text.Replace($Old, $New, [System.StringComparison]::Ordinal)
 }
 
+function Remove-RequiredRange {
+    param(
+        [Parameter(Mandatory)][string]$Text,
+        [Parameter(Mandatory)][string]$Start,
+        [Parameter(Mandatory)][string]$End,
+        [Parameter(Mandatory)][string]$Label
+    )
+
+    $startIndex = $Text.IndexOf($Start, [System.StringComparison]::Ordinal)
+    if ($startIndex -lt 0) {
+        throw "Required range start not found: $Label"
+    }
+
+    $endIndex = $Text.IndexOf($End, $startIndex + $Start.Length, [System.StringComparison]::Ordinal)
+    if ($endIndex -lt 0) {
+        throw "Required range end not found: $Label"
+    }
+
+    return ($Text.Substring(0, $startIndex) + $Text.Substring($endIndex)).Trim()
+}
+
 function Apply-UndieRankTerminology {
     param([Parameter(Mandatory)][string]$Text)
 
@@ -172,16 +193,38 @@ $fictionModel = Read-MarkdownSource 'aetherfire_fiction0_fiction1_model.md'
 $canonComparison = Read-MarkdownSource 'aetherfire_canon1_canon2.md'
 $storyOverlap = Read-MarkdownSource 'aetherfire_canon_story_line_v0_5_v1_0_overlap.md'
 $narrators = Read-MarkdownSource 'aetherfire_narrators_pov_clash_humor.md'
+$matriarch = Read-MarkdownSource 'matriarchs_lament_working_retcon_canon.md'
+$mc4Source = Read-MarkdownSource 'aetherfire_mc4_identity_remake_working.md'
+$academySource = Read-MarkdownSource 'aetherfire_battlemage_academy_setting_working.md'
+$rfAxesSource = Read-MarkdownSource 'aetherfire_rf_nguyen_chu_dynastic_power_axes_chat_consolidation.md'
+$rfGeopoliticsSource = Read-MarkdownSource 'aetherfire_rf_crossworld_geopolitics_chat_consolidation_2026-09-15.md'
+$taintedCosmosMerged = Read-MarkdownSource 'The Tainted Cosmos - MERGED.md'
+$openIssuesSeed = Read-MarkdownSource 'aetherfire_open_issues_current_restored_2026-09-15.md'
 
 $storyFenceCount = [regex]::Matches($storyOverlap, '(?m)^```').Count
 if (($storyFenceCount % 2) -ne 0) {
     $storyOverlap = Replace-Required -Text $storyOverlap -Old "ENDING EXISTS`n≠`nEXACT CANON-1 IMPLEMENTATION IS GUARANTEED." -New ("ENDING EXISTS`n≠`nEXACT CANON-1 IMPLEMENTATION IS GUARANTEED.`n" + '```') -Label 'story-overlap final code fence'
 }
 
+$matriarchFenceCount = [regex]::Matches($matriarch, '(?m)^```').Count
+if (($matriarchFenceCount % 2) -ne 0) {
+    $matriarch = $matriarch.TrimEnd() + "`n" + '```'
+}
+
+$matriarchCurrent = Replace-Required -Text $matriarch -Old "# Matriarch's Lament — Working Retcon Canon" -New "# Matriarch's Lament — Current Regional Canon" -Label 'Matriarch title promotion'
+$matriarchCurrent = Replace-Required -Text $matriarchCurrent -Old '> **Trạng thái:** WORKING CANON / USER-CONFIRMED STATE trước vòng cập nhật canon tiếp theo' -New '> **Trạng thái:** CURRENT CANON / CONTROLLING REGIONAL RETCON — integrated 2026-09-11' -Label 'Matriarch status promotion'
+$matriarchCurrent = Remove-RequiredRange -Text $matriarchCurrent -Start '## 13. Gián điệp và Undie punitive rule' -End '## 14. Transfusion EasterFire' -Label 'remove foreign-spy punitive Undie route'
+$matriarchCurrent = $matriarchCurrent.Replace('- exact legal threshold cho spy punitive route;' + "`n", '', [System.StringComparison]::Ordinal)
+$matriarchCurrent = Replace-Required -Text $matriarchCurrent -Old '> **Trạng thái:** CURRENT CANON / CONTROLLING REGIONAL RETCON — integrated 2026-09-11' -New @'
+> **Trạng thái:** CURRENT CANON / CONTROLLING MATRIARCH'S LAMENT DOMAIN — integrated 2026-09-11; architecture split recorded 2026-09-16  
+> **Authority boundary:** this file controls internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and the northeastern tribes. Cross-domain interfaces are summarized in `10`; Undie status interfaces are controlled by `30`; cross-world status is controlled by `40`.  
+> **Trúc Nha boundary:** membership and regional role in ML are current canon. A summoned/cross-world origin remains `UNDER CONSTRUCTION / NOT CURRENT CANON`.
+'@ -Label 'Matriarch child-domain authority boundary'
+
 $index = @'
 # AetherFire — Consolidation Index
 
-> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-09-10  
+> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-09-16  
 > **Location:** self-contained `AetherFire Project/` package. Canon outputs live at the project root; immutable build inputs are preserved under `Source_Archive/`.  
 > **Truth rule:** `ABSENCE OF CANON ≠ CANONICAL NEGATION`; `NOT ESTABLISHED ≠ FALSE`; unresolved relations remain `UNKNOWN / UNRESOLVED`.
 
@@ -192,14 +235,20 @@ $index = @'
 3. `30_UNDIE_SYSTEM_CURRENT.md` — Undie identity, intake, consent, Undie ranks, mobility, White, work/economy/access and Undi visual system.
 4. `40_METAFICTION_CANON_TIMELINE_CURRENT.md` — Fiction 0/Fiction 1, Fictionize/POC, V0.5, Canon 1/Canon 2, both clashes, causal overlap and knowledge asymmetry.
 5. `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` — narrator personification, Elena POV, deadpan humor and the narrator split at Clash #2.
-6. `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` — genealogy, retired designs, surviving mechanisms and proposals under consideration; not a current world bible.
-7. `91_RECONCILIATION_RECORD.md` — resolved conflicts, unresolved questions and source provenance.
+6. `60_MC4_IDENTITY_CURRENT.md` — current MC4 identity, Academy membership and strict legacy-import boundaries.
+7. `70_MATRIARCHS_LAMENT_CURRENT.md` — internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha, ML–TE operations and northeastern tribes.
+8. `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` — genealogy, retired designs, surviving mechanisms and proposals under consideration; not a current world bible.
+9. `91_RECONCILIATION_RECORD.md` — resolved conflicts, unresolved questions and source provenance.
+10. `92_OPEN_ISSUES_CURRENT.md` — compact control ledger; not a world-bible source.
 
 ## 2. Document architecture
 
 ```text
 AETHERFIRE CURRENT CANON
 ├─ World / institutions / geopolitics
+│  ├─ AetherFire state, RF, Academy and global interfaces
+│  ├─ Matriarch's Lament / Transfusion EasterFire cross-domain interface
+│  └─ Quad Night retirement and orphaned relations
 ├─ Status / Civil / labor
 │  ├─ ontology schema
 │  ├─ Civil entry and allocation
@@ -216,13 +265,23 @@ AETHERFIRE CURRENT CANON
 │  ├─ Fiction 0 / Fiction 1 and ability boundaries
 │  ├─ V0.5 continuations and Canon 1 / Canon 2
 │  └─ causal overlap, clashes and knowledge asymmetry
-└─ Narrative presentation
+├─ Narrative presentation
    ├─ narrator personification and POV grammar
    └─ deadpan humor, tragedy and narrator split
+└─ Character identity
+   └─ MC4 identity, dual biological/cognitive configurations and Academy membership
+
+CHILD CURRENT-CANON DOMAIN
+└─ Matriarch's Lament
+   ├─ puppet state / Temple / apocalyptic cult
+   ├─ Creed / Holy Guard / Trần Trúc Nha
+   ├─ Trinity Hexagon / relic economy
+   └─ ML–TE routes, covert operations and northeastern tribes
 
 SEPARATE TEMPORAL / CONTROL LAYERS
 ├─ Design history and reconsiderations
-└─ Reconciliation and conflict provenance
+├─ Reconciliation and conflict provenance
+└─ Open-issues routing
 ```
 
 This is document containment, not a claim that every relation in the setting is parent–child. Ontology must preserve typed relations such as `THUỘC_VỀ`, `ÁP_DỤNG_CHO`, `ĐI_VÀO`, `ĐI_RA`, `QUẢN_TRỊ`, `TƯƠNG_TÁC_VỚI` and `DẪN_XUẤT_TỪ`.
@@ -265,12 +324,31 @@ STATUS
 - Narrator personification and POV remain a sibling presentation domain. Narrator separation does not establish transfer or loss of the underlying esper abilities.
 - The narrator source's clothing section is not imported. All Undi clothing and perception canon remains controlled by `30_UNDIE_SYSTEM_CURRENT.md`.
 
-## 6. Intentionally excluded source
+## 6. Regional retcon consolidation — 2026-09-11
+
+- `matriarchs_lament_working_retcon_canon.md` controls Holy State → Matriarch's Lament, T.Gear → Transfusion EasterFire, Trinity Hexagon, Creed, Trần Trúc Nha, regional routes and the ML relic dependency.
+- `Quad Night` and its four-member-state ontology are retired. Relations that depended on that alliance remain `UNKNOWN / ORPHANED` unless the regional source explicitly replaces them.
+- The AF↔TE treaty is direct and does not transit through ML. The prior 100 km corridor and Academy-flank mapping are not automatically remapped.
+- The former foreign-spy punitive Undie route is removed because it no longer fits the political-centric setting. Archived wording is provenance only; legal/status treatment of spies remains `UNKNOWN`, and Criminal Slave → Undie remains prohibited.
+- Mother MC2's Raging Fire / Prince 9 genealogy remains current; her post-Quad-Night custodian is `UNKNOWN`.
+
+## 7. Intentionally excluded source
 
 - `aetherfire_chat_anti_drift.md` — explicitly excluded by user because it was revised in another chat.
 - `modular_engine_concept_anti_drift_revised.md` — not imported. Its typed-relation discipline informed this index, but the generic reusable core remains independent from AetherFire canon.
 
-## 7. Rollback
+## 8. RF, Academy and MC4 integration — 2026-09-15
+
+- RF is a continental union of cultivation member states, not one kingdom. The Raging Fire lineage, the RF union, the strongest bloc/member polity of MC2's mother and Prince 9's lower-ranked member polity remain distinct nodes.
+- MC2's mother is the **Trưởng công chúa** of the strongest RF bloc/member polity. Prince 9 belongs to a lower-ranked member polity. Current unnamed polity and academy names remain placeholders.
+- The strongest bloc's secession strategy, Prince 9 succession manipulation, guarded RF–AF alliance and the AF noble lineage-exploitation agenda are current canon only in the bounded form stated in `10`.
+- The Academy's six-year structure, five-person combat team, twelve competency blocks, daily training rhythm, multi-axis scholarship profile and concrete functional uniform direction are current canon. Exact hours, weights, thresholds and official names remain `UNKNOWN`.
+- The former Academy-failure-to-Undie route is removed from current and reconsideration layers. Archived sources retain it only as byte-exact provenance; it must not be reactivated.
+- MC4 is a current Academy actor with one continuous identity and two biological/cognitive configurations. Legacy mastery, Fusion, Spear mechanics, morphology and in-world cross-world origin are not imported.
+- Trần Trúc Nha belongs to Matriarch's Lament in current canon. Her proposed summoned/cross-world origin and the other unconfirmed cross-world/cross-time candidates are `UNDER CONSTRUCTION / NOT CURRENT CANON`.
+- `70_MATRIARCHS_LAMENT_CURRENT.md` is the authority for ML's internal domain. `10` retains only the global/cross-domain interface; this architecture split changes no lore status.
+
+## 9. Rollback
 
 Use Git revert/history to roll back the project package. `Source_Archive/` preserves the exact build inputs, so regeneration does not depend on files outside `AetherFire Project/`.
 '@
@@ -286,6 +364,262 @@ $mergedGlobal = Get-Range -Text $merged -Start '# 20. Quốc tế' -End '# 27. C
 $mergedIntroThroughIdentity = Apply-UndieRankTerminology $mergedIntroThroughIdentity
 $mergedState = Apply-UndieRankTerminology $mergedState
 $mergedGlobal = Apply-UndieRankTerminology $mergedGlobal
+
+$mergedIntroThroughIdentity = Remove-RequiredRange -Text $mergedIntroThroughIdentity -Start '## J. Quad Night — liên minh bốn quốc gia, không phải một quốc gia đơn lẻ' -End "---`n`n# 0. Nguồn được hợp nhất" -Label 'retired Quad Night intro blocks'
+$mergedGlobal = Remove-RequiredRange -Text $mergedGlobal -Start '## 20.0d Quad Night — alliance ontology và bốn member state' -End '## 20.1 Nhóm phản đối' -Label 'retired Quad Night international blocks'
+
+$oldIntroCorridor = 'Phía phải/đông của AF có một **hành lang kiểm soát khoảng 100 km** nối sang Quad Night, với Holy State là cửa vào chính của chuỗi. Hành lang có nhánh chính với nhà nghỉ/dịch vụ; vùng xung quanh thường xảy ra cướp. Bên trong hành lang có các micro-polity/bộ tộc tự xưng chủ quyền dưới quyền/bảo hộ thuộc địa của AF, làm **buffer + trade relay + road security**. Một polity ở phần nối gần Quad Night chiếm khoảng 50 km còn lại; exact partition chi tiết chưa chốt.'
+$newCorridorBoundary = 'Mô hình hành lang 100 km AF↔Quad Night và Holy State làm cửa vào đã bị retire cùng Quad Night. Exact map mới giữa AF, ML và TE giữ `UNKNOWN`; không tự remap các buffer/micro-polity cũ sang actor mới.'
+$mergedIntroThroughIdentity = Replace-Required -Text $mergedIntroThroughIdentity -Old $oldIntroCorridor -New $newCorridorBoundary -Label 'retired intro corridor'
+
+$oldGlobalCorridor = 'AF↔Quad Night có một **hành lang kiểm soát khoảng 100 km**, Holy State là cửa vào chính. Nhánh chính có nhà nghỉ/dịch vụ; vùng xung quanh thường xuyên có cướp. Bên trong hành lang có các micro-polity/bộ tộc tự nhận chủ quyền nhưng hoạt động như **thuộc địa/buffer dưới quyền AF**, đảm nhiệm giao thương và an ninh tuyến đường. Một polity ở phần nối gần Quad Night chiếm khoảng 50 km còn lại; exact partition không tự suy thêm.'
+$mergedGlobal = Replace-Required -Text $mergedGlobal -Old $oldGlobalCorridor -New $newCorridorBoundary -Label 'retired international corridor'
+
+$oldQueenIntro = 'Hoàng hậu hiện tại **đang bị Quad Night tạm giữ ở cấp liên minh**; địa điểm giam giữ có thể được luân phiên giữa các thành viên để chống gián điệp và giải cứu.'
+$newQueenCustody = 'Quan hệ giam giữ cũ phụ thuộc Quad Night đã bị orphan. Current custodian của Hoàng hậu/mẹ MC2 giữ `UNKNOWN`; không tự chuyển bà sang ML hoặc TE.'
+$mergedIntroThroughIdentity = Replace-Required -Text $mergedIntroThroughIdentity -Old $oldQueenIntro -New $newQueenCustody -Label 'queen custody in identity section'
+
+$oldQueenState = 'Hoàng hậu hiện đang **bị Quad Night tạm giữ ở cấp liên minh**; nơi giam có thể được luân phiên giữa các thành viên khi cần để chống gián điệp và giải cứu.'
+$mergedState = Replace-Required -Text $mergedState -Old $oldQueenState -New $newQueenCustody -Label 'queen custody in state section'
+
+$oldAcademyFlank = 'Trong concept/canon gốc, site Đông Bắc được đặt **ngay sau sườn Quad Night**, theo hướng có thể chọc vào flank của liên minh; nếu phải tạo pressure thì T.Gear là phía phù hợp nhất vì môi trường mở. Bộ Ngoại giao AF cố hết sức che đậy site; Quad Night hoặc không biết nó tồn tại, hoặc biết quá ít để hiểu đúng bản chất. Exact current awareness của Quad Night giữ `UNKNOWN`.'
+$newAcademyBoundary = 'Placement cũ của site Đông Bắc theo sườn Quad Night/T.Gear chỉ còn là design genealogy. Current relation giữa Học viện, ML, TE và các bộ tộc mẫu hệ phía đông bắc tuân theo regional retcon; exact full map giữ `UNKNOWN`.'
+$mergedGlobal = Replace-Required -Text $mergedGlobal -Old $oldAcademyFlank -New $newAcademyBoundary -Label 'academy flank orphaning'
+
+$mergedIntroThroughIdentity = Replace-Required -Text $mergedIntroThroughIdentity -Old 'long mạch, Holy State, Hoa Nguyệt' -New "long mạch, Matriarch's Lament, Hoa Nguyệt" -Label 'current pressure-node rename'
+
+$oldStoryCustody = 'Hoàng hậu hiện bị **Quad Night** tạm giữ ở cấp liên minh; nơi giam có thể luân phiên giữa các member state.'
+$storyOverlap = Replace-Required -Text $storyOverlap -Old $oldStoryCustody -New 'Quan hệ custody cũ dưới Quad Night đã bị orphan; current custodian của Hoàng hậu giữ `UNKNOWN`.' -Label 'story timeline queen custody'
+
+$mergedIntroThroughIdentity = $mergedIntroThroughIdentity.Replace('hoàng tộc Raging Fire (RF) ở phía Nam', 'huyết hệ hoàng tộc Raging Fire bên trong liên hiệp RF ở phía Nam', [System.StringComparison]::Ordinal)
+$mergedIntroThroughIdentity = $mergedIntroThroughIdentity.Replace('Hoàng tộc RF có một **trait ẩn**', 'Hoàng tộc mang huyết hệ Raging Fire có một **trait ẩn**', [System.StringComparison]::Ordinal)
+$mergedIntroThroughIdentity = $mergedIntroThroughIdentity.Replace('Prince 9 của một hoàng gia chư hầu thuộc RF', 'Prince 9 của hoàng gia một quốc gia thành viên rank thấp hơn trong RF', [System.StringComparison]::Ordinal)
+$mergedGlobal = $mergedGlobal.Replace('một hoàng gia chư hầu thuộc Raging Fire', 'hoàng gia một quốc gia thành viên rank thấp hơn trong RF', [System.StringComparison]::Ordinal)
+$mergedGlobal = $mergedGlobal.Replace('vua hiện tại của RF', 'vua hiện tại của quốc gia thành viên nơi Prince 9 xuất thân', [System.StringComparison]::Ordinal)
+$mergedGlobal = $mergedGlobal.Replace('lật vị vua hiện tại của quốc gia thành viên nơi Prince 9 xuất thân/đăng cơ', 'lật vị vua hiện tại của quốc gia thành viên nơi Prince 9 xuất thân và đăng cơ tại quốc gia đó', [System.StringComparison]::Ordinal)
+$mergedGlobal = $mergedGlobal.Replace('Hoàng tộc RF có một trait ẩn', 'Hoàng tộc mang huyết hệ Raging Fire có một trait ẩn', [System.StringComparison]::Ordinal)
+$mergedGlobal = $mergedGlobal.Replace('Hoàng gia Raging Fire **cố tình che giấu** quan hệ này để tránh khủng hoảng chính trị.', 'Genealogy này bị che giấu có chủ ý bên trong RF để tránh khủng hoảng chính trị; exact actor chịu trách nhiệm và phạm vi biết của từng khối giữ `UNKNOWN`.', [System.StringComparison]::Ordinal)
+$storyOverlap = $storyOverlap.Replace('Prince 9 của một hoàng gia chư hầu RF', 'Prince 9 của hoàng gia một quốc gia thành viên rank thấp hơn trong RF', [System.StringComparison]::Ordinal)
+$storyOverlap = $storyOverlap.Replace('RF cố tình che giấu relation này.', 'Relation này bị che giấu có chủ ý bên trong RF; exact responsible actor và knowledge distribution giữ `UNKNOWN`.', [System.StringComparison]::Ordinal)
+$storyOverlap = $storyOverlap.Replace('MC2.2 lật vua RF hiện tại và lên ngôi', 'MC2.2 lật vị vua hiện tại của quốc gia thành viên nơi Prince 9 xuất thân và lên ngôi tại quốc gia đó', [System.StringComparison]::Ordinal)
+$matriarchCurrent = $matriarchCurrent.Replace('→ Raging Fire tham gia', '→ một actor thuộc RF/Raging Fire tham gia; exact cấp lineage/liên hiệp/member-state giữ `UNKNOWN`', [System.StringComparison]::Ordinal)
+$matriarchCurrent = $matriarchCurrent.Replace('├─ DEPENDS_ON Raging Fire', '├─ DEPENDS_ON RF arrangement / Raging Fire lineage', [System.StringComparison]::Ordinal)
+
+$rfCurrentCanon = @'
+## RF continental union, dynastic fault line and AF dependency — current canon 2026-09-15
+
+### Ontology
+
+RF is a **continental union of cultivation member states**, not one kingdom. Its exact constitutional form remains `UNKNOWN`; do not silently choose federation, confederation, tributary hierarchy or empire-of-states.
+
+```text
+Raging Fire lineage
+≠ RF continental union
+≠ strongest bloc/member polity of MC2's mother
+≠ lower-ranked member polity of Prince 9
+```
+
+The four blocs currently foregrounded do not establish the full number of RF member states. Exact bloc-to-state containment remains `UNKNOWN`.
+
+### Four foregrounded blocs
+
+- The strongest bloc/member polity is the origin of MC2's mother, actively seeks secession, seeks AetherFire patronage and wants AF forced-magic technology to scale cultivation.
+- Two other blocs oppose that secession and hold enough economic/political leverage that Prince 9's polity depends on both. They are not assumed to share identical institutions or motives.
+- Prince 9's lower-ranked polity is the fourth foregrounded bloc and lies between the strongest secessionist bloc and the two opposing blocs.
+- The former UK/Greenland/Alaska/Australia labels are design references only, never canon names.
+
+### Prince 9 and MC2's mother
+
+MC2's mother is the **Trưởng công chúa** of the strongest RF bloc/member polity. Prince 9 is the ninth prince of a lower-ranked RF member polity, her true husband and the biological father of MC2 and MC2.2.
+
+```text
+strongest bloc already seeks secession
+→ manipulates the Crown Prince of Prince 9's polity
+→ Crown Prince kills Prince 9 to consolidate power
+→ strongest bloc uses the death of its Trưởng công chúa's husband
+  as a grievance supporting secession
+```
+
+The relevant inner circle of the strongest bloc knows that the Trưởng công chúa's fetus is Prince 9's child. It sends the Trưởng công chúa and fetus to AetherFire for an alliance/patronage route, long-term dynastic leverage and a possible future-marriage route. That future marriage is an option, not a locked outcome, and does not erase MC2's agency.
+
+Do not write “RF knew” for this information. Knowledge of pregnancy, father identity and the full operation differs among blocs and actors. The Trưởng công chúa's own knowledge of the manipulation remains `UNKNOWN`.
+
+### Guarded RF–AetherFire alliance
+
+The strongest bloc and AetherFire cooperate without mutual trust:
+
+```text
+strongest bloc wants AF technology
+→ reduce its dependency on RF
+
+AF wants access to RF lineage capability
+→ reduce its dependency on RF
+```
+
+The other three foregrounded blocs deliberately raise distrust around that alliance. “Rare pure blood” is propaganda/framing, not proof of the true Raging Fire inheritance mechanism.
+
+### AF noble agenda around MC2
+
+After the AF king flees and the previous balance weakens, a noble faction pressures MC2 in an attempt to expose or exploit Raging Fire capability without knowing the true mechanics. Its confirmed goals are:
+
+1. reduce or escape AF's dependency on RF;
+2. research/extract enough capability to create an AF-controlled suppression array;
+3. increase total military force-generation capacity.
+
+This is a factional agenda, not proof of a unified state policy or a successful research program. It does not turn MC2's whole Princess → Civil → Undie trajectory into one master plan; MC2's Civil → Undie choice remains her own.
+
+### Dependency boundary
+
+AF's firewall and founding-seal history still depend on Raging Fire lineage/RF arrangements. The exact provider, contracting actor, maintenance authority and member-state allocation remain `UNKNOWN`; do not assign them automatically to the RF union or the strongest bloc.
+'@
+
+$academyCurrentCanon = @'
+## Battlemage Academy — current canon 2026-09-15
+
+> **Official name:** `[ACADEMY NAME — PLACEHOLDER]`. “Học viện Lục Quang” is not canon.
+
+### Institutional position
+
+The Academy is an institution/faction within the northeastern Mage Council site behind a volcano. The site contains the Academy, a body-research lab using subjects from Elf, Beastman and Dragon powers, and a teleport gate linked to an isolated capital district containing elite forces. Exact Academy–branch–Council command authority remains `UNKNOWN`.
+
+The cult is not part of the Academy. It exploits the apparent-POW-to-Mage-Council-specialist interface. Exact infiltration, Academy awareness and gate access remain `UNKNOWN`.
+
+### Battlemage doctrine
+
+The Academy trains genuine battlemages. Two schools are current:
+
+1. martial-arts-based battlemage: body, martial arts and magic integrated into movement/close combat;
+2. versatile magic plus multiple weapon families: situational tool-switching and adaptation without implying equal mastery of every weapon.
+
+Training follows this competence order:
+
+```text
+self-control
+→ self-preservation
+→ independent reliability
+→ teammate reliability
+→ team operations
+```
+
+DI and consultant functions are separate. DI maintains combat/professional standards; consultants handle adolescent development and psychological readiness. Neither function replaces the other.
+
+### Six-year model
+
+1. Year 1 — control.
+2. Year 2 — self-preservation and simple missions.
+3. Year 3 — independent battlemage qualification.
+4. Year 4 — team operations.
+5. Year 5 — adaptive operations.
+6. Year 6 — transition into professional personnel.
+
+### Group structure
+
+The standard combat team has **5 members** and is used only after the individual competence floor is met. Exact administrative cohort size, specialist-group size, dangerous-practice grouping, internal role allocation and activation threshold remain `UNKNOWN / NOT YET PROMOTED`; the approval of a five-person team does not canonize those adjacent working-design values.
+
+### Twelve competency blocks
+
+1. body control;
+2. foundational martial arts;
+3. magic control;
+4. magical defense;
+5. foundational weapons;
+6. battlefield mobility;
+7. battlefield awareness;
+8. resource management;
+9. medicine and incident response;
+10. equipment and maintenance;
+11. combat judgment;
+12. team combat.
+
+Exact distribution of the twelve blocks across terms and qualification gates remains `UNKNOWN`.
+
+### Daily training rhythm
+
+```text
+physical block
+→ applied magic / weapon / technical-theory block
+→ long drill / lab / scenario block
+→ self-study / maintenance / preparation
+```
+
+Exercises preserve the full cycle `briefing → preparation → execution → cleanup → after-action review`. Exact clock hours, weeks per year and holidays remain `UNKNOWN`.
+
+### Funding and scholarship
+
+The state funds part of training and all baseline meals. Students may take controlled commissions and side jobs. Full scholarship assessment uses a multi-axis profile:
+
+- professional competence;
+- progress;
+- reliability;
+- safety discipline;
+- resource efficiency;
+- team performance;
+- mission performance.
+
+Exact weights, thresholds, funding percentage, approving authority and external-work liability remain `UNKNOWN`. Supplement access may depend on `quality`, but `quality` remains a separate undefined variable and is not automatically rank, GPA, status, money, scholarship tier or morality score.
+
+### Functional female battlemage uniform
+
+The standard direction is:
+
+- technical underlayer;
+- short split jacket/tunic;
+- leggings or technical trousers;
+- optional hip-cover/outer shorts where function requires;
+- forearm guards;
+- knee/shin protection;
+- equipment belt;
+- combat boots;
+- hair kept short, tied, braided or in a bun.
+
+The two battlemage schools may differ in armor load, outer-layer length and equipment load. Protection, movement, spellcasting and equipment carriage control the design; sexual appeal is not a functional requirement. This Academy uniform is a separate domain and does not modify Undi clothing canon in `30_UNDIE_SYSTEM_CURRENT.md`.
+
+### Lab boundary and removed route
+
+Lab subjects may be used as live targets. Personhood, awareness, pain, consent/coercion, regeneration, death permanence, legal status, oversight and exact student protocol remain `UNKNOWN`; moral grayness is a design requirement, not permission to invent those facts.
+
+```text
+Academy failure → Undie = REMOVED FROM CURRENT SETTING
+```
+
+Academic failure does not create an automatic Undie transition. The former route is excluded from current canon and reconsideration layers.
+'@
+$matriarchGlobalInterface = @'
+## Matriarch's Lament / Transfusion EasterFire — global interface
+
+> **Authority boundary:** internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha doctrine, ML–TE operations and northeastern-tribe relations are controlled by `70_MATRIARCHS_LAMENT_CURRENT.md`. This section keeps only the interfaces needed by the wider AetherFire world model.
+
+### Regional supersession and chronology
+
+- `Quad Night` and its four-member-state ontology are retired.
+- `Holy State` → `Matriarch's Lament (ML)`.
+- `T.Gear` → `Transfusion EasterFire (TE)`.
+- `Trinity Hexagon` is a district inside ML, not an independent state.
+- ML is approximately 500 years old; AetherFire is approximately 200 years old.
+- ML participated in the sealing event before AetherFire's foundation. An RF/Raging Fire actor also participated, but the exact lineage/union/member-state level remains `UNKNOWN`.
+
+### AetherFire dependencies and treaty edge
+
+```text
+AF dependency on RF arrangement / Raging Fire lineage
+≠
+AF periodic dependency on ML relic access
+```
+
+ML controls access to a regenerative-consumable relic that AetherFire periodically needs to reinforce the seal. Political hostility and mandatory commerce may therefore coexist.
+
+The AF↔TE treaty is direct and was negotiated inside AetherFire. It does not transit through ML.
+
+### Orphaned geography and custody
+
+The old 100 km AF↔Quad Night corridor, Academy-flank mapping and Quad-Night custody of MC2's mother are orphaned by the regional retcon. Current geometry and custodian remain `UNKNOWN`; they are not automatically reassigned to ML or TE.
+
+### Trần Trúc Nha and Undie boundaries
+
+Trần Trúc Nha's membership and regional role in ML are current canon. Her proposed summoned/cross-world origin is `UNDER CONSTRUCTION / NOT CURRENT CANON` and is routed to `40_METAFICTION_CANON_TIMELINE_CURRENT.md`.
+
+The former `foreign spy / infiltrator → punitive Undie` route is `RESOLVED / REMOVED` because it no longer fits the political-centric setting. No replacement legal/status route is inferred; Undie-related interfaces are controlled by `30_UNDIE_SYSTEM_CURRENT.md`.
+'@
 $worldContent = @"
 # AetherFire — World, Institutions & Geopolitics Current Canon
 
@@ -305,6 +639,18 @@ $(Shift-MarkdownHeadings $mergedGlobal)
 
 ---
 
+$rfCurrentCanon
+
+---
+
+$academyCurrentCanon
+
+---
+
+$matriarchGlobalInterface
+
+---
+
 ## Metafiction interfaces
 
 - World-state facts established here feed the live Canon 2 context but do not by themselves define metafiction mechanics.
@@ -312,6 +658,8 @@ $(Shift-MarkdownHeadings $mergedGlobal)
 - ``50_NARRATORS_POV_AND_HUMOR_CURRENT.md`` controls narrator personification, POV grammar and humor design.
 "@
 Write-MarkdownOutput '10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md' $worldContent
+
+Write-MarkdownOutput '70_MATRIARCHS_LAMENT_CURRENT.md' $matriarchCurrent
 
 $statusRevamp = Join-H1Sections -Text $revamp -Headings @(
     '# 0. Nguyên tắc đọc',
@@ -391,6 +739,41 @@ $mobilityHeadings += '# 31. CÁC UNKNOWN PHẢI GIỮ'
 $mobilityCurrent = Join-H1Sections -Text $undieMobility -Headings $mobilityHeadings
 $mobilityPreamble = Apply-UndieRankTerminology $mobilityPreamble
 $mobilityCurrent = Apply-UndieRankTerminology $mobilityCurrent
+$mobilityPreamble = Replace-Required -Text $mobilityPreamble -Old '| Criminal không thể vào Undie | CURRENT |' -New '| Criminal Slave không thể chuyển vào Undie | CURRENT; former foreign-spy punitive Undie route đã bị xóa và không tạo ngoại lệ |' -Label 'criminal table spy scope'
+$mobilityCurrent = Replace-Required -Text $mobilityCurrent -Old 'Criminal có ontology và pipeline riêng.' -New @'
+Criminal có ontology và pipeline riêng.
+
+**Phạm vi sau quyết định 2026-09-16:** assertion này áp dụng cho subject đã được xác lập là `Criminal Slave`. Former foreign-spy punitive Undie route đã bị xóa vì không còn phù hợp với hướng political-centric của setting. Exact legal/status treatment của spy giữ `UNKNOWN`; không được tự suy spy đã đi qua Criminal pipeline, vào voluntary Undie hoặc mở Criminal Slave → Undie.
+'@ -Label 'criminal section spy scope'
+
+$spyPunitiveBoundary = @'
+### Foreign-spy punitive Undie route — removed 2026-09-16
+
+Nguồn gốc bị supersede: `matriarchs_lament_working_retcon_canon.md`.
+
+```text
+foreign spy / infiltrator
+→ punitive Undie route
+= REMOVED FROM CURRENT CANON AND RECONSIDERATION
+```
+
+Lý do ghi nhận: route này không còn phù hợp với hướng political-centric của setting. Việc xóa route không tự xác lập quy trình thay thế; legal classification, evidentiary/judicial handling và status outcome của spy giữ `UNKNOWN`. Không tự đồng nhất spy với `Criminal Slave`, voluntary Undie hoặc bất kỳ route hiện hành nào khác.
+'@
+
+$teTransferBoundary = @'
+### AetherFire → Transfusion EasterFire Undie transfer — bounded interface
+
+Current regional canon establishes only this event-level relation:
+
+```text
+AetherFire
+→ transfers some Undie
+→ to Transfusion EasterFire
+→ to strengthen relations / friendship
+```
+
+The exact legal mechanism, consent process, selection criteria, status after transfer, and return/exit rights remain `UNKNOWN`. This statement does not establish sale, compulsory reassignment, voluntary migration, citizenship, or unchanged AetherFire status after transfer.
+'@
 
 $undieRevamp = Join-H1Sections -Text $revamp -Headings @(
     '# 3. Triệt sản Undie',
@@ -608,6 +991,10 @@ $(Shift-MarkdownHeadings -Text $mobilityPreamble -Levels 2)
 
 $(Shift-MarkdownHeadings -Text $mobilityCurrent -Levels 2)
 
+$spyPunitiveBoundary
+
+$teTransferBoundary
+
 ---
 
 ## Part III — Work, economy, access, law and deployment
@@ -650,6 +1037,31 @@ $canonReference = Join-H1Sections -Text $canonComparison -Headings @(
     '# 11. Quan hệ MC1–MC3',
     '# 12. Các điểm chưa chốt'
 )
+$canonReference = $canonReference.Replace('một hoàng gia chư hầu thuộc RF', 'hoàng gia một quốc gia thành viên rank thấp hơn trong RF', [System.StringComparison]::Ordinal)
+$canonReference = $canonReference.Replace('RF cố tình che giấu', 'genealogy bị che giấu có chủ ý bên trong RF; exact responsible actor giữ `UNKNOWN`', [System.StringComparison]::Ordinal)
+
+$crossWorldBoundary = @'
+## Part IV — Cross-world status boundary
+
+### Confirmed
+
+MC1 and MC3 are confirmed Fiction 0 → Fiction 1 cases. Raging Fire rebirth potential is a different mechanism: bearing the trait does not establish that MC2 or her mother has died and been reborn.
+
+Trần Trúc Nha currently belongs to Matriarch's Lament and holds the role established in `70_MATRIARCHS_LAMENT_CURRENT.md`.
+
+### Under construction / not current canon
+
+```text
+Trần Trúc Nha summoned from another world
+= UNDER CONSTRUCTION / NOT CURRENT CANON
+```
+
+This origin is not current canon unless a later dedicated file is finalized and approved. Her current ML membership and regional role do not depend on that origin.
+
+### Other unconfirmed cross-world/cross-time candidates
+
+MC4, the undead west of Hoa Nguyệt, the sheep-man in the northern Beastman power, the painter, bard, time-traveling businessperson and political prisoner remain `UNDER CONSTRUCTION / NOT CURRENT CANON` as cross-world/cross-time candidates. They do not share a mechanism, cosmology, faction or mutual knowledge by default.
+'@
 
 $metaContent = @"
 # AetherFire — Metafiction Canon & Timeline Current
@@ -673,6 +1085,10 @@ $(Shift-MarkdownHeadings -Text $storyOverlap -Levels 2)
 ## Part III — Canon comparison, mismatch and authority boundaries
 
 $(Shift-MarkdownHeadings -Text $canonReference -Levels 2)
+
+---
+
+$crossWorldBoundary
 "@
 Write-MarkdownOutput '40_METAFICTION_CANON_TIMELINE_CURRENT.md' $metaContent
 
@@ -736,12 +1152,148 @@ $(Shift-MarkdownHeadings -Text $narratorLanguage -Levels 2)
 "@
 Write-MarkdownOutput '50_NARRATORS_POV_AND_HUMOR_CURRENT.md' $narratorContent
 
+$mc4Content = @'
+# AetherFire — MC4 Identity Current Canon
+
+> **Domain:** MC4 identity, biological/cognitive configurations, Academy membership and legacy-import boundaries.  
+> **Genealogy:** derived from `The Tainted Cosmos - MERGED.md`; genealogy does not import its cosmology, power scale, artifacts or history.  
+> **Institution boundary:** Academy doctrine is controlled by `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`.
+
+## 1. Current identity
+
+MC4 is a current AetherFire character and belongs to the Battlemage Academy faction.
+
+```text
+MC4
+= one person
++ one continuous self and consciousness
++ one memory stream
++ one responsibility stream
++ one core value system
++ two biological/cognitive configurations
+```
+
+A state change is not an identity change. The configurations share knowledge, memories, learned skills, muscle memory, values, responsibility and metacognition.
+
+## 2. Biological trait
+
+MC4 has a secret biological trait. MC4 is currently the only confirmed bearer in AetherFire; this wording does not prove no other bearer can exist.
+
+The configurations differ in endocrine/cognitive information-processing priorities. The trait is biological rather than a learned spell. Exact interaction with medicine, poison, injury, fatigue, biological magic and AF medical technology remains `UNKNOWN`.
+
+Who knows or can detect the secret—including family, Academy staff, medical staff, Mage Council and the lab—remains `UNKNOWN`.
+
+## 3. Configuration profiles
+
+Configuration A prioritizes analysis, planning, prediction, risk management, independence and preparation. Without setup time it retains skills but cannot exploit its natural preparation advantage.
+
+Configuration B prioritizes execution, adaptation, improvisation, social processing and immediate action. Under stress it may spend resources too quickly and damage endurance/reserves.
+
+Both remain the same accountable person.
+
+## 4. Academy boundary
+
+MC4 receives no exemption from Academy qualification because of protagonist status or biological rarity.
+
+```text
+unique biology
+≠ combat mastery
+≠ rank
+≠ authority
+≠ command
+≠ scholarship
+≠ lab access
+```
+
+Academy membership does not establish knowledge of the cult, geopolitics, the teleport gate or the lab. MC4–Lab, MC4–Cult, MC4–northern-powers and MC4–Mage-Council-authority relations remain `UNKNOWN / NOT ESTABLISHED` without a specific causal path.
+
+## 5. Legacy quarantine
+
+- Legacy professional mastery is not imported into teenage MC4.
+- Legacy specializations may inform provenance but do not establish current certification or specialization.
+- Fusion is not imported; its actual legacy effect is itself `UNKNOWN`.
+- The old Spear of Restraint and its absolute anti-death/soul mechanics are not current canon.
+- Physical sex/morphology across configurations is `UNKNOWN`.
+- Trigger, direction, speed and control of switching are `UNKNOWN`.
+- The official character name remains a placeholder.
+- Authorial remake genealogy does not establish in-world cross-fiction provenance; MC4 as a cross-world actor remains `UNDER CONSTRUCTION / NOT CURRENT CANON`.
+
+## 6. Visual boundary
+
+MC4 follows the current functional Academy uniform standard. Legacy colors or visual tendencies may inform later personal accents only if they do not override protection, movement, spellcasting, equipment carriage or Academy standards.
+'@
+Write-MarkdownOutput '60_MC4_IDENTITY_CURRENT.md' $mc4Content
+
+$historyCurrent = $history
+$historyCurrent = Replace-Required -Text $historyCurrent -Old 'Mẹ MC2 thuộc **hoàng tộc Raging Fire ở phía Nam**.' -New 'Mẹ MC2 thuộc **huyết hệ hoàng tộc Raging Fire bên trong liên hiệp RF ở phía Nam**.' -Label 'history RF lineage versus union'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old 'Sau succession struggle ở RF:' -New 'Sau succession struggle tại quốc gia thành viên nơi Prince 9 xuất thân:' -Label 'history RF succession scope'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old 'Hoàng hậu hiện tại **đang bị Quad Night tạm giữ ở cấp liên minh**; nơi giam có thể được luân phiên giữa các member state để chống gián điệp/giải cứu.' -New 'Quan hệ giam giữ cũ phụ thuộc Quad Night đã bị orphan. Current custodian của Hoàng hậu/mẹ MC2 giữ `UNKNOWN`; không tự chuyển bà sang ML hoặc TE.' -Label 'history queen custody boundary'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old 'Hoàng tộc RF có một trait ẩn:' -New 'Hoàng tộc mang huyết hệ Raging Fire có một trait ẩn:' -Label 'history RF lineage trait'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old '## 25C.1 CURRENT CANON — AetherFire là seal-state khoảng 200 năm tuổi' -New '## 25C.1 PARTIALLY SUPERSEDED 2026-09-11 — AetherFire age survives; old east geometry retired' -Label 'history old east geometry status'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old @'
+East/right
+→ ~100 km controlled corridor
+→ Holy State as main Quad Night entrance
+'@ -New @'
+East/right
+→ old 100 km / Quad Night geometry is orphaned
+→ exact current map between AF, ML and TE = UNKNOWN
+'@ -Label 'history old east geometry body'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old '## 25C.2 CURRENT CANON — 100 km corridor và các buffer micro-polity' -New '## 25C.2 SUPERSEDED 2026-09-11 — 100 km corridor và các buffer micro-polity' -Label 'history old corridor status'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old @'
+Ví dụ Y2 trong concept gốc được nhớ dưới node **Học viện Phép thuật / Hội đồng Pháp sư**:
+
+```text
+học viên tài năng
+→ đào tạo / đánh giá
+→ hữu dụng: trả về AF làm việc
+→ failure: hạ xuống Undie nội bộ học viện
+```
+
+Vì vậy khi hỏi “Undie có gì?”, Y2 có thể không tự bật ra. Khi hỏi “Học viện xử lý học viên thất bại thế nào?”, pipeline mới hiện đầy đủ. Đây là **cách index trí nhớ**, không phải chi tiết nhỏ.
+'@ -New @'
+Học viện hiện được index dưới node **Hội đồng Pháp sư / site Đông Bắc / đào tạo battlemage / lab / teleport gate / grievance phía Bắc**. Đây là cách index institution/process-first phù hợp với hướng political-centric hiện tại.
+
+Route cũ `Academy failure → Undie` đã bị người dùng xóa khỏi setting hiện hành và khỏi reconsideration layer. Nó không còn là fallback để giải thích cách Học viện xử lý học viên thất bại.
+'@ -Label 'remove Academy failure to Undie memory example'
+$historyCurrent = $historyCurrent.Replace('# 25B. Y — Mage Council Đông Bắc, human experimentation và institutional failure sink', '# 25B. Y — Mage Council Đông Bắc, human experimentation và political-security pressure', [System.StringComparison]::Ordinal)
+$historyCurrent = Remove-RequiredRange -Text $historyCurrent -Start '## 25B.4 Y2 DESIGN HISTORY — academy tuyển civilian talent, useful output và Undie failure sink' -End '# 25C. Z / AA — Quad Night, strategic geography và Học viện như forward node' -Label 'remove Academy failure to Undie history and reconsideration'
+$historyCurrent = $historyCurrent.Replace('một hoàng gia chư hầu thuộc Raging Fire', 'hoàng gia một quốc gia thành viên rank thấp hơn trong RF', [System.StringComparison]::Ordinal)
+$historyCurrent = $historyCurrent.Replace('RF cố tình che giấu để tránh khủng hoảng chính trị', 'genealogy bị che giấu có chủ ý bên trong RF; exact responsible actor giữ `UNKNOWN`', [System.StringComparison]::Ordinal)
+$historyCurrent = $historyCurrent.Replace('MC2.2 lật vua RF hiện tại/đăng cơ', 'MC2.2 lật vua của quốc gia thành viên nơi Prince 9 xuất thân/đăng cơ tại quốc gia đó', [System.StringComparison]::Ordinal)
+$historyCurrent = Replace-Required -Text $historyCurrent -Old '## 25C.3 CURRENT CANON — Quad Night là alliance, Holy State chỉ là member/representative' -New '## 25C.3 SUPERSEDED 2026-09-11 — Quad Night alliance ontology' -Label 'history Quad Night status'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old '## 25C.4 CURRENT CANON — Queen custody là alliance-level rotating containment' -New '## 25C.4 SUPERSEDED 2026-09-11 — Queen custody under Quad Night' -Label 'history queen custody status'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old '## 25C.5 CURRENT CANON — T.Gear Undie treaty và Holy State covert interference' -New '## 25C.5 PARTIALLY SUPERSEDED 2026-09-11 — legacy treaty route and surviving covert pattern' -Label 'history treaty status'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old 'Việc phục hồi exact forced-Undie sanction sẽ cần một chốt canon riêng; trạng thái `UNDER CONSIDERATION` của R2 không tự sửa current Undie ontology.' -New 'Quyết định 2026-09-16 xóa toàn bộ foreign-spy punitive Undie route khỏi current canon và reconsideration vì nó không còn phù hợp với hướng political-centric của setting. Exact legal/status treatment thay thế cho spy giữ `UNKNOWN`; Criminal Slave → Undie vẫn bị cấm.' -Label 'history spy reconsideration removal'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old '**CURRENT-CANON CONFLICT:** legacy forced punitive transfer of infiltrators into Undie không tự tương thích với current voluntary/consent-based Undie ontology và **không được tự phục hồi**.' -New '**SUPERSEDED / REMOVED — 2026-09-16:** foreign spy / infiltrator không còn punitive Undie route riêng. Archived implementation là provenance-only; không được dùng làm fallback cho xử lý gián điệp.' -Label 'history spy conflict removal'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old '## 20.6 R2 — Holy State infiltration / T counteraction' -New '## 20.6 PROVENANCE ONLY — Holy State infiltration / T counteraction; punitive Undie endpoint removed' -Label 'history R2 provenance status'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old '### CURRENT-CANON COMPATIBILITY ISSUE' -New '### REMOVAL RECORD — 2026-09-16' -Label 'history R2 removal heading'
+$historyCurrent = Replace-Required -Text $historyCurrent -Old 'Do đó nếu R2 được tái nhập:' -New 'Các function chính trị dưới đây chỉ được giữ để đọc design genealogy; chúng không phải đề xuất tái nhập R2 hoặc punitive Undie endpoint:' -Label 'history R2 no-reimport boundary'
+
 $historyContent = @"
 # AetherFire — Design History & Reconsiderations
 
 > Preserved as a separate temporal layer. ``DESIGN HISTORY``, ``RETIRED``, ``SURVIVING LEGACY``, ``UNDER CONSIDERATION``, ``CURRENT CANON`` and ``UNKNOWN`` retain their original meanings. Nothing in this file becomes current canon merely because it appears here.
 
-$(Shift-MarkdownHeadings $history)
+## Regional supersession notice — 2026-09-11
+
+- Quad Night and the old four-member-state model are retired.
+- Holy State → Matriarch's Lament; T.Gear → Transfusion EasterFire; Trinity Hexagon → district inside ML.
+- Old Queen custody, 100 km corridor and Academy-flank relations are orphaned, not silently remapped.
+- The AF↔TE treaty and covert-interference pattern survive only in the form stated by the new regional canon; the Holy-State transit chokepoint is retired.
+- The former foreign-spy punitive Undie route is removed as a current or reconsideration candidate because it no longer fits the political-centric setting. Archived source and generated history references remain provenance/removal records only; replacement legal/status treatment remains ``UNKNOWN``.
+
+## Latest source-state boundary — updated 2026-09-16
+
+- Internal Matriarch's Lament current canon is routed to ``70_MATRIARCHS_LAMENT_CURRENT.md``. ``10`` now retains only its global/cross-domain interface; this is a document-authority split, not a lore retcon.
+- RF single-kingdom wording is superseded by the continental-union/member-state ontology now recorded in ``10``.
+- The former Academy-failure-to-Undie route is removed from both current canon and reconsideration. It survives only inside byte-preserved archived sources as provenance.
+- The Academy's six-year model, five-person team, twelve competency blocks, daily rhythm, multi-axis scholarship profile and functional uniform direction are no longer working proposals; they are current canon in ``10``.
+- MC4 legacy mastery, Fusion and Spear mechanics remain genealogy-only and are not current.
+- Trần Trúc Nha's membership and regional role in Matriarch's Lament remain current. Her proposed summoned/cross-world origin, MC4's proposed in-world cross-fiction origin and the other unconfirmed cross-world/cross-time candidates are ``UNDER CONSTRUCTION / NOT CURRENT CANON``.
+- The ``Nguyên Chủ / Nguyên Anh`` concept and the ``元主 / 元嬰`` wordplay remain proposal/design material. They are not assigned to MC2's mother by this integration.
+
+$(Shift-MarkdownHeadings $historyCurrent)
 "@
 Write-MarkdownOutput '90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md' $historyContent
 
@@ -750,6 +1302,36 @@ $reconciliationContent = @"
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Matriarch's Lament follow-up decisions — 2026-09-16
+
+1. **Trần Trúc Nha:** her membership and regional role in Matriarch's Lament are current canon.
+2. **Cross-world construction boundary:** Trúc Nha's proposed summoned/cross-world origin, MC4's proposed in-world cross-fiction origin and the other unconfirmed cross-world/cross-time candidates are ``UNDER CONSTRUCTION / NOT CURRENT CANON``. This does not alter the already confirmed Fiction 0 → Fiction 1 status of MC1 and MC3.
+3. **AF-ML-009 — RESOLVED / REMOVED:** the former foreign-spy punitive Undie route is deleted from current canon and reconsideration because it no longer fits the political-centric setting. Archived source wording remains provenance only and cannot reactivate the route.
+4. **Post-removal boundary:** legal classification, evidentiary/judicial handling and status outcome for foreign spies remain ``UNKNOWN``. Removal does not map spies into ``Criminal Slave``, voluntary Undie or another existing status route; Criminal Slave → Undie remains prohibited.
+
+## Matriarch's Lament document-authority integration — 2026-09-16
+
+1. **Architecture only:** splitting the ML material is a document-authority refactor, not a change to canon truth values.
+2. **Internal ML authority:** ``70_MATRIARCHS_LAMENT_CURRENT.md`` controls ML governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and northeastern tribes.
+3. **Global interface:** ``10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`` retains only the ML/TE facts required by the global AetherFire institutional and geopolitical model.
+4. **Undie interface:** ``30_UNDIE_SYSTEM_CURRENT.md`` controls Undie status boundaries, including the removed foreign-spy route and the bounded AF→TE transfer statement.
+5. **Cross-world interface:** ``40_METAFICTION_CANON_TIMELINE_CURRENT.md`` controls the ``UNDER CONSTRUCTION / NOT CURRENT CANON`` status of Trúc Nha's proposed cross-world origin.
+6. **Source preservation:** ``matriarchs_lament_working_retcon_canon.md`` remains byte-exact in ``Source_Archive``; no source outside ``Temp`` was rewritten.
+
+## RF, Academy and MC4 canon integration addendum — 2026-09-15
+
+1. **RF ontology:** RF is now a continental union of cultivation member states, not one kingdom. ``Raging Fire lineage``, ``RF union``, the strongest bloc/member polity of MC2's mother and Prince 9's lower-ranked member polity are distinct nodes.
+2. **Succession wording:** old ``vua RF`` and ``hoàng gia chư hầu RF`` wording is superseded. MC2.2's Canon 1 accession applies to the member polity where Prince 9 originated; official polity names and exact rank remain ``UNKNOWN``.
+3. **Knowledge boundary:** do not write ``RF knows`` as a unitary actor. The strongest bloc's relevant inner circle knows the fetus's father; knowledge elsewhere and the Trưởng công chúa's own knowledge remain differentiated/``UNKNOWN``.
+4. **RF–AF politics:** the strongest bloc's secession strategy, manipulation leading to Prince 9's death, guarded alliance with AF and three-bloc distrust campaign are current. Temporary real-world-inspired bloc labels are not canon names.
+5. **MC2 exploitation:** after the AF king flees, an AF noble faction seeks to reduce RF dependency, reverse-engineer a suppression array and increase military force generation by pressuring/researching MC2's lineage. This is not proof of a unified state policy, known mechanism or successful program, and it does not erase MC2's Civil → Undie agency.
+6. **Academy promotion:** the six-year model, five-person combat team, twelve competency blocks, daily training rhythm, multi-axis scholarship profile and concrete functional uniform direction are promoted from working design to current canon. Exact hours, weights, thresholds, official name and command chain remain ``UNKNOWN``; the Academy name uses a placeholder.
+7. **Removed route:** ``Academy failure → Undie`` is deleted from current and reconsideration layers because it no longer fits the political-centric setting. Archived source bytes remain provenance only and cannot reactivate it.
+8. **MC4:** MC4 is current, belongs to the Academy, is one continuous identity with two biological/cognitive configurations and is the only confirmed bearer of the secret trait. Legacy mastery, Fusion, Spear mechanics, morphology and in-world cross-world origin are not imported.
+9. **Trần Trúc Nha:** membership and regional role in Matriarch's Lament remain current canon. Summoned/cross-world origin is ``UNDER CONSTRUCTION / NOT CURRENT CANON``.
+10. **Open-issues control:** ``92_OPEN_ISSUES_CURRENT.md`` is restored as a generated control view and extended for RF, Academy, MC4 and cross-world boundaries. It is not a canon authority.
+11. **Source priority:** RF geopolitics deltas are controlled by ``aetherfire_rf_crossworld_geopolitics_chat_consolidation_2026-09-15.md`` over overlapping older wording; ``aetherfire_rf_nguyen_chu_dynastic_power_axes_chat_consolidation.md`` controls the initial RF correction and preserves Nguyên Chủ/Nguyên Anh as proposal; the Academy and MC4 working files control their approved scopes.
+
 ## Metafiction consolidation addendum — 2026-09-10
 
 1. **Causal timeline priority:** ``aetherfire_canon_story_line_v0_5_v1_0_overlap.md`` controls V0.5/V1.0, realization mode, pathway overlap and both clashes where older simplified descriptions differ.
@@ -757,6 +1339,17 @@ $reconciliationContent = @"
 3. **MC1 entry:** MC1 is pulled while Fictionizing/stress-testing Canon 1 at the overlap, not directly from a purely external operator position.
 4. **Narrator boundary:** the known narrator split is ``POC-personification → MC1`` and ``Fictionize-personification → Elena``. It does not establish transfer or loss of MC1/MC3's underlying esper abilities; exact Clash #2 mechanics remain ``UNKNOWN``.
 5. **Clothing exclusion:** section ``# 11. Dark humor của trang phục`` from ``aetherfire_narrators_pov_clash_humor.md`` was deliberately not imported. ``30_UNDIE_SYSTEM_CURRENT.md`` remains the sole current authority for Undi clothing and the two-stage visual reading.
+
+## Regional canon reconciliation addendum — 2026-09-11
+
+1. **Source priority:** ``matriarchs_lament_working_retcon_canon.md`` controls its declared regional scope.
+2. **Retired ontology:** Quad Night and its four-member-state graph are retired; old names remain only as aliases or design history.
+3. **Current actors:** Holy State → Matriarch's Lament; T.Gear → Transfusion EasterFire; Trinity Hexagon is a district inside ML; northeastern matriarchal tribes remain separate actors under supply/protection relations.
+4. **Treaty route:** AF↔TE is direct and negotiated inside AF. The former Holy-State transit chokepoint and Quad-Night security leverage are superseded. The covert-interference pattern remains current under ML↔TE.
+5. **Queen custody:** Raging Fire / Prince 9 genealogy remains current. Post-Quad-Night custody is ``UNKNOWN`` and is not assigned to ML or TE.
+6. **Spy boundary — superseded 2026-09-16:** the earlier regional integration briefly treated a foreign-spy punitive route as current. The later decision removes that route for political-setting fit; see the 2026-09-16 addendum. Criminal Slave → Undie remains prohibited.
+7. **Map boundary:** the old 100 km corridor and Academy-flank relations are orphaned. No replacement geometry is inferred.
+8. **Unchanged domains:** current Undi clothing/two-stage perception, Undie-rank terminology and metafiction authority remain unchanged.
 
 ## Latest reconciliation addendum — 2026-09-09
 
@@ -777,6 +1370,53 @@ $(Shift-MarkdownHeadings -Text $register -Levels 2)
 "@
 Write-MarkdownOutput '91_RECONCILIATION_RECORD.md' $reconciliationContent
 
+$newOpenIssues = @'
+## 5. RF, Academy, MC4 and cross-world open issues — updated 2026-09-16
+
+| ID | Type / state | Open issue | Required baseline and dependency |
+| --- | --- | --- | --- |
+| AF-OPEN-016 | UNKNOWN / OPEN | Exact RF constitutional form and whether the four foregrounded blocs are member states, coalitions of member states or another internal layer. | `10`; `91` RF/Academy/MC4 addendum. Do not collapse bloc, state, union and lineage. |
+| AF-OPEN-017 | UNKNOWN / OPEN | Exact RF actor that supplies, contracts, maintains or authorizes the Raging Fire firewall and founding-seal dependency. | `10`; do not assign automatically to the union or strongest bloc. |
+| AF-OPEN-018 | UNKNOWN / OPEN | Official names/ranks of the mother-MC2 and Prince-9 polities, plus exact RF authority over succession and royal marriage. | `10` and `40`; old `vua RF` wording is superseded. |
+| AF-OPEN-019 | UNKNOWN / OPEN | Trưởng công chúa knowledge, public murder narrative and exact chronology of Prince 9's death, pregnancy transfer, alliance and secession escalation. | `10`; knowledge must remain actor-specific. |
+| AF-OPEN-020 | UNKNOWN / OPEN | Academy official name, command chain, exact map, student/staff scale, administrative/specialist/dangerous-practice group sizes, five-person-team role allocation and activation threshold, entry age, per-term curriculum gates and field-deployment authorization. | `10`; official name remains `[ACADEMY NAME — PLACEHOLDER]`; only the five-person standard itself is promoted. |
+| AF-OPEN-021 | UNKNOWN / OPEN | Scholarship weights, thresholds, funding percentage, approving authority and external-work liability. | `10`; the seven-factor profile is canon, exact numeric formula is not supplied. |
+| AF-OPEN-022 | UNKNOWN / OPEN | Definition of Academy `quality` and its exact relation to supplement access. | `10`; do not map it to rank, GPA, status, money, scholarship tier or morality. |
+| AF-OPEN-023 | UNKNOWN / OPEN | Lab-subject personhood, awareness, pain, consent/coercion, regeneration, death permanence, legal status, oversight and live-target protocol. | `10`; intended moral grayness does not resolve these facts. |
+| AF-OPEN-024 | UNKNOWN / OPEN | Current teleport-gate access and post-divergence sabotage/lab operational state. | `10` and `40`. |
+| AF-OPEN-025 | UNKNOWN / OPEN | MC4 morphology, switching trigger/control, medical/magical interaction, official name and who knows/detects the secret. | `60`. |
+| AF-OPEN-026 | UNKNOWN / OPEN | MC4 current specialization and any future import of Fusion, restraint philosophy or a redesigned Spear. | `60`; legacy mastery and absolute Spear mechanics are not current. |
+| AF-OPEN-027 | UNDER CONSTRUCTION / NOT CURRENT CANON | Whether Trần Trúc Nha was summoned from another world. | `40`; her membership and regional role in ML remain canon, while the proposed cross-world origin is not current. |
+| AF-OPEN-028 | UNDER CONSTRUCTION / NOT CURRENT CANON | Cross-world/cross-time status of MC4 and the other proposed outsiders, plus origin, mechanism, body/soul/memory transfer, return path and chronology. | `40` and `60`; no shared mechanism is established and none of these candidate origins is current canon. |
+| AF-OPEN-029 | PROPOSAL / OPEN | Whether to canonize Nguyên Chủ/Nguyên Anh generally, adopt `元主 / 元嬰`, or assign the ontology/title to MC2's mother. | `90`; none of these three decisions is made by the RF retcon. |
+| AF-OPEN-031 | CONFLICT / OPEN | Legacy label `khu nghiên cứu cơ thể người` coexists with canon Academy subjects listed as Elf, Beastman and Dragon. | `10`; decide whether this is a technical umbrella label or must be renamed to a species-neutral body-research term. Do not infer personhood from the label. |
+
+## 6. Matriarch's Lament open interfaces — updated 2026-09-16
+
+| ID | Type / state | Open issue | Required baseline and dependency |
+| --- | --- | --- | --- |
+| AF-ML-003 | UNKNOWN / OPEN | Whether ML's apocalyptic cult and the cult operating through the AF/Academy-side interface are the same organization, branches, affiliates, or merely share a label. | `70` and `10`; do not merge organizations from label overlap. |
+| AF-ML-004 | UNKNOWN / OPEN | Exact relation between ML's central Temple and the religious/Temple network operating inside AetherFire. | `70`; influence and information flow are current, but branch/subordinate/affiliate status is not established. |
+| AF-ML-005 | UNKNOWN / OPEN | Exact distinction and interaction among the three-clergy Creed quorum, the three priests witnessing relic loans, and activation/issuance of a Holy Guard oath. | `70`; shared number or personnel does not establish one procedure. |
+| AF-ML-006 | UNKNOWN / OPEN | Exact relation between the plural relic catalogue and the singular regenerative-consumable seal relic, including seal target, renewal interval, custody, ownership, authority and cost. | `70` and `10`; periodic AF access is current, these mechanics are not. |
+| AF-ML-007 | UNKNOWN / OPEN | Exact legal mechanism, consent, selection criteria, post-transfer status, and return/exit rights for the Undie transferred by AF to TE. | `30` and `70`; do not infer sale, compulsory reassignment, voluntary migration, citizenship, or unchanged AF status. |
+| AF-ML-008 | UNKNOWN / OPEN | Status, rights, destination and legal recognition of Undie “freed on site” through ML covert interference. | `70` and `30`; liberation wording does not establish citizenship, custody, return or exit route. |
+| AF-ML-010 | UNKNOWN / OPEN | Granularity of Saintess/Temple knowledge concerning leaks and covert activity. | `70`; institution-level awareness does not establish knowledge or authorization of every operative or operation. |
+
+## 7. Closed/superseded items from these integrations
+
+| ID | State | Resolution |
+| --- | --- | --- |
+| AF-OPEN-030 | RESOLVED / REMOVED | `Academy failure → Undie` is not a current or reconsideration route. Archived occurrence is provenance only. |
+| AF-ML-002 | RESOLVED | Trần Trúc Nha's ML membership and regional role are current canon; her proposed summoned/cross-world origin is `UNDER CONSTRUCTION / NOT CURRENT CANON`. |
+| AF-OPEN-032 / AF-ML-009 | RESOLVED / REMOVED | `foreign spy / infiltrator → punitive Undie` is removed from current canon and reconsideration because it no longer fits the political-centric setting. Archived occurrence is provenance only; replacement legal/status handling remains `UNKNOWN`. |
+
+## 8. Scope boundary
+'@
+$openIssuesContent = Replace-Required -Text $openIssuesSeed -Old '## 5. Scope boundary' -New $newOpenIssues -Label 'restore and extend open issues register'
+$openIssuesContent = Replace-Required -Text $openIssuesContent -Old 'It does not replace local `UNKNOWN` sections inside `10`–`50`' -New 'It does not replace local `UNKNOWN` sections inside current-domain files `10`–`70`' -Label 'open-issues current-domain range'
+Write-MarkdownOutput '92_OPEN_ISSUES_CURRENT.md' $openIssuesContent
+
 $sourceHashes = Get-ChildItem -LiteralPath $sourceRoot -File -Filter '*.md' |
     Sort-Object Name |
     ForEach-Object {
@@ -791,8 +1431,11 @@ $generatedNames = @(
     '30_UNDIE_SYSTEM_CURRENT.md',
     '40_METAFICTION_CANON_TIMELINE_CURRENT.md',
     '50_NARRATORS_POV_AND_HUMOR_CURRENT.md',
+    '60_MC4_IDENTITY_CURRENT.md',
+    '70_MATRIARCHS_LAMENT_CURRENT.md',
     '90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md',
-    '91_RECONCILIATION_RECORD.md'
+    '91_RECONCILIATION_RECORD.md',
+    '92_OPEN_ISSUES_CURRENT.md'
 )
 $outputHashes = foreach ($name in $generatedNames) {
     $path = Join-Path $tempRoot $name
@@ -812,6 +1455,15 @@ $manifest = @"
 - ``aetherfire_undi_hoa_nguyet_cultural_humiliation_design_philosophy.md`` was imported into the Undi visual domain with explicit reconciliation of recognition order, MC2 genealogy and rank namespace.
 - ``aetherfire_fiction0_fiction1_model.md``, ``aetherfire_canon1_canon2.md`` and ``aetherfire_canon_story_line_v0_5_v1_0_overlap.md`` were consolidated into the metafiction/canon-timeline domain with the story-line source controlling causal conflicts.
 - ``aetherfire_narrators_pov_clash_humor.md`` was consolidated into a separate narrator/POV domain. Its clothing section was explicitly excluded so it cannot override the latest Undi visual canon in ``30_UNDIE_SYSTEM_CURRENT.md``.
+- ``matriarchs_lament_working_retcon_canon.md`` was imported as the controlling regional retcon. Its unmatched final source fence is repaired only in generated output; the archived source remains byte-preserved.
+- ``70_MATRIARCHS_LAMENT_CURRENT.md`` controls the internal ML domain. ``10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`` retains only ML/TE global and cross-domain interfaces; this split is architectural and does not change lore status.
+- The four 2026-09-15 candidate files were archived byte-exactly and imported only according to the explicit user decisions recorded in ``91_RECONCILIATION_RECORD.md``.
+- ``The Tainted Cosmos - MERGED.md`` is archived for MC4 identity genealogy; its cosmology, power scale, mastery, Fusion and Spear mechanics are not imported into current AetherFire canon.
+- ``aetherfire_open_issues_current_restored_2026-09-15.md`` preserves the restored control file as a build seed. The generated ``92_OPEN_ISSUES_CURRENT.md`` extends it without granting it canon authority.
+- The former Academy-failure-to-Undie route was removed from generated current/reconsideration layers and remains visible only in immutable archived provenance.
+- The former foreign-spy punitive Undie route was removed as an active current/reconsideration candidate for political-setting fit. ``90``/``91`` retain only provenance and the removal log; no replacement legal/status route is inferred.
+- The AF→TE transfer of some Undie is retained only as a bounded event. Legal mechanism, consent, selection, post-transfer status and return/exit rights remain ``UNKNOWN``.
+- ``30_UNDIE_SYSTEM_CURRENT.md`` remains the sole authority for Undi clothing. The Academy combat uniform is a separate functional-uniform domain.
 - Current canon, design history and audit provenance remain separate layers.
 - Rollback uses Git history. ``Source_Archive`` keeps the package reproducible without parent-folder dependencies.
 

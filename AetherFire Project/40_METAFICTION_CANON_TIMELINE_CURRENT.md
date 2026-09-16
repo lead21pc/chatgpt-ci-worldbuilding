@@ -344,11 +344,11 @@ Các primitive genealogy sau nằm sâu hơn việc Canon 1 hay Canon 2 đi theo
 ```text
 Raging Fire = lineage/tên gốc phía mẹ MC2
 Raging Phoenix = tên AetherFire đặt lại
-Prince 9 của một hoàng gia chư hầu RF = cha ruột MC2 và MC2.2
+Prince 9 của hoàng gia một quốc gia thành viên rank thấp hơn trong RF = cha ruột MC2 và MC2.2
 MC2 + MC2.2 = anh em cùng cha khác mẹ
 ```
 
-RF cố tình che giấu relation này. Vị vua AetherFire đã bỏ trốn không phải cha ruột MC2; mẹ MC2 đã mang thai trước khi vào hoàng gia AetherFire và bị gả đi để che giấu pregnancy. Hoàng hậu hiện bị **Quad Night** tạm giữ ở cấp liên minh; nơi giam có thể luân phiên giữa các member state.
+Relation này bị che giấu có chủ ý bên trong RF; exact responsible actor và knowledge distribution giữ `UNKNOWN`. Vị vua AetherFire đã bỏ trốn không phải cha ruột MC2; mẹ MC2 đã mang thai trước khi vào hoàng gia AetherFire và bị gả đi để che giấu pregnancy. Quan hệ custody cũ dưới Quad Night đã bị orphan; current custodian của Hoàng hậu giữ `UNKNOWN`.
 
 Các primitive này có thể sinh consequences khác nhau sau divergence; `shared genealogy ≠ same later outcome`.
 
@@ -549,7 +549,7 @@ MC2 nhượng bộ
 → MC2 chết / martyr
 → MC2.2/hôn phu được kích hoạt như downstream consequence
 → hidden genealogy Prince 9 / RF trở thành causal-active
-→ Canon 1 có trajectory MC2.2 lật vua RF hiện tại và lên ngôi sau revelation
+→ Canon 1 có trajectory MC2.2 lật vị vua hiện tại của quốc gia thành viên nơi Prince 9 xuất thân và lên ngôi tại quốc gia đó sau revelation
 → khi biết MC2 là em gái cùng cha khác mẹ và đã chết, MC2.2 tiếp tục lật AetherFire
 → AetherFire bị đánh sập / tiếm quyền
 → chính thể cũ kết thúc
@@ -1535,3 +1535,26 @@ Vì vậy sự tồn tại của cả hai không tự động xóa bất đối 
 - full powerset của Fictionize bên trong Fiction 1;
 - MC1/MC3 có thể trở về Fiction 0 hay không và bằng cách nào;
 - exact endpoint của Canon 2/current world-state sau khi MC1 xuất hiện.
+
+---
+
+## Part IV — Cross-world status boundary
+
+### Confirmed
+
+MC1 and MC3 are confirmed Fiction 0 → Fiction 1 cases. Raging Fire rebirth potential is a different mechanism: bearing the trait does not establish that MC2 or her mother has died and been reborn.
+
+Trần Trúc Nha currently belongs to Matriarch's Lament and holds the role established in `70_MATRIARCHS_LAMENT_CURRENT.md`.
+
+### Under construction / not current canon
+
+```text
+Trần Trúc Nha summoned from another world
+= UNDER CONSTRUCTION / NOT CURRENT CANON
+```
+
+This origin is not current canon unless a later dedicated file is finalized and approved. Her current ML membership and regional role do not depend on that origin.
+
+### Other unconfirmed cross-world/cross-time candidates
+
+MC4, the undead west of Hoa Nguyệt, the sheep-man in the northern Beastman power, the painter, bard, time-traveling businessperson and political prisoner remain `UNDER CONSTRUCTION / NOT CURRENT CANON` as cross-world/cross-time candidates. They do not share a mechanism, cosmology, faction or mutual knowledge by default.

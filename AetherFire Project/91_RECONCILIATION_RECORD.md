@@ -2,6 +2,36 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Matriarch's Lament follow-up decisions — 2026-09-16
+
+1. **Trần Trúc Nha:** her membership and regional role in Matriarch's Lament are current canon.
+2. **Cross-world construction boundary:** Trúc Nha's proposed summoned/cross-world origin, MC4's proposed in-world cross-fiction origin and the other unconfirmed cross-world/cross-time candidates are `UNDER CONSTRUCTION / NOT CURRENT CANON`. This does not alter the already confirmed Fiction 0 → Fiction 1 status of MC1 and MC3.
+3. **AF-ML-009 — RESOLVED / REMOVED:** the former foreign-spy punitive Undie route is deleted from current canon and reconsideration because it no longer fits the political-centric setting. Archived source wording remains provenance only and cannot reactivate the route.
+4. **Post-removal boundary:** legal classification, evidentiary/judicial handling and status outcome for foreign spies remain `UNKNOWN`. Removal does not map spies into `Criminal Slave`, voluntary Undie or another existing status route; Criminal Slave → Undie remains prohibited.
+
+## Matriarch's Lament document-authority integration — 2026-09-16
+
+1. **Architecture only:** splitting the ML material is a document-authority refactor, not a change to canon truth values.
+2. **Internal ML authority:** `70_MATRIARCHS_LAMENT_CURRENT.md` controls ML governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and northeastern tribes.
+3. **Global interface:** `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` retains only the ML/TE facts required by the global AetherFire institutional and geopolitical model.
+4. **Undie interface:** `30_UNDIE_SYSTEM_CURRENT.md` controls Undie status boundaries, including the removed foreign-spy route and the bounded AF→TE transfer statement.
+5. **Cross-world interface:** `40_METAFICTION_CANON_TIMELINE_CURRENT.md` controls the `UNDER CONSTRUCTION / NOT CURRENT CANON` status of Trúc Nha's proposed cross-world origin.
+6. **Source preservation:** `matriarchs_lament_working_retcon_canon.md` remains byte-exact in `Source_Archive`; no source outside `Temp` was rewritten.
+
+## RF, Academy and MC4 canon integration addendum — 2026-09-15
+
+1. **RF ontology:** RF is now a continental union of cultivation member states, not one kingdom. `Raging Fire lineage`, `RF union`, the strongest bloc/member polity of MC2's mother and Prince 9's lower-ranked member polity are distinct nodes.
+2. **Succession wording:** old `vua RF` and `hoàng gia chư hầu RF` wording is superseded. MC2.2's Canon 1 accession applies to the member polity where Prince 9 originated; official polity names and exact rank remain `UNKNOWN`.
+3. **Knowledge boundary:** do not write `RF knows` as a unitary actor. The strongest bloc's relevant inner circle knows the fetus's father; knowledge elsewhere and the Trưởng công chúa's own knowledge remain differentiated/`UNKNOWN`.
+4. **RF–AF politics:** the strongest bloc's secession strategy, manipulation leading to Prince 9's death, guarded alliance with AF and three-bloc distrust campaign are current. Temporary real-world-inspired bloc labels are not canon names.
+5. **MC2 exploitation:** after the AF king flees, an AF noble faction seeks to reduce RF dependency, reverse-engineer a suppression array and increase military force generation by pressuring/researching MC2's lineage. This is not proof of a unified state policy, known mechanism or successful program, and it does not erase MC2's Civil → Undie agency.
+6. **Academy promotion:** the six-year model, five-person combat team, twelve competency blocks, daily training rhythm, multi-axis scholarship profile and concrete functional uniform direction are promoted from working design to current canon. Exact hours, weights, thresholds, official name and command chain remain `UNKNOWN`; the Academy name uses a placeholder.
+7. **Removed route:** `Academy failure → Undie` is deleted from current and reconsideration layers because it no longer fits the political-centric setting. Archived source bytes remain provenance only and cannot reactivate it.
+8. **MC4:** MC4 is current, belongs to the Academy, is one continuous identity with two biological/cognitive configurations and is the only confirmed bearer of the secret trait. Legacy mastery, Fusion, Spear mechanics, morphology and in-world cross-world origin are not imported.
+9. **Trần Trúc Nha:** membership and regional role in Matriarch's Lament remain current canon. Summoned/cross-world origin is `UNDER CONSTRUCTION / NOT CURRENT CANON`.
+10. **Open-issues control:** `92_OPEN_ISSUES_CURRENT.md` is restored as a generated control view and extended for RF, Academy, MC4 and cross-world boundaries. It is not a canon authority.
+11. **Source priority:** RF geopolitics deltas are controlled by `aetherfire_rf_crossworld_geopolitics_chat_consolidation_2026-09-15.md` over overlapping older wording; `aetherfire_rf_nguyen_chu_dynastic_power_axes_chat_consolidation.md` controls the initial RF correction and preserves Nguyên Chủ/Nguyên Anh as proposal; the Academy and MC4 working files control their approved scopes.
+
 ## Metafiction consolidation addendum — 2026-09-10
 
 1. **Causal timeline priority:** `aetherfire_canon_story_line_v0_5_v1_0_overlap.md` controls V0.5/V1.0, realization mode, pathway overlap and both clashes where older simplified descriptions differ.
@@ -9,6 +39,17 @@
 3. **MC1 entry:** MC1 is pulled while Fictionizing/stress-testing Canon 1 at the overlap, not directly from a purely external operator position.
 4. **Narrator boundary:** the known narrator split is `POC-personification → MC1` and `Fictionize-personification → Elena`. It does not establish transfer or loss of MC1/MC3's underlying esper abilities; exact Clash #2 mechanics remain `UNKNOWN`.
 5. **Clothing exclusion:** section `# 11. Dark humor của trang phục` from `aetherfire_narrators_pov_clash_humor.md` was deliberately not imported. `30_UNDIE_SYSTEM_CURRENT.md` remains the sole current authority for Undi clothing and the two-stage visual reading.
+
+## Regional canon reconciliation addendum — 2026-09-11
+
+1. **Source priority:** `matriarchs_lament_working_retcon_canon.md` controls its declared regional scope.
+2. **Retired ontology:** Quad Night and its four-member-state graph are retired; old names remain only as aliases or design history.
+3. **Current actors:** Holy State → Matriarch's Lament; T.Gear → Transfusion EasterFire; Trinity Hexagon is a district inside ML; northeastern matriarchal tribes remain separate actors under supply/protection relations.
+4. **Treaty route:** AF↔TE is direct and negotiated inside AF. The former Holy-State transit chokepoint and Quad-Night security leverage are superseded. The covert-interference pattern remains current under ML↔TE.
+5. **Queen custody:** Raging Fire / Prince 9 genealogy remains current. Post-Quad-Night custody is `UNKNOWN` and is not assigned to ML or TE.
+6. **Spy boundary — superseded 2026-09-16:** the earlier regional integration briefly treated a foreign-spy punitive route as current. The later decision removes that route for political-setting fit; see the 2026-09-16 addendum. Criminal Slave → Undie remains prohibited.
+7. **Map boundary:** the old 100 km corridor and Academy-flank relations are orphaned. No replacement geometry is inferred.
+8. **Unchanged domains:** current Undi clothing/two-stage perception, Undie-rank terminology and metafiction authority remain unchanged.
 
 ## Latest reconciliation addendum — 2026-09-09
 

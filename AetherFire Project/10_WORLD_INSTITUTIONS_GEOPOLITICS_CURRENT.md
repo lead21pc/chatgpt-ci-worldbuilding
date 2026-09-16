@@ -44,7 +44,7 @@ nhiều pipeline → Undie
 Undie → sinh ra / quản trị / giải thích mọi pipeline
 ```
 
-Undie còn có chức năng riêng trong kinh tế–xã hội, gồm sex-work/humiliation regime và một phần **van giải áp** cho áp lực Civil/đô thị. Nhưng ở cấp strategic pressure cooker, các node như nhà nước, quân đội, Hội đồng Pháp sư, True Crown/Raging Fire, long mạch, Holy State, Hoa Nguyệt, ba cường quốc phía Bắc, cult, succession và great-power politics mới là các trục có thể quyết định vận mệnh toàn cục.
+Undie còn có chức năng riêng trong kinh tế–xã hội, gồm sex-work/humiliation regime và một phần **van giải áp** cho áp lực Civil/đô thị. Nhưng ở cấp strategic pressure cooker, các node như nhà nước, quân đội, Hội đồng Pháp sư, True Crown/Raging Fire, long mạch, Matriarch's Lament, Hoa Nguyệt, ba cường quốc phía Bắc, cult, succession và great-power politics mới là các trục có thể quyết định vận mệnh toàn cục.
 
 ```text
 DEPTH OF MODULE
@@ -127,7 +127,7 @@ Các quý tộc muốn bẻ MC2 còn nhằm kiểm soát agency, fertility và h
 
 **LATEST CANON**
 
-Dòng mẹ của MC2 thuộc **hoàng tộc Raging Fire (RF) ở phía Nam**. `Raging Fire` là tên/căn tính gốc của huyết hệ. Khi huyết hệ này được nhập vào hệ AetherFire, AetherFire đổi `Fire` thành `Phoenix` vì không muốn chữ `Fire` của một vương tộc ngoại lai cạnh tranh/đè lên semantic identity của `Fire` trong tên AetherFire.
+Dòng mẹ của MC2 thuộc **huyết hệ hoàng tộc Raging Fire bên trong liên hiệp RF ở phía Nam**. `Raging Fire` là tên/căn tính gốc của huyết hệ. Khi huyết hệ này được nhập vào hệ AetherFire, AetherFire đổi `Fire` thành `Phoenix` vì không muốn chữ `Fire` của một vương tộc ngoại lai cạnh tranh/đè lên semantic identity của `Fire` trong tên AetherFire.
 
 ```text
 Raging Fire
@@ -137,17 +137,17 @@ Raging Phoenix
 = tên AetherFire áp/đặt lại cho lineage đó
 ```
 
-`Fire` trong Raging Fire mang nghĩa **tái sinh bên trong ngọn lửa**. Hoàng tộc RF có một **trait ẩn**: nếu bearer thỏa điều kiện thích hợp, chết trong lửa với tâm hồn thuần khiết thì có thể tái sinh thành **bán thần**, ở cấp có thể được xem như một super-weapon. Exact trigger/ritual/control mechanics ngoài điều kiện đã nêu giữ `UNKNOWN`.
+`Fire` trong Raging Fire mang nghĩa **tái sinh bên trong ngọn lửa**. Hoàng tộc mang huyết hệ Raging Fire có một **trait ẩn**: nếu bearer thỏa điều kiện thích hợp, chết trong lửa với tâm hồn thuần khiết thì có thể tái sinh thành **bán thần**, ở cấp có thể được xem như một super-weapon. Exact trigger/ritual/control mechanics ngoài điều kiện đã nêu giữ `UNKNOWN`.
 
 Genealogy của MC2:
 
 ```text
-Prince 9 của một hoàng gia chư hầu thuộc RF
+Prince 9 của hoàng gia một quốc gia thành viên rank thấp hơn trong RF
 + mẹ MC2
 → MC2
 ```
 
-Vì vậy vị vua AetherFire đã bỏ trốn **không phải cha ruột MC2**. Mẹ MC2 đã mang thai trước khi vào hoàng gia AetherFire và bị gả đi để che giấu pregnancy này. Hoàng hậu hiện tại **đang bị Quad Night tạm giữ ở cấp liên minh**; địa điểm giam giữ có thể được luân phiên giữa các thành viên để chống gián điệp và giải cứu.
+Vì vậy vị vua AetherFire đã bỏ trốn **không phải cha ruột MC2**. Mẹ MC2 đã mang thai trước khi vào hoàng gia AetherFire và bị gả đi để che giấu pregnancy này. Quan hệ giam giữ cũ phụ thuộc Quad Night đã bị orphan. Current custodian của Hoàng hậu/mẹ MC2 giữ `UNKNOWN`; không tự chuyển bà sang ML hoặc TE.
 
 AetherFire biết lineage này có **một tính chất khác ngoài phần seal/barrier mà họ đã nhận biết**, nhưng không nắm toàn bộ ontology thật. Chi phí nghiên cứu quá cao là một lý do khiến nhà nước chọn MC2 làm trường hợp đặc biệt để tìm hiểu/khai thác lineage.
 
@@ -272,51 +272,7 @@ AF và RF cách nhau bởi một đại dương; giao lưu thực tế phụ thu
 
 Hoa Nguyệt nối với AF bằng **Con đường Tơ lụa song phương** được lập theo hiệp định thương mại. Tense chính trị **không tự động cắt trade**.
 
-Phía phải/đông của AF có một **hành lang kiểm soát khoảng 100 km** nối sang Quad Night, với Holy State là cửa vào chính của chuỗi. Hành lang có nhánh chính với nhà nghỉ/dịch vụ; vùng xung quanh thường xảy ra cướp. Bên trong hành lang có các micro-polity/bộ tộc tự xưng chủ quyền dưới quyền/bảo hộ thuộc địa của AF, làm **buffer + trade relay + road security**. Một polity ở phần nối gần Quad Night chiếm khoảng 50 km còn lại; exact partition chi tiết chưa chốt.
-
-### J. Quad Night — liên minh bốn quốc gia, không phải một quốc gia đơn lẻ
-
-**LATEST CANON**
-
-`Quad Night` là tên chính thức của **liên minh bốn quốc gia**; cách gọi “Thánh quốc” trước đây khi chỉ toàn khối phải hiểu là Quad Night. **Holy State** chỉ là một member state và là đại diện chính trị của liên minh.
-
-Quad Night gồm:
-
-1. **Holy State** — một nước cộng hòa, dùng Thánh điện làm đại diện quốc gia; cưỡng ép xã hội theo một tôn giáo, người không theo bị công khai nhục mạ và chịu áp lực buộc phải tuân theo.
-2. **Quốc gia mẫu hệ** — trực tiếp phản đối Undie của AF nhưng có cấu trúc bài trừ nam giới rất cao, theo mô hình sinh sản gần “Amazon” thần thoại.
-3. **T.Gear** — tên chính thức của quốc gia thiên về du lịch, giải trí, kinh doanh, mua sắm; outsource phần lớn lao động nặng cho robot/android; cạnh tranh với AF về luxury/entertainment.
-4. **Trinity Hexagon** — quốc gia nhỏ giữ kho thần khí/magical artifacts; nhiều vật bị bound bởi địa lý và huyết thống. Quốc kỳ có **một tam giác nằm trong một hexagon**.
-
-Quad Night được lập ra **chủ yếu để bảo vệ Trinity Hexagon**, vì kho thần khí của nó không thể đơn giản di dời và nhiều vật chỉ phản ứng/rời giới hạn khi công nhận chủ nhân phù hợp.
-
-Hoàng hậu/mẹ MC2 hiện là **strategic detainee của Quad Night**. Bà có thể được luân phiên chuyển giữa các member state để chống gián điệp và giải cứu. Holy State và quốc gia mẫu hệ biết giá trị chiến lược của bà; T.Gear không quan tâm nhiều nhưng là nơi rất tệ để giữ yếu nhân vì access surface quá mở; Trinity Hexagon còn nguy hiểm hơn vì Raging Fire bloodline có khả năng làm các thần vật/huyết thống-bound artifact phản ứng. Exact artifact reaction giữ `UNKNOWN`; điểm canon là **bà không được phép bị giết chỉ vì việc giết dễ**, vì giá trị chiến lược và uncertainty của lineage quá lớn.
-
-### K. AF–T.Gear trade, Holy State chokepoint và covert sabotage
-
-**LATEST CANON**
-
-T.Gear đã và đang có **hiệp định song phương về Undie** với AF. Hiệp định gồm cả:
-
-```text
-institution/model transfer
-+
-actual cross-border Undie transfer / reassignment
-```
-
-Nó gần logic **chuyển nhượng** hơn là chỉ “bán cách tổ chức hệ thống”. Exact legal/payment/consent mechanics xuyên biên giới chưa chốt.
-
-Trade AF↔T.Gear phải đi qua Holy State. Holy State thể hiện thù địch với AF, trong khi T.Gear có lợi ích kinh tế trực tiếp nên gây sức ép: đe dọa đóng biên giới và chặn một phần **cửa sau/tuyến tiếp cận phụ tới Trinity Hexagon** nếu Holy State làm hỏng trade. Vì Quad Night tồn tại chủ yếu để bảo vệ Trinity Hexagon, economic leverage của T.Gear có thể biến thành alliance-security leverage.
-
-Holy State đồng thời thường xuyên tiến hành covert interference bên trong T.Gear:
-
-```text
-operatives giả dạng / đón đầu thương vụ Undie
-→ giải phóng Undie tại chỗ
-→ không mang họ về Holy State
-→ frame AF hoặc Hoa Nguyệt
-```
-
-Do đó anti-Undie rhetoric của Holy State **CAN_RUN_WITH** political sabotage/false attribution; không được tự đọc mọi operation này như asylum/rescue thuần túy.
+Mô hình hành lang 100 km AF↔Quad Night và Holy State làm cửa vào đã bị retire cùng Quad Night. Exact map mới giữa AF, ML và TE giữ `UNKNOWN`; không tự remap các buffer/micro-polity cũ sang actor mới.
 
 ---
 
@@ -504,7 +460,7 @@ Trong khoảng nhiều năm, hệ quả gồm:
 
 Nhà vua sau đó bỏ trốn và liên kết với các quốc gia khác để tìm cách phục hồi quyền lực.
 
-Hoàng hậu hiện đang **bị Quad Night tạm giữ ở cấp liên minh**; nơi giam có thể được luân phiên giữa các thành viên khi cần để chống gián điệp và giải cứu.
+Quan hệ giam giữ cũ phụ thuộc Quad Night đã bị orphan. Current custodian của Hoàng hậu/mẹ MC2 giữ `UNKNOWN`; không tự chuyển bà sang ML hoặc TE.
 
 ### 4.3 Mục tiêu hiện tại của nghị viện đối với MC2
 
@@ -604,51 +560,7 @@ AF và RF bị ngăn bởi đại dương. Exchange chủ yếu phải dựa và
 
 AF↔Hoa Nguyệt có **Con đường Tơ lụa** do hai bên đồng thuận lập theo hiệp định thương mại. Political tension không mặc định triệt tiêu economic interdependence.
 
-AF↔Quad Night có một **hành lang kiểm soát khoảng 100 km**, Holy State là cửa vào chính. Nhánh chính có nhà nghỉ/dịch vụ; vùng xung quanh thường xuyên có cướp. Bên trong hành lang có các micro-polity/bộ tộc tự nhận chủ quyền nhưng hoạt động như **thuộc địa/buffer dưới quyền AF**, đảm nhiệm giao thương và an ninh tuyến đường. Một polity ở phần nối gần Quad Night chiếm khoảng 50 km còn lại; exact partition không tự suy thêm.
-
-### 20.0d Quad Night — alliance ontology và bốn member state
-
-**CANON**
-
-`Quad Night` là liên minh bốn quốc gia; **Holy State** chỉ là một member state và là đại diện của toàn khối.
-
-- **Holy State:** cộng hòa; Thánh điện đại diện quốc gia; cưỡng ép dân chúng theo một tôn giáo bằng nhục mạ công khai và áp lực xã hội.
-- **Quốc gia mẫu hệ:** phản đối Undie của AF nhưng bài trừ nam giới rất cao; có mô hình sinh sản gần “Amazon” thần thoại.
-- **T.Gear:** quốc gia mở, thiên về du lịch/giải trí/kinh doanh/mua sắm; phần lớn việc nặng outsource sang robot/android; cạnh tranh với AF về luxury/entertainment.
-- **Trinity Hexagon:** quốc gia nhỏ giữ kho thần khí/magical artifacts; nhiều vật bị bound bởi địa lý và huyết thống; quốc kỳ có tam giác nằm trong hexagon.
-
-Quad Night được lập ra chủ yếu để **bảo vệ Trinity Hexagon** và kho vật phẩm không thể di dời tùy ý.
-
-Hoàng hậu/mẹ MC2 hiện bị **Quad Night** tạm giữ và có thể được luân phiên giữa các member state để chống gián điệp/giải cứu. Holy State và quốc gia mẫu hệ biết bà là strategic asset. T.Gear không quan tâm nhiều nhưng access surface quá mở khiến nơi này không thích hợp giữ yếu nhân. Trinity Hexagon nguy hiểm hơn vì nhiều thần vật phản ứng với huyết thống; exact phản ứng của từng vật với Raging Fire giữ `UNKNOWN`.
-
-```text
-Queen is killable
-≠ Queen is authorized to be killed
-```
-
-Việc giữ sống là strategic constraint, không phải bất tử/plot immunity.
-
-### 20.0e AF↔T.Gear Undie treaty và intra-Quad-Night conflict
-
-**CANON**
-
-T.Gear là đối tác đã/đang mua bán–chuyển nhượng Undie với AF qua hiệp định song phương. Treaty không chỉ chuyển giao cách một hệ Undie được hình thành mà còn cho phép **cross-border transfer/reassignment** giữa bên trong và bên ngoài.
-
-Trade này phải transit qua Holy State. Vì Holy State thù địch AF nhưng T.Gear muốn giữ commerce, T.Gear gây sức ép kinh tế và có thể đe dọa:
-
-- đóng cửa biên giới;
-- chặn một phần rear-access/cửa sau tới Trinity Hexagon.
-
-Holy State cũng thường xuyên đưa operatives vào T.Gear, giả dạng/đón đầu thương vụ Undie rồi:
-
-```text
-intercept
-→ release Undie locally
-→ không mang về Holy State
-→ frame AF hoặc Hoa Nguyệt
-```
-
-Đây là political sabotage + false attribution, không được tự giản hóa thành humanitarian extraction.
+Mô hình hành lang 100 km AF↔Quad Night và Holy State làm cửa vào đã bị retire cùng Quad Night. Exact map mới giữa AF, ML và TE giữ `UNKNOWN`; không tự remap các buffer/micro-polity cũ sang actor mới.
 
 ### 20.1 Nhóm phản đối
 
@@ -775,7 +687,7 @@ Cult đã trà trộn vào POW-specialist pipeline **từ trước khi MC3 bị 
 
 **CANON HISTORY / SITE PROPERTY CONFIRMED; exact current placement/operational state sau divergence còn `UNKNOWN` nơi chưa chốt.**
 
-Trong concept/canon gốc, site Đông Bắc được đặt **ngay sau sườn Quad Night**, theo hướng có thể chọc vào flank của liên minh; nếu phải tạo pressure thì T.Gear là phía phù hợp nhất vì môi trường mở. Bộ Ngoại giao AF cố hết sức che đậy site; Quad Night hoặc không biết nó tồn tại, hoặc biết quá ít để hiểu đúng bản chất. Exact current awareness của Quad Night giữ `UNKNOWN`.
+Placement cũ của site Đông Bắc theo sườn Quad Night/T.Gear chỉ còn là design genealogy. Current relation giữa Học viện, ML, TE và các bộ tộc mẫu hệ phía đông bắc tuân theo regional retcon; exact full map giữ `UNKNOWN`.
 
 Học viện không chỉ nghiên cứu cư dân tam cường. Trong legacy canon, học viên tạo **experimental subjects/products** từ cư dân Elf/Thú Nhân/Long tộc rồi thả ngược vào lãnh thổ của họ để phá hoại. Các sản phẩm được cài một **signature** có chủ ý, làm attribution rõ ràng như một lời thách thức/đánh dấu nguồn. Vì vậy grievance phía Bắc gồm:
 
@@ -999,7 +911,7 @@ Tính chính danh thủ tục là một phần quan trọng của cách nhà nư
 
 **CANON GENEALOGY**
 
-Cha ruột MC2 là **Hoàng tử thứ 9** của một hoàng gia chư hầu thuộc Raging Fire. Ông là chồng thật của mẹ MC2. Sau một cuộc tranh đoạt ngai, anh em của ông lên ngôi và Hoàng tử thứ 9 bị giết; mẹ MC2 đang mang thai và bị gả đi để che giấu pregnancy, sau đó đi vào hoàng gia AetherFire.
+Cha ruột MC2 là **Hoàng tử thứ 9** của hoàng gia một quốc gia thành viên rank thấp hơn trong RF. Ông là chồng thật của mẹ MC2. Sau một cuộc tranh đoạt ngai, anh em của ông lên ngôi và Hoàng tử thứ 9 bị giết; mẹ MC2 đang mang thai và bị gả đi để che giấu pregnancy, sau đó đi vào hoàng gia AetherFire.
 
 Hoàng tử thứ 9 cũng là cha của **MC2.2**, hôn phu của MC2 trong Canon 1. Vì vậy:
 
@@ -1009,11 +921,11 @@ MC2
 → anh em cùng cha khác mẹ về huyết thống
 ```
 
-Hoàng gia Raging Fire **cố tình che giấu** quan hệ này để tránh khủng hoảng chính trị. MC2 và MC2.2 không biết sự thật trong phần trajectory liên quan trước khi revelation xảy ra.
+Genealogy này bị che giấu có chủ ý bên trong RF để tránh khủng hoảng chính trị; exact actor chịu trách nhiệm và phạm vi biết của từng khối giữ `UNKNOWN`. MC2 và MC2.2 không biết sự thật trong phần trajectory liên quan trước khi revelation xảy ra.
 
 Mẹ MC2.2 là **Hoàng hậu của vị vua đã giết Hoàng tử thứ 9**.
 
-Trong Canon 1, hidden genealogy này về sau trở thành một causal trigger lớn của MC2.2: revelation gắn với việc anh ta lật vị vua hiện tại của RF/đăng cơ; khi biết MC2 thực ra là em gái cùng cha khác mẹ và đã chết, anh ta tiếp tục lật luôn AetherFire. Exact micro-order của từng disclosure chỉ dùng theo file Canon 1/Canon 2 nếu được chốt chi tiết hơn; không flatten toàn bộ thành “romance revenge”.
+Trong Canon 1, hidden genealogy này về sau trở thành một causal trigger lớn của MC2.2: revelation gắn với việc anh ta lật vị vua hiện tại của quốc gia thành viên nơi Prince 9 xuất thân và đăng cơ tại quốc gia đó; khi biết MC2 thực ra là em gái cùng cha khác mẹ và đã chết, anh ta tiếp tục lật luôn AetherFire. Exact micro-order của từng disclosure chỉ dùng theo file Canon 1/Canon 2 nếu được chốt chi tiết hơn; không flatten toàn bộ thành “romance revenge”.
 
 ---
 
@@ -1109,6 +1021,223 @@ Vì vậy trajectory sụp đổi 5–8 năm phải được thiết kế **hợ
 Không tự lấp các mục `UNKNOWN`, `SEALED` hoặc `deferred` bằng suy luận.
 
 ---
+
+---
+
+## RF continental union, dynastic fault line and AF dependency — current canon 2026-09-15
+
+### Ontology
+
+RF is a **continental union of cultivation member states**, not one kingdom. Its exact constitutional form remains `UNKNOWN`; do not silently choose federation, confederation, tributary hierarchy or empire-of-states.
+
+```text
+Raging Fire lineage
+≠ RF continental union
+≠ strongest bloc/member polity of MC2's mother
+≠ lower-ranked member polity of Prince 9
+```
+
+The four blocs currently foregrounded do not establish the full number of RF member states. Exact bloc-to-state containment remains `UNKNOWN`.
+
+### Four foregrounded blocs
+
+- The strongest bloc/member polity is the origin of MC2's mother, actively seeks secession, seeks AetherFire patronage and wants AF forced-magic technology to scale cultivation.
+- Two other blocs oppose that secession and hold enough economic/political leverage that Prince 9's polity depends on both. They are not assumed to share identical institutions or motives.
+- Prince 9's lower-ranked polity is the fourth foregrounded bloc and lies between the strongest secessionist bloc and the two opposing blocs.
+- The former UK/Greenland/Alaska/Australia labels are design references only, never canon names.
+
+### Prince 9 and MC2's mother
+
+MC2's mother is the **Trưởng công chúa** of the strongest RF bloc/member polity. Prince 9 is the ninth prince of a lower-ranked RF member polity, her true husband and the biological father of MC2 and MC2.2.
+
+```text
+strongest bloc already seeks secession
+→ manipulates the Crown Prince of Prince 9's polity
+→ Crown Prince kills Prince 9 to consolidate power
+→ strongest bloc uses the death of its Trưởng công chúa's husband
+  as a grievance supporting secession
+```
+
+The relevant inner circle of the strongest bloc knows that the Trưởng công chúa's fetus is Prince 9's child. It sends the Trưởng công chúa and fetus to AetherFire for an alliance/patronage route, long-term dynastic leverage and a possible future-marriage route. That future marriage is an option, not a locked outcome, and does not erase MC2's agency.
+
+Do not write “RF knew” for this information. Knowledge of pregnancy, father identity and the full operation differs among blocs and actors. The Trưởng công chúa's own knowledge of the manipulation remains `UNKNOWN`.
+
+### Guarded RF–AetherFire alliance
+
+The strongest bloc and AetherFire cooperate without mutual trust:
+
+```text
+strongest bloc wants AF technology
+→ reduce its dependency on RF
+
+AF wants access to RF lineage capability
+→ reduce its dependency on RF
+```
+
+The other three foregrounded blocs deliberately raise distrust around that alliance. “Rare pure blood” is propaganda/framing, not proof of the true Raging Fire inheritance mechanism.
+
+### AF noble agenda around MC2
+
+After the AF king flees and the previous balance weakens, a noble faction pressures MC2 in an attempt to expose or exploit Raging Fire capability without knowing the true mechanics. Its confirmed goals are:
+
+1. reduce or escape AF's dependency on RF;
+2. research/extract enough capability to create an AF-controlled suppression array;
+3. increase total military force-generation capacity.
+
+This is a factional agenda, not proof of a unified state policy or a successful research program. It does not turn MC2's whole Princess → Civil → Undie trajectory into one master plan; MC2's Civil → Undie choice remains her own.
+
+### Dependency boundary
+
+AF's firewall and founding-seal history still depend on Raging Fire lineage/RF arrangements. The exact provider, contracting actor, maintenance authority and member-state allocation remain `UNKNOWN`; do not assign them automatically to the RF union or the strongest bloc.
+
+---
+
+## Battlemage Academy — current canon 2026-09-15
+
+> **Official name:** `[ACADEMY NAME — PLACEHOLDER]`. “Học viện Lục Quang” is not canon.
+
+### Institutional position
+
+The Academy is an institution/faction within the northeastern Mage Council site behind a volcano. The site contains the Academy, a body-research lab using subjects from Elf, Beastman and Dragon powers, and a teleport gate linked to an isolated capital district containing elite forces. Exact Academy–branch–Council command authority remains `UNKNOWN`.
+
+The cult is not part of the Academy. It exploits the apparent-POW-to-Mage-Council-specialist interface. Exact infiltration, Academy awareness and gate access remain `UNKNOWN`.
+
+### Battlemage doctrine
+
+The Academy trains genuine battlemages. Two schools are current:
+
+1. martial-arts-based battlemage: body, martial arts and magic integrated into movement/close combat;
+2. versatile magic plus multiple weapon families: situational tool-switching and adaptation without implying equal mastery of every weapon.
+
+Training follows this competence order:
+
+```text
+self-control
+→ self-preservation
+→ independent reliability
+→ teammate reliability
+→ team operations
+```
+
+DI and consultant functions are separate. DI maintains combat/professional standards; consultants handle adolescent development and psychological readiness. Neither function replaces the other.
+
+### Six-year model
+
+1. Year 1 — control.
+2. Year 2 — self-preservation and simple missions.
+3. Year 3 — independent battlemage qualification.
+4. Year 4 — team operations.
+5. Year 5 — adaptive operations.
+6. Year 6 — transition into professional personnel.
+
+### Group structure
+
+The standard combat team has **5 members** and is used only after the individual competence floor is met. Exact administrative cohort size, specialist-group size, dangerous-practice grouping, internal role allocation and activation threshold remain `UNKNOWN / NOT YET PROMOTED`; the approval of a five-person team does not canonize those adjacent working-design values.
+
+### Twelve competency blocks
+
+1. body control;
+2. foundational martial arts;
+3. magic control;
+4. magical defense;
+5. foundational weapons;
+6. battlefield mobility;
+7. battlefield awareness;
+8. resource management;
+9. medicine and incident response;
+10. equipment and maintenance;
+11. combat judgment;
+12. team combat.
+
+Exact distribution of the twelve blocks across terms and qualification gates remains `UNKNOWN`.
+
+### Daily training rhythm
+
+```text
+physical block
+→ applied magic / weapon / technical-theory block
+→ long drill / lab / scenario block
+→ self-study / maintenance / preparation
+```
+
+Exercises preserve the full cycle `briefing → preparation → execution → cleanup → after-action review`. Exact clock hours, weeks per year and holidays remain `UNKNOWN`.
+
+### Funding and scholarship
+
+The state funds part of training and all baseline meals. Students may take controlled commissions and side jobs. Full scholarship assessment uses a multi-axis profile:
+
+- professional competence;
+- progress;
+- reliability;
+- safety discipline;
+- resource efficiency;
+- team performance;
+- mission performance.
+
+Exact weights, thresholds, funding percentage, approving authority and external-work liability remain `UNKNOWN`. Supplement access may depend on `quality`, but `quality` remains a separate undefined variable and is not automatically rank, GPA, status, money, scholarship tier or morality score.
+
+### Functional female battlemage uniform
+
+The standard direction is:
+
+- technical underlayer;
+- short split jacket/tunic;
+- leggings or technical trousers;
+- optional hip-cover/outer shorts where function requires;
+- forearm guards;
+- knee/shin protection;
+- equipment belt;
+- combat boots;
+- hair kept short, tied, braided or in a bun.
+
+The two battlemage schools may differ in armor load, outer-layer length and equipment load. Protection, movement, spellcasting and equipment carriage control the design; sexual appeal is not a functional requirement. This Academy uniform is a separate domain and does not modify Undi clothing canon in `30_UNDIE_SYSTEM_CURRENT.md`.
+
+### Lab boundary and removed route
+
+Lab subjects may be used as live targets. Personhood, awareness, pain, consent/coercion, regeneration, death permanence, legal status, oversight and exact student protocol remain `UNKNOWN`; moral grayness is a design requirement, not permission to invent those facts.
+
+```text
+Academy failure → Undie = REMOVED FROM CURRENT SETTING
+```
+
+Academic failure does not create an automatic Undie transition. The former route is excluded from current canon and reconsideration layers.
+
+---
+
+## Matriarch's Lament / Transfusion EasterFire — global interface
+
+> **Authority boundary:** internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha doctrine, ML–TE operations and northeastern-tribe relations are controlled by `70_MATRIARCHS_LAMENT_CURRENT.md`. This section keeps only the interfaces needed by the wider AetherFire world model.
+
+### Regional supersession and chronology
+
+- `Quad Night` and its four-member-state ontology are retired.
+- `Holy State` → `Matriarch's Lament (ML)`.
+- `T.Gear` → `Transfusion EasterFire (TE)`.
+- `Trinity Hexagon` is a district inside ML, not an independent state.
+- ML is approximately 500 years old; AetherFire is approximately 200 years old.
+- ML participated in the sealing event before AetherFire's foundation. An RF/Raging Fire actor also participated, but the exact lineage/union/member-state level remains `UNKNOWN`.
+
+### AetherFire dependencies and treaty edge
+
+```text
+AF dependency on RF arrangement / Raging Fire lineage
+≠
+AF periodic dependency on ML relic access
+```
+
+ML controls access to a regenerative-consumable relic that AetherFire periodically needs to reinforce the seal. Political hostility and mandatory commerce may therefore coexist.
+
+The AF↔TE treaty is direct and was negotiated inside AetherFire. It does not transit through ML.
+
+### Orphaned geography and custody
+
+The old 100 km AF↔Quad Night corridor, Academy-flank mapping and Quad-Night custody of MC2's mother are orphaned by the regional retcon. Current geometry and custodian remain `UNKNOWN`; they are not automatically reassigned to ML or TE.
+
+### Trần Trúc Nha and Undie boundaries
+
+Trần Trúc Nha's membership and regional role in ML are current canon. Her proposed summoned/cross-world origin is `UNDER CONSTRUCTION / NOT CURRENT CANON` and is routed to `40_METAFICTION_CANON_TIMELINE_CURRENT.md`.
+
+The former `foreign spy / infiltrator → punitive Undie` route is `RESOLVED / REMOVED` because it no longer fits the political-centric setting. No replacement legal/status route is inferred; Undie-related interfaces are controlled by `30_UNDIE_SYSTEM_CURRENT.md`.
 
 ---
 

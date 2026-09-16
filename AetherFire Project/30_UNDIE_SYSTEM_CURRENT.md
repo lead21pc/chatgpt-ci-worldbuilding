@@ -428,7 +428,7 @@ Undie → reason-for-existence của institution
 | --- | --- |
 | Yellow first offense; repeat → Red permanent + quota ×2 | CURRENT |
 | Brown đi cùng Red / Brown là Undie progression tier | SUPERSEDED |
-| Criminal không thể vào Undie | CURRENT |
+| Criminal Slave không thể chuyển vào Undie | CURRENT; former foreign-spy punitive Undie route đã bị xóa và không tạo ngoại lệ |
 | Civil → Undie one-way | CURRENT |
 | Red/Pink/Gray/Purple/Hazel/White Undie-rank graph | STILL VALID BUT NEEDS RENAMING từ local `rank` sang Undie rank |
 | Cross-Track Transfer và revert | CURRENT; terminology updated |
@@ -653,6 +653,8 @@ Criminal punishment
 ```
 
 Criminal có ontology và pipeline riêng.
+
+**Phạm vi sau quyết định 2026-09-16:** assertion này áp dụng cho subject đã được xác lập là `Criminal Slave`. Former foreign-spy punitive Undie route đã bị xóa vì không còn phù hợp với hướng political-centric của setting. Exact legal/status treatment của spy giữ `UNKNOWN`; không được tự suy spy đã đi qua Criminal pipeline, vào voluntary Undie hoặc mở Criminal Slave → Undie.
 
 ---
 
@@ -1469,6 +1471,31 @@ Chưa tự định nghĩa:
 Không tự lấp các khoảng trống trên bằng trope sex slave, trope maid, trope harem, trope school hoặc mô hình pháp lý ngoài đời.
 
 ---
+
+### Foreign-spy punitive Undie route — removed 2026-09-16
+
+Nguồn gốc bị supersede: `matriarchs_lament_working_retcon_canon.md`.
+
+```text
+foreign spy / infiltrator
+→ punitive Undie route
+= REMOVED FROM CURRENT CANON AND RECONSIDERATION
+```
+
+Lý do ghi nhận: route này không còn phù hợp với hướng political-centric của setting. Việc xóa route không tự xác lập quy trình thay thế; legal classification, evidentiary/judicial handling và status outcome của spy giữ `UNKNOWN`. Không tự đồng nhất spy với `Criminal Slave`, voluntary Undie hoặc bất kỳ route hiện hành nào khác.
+
+### AetherFire → Transfusion EasterFire Undie transfer — bounded interface
+
+Current regional canon establishes only this event-level relation:
+
+```text
+AetherFire
+→ transfers some Undie
+→ to Transfusion EasterFire
+→ to strengthen relations / friendship
+```
+
+The exact legal mechanism, consent process, selection criteria, status after transfer, and return/exit rights remain `UNKNOWN`. This statement does not establish sale, compulsory reassignment, voluntary migration, citizenship, or unchanged AetherFire status after transfer.
 
 ---
 

@@ -2,6 +2,24 @@
 
 > Preserved as a separate temporal layer. `DESIGN HISTORY`, `RETIRED`, `SURVIVING LEGACY`, `UNDER CONSIDERATION`, `CURRENT CANON` and `UNKNOWN` retain their original meanings. Nothing in this file becomes current canon merely because it appears here.
 
+## Regional supersession notice — 2026-09-11
+
+- Quad Night and the old four-member-state model are retired.
+- Holy State → Matriarch's Lament; T.Gear → Transfusion EasterFire; Trinity Hexagon → district inside ML.
+- Old Queen custody, 100 km corridor and Academy-flank relations are orphaned, not silently remapped.
+- The AF↔TE treaty and covert-interference pattern survive only in the form stated by the new regional canon; the Holy-State transit chokepoint is retired.
+- The former foreign-spy punitive Undie route is removed as a current or reconsideration candidate because it no longer fits the political-centric setting. Archived source and generated history references remain provenance/removal records only; replacement legal/status treatment remains `UNKNOWN`.
+
+## Latest source-state boundary — updated 2026-09-16
+
+- Internal Matriarch's Lament current canon is routed to `70_MATRIARCHS_LAMENT_CURRENT.md`. `10` now retains only its global/cross-domain interface; this is a document-authority split, not a lore retcon.
+- RF single-kingdom wording is superseded by the continental-union/member-state ontology now recorded in `10`.
+- The former Academy-failure-to-Undie route is removed from both current canon and reconsideration. It survives only inside byte-preserved archived sources as provenance.
+- The Academy's six-year model, five-person team, twelve competency blocks, daily rhythm, multi-axis scholarship profile and functional uniform direction are no longer working proposals; they are current canon in `10`.
+- MC4 legacy mastery, Fusion and Spear mechanics remain genealogy-only and are not current.
+- Trần Trúc Nha's membership and regional role in Matriarch's Lament remain current. Her proposed summoned/cross-world origin, MC4's proposed in-world cross-fiction origin and the other unconfirmed cross-world/cross-time candidates are `UNDER CONSTRUCTION / NOT CURRENT CANON`.
+- The `Nguyên Chủ / Nguyên Anh` concept and the `元主 / 元嬰` wordplay remain proposal/design material. They are not assigned to MC2's mother by this integration.
+
 ## AetherFire — Design History & Các điểm cân nhắc mang lại
 
 > **Loại tài liệu:** design history / genealogy / refactor log / reconsideration register  
@@ -30,16 +48,9 @@ Một correction quan trọng đối với cách đọc toàn bộ design histor
 
 > AetherFire **không được người thiết kế lưu trong đầu theo category `Undie`**. Memory index chủ yếu đi theo **ban ngành / institution / actor / site / procedure**, rồi mới tới status mà output của pipeline rơi vào.
 
-Ví dụ Y2 trong concept gốc được nhớ dưới node **Học viện Phép thuật / Hội đồng Pháp sư**:
+Học viện hiện được index dưới node **Hội đồng Pháp sư / site Đông Bắc / đào tạo battlemage / lab / teleport gate / grievance phía Bắc**. Đây là cách index institution/process-first phù hợp với hướng political-centric hiện tại.
 
-```text
-học viên tài năng
-→ đào tạo / đánh giá
-→ hữu dụng: trả về AF làm việc
-→ failure: hạ xuống Undie nội bộ học viện
-```
-
-Vì vậy khi hỏi “Undie có gì?”, Y2 có thể không tự bật ra. Khi hỏi “Học viện xử lý học viên thất bại thế nào?”, pipeline mới hiện đầy đủ. Đây là **cách index trí nhớ**, không phải chi tiết nhỏ.
+Route cũ `Academy failure → Undie` đã bị người dùng xóa khỏi setting hiện hành và khỏi reconsideration layer. Nó không còn là fallback để giải thích cách Học viện xử lý học viên thất bại.
 
 Undie trong nhiều legacy pipeline là:
 
@@ -1712,7 +1723,7 @@ Nếu tái nhập cần giữ UNKNOWN ở:
 - exact leverage của Holy State lên migration/trade;
 - mức độ intelligence leakage và counterintelligence response.
 
-### 20.6 R2 — Holy State infiltration / T counteraction
+### 20.6 PROVENANCE ONLY — Holy State infiltration / T counteraction; punitive Undie endpoint removed
 
 **DESIGN HISTORY + UNDER CONSIDERATION**
 
@@ -1828,7 +1839,7 @@ Chưa được chốt:
 
 Không tự suy complicity chỉ từ việc infiltrator giả dạng giáo dân hoặc tùy tùng.
 
-#### CURRENT-CANON COMPATIBILITY ISSUE
+#### REMOVAL RECORD — 2026-09-16
 
 Old sanction:
 
@@ -1839,7 +1850,7 @@ foreign spy
 
 xung đột với current Undie ontology đã đặt trọng tâm mạnh ở voluntary intake/consent và không dùng Undie như criminal-sexual punishment route.
 
-Do đó nếu R2 được tái nhập:
+Các function chính trị dưới đây chỉ được giữ để đọc design genealogy; chúng không phải đề xuất tái nhập R2 hoặc punitive Undie endpoint:
 
 ```text
 SURVIVING DESIGN FUNCTION
@@ -1854,7 +1865,7 @@ OLD IMPLEMENTATION
 → không tự động phục hồi
 ```
 
-Việc phục hồi exact forced-Undie sanction sẽ cần một chốt canon riêng; trạng thái `UNDER CONSIDERATION` của R2 không tự sửa current Undie ontology.
+Quyết định 2026-09-16 xóa toàn bộ foreign-spy punitive Undie route khỏi current canon và reconsideration vì nó không còn phù hợp với hướng political-centric của setting. Exact legal/status treatment thay thế cho spy giữ `UNKNOWN`; Criminal Slave → Undie vẫn bị cấm.
 
 ### 20.7 R3 — Holy State purist diplomacy, “terror welfare” và Undie treaty diplomacy
 
@@ -3132,7 +3143,7 @@ Clash #2 đã được user xác nhận là **một kiểu khác Clash #1**. Exa
 
 ### 25A.1 CURRENT CANON — Raging Fire là lineage gốc; Raging Phoenix là tên bị AetherFire đặt lệch
 
-Mẹ MC2 thuộc **hoàng tộc Raging Fire ở phía Nam**. `Raging Fire` là tên/căn tính gốc của lineage. Khi lineage đi vào hệ AetherFire, AetherFire đổi `Fire` thành `Phoenix` vì không muốn `Fire` của một vương tộc khác cạnh tranh/đè semantic identity của `Fire` trong `AetherFire`.
+Mẹ MC2 thuộc **huyết hệ hoàng tộc Raging Fire bên trong liên hiệp RF ở phía Nam**. `Raging Fire` là tên/căn tính gốc của lineage. Khi lineage đi vào hệ AetherFire, AetherFire đổi `Fire` thành `Phoenix` vì không muốn `Fire` của một vương tộc khác cạnh tranh/đè semantic identity của `Fire` trong `AetherFire`.
 
 ```text
 Raging Fire
@@ -3148,9 +3159,9 @@ Raging Phoenix
 
 MC2 **không phải con ruột của vị vua AetherFire đã bỏ trốn**.
 
-Mẹ MC2 đã mang thai trước khi vào hoàng gia AetherFire. Cha ruột MC2 về sau được chốt là **Hoàng tử thứ 9** của một hoàng gia chư hầu thuộc Raging Fire, đồng thời là chồng thật của mẹ MC2.
+Mẹ MC2 đã mang thai trước khi vào hoàng gia AetherFire. Cha ruột MC2 về sau được chốt là **Hoàng tử thứ 9** của hoàng gia một quốc gia thành viên rank thấp hơn trong RF, đồng thời là chồng thật của mẹ MC2.
 
-Sau succession struggle ở RF:
+Sau succession struggle tại quốc gia thành viên nơi Prince 9 xuất thân:
 
 ```text
 anh em đoạt vị
@@ -3160,11 +3171,11 @@ anh em đoạt vị
 → về sau đi vào hoàng gia AetherFire
 ```
 
-Hoàng hậu hiện tại **đang bị Quad Night tạm giữ ở cấp liên minh**; nơi giam có thể được luân phiên giữa các member state để chống gián điệp/giải cứu.
+Quan hệ giam giữ cũ phụ thuộc Quad Night đã bị orphan. Current custodian của Hoàng hậu/mẹ MC2 giữ `UNKNOWN`; không tự chuyển bà sang ML hoặc TE.
 
 ### 25A.3 CURRENT CANON — trait ẩn của hoàng tộc Raging Fire
 
-Hoàng tộc RF có một trait ẩn:
+Hoàng tộc mang huyết hệ Raging Fire có một trait ẩn:
 
 ```text
 bearer phù hợp
@@ -3217,7 +3228,7 @@ Security picture
 
 ### 25A.5 X3/X4 CURRENT CANON — MC2.2 là hidden half-brother, không chỉ “hôn phu”
 
-Prince 9 cũng là cha của **MC2.2**, hôn phu MC2 trong Canon 1. Hai người là **anh em cùng cha khác mẹ về huyết thống**, nhưng RF cố tình che giấu để tránh khủng hoảng chính trị.
+Prince 9 cũng là cha của **MC2.2**, hôn phu MC2 trong Canon 1. Hai người là **anh em cùng cha khác mẹ về huyết thống**, nhưng genealogy bị che giấu có chủ ý bên trong RF; exact responsible actor giữ `UNKNOWN`.
 
 Mẹ MC2.2 là **Hoàng hậu của vị vua đã giết Prince 9**.
 
@@ -3229,7 +3240,7 @@ Prince 9
 
 MC2 và MC2.2 không biết sự thật trong phần lớn trajectory liên quan trước revelation.
 
-Trong Canon 1, revelation này gắn với trajectory nơi MC2.2 lật vua RF hiện tại/đăng cơ; sau khi biết MC2 là em gái cùng cha khác mẹ và đã chết, anh ta tiếp tục lật luôn AetherFire. Không được flatten thành một romance-revenge đơn giản: dynastic purge, hidden kinship, succession và state power đều nằm trong causal chain.
+Trong Canon 1, revelation này gắn với trajectory nơi MC2.2 lật vua của quốc gia thành viên nơi Prince 9 xuất thân/đăng cơ tại quốc gia đó; sau khi biết MC2 là em gái cùng cha khác mẹ và đã chết, anh ta tiếp tục lật luôn AetherFire. Không được flatten thành một romance-revenge đơn giản: dynastic purge, hidden kinship, succession và state power đều nằm trong causal chain.
 
 ### 25A.6 X5 OPEN DESIGN PROBLEM — collision MC2/MC2.2 trong current trajectory
 
@@ -3249,7 +3260,7 @@ và để MC2.1 giữ local HOPE pathway trong khi MC2.2 chạy geopolitical/dyn
 
 ---
 
-## 25B. Y — Mage Council Đông Bắc, human experimentation và institutional failure sink
+## 25B. Y — Mage Council Đông Bắc, human experimentation và political-security pressure
 
 ### 25B.1 CURRENT CANON — hai chi nhánh Hội đồng Pháp sư
 
@@ -3305,77 +3316,9 @@ EXACT PLACEMENT RELATIVE TO DIVERGENCE = UNKNOWN
 
 Không tự ép toàn bộ Y vào riêng Canon 1 hoặc riêng Canon 2.
 
-### 25B.4 Y2 DESIGN HISTORY — academy tuyển civilian talent, useful output và Undie failure sink
-
-**DESIGN HISTORY / concept gốc Undie-heavy; current applicability chưa chốt.**
-
-Học viên thực sự là **dân thường có tài năng** được tuyển dụng. Trường **không cho học miễn phí**.
-
-Legacy pipeline:
-
-```text
-talented civilian
-→ recruited into academy
-→ training / evaluation
-
-nếu chứng minh có ích
-→ trả về AetherFire
-→ làm việc cho AF
-
-nếu không chứng minh được utility
-→ hạ xuống Undie
-→ phục vụ nội bộ học viện
-```
-
-AetherFire **biết** practice này nhưng để nó xảy ra vì site nằm **ngoài lãnh thổ AetherFire** trong concept gốc.
-
-Current canon của exact student-payment/failure-disposal regime chưa được chốt lại; không tự import forced academy→Undie route vào current consent architecture.
-
-### 25B.5 DESIGN ANALYSIS — đây là bằng chứng trực tiếp rằng Undie không phải “điểm chính”
-
-Y2 rất quan trọng về genealogy không phải vì nó làm Undie quan trọng hơn, mà vì nó cho thấy điều ngược lại.
-
-Trong internal design memory, node gốc là:
-
-```text
-Mage Council / Academy
-→ recruit
-→ train
-→ evaluate
-→ allocate useful people
-→ dispose/retain failures
-```
-
-`Undie` chỉ là **một terminal outcome cho đám failure**.
-
-Nếu bỏ endpoint đó và thay bằng một disposal/status interface khác, core purpose của academy vẫn là **talent extraction / training / specialist production / research**. Vì vậy:
-
-```text
-Academy DEPENDS_ON Undie = NOT ESTABLISHED
-Academy INTERACTS_WITH legacy Undie sink = YES (Y2 history)
-```
-
-Ở cấp pressure cooker, chính **Mage Council + northern experimentation + cult infiltration + state information conflict + great-power retaliation** mới là causal structure có trọng lượng toàn cục. Undie endpoint của failed students chỉ là một local administrative consequence.
-
-Đây là anti-drift bắt buộc cho toàn project:
-
-```text
-Undie sâu
-≠ Undie trung tâm
-
-Undie xuất hiện nhiều
-≠ mọi institution tồn tại vì Undie
-
-Undie nhận failure
-≠ Undie tạo ra failure-producing institution
-```
-
----
-
-
 ## 25C. Z / AA — Quad Night, strategic geography và Học viện như forward node
 
-### 25C.1 CURRENT CANON — AetherFire là seal-state khoảng 200 năm tuổi
+### 25C.1 PARTIALLY SUPERSEDED 2026-09-11 — AetherFire age survives; old east geometry retired
 
 AetherFire không phải một đế quốc cổ tồn tại tự nhiên từ vô thủy. Nó mới được lập khoảng **200 năm**, ban đầu từ một **hiệp ước phong ấn thủy tổ của ba cường quốc phía Bắc**, cấu trúc bằng liên minh chính trị và kết hôn.
 
@@ -3399,13 +3342,13 @@ West
 → political tension CAN_RUN_WITH economic trade
 
 East/right
-→ ~100 km controlled corridor
-→ Holy State as main Quad Night entrance
+→ old 100 km / Quad Night geometry is orphaned
+→ exact current map between AF, ML and TE = UNKNOWN
 ```
 
 Seaborne là sinh vật tương tự kraken và rất khó giết. Exact ecology/number/territorial behavior giữ `UNKNOWN` ngoài phần đã nêu.
 
-### 25C.2 CURRENT CANON — 100 km corridor và các buffer micro-polity
+### 25C.2 SUPERSEDED 2026-09-11 — 100 km corridor và các buffer micro-polity
 
 Hành lang AF↔Quad Night không phải vùng hoang tuyệt đối. Nhánh chính có nhà nghỉ/dịch vụ, trong khi khu vực xung quanh thường xuyên có cướp.
 
@@ -3417,7 +3360,7 @@ Bên trong hành lang có các cộng đồng/bộ tộc nhỏ tự phong chủ 
 
 Một polity ở đoạn gần Quad Night chiếm khoảng 50 km còn lại. Exact subdivision của toàn 100 km chưa chốt và không tự điền.
 
-### 25C.3 CURRENT CANON — Quad Night là alliance, Holy State chỉ là member/representative
+### 25C.3 SUPERSEDED 2026-09-11 — Quad Night alliance ontology
 
 `Quad Night` là tên chính thức của liên minh gồm bốn quốc gia. “Thánh quốc” khi chỉ toàn khối phải hiểu là **Quad Night**, không phải Holy State đơn lẻ.
 
@@ -3428,7 +3371,7 @@ Một polity ở đoạn gần Quad Night chiếm khoảng 50 km còn lại. Exa
 
 Quad Night được lập ra **chủ yếu để bảo vệ Trinity Hexagon**.
 
-### 25C.4 CURRENT CANON — Queen custody là alliance-level rotating containment
+### 25C.4 SUPERSEDED 2026-09-11 — Queen custody under Quad Night
 
 Mẹ MC2/Queen bị **Quad Night** tạm giữ, không cố định ở Holy State. Khi cần, bà được luân phiên chuyển địa điểm để chống espionage và rescue/extraction.
 
@@ -3444,7 +3387,7 @@ Quad Night must not kill her
 
 Lý do là strategic value + lineage uncertainty; đây là institutional constraint, không phải invulnerability. Exact artifact reaction nếu Queen bước vào Trinity Hexagon giữ `UNKNOWN`.
 
-### 25C.5 CURRENT CANON — T.Gear Undie treaty và Holy State covert interference
+### 25C.5 PARTIALLY SUPERSEDED 2026-09-11 — legacy treaty route and surviving covert pattern
 
 T.Gear là quốc gia đã/đang mua bán/chuyển nhượng Undie với AF. Treaty song phương gồm cả:
 
@@ -3684,7 +3627,7 @@ moral legitimacy
 + regional patronage competition
 ```
 
-**CURRENT-CANON CONFLICT:** legacy forced punitive transfer of infiltrators into Undie không tự tương thích với current voluntary/consent-based Undie ontology và **không được tự phục hồi**.
+**SUPERSEDED / REMOVED — 2026-09-16:** foreign spy / infiltrator không còn punitive Undie route riêng. Archived implementation là provenance-only; không được dùng làm fallback cho xử lý gián điệp.
 
 **UNKNOWN:** exact jurisdiction, Creed capabilities, intelligence interface, migration leverage, mức complicity của Thánh điện/Thánh nữ và current sanction nếu R2 được tái nhập.
 

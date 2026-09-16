@@ -1,0 +1,196 @@
+<section id="ci-rule-evolution-20260829" aria-labelledby="ci-viz-title">
+  <h2 id="ci-viz-title">CI rule evolution: v6.5 summary to v8.2</h2>
+
+  <p class="text-small text-muted">v6.5 is the single condensed representative for v1–v6. Every Plus+ release from v7.0 onward is shown separately.</p>
+
+  <div class="table-responsive" aria-label="Version lineage">
+    <table class="table table-sm ci-lineage-table">
+      <thead>
+        <tr>
+          <th scope="col">Path</th>
+          <th scope="col">v6.5<br><span class="text-small">≤v6</span></th>
+          <th scope="col">v7.0</th>
+          <th scope="col">v7.1</th>
+          <th scope="col">v7.2</th>
+          <th scope="col">v7.3</th>
+          <th scope="col">v7.3.1</th>
+          <th scope="col">v7.4</th>
+          <th scope="col">v7.4.1</th>
+          <th scope="col">v7.4.2</th>
+          <th scope="col">v7.5</th>
+          <th scope="col">v8.0</th>
+          <th scope="col">v8.0.1</th>
+          <th scope="col">v8.1</th>
+          <th scope="col">v8.1.1</th>
+          <th scope="col">v8.2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Go/Free summary</th>
+          <td>●</td><td colspan="14"></td>
+        </tr>
+        <tr>
+          <th scope="row">Plus+ detail</th>
+          <td></td><td>●</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>→</td><td>●</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card ci-selection" aria-live="polite">
+    <span class="text-muted">Selected state</span>
+    <strong id="ci-selection-title">Select a matrix cell</strong>
+    <span id="ci-selection-detail" class="text-small">Select a cell to inspect its state and the release-level change behind it.</span>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-sm ci-matrix" aria-describedby="ci-matrix-help">
+      <thead id="ci-matrix-head"></thead>
+      <tbody id="ci-matrix-body"></tbody>
+    </table>
+  </div>
+
+  <div class="viz-row ci-legend" id="ci-matrix-help" aria-label="State legend">
+    <span><b>A</b> Added</span>
+    <span><b>S</b> Semantic change</span>
+    <span><b>L</b> Lexical/structural</span>
+    <span><b>P</b> Patched</span>
+    <span><b>U</b> Preserved</span>
+    <span><b>R</b> Removed</span>
+    <span><b>M</b> Merged</span>
+    <span><b>C</b> Condensed summary</span>
+    <span><b>—</b> Not present</span>
+  </div>
+
+  <style>
+    #ci-rule-evolution-20260829 { width: 100%; }
+    #ci-rule-evolution-20260829 h2 { margin-bottom: 0.75rem; }
+    #ci-rule-evolution-20260829 .ci-lineage-table,
+    #ci-rule-evolution-20260829 .ci-matrix { min-width: 1120px; }
+    #ci-rule-evolution-20260829 .ci-lineage-table th,
+    #ci-rule-evolution-20260829 .ci-lineage-table td { text-align: center; vertical-align: middle; }
+    #ci-rule-evolution-20260829 .ci-lineage-table th:first-child { text-align: left; }
+    #ci-rule-evolution-20260829 .ci-selection { display: flex; gap: 0.5rem; align-items: baseline; flex-wrap: wrap; margin: 0.75rem 0; }
+    #ci-rule-evolution-20260829 .ci-matrix th { vertical-align: bottom; }
+    #ci-rule-evolution-20260829 .ci-matrix th:first-child { min-width: 250px; }
+    #ci-rule-evolution-20260829 .ci-matrix td { text-align: center; vertical-align: middle; }
+    #ci-rule-evolution-20260829 .ci-matrix .btn { min-width: 2rem; padding-inline: 0.4rem; }
+    #ci-rule-evolution-20260829 .ci-matrix .state-A { background: color-mix(in srgb, var(--viz-series-2) 24%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-S { background: color-mix(in srgb, var(--viz-series-3) 24%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-L { background: color-mix(in srgb, var(--viz-series-4) 20%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-P { background: color-mix(in srgb, var(--viz-series-1) 20%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-U { background: color-mix(in srgb, var(--muted) 70%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-R { background: color-mix(in srgb, var(--destructive) 20%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-M { background: color-mix(in srgb, var(--viz-series-5) 20%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-C { background: color-mix(in srgb, var(--foreground) 10%, transparent); }
+    #ci-rule-evolution-20260829 .ci-matrix .state-none { color: var(--muted-foreground); }
+    #ci-rule-evolution-20260829 .ci-legend { margin-top: 0.75rem; gap: 0.85rem; }
+    @media (max-width: 420px) {
+      #ci-rule-evolution-20260829 .ci-selection { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+
+  <script>
+    (() => {
+      const root = document.getElementById('ci-rule-evolution-20260829');
+      const versions = ['v6.5','v7','v7.1','v7.2','v7.3','v7.3.1','v7.4','v7.4.1','v7.4.2','v7.5','v8.0','v8.0.1','v8.1','v8.1.1','v8.2'];
+      const versionLabels = { 'v6.5': 'v6.5 (summary ≤v6)', 'v7': 'v7.0' };
+      const meanings = {
+        A: 'Added', S: 'Semantic change', L: 'Lexical or structural change',
+        P: 'Patched', U: 'Preserved', R: 'Removed', M: 'Merged into another rule',
+        C: 'Condensed representative state', '—': 'Not present'
+      };
+      const versionNotes = {
+        'v6.5': 'Compact 1,500-character Go/Free profile; it represents the retained ≤v6 lineage and is not the chronological parent of v7.0.',
+        'v7': 'Detailed Plus+ tracking begins: evidence-led second-brain behavior, explicit response modes, ambiguity handling, and subject-centered Vietnamese.',
+        'v7.1': 'Added evidence-based updating and freshness search; Vietnamese terminology became deliberately strict.',
+        'v7.2': 'Relaxed forced translation, strengthened preservation of plausible explanations, and restored domain-matched output.',
+        'v7.3': 'Established subject structure and terminology as named invariants; expanded evidence, product/runtime verification, updating, context, and depth.',
+        'v7.3.1': 'Formatting-only patch: semantic rules, precedence, and architecture are unchanged from v7.3.',
+        'v7.4': 'Merged language/structure, introduced role → mode → reasoning → stance, restored user-defined-system scope, but removed explicit updating and context.',
+        'v7.4.1': 'Restored most v7.3 safeguards, removed STYLE and CONTEXT intentionally, and added direct jargon/code-switching control.',
+        'v7.4.2': 'Repaired the lost cross-domain depth floor and sufficient-explanation requirement.',
+        'v7.5': 'Made reasoning the core, softened language into a guardrail, and added explicit create/worldbuild task separation.',
+        'v8.0': 'Rebuilt the CI around TASK FIDELITY and REASONING INTEGRITY; added task signals and a two-term terminology ceiling.',
+        'v8.0.1': 'Experimented with a four-term ceiling and utterance-role control; runtime testing rejected numeric terminology budgets.',
+        'v8.1': 'Removed the numeric ceiling, replaced it with task-needed terminology, and attempted to block generic affirmation.',
+        'v8.1.1': 'Added premise-admission gates and clause-level Vietnamese after long-chat and jargon regressions.',
+        'v8.2': 'Official stable release: CONTROL GROUNDING → DISCOURSE FIDELITY → EPISTEMIC NON-ESCALATION, provisional exploration, Vietnamese baseline, and non-binary coverage checks.'
+      };
+      const rules = [
+        ['R01','Vietnamese output baseline',['C','A','S','S','S','U','M','P','U','S','S','S','U','P','S']],
+        ['R02','Subject-centered Vietnamese syntax',['C','A','L','U','S','U','S','P','U','S','U','U','U','U','R']],
+        ['R03','Vietnamese terminology',['C','A','S','S','S','U','S','P','U','S','S','S','P','P','S']],
+        ['R04','Objective-claim evidence',['C','A','U','U','S','U','S','P','U','S','S','U','U','P','S']],
+        ['R05','Epistemic-state separation',['C','A','U','S','S','U','S','P','U','U','S','U','U','P','S']],
+        ['R06','Plausible alternatives / discriminators',['C','A','U','S','S','U','S','P','U','U','S','U','U','U','P']],
+        ['R07','Response-mode / operation routing',['C','A','U','U','S','U','S','P','U','S','S','P','U','P','S']],
+        ['R08','Material ambiguity threshold',['C','A','L','U','S','U','U','U','U','U','S','U','U','U','S']],
+        ['R09','Evidence-based updating',['C','—','A','U','S','U','R','P','U','U','S','U','U','P','S']],
+        ['R10','Chat / context isolation',['—','A','U','U','S','U','R','—','—','—','—','—','—','—','—']],
+        ['R11','Freshness verification',['C','—','A','U','S','U','S','U','U','U','M','U','U','U','S']],
+        ['R12','Technical / non-technical handling',['C','A','U','U','S','U','S','S','S','U','M','U','U','U','M']],
+        ['R13','Cross-domain explanation depth',['C','A','S','S','S','U','S','R','P','U','S','U','U','U','P']],
+        ['R15','Concision / conditional structure',['C','A','U','U','S','U','S','S','U','S','S','U','U','U','U']],
+        ['R16','Task and truth scope',['C','A','U','U','S','U','A','U','U','S','S','U','U','P','S']],
+        ['R20','No unsupported personal inference',['C','A','U','U','S','U','S','U','U','S','S','U','U','U','S']],
+        ['R21','Conclusion-change / falsifiability conditions',['C','A','U','U','S','U','S','P','U','U','S','U','U','U','S']],
+        ['R23','Product / runtime capability verification',['C','—','—','—','A','U','S','P','U','S','U','U','U','P','S']],
+        ['R24','Task signals without archetype inference',['C','A','U','U','S','U','S','U','U','S','P','L','U','U','S']],
+        ['R25','Reader vocabulary / jargon density control',['C','A','S','S','S','U','S','P','U','S','S','S','P','P','S']],
+        ['R26','CONTROL GROUNDING invariant',['—','—','—','—','—','—','—','—','—','—','—','—','—','—','A']],
+        ['R27','DISCOURSE FIDELITY invariant',['—','—','—','—','—','—','—','—','—','—','—','—','—','—','A']],
+        ['R28','EPISTEMIC NON-ESCALATION invariant',['—','—','—','—','—','—','—','—','—','—','—','—','—','—','A']],
+        ['R29','Provisional exploration / stage preservation',['—','—','—','—','—','—','—','—','—','—','A','U','U','U','P']],
+        ['R30','Non-binary coverage / user-frame check',['—','—','—','—','—','—','—','—','—','—','—','—','—','—','A']]
+      ];
+
+      const head = root.querySelector('#ci-matrix-head');
+      const body = root.querySelector('#ci-matrix-body');
+      const title = root.querySelector('#ci-selection-title');
+      const detail = root.querySelector('#ci-selection-detail');
+
+      const headerRow = document.createElement('tr');
+      const conceptHeader = document.createElement('th');
+      conceptHeader.scope = 'col';
+      conceptHeader.textContent = 'Rule / concept';
+      headerRow.appendChild(conceptHeader);
+      versions.forEach((version) => {
+        const th = document.createElement('th');
+        th.scope = 'col';
+        th.textContent = versionLabels[version] || version;
+        headerRow.appendChild(th);
+      });
+      head.appendChild(headerRow);
+
+      rules.forEach(([id, concept, states]) => {
+        const row = document.createElement('tr');
+        const label = document.createElement('th');
+        label.scope = 'row';
+        label.textContent = `${id} · ${concept}`;
+        row.appendChild(label);
+
+        states.forEach((state, index) => {
+          const cell = document.createElement('td');
+          const button = document.createElement('button');
+          const version = versionLabels[versions[index]] || versions[index];
+          button.type = 'button';
+          button.className = `btn btn-ghost viz-tile state-${state === '—' ? 'none' : state}`;
+          button.textContent = state;
+          button.setAttribute('aria-label', `${id}, ${concept}, ${version}: ${meanings[state]}`);
+          button.addEventListener('click', () => {
+            root.querySelectorAll('.ci-matrix button[aria-pressed="true"]').forEach((active) => active.setAttribute('aria-pressed', 'false'));
+            button.setAttribute('aria-pressed', 'true');
+            title.textContent = `${id} · ${concept} · ${version}`;
+            detail.textContent = `${meanings[state]}. ${versionNotes[versions[index]]}`;
+          });
+          button.setAttribute('aria-pressed', 'false');
+          cell.appendChild(button);
+          row.appendChild(cell);
+        });
+        body.appendChild(row);
+      });
+    })();
+  </script>
+</section>
