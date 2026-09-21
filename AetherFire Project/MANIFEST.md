@@ -11,6 +11,9 @@
 - `aetherfire_narrators_pov_clash_humor.md` was consolidated into a separate narrator/POV domain. Its clothing section was explicitly excluded so it cannot override the latest Undi visual canon in `30_UNDIE_SYSTEM_CURRENT.md`.
 - `matriarchs_lament_working_retcon_canon.md` was imported as the controlling regional retcon. Its unmatched final source fence is repaired only in generated output; the archived source remains byte-preserved.
 - `70_MATRIARCHS_LAMENT_CURRENT.md` controls the internal ML domain. `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` retains only ML/TE global and cross-domain interfaces; this split is architectural and does not change lore status.
+- `aetherfire_stable_aviation_rf_airspace_control_canon_delta_2026-09-16.md` was imported with explicit reconciliation of sole-confirmed versus literal-monopoly wording, non-numeric throughput, RF actor granularity and localization-pathway status.
+- `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` controls the detailed stable-aviation/RF-airspace domain. `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` retains only its global/geopolitical interface.
+- The source sentence about The Kingdom airspace was excluded from generated AetherFire canon because it is a cross-project anti-drift boundary, not AetherFire lore or a The Kingdom canon decision.
 - The four 2026-09-15 candidate files were archived byte-exactly and imported only according to the explicit user decisions recorded in `91_RECONCILIATION_RECORD.md`.
 - `The Tainted Cosmos - MERGED.md` is archived for MC4 identity genealogy; its cosmology, power scale, mastery, Fusion and Spear mechanics are not imported into current AetherFire canon.
 - `aetherfire_open_issues_current_restored_2026-09-15.md` preserves the restored control file as a build seed. The generated `92_OPEN_ISSUES_CURRENT.md` extends it without granting it canon authority.
@@ -25,17 +28,18 @@
 
 | File | SHA-256 |
 | --- | --- |
-| `00_AETHERFIRE_CONSOLIDATION_INDEX.md` | `A9C40C4ED45E6E7601DB63115DFDE0289840911339EC3CBF0A64D39739E00748` |
-| `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` | `752E0A63526C3CF8ACC1551A2ECD609B8F9C8EA681B4943CD15C5933580B43EA` |
+| `00_AETHERFIRE_CONSOLIDATION_INDEX.md` | `404EC41B2CA805FF5BAE12C1DB474356F5B18F87DCC2AC75DF0DC3009AECA884` |
+| `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` | `01999C6249DCADEE01600BCA930480DC1B349ABF35FF72B628B6F2CE63B86266` |
 | `20_STATUS_CIVIL_LABOR_CURRENT.md` | `DAC6BCCEBD3DBE900D539C02A56AAAA11FBEE7AD948362F6CF1A7F1F5F5E0924` |
 | `30_UNDIE_SYSTEM_CURRENT.md` | `09E04C8B15D7F0DD5C76FE71DFF963BC955B5863EEA68045395C875811F1659D` |
 | `40_METAFICTION_CANON_TIMELINE_CURRENT.md` | `27E485328031751858C2758B8A76EB09ED85248452AC6F380694D8A4159767D1` |
 | `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` | `213BF2B5E258BD1E83F6AAA966B2F40F92EFE0C56A292E5883B187E1087D53FC` |
 | `60_MC4_IDENTITY_CURRENT.md` | `2B11C4846788A607B311854E0667E2A918F55E07F648A9DC70ED0C3A8187B088` |
 | `70_MATRIARCHS_LAMENT_CURRENT.md` | `C6E68E05E75AEA82CAB85FC2A8FC5E1F433D3A04589227E88786F86101D13D88` |
+| `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` | `CA5DDC126B5862ACBFFC71067ADB048F265EBAB5D053468E0627363DC216677C` |
 | `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` | `A761B7B3E75081A07AE76ECFFFAAD0436E5D42EECA609FF7DA44AA8116945ECE` |
-| `91_RECONCILIATION_RECORD.md` | `E09D5F6796E316486D40890D1F8C87A34A570250FAD208D0767247722B462CD0` |
-| `92_OPEN_ISSUES_CURRENT.md` | `69E3BB26B7E1F3B61612FCDD1153E669A2E0ACD33F2F4E230A38D9474DFCE883` |
+| `91_RECONCILIATION_RECORD.md` | `B9D70ADB8D0563B4F8DD1C5D57916B33882BD9269D90B1CC08972A16FA428F72` |
+| `92_OPEN_ISSUES_CURRENT.md` | `0DD887ED402270ECCFFBE4CF64BA3AFB2E81C506E3B6D37F42F9F6AC7954D6E6` |
 
 ## Archived source snapshot
 
@@ -59,6 +63,7 @@
 | `aetherfire_reconciliation_report.md` | `42C1DE800AD8B18B99D5F1D6EB4EF45092C429C1A85AF1C49C87B81718935BE1` |
 | `aetherfire_rf_crossworld_geopolitics_chat_consolidation_2026-09-15.md` | `0E6C9CBFEF456E6DD7ACA03FFFE683B99B3621189A63312F7634608B9246AE15` |
 | `aetherfire_rf_nguyen_chu_dynastic_power_axes_chat_consolidation.md` | `852EF70F953018603840796D1FB2DE15339F93EE2011BC7EBFAF582AD7532CD7` |
+| `aetherfire_stable_aviation_rf_airspace_control_canon_delta_2026-09-16.md` | `608067139A83D17ACABBB21A339AC5A2C937FB3A9AD11ADEDD54EC0989016091` |
 | `aetherfire_undi_hoa_nguyet_cultural_humiliation_design_philosophy.md` | `084DCBDE5A87D1D287E69FAC1209E8FC887F440397B2E1117DB3287DE25380B8` |
 | `aetherfire_undie_civil_citizen_revamp_canon_1_42.md` | `B85250FDC401BE2EE163A23A1F537B43605DD0F790A1A7ED8264881F71EFBE89` |
 | `aetherfire_undie_undi_uniform_system_and_mc2_visual_fall.md` | `63D3480FE42FFD4E10341CFA2168D9EDC479E6CA812DA1E51A30D3B7A91A5214` |

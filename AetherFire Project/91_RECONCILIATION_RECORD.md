@@ -2,6 +2,17 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Stable aviation and RF airspace integration — 2026-09-17
+
+1. **Source priority:** `aetherfire_stable_aviation_rf_airspace_control_canon_delta_2026-09-16.md` controls AF stable/scalable aviation, AF–RF aviation dependency, RF airspace/ATC/economy separation, mixed airspace and air-route leverage within its declared scope.
+2. **Document authority:** `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` controls the detailed domain. `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` retains only the global/geopolitical interface.
+3. **AF-AV-001 — RESOLVED:** AF is the only currently confirmed actor with stable, scalable aviation infrastructure. This does not establish that AF owns all flight, that no other actor can ever possess comparable infrastructure, or that AF automatically has air supremacy.
+4. **RF actor boundary:** statements about RF response are strategic incentives/direction for relevant RF/member-state authorities. Exact union/member-state/shared sovereignty and ATC authority remain `UNKNOWN`; no unitary RF implementation is inferred.
+5. **AF-AV-003 boundary:** the initial AF-supported stage followed by RF localization is a dependency-reduction pathway, not a confirmed chronology or current implementation state.
+6. **AF-AV-004 — RESOLVED:** the source's illustrative `thousands or tens of thousands` flight volume is not imported because exact capacity/throughput remains `UNKNOWN`. Current canon uses non-numeric mass/scheduled/scalable wording.
+7. **Axis separation:** `AIRSPACE SOVEREIGNTY ≠ AIR TRAFFIC CONTROL ≠ AVIATION ECONOMY`. Access, expertise or carrier service does not establish ownership or sovereign authority.
+8. **Cross-project exclusion:** the source sentence about The Kingdom airspace is an anti-drift boundary for the source chat, not AetherFire lore and not a claim that changes The Kingdom canon.
+
 ## Matriarch's Lament follow-up decisions — 2026-09-16
 
 1. **Trần Trúc Nha:** her membership and regional role in Matriarch's Lament are current canon.

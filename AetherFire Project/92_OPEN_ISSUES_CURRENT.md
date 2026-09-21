@@ -79,14 +79,27 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | AF-ML-008 | UNKNOWN / OPEN | Status, rights, destination and legal recognition of Undie “freed on site” through ML covert interference. | `70` and `30`; liberation wording does not establish citizenship, custody, return or exit route. |
 | AF-ML-010 | UNKNOWN / OPEN | Granularity of Saintess/Temple knowledge concerning leaks and covert activity. | `70`; institution-level awareness does not establish knowledge or authorization of every operative or operation. |
 
-## 7. Closed/superseded items from these integrations
+## 7. Stable aviation and RF airspace open issues — updated 2026-09-17
+
+| ID | Type / state | Open issue | Required baseline and dependency |
+| --- | --- | --- | --- |
+| AF-AV-002 | UNKNOWN / OPEN | Exact actor holding airspace sovereignty, route-opening authority, ATC authority and military-flight authority: RF union, member-state, or shared structure. | `80`; depends on AF-OPEN-016. Do not treat RF as a unitary authority. |
+| AF-AV-003 | UNKNOWN / OPEN | Current stage and achieved degree of RF domestic aviation, including crew, maintenance, spare-parts, ground operations, navigation and ATC localization. | `80`; the staged sequence is a strategic pathway, not confirmed chronology. |
+| AF-AV-005 | UNKNOWN / OPEN | Exact aircraft technology/resources, altitude bands, capacity/throughput and route-network topology. | `80`; do not infer numerical traffic volume from scalable capability. |
+| AF-AV-006 | UNKNOWN / OPEN | Airport ownership, cabotage law, customs/tax allocation and cross-member-state air-service authority. | `80`; carrier access does not establish domestic operating rights or sovereignty. |
+| AF-AV-007 | UNKNOWN / OPEN | Exact identification, crossing, separation, restricted-zone, rescue, accident-investigation and military-control rules for mixed airspace. | `80`; the three airspace categories are current, their implementation is not supplied. |
+| AF-AV-008 | UNKNOWN / OPEN | Exact flight/combat capabilities of each RF cultivation tradition, artifact, formation or flying creature. | `80`; exceptional capability must not be converted into a uniform RF-wide metric. |
+
+## 8. Closed/superseded items from these integrations
 
 | ID | State | Resolution |
 | --- | --- | --- |
+| AF-AV-001 | RESOLVED | AF is the only currently confirmed actor with stable, scalable aviation infrastructure; this is not a universal/permanent monopoly claim and does not negate other actors' flight capability. |
+| AF-AV-004 | RESOLVED | No numeric flight volume is canonized. Exact capacity/throughput remains `UNKNOWN`; current wording is mass, scheduled and scalable operation. |
 | AF-OPEN-030 | RESOLVED / REMOVED | `Academy failure → Undie` is not a current or reconsideration route. Archived occurrence is provenance only. |
 | AF-ML-002 | RESOLVED | Trần Trúc Nha's ML membership and regional role are current canon; her proposed summoned/cross-world origin is `UNDER CONSTRUCTION / NOT CURRENT CANON`. |
 | AF-OPEN-032 / AF-ML-009 | RESOLVED / REMOVED | `foreign spy / infiltrator → punitive Undie` is removed from current canon and reconsideration because it no longer fits the political-centric setting. Archived occurrence is provenance only; replacement legal/status handling remains `UNKNOWN`. |
 
-## 8. Scope boundary
+## 9. Scope boundary
 
-This compact register carries the material open items recorded by the current reconciliation layer. It does not replace local `UNKNOWN` sections inside current-domain files `10`–`70`, and it is not proof that no other unknown exists. When a domain file exposes another relevant unknown, preserve it and route to the full reconciliation record if provenance is needed.
+This compact register carries the material open items recorded by the current reconciliation layer. It does not replace local `UNKNOWN` sections inside current-domain files `10`–`80`, and it is not proof that no other unknown exists. When a domain file exposes another relevant unknown, preserve it and route to the full reconciliation record if provenance is needed.

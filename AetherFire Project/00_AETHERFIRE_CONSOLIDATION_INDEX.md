@@ -1,6 +1,6 @@
 # AetherFire — Consolidation Index
 
-> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-09-16  
+> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-09-17
 > **Location:** self-contained `AetherFire Project/` package. Canon outputs live at the project root; immutable build inputs are preserved under `Source_Archive/`.  
 > **Truth rule:** `ABSENCE OF CANON ≠ CANONICAL NEGATION`; `NOT ESTABLISHED ≠ FALSE`; unresolved relations remain `UNKNOWN / UNRESOLVED`.
 
@@ -13,9 +13,10 @@
 5. `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` — narrator personification, Elena POV, deadpan humor and the narrator split at Clash #2.
 6. `60_MC4_IDENTITY_CURRENT.md` — current MC4 identity, Academy membership and strict legacy-import boundaries.
 7. `70_MATRIARCHS_LAMENT_CURRENT.md` — internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha, ML–TE operations and northeastern tribes.
-8. `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` — genealogy, retired designs, surviving mechanisms and proposals under consideration; not a current world bible.
-9. `91_RECONCILIATION_RECORD.md` — resolved conflicts, unresolved questions and source provenance.
-10. `92_OPEN_ISSUES_CURRENT.md` — compact control ledger; not a world-bible source.
+8. `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` — AF stable/scalable aviation, AF–RF aviation dependency, RF airspace/ATC/economy separation, mixed airspace and route leverage.
+9. `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` — genealogy, retired designs, surviving mechanisms and proposals under consideration; not a current world bible.
+10. `91_RECONCILIATION_RECORD.md` — resolved conflicts, unresolved questions and source provenance.
+11. `92_OPEN_ISSUES_CURRENT.md` — compact control ledger; not a world-bible source.
 
 ## 2. Document architecture
 
@@ -48,11 +49,16 @@ AETHERFIRE CURRENT CANON
    └─ MC4 identity, dual biological/cognitive configurations and Academy membership
 
 CHILD CURRENT-CANON DOMAIN
-└─ Matriarch's Lament
-   ├─ puppet state / Temple / apocalyptic cult
-   ├─ Creed / Holy Guard / Trần Trúc Nha
-   ├─ Trinity Hexagon / relic economy
-   └─ ML–TE routes, covert operations and northeastern tribes
+├─ Matriarch's Lament
+│  ├─ puppet state / Temple / apocalyptic cult
+│  ├─ Creed / Holy Guard / Trần Trúc Nha
+│  ├─ Trinity Hexagon / relic economy
+│  └─ ML–TE routes, covert operations and northeastern tribes
+└─ Stable aviation / RF airspace
+   ├─ AF institutional aviation capacity
+   ├─ airspace sovereignty / ATC / aviation economy
+   ├─ mixed airspace and operational separation
+   └─ AF–RF mutual dependency and internal route leverage
 
 SEPARATE TEMPORAL / CONTROL LAYERS
 ├─ Design history and reconsiderations
@@ -124,6 +130,14 @@ STATUS
 - Trần Trúc Nha belongs to Matriarch's Lament in current canon. Her proposed summoned/cross-world origin and the other unconfirmed cross-world/cross-time candidates are `UNDER CONSTRUCTION / NOT CURRENT CANON`.
 - `70_MATRIARCHS_LAMENT_CURRENT.md` is the authority for ML's internal domain. `10` retains only the global/cross-domain interface; this architecture split changes no lore status.
 
-## 9. Rollback
+## 9. Stable aviation and RF airspace integration — 2026-09-17
+
+- AF is the only currently confirmed actor with stable, scalable aviation infrastructure; this does not establish a universal or permanent monopoly on flight or aviation.
+- RF cultivators, artifacts, formations and flying creatures may exceed AF aircraft in raw or exceptional capability. Individual flight capability remains distinct from mass scheduled aviation.
+- Relevant RF/member-state authorities have incentives to retain airspace sovereignty, localize ATC/data/maintenance/manpower and domesticate dependency. Exact constitutional authority and current implementation remain `UNKNOWN`.
+- The staged localization sequence is a strategic dependency-reduction pathway, not a confirmed chronology. Exact capacity/throughput remains `UNKNOWN`; no numerical flight volume is canonized.
+- `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` controls the detailed domain. `10` retains only its global and geopolitical interface.
+
+## 10. Rollback
 
 Use Git revert/history to roll back the project package. `Source_Archive/` preserves the exact build inputs, so regeneration does not depend on files outside `AetherFire Project/`.

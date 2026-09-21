@@ -200,6 +200,7 @@ $rfAxesSource = Read-MarkdownSource 'aetherfire_rf_nguyen_chu_dynastic_power_axe
 $rfGeopoliticsSource = Read-MarkdownSource 'aetherfire_rf_crossworld_geopolitics_chat_consolidation_2026-09-15.md'
 $taintedCosmosMerged = Read-MarkdownSource 'The Tainted Cosmos - MERGED.md'
 $openIssuesSeed = Read-MarkdownSource 'aetherfire_open_issues_current_restored_2026-09-15.md'
+$aviationSource = Read-MarkdownSource 'aetherfire_stable_aviation_rf_airspace_control_canon_delta_2026-09-16.md'
 
 $storyFenceCount = [regex]::Matches($storyOverlap, '(?m)^```').Count
 if (($storyFenceCount % 2) -ne 0) {
@@ -221,10 +222,27 @@ $matriarchCurrent = Replace-Required -Text $matriarchCurrent -Old '> **Trạng t
 > **Trúc Nha boundary:** membership and regional role in ML are current canon. A summoned/cross-world origin remains `UNDER CONSTRUCTION / NOT CURRENT CANON`.
 '@ -Label 'Matriarch child-domain authority boundary'
 
+$aviationCurrent = Replace-Required -Text $aviationSource -Old '# AetherFire — Stable Aviation, RF Dependency & Airspace Control' -New '# AetherFire — Stable Aviation & RF Airspace Current Canon' -Label 'stable aviation title promotion'
+$aviationCurrent = Replace-Required -Text $aviationCurrent -Old '> **Trạng thái:** USER-CONFIRMED DESIGN DIRECTION / CANON DELTA từ chat 2026-09-16, chờ merge vào current canon package.' -New @'
+> **Trạng thái:** CURRENT CANON / CONTROLLING STABLE AVIATION & RF AIRSPACE DOMAIN — integrated 2026-09-17.
+> **Authority boundary:** this file controls AF stable/scalable aviation, the AF–RF aviation dependency, airspace/ATC/economy separation, mixed airspace and air-route leverage. `10` retains only the world/geopolitics interface.
+> **Interpretation boundary:** AF is the only currently confirmed actor with stable, scalable aviation infrastructure; this is not proof that no other actor can ever possess it. Statements about RF response describe incentives and strategic direction for relevant RF/member-state authorities, not proof of a unitary RF policy or completed implementation.
+> **Cross-project exclusion:** the source sentence about The Kingdom airspace is not imported as AetherFire lore or as a claim about The Kingdom canon.
+'@ -Label 'stable aviation status promotion'
+$aviationCurrent = Replace-Required -Text $aviationCurrent -Old '## 2. Chốt capability: AF độc quyền **stable aviation**, không độc quyền khả năng bay' -New '## 2. Chốt capability: AF là actor duy nhất hiện được xác nhận có **stable aviation**, không độc quyền khả năng bay' -Label 'stable aviation nonexclusive heading'
+$aviationCurrent = $aviationCurrent.Replace('hàng nghìn hoặc hàng vạn chuyến bay diễn ra như một utility', 'hoạt động bay hàng loạt, theo lịch và có thể scale diễn ra như một utility', [System.StringComparison]::Ordinal)
+$aviationCurrent = Replace-Required -Text $aviationCurrent -Old 'RF sẽ cố tách ít nhất ba miền:' -New 'Các authority liên quan ở cấp RF/member-state có incentive tách ít nhất ba miền; exact actor và phân quyền giữ `UNKNOWN`:' -Label 'RF aviation actor granularity'
+$aviationCurrent = Replace-Required -Text $aviationCurrent -Old 'RF sẽ cố giảm dependency theo từng lớp thay vì tự cô lập:' -New @'
+Các authority liên quan ở cấp RF/member-state có incentive giảm dependency theo từng lớp thay vì tự cô lập. Chuỗi dưới đây là một **dependency-reduction pathway**, không phải chronology đã được xác nhận là đã xảy ra:
+'@ -Label 'RF aviation localization pathway'
+$aviationCurrent = Replace-Required -Text $aviationCurrent -Old 'Đây là logic đã chốt ở cấp direction, không phải danh sách ban ngành canon:' -New 'Đây là logic đã chốt ở cấp strategic direction, không phải danh sách ban ngành canon hoặc bằng chứng rằng các safeguard đã được triển khai đầy đủ:' -Label 'RF aviation safeguards status'
+$aviationCurrent = $aviationCurrent.Replace("THE KINGDOM AIRSPACE CONCEPTS = RETIRED FOR THIS CHAT.`n`n", '', [System.StringComparison]::Ordinal)
+$aviationCurrent = Replace-Required -Text $aviationCurrent -Old 'AF MONOPOLIZES / LEADS STABLE, SCALABLE AVIATION AS INFRASTRUCTURE.' -New 'AF IS THE ONLY CURRENTLY CONFIRMED ACTOR WITH STABLE, SCALABLE AVIATION AS INFRASTRUCTURE.' -Label 'stable aviation sole-confirmed anti-drift rule'
+
 $index = @'
 # AetherFire — Consolidation Index
 
-> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-09-16  
+> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-09-17
 > **Location:** self-contained `AetherFire Project/` package. Canon outputs live at the project root; immutable build inputs are preserved under `Source_Archive/`.  
 > **Truth rule:** `ABSENCE OF CANON ≠ CANONICAL NEGATION`; `NOT ESTABLISHED ≠ FALSE`; unresolved relations remain `UNKNOWN / UNRESOLVED`.
 
@@ -237,9 +255,10 @@ $index = @'
 5. `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` — narrator personification, Elena POV, deadpan humor and the narrator split at Clash #2.
 6. `60_MC4_IDENTITY_CURRENT.md` — current MC4 identity, Academy membership and strict legacy-import boundaries.
 7. `70_MATRIARCHS_LAMENT_CURRENT.md` — internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha, ML–TE operations and northeastern tribes.
-8. `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` — genealogy, retired designs, surviving mechanisms and proposals under consideration; not a current world bible.
-9. `91_RECONCILIATION_RECORD.md` — resolved conflicts, unresolved questions and source provenance.
-10. `92_OPEN_ISSUES_CURRENT.md` — compact control ledger; not a world-bible source.
+8. `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` — AF stable/scalable aviation, AF–RF aviation dependency, RF airspace/ATC/economy separation, mixed airspace and route leverage.
+9. `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` — genealogy, retired designs, surviving mechanisms and proposals under consideration; not a current world bible.
+10. `91_RECONCILIATION_RECORD.md` — resolved conflicts, unresolved questions and source provenance.
+11. `92_OPEN_ISSUES_CURRENT.md` — compact control ledger; not a world-bible source.
 
 ## 2. Document architecture
 
@@ -272,11 +291,16 @@ AETHERFIRE CURRENT CANON
    └─ MC4 identity, dual biological/cognitive configurations and Academy membership
 
 CHILD CURRENT-CANON DOMAIN
-└─ Matriarch's Lament
-   ├─ puppet state / Temple / apocalyptic cult
-   ├─ Creed / Holy Guard / Trần Trúc Nha
-   ├─ Trinity Hexagon / relic economy
-   └─ ML–TE routes, covert operations and northeastern tribes
+├─ Matriarch's Lament
+│  ├─ puppet state / Temple / apocalyptic cult
+│  ├─ Creed / Holy Guard / Trần Trúc Nha
+│  ├─ Trinity Hexagon / relic economy
+│  └─ ML–TE routes, covert operations and northeastern tribes
+└─ Stable aviation / RF airspace
+   ├─ AF institutional aviation capacity
+   ├─ airspace sovereignty / ATC / aviation economy
+   ├─ mixed airspace and operational separation
+   └─ AF–RF mutual dependency and internal route leverage
 
 SEPARATE TEMPORAL / CONTROL LAYERS
 ├─ Design history and reconsiderations
@@ -348,7 +372,15 @@ STATUS
 - Trần Trúc Nha belongs to Matriarch's Lament in current canon. Her proposed summoned/cross-world origin and the other unconfirmed cross-world/cross-time candidates are `UNDER CONSTRUCTION / NOT CURRENT CANON`.
 - `70_MATRIARCHS_LAMENT_CURRENT.md` is the authority for ML's internal domain. `10` retains only the global/cross-domain interface; this architecture split changes no lore status.
 
-## 9. Rollback
+## 9. Stable aviation and RF airspace integration — 2026-09-17
+
+- AF is the only currently confirmed actor with stable, scalable aviation infrastructure; this does not establish a universal or permanent monopoly on flight or aviation.
+- RF cultivators, artifacts, formations and flying creatures may exceed AF aircraft in raw or exceptional capability. Individual flight capability remains distinct from mass scheduled aviation.
+- Relevant RF/member-state authorities have incentives to retain airspace sovereignty, localize ATC/data/maintenance/manpower and domesticate dependency. Exact constitutional authority and current implementation remain `UNKNOWN`.
+- The staged localization sequence is a strategic dependency-reduction pathway, not a confirmed chronology. Exact capacity/throughput remains `UNKNOWN`; no numerical flight volume is canonized.
+- `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` controls the detailed domain. `10` retains only its global and geopolitical interface.
+
+## 10. Rollback
 
 Use Git revert/history to roll back the project package. `Source_Archive/` preserves the exact build inputs, so regeneration does not depend on files outside `AetherFire Project/`.
 '@
@@ -471,6 +503,19 @@ This is a factional agenda, not proof of a unified state policy or a successful 
 ### Dependency boundary
 
 AF's firewall and founding-seal history still depend on Raging Fire lineage/RF arrangements. The exact provider, contracting actor, maintenance authority and member-state allocation remain `UNKNOWN`; do not assign them automatically to the RF union or the strongest bloc.
+'@
+
+$aviationGlobalInterface = @'
+## Stable aviation and RF airspace — global interface
+
+> **Authority boundary:** `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` controls the detailed aviation, airspace, ATC, mixed-flight and route-leverage domain. This section keeps only the interfaces required by the wider world/geopolitics model.
+
+- AF and RF are separated by an ocean where Seaborne make maritime transport extremely dangerous, so exchange depends strongly on aviation.
+- AF is the only currently confirmed actor able to operate stable, scheduled and scalable aviation as infrastructure. This does not mean AF monopolizes flight or that no other actor can ever build comparable infrastructure.
+- RF cultivators, artifacts, formations and flying creatures can possess exceptional flight or combat capability. Raw flight capability does not establish mass aviation capacity, and AF aviation does not establish automatic air supremacy.
+- Direct AF↔RF member-state air routes can alter transit dependency, trade autonomy, diplomatic access and secession leverage.
+- Relevant RF/member-state authorities have strategic incentives to retain airspace sovereignty, localize ATC and traffic data, and domesticate aviation dependency. Exact union/member-state/shared authority and current implementation remain `UNKNOWN`.
+- AF carrier/engineering capacity and RF market/airspace/cultivation leverage produce bargaining and mutual dependency rather than automatic dominance by either side.
 '@
 
 $academyCurrentCanon = @'
@@ -626,6 +671,7 @@ $worldContent = @"
 > Consolidated current-domain view. Detailed Citizen/Civil/Undie material was moved to sibling files. Design genealogy remains in ``90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md``.  
 > **Genealogy lock — 2026-09-09:** MC2 remains tied to Raging Fire / Prince 9; the Undi–Hoa Nguyệt visual retcon does not create Hoa Nguyệt ancestry or origin for MC2.
 > Detailed Fiction 0/Fiction 1 and Canon 1/Canon 2 causality is routed to ``40_METAFICTION_CANON_TIMELINE_CURRENT.md``; narrator/POV presentation is routed to ``50_NARRATORS_POV_AND_HUMOR_CURRENT.md``.
+> Detailed stable-aviation and RF-airspace canon is routed to ``80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md``.
 
 $(Shift-MarkdownHeadings $mergedIntroThroughIdentity)
 
@@ -640,6 +686,10 @@ $(Shift-MarkdownHeadings $mergedGlobal)
 ---
 
 $rfCurrentCanon
+
+---
+
+$aviationGlobalInterface
 
 ---
 
@@ -660,6 +710,8 @@ $matriarchGlobalInterface
 Write-MarkdownOutput '10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md' $worldContent
 
 Write-MarkdownOutput '70_MATRIARCHS_LAMENT_CURRENT.md' $matriarchCurrent
+
+Write-MarkdownOutput '80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md' $aviationCurrent
 
 $statusRevamp = Join-H1Sections -Text $revamp -Headings @(
     '# 0. Nguyên tắc đọc',
@@ -1302,6 +1354,17 @@ $reconciliationContent = @"
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Stable aviation and RF airspace integration — 2026-09-17
+
+1. **Source priority:** ``aetherfire_stable_aviation_rf_airspace_control_canon_delta_2026-09-16.md`` controls AF stable/scalable aviation, AF–RF aviation dependency, RF airspace/ATC/economy separation, mixed airspace and air-route leverage within its declared scope.
+2. **Document authority:** ``80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md`` controls the detailed domain. ``10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`` retains only the global/geopolitical interface.
+3. **AF-AV-001 — RESOLVED:** AF is the only currently confirmed actor with stable, scalable aviation infrastructure. This does not establish that AF owns all flight, that no other actor can ever possess comparable infrastructure, or that AF automatically has air supremacy.
+4. **RF actor boundary:** statements about RF response are strategic incentives/direction for relevant RF/member-state authorities. Exact union/member-state/shared sovereignty and ATC authority remain ``UNKNOWN``; no unitary RF implementation is inferred.
+5. **AF-AV-003 boundary:** the initial AF-supported stage followed by RF localization is a dependency-reduction pathway, not a confirmed chronology or current implementation state.
+6. **AF-AV-004 — RESOLVED:** the source's illustrative ``thousands or tens of thousands`` flight volume is not imported because exact capacity/throughput remains ``UNKNOWN``. Current canon uses non-numeric mass/scheduled/scalable wording.
+7. **Axis separation:** ``AIRSPACE SOVEREIGNTY ≠ AIR TRAFFIC CONTROL ≠ AVIATION ECONOMY``. Access, expertise or carrier service does not establish ownership or sovereign authority.
+8. **Cross-project exclusion:** the source sentence about The Kingdom airspace is an anti-drift boundary for the source chat, not AetherFire lore and not a claim that changes The Kingdom canon.
+
 ## Matriarch's Lament follow-up decisions — 2026-09-16
 
 1. **Trần Trúc Nha:** her membership and regional role in Matriarch's Lament are current canon.
@@ -1403,18 +1466,31 @@ $newOpenIssues = @'
 | AF-ML-008 | UNKNOWN / OPEN | Status, rights, destination and legal recognition of Undie “freed on site” through ML covert interference. | `70` and `30`; liberation wording does not establish citizenship, custody, return or exit route. |
 | AF-ML-010 | UNKNOWN / OPEN | Granularity of Saintess/Temple knowledge concerning leaks and covert activity. | `70`; institution-level awareness does not establish knowledge or authorization of every operative or operation. |
 
-## 7. Closed/superseded items from these integrations
+## 7. Stable aviation and RF airspace open issues — updated 2026-09-17
+
+| ID | Type / state | Open issue | Required baseline and dependency |
+| --- | --- | --- | --- |
+| AF-AV-002 | UNKNOWN / OPEN | Exact actor holding airspace sovereignty, route-opening authority, ATC authority and military-flight authority: RF union, member-state, or shared structure. | `80`; depends on AF-OPEN-016. Do not treat RF as a unitary authority. |
+| AF-AV-003 | UNKNOWN / OPEN | Current stage and achieved degree of RF domestic aviation, including crew, maintenance, spare-parts, ground operations, navigation and ATC localization. | `80`; the staged sequence is a strategic pathway, not confirmed chronology. |
+| AF-AV-005 | UNKNOWN / OPEN | Exact aircraft technology/resources, altitude bands, capacity/throughput and route-network topology. | `80`; do not infer numerical traffic volume from scalable capability. |
+| AF-AV-006 | UNKNOWN / OPEN | Airport ownership, cabotage law, customs/tax allocation and cross-member-state air-service authority. | `80`; carrier access does not establish domestic operating rights or sovereignty. |
+| AF-AV-007 | UNKNOWN / OPEN | Exact identification, crossing, separation, restricted-zone, rescue, accident-investigation and military-control rules for mixed airspace. | `80`; the three airspace categories are current, their implementation is not supplied. |
+| AF-AV-008 | UNKNOWN / OPEN | Exact flight/combat capabilities of each RF cultivation tradition, artifact, formation or flying creature. | `80`; exceptional capability must not be converted into a uniform RF-wide metric. |
+
+## 8. Closed/superseded items from these integrations
 
 | ID | State | Resolution |
 | --- | --- | --- |
+| AF-AV-001 | RESOLVED | AF is the only currently confirmed actor with stable, scalable aviation infrastructure; this is not a universal/permanent monopoly claim and does not negate other actors' flight capability. |
+| AF-AV-004 | RESOLVED | No numeric flight volume is canonized. Exact capacity/throughput remains `UNKNOWN`; current wording is mass, scheduled and scalable operation. |
 | AF-OPEN-030 | RESOLVED / REMOVED | `Academy failure → Undie` is not a current or reconsideration route. Archived occurrence is provenance only. |
 | AF-ML-002 | RESOLVED | Trần Trúc Nha's ML membership and regional role are current canon; her proposed summoned/cross-world origin is `UNDER CONSTRUCTION / NOT CURRENT CANON`. |
 | AF-OPEN-032 / AF-ML-009 | RESOLVED / REMOVED | `foreign spy / infiltrator → punitive Undie` is removed from current canon and reconsideration because it no longer fits the political-centric setting. Archived occurrence is provenance only; replacement legal/status handling remains `UNKNOWN`. |
 
-## 8. Scope boundary
+## 9. Scope boundary
 '@
 $openIssuesContent = Replace-Required -Text $openIssuesSeed -Old '## 5. Scope boundary' -New $newOpenIssues -Label 'restore and extend open issues register'
-$openIssuesContent = Replace-Required -Text $openIssuesContent -Old 'It does not replace local `UNKNOWN` sections inside `10`–`50`' -New 'It does not replace local `UNKNOWN` sections inside current-domain files `10`–`70`' -Label 'open-issues current-domain range'
+$openIssuesContent = Replace-Required -Text $openIssuesContent -Old 'It does not replace local `UNKNOWN` sections inside `10`–`50`' -New 'It does not replace local `UNKNOWN` sections inside current-domain files `10`–`80`' -Label 'open-issues current-domain range'
 Write-MarkdownOutput '92_OPEN_ISSUES_CURRENT.md' $openIssuesContent
 
 $sourceHashes = Get-ChildItem -LiteralPath $sourceRoot -File -Filter '*.md' |
@@ -1433,6 +1509,7 @@ $generatedNames = @(
     '50_NARRATORS_POV_AND_HUMOR_CURRENT.md',
     '60_MC4_IDENTITY_CURRENT.md',
     '70_MATRIARCHS_LAMENT_CURRENT.md',
+    '80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md',
     '90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md',
     '91_RECONCILIATION_RECORD.md',
     '92_OPEN_ISSUES_CURRENT.md'
@@ -1457,6 +1534,9 @@ $manifest = @"
 - ``aetherfire_narrators_pov_clash_humor.md`` was consolidated into a separate narrator/POV domain. Its clothing section was explicitly excluded so it cannot override the latest Undi visual canon in ``30_UNDIE_SYSTEM_CURRENT.md``.
 - ``matriarchs_lament_working_retcon_canon.md`` was imported as the controlling regional retcon. Its unmatched final source fence is repaired only in generated output; the archived source remains byte-preserved.
 - ``70_MATRIARCHS_LAMENT_CURRENT.md`` controls the internal ML domain. ``10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`` retains only ML/TE global and cross-domain interfaces; this split is architectural and does not change lore status.
+- ``aetherfire_stable_aviation_rf_airspace_control_canon_delta_2026-09-16.md`` was imported with explicit reconciliation of sole-confirmed versus literal-monopoly wording, non-numeric throughput, RF actor granularity and localization-pathway status.
+- ``80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md`` controls the detailed stable-aviation/RF-airspace domain. ``10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`` retains only its global/geopolitical interface.
+- The source sentence about The Kingdom airspace was excluded from generated AetherFire canon because it is a cross-project anti-drift boundary, not AetherFire lore or a The Kingdom canon decision.
 - The four 2026-09-15 candidate files were archived byte-exactly and imported only according to the explicit user decisions recorded in ``91_RECONCILIATION_RECORD.md``.
 - ``The Tainted Cosmos - MERGED.md`` is archived for MC4 identity genealogy; its cosmology, power scale, mastery, Fusion and Spear mechanics are not imported into current AetherFire canon.
 - ``aetherfire_open_issues_current_restored_2026-09-15.md`` preserves the restored control file as a build seed. The generated ``92_OPEN_ISSUES_CURRENT.md`` extends it without granting it canon authority.

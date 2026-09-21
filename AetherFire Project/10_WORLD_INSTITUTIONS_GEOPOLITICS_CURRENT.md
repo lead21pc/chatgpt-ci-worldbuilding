@@ -3,6 +3,7 @@
 > Consolidated current-domain view. Detailed Citizen/Civil/Undie material was moved to sibling files. Design genealogy remains in `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md`.  
 > **Genealogy lock — 2026-09-09:** MC2 remains tied to Raging Fire / Prince 9; the Undi–Hoa Nguyệt visual retcon does not create Hoa Nguyệt ancestry or origin for MC2.
 > Detailed Fiction 0/Fiction 1 and Canon 1/Canon 2 causality is routed to `40_METAFICTION_CANON_TIMELINE_CURRENT.md`; narrator/POV presentation is routed to `50_NARRATORS_POV_AND_HUMOR_CURRENT.md`.
+> Detailed stable-aviation and RF-airspace canon is routed to `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md`.
 
 ## AetherFire — Canon hợp nhất
 
@@ -1089,6 +1090,19 @@ This is a factional agenda, not proof of a unified state policy or a successful 
 ### Dependency boundary
 
 AF's firewall and founding-seal history still depend on Raging Fire lineage/RF arrangements. The exact provider, contracting actor, maintenance authority and member-state allocation remain `UNKNOWN`; do not assign them automatically to the RF union or the strongest bloc.
+
+---
+
+## Stable aviation and RF airspace — global interface
+
+> **Authority boundary:** `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` controls the detailed aviation, airspace, ATC, mixed-flight and route-leverage domain. This section keeps only the interfaces required by the wider world/geopolitics model.
+
+- AF and RF are separated by an ocean where Seaborne make maritime transport extremely dangerous, so exchange depends strongly on aviation.
+- AF is the only currently confirmed actor able to operate stable, scheduled and scalable aviation as infrastructure. This does not mean AF monopolizes flight or that no other actor can ever build comparable infrastructure.
+- RF cultivators, artifacts, formations and flying creatures can possess exceptional flight or combat capability. Raw flight capability does not establish mass aviation capacity, and AF aviation does not establish automatic air supremacy.
+- Direct AF↔RF member-state air routes can alter transit dependency, trade autonomy, diplomatic access and secession leverage.
+- Relevant RF/member-state authorities have strategic incentives to retain airspace sovereignty, localize ATC and traffic data, and domesticate aviation dependency. Exact union/member-state/shared authority and current implementation remain `UNKNOWN`.
+- AF carrier/engineering capacity and RF market/airspace/cultivation leverage produce bargaining and mutual dependency rather than automatic dominance by either side.
 
 ---
 
