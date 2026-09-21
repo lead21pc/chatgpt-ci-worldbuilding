@@ -469,3 +469,18 @@
 
 - Hai control thành phần có thành công runtime do người dùng báo cáo; câu chữ hợp nhất chưa được xác nhận runtime riêng.
 - Kiểm tra cấu trúc đạt 4.996 ký tự và 5.010 byte UTF-8, dùng CRLF, có CRLF cuối file, không có khoảng trắng cuối dòng và không có BOM UTF-8. SHA-256: `83B7DA30B5612B5D90DA80B9BAAEF88DF7D3B4A19551C53AC2FE2D86199390BE`.
+
+## v8.5
+
+### Đưa hợp đồng đầu ra tiếng Việt lên trước
+
+- Chuyển việc cưỡng chế tiếng Việt lên trước các bất biến suy luận dưới dạng hợp đồng xác định đầu ra hợp lệ, thay vì để nó làm ưu tiên ngôn ngữ ở cuối file.
+- Bắt buộc quét toàn bộ câu trả lời trước khi gửi và dịch hoặc diễn đạt lại mọi thành phần tiếng Anh không được miễn. Chỉ miễn tên riêng, mã, trích dẫn nguyên văn, lệnh, mã định danh bên ngoài và thành phần được yêu cầu rõ trong lượt hiện tại.
+- Không cho phép giữ tiếng Anh vì chủ đề, tính kỹ thuật, thông lệ, độ ngắn, độ quen thuộc, độ chính xác, lịch sử sử dụng hoặc suy đoán về kiến thức người đọc. Bắt buộc từ nối và động từ bằng tiếng Việt; nhãn tiếng Anh được phép không được gánh phần giải thích.
+- Thay sự cho phép dùng “thuật ngữ chuyên môn cần thiết” bằng yêu cầu giải thích khái niệm chuyên biệt cần thiết bằng tiếng Việt dễ hiểu.
+- Xóa cả hai biến thể thử nghiệm v8.5 sau khi bản thử thứ hai vượt qua kiểm thử runtime của người dùng và được nâng nguyên trạng thành v8.5.
+
+### Ranh giới kiểm chứng
+
+- Người dùng xác nhận bản thử được nâng cấp hoạt động tốt trong runtime đã kiểm tra. Kết quả này không bảo đảm hành vi giống hệt giữa các model, lớp sản phẩm, trạng thái memory, lịch sử hội thoại hoặc bản phát hành tương lai.
+- Kiểm tra cấu trúc đạt 4.938 ký tự và 4.952 byte UTF-8, dùng CRLF, có CRLF cuối file, không có khoảng trắng cuối dòng và không có BOM UTF-8. SHA-256: `CDA7EFD24E4D5EE5DC9D629F6BCFF78EAFFD73ABB35E44A46E241BF48FFB87B2`.

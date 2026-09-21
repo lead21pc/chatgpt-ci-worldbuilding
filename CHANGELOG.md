@@ -469,3 +469,18 @@
 
 - The two component controls have user-reported runtime success; their combined wording has not yet received separate runtime confirmation.
 - Structural checks passed at 4,996 characters and 5,010 UTF-8 bytes, with CRLF, a final CRLF, no trailing whitespace, and no UTF-8 BOM. SHA-256: `83B7DA30B5612B5D90DA80B9BAAEF88DF7D3B4A19551C53AC2FE2D86199390BE`.
+
+## v8.5
+
+### Promoted Vietnamese output contract
+
+- Moved Vietnamese enforcement ahead of the reasoning invariants as an output-validity contract instead of leaving it as a trailing language preference.
+- Required a whole-answer scan before sending and translation or paraphrase of every non-exempt English item. Restricted exemptions to proper names, code, literal quotes, commands, external identifiers, and items explicitly requested in the current turn.
+- Made topic, technicality, convention, brevity, familiarity, precision, prior use, and inferred reader knowledge invalid reasons to retain English. Required Vietnamese connectors and verbs, and prevented an allowed English label from carrying the explanation.
+- Replaced the earlier permission to use “necessary jargon” with a requirement to explain necessary specialized concepts in plain Vietnamese.
+- Removed both temporary v8.5 variants after the second experiment passed user runtime testing and was promoted unchanged as v8.5.
+
+### Verification boundary
+
+- The user confirmed the promoted experiment worked in the tested runtime. This does not guarantee identical behavior across models, product layers, memory states, conversation histories, or future releases.
+- Structural checks passed at 4,938 characters and 4,952 UTF-8 bytes, with CRLF, a final CRLF, no trailing whitespace, and no UTF-8 BOM. SHA-256: `CDA7EFD24E4D5EE5DC9D629F6BCFF78EAFFD73ABB35E44A46E241BF48FFB87B2`.
