@@ -58,8 +58,8 @@ Khi CI dự án hoặc nền ChatGPT được khai báo đổi về sau, ACTIVE 
 Các probe dưới đây chỉ truyền JSON trong đối số, không thay đổi tệp. Chúng phục vụ kiểm tra logic phiên bản và stale; không được dùng làm kết quả semantic.
 
     pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -VersionProbeJson '{"family":"CI","names":["AetherFire_CI_version_v2.9.md","AetherFire_CI_version_v2.10.md"]}'
-    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -VersionProbeJson '{"family":"CI","names":["AetherFire_CI_version_v2.5.md","AetherFire_CI_version_v02.05.md"]}'
-    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -AnchorProbeJson '{"path":"AetherFire CI/AetherFire_CI_version_v2.5.md","sha256":"0000000000000000000000000000000000000000000000000000000000000000"}'
+    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -VersionProbeJson '{"family":"CI","names":["AetherFire_CI_version_v2.6.md","AetherFire_CI_version_v02.06.md"]}'
+    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -AnchorProbeJson '{"path":"AetherFire CI/AetherFire_CI_version_v2.6.md","sha256":"0000000000000000000000000000000000000000000000000000000000000000"}'
 
 Đối số snapshot tùy chọn là JSON {"root":"<đường dẫn tuyệt đối thư mục repo cha>","files":[{"path":"AetherFire Project/MANIFEST.md","sha256":"<SHA-256 lúc bắt đầu tác vụ>"}]} truyền qua ProtectedSnapshotJson. Runner chỉ so sánh các file được cung cấp trong snapshot, không tự suy ra bản chụp trước khi bắt đầu tác vụ và không bảo đảm bao phủ mọi file cấm sửa. Nếu không cung cấp, protected_snapshot là LIMITED_CHECK. Việc đọc Git chỉ ghi nhận tình trạng hiện tại, không phân biệt thay đổi cũ/mới nếu thiếu bản chụp đầu kỳ.
 
