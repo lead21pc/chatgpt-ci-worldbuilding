@@ -455,3 +455,17 @@
 - The user confirmed v8.4 successful in current runtime testing, exceeding the expected result.
 - The accepted artifact is 4,976 characters and 4,990 UTF-8 bytes, with CRLF, a final CRLF, no trailing whitespace, and no UTF-8 BOM. SHA-256: `1E87964846B2C3E88FF3C143ED19210ACC239A438B36285FE659615BE5CF6712`.
 - Runtime success remains evidence for the tested environment rather than a guarantee across models, product layers, memory states, or future releases.
+
+## v8.4.1
+
+### Targeted rarity-inference patch
+
+- Combined the two experimental controls that user testing found stable: rearranging familiar parts does not establish rarity, and a near precedent weighs against novelty rather than being split into parts to preserve a rarity claim.
+- Prohibited inferring user qualities or status from artifacts or sparse evidence while retaining adaptation to stated preferences and demonstrated concept-specific understanding.
+- Rejected and removed the `insufficient-comparison` experiment after it produced odd runtime behavior; its self-assessed “adequate comparison set” threshold could overactivate epistemic caution instead of continuing the requested analysis.
+- Removed all three named experimental artifacts after promoting the two accepted controls into the single v8.4.1 release file.
+
+### Verification boundary
+
+- The two component controls have user-reported runtime success; their combined wording has not yet received separate runtime confirmation.
+- Structural checks passed at 4,996 characters and 5,010 UTF-8 bytes, with CRLF, a final CRLF, no trailing whitespace, and no UTF-8 BOM. SHA-256: `83B7DA30B5612B5D90DA80B9BAAEF88DF7D3B4A19551C53AC2FE2D86199390BE`.
