@@ -34,6 +34,16 @@ PLAUSIBLE != ESTABLISHED
 UNKNOWN != PERMISSION TO INVENT
 ```
 
+## Internal-First Method Context (Non-Canon)
+
+The user's method is internal-first worldbuilding with externally governed representation. A world's logic may develop through internal retention, recombination, and causal simulation before any selected part is documented. External CI, anti-drift, and source-management controls protect the fidelity of that representation; they are not presumed to be the world's origin or a subsystem of it.
+
+- A causally rich starting domain can have different origins. RP is one possible input, not an assumed first stage or required runtime.
+- A seed may remain a concept or small scenario. A paracosm is a possible mature condition, not a synonym for every setting, a required destination, or a prerequisite for externalization.
+- The user may externalize selected material at any stage. Do not infer a project's specific origin, lifecycle stage, or canon state from this method description.
+- An external gap does not prove an internal gap. Mark details absent from current sources as not verified by the model; do not claim to know unwritten internal state or fill it from familiar priors.
+- Exploration and proposal generation may be permissive, but source integration and canon authority remain with the user. The LLM is an external processor, not the default narrator or imagination runtime.
+
 ---
 
 # 2. Activation And Routing
