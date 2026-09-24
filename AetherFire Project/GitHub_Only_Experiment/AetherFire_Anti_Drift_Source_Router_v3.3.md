@@ -2,49 +2,15 @@
 
 > Type: task-scoped source router and pre-response gate.
 > Not: canon evidence, lore source, world bible, or permission to fill missing state.
-> Authority hook: this router inherits the latest available AetherFire CI by numeric version unless the user explicitly pins another version for the current task.
-> Last verified local numeric CI resolution (ChatGPT runtime not confirmed): `AetherFire_CI_version_v2.7.md` on 2026-09-23. Runtime numeric resolution remains authoritative if a higher valid version appears.
+> Authority hook: this experimental router inherits `AetherFire_CI_version_v2.7.md` only when that CI is explicitly selected for a GitHub-only trial. It is outside default numeric resolution.
+> Experimental pair: CI v2.7 and Router v3.3 in `GitHub_Only_Experiment/`; ChatGPT Project runtime activation has not been verified.
 > Canon package: `lead21pc/chatgpt-ci-versioning`, branch `main`, directory `AetherFire Project/`, as explicitly designated by the user. The repository's latest `main` commit is the canon snapshot.
 
 ---
 
 # 1. Active CI Resolution
 
-At the start of an AetherFire task, resolve the active CI from direct children of the `AetherFire CI/` directory matching exactly:
-
-```text
-AetherFire_CI_version_v<MAJOR>.<MINOR>[.<PATCH>].md
-```
-
-Select the highest numeric version, component by component.
-
-```text
-v2.10 > v2.9
-v3.0 > v2.99
-```
-
-Do not select by lexical order, modification time, filename recency, memory, or a missing/deleted version.
-
-Ignore archived, superseded, draft, rejected, and unavailable files unless the user explicitly requests historical comparison.
-
-Use explicit status in a candidate's own header or the CI directory README to identify draft, rejected, or superseded files. If those status declarations conflict, stop and report the ambiguity. A file with the exact versioned name and no exclusion status remains eligible; a higher eligible numeric version activates automatically. The README's last-verified baseline is a snapshot, not a cap on later eligible versions.
-
-Last verified local numeric CI resolution on 2026-09-23:
-
-```text
-AetherFire_CI_version_v2.7.md
-```
-
-Future behavior:
-
-```text
-new valid higher numeric version becomes available
--> resolve it as active for later tasks
-```
-
-An explicit user pin for a task overrides automatic latest-version selection only within that stated scope.
-
-If two different files claim the same highest version, the version is malformed, or the selected file is unreadable, stop and report the resolution conflict. Do not guess.
+Use this router only when the user explicitly selects the GitHub-only trial and CI v2.7 is the Project entry point. Confirm the matching CI at `AetherFire Project/GitHub_Only_Experiment/AetherFire_CI_version_v2.7.md`; if it is unavailable or does not match the installed entry point, stop and report the control mismatch. The default CI v2.6 and Router v3.2 remain in their normal directories. File presence in this experimental directory does not activate either control for ordinary tasks.
 
 ---
 
@@ -237,7 +203,7 @@ A question, example, hypothetical, simulation branch, or proposed wording does n
 
 Before answering, verify:
 
-- the highest available numeric AetherFire CI version was resolved correctly;
+- the explicitly selected experimental CI v2.7 was confirmed;
 - every required source was read;
 - every required overlay was loaded after the source gate;
 - current canon remained the baseline;
@@ -259,8 +225,8 @@ For draft review or a proposed canon change, load `AetherFire CI/AetherFire_Cano
 # 11. Compact Kernel
 
 ```text
-RESOLVE THE HIGHEST AVAILABLE NUMERIC AETHERFIRE CI VERSION.
-LAST VERIFIED RESOLUTION DOES NOT OVERRIDE RUNTIME NUMERIC RESOLUTION.
+USE THIS ROUTER ONLY WITH EXPLICITLY SELECTED EXPERIMENTAL CI V2.7.
+DEFAULT TASKS USE CI V2.6 AND ROUTER V3.2.
 FOR CANON, RETRIEVE FROM THE USER-DESIGNATED GITHUB REPOSITORY AND MAIN BRANCH.
 RECORD A GIT COMMIT SHA, NOT A FILE BLOB SHA; OTHERWISE LABEL THE REMOTE SNAPSHOT UNVERIFIED.
 NEVER CLAIM RETRIEVAL OR PINNING THAT THE CONNECTOR DID NOT PROVIDE.
