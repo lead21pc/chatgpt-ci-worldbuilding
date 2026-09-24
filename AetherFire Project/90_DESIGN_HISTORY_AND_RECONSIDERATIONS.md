@@ -20,6 +20,11 @@
 - Trần Trúc Nha's membership and regional role in Matriarch's Lament remain current. Her proposed summoned/cross-world origin, MC4's proposed in-world cross-fiction origin and the other unconfirmed cross-world/cross-time candidates are `UNDER CONSTRUCTION / NOT CURRENT CANON`.
 - The `Nguyên Chủ / Nguyên Anh` concept and the `元主 / 元嬰` wordplay remain proposal/design material. They are not assigned to MC2's mother by this integration.
 
+## RP history import boundary — 2026-09-25
+
+- The user-supplied RP-history synthesis is archived byte-exactly. Selected history, inference and proposals enter this file only; its claims have not been independently checked against the original RP transcript.
+- A future Undie revamp for Canon 1 and Canon 2, after their V0.5 split, is being designed separately and has not been canonized by this import.
+
 ## AetherFire — Design History & Các điểm cân nhắc mang lại
 
 > **Loại tài liệu:** design history / genealogy / refactor log / reconsideration register  
@@ -1725,7 +1730,7 @@ Nếu tái nhập cần giữ UNKNOWN ở:
 
 ### 20.6 PROVENANCE ONLY — Holy State infiltration / T counteraction; punitive Undie endpoint removed
 
-**DESIGN HISTORY + UNDER CONSIDERATION**
+**DESIGN HISTORY / PROVENANCE ONLY — punitive Undie endpoint removed 2026-09-16**
 
 Trong một số event của concept gốc, Thánh quốc không chỉ gây sức ép ngoại giao mà còn triển khai **lực lượng gián điệp/covert personnel** vào AetherFire.
 
@@ -1910,6 +1915,16 @@ Nó phản ánh strategic preference giữa các patron/regime khác nhau và pe
 **DESIGN ANALYSIS:** current Foreign Affairs interest in exporting/replicating Undie abroad có structural resemblance với old treaty-diplomacy instinct, nhưng causal genealogy trực tiếp chỉ được coi là xác nhận nếu user chốt.
 
 ---
+
+### 20.8 DESIGN HISTORY — học thuyết Thánh quốc cũ và nguồn tên Matriarch's Lament
+
+**Lời kể lịch sử của người dùng, chưa phục hồi:** Thánh quốc thời RP cũ thờ Nữ thần Sự sống. Học thuyết của họ không công nhận lựa chọn tự nguyện bán dâm của phụ nữ là hợp lệ, nên diễn giải Undie như bằng chứng có cấu trúc ép buộc phía sau và nhiều lần tổ chức “giải cứu”. AetherFire xem các hành động đó là can thiệp vào nội bộ và chủ quyền. Đây là genealogy của tranh chấp tôn giáo, quyền lựa chọn và chủ quyền, không phải học thuyết được gán cho Matriarch's Lament hiện hành.
+
+**Lời kể lịch sử của người dùng, chưa phục hồi:** `Matriarch's Lament` là tên từng có trong lore cũ. Bản cũ gắn tên này với một thánh nữ sáng lập: người xuyên thế giới cùng thế giới gốc với MC1 và MC3, esper có năng lực thanh tẩy cấp 7, về sau bị một tác nhân được gọi là AetherFire ám toán. Việc tên được dùng lại hiện nay không phục hồi tiểu sử hay sự kiện ám toán đó. Vị sáng lập này là một node riêng; **không đồng nhất với Trần Trúc Nha**.
+
+**Chưa xác định:** thời điểm vị sáng lập sống, lập quốc và bị ám toán; tác nhân “AetherFire” là nhà nước hiện hành hay tiền thân; quan hệ giữa vụ ám toán với học thuyết chống Undie hoặc Total War cũ. Tuổi đời hiện hành của Matriarch's Lament và AetherFire không đủ để tự giải quyết niên đại này. Tuyến gián điệp nước ngoài → Undie trừng phạt ở §20.6 vẫn đã bị loại bỏ; lời kể về RP cũ không mở lại tuyến ấy.
+
+Nguồn: `Source_Archive/aetherfire_rp_cu_ba_truc_lich_su_va_de_xuat.md`, mục 4; đây là bản thuật lại và phân tích, không phải biên bản RP độc lập.
 
 ## 21. S — Hội đồng Pháp sư: contingency institution và technical-magical power center
 
@@ -2452,6 +2467,16 @@ không đồng nghĩa
 world core chỉ có Undie
 ```
 
+### 23.1A DESIGN HISTORY — Undie ban đầu và lý do subsystem lan rộng
+
+**Lời kể lịch sử của người dùng:** ở giai đoạn RP đầu, Undie được hình dung là mại dâm cao cấp với người tham gia về nguyên tắc tự nguyện, chưa phải nô lệ hay nô lệ tình dục. RP quanh dịch vụ này nhanh chóng lặp lại; câu hỏi thiết kế chuyển sang phản ứng của xã hội và thế giới, kéo theo luật, tiền công, điều kiện sống, chợ đen, thuế, du lịch, ngoại giao, tôn giáo và phản gián. Đây là giai đoạn thiết kế cũ, không phủ nhận các giai đoạn về sau đã viết Undie theo mô hình khác.
+
+**Suy luận của bản tổng hợp RP:** vai trò làm điểm chạm cho nhiều miền có thể giải thích vì sao subsystem Undie trở nên dày hơn chức năng ban đầu. Đây là cách đọc genealogy, không phải nguyên nhân đã được kiểm chứng độc lập.
+
+**Ranh giới hiện hành:** người dùng dự định thiết kế lại Undie cho cả Canon 1 và Canon 2 sau điểm tách nhánh V0.5, rồi chốt riêng. Ý định đó đang được cân nhắc; mục lịch sử này không sửa ontology, tình trạng pháp lý hay niên đại của hai canon.
+
+Nguồn: `Source_Archive/aetherfire_rp_cu_ba_truc_lich_su_va_de_xuat.md`, mục 2–3; bản thuật lại, không phải biên bản RP độc lập.
+
 ### 23.2 DESIGN HISTORY — MC1 và MC3 lúc đó mới là proto-concepts
 
 Trong early RP era, MC1 và MC3 **mới bắt đầu thành hình và chưa có role rõ ràng**.
@@ -2778,6 +2803,16 @@ multiple narrative axes
 
 ---
 
+### 23.11 DESIGN HISTORY / INFERENCE / PROPOSAL — ba trục và vòng phản hồi RP cũ
+
+**Lịch sử do người dùng kể, được bản tổng hợp sắp xếp thành ba trục:** (1) MC2 và đời sống Undie là camera RP trực tiếp; (2) bộ máy AetherFire phải giải thích, quản lý và phản ứng với hệ quả; (3) các nước ngoài phản ứng qua kinh tế, văn hóa, tôn giáo, tình báo và quân sự. Cách phân trục là công cụ phân tích, không phải sơ đồ thể chế canon.
+
+**Suy luận:** một hành động của nhân vật đòi hỏi thể chế phản ứng; phản ứng đó tạo hệ quả quốc tế; sức ép quốc tế lại buộc thể chế thích nghi và tác động ngược lên nhân vật. Vòng lặp giúp giải thích vì sao các mắt xích cục bộ có thể hợp nhân quả dù điểm đầu và kết quả Total War nghe lệch tông. Nó không chứng minh mọi xung đột cũ đều bắt nguồn từ Undie hoặc bắt buộc dẫn tới chiến tranh.
+
+**Đề xuất để cân nhắc:** nếu tái dùng genealogy, tách ngòi nổ RP khỏi nền lợi ích và điều kiện cho phép leo thang; giữ đường hạ nhiệt qua thương lượng, thông tin không đầy đủ, giới hạn thẩm quyền, chia rẽ nội bộ, chi phí chiến tranh và hậu cần. Tránh buộc mọi trục hội tụ vào một người hoặc một subsystem. Không đề xuất nào ở đây tự trở thành quy tắc canon.
+
+Nguồn: `Source_Archive/aetherfire_rp_cu_ba_truc_lich_su_va_de_xuat.md`, mục 9–11, 16–17. Các mục về dead-heart và Total War đã có trong §23.8–23.10 nên không lặp lại.
+
 ## 24. V — Hoa Nguyệt / Tây quốc: đối trọng văn minh, dark foundation và hai triết lý phép thuật
 
 ### 24.1 CURRENT CANON + DESIGN HISTORY — vị trí và căn tính quốc gia
@@ -2923,6 +2958,16 @@ Hoa Nguyệt
 Đây là design contrast, không tạo moral ranking sạch giữa hai quốc gia.
 
 ---
+
+### 24.7 DESIGN HISTORY — dòng tiền, kế vị và bất đối xứng quân sự trong RP cũ
+
+**Lời kể lịch sử của người dùng:** ma sát Hoa Nguyệt–AetherFire có từ thời chợ đen. Một bộ phận công dân Hoa Nguyệt lén sang AetherFire dùng dịch vụ Undie, tạo dòng người và tiền xuyên biên giới. AetherFire dùng nguồn thu này khi thiếu vốn; một số lãnh đạo Hoa Nguyệt thấy lợi ích kinh doanh và nhà nước cũng hưởng thuế liên quan. Chỉ trích về lương và điều kiện sống của Undie có thể đi cùng lợi ích kinh tế đó. Tính hợp pháp, cơ chế thuế và tỷ lệ thu chính xác vẫn chưa xác định.
+
+**Lời kể lịch sử của người dùng:** một Thái tử Hoa Nguyệt bí mật sang AetherFire rồi đột tử; lý do công bố là “lao lực”. Sau đó AetherFire cáo buộc Thái tử kế nhiệm là con của tiên đế với người hầu, trái với phả hệ chính thức. Tính đúng sai và bằng chứng của cáo buộc chưa được xác nhận. **Suy luận:** khi một người kế vị chết trên đất AetherFire rồi nước này công kích chính danh người kế nhiệm, tranh chấp chuyển từ sự cố ngoại giao sang vấn đề kế vị; sự kiện đơn lẻ không đủ để suy ra chiến tranh tất yếu.
+
+**Lời kể lịch sử của người dùng:** thế đối trọng cũ đặt khoa học–phép thuật AetherFire cạnh ưu thế đại trận của Hoa Nguyệt. Sau dead-heart, MC2/Raging Phoenix bị AetherFire khai thác như tài sản chiến lược, làm lệch tính toán sức mạnh trong RP cũ. Thời điểm chính xác và năng lực tác chiến không đủ rõ để ánh xạ vào canon hiện hành.
+
+Nguồn: `Source_Archive/aetherfire_rp_cu_ba_truc_lich_su_va_de_xuat.md`, mục 5–8. Những quan hệ kinh tế, triều đại và quân sự này là genealogy; không cập nhật Hoa Nguyệt hay MC2 trong current canon.
 
 ## 25. W — Tam cường phương Bắc, long mạch và chiến tranh bị khóa bởi lợi ích tồn vong
 

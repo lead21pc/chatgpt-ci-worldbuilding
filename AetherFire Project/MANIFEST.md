@@ -22,6 +22,7 @@
 - The AF→TE transfer of some Undie is retained only as a bounded event. Legal mechanism, consent, selection, post-transfer status and return/exit rights remain `UNKNOWN`.
 - `30_UNDIE_SYSTEM_CURRENT.md` remains the sole authority for Undi clothing. The Academy combat uniform is a separate functional-uniform domain.
 - Current canon, design history and audit provenance remain separate layers.
+- `aetherfire_rp_cu_ba_truc_lich_su_va_de_xuat.md` is archived byte-exactly and curated into `90` as design history, inference and proposals only. It does not alter either Undie canon or restore the removed punitive spy route.
 - Rollback uses Git history. `Source_Archive` keeps the package reproducible without parent-folder dependencies.
 
 ## Generated outputs
@@ -37,7 +38,7 @@
 | `60_MC4_IDENTITY_CURRENT.md` | `2B11C4846788A607B311854E0667E2A918F55E07F648A9DC70ED0C3A8187B088` |
 | `70_MATRIARCHS_LAMENT_CURRENT.md` | `C6E68E05E75AEA82CAB85FC2A8FC5E1F433D3A04589227E88786F86101D13D88` |
 | `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` | `CA5DDC126B5862ACBFFC71067ADB048F265EBAB5D053468E0627363DC216677C` |
-| `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` | `A761B7B3E75081A07AE76ECFFFAAD0436E5D42EECA609FF7DA44AA8116945ECE` |
+| `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` | `883599D49DC2621D10315B431767C8EBF5060CAF0DB5583C3A5F6D7938E2F58C` |
 | `91_RECONCILIATION_RECORD.md` | `B9D70ADB8D0563B4F8DD1C5D57916B33882BD9269D90B1CC08972A16FA428F72` |
 | `92_OPEN_ISSUES_CURRENT.md` | `0DD887ED402270ECCFFBE4CF64BA3AFB2E81C506E3B6D37F42F9F6AC7954D6E6` |
 
@@ -63,6 +64,7 @@
 | `aetherfire_reconciliation_report.md` | `42C1DE800AD8B18B99D5F1D6EB4EF45092C429C1A85AF1C49C87B81718935BE1` |
 | `aetherfire_rf_crossworld_geopolitics_chat_consolidation_2026-09-15.md` | `0E6C9CBFEF456E6DD7ACA03FFFE683B99B3621189A63312F7634608B9246AE15` |
 | `aetherfire_rf_nguyen_chu_dynastic_power_axes_chat_consolidation.md` | `852EF70F953018603840796D1FB2DE15339F93EE2011BC7EBFAF582AD7532CD7` |
+| `aetherfire_rp_cu_ba_truc_lich_su_va_de_xuat.md` | `F45ECFDB4F84D22DA24DC558541AB7521D83E2D5DEA9D8BD87A642C3530EAD04` |
 | `aetherfire_stable_aviation_rf_airspace_control_canon_delta_2026-09-16.md` | `608067139A83D17ACABBB21A339AC5A2C937FB3A9AD11ADEDD54EC0989016091` |
 | `aetherfire_undi_hoa_nguyet_cultural_humiliation_design_philosophy.md` | `084DCBDE5A87D1D287E69FAC1209E8FC887F440397B2E1117DB3287DE25380B8` |
 | `aetherfire_undie_civil_citizen_revamp_canon_1_42.md` | `B85250FDC401BE2EE163A23A1F537B43605DD0F790A1A7ED8264881F71EFBE89` |
