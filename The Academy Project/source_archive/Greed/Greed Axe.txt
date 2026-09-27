@@ -1,0 +1,436 @@
+# OC Concept (Working Draft)
+
+## Trạng thái phát triển
+
+* Đây là concept đang được phát triển.
+* Lore tổng thể (Citadel, Seven Seats, cosmology...) hiện là placeholder và có thể retcon.
+* Core concept được giữ ổn định nằm ở:
+
+  * hệ thống vũ khí,
+  * gia đình năm servant,
+  * ba form của vũ khí,
+  * cách chiến đấu.
+
+---
+
+# Chủ nhân
+
+## Danh tính
+
+Greed II.
+
+Không phải Greed đời đầu.
+
+Ban đầu là một avatar backup của Greed I.
+
+Sau khi Greed I bị phản bội và thất bại, avatar hình thành ý chí độc lập.
+
+Greed I chấp nhận để avatar kế thừa vị trí và tự mình kết thúc cycle.
+
+Greed II trở thành một cá thể độc lập thay vì chỉ là bản sao.
+
+---
+
+## Năng lực bản thân
+
+Không phải chiến binh.
+
+Không phải kiếm sĩ.
+
+Không phải kỵ sĩ.
+
+Chỉ là một pháp sư hạng 3.
+
+Sức mạnh chủ yếu đến từ vũ khí.
+
+---
+
+## Phong cách
+
+* Prefer not to engage.
+* Không thích leo thang xung đột.
+* Chỉ chiến đấu khi cần.
+* Không phải kiểu nhân vật hiếu chiến.
+
+---
+
+# Core Concept
+
+Điểm đặc biệt của OC không nằm ở Greed.
+
+Mà nằm ở:
+
+> Một gia đình năm người trở thành vũ khí.
+
+Gia đình này là linh hồn của toàn bộ concept.
+
+---
+
+# Five Servants
+
+Một gia đình gồm:
+
+* Cha
+* Mẹ
+* Anh cả
+* Em hai
+* Em út
+
+Sau một biến cố, cả năm đồng ý trở thành servant của Greed II.
+
+Họ không phải công cụ vô tri.
+
+Mỗi người có ý chí riêng.
+
+---
+
+## Quan hệ
+
+Cha mẹ:
+
+* khá thoải mái với Greed.
+
+Ba người con:
+
+* cãi nhau liên tục.
+* như chó với mèo.
+* tạo running gag xuyên suốt.
+
+---
+
+# Vũ khí
+
+Ban đầu.
+
+Đây là một Divine Halberd.
+
+Đó là hình dạng nguyên bản.
+
+Sau khi dung hợp với Greed và các servant.
+
+Nó thay đổi cách tồn tại.
+
+Ba form hiện tại không phải tiến hóa.
+
+Mà là những biểu hiện khác nhau của cùng một bản thể.
+
+True Form là hình dạng gốc.
+
+---
+
+# Open Form
+
+Một cây rìu chặt củi bình thường.
+
+Không có sức mạnh nổi bật.
+
+Là trạng thái nghỉ.
+
+---
+
+# Form 1
+
+## Tên
+
+Astaroth
+
+## Kích hoạt
+
+Hiến tế máu bản thân.
+
+Máu đóng vai trò medium.
+
+## Hình dạng
+
+Một hand axe.
+
+Một lưỡi.
+
+Có họa tiết đầu lâu trên mặt rìu.
+
+## Đặc điểm
+
+Giết càng nhiều.
+
+Càng mạnh.
+
+Đây là form được sử dụng nhiều nhất.
+
+Được xem như working form.
+
+---
+
+# Form 2
+
+## Tên
+
+Ampte
+
+Battle Call:
+
+Rage On.
+
+## Kích hoạt
+
+Hiến tế một nửa mana.
+
+## Hình dạng
+
+Battle Axe.
+
+Cán dài.
+
+Cong.
+
+Thiết kế để tạo momentum.
+
+## Thuộc tính
+
+Lửa.
+
+## Ultimate
+
+Sau khi tích đủ momentum.
+
+Triệu hồi Fire Spirit King.
+
+AOE.
+
+Đây là form mang tính bùng nổ.
+
+---
+
+# Form 3
+
+## True Form
+
+Tên hiện chưa chốt.
+
+Tên hiện tại chỉ là placeholder.
+
+Đang tìm một True Name phù hợp.
+
+---
+
+## Kích hoạt
+
+Hiến tế:
+
+* một nửa sinh mạng.
+* toàn bộ mana.
+
+---
+
+## Hình dạng
+
+Divine Halberd.
+
+Đây là hình dạng nguyên bản của vũ khí.
+
+Không phải hình thái tiến hóa.
+
+---
+
+## Triệu hồi
+
+Astral Wraith Horse.
+
+Ngựa mặc full chiến giáp.
+
+Người cưỡi cũng mặc full chiến giáp.
+
+Phong cách:
+
+Đông Á fantasy.
+
+Heavy Cavalry.
+
+---
+
+## Thuộc tính
+
+Astral.
+
+Không phải lửa.
+
+---
+
+## Vai trò
+
+Đây là trạng thái hợp nhất hoàn chỉnh.
+
+Có thể xem gần với Oversoul trong Shaman King.
+
+---
+
+# Thiết kế True Form
+
+## Rider
+
+* Nữ.
+* Full armor.
+* Heavy Cavalry.
+* Không fanservice.
+* Không breast armor.
+* Lamellar nhiều lớp.
+* Thiên về thực chiến.
+
+---
+
+## Horse
+
+* Wraith.
+* Astral.
+* Full barding.
+* Không phải ngựa thường.
+
+---
+
+## Palette
+
+Dominant:
+
+* Ash Black.
+* Mud Gray.
+
+Secondary:
+
+* Blood Red gradient.
+
+Accent:
+
+* Blue Astral Spark.
+
+---
+
+# Five Servants khi chia tách
+
+Ý tưởng hiện tại:
+
+Cha:
+
+* Sickle and Chain.
+
+Mẹ:
+
+* Sickle and Chain.
+
+Anh cả:
+
+* Trung kiếm.
+
+Em hai:
+
+* Slingshot.
+
+Em út:
+
+* Karambit.
+
+Đây mới là concept.
+
+Có thể thay đổi.
+
+---
+
+# Flaw
+
+Flaw không nằm ở Greed.
+
+Mà nằm ở vũ khí.
+
+Gia đình này có ý chí riêng.
+
+Nếu nội bộ bất hòa.
+
+Khả năng hợp nhất suy giảm.
+
+Sức mạnh giảm.
+
+---
+
+# Running Gag
+
+Gia đình cãi nhau.
+
+Ba người con đặc biệt hay gây chuyện.
+
+Ngay cả khi chiến đấu.
+
+Họ vẫn có thể tranh luận.
+
+---
+
+# Tên Form
+
+Gia đình không thích:
+
+* Astaroth.
+* Ampte.
+
+Đó không phải True Name.
+
+Chỉ là battle names.
+
+True Form mới là tên thật.
+
+---
+
+# Chủ đề
+
+Không xoay quanh sức mạnh.
+
+Không xoay quanh tham lam.
+
+Mà xoay quanh:
+
+* trách nhiệm,
+* trải nghiệm,
+* kế thừa,
+* mối liên kết,
+* gia đình,
+* sự hợp nhất.
+
+---
+
+# Phương pháp phát triển
+
+Concept này không được phát triển chủ yếu bằng brainstorming.
+
+Quá trình hiện tại:
+
+1. Tạo concept.
+2. Nhập vai nhân vật (method acting).
+3. Mô phỏng hành động tương tự ngoài đời ở mức an toàn.
+4. Quan sát:
+
+   * quán tính,
+   * khoảng vung,
+   * trọng tâm,
+   * chuyển động,
+   * cảm giác khi sử dụng.
+5. Điều chỉnh thiết kế.
+6. Lặp lại nhiều lần.
+
+Ba form của vũ khí là kết quả của nhiều năm lặp lại quá trình này, không phải được nghĩ ra trong một lần thiết kế.
+
+---
+
+# Trạng thái hiện tại
+
+Ổn định:
+
+* Gia đình năm servant.
+* Ba form.
+* Divine Halberd.
+* Greed là pháp sư.
+* Greed không thích giao chiến.
+* Heavy Cavalry True Form.
+
+Chưa ổn định:
+
+* Cosmology.
+* Citadel.
+* Seven Seats.
+* Lịch sử chi tiết.
+* True Name của Form 3.

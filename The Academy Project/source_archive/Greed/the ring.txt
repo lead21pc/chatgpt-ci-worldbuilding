@@ -1,0 +1,260 @@
+# The Ring (Working Draft)
+
+## Tổng quan
+
+The Ring là một trong những cơ chế cốt lõi của Greed.
+
+Nó không đơn thuần là một vật phẩm tăng sức mạnh.
+
+Mục đích chính không phải chiến đấu.
+
+Mà là tạo ra một trải nghiệm trọn vẹn cho một con người.
+
+---
+
+# Mục đích
+
+Greed thu thập trải nghiệm độc nhất của con người.
+
+Chiếc nhẫn là công cụ để tạo ra những trải nghiệm đó.
+
+Nó không phải mục tiêu cuối cùng.
+
+Nó chỉ là phương tiện.
+
+---
+
+# Quy trình
+
+Greed tìm một người phù hợp.
+
+↓
+
+Trao chiếc nhẫn.
+
+↓
+
+Người đó nhận được một số lợi ích nhất định.
+
+↓
+
+Sống cùng chiếc nhẫn trong phần lớn cuộc đời.
+
+↓
+
+Đạt được thành công.
+
+↓
+
+Greed quay lại.
+
+↓
+
+Đến lúc phải trả chiếc nhẫn.
+
+---
+
+# Điều kiện quan trọng nhất
+
+Người sở hữu phải:
+
+**Tự nguyện tháo nhẫn và trao trả.**
+
+Đây là quy tắc tuyệt đối.
+
+---
+
+# Nếu người sở hữu từ chối
+
+Greed sẽ chiến đấu.
+
+Đó là lần duy nhất quy trình chuyển từ quan sát sang can thiệp.
+
+---
+
+# Nếu Greed chiến thắng
+
+Greed không lấy lại chiếc nhẫn.
+
+Greed sẽ:
+
+**Tự tay nghiền nát nó.**
+
+---
+
+# Ý nghĩa
+
+Nếu một chiếc nhẫn phải thu hồi bằng bạo lực.
+
+Nó đã thất bại.
+
+Chiếc nhẫn không còn giá trị để tiếp tục tồn tại.
+
+---
+
+# Điều Greed thật sự kiểm tra
+
+Không phải:
+
+Người đó mạnh đến đâu.
+
+Không phải:
+
+Người đó giàu đến đâu.
+
+Không phải:
+
+Người đó thành công đến đâu.
+
+Greed muốn biết:
+
+> Sau khi có được quyền lực và lợi ích trong gần như cả một đời người, liệu người đó còn có thể tự nguyện buông bỏ hay không.
+
+---
+
+# Vai trò của chiếc nhẫn
+
+Chiếc nhẫn là:
+
+* cơ hội,
+* phép thử,
+* chất xúc tác cho một cuộc đời.
+
+Nó không phải phần thưởng.
+
+---
+
+# Lợi ích
+
+Chiếc nhẫn mang lại một số lợi ích nhất định.
+
+Chi tiết cụ thể hiện chưa xác định.
+
+Mức sức mạnh cần đủ lớn để:
+
+* thay đổi cuộc đời người nhận,
+* tạo ra những lựa chọn có ý nghĩa,
+* nhưng không làm mất giá trị của phép thử.
+
+---
+
+# Quan hệ với Greed
+
+Greed không tham chiếc nhẫn.
+
+Greed không cố giữ chiếc nhẫn.
+
+Greed cũng không muốn cướp lại chiếc nhẫn.
+
+Điều Greed muốn là:
+
+* quan sát,
+* thu thập trải nghiệm,
+* chứng kiến lựa chọn cuối cùng của người sở hữu.
+
+---
+
+# Trải nghiệm
+
+Trong suốt thời gian người đó giữ chiếc nhẫn.
+
+Greed thu được:
+
+* thành công,
+* thất bại,
+* lựa chọn,
+* tham vọng,
+* phản bội,
+* lòng biết ơn,
+* sự trưởng thành,
+* sự tha hóa,
+* mọi trải nghiệm độc nhất của con người đó.
+
+Đó mới là "thứ được thu hoạch".
+
+---
+
+# Biểu tượng
+
+Chiếc nhẫn đại diện cho:
+
+* quyền sở hữu,
+* sự lựa chọn,
+* khả năng buông bỏ,
+* trách nhiệm đi kèm quyền lực.
+
+---
+
+# Chu trình
+
+```text
+Greed
+
+↓
+
+Trao Ring
+
+↓
+
+Người nhận sử dụng gần như cả cuộc đời
+
+↓
+
+Đến thời điểm thu hồi
+
+↓
+
+Tự nguyện trả?
+      │
+      ├── Có
+      │     ↓
+      │  Greed nhận lại
+      │
+      └── Không
+            ↓
+        Giao chiến
+            ↓
+     Greed chiến thắng
+            ↓
+     Chiếc nhẫn bị nghiền nát
+```
+
+---
+
+# Triết lý
+
+Chiếc nhẫn không dùng để xác định:
+
+Ai mạnh nhất.
+
+Mà dùng để xác định:
+
+Ai thật sự sở hữu chính mình.
+
+Nếu một người không thể buông bỏ chiếc nhẫn.
+
+Thì cuối cùng.
+
+Người đó không sở hữu chiếc nhẫn.
+
+Mà chính chiếc nhẫn đã sở hữu người đó.
+
+---
+
+# Trạng thái hiện tại
+
+## Ổn định
+
+* Greed là người trao nhẫn.
+* Người nhận giữ gần như cả một đời.
+* Người nhận phải tự trả.
+* Nếu phải dùng vũ lực, Greed sẽ nghiền nát chiếc nhẫn.
+* Mục tiêu là thu thập trải nghiệm con người.
+
+## Placeholder
+
+* Nguồn gốc của chiếc nhẫn.
+* Cơ chế hoạt động.
+* Giới hạn sức mạnh.
+* Có bao nhiêu chiếc nhẫn tồn tại.
+* Chi tiết lợi ích mà chiếc nhẫn ban cho người sử dụng.
