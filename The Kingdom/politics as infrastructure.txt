@@ -1,0 +1,23 @@
+INSTITUTIONAL STATE
+
+cơ quan tình báo sửa doctrine
+↓
+bộ quốc phòng thay procedure proxy operation
+↓
+công ty compliance thêm Mẫu quốc vào risk model
+↓
+bảo hiểm thêm điều khoản mới
+↓
+ngân hàng tăng due diligence
+↓
+quốc hội sửa luật
+↓
+5 năm sau nhân vật khác bị ảnh hưởng bởi một quy định sinh ra từ sự kiện cũ
+
+WORLD STATE
+
+├─ public perception
+├─ political / diplomatic state
+├─ economic state
+├─ institutional / legal state
+└─ cultural / social state
