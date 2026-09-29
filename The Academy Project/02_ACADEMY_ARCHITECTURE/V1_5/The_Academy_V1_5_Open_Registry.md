@@ -102,7 +102,13 @@ Nguồn tách chính:
 
 Mục này ghi boundary chưa khóa. Nó không tự xác nhận rằng mọi vận hành sau return phải được gọi là V2 trong mọi context, cũng không biến handoff thành dependency bắt buộc.
 
-## 10. Quy tắc cập nhật
+## 10. Legacy lore chờ xác nhận
+
+- Wizard tower / protected forest từng xuất hiện trong legacy lore.
+- Trạng thái: `LEGACY-LORE / AWAITING CONFIRMATION`.
+- Không dùng làm current architecture invariant cho đến khi được xác nhận lại.
+
+## 11. Quy tắc cập nhật
 
 Khi một mục được tác giả xác nhận:
 
