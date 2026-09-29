@@ -1,6 +1,6 @@
 # The Academy — Source Router v1.1
 
-**Trạng thái:** router tái cấu trúc; chưa là router mặc định cho đến khi soft migration M7 được áp dụng.  
+**Trạng thái:** router nguồn hiện hành trong repository sau soft migration M7. Việc môi trường ChatGPT Project tự nạp file này vẫn `UNVERIFIED`.  
 **Vai trò:** chọn nguồn gần nhất đủ trả lời theo domain và loại yêu cầu.  
 **Không làm:** không tạo canon, không giữ bản sao của canon engine-specific, không lấp `UNKNOWN`, không cấp capability hoặc authority.
 
