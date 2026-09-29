@@ -307,23 +307,17 @@ Cần causal function và source cụ thể để phân loại.
 
 ## 13. Những gì tài liệu này cố ý không chốt
 
-Các vùng sau vẫn cần được giữ ở trạng thái `UNKNOWN` / open theo nguồn:
+Các vùng `UNKNOWN` / open của V1.5 được giữ riêng tại:
 
-- exact recruitment criteria và detection mechanism;
-- repeat-world trigger;
-- pass-recipient protocol;
-- compensation implementation;
-- cohort lifetime và grouping;
-- exact temporal/spatial ontology;
-- institutional map cuối;
-- Teaching mechanism đầy đủ;
-- Security mandate/authority/intake/custody/release;
-- curriculum, exam và placement mechanics;
-- Lust institutional interface;
-- post-return relation với Narrative Engine;
-- điều kiện handoff giữa V1.5 và các vận hành sau đó.
+- [The_Academy_V1_5_Open_Registry.md](The_Academy_V1_5_Open_Registry.md)
 
-Các mục này không phải permission để điền bằng prior.
+```text
+OPEN REGISTRY ≠ TODO LIST
+UNKNOWN ≠ EMPTY
+UNKNOWN ≠ PERMISSION TO INVENT
+```
+
+Architecture chỉ giữ ranh giới đã biết; registry giữ các điểm chưa externalize hoặc chưa xác nhận. Việc tách file không thay trạng thái của bất kỳ mục mở nào.
 
 ## 14. Sơ đồ chuẩn V1.5
 
