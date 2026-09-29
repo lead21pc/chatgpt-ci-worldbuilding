@@ -92,9 +92,28 @@ Engine thay đổi điều kiện; outcome không được chọn trước.
 
 ## 5. Cohort và routing
 
-Legacy base ghi nhận tối đa 10 HIP/world và 3 worlds/cohort trong cấu hình cũ.
+Legacy base ghi nhận cấu hình sampling cũ với tối đa 10 HIP/world, gồm các nhóm đã từng được mô tả như:
 
-Các con số này là base tái thiết kế, không phải định nghĩa HIP và không tự trở thành constraint cuối cùng nếu nguồn mới không xác nhận.
+- 1 dân thường;
+- 1 con thương nhân;
+- 2 vị trí thuộc hoàng gia / quốc gia, với giới hạn legacy riêng;
+- 2 thánh nữ / thánh tử;
+- các vị trí còn lại theo cấu hình legacy nguồn.
+
+Cấu hình này là base tái thiết kế, không phải định nghĩa HIP, không phải universal criteria và không tự trở thành constraint cuối cùng nếu nguồn mới không xác nhận.
+
+Legacy base cũng ghi nhận 3 worlds/cohort, tạo mức tối đa 30 HIP/cohort trong cấu hình cũ.
+
+Một world có thể được chọn qua nhiều recruitment cycle khác nhau.
+
+```text
+World X
+├── recruitment cycle A → HIP set A
+├── recruitment cycle B → HIP set B
+└── ...
+```
+
+Điều này không tự xác nhận trigger, chu kỳ, số lần tối đa hoặc việc cùng một HIP được tuyển lặp lại.
 
 ```text
 COHORT / CLASS
@@ -279,6 +298,8 @@ dependency
 same goal
 same authority
 ```
+
+Baseline còn ghi nhận một trường hợp external-project nơi Greed và Lust cùng tiếp cận một HIP. Trường hợp đó là `EXISTENCE-ONLY`: chỉ xác nhận rằng trường hợp đã tồn tại, không dùng làm reference data để suy cơ chế hoặc pattern chung.
 
 ## 12. Những component cũ đã từng được ghi nhận
 
