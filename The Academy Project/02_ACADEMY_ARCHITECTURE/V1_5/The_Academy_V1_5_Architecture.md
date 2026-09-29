@@ -96,9 +96,8 @@ Legacy base ghi nhận cấu hình sampling cũ với tối đa 10 HIP/world, g�
 
 - 1 dân thường;
 - 1 con thương nhân;
-- 2 vị trí thuộc hoàng gia / quốc gia, với giới hạn legacy riêng;
-- 2 thánh nữ / thánh tử;
-- các vị trí còn lại theo cấu hình legacy nguồn.
+- 2 hoàng gia / quốc gia, với ghi chú legacy "tối đa 6 hoàng gia trong world";
+- 2 thánh nữ / thánh tử.
 
 Cấu hình này là base tái thiết kế, không phải định nghĩa HIP, không phải universal criteria và không tự trở thành constraint cuối cùng nếu nguồn mới không xác nhận.
 
