@@ -1,12 +1,5 @@
 # AetherFire — Status, Civil & Labor Current Canon
 
-> Module ID: `AFM-002`
-> Runtime role: `CURRENT_SOURCE`
-> Domain / Scope: Status ontology, Citizen, Civil, Yellow, POW, Criminal, Civil entry/allocation/lifecycle, labor, and cross-status transitions.
-> Authority boundary: Controls legal/civic status ontology and Civil/labor interfaces within its declared scope.
-> Cross-domain owner boundary: Detailed Undie internal ranks, intake, mobility, work/access, White, and Undi visual systems are controlled by `AFM-003`.
-> Load mode: `FULL_FILE`
-
 > **Domain:** status ontology, social hierarchy, Citizen/Civil/Yellow/POW/Criminal, Civil entry/allocation/lifecycle, cross-status transitions and shared economic/access namespaces.  
 > Dedicated Civil law controls its exact scope. The ontology map controls axis separation. Remaining gaps stay `UNKNOWN / UNRESOLVED`.  
 > **Terminology retcon — 2026-09-09:** within the Undie domain, unqualified `rank` means the Red/Scarlet/Pink/Gray/Purple/Hazel/White functional-role axis. `Career Rank` remains the separate Entry/Intermediate/Support/Advanced/Ultimate axis. Older source wording has been normalized to `Undie rank` in this derived current-canon file.

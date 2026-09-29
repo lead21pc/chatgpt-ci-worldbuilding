@@ -1,12 +1,5 @@
 # AetherFire — World, Institutions & Geopolitics Current Canon
 
-> Module ID: `AFM-001`
-> Runtime role: `CURRENT_SOURCE`
-> Domain / Scope: AetherFire world state, institutions, geopolitics, foreign relations, global interfaces, and Academy institutional context.
-> Authority boundary: Controls global, institutional, and geopolitical canon except detailed domains explicitly controlled by another accepted current module.
-> Cross-domain owner boundary: Detailed Matriarch's Lament canon is controlled by `AFM-007`; detailed stable aviation and RF-airspace canon by `AFM-008`; metafiction detail by `AFM-004`; MC4 identity detail by `AFM-006`.
-> Load mode: `FULL_FILE`
-
 > Consolidated current-domain view. Detailed Citizen/Civil/Undie material was moved to sibling files. Design genealogy remains in `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md`.  
 > **Genealogy lock — 2026-09-09:** MC2 remains tied to Raging Fire / Prince 9; the Undi–Hoa Nguyệt visual retcon does not create Hoa Nguyệt ancestry or origin for MC2.
 > Detailed Fiction 0/Fiction 1 and Canon 1/Canon 2 causality is routed to `40_METAFICTION_CANON_TIMELINE_CURRENT.md`; narrator/POV presentation is routed to `50_NARRATORS_POV_AND_HUMOR_CURRENT.md`.
