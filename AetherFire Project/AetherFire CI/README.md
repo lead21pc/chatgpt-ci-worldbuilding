@@ -8,19 +8,19 @@ Files here define CI behavior and retain historical compact instructions and rou
 
 ## Activation in the ChatGPT Project
 
-Publishing these repository files does not update the ChatGPT Project's existing instructions or uploaded files. The default entry point is v2.6 with Source Router v3.2. Confirm the installed Project instructions separately; repository placement does not prove that the Project uses this pair.
+The default local control pair recorded by this repository is CI v3.0 with Source Router v4.0. Committing these files does not update the ChatGPT Project's installed instructions or uploaded files; deployment and live activation must be confirmed separately.
 
 ## Active baseline
 
-Updated 2026-09-25: the default local control pair is CI v2.6 and Source Router v3.2. The GitHub-only v2.7/v3.3 pair is isolated under `../GitHub_Only_Experiment/` and requires explicit experimental activation.
+Updated 2026-09-29: the default local control pair is CI v3.0 and Source Router v4.0. The GitHub-only v2.7/v3.3 pair remains isolated under `../GitHub_Only_Experiment/` and requires explicit experimental activation.
 
-- CI kernel: `AetherFire_CI_version_v2.6.md`
-- Source router: `../Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md`
+- CI kernel: `AetherFire_CI_version_v3.0.md`
+- Source router: `../Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.0.md`
 - Economy/state-stabilization overlay: `../Anti-Drift Source/AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md`, loaded only for matching tasks and only after the source gate
 - Canon source: the separate current AetherFire canon package selected by its active index and source router.
 - Canon promotion workflow: `AetherFire_Canon_Promotion_Workflow_v1.0.md`
 - Canon open-issues register: `../92_OPEN_ISSUES_CURRENT.md`
 
-The v2.7 CI and Router v3.3 are experimental, not default controls. Router v3.1 and superseded overlays remain archived as provenance. This baseline record is a snapshot; later eligible versions placed in the default resolution directories follow Router v3.2's numeric resolution rule.
+The v2.7 CI and Router v3.3 are experimental, not default controls. Routers v3.1/v3.2 and superseded overlays remain historical provenance. This baseline record is a snapshot; later eligible versions placed in the default resolution directories follow Router v4.0's numeric resolution rule.
 
 `aetherfire_chat_anti_drift.md` and `aetherfire_chat_anti_drift_v2.md` are inactive historical routers. Their embedded snapshots contain superseded canon and must not be used as the current baseline, fallback, or reference anchor. The rejected `aetherfire_chat_anti_drift_v3.md` is deleted and must not be reconstructed or used. Old canon may be opened only for explicitly labeled provenance or comparison; current silence never reactivates it.
