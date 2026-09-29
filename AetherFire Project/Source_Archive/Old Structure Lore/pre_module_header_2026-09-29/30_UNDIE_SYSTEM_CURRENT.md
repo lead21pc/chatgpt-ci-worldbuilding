@@ -1,12 +1,5 @@
 # AetherFire — Undie System Current Canon
 
-> Module ID: `AFM-003`
-> Runtime role: `CURRENT_SOURCE`
-> Domain / Scope: Undie class identity, intake, consent, Undie ranks, mobility, White, work/economy/access, geographic deployment, and Undi visual system.
-> Authority boundary: Controls detailed Undie and Undi canon within its declared scope.
-> Cross-domain owner boundary: General legal/civic status ontology and Civil, Criminal, POW, and Yellow boundaries are controlled by `AFM-002`; other cross-domain owners remain authoritative for their own declared facets.
-> Load mode: `FULL_FILE`
-
 > **Domain:** Undie class identity, social function, intake, consent, work obligations, Undie ranks, mobility, Credit Score, White, economy/access, geographic deployment and Undi visual system.  
 > `Undie ≠ Undi`. Unqualified `rank` in this domain means Red/Scarlet/Pink/Gray/Purple/Hazel/White; `Career Rank` means Entry/Intermediate/Support/Advanced/Ultimate and remains separate. Older source terminology has been normalized to `Undie rank` in this derived current-canon file. Civil, Criminal, POW and Yellow remain separate axes/interfaces as defined in the sibling status file.
 

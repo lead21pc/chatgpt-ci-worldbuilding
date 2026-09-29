@@ -1,12 +1,5 @@
 # AetherFire — Narrators, POV & Deadpan Humor Current
 
-> Module ID: `AFM-005`
-> Runtime role: `CURRENT_SOURCE`
-> Domain / Scope: Narrator personification, POV grammar, deadpan humor, narrative presentation, and narrator separation.
-> Authority boundary: Controls narrator, POV, humor, and presentation canon within its declared scope.
-> Cross-domain owner boundary: Metafiction and clash causality are controlled by `AFM-004`; Undi clothing and visual canon are controlled by `AFM-003`.
-> Load mode: `FULL_FILE`
-
 > **Domain:** narrator personification, Elena POV grammar, Fictionize/POC narrative functions, deadpan humor, tragedy and the narrator split at Clash #2.  
 > **Causal dependency:** `40_METAFICTION_CANON_TIMELINE_CURRENT.md` controls the clash and Canon 1/Canon 2 timeline. Narrator personification does not establish transfer or loss of the underlying esper ability.  
 > **Clothing exclusion:** source section `# 11. Dark humor của trang phục` is deliberately not imported. This file does not restate or revive its older visual reading. All Undi clothing, rank-color and two-stage perception canon remains controlled exclusively by `30_UNDIE_SYSTEM_CURRENT.md`.  
