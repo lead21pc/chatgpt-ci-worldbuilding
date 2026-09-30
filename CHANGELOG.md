@@ -484,3 +484,39 @@
 
 - The user confirmed the promoted experiment worked in the tested runtime. This does not guarantee identical behavior across models, product layers, memory states, conversation histories, or future releases.
 - Structural checks passed at 4,938 characters and 4,952 UTF-8 bytes, with CRLF, a final CRLF, no trailing whitespace, and no UTF-8 BOM. SHA-256: `CDA7EFD24E4D5EE5DC9D629F6BCFF78EAFFD73ABB35E44A46E241BF48FFB87B2`.
+
+## v8.6
+
+### Conversational state and claim boundaries
+
+- Consolidated the temporary v8.5.1 work into v8.6 because the claim-handling, discourse-stage, and language changes together exceeded a minor repair.
+- Separated real-world claims from local definitions or exploratory assumptions, and from opinions, preferences, goals, and first-person reports. Limited factual checking to objective claims the answer depends on; derive explanations from task evidence and definitions rather than presuming the user's frame is complete, and reason conditionally when support is unresolved.
+- Kept exploration and accumulation provisional, allowed setup and the current request to coexist, and limited synthesis or closure to what the request or selected operation requires. Follow-up suggestions are limited to at most three concrete unresolved branches and stop when the issue is closed or no useful step remains.
+
+### Everyday Vietnamese with explanatory depth
+
+- Reframed the output contract around everyday Vietnamese, direct verbs, and concrete descriptions, including on technical topics. Require plain explanations of necessary concepts and causes without letting jargon replace depth or precision.
+- Kept the narrow exceptions for proper names, code, quotes, commands, external identifiers, and terms explicitly requested now; other English, including conventional field terms, is to be translated or paraphrased, with Vietnamese connectors and verbs.
+
+### Verification boundary
+
+- Structural checks passed at 4,982 characters and 4,996 UTF-8 bytes, across 45 CRLF lines, with a final CRLF, no trailing whitespace, and no UTF-8 BOM. SHA-256: `FC759739744FF083E23455CB2AFB98E4779DC0484C8E33B95CF5CF0DD14E18C7`.
+- No separate post-release runtime result for this exact v8.6 artifact is recorded here; structural validation does not establish model behavior.
+
+## v8.7
+
+### Explicit state grounding and pre-endorsement checking
+
+- Added `CONTROL GROUNDING`: stage, claim status, and reader assumptions change only from explicit user signals or new evidence; topic, terminology, repetition, coherence, familiarity, and perceived usefulness are not sufficient triggers.
+- Made endorsement an explicit claim-state change. Check material factual or causal claims before either endorsing or relying on them; acknowledgment and scoped use do not establish truth. If support is missing, avoid endorsement and reason conditionally without adopting the claim's frame.
+- Preserved bounded checking: opinions and first-person reports remain inputs rather than fact-check targets, while inferred causes remain claims.
+
+### Multi-turn register and user-model calibration
+
+- Prohibited inferring broad fluency or permission to raise register from prior terminology, continued discussion, silence, or the assistant's own wording. Keep the register plain without reducing explanatory depth.
+- Retained the anti-rarity safeguards while clarifying that familiar components do not prove rarity and near precedents weigh against novelty; adapt only to stated preferences or demonstrated understanding of the specific concept.
+
+### Verification boundary
+
+- Structural checks passed at 4,986 characters and 5,000 UTF-8 bytes, across 45 CRLF lines, with a final CRLF, no trailing whitespace, and no UTF-8 BOM. SHA-256: `C8EA882AD2731A552C0C39D5C1CB00986B3595BA5C2EF5A6342DA55679AAAE2E`.
+- No separate post-release runtime result for this exact v8.7 artifact is recorded here; structural validation does not establish model behavior.

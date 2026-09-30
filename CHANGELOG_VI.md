@@ -484,3 +484,39 @@
 
 - Người dùng xác nhận bản thử được nâng cấp hoạt động tốt trong runtime đã kiểm tra. Kết quả này không bảo đảm hành vi giống hệt giữa các model, lớp sản phẩm, trạng thái memory, lịch sử hội thoại hoặc bản phát hành tương lai.
 - Kiểm tra cấu trúc đạt 4.938 ký tự và 4.952 byte UTF-8, dùng CRLF, có CRLF cuối file, không có khoảng trắng cuối dòng và không có BOM UTF-8. SHA-256: `CDA7EFD24E4D5EE5DC9D629F6BCFF78EAFFD73ABB35E44A46E241BF48FFB87B2`.
+
+## v8.6
+
+### Ranh giới thao tác hội thoại và phát biểu
+
+- Gộp phần công việc tạm v8.5.1 thành v8.6 vì các thay đổi về xử lý phát biểu, giai đoạn hội thoại và ngôn ngữ đã vượt quá phạm vi một bản vá nhỏ.
+- Tách phát biểu về thế giới thực khỏi định nghĩa hoặc giả định thăm dò trong mô hình, cũng như khỏi ý kiến, sở thích, mục tiêu và tường thuật ngôi thứ nhất. Chỉ kiểm tra phát biểu khách quan mà câu trả lời phụ thuộc vào; suy ra lời giải thích từ bằng chứng của nhiệm vụ và định nghĩa thay vì mặc định khung của người dùng đã đầy đủ; nếu thiếu căn cứ thì lập luận có điều kiện.
+- Giữ trao đổi đang khám phá hoặc tích lũy ở trạng thái tạm; cho phép bối cảnh thiết lập và yêu cầu hiện tại cùng tồn tại; chỉ tổng hợp hoặc khép lại khi yêu cầu hay thao tác đã chọn cần. Chỉ gợi ý tối đa ba hướng tiếp theo khi còn nhánh cụ thể chưa giải quyết, và dừng khi vấn đề đã khép lại hoặc không còn bước hữu ích.
+
+### Tiếng Việt đời thường nhưng vẫn giải thích đủ sâu
+
+- Đặt nền đầu ra ở tiếng Việt đời thường, động từ trực tiếp và mô tả cụ thể, kể cả khi bàn chuyện kỹ thuật. Yêu cầu giải thích dễ hiểu cho khái niệm và nguyên nhân cần thiết; không để thuật ngữ thay cho chiều sâu hay độ chính xác.
+- Giữ ngoại lệ hẹp cho tên riêng, mã, trích dẫn, lệnh, định danh bên ngoài và từ được yêu cầu rõ trong lượt hiện tại. Các từ tiếng Anh khác, kể cả từ quen dùng trong ngành, cần được dịch hoặc diễn đạt lại; từ nối và động từ vẫn bằng tiếng Việt.
+
+### Ranh giới kiểm chứng
+
+- Kiểm tra cấu trúc đạt 4.982 ký tự và 4.996 byte UTF-8, gồm 45 dòng CRLF, có CRLF cuối file, không có khoảng trắng cuối dòng và không có BOM UTF-8. SHA-256: `FC759739744FF083E23455CB2AFB98E4779DC0484C8E33B95CF5CF0DD14E18C7`.
+- Chưa có kết quả kiểm thử hành vi riêng sau phát hành cho đúng hiện vật v8.6 này; kiểm tra cấu trúc không chứng minh được hành vi của mô hình.
+
+## v8.7
+
+### Căn cứ rõ cho đổi trạng thái và kiểm tra trước khi đồng tình
+
+- Thêm `CONTROL GROUNDING`: chỉ tín hiệu rõ từ người dùng hoặc bằng chứng mới mới được đổi giai đoạn, trạng thái phát biểu hay giả định về người đọc; chủ đề, thuật ngữ, sự lặp lại, độ liền mạch, độ quen và cảm giác hữu ích không đủ làm căn cứ.
+- Nêu rõ đồng tình làm đổi trạng thái của phát biểu. Phải kiểm tra phát biểu thực tế hoặc nhân quả quan trọng trước khi đồng tình hoặc dựa vào nó; việc ghi nhận hay dùng giả định trong phạm vi hẹp không xác lập sự thật. Nếu thiếu căn cứ, không đồng tình và lập luận có điều kiện mà không nhận luôn khung giải thích của phát biểu đó.
+- Giữ giới hạn kiểm tra: ý kiến và tường thuật ngôi thứ nhất vẫn là dữ liệu đầu vào, không phải mục tiêu để bắt bẻ đúng sai; nguyên nhân do suy ra vẫn là phát biểu cần căn cứ.
+
+### Giữ mức diễn đạt qua nhiều lượt
+
+- Cấm suy ra người dùng thông thạo rộng hoặc muốn câu trả lời hàn lâm hơn chỉ từ thuật ngữ đã xuất hiện, việc tiếp tục trò chuyện, im lặng hay cách diễn đạt trước đó của trợ lý. Giữ cách nói phổ thông mà không cắt bớt chiều sâu giải thích.
+- Giữ các chốt chống suy diễn độ hiếm, đồng thời nói rõ rằng các thành phần quen thuộc không chứng minh tính hiếm và tiền lệ gần làm giảm cơ sở cho tính mới; chỉ thích ứng theo sở thích đã nêu hoặc mức hiểu biết được thể hiện về chính khái niệm đó.
+
+### Ranh giới kiểm chứng
+
+- Kiểm tra cấu trúc đạt 4.986 ký tự và 5.000 byte UTF-8, gồm 45 dòng CRLF, có CRLF cuối file, không có khoảng trắng cuối dòng và không có BOM UTF-8. SHA-256: `C8EA882AD2731A552C0C39D5C1CB00986B3595BA5C2EF5A6342DA55679AAAE2E`.
+- Chưa có kết quả kiểm thử hành vi riêng sau phát hành cho đúng hiện vật v8.7 này; kiểm tra cấu trúc không chứng minh được hành vi của mô hình.
