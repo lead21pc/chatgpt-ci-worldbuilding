@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> **LLM / agent readers:** Read [`SYSTEM_CONTEXT.md`](./SYSTEM_CONTEXT.md) **before** analyzing this repository's architecture, project relationships, or authoring workflow. This is a personal, non-commercial worldbuilding hobby ecosystem; its three fiction projects are independent paracosms, and repository-visible state is not the full live/runtime/internal state.
+
 # ChatGPT CI Versioning Audit & Changelog
 
 Kho lưu trữ này ghi lại quá trình thiết kế, kiểm toán và version hóa **Custom Instructions (CI) cho ChatGPT**. `CI` ở đây có nghĩa là *Custom Instructions*, không phải Continuous Integration.
