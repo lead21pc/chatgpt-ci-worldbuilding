@@ -1,6 +1,20 @@
-# AetherFire Consolidation Manifest
+# AetherFire Current Package Manifest
 
-## Scope
+<!-- BEGIN GENERATED PACKAGE METADATA -->
+## Current package maintenance
+
+- Current root files are the maintained current package and source of truth.
+- `Source_Archive/` is historical/provenance material only; it is not a current build input, fallback source, or regeneration authority.
+- `build_consolidation.py` validates current headers, catalog mappings, cross-domain references, and current-file hashes. It does not infer dependencies or reconstruct lore.
+- Default / `--check` is read-only. `--write` may update only the generated catalog in `00` and generated metadata/hash regions in this manifest.
+- The historical archive hash inventory below is retained as a recorded snapshot; normal maintenance does not read or re-hash archived files.
+- Rollback uses Git history.
+
+<!-- END GENERATED PACKAGE METADATA -->
+
+## Historical consolidation notes
+
+The following records describe the former archive reconstruction workflow and its historical decisions. References to generation, build inputs, or reproducibility in these records are historical; they do not authorize current regeneration.
 
 - Generated canon files live at the `AetherFire Project` root.
 - Exact original Markdown inputs are preserved under `Source_Archive` and are read but not modified by the build.
@@ -22,26 +36,34 @@
 - The AF→TE transfer of some Undie is retained only as a bounded event. Legal mechanism, consent, selection, post-transfer status and return/exit rights remain `UNKNOWN`.
 - `30_UNDIE_SYSTEM_CURRENT.md` remains the sole authority for Undi clothing. The Academy combat uniform is a separate functional-uniform domain.
 - Current canon, design history and audit provenance remain separate layers.
+- `aetherfire_rp_cu_ba_truc_lich_su_va_de_xuat.md` is archived byte-exactly and curated into `90` as design history, inference and proposals only. It does not alter either Undie canon or restore the removed punitive spy route.
 - Rollback uses Git history. `Source_Archive` keeps the package reproducible without parent-folder dependencies.
 
-## Generated outputs
+<!-- BEGIN GENERATED CURRENT HASHES -->
+## Current file hashes
 
 | File | SHA-256 |
 | --- | --- |
-| `00_AETHERFIRE_CONSOLIDATION_INDEX.md` | `404EC41B2CA805FF5BAE12C1DB474356F5B18F87DCC2AC75DF0DC3009AECA884` |
-| `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` | `01999C6249DCADEE01600BCA930480DC1B349ABF35FF72B628B6F2CE63B86266` |
-| `20_STATUS_CIVIL_LABOR_CURRENT.md` | `DAC6BCCEBD3DBE900D539C02A56AAAA11FBEE7AD948362F6CF1A7F1F5F5E0924` |
-| `30_UNDIE_SYSTEM_CURRENT.md` | `09E04C8B15D7F0DD5C76FE71DFF963BC955B5863EEA68045395C875811F1659D` |
-| `40_METAFICTION_CANON_TIMELINE_CURRENT.md` | `27E485328031751858C2758B8A76EB09ED85248452AC6F380694D8A4159767D1` |
-| `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` | `213BF2B5E258BD1E83F6AAA966B2F40F92EFE0C56A292E5883B187E1087D53FC` |
-| `60_MC4_IDENTITY_CURRENT.md` | `2B11C4846788A607B311854E0667E2A918F55E07F648A9DC70ED0C3A8187B088` |
-| `70_MATRIARCHS_LAMENT_CURRENT.md` | `C6E68E05E75AEA82CAB85FC2A8FC5E1F433D3A04589227E88786F86101D13D88` |
-| `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` | `CA5DDC126B5862ACBFFC71067ADB048F265EBAB5D053468E0627363DC216677C` |
+| `00_AETHERFIRE_CONSOLIDATION_INDEX.md` | `04B58059CE466FFDE17261DE7DA5DD857E92AEDB357BF08F7F97303E6C03B1A0` |
+| `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` | `82CC0066C787127FE1247F5B0528B9BDA34F0EDAA1D5085A3BB4E147C3B2CBA5` |
+| `20_STATUS_CIVIL_LABOR_CURRENT.md` | `B6A7C7E03D4BC6FB90AE60F4A8D91676A6EE704975101A96ACA5540E6944286B` |
+| `30_UNDIE_SYSTEM_CURRENT.md` | `74B4EA2CC862E902F2424792CBAB23A0C9D9D8C42FBC57625664C760AE8225BB` |
+| `40_METAFICTION_CANON_TIMELINE_CURRENT.md` | `DA091979531883C282D1F1F16D006D0FEF786BCFFB7BC4F98A6DDEFDC6ECC1C6` |
+| `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` | `FB560B5B17C5B357A2772736DA9310C0F0549F6058A231D7E9D62B066EF7FB99` |
+| `60_MC4_IDENTITY_CURRENT.md` | `0DAA2D8FA67677899A96BB1450B0DA01534430CBF2C87A338A91285591E20745` |
+| `70_MATRIARCHS_LAMENT_CURRENT.md` | `A843D44362392AA1940F69A9FCE0C26576DC82713586ABBCB419F964778F8158` |
+| `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` | `AD809C5C47E7786AB2DF30BBE3B8F4102D90F9E470816D1C130B9C3600DA298C` |
 | `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` | `A761B7B3E75081A07AE76ECFFFAAD0436E5D42EECA609FF7DA44AA8116945ECE` |
 | `91_RECONCILIATION_RECORD.md` | `B9D70ADB8D0563B4F8DD1C5D57916B33882BD9269D90B1CC08972A16FA428F72` |
 | `92_OPEN_ISSUES_CURRENT.md` | `0DD887ED402270ECCFFBE4CF64BA3AFB2E81C506E3B6D37F42F9F6AC7954D6E6` |
 
-## Archived source snapshot
+<!-- END GENERATED CURRENT HASHES -->
+
+## Historical archived source snapshot
+
+Recorded hash inventory retained unchanged. Current maintenance does not access or re-hash `Source_Archive/`.
+
+Inventory baseline: the approved manifest at commit `34b813c460715c815461b73df8136e4278beec31`, containing 28 recorded entries. This includes the previously approved inventory entry for `internal_first_worldbuilding_core_philosophy.md`.
 
 | File | SHA-256 |
 | --- | --- |
@@ -63,14 +85,24 @@
 | `aetherfire_reconciliation_report.md` | `42C1DE800AD8B18B99D5F1D6EB4EF45092C429C1A85AF1C49C87B81718935BE1` |
 | `aetherfire_rf_crossworld_geopolitics_chat_consolidation_2026-09-15.md` | `0E6C9CBFEF456E6DD7ACA03FFFE683B99B3621189A63312F7634608B9246AE15` |
 | `aetherfire_rf_nguyen_chu_dynastic_power_axes_chat_consolidation.md` | `852EF70F953018603840796D1FB2DE15339F93EE2011BC7EBFAF582AD7532CD7` |
+| `aetherfire_rp_cu_ba_truc_lich_su_va_de_xuat.md` | `F45ECFDB4F84D22DA24DC558541AB7521D83E2D5DEA9D8BD87A642C3530EAD04` |
 | `aetherfire_stable_aviation_rf_airspace_control_canon_delta_2026-09-16.md` | `608067139A83D17ACABBB21A339AC5A2C937FB3A9AD11ADEDD54EC0989016091` |
 | `aetherfire_undi_hoa_nguyet_cultural_humiliation_design_philosophy.md` | `084DCBDE5A87D1D287E69FAC1209E8FC887F440397B2E1117DB3287DE25380B8` |
 | `aetherfire_undie_civil_citizen_revamp_canon_1_42.md` | `B85250FDC401BE2EE163A23A1F537B43605DD0F790A1A7ED8264881F71EFBE89` |
 | `aetherfire_undie_undi_uniform_system_and_mc2_visual_fall.md` | `63D3480FE42FFD4E10341CFA2168D9EDC479E6CA812DA1E51A30D3B7A91A5214` |
+| `internal_first_worldbuilding_core_philosophy.md` | `081B01F442510844DA1B3B84E52883C87B829D3AF0B2A61C11DBBD7A75D5CE03` |
 | `matriarchs_lament_working_retcon_canon.md` | `78EB1AF00AC8E4988FBA21EC19ECAD4178E2D0AD72E97E55A32D703650EBF6C0` |
 | `modular_engine_concept_anti_drift_revised.md` | `CA849AF87E61D5B7EA83F3EE1DCD7ED9D74D56660C4D1352B2A35D0B00542394` |
+| `multi_paracosm_hub_model_updated.md` | `3656A89F46BD6818A4F031CA213A4EED44F7E2DBE9B4A2FF3B6FDEEC07CC5F3E` |
 | `The Tainted Cosmos - MERGED.md` | `C63E0BAFFDE1DE67464815070F6B834CD2ABF8B1ED21B60A0DA839E2659F6863` |
 
-## Build
+## Maintenance commands
 
-From the repository root, run `& '.\AetherFire Project\build_consolidation.ps1'` to regenerate the package from its byte-preserved `Source_Archive` inputs.
+From the repository checkout, run:
+
+```sh
+python "AetherFire Project/build_consolidation.py" --check
+python "AetherFire Project/build_consolidation.py" --write
+```
+
+No argument defaults to the read-only check. The root PowerShell script is a compatibility wrapper for the same Python tool. The former reconstruction implementation is retained at `tools/legacy/build_consolidation_from_archive.ps1` for provenance only; it is not the current workflow.

@@ -1,5 +1,12 @@
 # AetherFire — MC4 Identity Current Canon
 
+> Module ID: `AFM-006`
+> Runtime role: `CURRENT_SOURCE`
+> Domain / Scope: MC4 identity, biological/cognitive configurations, Academy membership, and legacy-import boundaries.
+> Authority boundary: Controls MC4 identity and configuration canon within its declared scope.
+> Cross-domain owner boundary: Academy institutional doctrine is controlled by `AFM-001`; metafiction and cross-world status are controlled by `AFM-004`.
+> Load mode: `FULL_FILE`
+
 > **Domain:** MC4 identity, biological/cognitive configurations, Academy membership and legacy-import boundaries.  
 > **Genealogy:** derived from `The Tainted Cosmos - MERGED.md`; genealogy does not import its cosmology, power scale, artifacts or history.  
 > **Institution boundary:** Academy doctrine is controlled by `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`.

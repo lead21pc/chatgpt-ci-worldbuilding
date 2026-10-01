@@ -1,7 +1,7 @@
 # AetherFire — Consolidation Index
 
 > **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-09-17
-> **Location:** self-contained `AetherFire Project/` package. Canon outputs live at the project root; immutable build inputs are preserved under `Source_Archive/`.  
+> **Location:** self-contained `AetherFire Project/` package. Current root files are maintained current sources; `Source_Archive/` preserves historical/provenance material only.
 > **Truth rule:** `ABSENCE OF CANON ≠ CANONICAL NEGATION`; `NOT ESTABLISHED ≠ FALSE`; unresolved relations remain `UNKNOWN / UNRESOLVED`.
 
 ## 1. Canonical reading order
@@ -17,6 +17,27 @@
 9. `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` — genealogy, retired designs, surviving mechanisms and proposals under consideration; not a current world bible.
 10. `91_RECONCILIATION_RECORD.md` — resolved conflicts, unresolved questions and source provenance.
 11. `92_OPEN_ISSUES_CURRENT.md` — compact control ledger; not a world-bible source.
+
+<!-- BEGIN GENERATED MODULE CATALOG -->
+## Runtime Module Catalog
+
+> Derived routing index only. A row does not establish canon, authority,
+> automatic admission, or dependency. Check the source header and package
+> state before using a module. This table does not change the canonical
+> reading order above.
+
+| Module ID | Current source path (relative to AetherFire Project/) |
+| --- | --- |
+| `AFM-001` | `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` |
+| `AFM-002` | `20_STATUS_CIVIL_LABOR_CURRENT.md` |
+| `AFM-003` | `30_UNDIE_SYSTEM_CURRENT.md` |
+| `AFM-004` | `40_METAFICTION_CANON_TIMELINE_CURRENT.md` |
+| `AFM-005` | `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` |
+| `AFM-006` | `60_MC4_IDENTITY_CURRENT.md` |
+| `AFM-007` | `70_MATRIARCHS_LAMENT_CURRENT.md` |
+| `AFM-008` | `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` |
+
+<!-- END GENERATED MODULE CATALOG -->
 
 ## 2. Document architecture
 
@@ -140,4 +161,4 @@ STATUS
 
 ## 10. Rollback
 
-Use Git revert/history to roll back the project package. `Source_Archive/` preserves the exact build inputs, so regeneration does not depend on files outside `AetherFire Project/`.
+Use Git revert/history to roll back the project package. Maintain current root files directly; `Source_Archive/` preserves historical/provenance material and is not a current build input or regeneration authority.

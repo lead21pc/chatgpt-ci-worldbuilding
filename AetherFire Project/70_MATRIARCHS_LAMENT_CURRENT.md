@@ -1,5 +1,12 @@
 # Matriarch's Lament — Current Regional Canon
 
+> Module ID: `AFM-007`
+> Runtime role: `CURRENT_SOURCE`
+> Domain / Scope: Matriarch's Lament internal governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha regional role and doctrine, ML–TE operations, and northeastern tribes.
+> Authority boundary: Controls internal Matriarch's Lament canon within its declared scope.
+> Cross-domain owner boundary: Global and geopolitical interfaces are controlled by `AFM-001`; Undie status interfaces by `AFM-003`; metafiction and cross-world status by `AFM-004`.
+> Load mode: `FULL_FILE`
+
 > **Trạng thái:** CURRENT CANON / CONTROLLING MATRIARCH'S LAMENT DOMAIN — integrated 2026-09-11; architecture split recorded 2026-09-16  
 > **Authority boundary:** this file controls internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and the northeastern tribes. Cross-domain interfaces are summarized in `10`; Undie status interfaces are controlled by `30`; cross-world status is controlled by `40`.  
 > **Trúc Nha boundary:** membership and regional role in ML are current canon. A summoned/cross-world origin remains `UNDER CONSTRUCTION / NOT CURRENT CANON`.  

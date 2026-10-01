@@ -1,5 +1,12 @@
 # AetherFire — Stable Aviation & RF Airspace Current Canon
 
+> Module ID: `AFM-008`
+> Runtime role: `CURRENT_SOURCE`
+> Domain / Scope: AetherFire stable/scalable aviation, AF–RF aviation dependency, RF airspace, ATC, aviation economy, mixed airspace, and air-route leverage.
+> Authority boundary: Controls detailed stable-aviation and RF-airspace canon within its declared scope.
+> Cross-domain owner boundary: Global and geopolitical interfaces are controlled by `AFM-001`; unresolved RF constitutional authority remains subject to the controlling world/institutional and open-state sources.
+> Load mode: `FULL_FILE`
+
 > **Trạng thái:** CURRENT CANON / CONTROLLING STABLE AVIATION & RF AIRSPACE DOMAIN — integrated 2026-09-17.
 > **Authority boundary:** this file controls AF stable/scalable aviation, the AF–RF aviation dependency, airspace/ATC/economy separation, mixed airspace and air-route leverage. `10` retains only the world/geopolitics interface.
 > **Interpretation boundary:** AF is the only currently confirmed actor with stable, scalable aviation infrastructure; this is not proof that no other actor can ever possess it. Statements about RF response describe incentives and strategic direction for relevant RF/member-state authorities, not proof of a unitary RF policy or completed implementation.

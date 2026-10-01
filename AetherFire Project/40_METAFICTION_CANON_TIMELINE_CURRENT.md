@@ -1,5 +1,12 @@
 # AetherFire — Metafiction Canon & Timeline Current
 
+> Module ID: `AFM-004`
+> Runtime role: `CURRENT_SOURCE`
+> Domain / Scope: Fiction 0/Fiction 1, Fictionize, Proof of Concept, V0.5, Canon 1/Canon 2, clashes, causal overlap, timeline, and cross-world status boundaries.
+> Authority boundary: Controls metafiction ontology, causal timeline, canon-layer relations, and cross-world status within its declared scope.
+> Cross-domain owner boundary: Narrator, POV, and humor presentation is controlled by `AFM-005`; actor/domain-specific current canon remains controlled by its relevant module.
+> Load mode: `FULL_FILE`
+
 > **Domain:** Fiction 0/Fiction 1, Fictionize, Proof of Concept, V0.5, Canon 1/Canon 2, Clash #1/Clash #2, realization mode, causal overlap and knowledge asymmetry.  
 > **Priority:** `aetherfire_canon_story_line_v0_5_v1_0_overlap.md` controls the causal timeline. The fiction model controls layer/ability definitions where compatible; the Canon 1/Canon 2 source supplies comparison and mismatch matrices.  
 > Older simplified descriptions of two independent parallel branches or MC1 being pulled directly from an external operator position are not imported. `UNKNOWN` mechanics remain unresolved.
