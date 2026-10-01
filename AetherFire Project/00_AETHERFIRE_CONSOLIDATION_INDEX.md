@@ -18,6 +18,19 @@
 10. `91_RECONCILIATION_RECORD.md` — resolved conflicts, unresolved questions and source provenance.
 11. `92_OPEN_ISSUES_CURRENT.md` — compact control ledger; not a world-bible source.
 
+## Runtime Module Catalog
+
+| Module ID | Current source path (relative to AetherFire Project/) |
+| --- | --- |
+| `AFM-001` | `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` |
+| `AFM-002` | `20_STATUS_CIVIL_LABOR_CURRENT.md` |
+| `AFM-003` | `30_UNDIE_SYSTEM_CURRENT.md` |
+| `AFM-004` | `40_METAFICTION_CANON_TIMELINE_CURRENT.md` |
+| `AFM-005` | `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` |
+| `AFM-006` | `60_MC4_IDENTITY_CURRENT.md` |
+| `AFM-007` | `70_MATRIARCHS_LAMENT_CURRENT.md` |
+| `AFM-008` | `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` |
+
 ## 2. Document architecture
 
 ```text

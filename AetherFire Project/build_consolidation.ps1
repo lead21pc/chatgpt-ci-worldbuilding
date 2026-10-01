@@ -5,6 +5,74 @@ $tempRoot = $PSScriptRoot
 $sourceRoot = Join-Path $tempRoot 'Source_Archive'
 $utf8NoBom = [System.Text.UTF8Encoding]::new($false)
 
+# Module headers are generated metadata on the current-source views. Keep these
+# exact existing declarations intact when rebuilding from the archived lore.
+$moduleHeaders = @{}
+$moduleHeaders['10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md'] = @'
+> Module ID: `AFM-001`
+> Runtime role: `CURRENT_SOURCE`
+> Domain / Scope: AetherFire world state, institutions, geopolitics, foreign relations, global interfaces, and Academy institutional context.
+> Authority boundary: Controls global, institutional, and geopolitical canon except detailed domains explicitly controlled by another accepted current module.
+> Cross-domain owner boundary: Detailed Matriarch's Lament canon is controlled by `AFM-007`; detailed stable aviation and RF-airspace canon by `AFM-008`; metafiction detail by `AFM-004`; MC4 identity detail by `AFM-006`.
+> Load mode: `FULL_FILE`
+'@.Trim()
+$moduleHeaders['20_STATUS_CIVIL_LABOR_CURRENT.md'] = @'
+> Module ID: `AFM-002`
+> Runtime role: `CURRENT_SOURCE`
+> Domain / Scope: Status ontology, Citizen, Civil, Yellow, POW, Criminal, Civil entry/allocation/lifecycle, labor, and cross-status transitions.
+> Authority boundary: Controls legal/civic status ontology and Civil/labor interfaces within its declared scope.
+> Cross-domain owner boundary: Detailed Undie internal ranks, intake, mobility, work/access, White, and Undi visual systems are controlled by `AFM-003`.
+> Load mode: `FULL_FILE`
+'@.Trim()
+$moduleHeaders['30_UNDIE_SYSTEM_CURRENT.md'] = @'
+> Module ID: `AFM-003`
+> Runtime role: `CURRENT_SOURCE`
+> Domain / Scope: Undie class identity, intake, consent, Undie ranks, mobility, White, work/economy/access, geographic deployment, and Undi visual system.
+> Authority boundary: Controls detailed Undie and Undi canon within its declared scope.
+> Cross-domain owner boundary: General legal/civic status ontology and Civil, Criminal, POW, and Yellow boundaries are controlled by `AFM-002`; other cross-domain owners remain authoritative for their own declared facets.
+> Load mode: `FULL_FILE`
+'@.Trim()
+$moduleHeaders['40_METAFICTION_CANON_TIMELINE_CURRENT.md'] = @'
+> Module ID: `AFM-004`
+> Runtime role: `CURRENT_SOURCE`
+> Domain / Scope: Fiction 0/Fiction 1, Fictionize, Proof of Concept, V0.5, Canon 1/Canon 2, clashes, causal overlap, timeline, and cross-world status boundaries.
+> Authority boundary: Controls metafiction ontology, causal timeline, canon-layer relations, and cross-world status within its declared scope.
+> Cross-domain owner boundary: Narrator, POV, and humor presentation is controlled by `AFM-005`; actor/domain-specific current canon remains controlled by its relevant module.
+> Load mode: `FULL_FILE`
+'@.Trim()
+$moduleHeaders['50_NARRATORS_POV_AND_HUMOR_CURRENT.md'] = @'
+> Module ID: `AFM-005`
+> Runtime role: `CURRENT_SOURCE`
+> Domain / Scope: Narrator personification, POV grammar, deadpan humor, narrative presentation, and narrator separation.
+> Authority boundary: Controls narrator, POV, humor, and presentation canon within its declared scope.
+> Cross-domain owner boundary: Metafiction and clash causality are controlled by `AFM-004`; Undi clothing and visual canon are controlled by `AFM-003`.
+> Load mode: `FULL_FILE`
+'@.Trim()
+$moduleHeaders['60_MC4_IDENTITY_CURRENT.md'] = @'
+> Module ID: `AFM-006`
+> Runtime role: `CURRENT_SOURCE`
+> Domain / Scope: MC4 identity, biological/cognitive configurations, Academy membership, and legacy-import boundaries.
+> Authority boundary: Controls MC4 identity and configuration canon within its declared scope.
+> Cross-domain owner boundary: Academy institutional doctrine is controlled by `AFM-001`; metafiction and cross-world status are controlled by `AFM-004`.
+> Load mode: `FULL_FILE`
+'@.Trim()
+$moduleHeaders['70_MATRIARCHS_LAMENT_CURRENT.md'] = @'
+> Module ID: `AFM-007`
+> Runtime role: `CURRENT_SOURCE`
+> Domain / Scope: Matriarch's Lament internal governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha regional role and doctrine, ML–TE operations, and northeastern tribes.
+> Authority boundary: Controls internal Matriarch's Lament canon within its declared scope.
+> Cross-domain owner boundary: Global and geopolitical interfaces are controlled by `AFM-001`; Undie status interfaces by `AFM-003`; metafiction and cross-world status by `AFM-004`.
+> Load mode: `FULL_FILE`
+'@.Trim()
+$moduleHeaders['80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md'] = @'
+> Module ID: `AFM-008`
+> Runtime role: `CURRENT_SOURCE`
+> Domain / Scope: AetherFire stable/scalable aviation, AF–RF aviation dependency, RF airspace, ATC, aviation economy, mixed airspace, and air-route leverage.
+> Authority boundary: Controls detailed stable-aviation and RF-airspace canon within its declared scope.
+> Cross-domain owner boundary: Global and geopolitical interfaces are controlled by `AFM-001`; unresolved RF constitutional authority remains subject to the controlling world/institutional and open-state sources.
+> Load mode: `FULL_FILE`
+'@.Trim()
+
 function Read-MarkdownSource {
     param([Parameter(Mandatory)][string]$Name)
 
@@ -105,6 +173,24 @@ function Write-MarkdownOutput {
     )
 
     $normalized = (($Content -replace "`r`n", "`n") -replace "`r", "`n").TrimEnd() + "`n"
+    if ($moduleHeaders.ContainsKey($Name)) {
+        $titleEnd = $normalized.IndexOf("`n")
+        if ($titleEnd -lt 0) {
+            throw "Cannot insert module header without a title line: $Name"
+        }
+
+        $bodyStart = $titleEnd + 1
+        if ($bodyStart -lt $normalized.Length -and $normalized[$bodyStart] -eq "`n") {
+            $bodyStart++
+        }
+        $body = $normalized.Substring($bodyStart)
+        if ($body.StartsWith('> Module ID:')) {
+            throw "Generated content already contains a module header: $Name"
+        }
+
+        $normalized = $normalized.Substring(0, $titleEnd) + "`n`n" +
+            $moduleHeaders[$Name] + "`n`n" + $body.TrimEnd() + "`n"
+    }
     [System.IO.File]::WriteAllText((Join-Path $tempRoot $Name), $normalized, $utf8NoBom)
 }
 
@@ -265,6 +351,19 @@ $index = @'
 9. `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` — genealogy, retired designs, surviving mechanisms and proposals under consideration; not a current world bible.
 10. `91_RECONCILIATION_RECORD.md` — resolved conflicts, unresolved questions and source provenance.
 11. `92_OPEN_ISSUES_CURRENT.md` — compact control ledger; not a world-bible source.
+
+## Runtime Module Catalog
+
+| Module ID | Current source path (relative to AetherFire Project/) |
+| --- | --- |
+| `AFM-001` | `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` |
+| `AFM-002` | `20_STATUS_CIVIL_LABOR_CURRENT.md` |
+| `AFM-003` | `30_UNDIE_SYSTEM_CURRENT.md` |
+| `AFM-004` | `40_METAFICTION_CANON_TIMELINE_CURRENT.md` |
+| `AFM-005` | `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` |
+| `AFM-006` | `60_MC4_IDENTITY_CURRENT.md` |
+| `AFM-007` | `70_MATRIARCHS_LAMENT_CURRENT.md` |
+| `AFM-008` | `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` |
 
 ## 2. Document architecture
 
