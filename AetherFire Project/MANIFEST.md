@@ -1,6 +1,20 @@
-# AetherFire Consolidation Manifest
+# AetherFire Current Package Manifest
 
-## Scope
+<!-- BEGIN GENERATED PACKAGE METADATA -->
+## Current package maintenance
+
+- Current root files are the maintained current package and source of truth.
+- `Source_Archive/` is historical/provenance material only; it is not a current build input, fallback source, or regeneration authority.
+- `build_consolidation.py` validates current headers, catalog mappings, cross-domain references, and current-file hashes. It does not infer dependencies or reconstruct lore.
+- Default / `--check` is read-only. `--write` may update only the generated catalog in `00` and generated metadata/hash regions in this manifest.
+- The historical archive hash inventory below is retained as a recorded snapshot; normal maintenance does not read or re-hash archived files.
+- Rollback uses Git history.
+
+<!-- END GENERATED PACKAGE METADATA -->
+
+## Historical consolidation notes
+
+The following records describe the former archive reconstruction workflow and its historical decisions. References to generation, build inputs, or reproducibility in these records are historical; they do not authorize current regeneration.
 
 - Generated canon files live at the `AetherFire Project` root.
 - Exact original Markdown inputs are preserved under `Source_Archive` and are read but not modified by the build.
@@ -25,11 +39,12 @@
 - `aetherfire_rp_cu_ba_truc_lich_su_va_de_xuat.md` is archived byte-exactly and curated into `90` as design history, inference and proposals only. It does not alter either Undie canon or restore the removed punitive spy route.
 - Rollback uses Git history. `Source_Archive` keeps the package reproducible without parent-folder dependencies.
 
-## Generated outputs
+<!-- BEGIN GENERATED CURRENT HASHES -->
+## Current file hashes
 
 | File | SHA-256 |
 | --- | --- |
-| `00_AETHERFIRE_CONSOLIDATION_INDEX.md` | `39C1727BD617FFD828A02A5BB3CAEE19C51F15535735F3438DA2F8E99D723524` |
+| `00_AETHERFIRE_CONSOLIDATION_INDEX.md` | `04B58059CE466FFDE17261DE7DA5DD857E92AEDB357BF08F7F97303E6C03B1A0` |
 | `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` | `82CC0066C787127FE1247F5B0528B9BDA34F0EDAA1D5085A3BB4E147C3B2CBA5` |
 | `20_STATUS_CIVIL_LABOR_CURRENT.md` | `B6A7C7E03D4BC6FB90AE60F4A8D91676A6EE704975101A96ACA5540E6944286B` |
 | `30_UNDIE_SYSTEM_CURRENT.md` | `74B4EA2CC862E902F2424792CBAB23A0C9D9D8C42FBC57625664C760AE8225BB` |
@@ -42,7 +57,13 @@
 | `91_RECONCILIATION_RECORD.md` | `B9D70ADB8D0563B4F8DD1C5D57916B33882BD9269D90B1CC08972A16FA428F72` |
 | `92_OPEN_ISSUES_CURRENT.md` | `0DD887ED402270ECCFFBE4CF64BA3AFB2E81C506E3B6D37F42F9F6AC7954D6E6` |
 
-## Archived source snapshot
+<!-- END GENERATED CURRENT HASHES -->
+
+## Historical archived source snapshot
+
+Recorded hash inventory retained unchanged. Current maintenance does not access or re-hash `Source_Archive/`.
+
+Inventory baseline: the approved manifest at commit `34b813c460715c815461b73df8136e4278beec31`, containing 28 recorded entries. This includes the previously approved inventory entry for `internal_first_worldbuilding_core_philosophy.md`.
 
 | File | SHA-256 |
 | --- | --- |
@@ -75,6 +96,13 @@
 | `multi_paracosm_hub_model_updated.md` | `3656A89F46BD6818A4F031CA213A4EED44F7E2DBE9B4A2FF3B6FDEEC07CC5F3E` |
 | `The Tainted Cosmos - MERGED.md` | `C63E0BAFFDE1DE67464815070F6B834CD2ABF8B1ED21B60A0DA839E2659F6863` |
 
-## Build
+## Maintenance commands
 
-From the repository root, run `& '.\AetherFire Project\build_consolidation.ps1'` to regenerate the package from its byte-preserved `Source_Archive` inputs.
+From the repository checkout, run:
+
+```sh
+python "AetherFire Project/build_consolidation.py" --check
+python "AetherFire Project/build_consolidation.py" --write
+```
+
+No argument defaults to the read-only check. The root PowerShell script is a compatibility wrapper for the same Python tool. The former reconstruction implementation is retained at `tools/legacy/build_consolidation_from_archive.ps1` for provenance only; it is not the current workflow.
