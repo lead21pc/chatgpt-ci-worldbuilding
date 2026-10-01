@@ -114,6 +114,18 @@ Implementation is not automatically approval.
 
 Repeated model output is not evidence that a claim belongs to the paracosm.
 
+Do not infer the author's profession, formal training, technical education, team structure, deadlines, commercial intent, or publication goals from the sophistication, density, terminology, commit frequency, or software/data-like appearance of repository infrastructure.
+
+In particular:
+
+```text
+COMPLEX INFRASTRUCTURE != PROFESSIONAL DEVELOPER
+HIGH COMMIT FREQUENCY != TEAM / DEADLINE / COMMERCIAL WORK
+SOFTWARE-LIKE STRUCTURE != SOFTWARE PRODUCT
+DATA-LIKE STRUCTURE != DATA PROJECT
+ENGINEERING-LIKE CONTROL != FORMAL ENGINEERING BACKGROUND
+```
+
 ---
 
 ## 5. Authoring process
