@@ -1,6 +1,6 @@
 # AetherFire — Consolidation Index
 
-> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-09-17
+> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-10-02
 > **Location:** self-contained `AetherFire Project/` package. Current root files are maintained current sources; `Source_Archive/` preserves historical/provenance material only.
 > **Truth rule:** `ABSENCE OF CANON ≠ CANONICAL NEGATION`; `NOT ESTABLISHED ≠ FALSE`; unresolved relations remain `UNKNOWN / UNRESOLVED`.
 
@@ -12,11 +12,12 @@
 4. `40_METAFICTION_CANON_TIMELINE_CURRENT.md` — Fiction 0/Fiction 1, Fictionize/POC, V0.5, Canon 1/Canon 2, both clashes, causal overlap and knowledge asymmetry.
 5. `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` — narrator personification, Elena POV, deadpan humor and the narrator split at Clash #2.
 6. `60_MC4_IDENTITY_CURRENT.md` — current MC4 identity, Academy membership and strict legacy-import boundaries.
-7. `70_MATRIARCHS_LAMENT_CURRENT.md` — internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha, ML–TE operations and northeastern tribes.
-8. `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` — AF stable/scalable aviation, AF–RF aviation dependency, RF airspace/ATC/economy separation, mixed airspace and route leverage.
-9. `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` — genealogy, retired designs, surviving mechanisms and proposals under consideration; not a current world bible.
-10. `91_RECONCILIATION_RECORD.md` — resolved conflicts, unresolved questions and source provenance.
-11. `92_OPEN_ISSUES_CURRENT.md` — compact control ledger; not a world-bible source.
+7. `65_BATTLEMAGE_ACADEMY_CURRENT.md` — internal Academy organization, military training, authority, assessment, qualification, scholarship and functional uniform.
+8. `70_MATRIARCHS_LAMENT_CURRENT.md` — internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha, ML–TE operations and northeastern tribes.
+9. `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` — AF stable/scalable aviation, AF–RF aviation dependency, RF airspace/ATC/economy separation, mixed airspace and route leverage.
+10. `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` — genealogy, retired designs, surviving mechanisms and proposals under consideration; not a current world bible.
+11. `91_RECONCILIATION_RECORD.md` — resolved conflicts, unresolved questions and source provenance.
+12. `92_OPEN_ISSUES_CURRENT.md` — compact control ledger; not a world-bible source.
 
 <!-- BEGIN GENERATED MODULE CATALOG -->
 ## Runtime Module Catalog
@@ -36,6 +37,7 @@
 | `AFM-006` | `60_MC4_IDENTITY_CURRENT.md` |
 | `AFM-007` | `70_MATRIARCHS_LAMENT_CURRENT.md` |
 | `AFM-008` | `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` |
+| `AFM-009` | `65_BATTLEMAGE_ACADEMY_CURRENT.md` |
 
 <!-- END GENERATED MODULE CATALOG -->
 
@@ -44,7 +46,7 @@
 ```text
 AETHERFIRE CURRENT CANON
 ├─ World / institutions / geopolitics
-│  ├─ AetherFire state, RF, Academy and global interfaces
+│  ├─ AetherFire state, RF and global Academy/site interfaces
 │  ├─ Matriarch's Lament / Transfusion EasterFire cross-domain interface
 │  └─ Quad Night retirement and orphaned relations
 ├─ Status / Civil / labor
@@ -70,6 +72,10 @@ AETHERFIRE CURRENT CANON
    └─ MC4 identity, dual biological/cognitive configurations and Academy membership
 
 CHILD CURRENT-CANON DOMAIN
+├─ Battlemage Academy [65]
+│  ├─ internal organization / DI / consultant / authority domains
+│  ├─ six-year training / five-person teams / twelve competency blocks
+│  └─ assessment / qualification / scholarship / functional uniform
 ├─ Matriarch's Lament
 │  ├─ puppet state / Temple / apocalyptic cult
 │  ├─ Creed / Holy Guard / Trần Trúc Nha
@@ -162,3 +168,9 @@ STATUS
 ## 10. Rollback
 
 Use Git revert/history to roll back the project package. Maintain current root files directly; `Source_Archive/` preserves historical/provenance material and is not a current build input or regeneration authority.
+
+## Academy domain split and military-training integration — 2026-10-02
+
+- `65_BATTLEMAGE_ACADEMY_CURRENT.md` (`AFM-009`) controls internal Academy canon; `10` retains global, Mage Council and northeastern-site interfaces; `60` retains MC4 identity and personal application.
+- The 2026-09-25 military-training delta is accepted within the approved Academy scope. Its twenty explicit unknowns remain open, alongside the prior Academy unknowns; `92` routes them through AF-OPEN-020–023 and AF-AC-001.
+- This admission does not adopt the MC2 strategic-node proposals or historical RP events from the inbox.

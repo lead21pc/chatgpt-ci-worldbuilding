@@ -15,7 +15,7 @@
 - Internal Matriarch's Lament current canon is routed to `70_MATRIARCHS_LAMENT_CURRENT.md`. `10` now retains only its global/cross-domain interface; this is a document-authority split, not a lore retcon.
 - RF single-kingdom wording is superseded by the continental-union/member-state ontology now recorded in `10`.
 - The former Academy-failure-to-Undie route is removed from both current canon and reconsideration. It survives only inside byte-preserved archived sources as provenance.
-- The Academy's six-year model, five-person team, twelve competency blocks, daily rhythm, multi-axis scholarship profile and functional uniform direction are no longer working proposals; they are current canon in `10`.
+- The Academy's six-year model, five-person team, twelve competency blocks, daily rhythm, multi-axis scholarship profile and functional uniform direction are no longer working proposals; they are current canon in `65_BATTLEMAGE_ACADEMY_CURRENT.md` after the 2026-10-02 domain split. `10` retains global/site interfaces.
 - MC4 legacy mastery, Fusion and Spear mechanics remain genealogy-only and are not current.
 - Trần Trúc Nha's membership and regional role in Matriarch's Lament remain current. Her proposed summoned/cross-world origin, MC4's proposed in-world cross-fiction origin and the other unconfirmed cross-world/cross-time candidates are `UNDER CONSTRUCTION / NOT CURRENT CANON`.
 - The `Nguyên Chủ / Nguyên Anh` concept and the `元主 / 元嬰` wordplay remain proposal/design material. They are not assigned to MC2's mother by this integration.

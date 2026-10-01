@@ -4,7 +4,7 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: AetherFire world state, institutions, geopolitics, foreign relations, global interfaces, and Academy institutional context.
 > Authority boundary: Controls global, institutional, and geopolitical canon except detailed domains explicitly controlled by another accepted current module.
-> Cross-domain owner boundary: Detailed Matriarch's Lament canon is controlled by `AFM-007`; detailed stable aviation and RF-airspace canon by `AFM-008`; metafiction detail by `AFM-004`; MC4 identity detail by `AFM-006`.
+> Cross-domain owner boundary: Detailed Matriarch's Lament canon is controlled by `AFM-007`; detailed stable aviation and RF-airspace canon by `AFM-008`; metafiction detail by `AFM-004`; MC4 identity detail by `AFM-006`; internal Academy institutional and training canon by `AFM-009`.
 > Load mode: `FULL_FILE`
 
 > Consolidated current-domain view. Detailed Citizen/Civil/Undie material was moved to sibling files. Design genealogy remains in `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md`.  
@@ -1113,115 +1113,17 @@ AF's firewall and founding-seal history still depend on Raging Fire lineage/RF a
 
 ---
 
-## Battlemage Academy — current canon 2026-09-15
+## Battlemage Academy — global and site interface
+
+> **Internal Academy authority:** `65_BATTLEMAGE_ACADEMY_CURRENT.md` (`AFM-009`) controls internal organization, training, DI/consultant functions, authority domains, combat teams, assessment, qualification, scholarship, and functional uniform.
 
 > **Official name:** `[ACADEMY NAME — PLACEHOLDER]`. “Học viện Lục Quang” is not canon.
-
-### Institutional position
 
 The Academy is an institution/faction within the northeastern Mage Council site behind a volcano. The site contains the Academy, a body-research lab using subjects from Elf, Beastman and Dragon powers, and a teleport gate linked to an isolated capital district containing elite forces. Exact Academy–branch–Council command authority remains `UNKNOWN`.
 
 The cult is not part of the Academy. It exploits the apparent-POW-to-Mage-Council-specialist interface. Exact infiltration, Academy awareness and gate access remain `UNKNOWN`.
 
-### Battlemage doctrine
-
-The Academy trains genuine battlemages. Two schools are current:
-
-1. martial-arts-based battlemage: body, martial arts and magic integrated into movement/close combat;
-2. versatile magic plus multiple weapon families: situational tool-switching and adaptation without implying equal mastery of every weapon.
-
-Training follows this competence order:
-
-```text
-self-control
-→ self-preservation
-→ independent reliability
-→ teammate reliability
-→ team operations
-```
-
-DI and consultant functions are separate. DI maintains combat/professional standards; consultants handle adolescent development and psychological readiness. Neither function replaces the other.
-
-### Six-year model
-
-1. Year 1 — control.
-2. Year 2 — self-preservation and simple missions.
-3. Year 3 — independent battlemage qualification.
-4. Year 4 — team operations.
-5. Year 5 — adaptive operations.
-6. Year 6 — transition into professional personnel.
-
-### Group structure
-
-The standard combat team has **5 members** and is used only after the individual competence floor is met. Exact administrative cohort size, specialist-group size, dangerous-practice grouping, internal role allocation and activation threshold remain `UNKNOWN / NOT YET PROMOTED`; the approval of a five-person team does not canonize those adjacent working-design values.
-
-### Twelve competency blocks
-
-1. body control;
-2. foundational martial arts;
-3. magic control;
-4. magical defense;
-5. foundational weapons;
-6. battlefield mobility;
-7. battlefield awareness;
-8. resource management;
-9. medicine and incident response;
-10. equipment and maintenance;
-11. combat judgment;
-12. team combat.
-
-Exact distribution of the twelve blocks across terms and qualification gates remains `UNKNOWN`.
-
-### Daily training rhythm
-
-```text
-physical block
-→ applied magic / weapon / technical-theory block
-→ long drill / lab / scenario block
-→ self-study / maintenance / preparation
-```
-
-Exercises preserve the full cycle `briefing → preparation → execution → cleanup → after-action review`. Exact clock hours, weeks per year and holidays remain `UNKNOWN`.
-
-### Funding and scholarship
-
-The state funds part of training and all baseline meals. Students may take controlled commissions and side jobs. Full scholarship assessment uses a multi-axis profile:
-
-- professional competence;
-- progress;
-- reliability;
-- safety discipline;
-- resource efficiency;
-- team performance;
-- mission performance.
-
-Exact weights, thresholds, funding percentage, approving authority and external-work liability remain `UNKNOWN`. Supplement access may depend on `quality`, but `quality` remains a separate undefined variable and is not automatically rank, GPA, status, money, scholarship tier or morality score.
-
-### Functional female battlemage uniform
-
-The standard direction is:
-
-- technical underlayer;
-- short split jacket/tunic;
-- leggings or technical trousers;
-- optional hip-cover/outer shorts where function requires;
-- forearm guards;
-- knee/shin protection;
-- equipment belt;
-- combat boots;
-- hair kept short, tied, braided or in a bun.
-
-The two battlemage schools may differ in armor load, outer-layer length and equipment load. Protection, movement, spellcasting and equipment carriage control the design; sexual appeal is not a functional requirement. This Academy uniform is a separate domain and does not modify Undi clothing canon in `30_UNDIE_SYSTEM_CURRENT.md`.
-
-### Lab boundary and removed route
-
-Lab subjects may be used as live targets. Personhood, awareness, pain, consent/coercion, regeneration, death permanence, legal status, oversight and exact student protocol remain `UNKNOWN`; moral grayness is a design requirement, not permission to invent those facts.
-
-```text
-Academy failure → Undie = REMOVED FROM CURRENT SETTING
-```
-
-Academic failure does not create an automatic Undie transition. The former route is excluded from current canon and reconsideration layers.
+`10` retains global, Council, lab, cult, geography and gate interfaces; document containment does not assign those actors or facilities to Academy control. `65` retains the student-facing lab/live-target unknowns and the removed `Academy failure → Undie` route; no automatic Undie transition follows academic failure.
 
 ---
 

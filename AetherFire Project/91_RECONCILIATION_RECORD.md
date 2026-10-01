@@ -2,6 +2,17 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Academy domain split and military-training integration — 2026-10-02
+
+1. **Acceptance:** the user approved the dedicated Academy source and consolidation of the existing Academy canon with the 2026-09-25 military-training delta.
+2. **Current owner:** `65_BATTLEMAGE_ACADEMY_CURRENT.md` (`AFM-009`) supersedes the detailed Academy training section previously maintained in `10`; `10` retains global/site interfaces and external authority unknowns.
+3. **Preserved baseline:** two battlemage schools, competence order, six-year model, five-person standard, twelve blocks, daily rhythm, seven-factor scholarship profile, functional uniform, lab/live-target unknowns and the removed failure-to-Undie route are retained.
+4. **Accepted additions:** professional reliability; DI doctrine and reduced direct control; distinct authority domains; whole-chain power restriction; delegated/rotating mission command; structured orders; differentiated error assessment and integrity; supervised professional-unit exposure in year 6; functional organization. Broader institutional-design principles retain the source's Academy/forward-design scope.
+5. **MC4 boundary:** source section 13 is applied in `60`; identity, biology, legacy quarantine and information-access unknowns remain unchanged. Academy doctrine now routes to `65`.
+6. **Open items:** all twenty unknowns from source section 16 remain open. Earlier entry-age, map, curriculum-gate, group-size, scholarship, quality and lab unknowns remain open; AF-OPEN-020–023 are rerouted and AF-AC-001 records new implementation questions. No automatic closure or Marine Corps organization import occurs.
+7. **Provenance:** the military-training delta is preserved byte-exact in `Source_Archive/aetherfire_battlemage_academy_military_training_canon_delta_2026-09-25.md`; the inbox original is retained. Historical archive inventory in the manifest remains a historical snapshot; this new admission is recorded here.
+8. **Excluded decisions:** MC2 sacrifice/rescue proposals and historical RP events are not admitted by this approval.
+
 ## Stable aviation and RF airspace integration — 2026-09-17
 
 1. **Source priority:** `aetherfire_stable_aviation_rf_airspace_control_canon_delta_2026-09-16.md` controls AF stable/scalable aviation, AF–RF aviation dependency, RF airspace/ATC/economy separation, mixed airspace and air-route leverage within its declared scope.

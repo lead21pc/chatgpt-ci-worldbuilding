@@ -2,3 +2,5 @@
 .gitattributes -text
 *.md -text
 build_consolidation.ps1 -text
+# This byte-exact source retains Markdown hard breaks from the approved input.
+Source_Archive/aetherfire_battlemage_academy_military_training_canon_delta_2026-09-25.md whitespace=-blank-at-eol

@@ -162,7 +162,7 @@ class MaintenanceTests(unittest.TestCase):
         self.rejected_without_writes()
 
     def test_unknown_current_source_not_admitted(self):
-        data = (self.root / tool.MODULE_FILES[0]).read_bytes().replace(b'AFM-001', b'AFM-009')
+        data = (self.root / tool.MODULE_FILES[0]).read_bytes().replace(b'AFM-001', b'AFM-999')
         (self.root / 'unexpected.md').write_bytes(data)
         self.rejected_without_writes()
 
