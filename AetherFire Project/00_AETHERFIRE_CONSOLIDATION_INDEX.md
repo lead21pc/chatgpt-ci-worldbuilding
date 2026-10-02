@@ -1,7 +1,7 @@
 # AetherFire — Consolidation Index
 
 > **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-09-17
-> **Location:** self-contained `AetherFire Project/` package. Current root files are maintained current sources; `Source_Archive/` preserves historical/provenance material only.
+> **Location:** maintained GitHub authoring package with a hot Project upload profile and pinned external cold storage declared below. Storage location does not change source authority; `Source_Archive/` preserves historical/provenance material only.
 > **Truth rule:** `ABSENCE OF CANON ≠ CANONICAL NEGATION`; `NOT ESTABLISHED ≠ FALSE`; unresolved relations remain `UNKNOWN / UNRESOLVED`.
 
 ## 1. Canonical reading order
@@ -162,3 +162,41 @@ STATUS
 ## 10. Rollback
 
 Use Git revert/history to roll back the project package. Maintain current root files directly; `Source_Archive/` preserves historical/provenance material and is not a current build input or regeneration authority.
+
+## External cold storage declaration
+
+> Storage only; not canon admission, overlay activation or a second Router.
+> Cold repository: `lead21pc/chatgpt-ci-versioning`
+> Cold path: `AetherFire Project/Cold Storage/AETHERFIRE_COLD_PACKAGE.md`
+> Cold ref: `e2b2485b5af784410941bb1692d25f03b9bd9d04`
+> Cold generation: `3859d2f48a9865d579e5a2a12dd8ae37373257d5af374a37172499e7944157d2`
+> Cold SHA-256: `24ad88ac78c7d458fc835ebba030cbff8f07168a0bdc306c3fe18bea59e83f2e`
+> Cold bytes: `261454`
+
+Use only this exact package version when a task requires a logical source below.
+Freeze the declaration for the current task; reuse complete validated contents by
+repository + path + ref. No dependency means no fetch. Package loaded does not
+activate all overlays. A mixed/history source retains all original status and
+priority boundaries; 91 remains reconciliation/control, not normal current canon.
+The Router's FULL_FILE, reconciliation, overlay and failure gates still apply.
+A mismatch with the package generation/digest or the hot-source fingerprints blocks
+dependent work. Do not follow main, resolve newer overlay versions, or fetch these
+identities individually. If complete retrieval/validation cannot be established,
+block required cold work; name optional unverified scope. No cross-chat cache.
+
+| Logical source identity | GitHub authoring path relative to AetherFire Project/ | Preserved role |
+| --- | --- | --- |
+| `91_RECONCILIATION_RECORD.md` | `91_RECONCILIATION_RECORD.md` | `RECONCILIATION` |
+| `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` | `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` | `MIXED_HISTORY` |
+| `AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md` | `Anti-Drift Source/AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md` | `OVERLAY` |
+| `AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md` | `Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md` | `OVERLAY` |
+| `AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v1.1.md` | `Anti-Drift Source/AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v1.1.md` | `OVERLAY` |
+| `AetherFire_Anti_Drift_Total_War_RP_v1.1.md` | `Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md` | `OVERLAY` |
+| `AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.1.md` | `Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.1.md` | `OVERLAY` |
+
+Original paths remain valid logical/provenance references. Their standalone copies
+are maintained on GitHub to preserve existing authoring and hash checks; exclude
+all seven from ChatGPT Project uploads. Do not upload the cold package itself.
+Keep 00, 92, all eight current modules and the active compatible Router as hot
+Project sources. The installed CI remains a separate instruction surface. GitHub
+commit/publication does not remove or install files in a live ChatGPT Project.
