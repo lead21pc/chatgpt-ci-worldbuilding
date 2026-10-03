@@ -1,12 +1,13 @@
 # AetherFire — Consolidation Index
 
-> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-10-02
+> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-10-03
 > **Location:** self-contained `AetherFire Project/` package. Current root files are maintained current sources; `Source_Archive/` preserves historical/provenance material only.
 > **Truth rule:** `ABSENCE OF CANON ≠ CANONICAL NEGATION`; `NOT ESTABLISHED ≠ FALSE`; unresolved relations remain `UNKNOWN / UNRESOLVED`.
 
 ## 1. Canonical reading order
 
 1. `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` — project identity, state, institutions, geopolitics and dynastic conflict.
+   - `15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` — shared technology/service interfaces, personal terminal, Guest Pass, prepaid wallet, deposit and device lifecycle; implementation unknowns remain open.
 2. `20_STATUS_CIVIL_LABOR_CURRENT.md` — status ontology, Citizen/Civil/Yellow/POW/Criminal, Civil entry/allocation/lifecycle and cross-status mobility.
 3. `30_UNDIE_SYSTEM_CURRENT.md` — Undie identity, intake, consent, Undie ranks, mobility, White, work/economy/access and Undi visual system.
 4. `40_METAFICTION_CANON_TIMELINE_CURRENT.md` — Fiction 0/Fiction 1, Fictionize/POC, V0.5, Canon 1/Canon 2, both clashes, causal overlap and knowledge asymmetry.
@@ -38,6 +39,7 @@
 | `AFM-007` | `70_MATRIARCHS_LAMENT_CURRENT.md` |
 | `AFM-008` | `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` |
 | `AFM-009` | `65_BATTLEMAGE_ACADEMY_CURRENT.md` |
+| `AFM-010` | `15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` |
 
 <!-- END GENERATED MODULE CATALOG -->
 
@@ -72,6 +74,10 @@ AETHERFIRE CURRENT CANON
    └─ MC4 identity, dual biological/cognitive configurations and Academy membership
 
 CHILD CURRENT-CANON DOMAIN
+├─ Technology / public-service infrastructure [15]
+│  ├─ removable terminal / private and contextual interfaces
+│  ├─ Guest Pass / wallet / deposit / return and loss lifecycle
+│  └─ implementation, ownership and deployment unknowns
 ├─ Battlemage Academy [65]
 │  ├─ internal organization / DI / consultant / authority domains
 │  ├─ six-year training / five-person teams / twelve competency blocks

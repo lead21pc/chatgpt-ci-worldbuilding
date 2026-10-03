@@ -101,6 +101,14 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | AF-ML-002 | RESOLVED | Trần Trúc Nha's ML membership and regional role are current canon; her proposed summoned/cross-world origin is `UNDER CONSTRUCTION / NOT CURRENT CANON`. |
 | AF-OPEN-032 / AF-ML-009 | RESOLVED / REMOVED | `foreign spy / infiltrator → punitive Undie` is removed from current canon and reconsideration because it no longer fits the political-centric setting. Archived occurrence is provenance only; replacement legal/status handling remains `UNKNOWN`. |
 
-## 9. Scope boundary
+## 9. Institution/technology/guest-service implementation — 2026-10-03
 
-This compact register carries the material open items recorded by the current reconciliation layer. It does not replace local `UNKNOWN` sections inside current-domain files `10`–`80` (including `65`), and it is not proof that no other unknown exists. When a domain file exposes another relevant unknown, preserve it and route to the full reconciliation record if provenance is needed.
+| ID | Type / state | Open issue | Required baseline and dependency |
+| --- | --- | --- | --- |
+| AF-TECH-001 | UNKNOWN / OPEN | Terminal appearance/material, wearer authentication, retina/body-link/consent/deactivation, private audio, energy, foreign-currency settlement, wallet denomination, unused balance, lost/damaged deposit and wallet recovery, guest access/legal recognition/exit after revoke, responsible agencies, privacy/retention, offline continuity, deposit values and future Undie hardware relation. | `15` section 9 retains all fifteen source groups and AF-NEW-002/007; `20` controls status. AF-OPEN-006/008/014 remain open. Locking a device does not erase money/status or resolve exit rights. |
+| AF-TECH-002 | UNKNOWN / OPEN | Industrial energy, possible future nano mechanism, standards authority, ID/payment ownership, data architecture, backend concentration, privacy/data rights, cybersecurity, robot/android production, automation share, rare materials, device/aircraft costs, procurement, banking/currency/public finance and inter-sector technology gaps. | `15` section 9 retains fifteen source groups; `80` controls aviation. Historical nano is not accepted canon and industry-scale inference does not close these items. |
+| AF-STATE-001 | UNKNOWN / OPEN | Domain-specific lawmaking/interpretation/enforcement/veto; Parliament budget/appointment/investigation powers; Crown rights; security data-sharing; recognition of civil/professional groups; lawful opposition boundary; infrastructure ownership; standards/operations authority across ID/payment/aviation/security; infrastructure funding; material/manpower/energy/political bottlenecks. | `10` section 5.1; ten State Notes questions preserved. Multipolar power does not establish constitutional precedence, agency mandates or universal high state capacity. |
+
+## 10. Scope boundary
+
+This compact register carries the material open items recorded by the current reconciliation layer. It does not replace local `UNKNOWN` sections inside current-domain files `10`–`80` (including `15` and `65`), and it is not proof that no other unknown exists. When a domain file exposes another relevant unknown, preserve it and route to the full reconciliation record if provenance is needed.

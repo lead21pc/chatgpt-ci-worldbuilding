@@ -2,6 +2,70 @@
 
 > Preserved as a separate temporal layer. `DESIGN HISTORY`, `RETIRED`, `SURVIVING LEGACY`, `UNDER CONSIDERATION`, `CURRENT CANON` and `UNKNOWN` retain their original meanings. Nothing in this file becomes current canon merely because it appears here.
 
+## Genealogy, thể chế và công nghệ — xử lý chọn lọc 2026-10-03
+
+> **DESIGN HISTORY / ANALYTICAL INFERENCE / PROPOSAL — NOT CURRENT CANON.** Các ghi chú State Institution Model, Technology Infrastructure và Undie Design History Genealogy ngày 2026-10-03 được xử lý tại đây. Bản nguồn byte-exact và SHA-256 được ghi trong `91`; lưu trữ không phục hồi mọi khẳng định làm canon. Phần chức năng Terminal/Guest Pass đã được chấp nhận chỉ có hiệu lực theo bản đã đối chiếu trong `15`; khung thể chế có giới hạn nằm ở `10` §5.1.
+
+### Hệ Undie gốc và hệ hiện hành không cùng triết lý nền
+
+**USER-PROVIDED DESIGN HISTORY:** hệ gốc là nghề bị xã hội dị nghị nhưng có chuyên môn, thu nhập cao, uy tín và cộng đồng nghề; so sánh thu nhập với porn actor ngoài đời là cách diễn đạt lịch sử, không phải số liệu kinh tế canon. Nó không được thiết kế như humiliation có chủ ý của nhà nước.
+
+**CURRENT BOUNDARY:** `30` vẫn kiểm soát class, social tier, chức năng humiliation chính trị, loyalty/resistance và public readability của Undi/apparatus. Prestige nghề nghiệp không xóa legal class hoặc đổi Undie thành một nghề tự do. Purple/Hazel hiện thuộc Undie nhưng ở social tier Trí thức; uy tín giáo dục hiện hành không tự chứng minh đại diện chính trị.
+
+### Governance và trung gian xã hội trong bản gốc
+
+**DESIGN HISTORY:** SOP, protocol, fail-safe, backup, security, entry, training, adaptation, vận hành, lấy ý kiến và Purple thường trực trong committee đại diện Undie. Diễn giải chúng như tự quản nghề nghiệp có giới hạn là **ANALYTICAL INFERENCE**, không chứng minh chủ quyền hoặc quyền đại diện hiện hành.
+
+**DESIGN HISTORY:** biểu tình ôn hòa, tổ chức dân sự cải thiện đời sống Undie, nhóm được/không được phê chuẩn và nhà nước đôi khi nhượng bộ để giảm áp lực dư luận. Đây không tự xác lập luật biểu tình, cơ chế công nhận tổ chức hoặc mọi quyền phản đối. Các quan hệ phản đối tôn giáo/ML đã có trong `10`/`70` giữ phạm vi riêng, không đồng nhất với toàn bộ genealogy này.
+
+**PROPOSAL:** `state ↔ intermediary institution ↔ represented group` có thể là hướng phát triển cho hiệp hội nghề nghiệp, merchant organization, House, Temple hoặc cộng đồng chức năng. Chưa chốt tổ chức nào tồn tại theo mô hình này, ai quản trị, quyền đại diện hay khả năng veto. Purple committee chưa được phục hồi.
+
+### White, merchant và House
+
+**DESIGN HISTORY:** merchant có thể hối lộ official để tái phân bổ White tới House nơi mình đầu tư, tăng lợi nhuận/prestige và lợi ích nhà đầu tư.
+
+**ANALYTICAL INFERENCE:** White lịch sử có thể là high-value labor, prestige/revenue asset, patronage resource, corruption target và cầu nối vốn tư nhân–bureaucracy. House có thể được đọc như tổ hợp dịch vụ, salon/xã hội, quản trị nghề, đầu tư, mạng patronage và kết nối merchant–official–khách hàng. Các vai trò suy ra này không tự tạo pháp nhân, quyền phân bổ hoặc cơ chế White hiện hành; `30` tiếp tục kiểm soát White mobility/exit.
+
+`House` nghề nghiệp/cơ sở dịch vụ trong genealogy không mặc nhiên là `noble House` của ghi chú phân tích thể chế. Chung tên không đủ nhập cùng thực thể, chủ sở hữu, cơ cấu quản trị hoặc quan hệ cha–con.
+
+### Collar và Undi lịch sử — sửa phân loại nền canon
+
+**DESIGN HISTORY:** collar từng liên kết mua hàng/siêu thị/vending, payment, blacklist recognition, cảnh báo khách có tiền sử bạo lực, AI safety và trigger trợ giúp. Các chức năng retail/payment/blacklist/AI-safety chưa được phục hồi cho collar hiện hành bởi lần nhập này.
+
+**CURRENT BOUNDARY:** hai ghi chú mới mô tả thiếu baseline hiện hành nếu chỉ liệt kê ID/access/movement/task/enforcement. `30` §18–20 đã chốt mail/user information, retina có phần tích hợp vào cơ thể, bone-integrated audio command, gọi an ninh khẩn cấp một chiều khi bị quấy rối ngoài workline, Pink communication có giới hạn và commission forum. Không hạ các chức năng này thành genealogy; emergency trigger rộng của hệ gốc cũng không xóa điều kiện hiện hành.
+
+**DESIGN HISTORY:** Undi nanofabric chống xé/rách, dùng tạm như băng/bông sơ cứu, self-repair khi core còn hoạt động. Current clothing chỉ xác lập khả năng vận hành, vệ sinh, độ bền, chỉnh trang, đồ vệ sinh cá nhân và quản trị sức khỏe. Không nhập cơ chế nano, self-heal hoặc medical reuse vào `30`.
+
+### TE genealogy không thay quan hệ hiện hành
+
+**DESIGN HISTORY:** TE tách từ old Undie gravity well, từng có genealogy “Las Vegas cho Undie”, entertainment/vice economy, trò chính trị, chuốc say/gài người, nhảy/quỵt hóa đơn, dùng biểu diễn/tình huống nhạy cảm hay quan hệ tình dục/tống tình để khai thác access.
+
+**ANALYTICAL INFERENCE:** đây là một nhánh genealogy entertainment/access/intelligence, không chứng minh current TE giữ những cơ chế đó. Current AF→TE transfer chỉ có hiệu lực trong phạm vi `30`/`70`; AF-ML-007 vẫn giữ legal mechanism, consent, selection, post-transfer status và exit/return là `UNKNOWN`. Không phục hồi punitive spy→Undie hoặc Academy failure→Undie.
+
+### Suy luận nền công nghiệp — có điều kiện, không phải capability đã chốt
+
+Nếu các công nghệ lịch sử thực sự vận hành đại trà, có thể nghiên cứu năng lực sản xuất/kiểm định/phân phối/bảo trì/thay thế, vật liệu/core/linh kiện/năng lượng, nhân lực kỹ thuật, authentication/payment/access/incident interfaces và dữ liệu sự cố. Đây là **ANALYTICAL INFERENCE có tiền đề lịch sử**, không xác lập loại nhà máy, ngành nghề, agency, sản lượng hay chi phí hiện hành.
+
+Interoperability không chứng minh database toàn năng hoặc network quốc gia công hữu. Backend ngành, thương mại hoặc cục bộ vẫn là khả năng chưa loại trừ; chức năng mua hàng của collar cũ không đủ chứng minh một nền hạ tầng quốc gia chung.
+
+Không dùng câu “không thể dựa vào vài thiên tài chế tác thủ công” làm định luật: magitech production mechanism chưa chốt. Không dùng `occupational ≤ common national ≤ strategic infrastructure` làm thứ bậc bắt buộc, kể cả về maturity/maintenance; đầu tư đặc thù có thể không đồng đều. Nanofabric lịch sử không chứng minh phiên bản quân sự/y tế/dân dụng tương đương đã tồn tại.
+
+Các nhận định công nghệ đủ rẻ, hàng hóa hóa, mass-deployed hoặc công nghiệp magitech mạnh toàn diện chỉ là **hướng phân tích/thiết kế**, không chốt sự thật mọi ngành từ aviation. Danh mục identity/payment/data/materials/robotics/compatibility/manufacturing/maintenance/logistics/safety là nhóm capability để cân nhắc, không phải mười cơ quan hoặc mười capability quốc gia đã được xác lập.
+
+### Đọc nhà nước theo nhiều trục, không tự viết hiến pháp
+
+`10` §5.1 chấp nhận tách hình thức quốc gia, cấu trúc quyền lực, năng lực vận hành và độ gắn kết chính trị. Mô tả “nền công nghiệp magitech mức cao, hành chính–kỹ thuật mạnh trên toàn hệ thống” vẫn là **ANALYTICAL SYNTHESIS**, không phải nhãn thể chế hoặc kết quả đo năng lực canon.
+
+Tách formal authority với informal influence là **khung phân tích**. Crown/Parliament/agencies/military/judiciary/diplomacy/security cần đọc theo current source; noble Houses, merchant capital, investment, patronage, bribery, civil/professional organizations, religious legitimacy, public opinion, black market và foreign ties trong ghi chú không tự chốt toàn bộ network tương tác hiện hành.
+
+Đề xuất phân bố lại chức năng collar→ID/payment, safety→occupational/public safety, Purple→representation, White→commerce/bureaucracy, SOP→professional standards, nano→materials/medical, training→vocational education và TE→entertainment/intelligence vẫn là **PROPOSAL** ngoài phần Terminal/Guest Pass đã được chấp nhận. Nó không đổi Undie thành nghề tự do, gán sở hữu hệ thống quốc gia hoặc phục hồi nano/Purple/White/TE mechanisms.
+
+### Trạng thái proposal Terminal sau chốt
+
+Nguồn Terminal nguyên văn vẫn là working proposal. Bản hiện hành trong `15` nhận functional model có giới hạn: removable core/dock, private/contextual UI direction, Guest Pass không phải status, ví/đặt cọc/access tách riêng, QR request, vending minimal claims, return/refund entitlement và lost-device revocation.
+
+Lựa chọn deposit mới khi cấp replacement và giữ deposit cũ theo điều kiện trả thiết bị chưa chốt. Chuyển retina/bone audio sang removable guest hardware chưa có implementation. Hoàn deposit cùng nominal denomination không tự giải quyết toàn bộ ngoại hối. Khóa credential không đồng nghĩa mất số dư/legal status/right of exit; exit ordering và recovery vẫn mở. Không đọc dòng tóm tắt của proposal để vượt các giới hạn này.
+
 ## Regional supersession notice — 2026-09-11
 
 - Quad Night and the old four-member-state model are retired.

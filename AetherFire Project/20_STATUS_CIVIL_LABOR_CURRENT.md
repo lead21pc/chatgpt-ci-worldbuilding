@@ -4,7 +4,7 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: Status ontology, Citizen, Civil, Yellow, POW, Criminal, Civil entry/allocation/lifecycle, labor, and cross-status transitions.
 > Authority boundary: Controls legal/civic status ontology and Civil/labor interfaces within its declared scope.
-> Cross-domain owner boundary: Detailed Undie internal ranks, intake, mobility, work/access, White, and Undi visual systems are controlled by `AFM-003`.
+> Cross-domain owner boundary: Detailed Undie internal ranks, intake, mobility, work/access, White, and Undi visual systems are controlled by `AFM-003`; shared Terminal/Guest Pass service architecture by `AFM-010` without replacing this module's status and economic-namespace authority.
 > Load mode: `FULL_FILE`
 
 > **Domain:** status ontology, social hierarchy, Citizen/Civil/Yellow/POW/Criminal, Civil entry/allocation/lifecycle, cross-status transitions and shared economic/access namespaces.  
@@ -12,6 +12,12 @@
 > **Terminology retcon — 2026-09-09:** within the Undie domain, unqualified `rank` means the Red/Scarlet/Pink/Gray/Purple/Hazel/White functional-role axis. `Career Rank` remains the separate Entry/Intermediate/Support/Advanced/Ultimate axis. Older source wording has been normalized to `Undie rank` in this derived current-canon file.
 
 ## Part I — Resolved status and ontology map
+
+### Guest-service interface — accepted 2026-10-03
+
+`15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` controls the removable terminal and Guest Pass functional model. Guest Pass is a temporary credential/access/service profile, not a legal status, class, Citizen/Civil conversion, or immigration/residency entitlement. Device Deposit, Guest Wallet and Access Profile remain separate objects; a terminal is not an account or access authority.
+
+Guest Wallet has an explicitly named financial variable, not Undie Credit Score/Line or the unresolved bare `credit` field. AF-OPEN-006, AF-OPEN-008 and AF-OPEN-014 remain open. Guest access, legal recognition and recovery/exit after device loss/return are not inferred from existing Civil or Undie rules; AF-TECH-001 records these unknowns.
 
 ### AetherFire — Current Status & Ontology Map
 

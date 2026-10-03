@@ -4,3 +4,9 @@
 build_consolidation.ps1 -text
 # This byte-exact source retains Markdown hard breaks from the approved input.
 Source_Archive/aetherfire_battlemage_academy_military_training_canon_delta_2026-09-25.md whitespace=-blank-at-eol
+Source_Archive/AetherFire_MC2_RF_AF_Resistance_Strategic_Node_Analysis.md whitespace=-blank-at-eol
+Source_Archive/AetherFire_RP_Cu_Ba_Truc_Lich_Su_Va_De_Xuat.md whitespace=-blank-at-eol
+Source_Archive/AetherFire_Personal_Terminal_Guest_Pass_Design_Proposal.md whitespace=-blank-at-eol
+Source_Archive/AetherFire_State_Institution_Model_Working_Notes_2026-10-03.md whitespace=-blank-at-eol
+Source_Archive/AetherFire_Technology_Infrastructure_Working_Notes_2026-10-03.md whitespace=-blank-at-eol
+Source_Archive/AetherFire_Undie_Design_History_Genealogy_2026-10-03.md whitespace=-blank-at-eol

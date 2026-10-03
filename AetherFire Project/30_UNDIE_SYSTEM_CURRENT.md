@@ -4,7 +4,7 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: Undie class identity, intake, consent, Undie ranks, mobility, White, work/economy/access, geographic deployment, and Undi visual system.
 > Authority boundary: Controls detailed Undie and Undi canon within its declared scope.
-> Cross-domain owner boundary: General legal/civic status ontology and Civil, Criminal, POW, and Yellow boundaries are controlled by `AFM-002`; other cross-domain owners remain authoritative for their own declared facets.
+> Cross-domain owner boundary: General legal/civic status ontology and Civil, Criminal, POW, and Yellow boundaries are controlled by `AFM-002`; shared Terminal/Guest Pass service architecture by `AFM-010`; other cross-domain owners remain authoritative for their own declared facets.
 > Load mode: `FULL_FILE`
 
 > **Domain:** Undie class identity, social function, intake, consent, work obligations, Undie ranks, mobility, Credit Score, White, economy/access, geographic deployment and Undi visual system.  
@@ -1783,6 +1783,8 @@ Không được coi tín dụng này là tiền mặt đa dụng.
 ### 18. Collar / terminal / retina / audio
 
 **CANON**
+
+> **Interface boundary — 2026-10-03:** general removable-terminal and Guest Pass architecture is controlled by `15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md`. Technology extraction does not import Undie status/ranks, command authority, workline, movement restrictions or coercion into guest policy; nor does the new guest wallet establish payment/retail, blacklist or AI-safety functions for the current Undie collar. The body-integrated mechanisms below remain current; their adaptation to removable guest hardware is still `UNKNOWN`.
 
 Undie collar tích hợp terminal có:
 

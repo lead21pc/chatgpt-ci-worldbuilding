@@ -2,6 +2,30 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Selective institution/technology/Guest Pass admission — 2026-10-03
+
+1. **Decision:** user approved the preceding audit and selective merge proposal (AF-NEW-001–008), not the four inputs wholesale. Accept bounded institutional interpretation in `10`, Terminal/Guest Pass functional architecture in one new shared module, and genealogy/inference/proposals only in `90`. No blanket restoration of historical Undie/TE mechanisms.
+2. **Current owner:** `15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` / `AFM-010` is the maintained authority for shared terminal/guest-service architecture. `10` §5.1 controls bounded institutional interpretation; `20` retains status/economic namespaces, `30` Undie/collar/Undi, and `80` aviation. Prior domain facts remain effective outside these additions; no prior module is replaced wholesale.
+3. **Accepted functional model:** removable core/body dock; anti-snatch/wearer binding/device credential lock with safety breakaway; private retina/audio direction and contextual service UI; temporary Guest Pass/profile distinct from legal status; separate prepaid wallet/deposit/access; original-denomination nominal deposit refund; QR payment requests; vending minimum claims; return transaction preserving refund entitlement; lost-device credential revocation and possible profile-bound replacement. Present rollout, full access and engineering implementation are not inferred.
+4. **Preserved baseline:** retina, bone-integrated audio, the conditional one-way emergency call, Pink communication and commission forum remain current in `30`. Guest civilianization does not migrate Undie coercion, ranks, workline, movement restrictions, Credit Score/Line or the unresolved bare credit variable.
+5. **AF-NEW-001 — RESOLVED in maintained view:** corrected the under-described baseline in `15` §2 and `90` collar boundary without modifying original inputs. **AF-NEW-003/004/005/006/008 — RESOLVED as admission boundaries:** no compulsory technology-floor ranking, artisanal-production exclusion, universal state-capacity/cheapness inference, House entity collapse, historic-mechanism restoration or complete-FX-resolution claim is adopted. This does not resolve the underlying unknown industrial/legal implementation.
+6. **AF-NEW-002/007 — UNKNOWN / OPEN:** retinal/audio adaptation and service/exit continuity after loss/return/revoke are explicitly preserved in `15` §§3/8/9. `92` AF-TECH-001 carries these plus the source's fifteen terminal unknowns; AF-TECH-002 carries fifteen industrial unknown groups; AF-STATE-001 carries ten institutional questions. Existing AF-OPEN-006/008/014 and AF-ML-007 remain open.
+7. **Not accepted as current:** Purple committee/representation, White bribery/reallocation, nanofabric/self-repair/first-aid, TE vice mechanisms, broader intermediary institutions and the history-derived national infrastructure hierarchy. Replacement-deposit accounting is a candidate, not a closed rule. The Kingdom POT contributes a locally accepted contextual-interface seed only; no other project's ontology/implementation is imported.
+8. **Provenance / hashes:** each input is retained byte-exact; its original status and superseded/overbroad wording cannot override this record and the accepted current views:
+   - `AetherFire_Personal_Terminal_Guest_Pass_Design_Proposal.md`: `77E98E8A4F259744A8512DB5E575D38C0CE79A69CAEAE685B254386106DFC0FA`.
+   - `AetherFire_State_Institution_Model_Working_Notes_2026-10-03.md`: `C27728742F2A67C88DB686EB903B273A12B16DDC286D0BEF86944D8DA00C2B56`.
+   - `AetherFire_Technology_Infrastructure_Working_Notes_2026-10-03.md`: `2D6A2821A224276C45826057C044714CF55087ACEFE02133355614C2F1885A7A`.
+   - `AetherFire_Undie_Design_History_Genealogy_2026-10-03.md`: `9A83824437CF6174A4E2713E2F7AE3132FD70D9F25889A7151C643E5E433E244`.
+9. **Inbox lifecycle — completed:** after reading and verifying the accepted output, all four fully classified inputs moved byte-exact from `New Canon and Consideration` to `Source_Archive`; their hashes match the pre-edit inbox snapshot. This records processing of their proposal/history content, not wholesale canon admission. Historical archive inventory stays a historical snapshot; source hashes above record this admission. The inbox directory is retained for future inputs.
+10. **Verified next baseline:** `15` is the accepted terminal/guest view; `10` §5.1 the institutional interpretation; `90` the classified history/proposal view; `92` the remaining questions. These actual files were read and compared with the approved scope. Maintenance check and 22 disposable-copy tests passed; isolated metadata synchronization was byte-idempotent. Unchanged domain sources retain their earlier authority. This verifies repository structure/content, not live ChatGPT behavior or a complete guest-system implementation. `build_consolidation.py` does not regenerate lore from archives.
+
+## Explicit inbox archival — 2026-10-02
+
+- At the user's explicit request, `AetherFire_MC2_RF_AF_Resistance_Strategic_Node_Analysis.md` and `AetherFire_RP_Cu_Ba_Truc_Lich_Su_Va_De_Xuat.md` are moved byte-exact from the inbox into `Source_Archive` and staged.
+- This is an archival exception to the normal inbox lifecycle, not canon admission or acceptance of either file's proposals. Their prior analysis/history/proposal states and unresolved questions remain unchanged.
+- MC2 source SHA-256: `94436FA2E127CDFAB52837F045FF65B5ED7A884E6B11C6D0DA6D463A4F1967CF`.
+- RP source SHA-256: `F45ECFDB4F84D22DA24DC558541AB7521D83E2D5DEA9D8BD87A642C3530EAD04`.
+
 ## Academy domain split and military-training integration — 2026-10-02
 
 1. **Acceptance:** the user approved the dedicated Academy source and consolidation of the existing Academy canon with the 2026-09-25 military-training delta.
@@ -10,8 +34,9 @@
 4. **Accepted additions:** professional reliability; DI doctrine and reduced direct control; distinct authority domains; whole-chain power restriction; delegated/rotating mission command; structured orders; differentiated error assessment and integrity; supervised professional-unit exposure in year 6; functional organization. Broader institutional-design principles retain the source's Academy/forward-design scope.
 5. **MC4 boundary:** source section 13 is applied in `60`; identity, biology, legacy quarantine and information-access unknowns remain unchanged. Academy doctrine now routes to `65`.
 6. **Open items:** all twenty unknowns from source section 16 remain open. Earlier entry-age, map, curriculum-gate, group-size, scholarship, quality and lab unknowns remain open; AF-OPEN-020–023 are rerouted and AF-AC-001 records new implementation questions. No automatic closure or Marine Corps organization import occurs.
-7. **Provenance:** the military-training delta is preserved byte-exact in `Source_Archive/aetherfire_battlemage_academy_military_training_canon_delta_2026-09-25.md`; the inbox original is retained. Historical archive inventory in the manifest remains a historical snapshot; this new admission is recorded here.
+7. **Provenance:** the military-training delta is preserved byte-exact in `Source_Archive/aetherfire_battlemage_academy_military_training_canon_delta_2026-09-25.md`. After user-approved inbox cleanup, the identical untracked inbox copy is removed; the archived source remains recoverable through Git. Historical archive inventory in the manifest remains a historical snapshot; this new admission is recorded here.
 8. **Excluded decisions:** MC2 sacrifice/rescue proposals and historical RP events are not admitted by this approval.
+9. **Inbox lifecycle — user-approved:** after a source has been accepted and its approved content verified in the maintained lore, move it byte-exact from `New Canon and Consideration` to `Source_Archive` and stage the task-owned changes. If an identical archived copy already exists, retain that copy and remove the duplicate inbox copy. Sources with unprocessed or unapproved candidate content remain in the inbox; accepted sources may retain explicitly preserved `UNKNOWN` items.
 
 ## Stable aviation and RF airspace integration — 2026-09-17
 

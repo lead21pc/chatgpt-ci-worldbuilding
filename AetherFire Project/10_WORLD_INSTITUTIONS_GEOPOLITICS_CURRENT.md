@@ -4,7 +4,7 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: AetherFire world state, institutions, geopolitics, foreign relations, global interfaces, and Academy institutional context.
 > Authority boundary: Controls global, institutional, and geopolitical canon except detailed domains explicitly controlled by another accepted current module.
-> Cross-domain owner boundary: Detailed Matriarch's Lament canon is controlled by `AFM-007`; detailed stable aviation and RF-airspace canon by `AFM-008`; metafiction detail by `AFM-004`; MC4 identity detail by `AFM-006`; internal Academy institutional and training canon by `AFM-009`.
+> Cross-domain owner boundary: Detailed Matriarch's Lament canon is controlled by `AFM-007`; detailed stable aviation and RF-airspace canon by `AFM-008`; metafiction detail by `AFM-004`; MC4 identity detail by `AFM-006`; internal Academy institutional and training canon by `AFM-009`; shared technology/service and Terminal/Guest Pass architecture by `AFM-010`.
 > Load mode: `FULL_FILE`
 
 > Consolidated current-domain view. Detailed Citizen/Civil/Undie material was moved to sibling files. Design genealogy remains in `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md`.  
@@ -521,6 +521,20 @@ Các actor/thể chế đã được xác nhận gồm:
 Quyền lực và thẩm quyền không tập trung tuyệt đối ở một node.
 
 Các subsystem có thể có lợi ích tổ chức riêng và không được mặc định cùng một mục tiêu chỉ vì cùng thuộc nhà nước.
+
+### 5.1 Khung đọc thể chế — chốt có giới hạn 2026-10-03
+
+**CANON / DESIGN-INTERPRETATION ĐÃ ĐƯỢC USER XÁC NHẬN**
+
+Tách bốn trục: hình thức quốc gia, cấu trúc quyền lực, năng lực vận hành và độ gắn kết chính trị. AetherFire là đế quốc có quyền lực đa cực; nghị viện có quyền lực thực. Cạnh tranh phe phái hoặc bất ổn chính trị không tự chứng minh mọi năng lực nhà nước thấp, cũng không chứng minh mọi cơ quan vận hành hiệu quả.
+
+Stable/scalable aviation là bằng chứng trực tiếp về institutionalized reliability trong miền hàng không (`80`), không phải bằng chứng mọi địa phương/dịch vụ đều có cùng mức năng lực, chi phí hoặc phổ cập. Phương thức sản xuất và giới hạn tài nguyên không được suy từ genealogy.
+
+Exact constitutional precedence, quyền làm luật/diễn giải/thi hành/veto, ngân sách/bổ nhiệm/điều tra và chuỗi thẩm quyền cuối cùng vẫn `UNKNOWN`. Không áp một nhãn hiến pháp Trái Đất cụ thể hoặc phân quyền mới chỉ từ khung phân tích này.
+
+`15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` kiểm soát mô hình Terminal/Guest Pass và giao diện dịch vụ chung. Nó không xác lập một cơ quan/database quốc gia duy nhất; ownership và quyền quản trị vẫn mở. `20` kiểm soát legal status; Guest Pass không tạo class hoặc quyền nhập cảnh/cư trú mới.
+
+Các mô hình trung gian xã hội, noble Houses, House nghề nghiệp, patronage và đại diện Purple được phân loại tại `90`; tên `House` chung không chứng minh chúng là cùng một tổ chức. AF-STATE-001 trong `92` giữ các câu hỏi thể chế chưa chốt.
 
 ---
 

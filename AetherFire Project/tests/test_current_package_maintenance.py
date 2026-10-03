@@ -76,6 +76,29 @@ class MaintenanceTests(unittest.TestCase):
             self.assertEqual(hashes[name], hashlib.sha256(before[name]).hexdigest().upper())
         self.assertNotIn(tool.MANIFEST, hashes)
 
+    def test_technology_module_admission_and_owner_boundary(self):
+        name = '15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md'
+        self.assertEqual(tool.ACCEPTED['AFM-010'], name)
+        values = tool.header((self.root / name).read_bytes(), name)
+        self.assertEqual(values['Module ID'], 'AFM-010')
+        for owner in ('AFM-001', 'AFM-002', 'AFM-003', 'AFM-008'):
+            self.assertIn(owner, values['Cross-domain owner boundary'])
+        self.sync()
+        self.assertEqual(self.run_cli('--check').returncode, 0)
+
+    def test_guest_admission_preserves_explicit_open_boundaries(self):
+        text = (self.root / tool.ACCEPTED['AFM-010']).read_text(encoding='utf-8')
+        for marker in ('AF-TECH-001', 'AF-TECH-002', 'AF-OPEN-006',
+                       'Guest Wallet denomination', 'Offline behavior',
+                       'candidate accounting', '500', 'UNKNOWN'):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+        ledger = (self.root / '92_OPEN_ISSUES_CURRENT.md').read_text(encoding='utf-8')
+        for marker in ('AF-TECH-001', 'AF-TECH-002', 'AF-STATE-001',
+                       'AF-OPEN-006', 'AF-OPEN-008', 'AF-OPEN-014', 'AF-ML-007'):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, ledger)
+
     def test_generated_regions_only_and_archive_inventory_preserved(self):
         before = self.snapshot()
         self.sync()
