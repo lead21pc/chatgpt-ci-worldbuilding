@@ -4,12 +4,12 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: MC4 identity, biological/cognitive configurations, Academy membership, and legacy-import boundaries.
 > Authority boundary: Controls MC4 identity and configuration canon within its declared scope.
-> Cross-domain owner boundary: Academy institutional doctrine is controlled by `AFM-001`; metafiction and cross-world status are controlled by `AFM-004`.
+> Cross-domain owner boundary: Academy institutional doctrine is controlled by `AFM-009`; global and northeastern-site interfaces by `AFM-001`; metafiction and cross-world status are controlled by `AFM-004`.
 > Load mode: `FULL_FILE`
 
 > **Domain:** MC4 identity, biological/cognitive configurations, Academy membership and legacy-import boundaries.  
 > **Genealogy:** derived from `The Tainted Cosmos - MERGED.md`; genealogy does not import its cosmology, power scale, artifacts or history.  
-> **Institution boundary:** Academy doctrine is controlled by `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`.
+> **Institution boundary:** Academy doctrine is controlled by `65_BATTLEMAGE_ACADEMY_CURRENT.md`.
 
 ## 1. Current identity
 
@@ -59,6 +59,35 @@ unique biology
 
 Academy membership does not establish knowledge of the cult, geopolitics, the teleport gate or the lab. MC4–Lab, MC4–Cult, MC4–northern-powers and MC4–Mage-Council-authority relations remain `UNKNOWN / NOT ESTABLISHED` without a specific causal path.
 
+### MC4 trong hệ thống
+
+### CANON
+
+MC4 phải chịu cùng nguyên tắc:
+
+```text
+khả năng phân tích
+≠ quyền chỉ huy
+
+nhìn ra đáp án
+≠ truyền đạt thành công
+
+đặc tính sinh học
+≠ quyền vượt chuỗi thẩm quyền
+```
+
+Nếu MC4 nhận ra một nguy cơ nhưng:
+
+- không báo cáo;
+- báo cáo không đủ rõ;
+- báo sai kênh;
+- không cung cấp cơ sở cần thiết;
+- tự ý hành động ngoài quyền hạn;
+
+thì việc dự đoán đúng không tự động xóa lỗi quy trình hoặc trách nhiệm.
+
+Ngược lại, hệ thống cũng phải có khả năng ghi nhận rằng phán đoán chiến thuật của MC4 là đúng ngay cả khi cách truyền đạt hoặc thực hiện là sai.
+
 ## 5. Legacy quarantine
 
 - Legacy professional mastery is not imported into teenage MC4.
@@ -72,4 +101,4 @@ Academy membership does not establish knowledge of the cult, geopolitics, the te
 
 ## 6. Visual boundary
 
-MC4 follows the current functional Academy uniform standard. Legacy colors or visual tendencies may inform later personal accents only if they do not override protection, movement, spellcasting, equipment carriage or Academy standards.
+MC4 follows the current functional Academy uniform standard in `65_BATTLEMAGE_ACADEMY_CURRENT.md`. Legacy colors or visual tendencies may inform later personal accents only if they do not override protection, movement, spellcasting, equipment carriage or Academy standards.

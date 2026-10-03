@@ -19,6 +19,8 @@ MODULE_FILES = (
     '60_MC4_IDENTITY_CURRENT.md',
     '70_MATRIARCHS_LAMENT_CURRENT.md',
     '80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md',
+    '65_BATTLEMAGE_ACADEMY_CURRENT.md',
+    '15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md',
 )
 INDEX = '00_AETHERFIRE_CONSOLIDATION_INDEX.md'
 MANIFEST = 'MANIFEST.md'
@@ -260,7 +262,7 @@ def main(argv=None):
         inputs, changes = plan(root, write=args.write)
         if args.write:
             atomic_write(root, inputs, changes)
-        print('PASS: 8 current modules; 12 current hashes; archive not accessed. '
+        print(f'PASS: {len(MODULE_FILES)} current modules; {len(CURRENT_FILES)} current hashes; archive not accessed. '
               + (f'Updated: {", ".join(changes) or "none"}.' if args.write else 'Read-only check.'))
         return 0
     except (ValidationError, OSError, UnicodeError) as error:
