@@ -1,52 +1,108 @@
-> [!IMPORTANT]
-> **LLM / agent readers:** Read [`SYSTEM_CONTEXT.md`](./SYSTEM_CONTEXT.md) **before** analyzing this repository's architecture, project relationships, or authoring workflow. This is a personal, non-commercial worldbuilding hobby ecosystem; its three fiction projects are independent paracosms, and repository-visible state is not the full live/runtime/internal state.
-
 # ChatGPT CI Versioning Audit & Changelog
 
-Kho lưu trữ này ghi lại quá trình thiết kế, kiểm toán và version hóa **Custom Instructions (CI) cho ChatGPT**. `CI` ở đây có nghĩa là *Custom Instructions*, không phải Continuous Integration.
+This is a personal, non-commercial workspace for developing three independent fictional worlds: **AetherFire, The Kingdom, and The Academy**, with support from ChatGPT and Codex.
 
-Mục tiêu chính là lưu được cả lịch sử thay đổi lẫn lý do thiết kế: một rule xuất hiện để chặn failure mode nào, điều kiện nào kích hoạt nó, bản vá nào đã tạo hồi quy và kết quả nào mới chỉ đạt kiểm tra cấu trúc thay vì được chứng minh bằng hành vi thực tế.
+The repository contains externalized worldbuilding sources, instructions for working with those sources, design history, and supporting tools. Its source consolidation, routing, audits, regression checks, and Git workflows serve the author's creative work: preserving consistency, tracing decisions, managing revisions, and diagnosing recurring model failures.
 
-## Cảnh báo: đây không phải bộ cài đặt
+**Worldbuilding is the purpose. The engineering-like pipeline is supporting infrastructure.**
 
-**Repo này không cài đặt, kích hoạt, chèn hoặc tự động áp dụng bất kỳ chỉ dẫn nào vào ChatGPT, tài khoản hay thiết bị.** Các file chỉ là văn bản nghiên cứu, phiên bản thử nghiệm và tài liệu tham khảo.
+**CI** means **Custom Instructions**, not Continuous Integration. The repository name reflects its instruction-versioning history; its scope also includes the worldbuilding projects those instructions support. Global instructions may support general interaction as well as project work, while project-specific controls remain local to their respective worlds.
 
-Không có phiên bản nào được bảo đảm phù hợp cho mọi model, sản phẩm, tài khoản hoặc cách sử dụng. Hành vi thực tế còn có thể chịu ảnh hưởng của model, system instructions, personality, memory, lịch sử hội thoại, giới hạn gói và thay đổi từ nền tảng.
+> [!IMPORTANT]
+> **LLM / agent readers:** Read [SYSTEM_CONTEXT.md](./SYSTEM_CONTEXT.md) before analyzing the architecture, project relationships, or authoring workflow. Then follow the relevant project's sources and declared authority. Repository contents are a partial record of the author's worlds; they do not establish the full internal world model or the currently active ChatGPT Project configuration.
 
-Nếu sao chép, chỉnh sửa hoặc sử dụng bất kỳ CI nào trong repo, **người dùng tự chịu trách nhiệm và tự chấp nhận rủi ro**. Hãy đọc changelog, kiểm tra giới hạn ký tự, thử trong hội thoại có kiểm soát và giữ bản cũ để quay lại. Việc một file đạt kiểm tra độ dài, encoding hoặc cấu trúc không chứng minh model sẽ tuân thủ nó.
+## What the pipeline does
 
-> **English notice:** This repository does not install or automatically apply any instructions. Its files are research artifacts and experimental configurations. Copy, adapt, or use them at your own risk.
+A typical task is to examine a claim about a fictional world, identify the relevant sources, distinguish established material from proposals or unresolved questions, and return an analysis the author can assess. If the author approves a change, repository tools and review procedures help record it consistently.
 
-## Repo chứa những gì?
+Different parts of this workflow have different roles:
 
-- [`ChatGPT Plus+ Era`](./ChatGPT%20Plus+%20Era/) — các bản CI đầy đủ cho ngân sách ký tự lớn hơn; đây là nơi kiến trúc và guardrail thường được phát triển trước.
-- [`ChatGPT Go-Free Era`](./ChatGPT%20Go-Free%20Era/) — các bản chưng cất cho ngân sách ngắn hơn, ưu tiên giữ semantics cốt lõi thay vì sao chép nguyên văn bản đầy đủ.
-- [`CHANGELOG_VI.md`](./CHANGELOG_VI.md) và [`CHANGELOG.md`](./CHANGELOG.md) — lịch sử thay đổi bằng tiếng Việt và tiếng Anh.
-- [`CI_VERSIONING_AUDIT_VI.md`](./CI_VERSIONING_AUDIT_VI.md) — kiểm toán lineage, thay đổi rule và regression qua các phiên bản.
-- [`CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md`](./CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md) — triết lý kiến trúc và quan hệ giữa hai mục tiêu triển khai.
-- [`CI_FAILURE_MODES_AND_CONTROL_MODEL_VI.md`](./CI_FAILURE_MODES_AND_CONTROL_MODEL_VI.md) — bản đồ `trigger → diễn giải sai → failure → control → rủi ro còn lại → phép thử`.
-- [`Project CI`](./Project%20CI/) — CI chuyên biệt theo project. Chúng có phạm vi riêng và không mặc định được gộp vào global CI.
-- [`AetherFire Project`](./AetherFire%20Project/) — dữ liệu và tài liệu hợp nhất của một project worldbuilding dùng cùng phương pháp kiểm soát phạm vi; không phải phần mặc định của global CI.
+| Repository term | Role in the creative workflow |
+| --- | --- |
+| Project sources | Record externalized world knowledge, decisions, and unresolved questions, with authority defined by the project. |
+| Custom Instructions | Guide how the model interacts, reasons, and handles project material. |
+| Router | Guide which sources the model should consult for a task. |
+| Anti-drift controls | Address known ways the model can misread scope, authority, state, or causal relationships. |
+| Source consolidation and validation tools | Organize source material and check declared structural requirements. |
+| Regression checks | Check whether changes reintroduce known failures; what they prove depends on the kind of check performed. |
+| Git history and review | Preserve revision history, inspect changes, isolate experiments, and support rollback. |
 
-## Cách đọc trạng thái một phiên bản
+A pipeline diagram may describe author actions, model instructions, executable tooling, or feedback between them. It does not mean every step is automated. Running a repository check does not install instructions in ChatGPT, decide canon, or prove that a model will behave correctly.
 
-Repo phân biệt rõ:
+## How to distinguish this workflow from related repositories
 
-- **Kiểm tra cấu trúc:** độ dài, encoding, xuống dòng, phạm vi diff và sự hiện diện của rule.
-- **Bằng chứng hành vi:** đầu ra quan sát được trong phép thử có kiểm soát.
-- **Báo cáo của người dùng:** bằng chứng thực tế có giá trị, nhưng có thể chưa cô lập hết model, cấu hình, memory và lịch sử chat.
-- **Rủi ro hồi quy:** đường dẫn thất bại hợp lý từ câu chữ, chưa đồng nghĩa failure đã tái hiện.
+Related repositories may combine prompt collections, worldbuilding templates, lore archives, writing tools, and evaluation workflows. The distinctions below explain this repository's scope; they are not a claim that no other project uses similar methods.
 
-Một version mới là một giả thuyết hành vi có thể kiểm thử, không phải tuyên bố rằng mọi model sẽ phản hồi giống nhau.
+- **Instructions are part of an ongoing authoring workflow.** The repository records why a control was introduced, which failure it addresses, and what evidence supports it. A newer instruction file is a candidate to evaluate, not a universal upgrade.
+- **The fictional worlds are independent.** AetherFire, The Kingdom, and The Academy are not configurations of one shared worldbuilding template. Shared methods do not transfer canon, ontology, or source authority between them.
+- **The author retains creative authority.** Model output can support analysis and design, but plausible or repeated output does not become canon without the author's decision.
+- **The archive is a partial externalization.** A world can contain author-established material that has not yet been written into this repository. Missing documentation limits what a reader or model can conclude; it does not prove that an element does not exist.
+- **Controls respond to observed failures.** The infrastructure evolved through actual use, diagnosis, proposed repairs, review, and feedback. Its complexity should be assessed against the creative problem and recurring failure it addresses.
+- **Validation has explicit limits.** File checks, source-consistency checks, and live model behavior are different kinds of evidence. A structural pass does not establish a runtime pass.
 
-## Quy trình sử dụng được khuyến nghị
+Read this as an author's working environment for maintaining fictional worlds with LLM assistance. Evaluate each tool and control by how it supports that work.
 
-1. Đọc changelog và failure model trước khi chọn version.
-2. Chỉ sao chép đúng file CI mà bạn chủ động muốn thử; không coi toàn repo là một gói cấu hình.
-3. Giữ model, cài đặt, memory và prompt kiểm thử ổn định khi so sánh A/B.
-4. Thử cả chat mới lẫn hội thoại dài vì một số failure chỉ xuất hiện khi ngữ cảnh tích lũy.
-5. Lưu bản CI trước đó để có thể rollback ngay khi xuất hiện hồi quy.
+## Three independent worldbuilding projects
 
-## Tính độc lập và giới hạn
+| Project | Repository entry | Interpretation |
+| --- | --- | --- |
+| AetherFire | [AetherFire Project](./AetherFire%20Project/) | Its own sources, controls, and project-specific authority. |
+| The Kingdom | [The Kingdom](./The%20Kingdom/) | Its own world model and local rules; do not infer its architecture from AetherFire or The Academy. |
+| The Academy | [The Academy Project](./The%20Academy%20Project/) | Its own world model and source structure; shared terminology does not imply shared fictional objects. |
 
-Đây là repo nghiên cứu cá nhân, không phải dự án chính thức của OpenAI và không đại diện cho bảo đảm của ChatGPT. Tài liệu giải thích thiết kế không tự động có hiệu lực như instructions; chỉ nội dung thực sự được người dùng đưa vào trường Custom Instructions mới trở thành một phần của cấu hình do người dùng kiểm soát, trong phạm vi nền tảng cho phép.
+Each project's local documentation determines how to read its sources. Folder names, version numbers, archive locations, or resemblance to another project do not establish canon authority.
+
+## Repository map
+
+- [SYSTEM_CONTEXT.md](./SYSTEM_CONTEXT.md) — the authoring model, project boundaries, control responsibilities, and evidence rules.
+- [ChatGPT Plus+ Era](./ChatGPT%20Plus+%20Era/) — fuller Custom Instructions developed for larger character budgets.
+- [ChatGPT Go-Free Era](./ChatGPT%20Go-Free%20Era/) — condensed instructions for shorter budgets, preserving core meaning rather than copying the fuller text verbatim.
+- [Project CI](./Project%20CI/) — project-specific and concept-focused instructions. They are not automatically part of the Global CI.
+- [worldbuilding-ci-kernel](./worldbuilding-ci-kernel/) — reusable worldbuilding instruction material; reuse does not establish a shared canon.
+- [CHANGELOG.md](./CHANGELOG.md) and [CHANGELOG_VI.md](./CHANGELOG_VI.md) — revision history in English and Vietnamese.
+- [CI_VERSIONING_AUDIT.md](./CI_VERSIONING_AUDIT.md) and [CI_VERSIONING_AUDIT_VI.md](./CI_VERSIONING_AUDIT_VI.md) — instruction lineage, rule changes, and regressions.
+- [CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md](./CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md) — design rationale and deployment considerations, in Vietnamese.
+- [CI_FAILURE_MODES_AND_CONTROL_MODEL_VI.md](./CI_FAILURE_MODES_AND_CONTROL_MODEL_VI.md) — failure triggers, misinterpretations, controls, remaining risks, and proposed checks, in Vietnamese.
+
+The worldbuilding project entries above are part of the repository's purpose, not default components of a global instruction package.
+
+## Reading order
+
+1. Start with this overview and [SYSTEM_CONTEXT.md](./SYSTEM_CONTEXT.md).
+2. Choose the world or instruction-design question relevant to your task.
+3. Read that project's local documentation and source-authority rules before drawing conclusions.
+4. Consult instruction history and failure analyses when evaluating a control or revision.
+5. State whether a conclusion comes from repository evidence, author-reported operation, structural validation, inference, or directly reproduced model behavior.
+
+## Evidence and version status
+
+Keep these categories distinct:
+
+- **Structural validation:** length, encoding, line endings, diff scope, declared metadata, or rule presence.
+- **Behavioral evidence:** observed model output under stated test conditions.
+- **Author-reported observations:** operational evidence that may not isolate every model, setting, memory, or conversation-history variable.
+- **Regression hypotheses:** plausible failure paths that have not necessarily been reproduced.
+
+A new instruction version is a testable behavioral hypothesis. A file's presence does not prove that it is deployed, approved, or authoritative. Proposed and unresolved material must retain its declared status.
+
+## Using instruction files
+
+This repository does not automatically install, activate, inject, or apply instructions to ChatGPT, an account, or a device. Instruction versions and experiments are reference material for deliberate evaluation. Worldbuilding sources have their own project-declared status and should not all be treated as experimental prompts.
+
+If you choose to reuse an instruction file:
+
+1. Read its scope, changelog, and known limitations.
+2. Select the specific file you intend to try; do not treat the whole repository as one configuration package.
+3. Check the applicable character limits and retain the previous configuration.
+4. Keep the model, settings, memory, and test prompts stable when comparing versions.
+5. Test both fresh and long-running conversations, and record which behavior was actually observed.
+
+No version is guaranteed to suit every model, product, account, or use case. Copying or adapting instructions remains the reader's responsibility.
+
+## Independence and runtime limits
+
+This is a personal project, not an official OpenAI project or a guarantee of ChatGPT behavior.
+
+Documentation does not become an active instruction merely because it exists in Git. What is actually available and applied depends on the live configuration, instruction placement, source access, and conversation context. Repository inspection alone cannot establish that state.
+
+The author decides canon. Tools and models help manage and examine the work; their output does not confer creative authority.
