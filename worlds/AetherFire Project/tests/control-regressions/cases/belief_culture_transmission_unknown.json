@@ -4,7 +4,7 @@
   "status": "DRAFT",
   "provenance": {
     "kind": "CURRENT_CONTROL_CONTRACT",
-    "reference": "Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md:4; Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md:7",
+    "reference": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md:4; controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md:7",
     "note": "Synthetic paired control probe; not historical runtime evidence, accepted lore, a model result, or authorization to activate semantic testing."
   },
   "operation": "Assess only the evidenced intergenerational transmission link.",
@@ -13,26 +13,26 @@
   "protected_distinction": "CURRENT PRESENCE != TRANSMISSION HISTORY; EXPLICIT PARTIAL PATH != COMPLETE CONTINUITY",
   "forbidden_conversion": "Fill UNKNOWN with a plausible cultural carrier; require full history for a current-state fact; refuse the established partial path; infer universal or indefinite retention.",
   "recheck_on": [
-    "AetherFire CI/AetherFire_CI_version_v3.0.md",
-    "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
-    "Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md",
-    "Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.1.md"
+    "controls/AetherFire CI/AetherFire_CI_version_v3.0.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.1.md"
   ],
   "active_control_anchors": [
     {
-      "path": "AetherFire CI/AetherFire_CI_version_v3.0.md",
+      "path": "controls/AetherFire CI/AetherFire_CI_version_v3.0.md",
       "sha256": "D51F0EB0ACE499B434F8DCE64125B9232593E570EE940A10D562FB93972B4E96"
     },
     {
-      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
       "sha256": "227997F6621B49DB369D807742104E033F448BC04031D7C3102E0053FEF0A694"
     },
     {
-      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md",
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md",
       "sha256": "57CE3BF330C515E8EF2CAE355A170B8526C0C178C99C3BD740DD7294A91371DA"
     },
     {
-      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.1.md",
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.1.md",
       "sha256": "6CA481196EFAA946D0CCE222C48BA1B1BB8B41357448EF4C7CC129A48840BDE2"
     }
   ]

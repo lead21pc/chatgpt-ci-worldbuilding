@@ -116,7 +116,7 @@ repository/
 - [codex-workflows/](./codex-workflows/) contains repository copies of Codex skills; moving them does not install or update the author's locally installed skills.
 - [docs/](./docs/) contains instruction history, design analysis, and explanatory visuals.
 
-The two AetherFire CI collections remain separate: the [instruction design collection](./llm-controls/project-instruction-designs/Project%20CI/AetherFire%20CI/) and the [collection managed with the AetherFire package](./worlds/AetherFire%20Project/AetherFire%20CI/). Their declared responsibilities and historical baselines still apply; directory placement does not select an active configuration.
+The two AetherFire CI collections remain separate: the [instruction design collection](./llm-controls/project-instruction-designs/Project%20CI/AetherFire%20CI/) and the [collection managed with the AetherFire package](./worlds/AetherFire%20Project/controls/AetherFire%20CI/). Their declared responsibilities and historical baselines still apply; directory placement does not select an active configuration.
 
 The Kingdom package retains its declared reference-only status. Source archives retain their original contents and historical path references. Use current indexes for navigation; relocation does not reactivate archived sources.
 

@@ -4,7 +4,7 @@
   "status": "DRAFT",
   "provenance": {
     "kind": "CURRENT_CONTROL_CONTRACT",
-    "reference": "llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v8.5.txt:EPISTEMIC NON-ESCALATION; AetherFire CI/AetherFire_CI_version_v2.6.md:Claim Dependency and Canon Status; Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md:Reconciliation Before Execution",
+    "reference": "llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v8.5.txt:EPISTEMIC NON-ESCALATION; controls/AetherFire CI/AetherFire_CI_version_v2.6.md:Claim Dependency and Canon Status; controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md:Reconciliation Before Execution",
     "note": "Nền v8.5 được CI dự án chọn; Router hiện hành giữ UNKNOWN trong truy xuất nguồn. Không khẳng định lỗi runtime lịch sử."
   },
   "operation": "Giữ trạng thái tri thức trong câu hỏi giả định.",
@@ -14,8 +14,8 @@
   "forbidden_conversion": "Bịa tuyến, cơ chế hoặc nguồn để lấp khoảng trống.",
   "recheck_on": [
     "llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v8.5.txt",
-    "AetherFire CI/AetherFire_CI_version_v2.6.md",
-    "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md"
+    "controls/AetherFire CI/AetherFire_CI_version_v2.6.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md"
   ],
   "active_control_anchors": [
     {
@@ -23,11 +23,11 @@
       "sha256": "CDA7EFD24E4D5EE5DC9D629F6BCFF78EAFFD73ABB35E44A46E241BF48FFB87B2"
     },
     {
-      "path": "AetherFire CI/AetherFire_CI_version_v2.6.md",
+      "path": "controls/AetherFire CI/AetherFire_CI_version_v2.6.md",
       "sha256": "CFC10185DEF3D3F027FAC83DA11DF5BCB909192D385FB26CB76C54B5F8987A9C"
     },
     {
-      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md",
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md",
       "sha256": "CC46C94E1A0D81C130F9CFE58ABA905A8F39823695F35B7D38315A405AF8C2B4"
     }
   ]

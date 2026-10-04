@@ -4,7 +4,7 @@
   "status": "DRAFT",
   "provenance": {
     "kind": "CURRENT_RECONCILIATION_EVIDENCE",
-    "reference": "80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md:5; 91_RECONCILIATION_RECORD.md:9; AetherFire CI/AetherFire_CI_version_v2.6.md:Claim Dependency and Canon Status; Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md:Read Order Is Not Authority Order, Reconciliation Before Execution; Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md:847-863",
+    "reference": "80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md:5; 91_RECONCILIATION_RECORD.md:9; controls/AetherFire CI/AetherFire_CI_version_v2.6.md:Claim Dependency and Canon Status; controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md:Read Order Is Not Authority Order, Reconciliation Before Execution; controls/Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md:847-863",
     "note": "Canon hiện tại và bản ghi hoà giải giới hạn phát biểu về hạ tầng; CI, Router và overlay chi phối suy luận trong nhiệm vụ liên quan. Không xác nhận lỗi runtime lịch sử."
   },
   "operation": "Giữ giới hạn kết luận về ưu thế hàng không trong kịch bản.",
@@ -13,23 +13,23 @@
   "protected_distinction": "SOLE CONFIRMED STABLE INFRASTRUCTURE != MONOPOLY OR AIR SUPREMACY",
   "forbidden_conversion": "Suy ra độc quyền bay hoặc ưu thế trên không từ hạ tầng ổn định được xác nhận.",
   "recheck_on": [
-    "AetherFire CI/AetherFire_CI_version_v2.6.md",
-    "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md",
-    "Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md",
+    "controls/AetherFire CI/AetherFire_CI_version_v2.6.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md",
     "80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md",
     "91_RECONCILIATION_RECORD.md"
   ],
   "active_control_anchors": [
     {
-      "path": "AetherFire CI/AetherFire_CI_version_v2.6.md",
+      "path": "controls/AetherFire CI/AetherFire_CI_version_v2.6.md",
       "sha256": "CFC10185DEF3D3F027FAC83DA11DF5BCB909192D385FB26CB76C54B5F8987A9C"
     },
     {
-      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md",
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md",
       "sha256": "CC46C94E1A0D81C130F9CFE58ABA905A8F39823695F35B7D38315A405AF8C2B4"
     },
     {
-      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md",
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md",
       "sha256": "D7D464522B3BE69CB2CBFF70814A28A566DF8F8BA7D2095F0744F4B6BC7F1D2B"
     }
   ]

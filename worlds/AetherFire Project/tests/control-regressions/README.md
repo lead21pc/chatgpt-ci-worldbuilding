@@ -45,9 +45,9 @@ Lệnh mặc định kiểm tra cấu trúc và chỉ chọn ACTIVE có neo phù
 
     pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -ListDrafts
 
-    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -ChangedControlFile 'Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md'
+    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -ChangedControlFile 'controls/Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md'
     pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -ChangedControlFile 'llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v8.5.txt'
-    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -ChangedControlFile 'Anti-Drift Source/khong-co-anh-xa.md'
+    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -ChangedControlFile 'controls/Anti-Drift Source/khong-co-anh-xa.md'
 
 recheck_on dùng đường dẫn tương đối từ AetherFire Project cho tệp dự án, hoặc từ gốc repository cho llm-controls/global-instructions/ChatGPT Plus+ Era. Danh sách ghi đúng tệp đang tham gia thay vì mọi phiên bản lịch sử. -ListDrafts chỉ in danh sách DRAFT để xem xét, không chọn chúng. Khi có ChangedControlFile, selected_cases chỉ chứa ACTIVE có neo phù hợp; draft_review_matches là DRAFT_REVIEW_MATCH và stale_review_matches là ứng viên xem xét, đều review_only. Nếu một bản CI/Router/overlay mới trở thành phiên bản cao nhất được chọn, runner nhận diện họ phiên bản từ neo cũ để tìm case liên quan; nó không tự đổi vòng đời hay thay neo. Nền ChatGPT mới chỉ được nhận khi CI dự án **khai báo** nó. Bản v9.0 temp tồn tại riêng lẻ không làm đổi nền. Đường dẫn không khớp được báo trong unmapped với nghĩa **UNMAPPED**, không suy ra không có tác động. Metadata chọn lại không lập lịch, không cấp quyền sửa canon hay điều khiển.
 
@@ -59,7 +59,7 @@ Các probe dưới đây chỉ truyền JSON trong đối số, không thay đ�
 
     pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -VersionProbeJson '{"family":"CI","names":["AetherFire_CI_version_v2.9.md","AetherFire_CI_version_v2.10.md"]}'
     pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -VersionProbeJson '{"family":"CI","names":["AetherFire_CI_version_v2.6.md","AetherFire_CI_version_v02.06.md"]}'
-    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -AnchorProbeJson '{"path":"AetherFire CI/AetherFire_CI_version_v2.6.md","sha256":"0000000000000000000000000000000000000000000000000000000000000000"}'
+    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -AnchorProbeJson '{"path":"controls/AetherFire CI/AetherFire_CI_version_v2.6.md","sha256":"0000000000000000000000000000000000000000000000000000000000000000"}'
 
 Đối số snapshot tùy chọn là JSON {"root":"<đường dẫn tuyệt đối gốc repository>","files":[{"path":"worlds/AetherFire Project/MANIFEST.md","sha256":"<SHA-256 lúc bắt đầu tác vụ>"}]} truyền qua ProtectedSnapshotJson. Runner chỉ so sánh các file được cung cấp trong snapshot, không tự suy ra bản chụp trước khi bắt đầu tác vụ và không bảo đảm bao phủ mọi file cấm sửa. Nếu không cung cấp, protected_snapshot là LIMITED_CHECK. Việc đọc Git chỉ ghi nhận tình trạng hiện tại, không phân biệt thay đổi cũ/mới nếu thiếu bản chụp đầu kỳ.
 
@@ -83,7 +83,7 @@ Sáu skill giữ vai trò riêng: aetherfire-source-audit cho căn cứ nguồn;
 
 ## Actor reception coverage (added 2026-10-02)
 
-The repository resolver now includes `Actor_Reception_Normative_Signals`. Router v4.1 adds the task gate and scoped dependencies; Router v4.0 is preserved byte-for-byte under `Anti-Drift Source/Source_Archive/`. This changes repository control selection, not installed ChatGPT Project state.
+The repository resolver now includes `Actor_Reception_Normative_Signals`. Router v4.1 adds the task gate and scoped dependencies; Router v4.0 is preserved byte-for-byte under `controls/Anti-Drift Source/Source_Archive/`. This changes repository control selection, not installed ChatGPT Project state.
 
 Six synthetic `CONTROL_SEMANTIC` cases remain `DRAFT`; their inputs and protected distinctions are review candidates, not model results, canon, or acceptance gates:
 
@@ -98,7 +98,7 @@ Six synthetic `CONTROL_SEMANTIC` cases remain `DRAFT`; their inputs and protecte
 
 Each case pins CI 3.0, Router 4.1, the reception overlay, and Modular Concept Architecture. Conditional overlay anchors are included only where the particular probe needs their reasoning. Review the relationships in the response, not exact strings. Runner schema/version/anchor checks do not execute these probes. Existing DRAFT cases and their historical anchors remain unchanged.
 
-    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -ListDrafts -ChangedControlFile 'Anti-Drift Source/AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md'
+    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -ListDrafts -ChangedControlFile 'controls/Anti-Drift Source/AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md'
 
 Known baseline limitation: the runner's upstream-base parser expects `ChatGPT v8.7` but CI 3.0 declares `ChatGPT 8.7`. Default overall therefore remains `BLOCKED` at `selected_upstream_base`; the family, schema, and anchor checks still report independently. This integration does not change that parser or CI 3.0. No semantic or live Project runtime result is implied.
 

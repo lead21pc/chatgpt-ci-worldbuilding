@@ -128,15 +128,15 @@ $missing = @($required | Where-Object { -not (Test-Path -LiteralPath (Join-Path 
 Add-Check 'package_presence' $(if ($missing.Count) { 'FAIL' } else { 'PASS' }) ([pscustomobject]@{ missing = $missing })
 
 $families = @(
-    [pscustomobject]@{ name = 'CI'; directory = 'AetherFire CI'; stem = 'AetherFire_CI_version_v'; pattern = '^AetherFire_CI_version_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
-    [pscustomobject]@{ name = 'Source_Router'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Source_Router_v'; pattern = '^AetherFire_Anti_Drift_Source_Router_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
-    [pscustomobject]@{ name = 'Worldbuilding_Internal_Logic'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v'; pattern = '^AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
-    [pscustomobject]@{ name = 'Interface_Economy_State_Stabilization'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v'; pattern = '^AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
-    [pscustomobject]@{ name = 'Modular_Concept_Architecture'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Modular_Concept_Architecture_v'; pattern = '^AetherFire_Anti_Drift_Modular_Concept_Architecture_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
-    [pscustomobject]@{ name = 'Total_War_RP'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Total_War_RP_v'; pattern = '^AetherFire_Anti_Drift_Total_War_RP_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
-    [pscustomobject]@{ name = 'Mortality_Relationship_Plot_Immunity'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v'; pattern = '^AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
-    [pscustomobject]@{ name = 'Actor_Reception_Normative_Signals'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v'; pattern = '^AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
-    [pscustomobject]@{ name = 'Belief_Culture'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Belief_Culture_v'; pattern = '^AetherFire_Anti_Drift_Belief_Culture_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' }
+    [pscustomobject]@{ name = 'CI'; directory = 'controls/AetherFire CI'; stem = 'AetherFire_CI_version_v'; pattern = '^AetherFire_CI_version_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
+    [pscustomobject]@{ name = 'Source_Router'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Source_Router_v'; pattern = '^AetherFire_Anti_Drift_Source_Router_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
+    [pscustomobject]@{ name = 'Worldbuilding_Internal_Logic'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v'; pattern = '^AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
+    [pscustomobject]@{ name = 'Interface_Economy_State_Stabilization'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v'; pattern = '^AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
+    [pscustomobject]@{ name = 'Modular_Concept_Architecture'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Modular_Concept_Architecture_v'; pattern = '^AetherFire_Anti_Drift_Modular_Concept_Architecture_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
+    [pscustomobject]@{ name = 'Total_War_RP'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Total_War_RP_v'; pattern = '^AetherFire_Anti_Drift_Total_War_RP_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
+    [pscustomobject]@{ name = 'Mortality_Relationship_Plot_Immunity'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v'; pattern = '^AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
+    [pscustomobject]@{ name = 'Actor_Reception_Normative_Signals'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v'; pattern = '^AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
+    [pscustomobject]@{ name = 'Belief_Culture'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Belief_Culture_v'; pattern = '^AetherFire_Anti_Drift_Belief_Culture_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' }
 )
 $resolutions = @(
     foreach ($family in $families) {
