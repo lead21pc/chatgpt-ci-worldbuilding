@@ -107,8 +107,8 @@ Inventory baseline: the approved manifest at commit `34b813c460715c815461b73df81
 From the repository checkout, run:
 
 ```sh
-python "AetherFire Project/build_consolidation.py" --check
-python "AetherFire Project/build_consolidation.py" --write
+python "worlds/AetherFire Project/build_consolidation.py" --check
+python "worlds/AetherFire Project/build_consolidation.py" --write
 ```
 
 No argument defaults to the read-only check. The root PowerShell script is a compatibility wrapper for the same Python tool. The former reconstruction implementation is retained at `tools/legacy/build_consolidation_from_archive.ps1` for provenance only; it is not the current workflow.

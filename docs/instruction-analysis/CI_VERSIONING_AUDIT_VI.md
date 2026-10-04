@@ -59,7 +59,7 @@ flowchart LR
     V73 -->|"chưng cất / chuyển đổi"| C63["v6.3 chuyển đổi Major"]
 ```
 
-Cạnh cuối được xác lập trực tiếp bởi `ChatGPT Go-Free Era/Changelog.txt:1` và xác nhận loại Major của người dùng. Sắp xếp thuần số sẽ đặt sai v6.3 chuyển đổi trước v7.0.
+Cạnh cuối được xác lập trực tiếp bởi `llm-controls/global-instructions/ChatGPT Go-Free Era/Changelog.txt:1` và xác nhận loại Major của người dùng. Sắp xếp thuần số sẽ đặt sai v6.3 chuyển đổi trước v7.0.
 
 ## 3. Tóm tắt điều hành
 
@@ -489,24 +489,24 @@ Kiến trúc hai mục tiêu triển khai và vai trò rollback-safe của v6.3 
 
 ## 12. Chỉ mục bằng chứng nguồn
 
-- `ChatGPT Go-Free Era/chatgpt v1.0.txt:1-15`
-- `ChatGPT Go-Free Era/chatgpt v2.0.txt:1-46`
-- `ChatGPT Go-Free Era/chatgpt v2.1.txt:1-55`
-- `ChatGPT Go-Free Era/chatgpt v2.2.txt:1-45`
-- `ChatGPT Go-Free Era/chatgpt v3.0.txt:1-31`
-- `ChatGPT Go-Free Era/chatgpt v3.1.txt:1-19`
-- `ChatGPT Go-Free Era/chatgpt v4.0.txt:1-19`
-- `ChatGPT Go-Free Era/chatgpt v5.0.txt:1-11`
-- `ChatGPT Go-Free Era/chatgpt v5.1.txt:1-11`
-- `ChatGPT Go-Free Era/chatgpt v6.0.txt:1-19`
-- `ChatGPT Go-Free Era/chatgpt v6.1.txt:1-14`
-- `ChatGPT Go-Free Era/chatgpt v6.2.txt:1-12`
-- `ChatGPT Plus+ Era/chatgpt v7.0.txt:1-17`
-- `ChatGPT Plus+ Era/chatgpt v7.1.txt:1-23`
-- `ChatGPT Plus+ Era/chatgpt v7.2.txt:1-25`
-- `ChatGPT Plus+ Era/chatgpt v7.3.txt:1-54`
-- `ChatGPT Plus+ Era/chatgpt v7.3.1.txt:1-54`
-- `ChatGPT Plus+ Era/chatgpt v7.4.txt:1-71`
-- `ChatGPT Go-Free Era/chatgpt v6.3_7.3 converted.txt:1-9`
-- `ChatGPT Go-Free Era/Changelog.txt:1`
-- `ChatGPT Plus+ Era/ci_design_rationale_v3_vi_invariant.md` — chỉ dùng làm tài liệu giải thích kiến trúc.
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/chatgpt v1.0.txt:1-15`
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/chatgpt v2.0.txt:1-46`
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/chatgpt v2.1.txt:1-55`
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/chatgpt v2.2.txt:1-45`
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/chatgpt v3.0.txt:1-31`
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/chatgpt v3.1.txt:1-19`
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/chatgpt v4.0.txt:1-19`
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/chatgpt v5.0.txt:1-11`
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/chatgpt v5.1.txt:1-11`
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/chatgpt v6.0.txt:1-19`
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/chatgpt v6.1.txt:1-14`
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/chatgpt v6.2.txt:1-12`
+- `llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v7.0.txt:1-17`
+- `llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v7.1.txt:1-23`
+- `llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v7.2.txt:1-25`
+- `llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v7.3.txt:1-54`
+- `llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v7.3.1.txt:1-54`
+- `llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v7.4.txt:1-71`
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/chatgpt v6.3_7.3 converted.txt:1-9`
+- `llm-controls/global-instructions/ChatGPT Go-Free Era/Changelog.txt:1`
+- `llm-controls/global-instructions/ChatGPT Plus+ Era/ci_design_rationale_v3_vi_invariant.md` — chỉ dùng làm tài liệu giải thích kiến trúc.

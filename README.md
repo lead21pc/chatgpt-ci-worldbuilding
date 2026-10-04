@@ -74,25 +74,76 @@ Read this as an author's working environment for maintaining fictional worlds wi
 
 | Project | Repository entry | Interpretation |
 | --- | --- | --- |
-| AetherFire | [AetherFire Project](./AetherFire%20Project/) | Its own sources, controls, and project-specific authority. |
-| The Kingdom | [The Kingdom](./The%20Kingdom/) | Its own world model and local rules; do not infer its architecture from AetherFire or The Academy. |
-| The Academy | [The Academy Project](./The%20Academy%20Project/) | Its own world model and source structure; shared terminology does not imply shared fictional objects. |
+| AetherFire | [AetherFire Project](./worlds/AetherFire%20Project/) | Its own sources, controls, and project-specific authority. |
+| The Kingdom | [The Kingdom](./worlds/The%20Kingdom/) | Its own world model and local rules; do not infer its architecture from AetherFire or The Academy. |
+| The Academy | [The Academy Project](./worlds/The%20Academy%20Project/) | Its own world model and source structure; shared terminology does not imply shared fictional objects. |
 
 Each project's local documentation determines how to read its sources. Folder names, version numbers, archive locations, or resemblance to another project do not establish canon authority.
+
+## Repository layout
+
+The top-level folders separate the fictional worlds from the methods, instructions, workflows, and records that support them:
+
+~~~text
+repository/
+├── README.md
+├── SYSTEM_CONTEXT.md
+├── AGENTS.md
+├── worlds/
+│   ├── AetherFire Project/
+│   ├── The Kingdom/
+│   └── The Academy Project/
+├── authoring/
+│   └── multi_paracosm_hub_model_updated.md
+├── llm-controls/
+│   ├── global-instructions/
+│   │   ├── ChatGPT Plus+ Era/
+│   │   └── ChatGPT Go-Free Era/
+│   ├── project-instruction-designs/
+│   │   └── Project CI/
+│   └── worldbuilding-ci-kernel/
+├── codex-workflows/
+├── docs/
+│   ├── instruction-history/
+│   ├── instruction-analysis/
+│   └── visuals/
+└── public-release-integration
+~~~
+
+- [worlds/](./worlds/) keeps each world's existing internal source structure, local controls, history, and tools together. Moving a package does not change source status or authority.
+- [authoring/](./authoring/) contains the [Multi-Paracosm Hub model](./authoring/multi_paracosm_hub_model_updated.md): ideas can be abstracted into shared seeds, then evaluated and implemented independently in each world.
+- [llm-controls/](./llm-controls/) contains general instructions, project instruction designs, and reusable worldbuilding controls. Project-local controls also remain inside their world packages.
+- [codex-workflows/](./codex-workflows/) contains repository copies of Codex skills; moving them does not install or update the author's locally installed skills.
+- [docs/](./docs/) contains instruction history, design analysis, and explanatory visuals.
+
+The two AetherFire CI collections remain separate: the [instruction design collection](./llm-controls/project-instruction-designs/Project%20CI/AetherFire%20CI/) and the [collection managed with the AetherFire package](./worlds/AetherFire%20Project/AetherFire%20CI/). Their declared responsibilities and historical baselines still apply; directory placement does not select an active configuration.
+
+The Kingdom package retains its declared reference-only status. Source archives retain their original contents and historical path references. Use current indexes for navigation; relocation does not reactivate archived sources.
+
+The existing public-release-integration entry remains at the root as a Git commit reference (gitlink). Its role is unresolved here; it has not been moved, initialized, or treated as an ordinary content directory.
 
 ## Repository map
 
 - [SYSTEM_CONTEXT.md](./SYSTEM_CONTEXT.md) — the authoring model, project boundaries, control responsibilities, and evidence rules.
-- [ChatGPT Plus+ Era](./ChatGPT%20Plus+%20Era/) — fuller Custom Instructions developed for larger character budgets.
-- [ChatGPT Go-Free Era](./ChatGPT%20Go-Free%20Era/) — condensed instructions for shorter budgets, preserving core meaning rather than copying the fuller text verbatim.
-- [Project CI](./Project%20CI/) — project-specific and concept-focused instructions. They are not automatically part of the Global CI.
-- [worldbuilding-ci-kernel](./worldbuilding-ci-kernel/) — reusable worldbuilding instruction material; reuse does not establish a shared canon.
-- [CHANGELOG.md](./CHANGELOG.md) and [CHANGELOG_VI.md](./CHANGELOG_VI.md) — revision history in English and Vietnamese.
-- [CI_VERSIONING_AUDIT.md](./CI_VERSIONING_AUDIT.md) and [CI_VERSIONING_AUDIT_VI.md](./CI_VERSIONING_AUDIT_VI.md) — instruction lineage, rule changes, and regressions.
-- [CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md](./CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md) — design rationale and deployment considerations, in Vietnamese.
-- [CI_FAILURE_MODES_AND_CONTROL_MODEL_VI.md](./CI_FAILURE_MODES_AND_CONTROL_MODEL_VI.md) — failure triggers, misinterpretations, controls, remaining risks, and proposed checks, in Vietnamese.
+- [ChatGPT Plus+ Era](./llm-controls/global-instructions/ChatGPT%20Plus+%20Era/) — fuller Custom Instructions developed for larger character budgets.
+- [ChatGPT Go-Free Era](./llm-controls/global-instructions/ChatGPT%20Go-Free%20Era/) — condensed instructions for shorter budgets, preserving core meaning rather than copying the fuller text verbatim.
+- [Project CI](./llm-controls/project-instruction-designs/Project%20CI/) — project-specific and concept-focused instructions. They are not automatically part of the Global CI.
+- [worldbuilding-ci-kernel](./llm-controls/worldbuilding-ci-kernel/) — reusable worldbuilding instruction material; reuse does not establish a shared canon.
+- [CHANGELOG.md](./docs/instruction-history/CHANGELOG.md) and [CHANGELOG_VI.md](./docs/instruction-history/CHANGELOG_VI.md) — revision history in English and Vietnamese.
+- [CI_VERSIONING_AUDIT.md](./docs/instruction-analysis/CI_VERSIONING_AUDIT.md) and [CI_VERSIONING_AUDIT_VI.md](./docs/instruction-analysis/CI_VERSIONING_AUDIT_VI.md) — instruction lineage, rule changes, and regressions.
+- [CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md](./docs/instruction-analysis/CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md) — design rationale and deployment considerations, in Vietnamese.
+- [CI_FAILURE_MODES_AND_CONTROL_MODEL_VI.md](./docs/instruction-analysis/CI_FAILURE_MODES_AND_CONTROL_MODEL_VI.md) — failure triggers, misinterpretations, controls, remaining risks, and proposed checks, in Vietnamese.
 
 The worldbuilding project entries above are part of the repository's purpose, not default components of a global instruction package.
+
+## How work moves through the repository
+
+Two connected workflows explain the organization:
+
+- **Creative work:** a stimulus or candidate idea reaches author review; an abstract seed can be considered for each world; local compatibility and author decisions determine what is accepted and externalized into that world's sources.
+- **Control improvement:** actual use reveals a failure; diagnosis leads to a candidate instruction or tooling change; author review, bounded implementation, checks, and live feedback inform whether the change is kept, revised, or rolled back.
+
+These workflows combine human actions, model instructions, and executable tools. They are not an automatic lore-publication pipeline. Git relocation does not update ChatGPT Project or Library contents, change live source-loading policy, or activate an instruction version.
 
 ## Reading order
 
@@ -101,7 +152,6 @@ The worldbuilding project entries above are part of the repository's purpose, no
 3. Read that project's local documentation and source-authority rules before drawing conclusions.
 4. Consult instruction history and failure analyses when evaluating a control or revision.
 5. State whether a conclusion comes from repository evidence, author-reported operation, structural validation, inference, or directly reproduced model behavior.
-
 6. If available material is insufficient, report the limitation instead of completing missing lore or architecture from plausibility.
 
 A search hit, filename, summary, directory placement, or repeated wording is not a substitute for reading the controlling source.

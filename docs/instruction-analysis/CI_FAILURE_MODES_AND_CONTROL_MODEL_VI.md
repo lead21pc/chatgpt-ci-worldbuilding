@@ -521,14 +521,14 @@ Một biến thể tiền phát hành cố thêm độ rộng bằng cách viế
 
 - [CI_VERSIONING_AUDIT_VI.md](./CI_VERSIONING_AUDIT_VI.md): rule taxonomy, lịch sử version và các regression đã xác nhận.
 - [CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md](./CI_DESIGN_EVOLUTION_AND_DEPLOYMENT_VI.md): triết lý tiến hóa, hai profile triển khai và quy trình kiểm thử.
-- [CHANGELOG_VI.md](./CHANGELOG_VI.md): lịch sử thay đổi đến v8.2 chính thức.
-- [chatgpt v8.0.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v8.0.txt): baseline Plus+ lịch sử đã được người dùng chấp nhận.
-- [chatgpt v8.0.1.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v8.0.1.txt): biến thể số lượng thất bại, gồm lần tăng lên bốn và lần siết đếm toàn bộ thuật ngữ.
-- [chatgpt v8.1.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v8.1.txt): bản vá bỏ quota runtime và chặn xác nhận chung sai vai trò phát ngôn.
-- [chatgpt v8.1.1.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v8.1.1.txt): nhánh thử nghiệm cổng nhận premise, cập nhật nền suy luận và code-switching cấp mệnh đề.
-- [chatgpt v8.2.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v8.2.txt): bản Plus+ chính thức ba bất biến với nền tiếng Việt, cổng giữ giai đoạn và kiểm tra độ bao phủ giải thích.
-- [chatgpt v6.4.1.txt](./ChatGPT%20Go-Free%20Era/chatgpt%20v6.4.1.txt): profile reasoning cô đọng mới nhất cho Free/Go.
-- [chatgpt v7.4.2.txt](./ChatGPT%20Plus+%20Era/chatgpt%20v7.4.2.txt): mốc khôi phục depth floor.
+- [CHANGELOG_VI.md](../instruction-history/CHANGELOG_VI.md): lịch sử thay đổi đến v8.2 chính thức.
+- [chatgpt v8.0.txt](../../llm-controls/global-instructions/ChatGPT%20Plus+%20Era/chatgpt%20v8.0.txt): baseline Plus+ lịch sử đã được người dùng chấp nhận.
+- [chatgpt v8.0.1.txt](../../llm-controls/global-instructions/ChatGPT%20Plus+%20Era/chatgpt%20v8.0.1.txt): biến thể số lượng thất bại, gồm lần tăng lên bốn và lần siết đếm toàn bộ thuật ngữ.
+- [chatgpt v8.1.txt](../../llm-controls/global-instructions/ChatGPT%20Plus+%20Era/chatgpt%20v8.1.txt): bản vá bỏ quota runtime và chặn xác nhận chung sai vai trò phát ngôn.
+- [chatgpt v8.1.1.txt](../../llm-controls/global-instructions/ChatGPT%20Plus+%20Era/chatgpt%20v8.1.1.txt): nhánh thử nghiệm cổng nhận premise, cập nhật nền suy luận và code-switching cấp mệnh đề.
+- [chatgpt v8.2.txt](../../llm-controls/global-instructions/ChatGPT%20Plus+%20Era/chatgpt%20v8.2.txt): bản Plus+ chính thức ba bất biến với nền tiếng Việt, cổng giữ giai đoạn và kiểm tra độ bao phủ giải thích.
+- [chatgpt v6.4.1.txt](../../llm-controls/global-instructions/ChatGPT%20Go-Free%20Era/chatgpt%20v6.4.1.txt): profile reasoning cô đọng mới nhất cho Free/Go.
+- [chatgpt v7.4.2.txt](../../llm-controls/global-instructions/ChatGPT%20Plus+%20Era/chatgpt%20v7.4.2.txt): mốc khôi phục depth floor.
 
 ## 11. Tóm tắt máy đọc được
 

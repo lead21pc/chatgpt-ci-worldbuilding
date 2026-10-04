@@ -28,7 +28,7 @@ $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
 $projectRoot = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..\..')).Path
-$repositoryRoot = (Resolve-Path -LiteralPath (Join-Path $projectRoot '..')).Path
+$repositoryRoot = (Resolve-Path -LiteralPath (Join-Path $projectRoot '..\..')).Path
 $caseRoot = Join-Path $PSScriptRoot 'cases'
 $checks = [Collections.Generic.List[object]]::new()
 $caseIssues = [Collections.Generic.List[string]]::new()
@@ -177,7 +177,7 @@ try {
     if (($declaredParts -join '.') -ne $selectedVersion) {
         throw 'Selected Project CI filename and declared Project CI version disagree.'
     }
-    $selectedUpstreamPath = "ChatGPT Plus+ Era/chatgpt v$($declaration.Groups['base'].Value)$($declaration.Groups['qualifier'].Value).txt"
+    $selectedUpstreamPath = "llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v$($declaration.Groups['base'].Value)$($declaration.Groups['qualifier'].Value).txt"
     $upstreamFile = Join-Path $repositoryRoot $selectedUpstreamPath
     if (-not (Test-Path -LiteralPath $upstreamFile -PathType Leaf)) {
         throw "Declared ChatGPT CI base is unavailable: $selectedUpstreamPath"
@@ -198,7 +198,7 @@ function Get-ControlFamily {
 
 function Get-AnchorFile {
     param([string]$Path)
-    if ($Path.StartsWith('ChatGPT Plus+ Era/', [StringComparison]::OrdinalIgnoreCase)) {
+    if ($Path.StartsWith('llm-controls/global-instructions/ChatGPT Plus+ Era/', [StringComparison]::OrdinalIgnoreCase)) {
         return Join-Path $repositoryRoot $Path
     }
     return Join-Path $projectRoot $Path
@@ -262,7 +262,7 @@ else {
                     $relative -ne $currentVersioned[$anchorFamily]) {
                     $anchorReasons.Add("ACTIVE_VERSION_CHANGED: $relative -> $($currentVersioned[$anchorFamily])")
                 }
-                if ($relative.StartsWith('ChatGPT Plus+ Era/chatgpt v', [StringComparison]::OrdinalIgnoreCase) -and
+                if ($relative.StartsWith('llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v', [StringComparison]::OrdinalIgnoreCase) -and
                     $relative -ne $selectedUpstreamPath) {
                     $anchorReasons.Add("SELECTED_BASE_CHANGED: $relative -> $selectedUpstreamPath")
                 }
@@ -306,7 +306,7 @@ else {
         $changedFamily = Get-ControlFamily $path
         $isInactiveVersion = $changedFamily -and $currentVersioned.ContainsKey($changedFamily) -and
             $path -ne $currentVersioned[$changedFamily]
-        $isInactiveUpstream = $path.StartsWith('ChatGPT Plus+ Era/chatgpt v', [StringComparison]::OrdinalIgnoreCase) -and
+        $isInactiveUpstream = $path.StartsWith('llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v', [StringComparison]::OrdinalIgnoreCase) -and
             $path -ne $selectedUpstreamPath
         $hits = @($cases | Where-Object {
             $case = $_
@@ -318,7 +318,7 @@ else {
             }
             if ($selectedUpstreamPath -eq $path) {
                 return @($case.active_anchor_paths | Where-Object {
-                    $_.StartsWith('ChatGPT Plus+ Era/chatgpt v', [StringComparison]::OrdinalIgnoreCase)
+                    $_.StartsWith('llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v', [StringComparison]::OrdinalIgnoreCase)
                 }).Count -gt 0
             }
             return $false

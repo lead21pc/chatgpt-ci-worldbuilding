@@ -11,7 +11,7 @@ Changelog trả lời câu hỏi “văn bản nào đã thay đổi”. Bản k
 Tài liệu dùng bốn lớp bằng chứng:
 
 1. **Bối cảnh thiết kế do tác giả cung cấp:** hai thư mục là hai mục tiêu triển khai theo giới hạn ký tự của gói; thiết kế này có chủ đích.
-2. **Design rationale:** `ChatGPT Plus+ Era/ci_design_rationale_v3_vi_invariant.md` xác định hai bất biến tiếng Việt, các rào chắn suy luận và thứ tự ưu tiên.
+2. **Design rationale:** `llm-controls/global-instructions/ChatGPT Plus+ Era/ci_design_rationale_v3_vi_invariant.md` xác định hai bất biến tiếng Việt, các rào chắn suy luận và thứ tự ưu tiên.
 3. **Nguồn phiên bản:** 19 tệp CI cho thấy quy tắc được thêm, nén, làm mềm, tách hoặc hợp nhất như thế nào.
 4. **Đo trực tiếp:** số ký tự của từng tệp cho thấy áp lực nén ở nhánh Go/Free và việc giải nén kiến trúc ở nhánh Plus.
 

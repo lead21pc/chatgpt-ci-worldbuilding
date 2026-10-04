@@ -28,6 +28,12 @@ Related projects may combine several of these functions. Use the following disti
 
 When inspecting a pipeline, identify what each step acts on, who performs it, what it can authorize, and what its output actually proves. In particular, source consolidation is not canon approval, source routing is not a transfer of authority, and repository validation is not automatic runtime deployment.
 
+### Repository organization
+
+The repository separates five working areas: worlds/ for the three independent project packages; authoring/ for cross-paracosm creative methods; llm-controls/ for general instructions and reusable control designs; codex-workflows/ for repository copies of procedural skills; and docs/ for instruction history and analysis.
+
+Each world keeps its own internal source organization and local controls. Folder grouping establishes navigation, not shared canon or a universal source hierarchy. The relocation changes repository paths only; it does not install skills, update live ChatGPT Project or Library contents, or change the authority and source-loading rules declared by project controls.
+
 The detailed sections below explain the authoring model and its interpretation boundaries.
 
 ---
