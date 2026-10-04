@@ -109,6 +109,31 @@ For a separately authorized live Project experiment:
 3. Record the response and assess whether the stated premises, knowledge paths, temporal relations, and `protected_distinction` survive without the `forbidden_conversion`. Use advisory `PASS`, `POTENTIAL_VIOLATION`, `AMBIGUOUS`, or `BLOCKED`; do not judge exact wording.
 4. Keep the six cases DRAFT unless the author explicitly authorizes lifecycle changes. This procedure neither deploys controls nor grants permission to ingest a DRAFT result automatically.
 
+## Belief / culture coverage (added 2026-10-05)
+
+The architectural gap is cultural claim extent, transmission/retention, change, and audience-dependent symbolic recognition, not a missing full culture engine. Belief / Culture v1.0 owns those distinctions. Actor Reception still owns individual appraisal and public/private states; Worldbuilding still owns institutional operation, authority, reproduction, and persistence. Economy and Total War retain their domain-specific depth and stopping. Conditional dependencies do not activate from labels alone.
+
+Router v4.3 adds only the family and material-task gate, retaining v4.2's source gates and default Library `AetherFire Project` lookup. Its predecessor is archived byte-for-byte after verification. CI 3.0, canon, open issues, existing overlays, and older case lifecycles/anchors are not rewritten.
+
+Eight synthetic paired cases remain DRAFT:
+
+| Case | Scope / inventory coverage |
+| --- | --- |
+| belief_culture_ritual_belief | A/F: required ritual or institutional declaration does not prove private belief; explicit sincere belief may be affirmed. |
+| belief_culture_doctrine_practice | B/C: prohibition is not compliance; doctrine/practice tension is not automatically a source contradiction. |
+| belief_culture_group_extent | D: group evidence is not polity-wide evidence; explicit commonality is valid without invented diversity. |
+| belief_culture_symbol_authority | E/K: meaning, recognition, authority, and obedience remain separate; a narrow lookup stays narrow. |
+| belief_culture_transmission_unknown | I: presence is not a transmission history; an explicit partial path may be affirmed without invented carriers. |
+| belief_culture_change_pressure | G/H: technology, material incentives, and biology constrain without selecting cultural outcomes; bounded observed adoption is valid. |
+| belief_culture_proposal_scope | J: requested brainstorming permits labeled options, not canon admission or later reuse as current evidence. |
+| belief_culture_actor_interpretation | L: shared membership/public wording does not erase established private interpretations. |
+
+Each case pins current CI 3.0, Router 4.3, the new overlay, and only its applicable conditional controls. BASE and VARIANT are hypothetical premises, not observed responses. Source-specified supernatural effects remain valid; no Earth social model overrides them.
+
+The runner adds numeric family resolution and changed-control matching only. Schema, SHA anchors, lifecycle, numeric ordering, and duplicate-version probes are structural checks; they do not execute or judge the paired inputs. Existing upstream-base parsing remains BLOCKED as documented above. Older DRAFT anchor warnings are review signals, not lifecycle changes.
+
+For a separately authorized live Project experiment, verify the installed controls against the fixture anchors, then submit the complete operation, boundary, and input in a fresh Project chat as a synthetic hypothetical. Assess both invalid inferences and the permitted affirmative conclusions against the protected distinction; do not judge exact wording. Preserve DRAFT unless activation is explicitly authorized. Repository publication does not deploy these controls.
+
 ## Trạng thái và giới hạn
 
 PASS ở từng kiểm tra chỉ xác nhận cấu trúc tương ứng. FAIL là lỗi cấu trúc/đầu vào phiên bản/snapshot, không phải phán quyết semantic. BLOCKED báo dữ liệu hoặc thao tác đọc không hoàn tất. LIMITED_CHECK là bao phủ chưa đầy đủ; overall vẫn là LIMITED_CHECK khi các phép thử cấu trúc đạt vì runner không kiểm tra runtime hay toàn vẹn gói đầy đủ. Exit code: 0 cho LIMITED_CHECK, 1 cho FAIL, 2 cho BLOCKED.
