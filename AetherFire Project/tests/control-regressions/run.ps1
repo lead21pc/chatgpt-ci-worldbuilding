@@ -134,7 +134,8 @@ $families = @(
     [pscustomobject]@{ name = 'Interface_Economy_State_Stabilization'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v'; pattern = '^AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
     [pscustomobject]@{ name = 'Modular_Concept_Architecture'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Modular_Concept_Architecture_v'; pattern = '^AetherFire_Anti_Drift_Modular_Concept_Architecture_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
     [pscustomobject]@{ name = 'Total_War_RP'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Total_War_RP_v'; pattern = '^AetherFire_Anti_Drift_Total_War_RP_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
-    [pscustomobject]@{ name = 'Mortality_Relationship_Plot_Immunity'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v'; pattern = '^AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' }
+    [pscustomobject]@{ name = 'Mortality_Relationship_Plot_Immunity'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v'; pattern = '^AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
+    [pscustomobject]@{ name = 'Actor_Reception_Normative_Signals'; directory = 'Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v'; pattern = '^AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' }
 )
 $resolutions = @(
     foreach ($family in $families) {

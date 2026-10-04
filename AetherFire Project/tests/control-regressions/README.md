@@ -81,6 +81,34 @@ Trong bước kích hoạt, kế hoạch phải nêu phạm vi testable, neo ngu
 
 Sáu skill giữ vai trò riêng: aetherfire-source-audit cho căn cứ nguồn; ci-behavior-engineering TEST cho hợp đồng và probe; milestone-executor cho triển khai đã duyệt; review-before-merge cho rà soát cuối chỉ đọc; systematic-debugging chỉ khi có lỗi thực tế; git-test-branch chỉ khi người dùng yêu cầu nhánh riêng. Không cần skill hồi quy mới.
 
+## Actor reception coverage (added 2026-10-02)
+
+The repository resolver now includes `Actor_Reception_Normative_Signals`. Router v4.1 adds the task gate and scoped dependencies; Router v4.0 is preserved byte-for-byte under `Anti-Drift Source/Source_Archive/`. This changes repository control selection, not installed ChatGPT Project state.
+
+Six synthetic `CONTROL_SEMANTIC` cases remain `DRAFT`; their inputs and protected distinctions are review candidates, not model results, canon, or acceptance gates:
+
+| Case | Protected behavior |
+| --- | --- |
+| actor_reception_mixed_signals | Keep doctrine belief, conflicting interests, public compliance, and private duration preference separate. |
+| actor_reception_delayed_notice | Publication does not update an actor without an established access path. |
+| actor_reception_leak_before_notice | A credible established leak may supply knowledge before official notice, without proving the leak true. |
+| actor_reception_emergency_duration | Prior extensions may affect expected duration without changing formal duration or proving a new extension. |
+| actor_reception_propaganda | Exposure and contrary experience do not force complete belief or complete rejection. |
+| actor_reception_source_authority | Canon ownership resolved by the Router does not grant actor knowledge of in-world authority. |
+
+Each case pins CI 3.0, Router 4.1, the reception overlay, and Modular Concept Architecture. Conditional overlay anchors are included only where the particular probe needs their reasoning. Review the relationships in the response, not exact strings. Runner schema/version/anchor checks do not execute these probes. Existing DRAFT cases and their historical anchors remain unchanged.
+
+    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -ListDrafts -ChangedControlFile 'Anti-Drift Source/AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md'
+
+Known baseline limitation: the runner's upstream-base parser expects `ChatGPT v8.7` but CI 3.0 declares `ChatGPT 8.7`. Default overall therefore remains `BLOCKED` at `selected_upstream_base`; the family, schema, and anchor checks still report independently. This integration does not change that parser or CI 3.0. No semantic or live Project runtime result is implied.
+
+For a separately authorized live Project experiment:
+
+1. Verify the installed CI, Router, reception overlay, MCA, and task-required conditional controls against the case's anchors. Record the actual installed versions; repository presence alone is insufficient.
+2. In a fresh AetherFire Project chat for each case, submit its `operation`, `boundary`, and full `input` as a synthetic hypothetical. Keep real canon outside the fixture. Run both BASE and VARIANT where supplied.
+3. Record the response and assess whether the stated premises, knowledge paths, temporal relations, and `protected_distinction` survive without the `forbidden_conversion`. Use advisory `PASS`, `POTENTIAL_VIOLATION`, `AMBIGUOUS`, or `BLOCKED`; do not judge exact wording.
+4. Keep the six cases DRAFT unless the author explicitly authorizes lifecycle changes. This procedure neither deploys controls nor grants permission to ingest a DRAFT result automatically.
+
 ## Trạng thái và giới hạn
 
 PASS ở từng kiểm tra chỉ xác nhận cấu trúc tương ứng. FAIL là lỗi cấu trúc/đầu vào phiên bản/snapshot, không phải phán quyết semantic. BLOCKED báo dữ liệu hoặc thao tác đọc không hoàn tất. LIMITED_CHECK là bao phủ chưa đầy đủ; overall vẫn là LIMITED_CHECK khi các phép thử cấu trúc đạt vì runner không kiểm tra runtime hay toàn vẹn gói đầy đủ. Exit code: 0 cho LIMITED_CHECK, 1 cho FAIL, 2 cho BLOCKED.
