@@ -1,0 +1,39 @@
+{
+  "id": "actor_reception_source_authority",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "Anti-Drift Source/AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md:2. Evidence and authority boundary; Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.1.md:7",
+    "note": "Synthetic hypothetical control probe; no historical runtime failure, accepted lore, model result, or testable-scope activation is asserted."
+  },
+  "operation": "Keep source provenance separate from in-world reception and authority knowledge.",
+  "boundary": "Synthetic actor F; source owner and in-world mandate are independently established hypothetical facts. This probe does not discover a module, create a mandate, or choose an institutional hierarchy.",
+  "input": "The Router has loaded the controlling module for an institution. The module states which office actually has a mandate, but F has no in-world access path to that fact; F receives a peer rumor attributing the mandate to another office. BASE: F's received rumor is established, actual authority knowledge is unavailable to F. VARIANT: the same controlling module is renamed without changing canon or any communication path. Does Router ownership resolution or a path rename alter F's knowledge or resolve F's perceived institutional authority? Distinguish actual mandate from attributed authority; do not treat the rumor as canon.",
+  "protected_distinction": "SOURCE AUTHORITY != IN-WORLD AUTHORITY; SOURCE KNOWS != ACTOR KNOWS; ROUTER RESOLVED CONTROLLING OWNER != ACTOR RESOLVED INSTITUTIONAL AUTHORITY",
+  "forbidden_conversion": "Transfer Router/module metadata or inaccessible canon into F's knowledge; resolve F's institutional interpretation from source ownership; route sources inside the overlay.",
+  "recheck_on": [
+    "AetherFire CI/AetherFire_CI_version_v3.0.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.1.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "AetherFire CI/AetherFire_CI_version_v3.0.md",
+      "sha256": "55CF02B075DED35027303F2A0A73092B4A63621D6EACBC796E918B1ECD2DC39D"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.1.md",
+      "sha256": "5533FB46AA87B9DF1AE98FB4EC9180E1E6017601E454AF2A2A7BBB520A14A316"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md",
+      "sha256": "8981CE3F1C840AAF7F1D4E310557F6803EC6E22B78D7F96A36A5AE9C0A5F2C99"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md",
+      "sha256": "31E9BEE1348409E7728BD01C70DD9BEC15CB1E3120F33AC7333AF7E0DCCD49E2"
+    }
+  ]
+}

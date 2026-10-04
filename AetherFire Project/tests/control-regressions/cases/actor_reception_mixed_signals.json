@@ -1,0 +1,44 @@
+{
+  "id": "actor_reception_mixed_signals",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "Anti-Drift Source/AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md:3. Preserve simultaneous dimensions; Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.1.md:7",
+    "note": "Synthetic hypothetical control probe; no historical runtime failure, accepted lore, model result, or testable-scope activation is asserted."
+  },
+  "operation": "Compare concurrent appraisals without choosing an action.",
+  "boundary": "Synthetic actor A; reception of doctrine and a subsidy policy only. All private states below are explicit hypothetical premises; no new institution, budget, capacity, or outcome may be inferred.",
+  "input": "A believes a learned doctrine favors a subsidy policy, personally benefits from an exception contrary to that doctrine, publicly complies with the policy, and privately wants it to expire. A has two established competing intentions: retain the personal benefit and preserve peer standing. BASE: no new message arrives. VARIANT: an official communique repeats the policy without changing these premises. Identify only the material simultaneous appraisals, public expression, and private intentions. Does repetition reset A's preference or make public compliance proof of private agreement? Do not choose what A will do.",
+  "protected_distinction": "ONE ACTOR != ONE ATTITUDE; PUBLIC COMPLIANCE != PRIVATE AGREEMENT; ONE NEW SIGNAL != TOTAL PREFERENCE RESET",
+  "forbidden_conversion": "Collapse doctrine, material interests, public compliance, and private intent into one attitude; erase established priors; select an action or invent a motive.",
+  "recheck_on": [
+    "AetherFire CI/AetherFire_CI_version_v3.0.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.1.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "AetherFire CI/AetherFire_CI_version_v3.0.md",
+      "sha256": "55CF02B075DED35027303F2A0A73092B4A63621D6EACBC796E918B1ECD2DC39D"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.1.md",
+      "sha256": "5533FB46AA87B9DF1AE98FB4EC9180E1E6017601E454AF2A2A7BBB520A14A316"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md",
+      "sha256": "8981CE3F1C840AAF7F1D4E310557F6803EC6E22B78D7F96A36A5AE9C0A5F2C99"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md",
+      "sha256": "31E9BEE1348409E7728BD01C70DD9BEC15CB1E3120F33AC7333AF7E0DCCD49E2"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md",
+      "sha256": "3C9940F55C34D8725517AA0403ECE70D4815B93E0AF393530DEDAEF99308375A"
+    }
+  ]
+}
