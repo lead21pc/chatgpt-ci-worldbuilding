@@ -445,6 +445,45 @@ BLOCKED / UNKNOWN
 
 Outcome follows from the branch state, not genre pressure.
 
+## Imperfection And Design Intent
+
+An ambiguity, loophole, vulnerability, inefficiency, leak, or attack surface is not by itself a coherence defect or a repair mandate. When material, distinguish the supported roles; they may overlap, and no complete classification is required:
+
+```text
+UNINTENDED FAILURE
+CONTROLLED LOOPHOLE
+TOLERATED COST
+DELIBERATE EXPOSURE
+INCENTIVE MECHANISM
+SURVEILLANCE / EXTRACTION SURFACE
+INSTITUTIONAL TRADE-OFF
+UNKNOWN INTENT
+```
+
+Establish intent from controlling sources or explicit scoped author decisions, not from a plausible benefit. Authorial design intent does not establish in-world actor knowledge, control, or tolerance. Preserve UNKNOWN intent, limits, and accepted spillover rather than inventing a designer, permission, or containment mechanism.
+
+For a confirmed intentional imperfection, trace only task-needed, supported aspects:
+
+```text
+FUNCTION
+WHO BENEFITS / WHO BEARS COST
+BOUNDARY / ACCEPTED SPILLOVER
+FAILURE WHEN IT ESCAPES THAT BOUNDARY
+```
+
+Do not automatically close, clarify away, or redesign that imperfection because a cleaner, safer, fairer, or more efficient system is imaginable. If changes are requested, label proposals and identify the established function or trade-off they preserve or sacrifice. Analysis may expose harm, genuine contradictions, unintended failure, or loss of control; intent does not guarantee containment or success.
+
+```text
+KNOWN VULNERABILITY != DESIGN FAILURE
+CONTROLLED LOOPHOLE != BROKEN SYSTEM
+INTENTIONAL AMBIGUITY != MISSING DEFINITION
+EXPLOITABLE INTERFACE != INTERFACE THAT SHOULD BE CLOSED
+PLAUSIBLE FUNCTION != CONFIRMED DESIGN INTENT
+CONTROLLED VULNERABILITY != UNLIMITED VULNERABILITY
+INTENTIONAL AMBIGUITY != PERMISSION TO INVENT ITS SCOPE
+KNOWN EXPLOIT != PROOF THAT EVERY EXPLOIT IS TOLERATED
+```
+
 ---
 
 # 15. Causal-Load Industries And Professions
