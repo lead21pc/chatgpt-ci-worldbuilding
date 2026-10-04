@@ -4,7 +4,7 @@
   "status": "DRAFT",
   "provenance": {
     "kind": "CURRENT_CONTROL_CONTRACT",
-    "reference": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.1.md:14, Imperfection And Design Intent",
+    "reference": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md:14, Imperfection And Design Intent",
     "note": "Synthetic bounded paired probe; not accepted lore, a historical runtime failure, a model result, or authorization to activate semantic testing."
   },
   "operation": "Separate authorial attack-surface intent from institutional knowledge, control, and tolerance.",
@@ -15,7 +15,7 @@
   "recheck_on": [
     "controls/AetherFire CI/AetherFire_CI_version_v3.0.md",
     "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
-    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.1.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md",
     "controls/Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md"
   ],
   "active_control_anchors": [
@@ -28,8 +28,8 @@
       "sha256": "227997F6621B49DB369D807742104E033F448BC04031D7C3102E0053FEF0A694"
     },
     {
-      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.1.md",
-      "sha256": "4E658F211B0D9A08054656689350F375404CBF144E057832674F12A0ED3EB8C9"
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md",
+      "sha256": "20153ED4980D04CAF5CAF26EB04773C1B3EE40C9AF104012486F06488E566F0A"
     },
     {
       "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md",
