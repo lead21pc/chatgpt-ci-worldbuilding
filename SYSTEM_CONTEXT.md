@@ -1,5 +1,37 @@
 # SYSTEM CONTEXT — AUTHORING MODEL AND REPOSITORY INTERPRETATION
 
+## Start here: creative purpose and pipeline interpretation
+
+This is an author's working environment for developing **AetherFire, The Kingdom, and The Academy**, three independent fictional worlds, with ChatGPT and Codex assistance.
+
+The worlds are the creative work. Instructions, source routers, audits, consolidation scripts, regression checks, and Git procedures support that work by preserving consistency, provenance, scope, and reviewable decisions.
+
+For human readers, LLMs, and repository agents, the essential interpretation is:
+
+- The three worlds have independent canon, ontology, source authority, and local controls.
+- Repository text is a partial externalization of the author's world models, not their complete contents.
+- The author decides canon; a model response or successful tool run does not make a creative decision.
+- A workflow may combine author actions, model instructions, and executable tools. A diagram does not imply that every step runs automatically.
+- Repository validation and live ChatGPT behavior are separate evidence classes. A structural pass does not prove a runtime pass.
+
+### Distinctions from related repository types
+
+Related projects may combine several of these functions. Use the following distinctions to interpret this repository, rather than assuming its purpose from its engineering-like appearance.
+
+| Related repository function | Scope of this repository |
+| --- | --- |
+| Sharing prompts or reusable instructions | Instruction files are accompanied by design history, failure analysis, and evidence limits from ongoing use. Reuse requires checking scope and applicability. |
+| Offering a common worldbuilding template | The three worlds remain independent. Shared methods or candidate ideas must be evaluated within each world's local rules. |
+| Publishing a lore archive | Repository-visible lore is a partial record. Project-declared authority and author decisions determine its meaning; absence is not proof of nonexistence. |
+| Generating stories or fictional content | Model output supports the author's work. Generation does not authorize canon changes or fill unresolved source gaps. |
+| Providing tests and automation | Executable checks cover their stated properties. Author review and live model observations remain distinct parts of the workflow. |
+
+When inspecting a pipeline, identify what each step acts on, who performs it, what it can authorize, and what its output actually proves. In particular, source consolidation is not canon approval, source routing is not a transfer of authority, and repository validation is not automatic runtime deployment.
+
+The detailed sections below explain the authoring model and its interpretation boundaries.
+
+---
+
 ## 1. Purpose of this repository ecosystem
 
 This ecosystem exists for a **personal, non-commercial worldbuilding hobby**.
