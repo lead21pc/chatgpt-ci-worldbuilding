@@ -2,6 +2,18 @@
 
 > Preserved as a separate temporal layer. `DESIGN HISTORY`, `RETIRED`, `SURVIVING LEGACY`, `UNDER CONSIDERATION`, `CURRENT CANON` and `UNKNOWN` retain their original meanings. Nothing in this file becomes current canon merely because it appears here.
 
+## Historical-state notice — Undie revamp 2026-10-05
+
+Các nhãn CURRENT CANON/SURVIVING LEGACY và các kết luận preservation trong hồ sơ cũ bên dưới là trạng thái ở thời điểm ghi. Trong phạm vi Undie, chúng không còn giữ authority nếu trái mốc nghề nghiệp `30` ngày 2026-10-05.
+
+Undie không còn Slave class/caste/punishment; graph màu/White→Citizen, legal-status entry, compulsory sterilization, credit web thế chấp địa vị, ownership/master và humiliation apparatus đã nghỉ hưu. Không dùng history/proposal để lấp phần triển khai mới còn UNKNOWN. Các đề xuất Purple committee/White reallocation/TE vice/spy hoặc cơ chế cũ không được phục hồi bằng retcon này.
+
+Tuyến MC2 Civil→Undie→illegal prostitution và các sự kiện phụ thuộc không còn current implementation. Phả hệ Raging Fire/Prince 9, True Crown và meta Clash giữ miền riêng. Strategic-node source được chỉ định làm đầu vào thiết kế tiếp theo, không wholesale canon admission.
+
+Retcon không xóa Temple/ML hoặc lịch sử Canon 1, không thay Civil/Criminal/Academy/aviation ngoài phạm vi. TE redesign DEFERRED. Xem `91` AF-UR-001–016/AF-UR-LEGACY và `92` AF-UR-OPEN-001–009.
+
+`AetherFire_Undie_Revamp_Proposal_Total_War_Transition_v0.1.md` bị loại khỏi mốc này, kể cả làm fallback/philosophy/bridge.
+
 ## Genealogy, thể chế và công nghệ — xử lý chọn lọc 2026-10-03
 
 > **DESIGN HISTORY / ANALYTICAL INFERENCE / PROPOSAL — NOT CURRENT CANON.** Các ghi chú State Institution Model, Technology Infrastructure và Undie Design History Genealogy ngày 2026-10-03 được xử lý tại đây. Bản nguồn byte-exact và SHA-256 được ghi trong `91`; lưu trữ không phục hồi mọi khẳng định làm canon. Phần chức năng Terminal/Guest Pass đã được chấp nhận chỉ có hiệu lực theo bản đã đối chiếu trong `15`; khung thể chế có giới hạn nằm ở `10` §5.1.

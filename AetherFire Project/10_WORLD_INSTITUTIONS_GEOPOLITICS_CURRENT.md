@@ -28,40 +28,13 @@
 > Phần này được đặt **trước** các section chi tiết để các chat khác đọc source không nhầm foreground cũ với ontology hiện tại. Nếu một cách diễn giải cũ xung đột với các chốt dưới đây, dùng chốt mới hơn ở đây và section chuyên biệt tương ứng.
 
 
-### A0. ANTI-DRIFT ƯU TIÊN CAO — Undie không phải trung tâm của AetherFire
+### A0. Undie không phải trung tâm của AetherFire — cập nhật 2026-10-05
 
-**CANON / DESIGN-INTERPRETATION ĐÃ ĐƯỢC USER XÁC NHẬN VỀ CÁCH ĐỌC HỆ THỐNG**
+Cách lưu thế giới vẫn ưu tiên ban ngành/tác nhân/quy trình/địa điểm. Độ sâu của một module, độ nổi trong truyện hoặc vai trò của MC2 không chứng minh tính trung tâm chiến lược hay ontology.
 
-Undie có độ sâu implementation cao, từng chiếm foreground RP rất lớn quanh MC2, và nhiều pipeline có thể đổ người vào nó. **Không được từ đó suy Undie là ontology trung tâm, nguyên nhân tồn tại của các ban ngành, hay “điểm chính” của chảo lửa AetherFire.**
+Undie nay là hệ sinh thái nghề nghiệp đa nhánh, không phải terminal status/sink cho output thất bại của ban ngành. Sex work chỉ là một nhánh có thể có; humiliation regime không còn là lý do tồn tại. Nghề có thể tạo giao diện thị trường, di chuyển, tiếp cận và quan hệ chính trị khi có đường nhân quả.
 
-Cách người thiết kế lưu paracosm trong đầu là **institution/process-first**: thông tin được nhớ theo ban ngành, actor, site, procedure và luồng xử lý; `Undie` thường chỉ xuất hiện ở cuối một pipeline khi cần một status tiếp nhận.
-
-```text
-Institution / department
-→ tuyển / xử lý / đánh giá
-→ actor hữu dụng đi tiếp theo chức năng chính
-→ một số failure / output không còn được institution giữ ở tuyến chính
-→ Undie có thể là terminal status / sink của pipeline đó
-```
-
-Vì vậy phải đọc:
-
-```text
-nhiều pipeline → Undie
-≠
-Undie → sinh ra / quản trị / giải thích mọi pipeline
-```
-
-Undie còn có chức năng riêng trong kinh tế–xã hội, gồm sex-work/humiliation regime và một phần **van giải áp** cho áp lực Civil/đô thị. Nhưng ở cấp strategic pressure cooker, các node như nhà nước, quân đội, Hội đồng Pháp sư, True Crown/Raging Fire, long mạch, Matriarch's Lament, Hoa Nguyệt, ba cường quốc phía Bắc, cult, succession và great-power politics mới là các trục có thể quyết định vận mệnh toàn cục.
-
-```text
-DEPTH OF MODULE
-≠ NARRATIVE SALIENCE
-≠ STRATEGIC CENTRALITY
-≠ ONTOLOGICAL CENTRALITY
-```
-
-Mọi cách gọi legacy kiểu “Undie-centric” trong source phải được hiểu là **foreground/shared-interface gravity**, không phải tuyên bố rằng world được xây quanh Undie.
+Nhà nước, quân đội, Hội đồng Pháp sư, True Crown/Raging Fire, long mạch, ML, Hoa Nguyệt, các cường quốc phía Bắc, cult, kế vị và cạnh tranh cường quốc vẫn là các trục độc lập. Không dựng lại funnel toàn hệ quanh Undie; `30` kiểm soát retcon nghề.
 
 ### A. AetherFire hiện tại là political grimdark đa trục
 
@@ -129,7 +102,7 @@ royal claimant
 + foreign-policy / security variable
 ```
 
-Các quý tộc muốn bẻ MC2 còn nhằm kiểm soát agency, fertility và hậu duệ của cô để tạo các nhánh chính danh. Nhà ngoại MC2 lobbying có structural stake vào lineage này. Các quốc gia đối địch vẫn theo dõi MC2 chặt dù Clash #1 đã làm cô lệch sang current Undie pathway.
+Các quý tộc muốn bẻ MC2 còn nhằm kiểm soát agency, fertility và hậu duệ của cô để tạo các nhánh chính danh. Nhà ngoại MC2 lobbying có structural stake vào lineage này. Các quốc gia đối địch vẫn theo dõi MC2 chặt dù Clash #1 làm lệch trajectory cũ. Triển khai tuyến Undie mới chưa chốt; không dùng hạ cấp địa vị làm cầu nối.
 
 ### C2. Raging Fire là tên gốc; “Raging Phoenix” là tên AetherFire đặt lại
 
@@ -159,30 +132,11 @@ Vì vậy vị vua AetherFire đã bỏ trốn **không phải cha ruột MC2**.
 
 AetherFire biết lineage này có **một tính chất khác ngoài phần seal/barrier mà họ đã nhận biết**, nhưng không nắm toàn bộ ontology thật. Chi phí nghiên cứu quá cao là một lý do khiến nhà nước chọn MC2 làm trường hợp đặc biệt để tìm hiểu/khai thác lineage.
 
-### D. Ngoại lệ sinh sản của MC2 — supersede rule cũ
+### D. Sinh sản và giá trị huyết hệ — retcon 2026-10-05
 
-**LATEST CANON**
+Triệt sản bắt buộc do là Undie đã nghỉ hưu. Không còn mô hình “mọi Undie vô sinh, MC2 ngoại lệ”. Tư cách nghề không xác định fertility.
 
-```text
-Undie thông thường
-→ triệt sản bắt buộc
-→ không đảo ngược
-
-MC2
-→ ngoại lệ do nhà nước cố ý giữ fertility
-→ KHÔNG bị triệt sản
-→ dùng tránh thai phép thuật tạm thời
-```
-
-Lý do chiến lược là Raging Phoenix/True Crown reproductive value của MC2. Không được áp ngoại lệ này sang Undie khác.
-
-Mệnh đề cũ kiểu:
-
-```text
-“Mọi Undie, bao gồm MC2, đều vô sinh vĩnh viễn”
-```
-
-đã bị **supersede**.
+MC2 vẫn có giá trị huyết hệ Raging Fire/Raging Phoenix/True Crown. Giao diện y tế/tránh thai trên tuyến mới phải được chốt riêng; giá trị ấy không tự cho phép một cơ chế cưỡng chế sinh sản.
 
 ### E. Hoa Nguyệt / Tây quốc là đối trọng văn minh nhưng không phải phe sáng sạch
 
@@ -294,7 +248,7 @@ Các source không phải anti-drift được dùng để tạo bản hợp nh�
 - `aetherfire_chot_canons_mc2_fall_from_grace.md` — chỉ lấy phần canon đã chốt; các mục từng ghi “canon tiềm năng” chỉ được dùng nếu đã được canon mới xác nhận
 - `aetherfire_delta_since_last_export.md`
 - `aetherfire_delta_since_last_anti_drift_export.md`
-- `aetherfire_undie_civil_citizen_revamp_canon_1_42.md` — latest anchor cho Citizen/Civil/Undie/Yellow/Criminal và credit-line revamp
+- `aetherfire_undie_civil_citizen_revamp_canon_1_42.md` — nguồn tiền nhiệm; giữ quyền ngoài phạm vi bị retcon. Undie hiện hành theo `30` và hai nguồn 2026-10-05 trong `91`.
 - `aetherfire_civil_entry_allocation_law_canon.md` — latest dedicated source cho Civil entry, billet, allocation, relocation và reassignment
 - canon mới được người dùng xác nhận trong các lượt trao đổi sau lần xuất file gần nhất
 - loạt chốt UNKNOWN về Fictionize / Proof of Concept / V0.5 / Raging Phoenix / ontology Undie / facility / POW / Criminal trong các lượt trao đổi mới nhất
@@ -492,7 +446,7 @@ bẻ agency MC2
 → dùng MC2/hậu duệ làm nguồn chính danh cho faction cai trị AetherFire
 ```
 
-MC2 vì vậy có thể bị nhìn như một **dynastic reproductive anchor**. Nhà ngoại của cô liên tục lobbying vì có structural stake vào maternal lineage; các quốc gia đối địch vẫn theo dõi cô chặt dù current trajectory đã đẩy cô xuống Undie.
+MC2 vì vậy có thể bị nhìn như một **dynastic reproductive anchor**. Nhà ngoại của cô liên tục lobbying vì có structural stake vào maternal lineage; các quốc gia đối địch vẫn theo dõi cô chặt dù trajectory đã lệch; tuyến tiếp cận nghề/vùng xám mới của cô còn mở.
 
 ---
 
@@ -557,7 +511,7 @@ Hoa Nguyệt là đối thủ của AetherFire nhưng không phải một “goo
 
 Exact Hán tự của “Hoa” chưa chốt.
 
-AetherFire cố ý dùng Hanfu/Yukata-derived visual language trong Undi như một lớp bôi xấu/hạ nghĩa văn hóa của Hoa Nguyệt.
+AetherFire cố ý vay mượn/chiếm dụng ý tưởng quốc phục Hoa Nguyệt khi phát triển Undi, nhưng bằng chứng ngoài không chứng minh chắc chắn ý định ấy. Có thể có bất bình/tranh cãi/ma sát ngoại giao và khả năng phủ nhận; không còn lời nhục mạ thị giác tự chứng minh. `30` kiểm soát chi tiết.
 
 ### 20.0b Tam cường phương Bắc — current canon
 
@@ -738,85 +692,17 @@ Nếu ba cường quốc phía Bắc tạm gác ân oán với nhau và đạt o
 
 ## 21. MC2 — tính cách và fall from grace
 
-### 21.1 Nền tính cách
+### 21.1 MC2 và tuyến tiếp cận mới — 2026-10-05
 
-MC2 là một công chúa fantasy điển hình:
+MC2 vẫn có nền tính cách công chúa fantasy: ngây thơ, khá kiêu ngạo, ý thức địa vị mạnh và self-concept gắn với vai trò công chúa. Những nét ấy không tự xác lập một đường mất địa vị/nghề mới. Sai mô hình cụ thể về đời sống Slave/consent trong tuyến cũ cần được xét lại, không dùng để quyết định hành vi trên tuyến nghề chưa chốt.
 
-- ngây thơ;
-- khá kiêu ngạo;
-- ý thức địa vị mạnh;
-- self-concept gắn với vai trò công chúa;
-- hiểu tầng lớp nô lệ chủ yếu qua bề mặt nhà nước cho phép cô thấy.
+Tuyến “mất status→Civil→tự chọn Undie→mại dâm bất hợp pháp→kháng chiến giả→án phản quốc” không còn là triển khai hiện hành. Các mốc thời lượng khoảng hai năm, đánh tráo giấy tờ và cơ chế bào người phụ thuộc tuyến ấy cần xét lại, không chuyển nguyên sang tuyến nghề mới.
 
-Flaw lớn:
+Hướng mới: MC2 cần tiếp cận mẹ/trục Raging Fire/chính trị AF; đường chính thức có thể không khả dụng, quá lộ hoặc nguy hiểm. Undie có thể cung cấp môi trường nghề/xã hội/vùng xám. Nghề, vỏ bọc, patron, liên hệ, sự cố an ninh, đường tới mẹ và kết quả còn `UNKNOWN`.
 
-> MC2 quá ngây thơ về thực trạng tầng lớp nô lệ.
+Không xóa agency của MC2 hoặc coi mọi bước là một kế hoạch thống nhất của nhà nước. Không biến unknown thành một chuỗi sự kiện mới. Các quan hệ Fictionize/POC/Clash/gọi MC1 được xử lý ở `40`, không suy từ tuyến hạ cấp đã bỏ.
 
-Cô từng nghĩ rằng đi xuống tầng nô lệ có thể giúp tiếp cận kháng chiến dễ hơn.
 
-### 21.2 Status degradation
-
-MC2 đã thực sự mất status và rơi vào hệ nô lệ trước khi gọi MC1.
-
-Exposure, humiliation, mất quyền riêng tư, mất địa vị và các chi phí của hệ thống là hậu quả thật, không phải một “bài test narrative” vô hại.
-
-Fall from grace và “chết tâm” là hai trạng thái khác nhau:
-
-```text
-FALL FROM GRACE
-≠
-CHẾT TÂM
-```
-
-Fall from grace gồm:
-
-- mất địa vị;
-- mất protection;
-- mất privilege;
-- mất một phần agency;
-- worldview bị phá;
-- self-concept bị rung chuyển.
-
-“Chết tâm” là trạng thái sâu hơn liên quan trực tiếp đến điều kiện Raging Phoenix trong Canon 1.
-
-### 21.3 Thời lượng
-
-Trajectory fall-from-grace gốc kéo khoảng **2 năm**.
-
-MC2 phải:
-
-- sống trong hệ;
-- thích nghi;
-- tìm cách kiếm thu nhập;
-- đi vào lựa chọn rủi ro hơn;
-- tiếp tục tìm kháng chiến;
-- bị bẫy kháng chiến giả;
-- bị kết tội phản quốc;
-- rơi xuống đáy tuyệt vọng;
-- rồi mới gọi MC1.
-
-### 21.4 Hệ thống như “máy bào người”
-
-Upkeep tồn tại thật:
-
-- chỗ ở;
-- sinh hoạt;
-- vệ sinh;
-- y tế;
-- chi phí duy trì khác.
-
-Nhưng upkeep có thể quay lại subject qua:
-
-- phụ phí;
-- khấu trừ;
-- phí mobility;
-- tỷ lệ quy đổi;
-- thuật toán hiệu suất;
-- chi phí chuyển class/zone.
-
-Độ grim nằm ở việc nhiều quan hệ cần để sống, di chuyển và cải thiện vị trí đều có thể bị định giá.
-
----
 
 ## 22. Raging Fire / “The Raging Phoenix”
 
@@ -834,7 +720,7 @@ Raging Phoenix
 
 AetherFire nằm trên long mạch; huyết hệ Raging Phoenix của hoàng tộc có chức năng trấn áp/phong ấn liên quan tới thực thể cổ xưa có khả năng gây tận thế bên dưới. True Crown vì vậy gắn với một chức năng tồn vong, không chỉ dynastic symbolism.
 
-MC2 do đó có fertility/lineage value cấp chiến lược. Đây cũng là nền cho latest exception: nhà nước cố ý dùng tránh thai phép thuật tạm thời với MC2 thay vì triệt sản như Undie thông thường.
+MC2 do đó có fertility/lineage value cấp chiến lược. Điều này không phục hồi triệt sản nghề nghiệp hoặc tự chốt cách tránh thai trên tuyến mới.
 
 Trait ẩn của hoàng tộc Raging Fire đã được xác nhận ở tầng ontology thật:
 
@@ -923,7 +809,7 @@ status distinction
 ≠ administrative discrimination tùy tiện
 ```
 
-Một Undie không bị từ chối thủ tục công chỉ vì class.
+Một người hành nghề Undie không bị từ chối thủ tục công chỉ vì nghề; Undie không còn là class.
 
 Tính chính danh thủ tục là một phần quan trọng của cách nhà nước tự duy trì hình ảnh “con của người dân”.
 
@@ -1025,7 +911,7 @@ Vì vậy trajectory sụp đổi 5–8 năm phải được thiết kế **hợ
 
 ### 26.3 Deferred sang subsystem/chat khác
 
-- mọi threshold Credit Score chi tiết;
+- luật nghề, hợp đồng, tín dụng và quyền tiếp cận Undie mới; không phục hồi threshold Credit Score cũ;
 - full collar protocol;
 - fail-safe chi tiết;
 - black market mechanics đầy đủ;
@@ -1106,7 +992,7 @@ After the AF king flees and the previous balance weakens, a noble faction pressu
 2. research/extract enough capability to create an AF-controlled suppression array;
 3. increase total military force-generation capacity.
 
-This is a factional agenda, not proof of a unified state policy or a successful research program. It does not turn MC2's whole Princess → Civil → Undie trajectory into one master plan; MC2's Civil → Undie choice remains her own.
+Đây là agenda của một phe, không chứng minh chính sách nhà nước thống nhất hoặc chương trình nghiên cứu thành công. Tuyến Princess→Civil→Undie cũ đã bị supersede; agency và đường tiếp cận mới của MC2 phải được thiết kế riêng, không gán thành một master plan.
 
 ### Dependency boundary
 

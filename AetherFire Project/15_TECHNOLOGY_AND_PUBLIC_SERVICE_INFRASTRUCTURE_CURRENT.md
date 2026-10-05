@@ -4,7 +4,7 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: Shared technology/service interfaces, removable personal terminal, Guest Pass, prepaid wallet, device deposit, and device lifecycle.
 > Authority boundary: Controls the accepted general-terminal and guest-service model; does not establish universal deployment, a single backend, agency ownership, or unresolved implementation details.
-> Cross-domain owner boundary: Global institutions and geopolitics are controlled by `AFM-001`; legal/civic status and shared economic namespaces by `AFM-002`; Undie coercion, ranks, collar and Undi by `AFM-003`; detailed aviation and RF airspace by `AFM-008`.
+> Cross-domain owner boundary: Global institutions and geopolitics are controlled by `AFM-001`; legal/civic status and shared economic namespaces by `AFM-002`; Undie professions, occupational hardware and Undi by `AFM-003`; detailed aviation and RF airspace by `AFM-008`.
 > Load mode: `FULL_FILE`
 
 > **Integration:** 2026-10-03; user-approved selective admission after audit AF-NEW-001–008.
@@ -19,9 +19,9 @@ Các capability định danh, xác thực, thanh toán, dữ liệu, bảo trì 
 
 ## 2. Chuyển giao công nghệ, không chuyển giao địa vị hoặc cưỡng chế
 
-Undie là một nguồn công nghệ giao diện, không phải mẫu ontology/policy cho khách. `30` đã xác lập collar terminal, mail/user information, giao diện retina có thành phần tích hợp vào cơ thể, chip âm thanh tích hợp xương tai, commission forum và gọi an ninh khẩn cấp một chiều khi có quấy rối ngoài workline. Liên lạc Pink có điều kiện riêng trong `30`.
+Undie là nguồn gốc thiết kế công nghệ giao diện, không phải mẫu ontology/policy cho khách. Năng lực terminal, mail/user information, retina có thành phần tích hợp cơ thể, audio tích hợp xương tai, commission forum và gọi an ninh khẩn cấp có điều kiện vẫn là năng lực đã chốt. Retcon 2026-10-05 ở `30` bỏ collar/dấu cơ thể bắt buộc và quyền liên lạc theo Pink/rank; không suy mọi người hành nghề mới phải cấy ghép hoặc chịu quyền lệnh cũ.
 
-Chuyển giao công nghệ không nhập Undie rank, Credit Score, Credit Line, workline, command authority, hạn chế di chuyển hay logic cưỡng chế vào terminal khách. Payment/retail, blacklist và AI safety của collar lịch sử chưa được phục hồi thành chức năng collar hiện hành. Nanofabric/self-repair/first-aid của Undi cũng chỉ là genealogy.
+Chuyển giao công nghệ không nhập đồ thị rank, Credit Score/Line đã nghỉ hưu, workline, quyền lệnh, hạn chế di chuyển hay cưỡng chế vào terminal khách hoặc vào mặc định nghề Undie mới. Payment/retail, blacklist và AI safety của collar lịch sử chưa được phục hồi thành chức năng collar hiện hành. Nanofabric/self-repair/first-aid của Undi cũng chỉ là genealogy.
 
 ## 3. Personal Terminal — kiến trúc chức năng
 
@@ -47,7 +47,7 @@ Khóa/revoke thiết bị không đồng nghĩa xóa số dư ví, thay đổi l
 
 Hướng thiết kế chấp nhận private retina interface và private audio không cưỡng chế. Giao diện có thể phục vụ định danh, navigation, số dư, xác nhận giao dịch, quyền truy cập, tin nhắn và thông báo dịch vụ/khẩn cấp.
 
-**Chưa chốt cơ chế chuyển từ retina/bone-integrated audio hiện hành sang thiết bị khách tháo rời.** Không mặc định khách phải cấy ghép, hoặc đã có một giải pháp không xâm lấn; thành phần cơ thể, đồng thuận, vô hiệu hóa khi tháo/trả/mất và liên kết thiết bị vẫn mở.
+**Chưa chốt cơ chế chuyển từ năng lực retina/bone-integrated audio đã xác lập sang thiết bị khách tháo rời.** Không mặc định khách phải cấy ghép, hoặc đã có một giải pháp không xâm lấn; thành phần cơ thể, đồng thuận, vô hiệu hóa khi tháo/trả/mất và liên kết thiết bị vẫn mở.
 
 Terminal ưu tiên ngữ cảnh: transit ở cổng, mua hàng ở vending, định danh/access ở checkpoint, giấy tờ/thủ tục ở nơi cung cấp dịch vụ. Đây là thiết kế AetherFire được chấp nhận tại đây, không nhập ontology, quyền hạn hay implementation từ The Kingdom POT.
 
@@ -71,7 +71,7 @@ Terminal có guest mode với credential/validity/access profile, ví trả trư
 | Guest Wallet | Giá trị trả trước cho giao dịch tương thích | Đặt cọc, Credit Score, Credit Line hoặc legal status |
 | Access Profile | Quyền truy cập nơi/dịch vụ trong phạm vi được cấp | Tiền, class hoặc social hierarchy |
 
-Guest Wallet dùng tên biến tài chính riêng. Bare `credit` trên Undie terminal vẫn chưa rõ là Credits, Credit Score, Contribution Points hay Credit Line; AF-OPEN-006 không được đóng bởi mô hình này.
+Guest Wallet dùng tên biến tài chính riêng. AF-OPEN-006 được supersede bởi retcon Undie 2026-10-05, không phải được giải quyết bằng mô hình ví khách. Không phục hồi bare `credit`/cost/bonus theo web cũ; denomination và triển khai ví vẫn mở.
 
 ## 6. Đặt cọc và ví
 
@@ -133,4 +133,4 @@ Giữ đủ 15 nhóm câu hỏi của nguồn Terminal:
 
 Giữ 15 nhóm của Technology Notes: industrial energy; cơ chế nanotechnology nếu sau này phục hồi; device standards authority; ownership ID/payment network; national data architecture; backend concentration/distribution; privacy/data-rights; cybersecurity; robot/android production scale; automation share; rare-material supply; collar/Undi/aircraft cost; procurement; banking/currency/public finance; civilian/commercial/military/intelligence technology gaps. Việc ghi câu hỏi không chấp nhận nanofabric hay một ngành công nghiệp cụ thể thành canon.
 
-`10` kiểm soát thể chế; `20` kiểm soát status và economic namespaces; `30` kiểm soát collar/Undie/Undi; `80` kiểm soát aviation. Các unknown hiện có trong những miền này vẫn có hiệu lực; module này không thay quyền sở hữu nội bộ của chúng.
+`10` kiểm soát thể chế; `20` kiểm soát status và economic namespaces; `30` kiểm soát nghề Undie, phần cứng nghề còn mở và Undi; `80` kiểm soát aviation. Các unknown hiện có trong những miền này vẫn có hiệu lực; module này không thay quyền sở hữu nội bộ của chúng.

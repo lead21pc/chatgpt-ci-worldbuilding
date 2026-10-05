@@ -1,6 +1,6 @@
 # AetherFire — Consolidation Index
 
-> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-10-03
+> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-10-05
 > **Location:** self-contained `AetherFire Project/` package. Current root files are maintained current sources; `Source_Archive/` preserves historical/provenance material only.
 > **Truth rule:** `ABSENCE OF CANON ≠ CANONICAL NEGATION`; `NOT ESTABLISHED ≠ FALSE`; unresolved relations remain `UNKNOWN / UNRESOLVED`.
 
@@ -9,7 +9,7 @@
 1. `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` — project identity, state, institutions, geopolitics and dynastic conflict.
    - `15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` — shared technology/service interfaces, personal terminal, Guest Pass, prepaid wallet, deposit and device lifecycle; implementation unknowns remain open.
 2. `20_STATUS_CIVIL_LABOR_CURRENT.md` — status ontology, Citizen/Civil/Yellow/POW/Criminal, Civil entry/allocation/lifecycle and cross-status mobility.
-3. `30_UNDIE_SYSTEM_CURRENT.md` — Undie identity, intake, consent, Undie ranks, mobility, White, work/economy/access and Undi visual system.
+3. `30_UNDIE_SYSTEM_CURRENT.md` — Undie professional identity, entry/exit, mobility, cash/Credits/debt, gray access, distributed security, Undi and the unresolved MC2 pathway.
 4. `40_METAFICTION_CANON_TIMELINE_CURRENT.md` — Fiction 0/Fiction 1, Fictionize/POC, V0.5, Canon 1/Canon 2, both clashes, causal overlap and knowledge asymmetry.
 5. `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` — narrator personification, Elena POV, deadpan humor and the narrator split at Clash #2.
 6. `60_MC4_IDENTITY_CURRENT.md` — current MC4 identity, Academy membership and strict legacy-import boundaries.
@@ -57,12 +57,12 @@ AETHERFIRE CURRENT CANON
 │  ├─ operational lifecycle
 │  └─ transitions among Citizen, Civil, Yellow, POW and Criminal
 ├─ Undie subsystem
-   ├─ class identity and social function
-   ├─ intake and consent
-   ├─ Undie ranks and mobility
-   ├─ economy, work and access
-   ├─ White exit pathway
-   └─ Undi visual and administrative interface
+   ├─ professional identity and overlapping branches
+   ├─ professional entry/exit, consent and mobility
+   ├─ cash / Credits / debt / obligation / favor
+   ├─ markets, work, access and political interfaces
+   ├─ distributed security / ordinary death handling / opposition
+   └─ contextual Undi and unresolved MC2 pathway
 ├─ Metafiction / canon timeline
 │  ├─ Fiction 0 / Fiction 1 and ability boundaries
 │  ├─ V0.5 continuations and Canon 1 / Canon 2
@@ -108,7 +108,7 @@ STATUS
 ≠ SOCIAL HIERARCHY / CIVIC STANDING
 ≠ CLASS
 ≠ JOB / LABOR REGIME
-≠ UNDIE RANK / FUNCTIONAL ROLE
+≠ PROFESSIONAL AFFILIATION / ROLE
 ≠ CAREER RANK
 ≠ ZONE
 ≠ ECONOMIC VARIABLE
@@ -116,18 +116,23 @@ STATUS
 ≠ BACKGROUND / PROVENANCE
 ```
 
-- `Undie` is a class inside the Slave umbrella.
-- `Undi` is the official uniform applied to Undie; it is not a legal status.
-- `Undie rank` is the current term for Red/Scarlet/Pink/Gray/Purple/Hazel/White and expresses function, responsibility, agency and track.
-- `Career Rank` remains a separate axis with Entry/Intermediate/Support/Advanced/Ultimate. Unqualified `rank` inside the Undie domain means Undie rank, not Career Rank.
-- White remains Undie until the Citizen transition completes.
-- Yellow is a temporary disciplinary status; wearing Undi does not establish full Undie-class membership.
-- Civil, Criminal and POW must not be flattened into the Undie-rank graph.
-- Genealogy explains origin but does not define current containment, authority or dependency.
+- Undie là hệ sinh thái/căn tính nghề nghiệp, không legal status, Slave class, caste hoặc punishment; Citizen + Undie professional là tổ hợp đã chốt.
+- Undi là họ đồng phục nghề theo nhiệm vụ/ngữ cảnh, không dấu địa vị bắt buộc 24/7 hoặc apparatus nhục mạ.
+- Đồ thị màu Red/Scarlet/Pink/Gray/Purple/Hazel/White và White→Citizen đã nghỉ hưu. Career Rank ngoài Undie không phục hồi đồ thị ấy.
+- Gia nhập/rời nghề không đổi citizenship/status; luật nghề, eligibility Civil/Criminal và ràng buộc hợp đồng độc lập còn mở.
+- Yellow vẫn là disciplinary status; Yellow→Red/Undie đã nghỉ hưu, trang phục/chế tài tái phạm mới chưa chốt.
+- Cash là tiền cơ bản; Credits là tiền điện tử được nhà nước bảo chứng. Nợ ≠ sở hữu; ân tình ≠ tiền tệ. Web tín dụng Undie cũ không phải mốc hiện hành.
+- Phả hệ không tự xác lập containment, thẩm quyền hoặc dependency.
+
+## Undie revamp — controlling integration 2026-10-05
+
+Hai nguồn Undie Revamp Baseline v0.1 và Decisions 1–16 v0.1 được nhập trong phạm vi người dùng cho phép. Decisions hoàn thiện mục legal ontology/rank/death/opposition còn mở ở Baseline; không phải conflict chưa giải quyết. `30` là nguồn hiện hành, `91` ghi đối chiếu/nguồn/ranh giới, `92` ghi các mục còn mở.
+
+Các quyết định cũ dưới đây là hồ sơ theo thời điểm. Những assertion Undie class, Criminal→Undie prohibition, compulsory apparatus/two-stage humiliation và tuyến MC2 hạ cấp trong chúng đã bị supersede; phần độc lập ngoài Undie vẫn giữ hiệu lực. Không nhập đề xuất Total War Transition, không đổi Anti-Drift/Router, không hoàn thiện tuyến MC2 hoặc thiết kế lại TE trong lượt này.
 
 ## 4. Latest retcon decisions — 2026-09-09
 
-- Visual reading order: `Hoa Nguyệt maiden → closer look → collar/identification ink/Undie rank → Undie`. This supersedes the older rule that the silhouette alone must identify Undie immediately.
+- Historical 2026-09-09 decision: two-stage apparatus recognition; now superseded within Undi by the 2026-10-05 professional/contextual-uniform revamp.
 - MC2 genealogy remains Raging Fire / Prince 9. MC2 does not gain Hoa Nguyệt origin from the new visual-design source.
 - Mismatch with older snapshots is expected and must be resolved through explicit supersession rather than silent coexistence.
 
@@ -144,7 +149,7 @@ STATUS
 - `matriarchs_lament_working_retcon_canon.md` controls Holy State → Matriarch's Lament, T.Gear → Transfusion EasterFire, Trinity Hexagon, Creed, Trần Trúc Nha, regional routes and the ML relic dependency.
 - `Quad Night` and its four-member-state ontology are retired. Relations that depended on that alliance remain `UNKNOWN / ORPHANED` unless the regional source explicitly replaces them.
 - The AF↔TE treaty is direct and does not transit through ML. The prior 100 km corridor and Academy-flank mapping are not automatically remapped.
-- The former foreign-spy punitive Undie route is removed because it no longer fits the political-centric setting. Archived wording is provenance only; legal/status treatment of spies remains `UNKNOWN`, and Criminal Slave → Undie remains prohibited.
+- The former foreign-spy punitive Undie route is removed because it no longer fits the political-centric setting. Archived wording is provenance only; legal/status treatment of spies remains `UNKNOWN`, and professional eligibility for Criminal is now `UNKNOWN` under the 2026-10-05 revamp rather than a status-transfer prohibition.
 - Mother MC2's Raging Fire / Prince 9 genealogy remains current; her post-Quad-Night custodian is `UNKNOWN`.
 
 ## 7. Intentionally excluded source

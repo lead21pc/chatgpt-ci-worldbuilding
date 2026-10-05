@@ -4,11 +4,11 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: Matriarch's Lament internal governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha regional role and doctrine, ML–TE operations, and northeastern tribes.
 > Authority boundary: Controls internal Matriarch's Lament canon within its declared scope.
-> Cross-domain owner boundary: Global and geopolitical interfaces are controlled by `AFM-001`; Undie status interfaces by `AFM-003`; metafiction and cross-world status by `AFM-004`.
+> Cross-domain owner boundary: Global and geopolitical interfaces are controlled by `AFM-001`; Undie professional and unresolved legal interfaces by `AFM-003`; metafiction and cross-world status by `AFM-004`.
 > Load mode: `FULL_FILE`
 
 > **Trạng thái:** CURRENT CANON / CONTROLLING MATRIARCH'S LAMENT DOMAIN — integrated 2026-09-11; architecture split recorded 2026-09-16  
-> **Authority boundary:** this file controls internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and the northeastern tribes. Cross-domain interfaces are summarized in `10`; Undie status interfaces are controlled by `30`; cross-world status is controlled by `40`.  
+> **Authority boundary:** this file controls internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and the northeastern tribes. Cross-domain interfaces are summarized in `10`; Undie professional and unresolved legal interfaces are controlled by `30`; cross-world status is controlled by `40`.
 > **Trúc Nha boundary:** membership and regional role in ML are current canon. A summoned/cross-world origin remains `UNDER CONSTRUCTION / NOT CURRENT CANON`.  
 > **Phạm vi:** retcon Holy State, quan hệ với AetherFire, Transfusion EasterFire, Trinity Hexagon, Creed, Thần điện, Thánh Nữ Trần Trúc Nha và các dependency lịch sử liên quan.  
 > **Không phải:** full world bible, full constitution, full economy, full military doctrine hoặc full magic system.  
@@ -587,6 +587,15 @@ Không cần định lượng traffic, chiều dài hoặc chi phí ở giai đo
 ---
 
 ## 16. AF ↔ TE treaty
+
+### Ranh giới Undie sau retcon 2026-10-05
+
+Undie trong giao diện AF–TE/ML nay là căn tính nghề, không một lớp Slave. Sự kiện treaty/quan sát/chuyển một số người giữ ở mức quan hệ đã chốt; không xác lập quyền sở hữu hoặc mua bán người. Cơ chế chuyển, đồng thuận, tiêu chí, địa vị pháp lý và quyền quay về/rời đi vẫn `UNKNOWN` (AF-ML-007).
+
+“Giải phóng tại chỗ” là wording sự kiện/tuyên bố trong hoạt động can thiệp, không đủ chứng minh đối tượng là Slave, hoàn thành chuyển citizenship, tự nguyện được cứu hay được ML tiếp nhận. Hoạt động can thiệp/frame vẫn giữ phạm vi chính trị; đối tượng/ràng buộc được giải thoát cần làm rõ theo căn tính nghề mới (AF-ML-008).
+
+TE tourism/experience-economy revamp là hướng `DEFERRED` ở `30`, không tự thay các thể chế/quan hệ TE trong miền này.
+
 
 ### CANON
 
