@@ -4,7 +4,7 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: AetherFire world state, institutions, geopolitics, foreign relations, global interfaces, and Academy institutional context.
 > Authority boundary: Controls global, institutional, and geopolitical canon except detailed domains explicitly controlled by another accepted current module.
-> Cross-domain owner boundary: Detailed Matriarch's Lament canon is controlled by `AFM-007`; detailed stable aviation and RF-airspace canon by `AFM-008`; metafiction detail by `AFM-004`; MC4 identity detail by `AFM-006`; internal Academy institutional and training canon by `AFM-009`; shared technology/service and Terminal/Guest Pass architecture by `AFM-010`.
+> Cross-domain owner boundary: Detailed Matriarch's Lament canon is controlled by `AFM-007`; detailed stable aviation and RF-airspace canon by `AFM-008`; metafiction detail by `AFM-004`; MC4 identity detail by `AFM-006`; internal Academy institutional and training canon by `AFM-009`; shared technology/service and Terminal/Guest Pass architecture by `AFM-010`; detailed dynastic politics, AF–RF strategic bargaining and counterintelligence by `AFM-011`.
 > Load mode: `FULL_FILE`
 
 > Consolidated current-domain view. Detailed Citizen/Civil/Undie material was moved to sibling files. Design genealogy remains in `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md`.  
@@ -128,7 +128,7 @@ Prince 9 của hoàng gia một quốc gia thành viên rank thấp hơn trong R
 → MC2
 ```
 
-Vì vậy vị vua AetherFire đã bỏ trốn **không phải cha ruột MC2**. Mẹ MC2 đã mang thai trước khi vào hoàng gia AetherFire và bị gả đi để che giấu pregnancy này. Quan hệ giam giữ cũ phụ thuộc Quad Night đã bị orphan. Current custodian của Hoàng hậu/mẹ MC2 giữ `UNKNOWN`; không tự chuyển bà sang ML hoặc TE.
+Vì vậy vị vua AetherFire đã bỏ trốn **không phải cha ruột MC2**. Mẹ MC2 đã mang thai trước khi vào hoàng gia AetherFire và bị gả đi để che giấu pregnancy này. Quan hệ giam giữ cũ phụ thuộc Quad Night đã bị orphan. Theo chốt 2026-10-05, Hoàng hậu/mẹ MC2 hiện được TE bảo hộ, chỉ một số tác nhân biết. Cơ chế bảo hộ, cơ quan, địa điểm, quyền tự do và tư cách pháp lý vẫn `UNKNOWN`; không suy bà thuộc ML hoặc toàn TE đều biết.
 
 AetherFire biết lineage này có **một tính chất khác ngoài phần seal/barrier mà họ đã nhận biết**, nhưng không nắm toàn bộ ontology thật. Chi phí nghiên cứu quá cao là một lý do khiến nhà nước chọn MC2 làm trường hợp đặc biệt để tìm hiểu/khai thác lineage.
 
@@ -391,106 +391,9 @@ Nhà nước **không phải một khối độc tài đơn nhất**.
 
 ---
 
-## 4. Triều đại, kế vị và khủng hoảng chính trị
+## Chính trị và thể chế — giao diện với `25`
 
-### 4.1 Kế vị
-
-AetherFire có mô hình kế vị mẫu hệ.
-
-Hoàng hậu từng chuyển ngai cho chồng, tạo ngoại lệ so với logic kế vị mặc định.
-
-MC2 là công chúa hoàng triều và có giá trị chính danh trong cấu trúc kế vị. **Địa vị công chúa không đồng nghĩa huyết thống phụ hệ với vị vua AetherFire đã bỏ trốn:** ông không phải cha ruột MC2. Mẹ MC2 đã mang thai cô trước khi bước vào hoàng gia AetherFire.
-
-Current canon bổ sung:
-
-- True Crown gắn với continuity của huyết hệ Raging Phoenix mẫu hệ;
-- Raging Phoenix **chỉ truyền cho con gái**;
-- huyết hệ này có chức năng trấn áp/phong ấn liên quan long mạch và thực thể cổ xưa có khả năng gây tận thế bên dưới;
-- vì vậy MC2 vừa là claimant vừa là strategic reproductive/legitimacy node.
-
-### 4.2 Chiến tranh và suy kiệt tài chính
-
-Nhà vua đương thời đốt gần hết quốc khố vào chiến tranh kéo dài.
-
-Trong khoảng nhiều năm, hệ quả gồm:
-
-- tài chính quốc gia suy kiệt;
-- quân chủ suy yếu;
-- nghị viện/hội đồng nổi lên mạnh hơn;
-- quyền lực quân chủ trực tiếp bị thay thế một phần bởi cơ cấu nghị viện;
-- nhà nước tiến gần khủng hoảng tài chính.
-
-Nhà vua sau đó bỏ trốn và liên kết với các quốc gia khác để tìm cách phục hồi quyền lực.
-
-Quan hệ giam giữ cũ phụ thuộc Quad Night đã bị orphan. Current custodian của Hoàng hậu/mẹ MC2 giữ `UNKNOWN`; không tự chuyển bà sang ML hoặc TE.
-
-### 4.3 Mục tiêu hiện tại của nghị viện đối với MC2
-
-Nghị viện không chỉ muốn trừng phạt MC2.
-
-Mục tiêu chính trị đã chốt là:
-
-- bẻ ý chí MC2;
-- buộc cô nhượng bộ chính trị;
-- làm suy yếu khả năng chống đối và vị trí chính danh;
-- tạo điều kiện cho một cấu hình quyền lực khác, bao gồm khả năng dùng người thế thân/bù nhìn.
-
-MC2 vì vậy là một tài sản/chướng ngại chính trị, không phải chỉ là tù nhân.
-
-Ngoài mục tiêu nghị viện, một motive quý tộc đã được chốt ở cấp toàn cục:
-
-```text
-bẻ agency MC2
-→ giữ fertility
-→ tạo con gái mang Raging Phoenix
-→ dùng MC2/hậu duệ làm nguồn chính danh cho faction cai trị AetherFire
-```
-
-MC2 vì vậy có thể bị nhìn như một **dynastic reproductive anchor**. Nhà ngoại của cô liên tục lobbying vì có structural stake vào maternal lineage; các quốc gia đối địch vẫn theo dõi cô chặt dù trajectory đã lệch; tuyến tiếp cận nghề/vùng xám mới của cô còn mở.
-
----
-
----
-
-## 5. Cấu trúc nhà nước đa cực
-
-Các actor/thể chế đã được xác nhận gồm:
-
-- Hoàng gia;
-- Nhà vua;
-- Hoàng hậu;
-- MC2;
-- Hạ viện / Nghị viện;
-- Quân đội;
-- National Guard;
-- Bộ Nội vụ;
-- phản gián;
-- tình báo/gián điệp;
-- tư pháp;
-- cơ quan quản trị các tầng nô lệ;
-- hạ tầng cưỡng chế tự động;
-- hệ thống thương mại;
-- cơ quan ngoại giao.
-
-Quyền lực và thẩm quyền không tập trung tuyệt đối ở một node.
-
-Các subsystem có thể có lợi ích tổ chức riêng và không được mặc định cùng một mục tiêu chỉ vì cùng thuộc nhà nước.
-
-### 5.1 Khung đọc thể chế — chốt có giới hạn 2026-10-03
-
-**CANON / DESIGN-INTERPRETATION ĐÃ ĐƯỢC USER XÁC NHẬN**
-
-Tách bốn trục: hình thức quốc gia, cấu trúc quyền lực, năng lực vận hành và độ gắn kết chính trị. AetherFire là đế quốc có quyền lực đa cực; nghị viện có quyền lực thực. Cạnh tranh phe phái hoặc bất ổn chính trị không tự chứng minh mọi năng lực nhà nước thấp, cũng không chứng minh mọi cơ quan vận hành hiệu quả.
-
-Stable/scalable aviation là bằng chứng trực tiếp về institutionalized reliability trong miền hàng không (`80`), không phải bằng chứng mọi địa phương/dịch vụ đều có cùng mức năng lực, chi phí hoặc phổ cập. Phương thức sản xuất và giới hạn tài nguyên không được suy từ genealogy.
-
-Exact constitutional precedence, quyền làm luật/diễn giải/thi hành/veto, ngân sách/bổ nhiệm/điều tra và chuỗi thẩm quyền cuối cùng vẫn `UNKNOWN`. Không áp một nhãn hiến pháp Trái Đất cụ thể hoặc phân quyền mới chỉ từ khung phân tích này.
-
-`15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` kiểm soát mô hình Terminal/Guest Pass và giao diện dịch vụ chung. Nó không xác lập một cơ quan/database quốc gia duy nhất; ownership và quyền quản trị vẫn mở. `20` kiểm soát legal status; Guest Pass không tạo class hoặc quyền nhập cảnh/cư trú mới.
-
-Các mô hình trung gian xã hội, noble Houses, House nghề nghiệp, patronage và đại diện Purple được phân loại tại `90`; tên `House` chung không chứng minh chúng là cùng một tổ chức. AF-STATE-001 trong `92` giữ các câu hỏi thể chế chưa chốt.
-
----
+`25_POLITICS_DYNASTIC_SECURITY_CURRENT.md` / `AFM-011` kiểm soát chi tiết kế vị, khủng hoảng triều đại, nhà nước đa cực, thẩm quyền và agenda chính trị. AF có kế vị mẫu hệ; quyền lực chia giữa hoàng gia/nghị viện/quân đội/Nội vụ/các cơ quan khác, không một node thống nhất. `10` giữ địa chính trị toàn cục; các miền luật địa vị/hạ tầng vẫn ở `20/15`.
 
 ---
 
@@ -690,19 +593,11 @@ Nếu ba cường quốc phía Bắc tạm gác ân oán với nhau và đạt o
 
 ---
 
-## 21. MC2 — tính cách và fall from grace
+## MC2 — giao diện chính trị
 
-### 21.1 MC2 và tuyến tiếp cận mới — 2026-10-05
+Chi tiết tính cách, tuyến tiếp cận kín, tranh chấp chính danh và phản quốc do `25` kiểm soát; giao diện nghề/biến đổi do `30`, checkpoint/metafiction do `40`. Không phục hồi Civil→Undie→illegal prostitution. Phả hệ Raging Fire/Prince 9 và ontology huyết hệ bên dưới giữ nguyên.
 
-MC2 vẫn có nền tính cách công chúa fantasy: ngây thơ, khá kiêu ngạo, ý thức địa vị mạnh và self-concept gắn với vai trò công chúa. Những nét ấy không tự xác lập một đường mất địa vị/nghề mới. Sai mô hình cụ thể về đời sống Slave/consent trong tuyến cũ cần được xét lại, không dùng để quyết định hành vi trên tuyến nghề chưa chốt.
-
-Tuyến “mất status→Civil→tự chọn Undie→mại dâm bất hợp pháp→kháng chiến giả→án phản quốc” không còn là triển khai hiện hành. Các mốc thời lượng khoảng hai năm, đánh tráo giấy tờ và cơ chế bào người phụ thuộc tuyến ấy cần xét lại, không chuyển nguyên sang tuyến nghề mới.
-
-Hướng mới: MC2 cần tiếp cận mẹ/trục Raging Fire/chính trị AF; đường chính thức có thể không khả dụng, quá lộ hoặc nguy hiểm. Undie có thể cung cấp môi trường nghề/xã hội/vùng xám. Nghề, vỏ bọc, patron, liên hệ, sự cố an ninh, đường tới mẹ và kết quả còn `UNKNOWN`.
-
-Không xóa agency của MC2 hoặc coi mọi bước là một kế hoạch thống nhất của nhà nước. Không biến unknown thành một chuỗi sự kiện mới. Các quan hệ Fictionize/POC/Clash/gọi MC1 được xử lý ở `40`, không suy từ tuyến hạ cấp đã bỏ.
-
-
+---
 
 ## 22. Raging Fire / “The Raging Phoenix”
 
@@ -768,130 +663,9 @@ Các powerset khác của Raging Phoenix hiện được **SEALED / để dành 
 
 ---
 
-## 23. Kháng chiến
+## Kháng chiến, phả hệ chính trị và thay chế độ — giao diện với `25`
 
-Kháng chiến có thể hình thành từ bên trong hệ thống.
-
-Nguồn actor đã biết:
-
-- staff đế quốc;
-- người nội bộ chống đối;
-- cư dân đặc khu;
-- Civil Slave;
-- Undie;
-- chợ đen;
-- POW specialist;
-- thế lực nước ngoài;
-- mạng liên quan MC3.
-
-Bẫy kháng chiến giả từng được chính quyền dàn xếp để:
-
-- lure MC2;
-- làm cô tin đã tìm được đường phản kháng;
-- đưa cô vào bẫy;
-- tạo căn cứ kết tội phản quốc;
-- phá sâu hơn niềm tin phản kháng của cô.
-
-MC1 được gọi sau cú bẫy này, tại thời điểm MC2 tuyệt vọng nhất.
-
----
-
-## 24. Công quyền và chính danh thủ tục
-
-Triết lý thể chế đã chốt:
-
-> công quyền phải duy trì vẻ công minh và trung lập về thủ tục ngay cả trong một nhà nước thối nát.
-
-Do đó:
-
-```text
-status distinction
-≠ administrative discrimination tùy tiện
-```
-
-Một người hành nghề Undie không bị từ chối thủ tục công chỉ vì nghề; Undie không còn là class.
-
-Tính chính danh thủ tục là một phần quan trọng của cách nhà nước tự duy trì hình ảnh “con của người dân”.
-
----
-
-## 24A0. Hidden genealogy phía Nam — Prince 9, MC2 và MC2.2
-
-**CANON GENEALOGY**
-
-Cha ruột MC2 là **Hoàng tử thứ 9** của hoàng gia một quốc gia thành viên rank thấp hơn trong RF. Ông là chồng thật của mẹ MC2. Sau một cuộc tranh đoạt ngai, anh em của ông lên ngôi và Hoàng tử thứ 9 bị giết; mẹ MC2 đang mang thai và bị gả đi để che giấu pregnancy, sau đó đi vào hoàng gia AetherFire.
-
-Hoàng tử thứ 9 cũng là cha của **MC2.2**, hôn phu của MC2 trong Canon 1. Vì vậy:
-
-```text
-MC2
-+ MC2.2
-→ anh em cùng cha khác mẹ về huyết thống
-```
-
-Genealogy này bị che giấu có chủ ý bên trong RF để tránh khủng hoảng chính trị; exact actor chịu trách nhiệm và phạm vi biết của từng khối giữ `UNKNOWN`. MC2 và MC2.2 không biết sự thật trong phần trajectory liên quan trước khi revelation xảy ra.
-
-Mẹ MC2.2 là **Hoàng hậu của vị vua đã giết Hoàng tử thứ 9**.
-
-Trong Canon 1, hidden genealogy này về sau trở thành một causal trigger lớn của MC2.2: revelation gắn với việc anh ta lật vị vua hiện tại của quốc gia thành viên nơi Prince 9 xuất thân và đăng cơ tại quốc gia đó; khi biết MC2 thực ra là em gái cùng cha khác mẹ và đã chết, anh ta tiếp tục lật luôn AetherFire. Exact micro-order của từng disclosure chỉ dùng theo file Canon 1/Canon 2 nếu được chốt chi tiết hơn; không flatten toàn bộ thành “romance revenge”.
-
----
-
-## 24A. Canon 1 — motive dynastic và foreign balancing được làm rõ
-
-Canon 1 hiện có causal chain chi tiết hơn:
-
-```text
-MC2 nhượng bộ
-→ quý tộc ép/đưa lên ngai
-→ ngai hợp thức hóa lineage quanh MC2
-→ hậu duệ được dùng qua hôn nhân như bàn đẩy chính trị
-→ tạo các nhánh huyết thống tiếp tục hợp pháp
-→ các quốc gia con người lo ảnh hưởng quý tộc AetherFire quá lớn
-→ thủ tiêu MC2
-→ martyrdom
-→ tuyến hôn phu bùng lên như downstream consequence
-→ collapse theo Canon 1
-```
-
-Clash #1 làm current MC2 lệch khỏi chain này, nhưng foreign actors vẫn theo dõi cô vì strategic value chưa biến mất.
-
----
-
-## 25. Ràng buộc suy thoái nhà nước mới được chốt
-
-Các yêu cầu cấp canon/kiến trúc mới đã được người dùng xác nhận:
-
-1. **Nhà nước hiện tại sẽ đi tới sụp đổi/thay chế độ, nhưng tiến trình phải mất khoảng 5–8 năm**, không phải một cú domino tức thời.
-2. Các node gây nhiễu loạn lớn gồm:
-   - chợ đen;
-   - khu đèn đỏ;
-   - Undie subsystem nói chung;
-   - Hoàng gia;
-   - hệ thống thương mại.
-3. Quân đội có một lớp **biển thủ thuế và gian lận sổ sách/ngân sách quân sự**. Cơ chế chi tiết chưa được chốt thành canon cuối.
-4. Bộ Nội vụ có **chính sách riêng**, không được mặc định đồng nhất mục tiêu với nghị viện, quân đội hoặc Bộ Tài chính. Nội dung policy cụ thể chưa được chốt.
-5. Bộ Ngoại giao muốn **nhân rộng mô hình Undie ra nước ngoài để tạo connection/mạng quan hệ**.
-6. Sự sụp đổi không được thiết kế như một chuỗi sự kiện tự động hội tụ quanh MC1/MC2 chỉ vì cốt truyện cần đúng thời điểm; các subsystem phải giữ quán tính và trajectory riêng.
-
-Không đưa các implementation do trợ lý từng đề xuất cho sáu điểm trên vào canon nếu người dùng chưa xác nhận.
-
-### 25.1 Quan hệ với tension siêu hư cấu
-
-V0.5 là một beta không có kết thúc hoàn chỉnh và có thể tạo ra vô số possibilities, nhưng một số **đầu/đuôi lớn của story đã được viết trước**, đặc biệt số phận của MC2.
-
-MC1 dùng cách sáng tác gần với:
-
-```text
-viết đầu và đuôi trước
-→ các thành phần ở giữa được hoàn thiện dần sau
-```
-
-MC3 đi vào Fiction 1 ở V0.5 và sống khoảng 5 năm trong một thế giới vẫn đang mang lực kéo hướng tới phần kết đã được định trước ở mức khái niệm.
-
-Vì vậy trajectory sụp đổi 5–8 năm phải được thiết kế **hợp logic chính trị hiện tại**, nhưng đồng thời nó là một quả bom chậm cấp story: nếu không tồn tại tension hướng tới một trạng thái giải quyết, Fiction 1 có nguy cơ rơi vào vòng lặp nội dung không hồi kết.
-
-Điều này **không** có nghĩa mọi chi tiết phải hội tụ lại Canon 1. Cách AetherFire sụp, ai thắng, MC2 sống/chết và chính thể sau đó vẫn phải được sinh từ world-state và agency hiện tại.
+`25` kiểm soát mạng kháng chiến, chính danh thủ tục, hidden genealogy áp dụng vào tranh chấp kế vị, agenda Canon 1 và ràng buộc thay chế độ 5–8 năm. Bẫy kháng chiến giả không còn sự kiện hiện hành; phản quốc là checkpoint đã chốt, triển khai mới còn mở. Lịch sử Canon 1 không khóa kết quả Canon 2; `40` giữ thẩm quyền về realization/overlap.
 
 ---
 
@@ -932,71 +706,9 @@ Không tự lấp các mục `UNKNOWN`, `SEALED` hoặc `deferred` bằng suy lu
 
 ---
 
-## RF continental union, dynastic fault line and AF dependency — current canon 2026-09-15
+## RF — giao diện chính trị với `25`
 
-### Ontology
-
-RF is a **continental union of cultivation member states**, not one kingdom. Its exact constitutional form remains `UNKNOWN`; do not silently choose federation, confederation, tributary hierarchy or empire-of-states.
-
-```text
-Raging Fire lineage
-≠ RF continental union
-≠ strongest bloc/member polity of MC2's mother
-≠ lower-ranked member polity of Prince 9
-```
-
-The four blocs currently foregrounded do not establish the full number of RF member states. Exact bloc-to-state containment remains `UNKNOWN`.
-
-### Four foregrounded blocs
-
-- The strongest bloc/member polity is the origin of MC2's mother, actively seeks secession, seeks AetherFire patronage and wants AF forced-magic technology to scale cultivation.
-- Two other blocs oppose that secession and hold enough economic/political leverage that Prince 9's polity depends on both. They are not assumed to share identical institutions or motives.
-- Prince 9's lower-ranked polity is the fourth foregrounded bloc and lies between the strongest secessionist bloc and the two opposing blocs.
-- The former UK/Greenland/Alaska/Australia labels are design references only, never canon names.
-
-### Prince 9 and MC2's mother
-
-MC2's mother is the **Trưởng công chúa** of the strongest RF bloc/member polity. Prince 9 is the ninth prince of a lower-ranked RF member polity, her true husband and the biological father of MC2 and MC2.2.
-
-```text
-strongest bloc already seeks secession
-→ manipulates the Crown Prince of Prince 9's polity
-→ Crown Prince kills Prince 9 to consolidate power
-→ strongest bloc uses the death of its Trưởng công chúa's husband
-  as a grievance supporting secession
-```
-
-The relevant inner circle of the strongest bloc knows that the Trưởng công chúa's fetus is Prince 9's child. It sends the Trưởng công chúa and fetus to AetherFire for an alliance/patronage route, long-term dynastic leverage and a possible future-marriage route. That future marriage is an option, not a locked outcome, and does not erase MC2's agency.
-
-Do not write “RF knew” for this information. Knowledge of pregnancy, father identity and the full operation differs among blocs and actors. The Trưởng công chúa's own knowledge of the manipulation remains `UNKNOWN`.
-
-### Guarded RF–AetherFire alliance
-
-The strongest bloc and AetherFire cooperate without mutual trust:
-
-```text
-strongest bloc wants AF technology
-→ reduce its dependency on RF
-
-AF wants access to RF lineage capability
-→ reduce its dependency on RF
-```
-
-The other three foregrounded blocs deliberately raise distrust around that alliance. “Rare pure blood” is propaganda/framing, not proof of the true Raging Fire inheritance mechanism.
-
-### AF noble agenda around MC2
-
-After the AF king flees and the previous balance weakens, a noble faction pressures MC2 in an attempt to expose or exploit Raging Fire capability without knowing the true mechanics. Its confirmed goals are:
-
-1. reduce or escape AF's dependency on RF;
-2. research/extract enough capability to create an AF-controlled suppression array;
-3. increase total military force-generation capacity.
-
-Đây là agenda của một phe, không chứng minh chính sách nhà nước thống nhất hoặc chương trình nghiên cứu thành công. Tuyến Princess→Civil→Undie cũ đã bị supersede; agency và đường tiếp cận mới của MC2 phải được thiết kế riêng, không gán thành một master plan.
-
-### Dependency boundary
-
-AF's firewall and founding-seal history still depend on Raging Fire lineage/RF arrangements. The exact provider, contracting actor, maintenance authority and member-state allocation remain `UNKNOWN`; do not assign them automatically to the RF union or the strongest bloc.
+RF là liên hiệp lục địa các quốc gia tu luyện, không một vương quốc. Huyết hệ Raging Fire, liên hiệp, khối mạnh nhất của mẹ MC2 và chính thể Prince 9 là các node khác nhau. `25` giữ bốn khối foreground, secession/Prince 9, guarded alliance, agenda quý tộc và giới hạn thông tin. `80` giữ hàng không; `10` giữ ontology/phong ấn và địa lý toàn cục.
 
 ---
 
@@ -1054,13 +766,21 @@ The AF↔TE treaty is direct and was negotiated inside AetherFire. It does not t
 
 ### Orphaned geography and custody
 
-The old 100 km AF↔Quad Night corridor, Academy-flank mapping and Quad-Night custody of MC2's mother are orphaned by the regional retcon. Current geometry and custodian remain `UNKNOWN`; they are not automatically reassigned to ML or TE.
+Hành lang AF↔Quad Night 100 km, vị trí sườn Học viện và quan hệ custody cũ đã orphan. Địa lý mới vẫn `UNKNOWN`. Chốt 2026-10-05 xác lập mẹ MC2 được TE bảo hộ, chỉ một số tác nhân biết; không remap địa lý hoặc suy cơ chế custody/asylum từ dữ kiện ấy.
 
 ### Trần Trúc Nha and Undie boundaries
 
 Trần Trúc Nha's membership and regional role in ML are current canon. Her proposed summoned/cross-world origin is `UNDER CONSTRUCTION / NOT CURRENT CANON` and is routed to `40_METAFICTION_CANON_TIMELINE_CURRENT.md`.
 
 The former `foreign spy / infiltrator → punitive Undie` route is `RESOLVED / REMOVED` because it no longer fits the political-centric setting. No replacement legal/status route is inferred; Undie-related interfaces are controlled by `30_UNDIE_SYSTEM_CURRENT.md`.
+
+---
+
+## MC2 pathway — giao diện đã chốt 2026-10-05
+
+`25` kiểm soát TE bảo hộ Nữ hoàng, MC2.2 biết tình hình khái quát, RF hỗ trợ phong ấn định kỳ và cơ chế bearer-gia cố, tín hiệu báo động cùng nguyên tắc phản gián. AF relevant actors biết đủ vận hành phong ấn, không biết toàn ontology Raging Fire; RF không thường trực nắm lõi. Mẹ MC2 được TE bảo hộ chỉ với phạm vi biết hạn chế, không tự giải quyết luật custody/địa lý.
+
+Đường bearer/hiến tế-gia cố là cơ chế thực nhưng death/survival/consent/thẩm quyền chưa chốt. Tín hiệu không còn cần hỗ trợ RF định kỳ chỉ là trigger có điều kiện, không sự kiện đã xảy ra. Operation Swap và lịch giải cứu là phần chưa chốt. `30` giữ interface Undie; `40` giữ phản quốc/nguy hiểm tính mạng và overlap mang áp lực kết thúc.
 
 ---
 

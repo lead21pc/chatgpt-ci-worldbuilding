@@ -2,6 +2,551 @@
 
 > Preserved as a separate temporal layer. `DESIGN HISTORY`, `RETIRED`, `SURVIVING LEGACY`, `UNDER CONSIDERATION`, `CURRENT CANON` and `UNKNOWN` retain their original meanings. Nothing in this file becomes current canon merely because it appears here.
 
+## MC2 pathway: đề xuất, giả thuyết và hoãn thiết kế — 2026-10-05
+
+Nguồn `AetherFire_MC2_Pathway_Canon_Status_2026-10-05.md`, phần IV–VII. Trích nguyên văn, giữ nhãn riêng: P1–P11 là PROPOSAL (P9 có inference); H1–H6 là HYPOTHESIS; D1–D4 là DEFERRED; ma trận VII là PROPOSAL. Operation Swap chỉ là đề xuất ưu tiên, chưa phải lịch sử. Nguyên tắc phản gián nhiều phương án đã chốt ở `10` không canon hóa cây cụ thể.
+
+H4 chỉ đã chốt tín hiệu gây báo động MC2.2; suy luận đã dùng bearer nội địa/MC2/hậu duệ còn hypothesis. H6 chỉ tương thích overlap mang áp lực kết thúc ở `40`, không khóa cả gói khủng hoảng hiến pháp/RF/collapse. Không dùng các ứng viên để phục hồi tuyến Undie cũ.
+
+### IV. PROPOSALS — preferred or available implementations, NOT canon outcomes yet
+
+#### P1. Operation Swap as the primary MC2 pathway
+
+**Status:** preferred proposal.
+
+Core structure:
+
+```text
+real MC2
+→ covertly extracted from royal/public role
+→ identity transformed
+→ enters Undie ecosystem under cover
+
+prepared body double
+→ remains public MC2
+→ preserves ceremonial/political continuity
+```
+
+Proposed sponsor motives:
+
+```text
+prevent restoration of autonomous royal power
+prevent rival custody of real MC2
+avoid killing a high-value True Crown bearer
+retain public royal continuity
+create a political favor/debt with MC2
+use real MC2 as a deniable backchannel to opposition/resistance
+```
+
+This remains a proposal until explicitly promoted as an event that occurred.
+
+---
+
+#### P2. Body double as "public continuity shell"
+
+**Status:** proposal.
+
+The double can plausibly cover:
+
+```text
+ceremonial appearances
+prepared speeches
+controlled public events
+routine palace presence
+non-decisive social functions
+```
+
+The double should not automatically fake:
+
+```text
+True Crown authentication
+Raging Fire lineage tests
+binding bloodline rituals
+specialized magical/medical verification
+irreversible succession acts
+unscripted high-level crisis behavior
+```
+
+This gives the swap a failure clock rather than making it perfect.
+
+---
+
+#### P3. RF rescue knowledge branches
+
+**Status:** proposal branches.
+
+##### Branch P3-A — RF rescue actor does not know the swap
+
+```text
+RF targets PUBLIC MC2
+→ public double becomes honeypot / observation surface
+→ AF learns the swap secret has not fully leaked
+```
+
+##### Branch P3-B — RF rescue actor knows the swap
+
+```text
+RF ignores PUBLIC MC2
+→ targets REAL MC2
+→ proves foreign actor has penetrated a constitutional secret
+→ AF traces leak / sponsor / Army / resistance / other channel
+```
+
+##### Branch P3-C — knowledge split
+
+Different RF actors know different pieces.
+
+This is currently the richest candidate because RF knowledge is already actor-specific, but it is not yet canonized.
+
+---
+
+#### P4. Counterintelligence contingency state machine
+
+**Status:** proposal architecture; exact actual branch remains open.
+
+The decision vector can include:
+
+```text
+EVIDENCE
+CUSTODY
+RF_RESCUE_STATE
+RF_KNOWLEDGE
+DOUBLE_EXPOSURE
+ARMY_INTERFERENCE
+SEAL_CLOCK
+MC2_2_SIGNAL
+BLOC1_ATTRIBUTABILITY
+OTHER_RF_BLOC_OPENNESS
+MC2_CONDITION
+```
+
+Candidate response packages:
+
+```text
+WATCH
+STING
+CAPTURE
+BURN_BLOC1
+DECOY_HONEYPOT
+REAL_MC2_TRACE
+INTERNAL_PURGE
+DELAY_ESCALATION
+WEDGE_RF
+PRESERVE_MC2
+CONVERT_ASSET
+CRISIS_CONTAINMENT
+```
+
+These packages may chain or coexist.
+
+```text
+BRANCH OPENS != BRANCH MUST BE TAKEN
+```
+
+---
+
+#### P5. Scenario 1 — capture RF rescue + retain MC2
+
+**Status:** proposal branch.
+
+Possible chain:
+
+```text
+RF rescue/extraction operation detected
+→ attribution to Bloc 1 sufficient
+→ rescue team captured / evidence seized
+→ MC2 retained in AF custody
+→ AF frames event as foreign penetration / sovereignty breach
+→ relations harden toward cold-war posture
+```
+
+Possible downstream factional options for MC2:
+
+```text
+research / cloning program
+controlled reproduction
+forced/managed dynastic marriage into a chosen House
+produce daughter / descendants as legitimacy symbol
+use domestic lineage to reduce RF dependency
+seal-reinforcement use
+```
+
+None of these downstream outcomes is currently canon.
+
+Counterintelligence itself does not automatically own final disposition of MC2.
+
+---
+
+#### P6. Scenario 2 — MC2 escapes but AF exploits the evidence
+
+**Status:** proposal branch.
+
+Possible chain:
+
+```text
+MC2 escapes / is allowed to escape
++ attribution evidence against Bloc 1 survives
+→ tactical custody loss
+→ strategic diplomatic gain
+```
+
+AF may then:
+
+```text
+accuse Bloc 1 of violating sovereignty / bargain
+make compensation or renegotiation demands
+suspend or revise privileges
+approach rival RF blocs
+seek alternative lineage / specialist / technology arrangements
+```
+
+This can reduce AF dependence on Bloc 1 even when MC2 is no longer in AF custody.
+
+---
+
+#### P7. Wedge diplomacy against Bloc 1
+
+**Status:** proposal.
+
+Candidate logic:
+
+```text
+Bloc 1 visibly benefits after secession / AF alignment
+→ rival blocs see technology/economic gap
+→ AF offers technology / aviation / trade / access / political connection
+→ rival blocs may negotiate for better terms
+→ AF diversifies RF relationships
+→ Bloc 1 loses exclusivity
+```
+
+Whether rival blocs actually accept is not canon and depends on their interests, authority, lineage compatibility and costs.
+
+---
+
+#### P8. Controlled escalation around the seal clock
+
+**Status:** proposal.
+
+If AF still depends on imminent RF specialist visits, it may delay public rupture even after discovering a hostile operation:
+
+```text
+capture / collect evidence
+→ keep attribution classified temporarily
+→ secure seal continuity / replacement arrangement
+→ then escalate publicly
+```
+
+This prevents the state from irrationally declaring total rupture while immediately needing RF technical support.
+
+---
+
+#### P9. MC2 survival-preservation as geopolitical risk management
+
+**Status:** proposal/inference branch.
+
+Once MC2.2 knowledge/interest becomes high enough, some AF actors may prefer keeping MC2 alive not only for her intrinsic value but because her death can activate a dynastic/foreign cascade.
+
+This does not create plot immunity.
+
+```text
+MC2 death cost rises
+!= MC2 cannot die
+```
+
+---
+
+#### P10. Body double continues after real MC2 is sacrificed/killed
+
+**Status:** proposal only.
+
+Possible hardline logic:
+
+```text
+keep PUBLIC MC2 alive as political shell
+while REAL MC2 is converted into seal/security value
+→ conceal disappearance/death
+→ attempt to delay RF / MC2.2 reaction
+```
+
+This is not canon and may fail catastrophically if the double or seal-dependency shift exposes the truth.
+
+---
+
+#### P11. Fake/hijacked resistance as counterintelligence sting
+
+**Status:** proposal.
+
+Instead of a simplistic fully fake resistance:
+
+```text
+real resistance / opposition channels exist
+→ counterintelligence infiltrates, hijacks or inserts a controlled branch
+→ maps sponsor faction, RF cells, Army leakage and MC2 contacts
+→ treason evidence emerges from a mixture of real actions and manipulated interpretation
+```
+
+This is a candidate implementation for the canon treason checkpoint, not yet accepted as the actual implementation.
+
+---
+
+### V. HYPOTHESES — compatible explanatory models, not canon
+
+#### H1. "Dynastic gift" as the public/political price of Bloc 1's secession crisis
+
+Hypothesis:
+
+The Trưởng công chúa + fetus transfer functions not merely as marriage diplomacy but as a visible, high-weight price paid by Bloc 1 to obtain external patronage/security after Prince 9's death.
+
+Possible public framing:
+
+```text
+"The polity sent its princess / dynastic line outward
+as part of stabilizing internal security and securing an external guarantee."
+```
+
+This could make the secession grievance more credible to other member states because Bloc 1 appears to have paid a real dynastic cost rather than merely exploiting Prince 9's death rhetorically.
+
+Not yet canonized as the official public narrative.
+
+---
+
+#### H2. AF accepted the bargain because localizing the lineage was strategically "too good"
+
+Hypothesis:
+
+AF accepts the political risk of bringing the Trưởng công chúa into the royal structure because the bargain provides:
+
+```text
+local access to Raging Fire lineage
++ future daughter-line continuity
++ dynastic leverage over RF
++ seal-security value
++ reduced need for foreign control of critical defense
+```
+
+while RF receives:
+
+```text
+patronage
+technology
+security guarantee
+external political leverage
+```
+
+The broad mutual-dependency logic is canon; the exact internal decision rationale remains an explanatory hypothesis until sourced/accepted.
+
+---
+
+#### H3. Sacrifice becomes relatively more attractive only after other MC2 options collapse
+
+Hypothesis:
+
+```text
+political legitimacy value ↓
+marriage value ↓
+open claimant usefulness ↓
+security liability ↑
+
+while
+
+bearer / seal value remains
+```
+
+therefore some hardline faction may reprice MC2 from a long-term dynastic asset into an immediate seal/security asset.
+
+This is a rationality model, not a canon decision that sacrifice will occur.
+
+---
+
+#### H4. Stopping RF specialist visits becomes an observable proof-of-substitution signal
+
+Part of this is canon at the trigger level: suddenly not needing RF is enough to sharply alarm MC2.2.
+
+The stronger hypothesis is:
+
+```text
+AF stops RF seal visits
++ MC2 is in crisis
+→ informed RF actors infer AF has found/used an internal Raging Fire substitute
+→ suspicion focuses on MC2 or her descendants
+```
+
+The exact inference strength for each actor remains information-dependent.
+
+---
+
+#### H5. MC2 is a geopolitical tripwire, not merely an internal claimant
+
+Hypothesis / strategic inference:
+
+MC2's death or disappearance can change the state of MC2.2 and RF domestic politics, which can in turn change AF's external security environment.
+
+Canon 1 proves such a cascade is a realized precedent, but Canon 2 does not guarantee the same cascade.
+
+```text
+MC2 status change
+→ possible MC2.2 state change
+→ possible RF internal succession change
+→ possible AF–RF strategic change
+```
+
+---
+
+#### H6. Clash #2 overlap may be occurring at the class of problem "the MC2 question must resolve"
+
+Hypothesis consistent with the user's closure clarification:
+
+Canon 1 approaches closure through:
+
+```text
+MC2 death
+→ MC2.2 activation
+→ regime-level collapse
+```
+
+Canon 2 may approach the same level of closure pressure through a different implementation:
+
+```text
+MC2 treason / custody / life threat
++ RF / MC2.2 axis becoming active
++ constitutional-security crisis
+→ regime-level resolution pressure
+```
+
+This is a candidate description of the overlap's event-function/state-space class.
+
+Exact overlap mechanics remain sealed/unknown.
+
+---
+
+### VI. DEFERRED
+
+#### D1. TE redesign
+
+The Queen's TE protection is canon, but the broader TE redesign remains deferred.
+
+Deferred TE work includes:
+
+- final state structure;
+- commercial-state architecture;
+- tourism/experience economy;
+- law and institutions;
+- relation to Undie professions;
+- exact protection mechanism for the Queen;
+- foreign-security and asylum/custody interfaces.
+
+Do not infer these from the fact of TE protection.
+
+---
+
+#### D2. Full Undie profession catalogue
+
+Deferred / open by subsystem:
+
+- final list of professional branches;
+- training/licensing system;
+- exact House/agency/salon/cooperative forms;
+- MC2's final profession;
+- transformation technology/magic implementation;
+- service contracts and professional identity documents.
+
+MC2's political use of Undie does not require the entire ecosystem to be designed first.
+
+---
+
+#### D3. Exact AetherFire security organizational chart
+
+Deferred unless needed for a specific transition:
+
+- complete Interior/Security/Counterintelligence chart;
+- legal jurisdiction matrix;
+- full command hierarchy;
+- all intelligence-sharing rules;
+- exact purge procedure;
+- exact diplomatic decision chain.
+
+Only task-relevant authority paths need to be opened.
+
+---
+
+#### D4. Exact RF constitutional map
+
+Deferred / open:
+
+- full member-state count;
+- official bloc/polity names;
+- union-level constitutional authority;
+- exact relationship among lineage house, member-state government, union institutions and specialist corps;
+- exact rule for external treaties and specialist deployments.
+
+---
+
+### VII. Proposed counterintelligence trigger matrix
+
+> **Status:** PROPOSAL implementation of the accepted contingency principle. Not canon events.
+
+| State trigger | Candidate response | Intended function | Does not automatically establish |
+|---|---|---|---|
+| Evidence weak, network unclear | `WATCH` | Build information picture | arrest, guilt, whole-state knowledge |
+| Contact chain partially visible | `STING` | Map network / insert controlled channel | fully fake resistance, guaranteed capture |
+| High attribution + capture feasible + loss risk high | `CAPTURE` | Retain persons/evidence/custody | final MC2 disposition |
+| MC2 escapes + Bloc 1 attribution strong | `BURN_BLOC1` | Convert tactical loss into diplomatic leverage | automatic Cold War |
+| RF targets public double | `DECOY_HONEYPOT` | Measure RF knowledge / expose cell | RF ignorance outside that actor |
+| RF targets real MC2 | `REAL_MC2_TRACE` | Trace constitutional leak | Army guilt by default |
+| Internal AF facilitator proven | `INTERNAL_PURGE` | Close internal breach | purge of whole institution |
+| Seal service date near | `DELAY_ESCALATION` | Avoid dependency self-harm | reconciliation with Bloc 1 |
+| Rival RF blocs receptive + breach provable | `WEDGE_RF` | Diversify RF dependencies | rival acceptance or lineage equivalence |
+| MC2.2 signal rises / death externality rises | `PRESERVE_MC2` | Avoid martyr/dynastic trigger | plot immunity |
+| MC2 politically ruined but secure | `CONVERT_ASSET` | Consider research/dynastic/seal use | any option authorized or executed |
+| Double exposed / identity crisis public | `CRISIS_CONTAINMENT` | Preserve constitutional continuity | success or cover-up |
+
+Suggested control rule:
+
+```text
+LOW EVIDENCE
+→ WATCH
+
+NETWORK PARTIALLY VISIBLE
+→ STING
+
+HIGH ATTRIBUTION
++ CAPTURE FEASIBLE
++ LOSS RISK HIGH
+→ CAPTURE branch opens
+
+MC2 ESCAPES
++ ATTRIBUTION REMAINS STRONG
+→ BURN_BLOC1 branch opens
+
+RF TARGETS DECOY
+→ DECOY_HONEYPOT branch opens
+
+RF TARGETS REAL MC2
+→ REAL_MC2_TRACE branch opens
+
+SEAL CLOCK NEAR
+→ DELAY_ESCALATION pressure rises
+
+MC2.2 SIGNAL RISES
+→ MC2 death cost rises
+→ PRESERVE / NEGOTIATE options gain weight
+
+INTERNAL AF SUPPORT PROVEN
+→ INTERNAL_PURGE branch opens
+
+RIVAL RF BLOCS RECEPTIVE
++ BLOC 1 BREACH PROVABLE
+→ WEDGE_RF branch opens
+```
+
+Again:
+
+```text
+BRANCH OPENS != BRANCH MUST BE TAKEN
+```
+
+---
+
 ## Historical-state notice — Undie revamp 2026-10-05
 
 Các nhãn CURRENT CANON/SURVIVING LEGACY và các kết luận preservation trong hồ sơ cũ bên dưới là trạng thái ở thời điểm ghi. Trong phạm vi Undie, chúng không còn giữ authority nếu trái mốc nghề nghiệp `30` ngày 2026-10-05.
@@ -16,7 +561,7 @@ Retcon không xóa Temple/ML hoặc lịch sử Canon 1, không thay Civil/Crimi
 
 ## Genealogy, thể chế và công nghệ — xử lý chọn lọc 2026-10-03
 
-> **DESIGN HISTORY / ANALYTICAL INFERENCE / PROPOSAL — NOT CURRENT CANON.** Các ghi chú State Institution Model, Technology Infrastructure và Undie Design History Genealogy ngày 2026-10-03 được xử lý tại đây. Bản nguồn byte-exact và SHA-256 được ghi trong `91`; lưu trữ không phục hồi mọi khẳng định làm canon. Phần chức năng Terminal/Guest Pass đã được chấp nhận chỉ có hiệu lực theo bản đã đối chiếu trong `15`; khung thể chế có giới hạn nằm ở `10` §5.1.
+> **DESIGN HISTORY / ANALYTICAL INFERENCE / PROPOSAL — NOT CURRENT CANON.** Các ghi chú State Institution Model, Technology Infrastructure và Undie Design History Genealogy ngày 2026-10-03 được xử lý tại đây. Bản nguồn byte-exact và SHA-256 được ghi trong `91`; lưu trữ không phục hồi mọi khẳng định làm canon. Phần chức năng Terminal/Guest Pass đã được chấp nhận chỉ có hiệu lực theo bản đã đối chiếu trong `15`; khung thể chế có giới hạn nằm ở `25` §5.1.
 
 ### Hệ Undie gốc và hệ hiện hành không cùng triết lý nền
 
@@ -66,7 +611,7 @@ Các nhận định công nghệ đủ rẻ, hàng hóa hóa, mass-deployed ho�
 
 ### Đọc nhà nước theo nhiều trục, không tự viết hiến pháp
 
-`10` §5.1 chấp nhận tách hình thức quốc gia, cấu trúc quyền lực, năng lực vận hành và độ gắn kết chính trị. Mô tả “nền công nghiệp magitech mức cao, hành chính–kỹ thuật mạnh trên toàn hệ thống” vẫn là **ANALYTICAL SYNTHESIS**, không phải nhãn thể chế hoặc kết quả đo năng lực canon.
+`25` §5.1 chấp nhận tách hình thức quốc gia, cấu trúc quyền lực, năng lực vận hành và độ gắn kết chính trị. Mô tả “nền công nghiệp magitech mức cao, hành chính–kỹ thuật mạnh trên toàn hệ thống” vẫn là **ANALYTICAL SYNTHESIS**, không phải nhãn thể chế hoặc kết quả đo năng lực canon.
 
 Tách formal authority với informal influence là **khung phân tích**. Crown/Parliament/agencies/military/judiciary/diplomacy/security cần đọc theo current source; noble Houses, merchant capital, investment, patronage, bribery, civil/professional organizations, religious legitimacy, public opinion, black market và foreign ties trong ghi chú không tự chốt toàn bộ network tương tác hiện hành.
 

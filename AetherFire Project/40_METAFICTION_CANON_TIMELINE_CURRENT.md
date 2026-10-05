@@ -4,7 +4,7 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: Fiction 0/Fiction 1, Fictionize, Proof of Concept, V0.5, Canon 1/Canon 2, clashes, causal overlap, timeline, and cross-world status boundaries.
 > Authority boundary: Controls metafiction ontology, causal timeline, canon-layer relations, and cross-world status within its declared scope.
-> Cross-domain owner boundary: Narrator, POV, and humor presentation is controlled by `AFM-005`; actor/domain-specific current canon remains controlled by its relevant module.
+> Cross-domain owner boundary: Narrator, POV, and humor presentation is controlled by `AFM-005`; detailed dynastic politics and MC2 security pathway by `AFM-011`; actor/domain-specific current canon remains controlled by its relevant module.
 > Load mode: `FULL_FILE`
 
 > **Domain:** Fiction 0/Fiction 1, Fictionize, Proof of Concept, V0.5, Canon 1/Canon 2, Clash #1/Clash #2, realization mode, causal overlap and knowledge asymmetry.  
@@ -355,7 +355,7 @@ Prince 9 của hoàng gia một quốc gia thành viên rank thấp hơn trong R
 MC2 + MC2.2 = anh em cùng cha khác mẹ
 ```
 
-Relation này bị che giấu có chủ ý bên trong RF; exact responsible actor và knowledge distribution giữ `UNKNOWN`. Vị vua AetherFire đã bỏ trốn không phải cha ruột MC2; mẹ MC2 đã mang thai trước khi vào hoàng gia AetherFire và bị gả đi để che giấu pregnancy. Quan hệ custody cũ dưới Quad Night đã bị orphan; current custodian của Hoàng hậu giữ `UNKNOWN`.
+Relation này bị che giấu có chủ ý bên trong RF; exact responsible actor và knowledge distribution giữ `UNKNOWN`. Vị vua AetherFire đã bỏ trốn không phải cha ruột MC2; mẹ MC2 đã mang thai trước khi vào hoàng gia AetherFire và bị gả đi để che giấu pregnancy. Quan hệ custody cũ dưới Quad Night đã bị orphan; chốt 2026-10-05 xác lập Hoàng hậu được TE bảo hộ, chỉ một số tác nhân biết. Cơ chế, địa điểm và tư cách pháp lý vẫn `UNKNOWN`, do `10` kiểm soát; không gán fact current này ngược cho mọi thời điểm Canon 1.
 
 Các primitive này có thể sinh consequences khác nhau sau divergence; `shared genealogy ≠ same later outcome`.
 
@@ -799,6 +799,14 @@ Quan hệ Canon 1/Canon 2, hai Clash, MC2 còn sống và checkpoint gọi MC1 k
 Nguồn strategic-node MC2 được chỉ định làm đầu vào thiết kế tiếp theo; không nhập các HYPOTHETICAL/PROPOSAL của nó thành lịch sử đã xảy ra.
 
 ---
+
+#### 14.1 Mốc phản quốc và áp lực kết thúc — chốt bổ sung 2026-10-05
+
+**CANON:** trước thời điểm kết thúc dẫn tới Clash #2, MC2 Canon 2 đã đạt tình trạng/xử lý phản quốc, đe dọa thực chất tự do/custody và tính mạng. Khi MC1 xuất hiện, MC2 đã ở nguy hiểm sống còn thực chất. **UNKNOWN:** hành vi/chứng cứ, cơ quan xét xử, tính hợp lệ/thao túng, đường tiếp xúc RF/kháng chiến, Swap và toàn đoạn nhân quả giữa.
+
+Clash #2 là overlap mang áp lực kết thúc, không phải điểm triệu hồi tùy tiện. HOPE cho phép nhiều đoạn giữa hợp nhân quả; Canon 2 vào vùng overlap với Canon 1 đã realized cùng áp lực giải quyết. Không khóa việc MC2 phải chết, MC2.2 phải lặp Canon 1 hoặc hợp nhất state/history. Exact mechanics/thematic nature ngoài phần đã chốt và kết quả sau MC1 vẫn UNKNOWN.
+
+Undie + biến đổi căn tính đã chốt ở cấp giao diện vỏ bọc/tiếp cận kín; Operation Swap vẫn đề xuất ưu tiên. Mẹ MC2 được TE bảo hộ và MC2.2 đã biết MC2 ở AF/tình hình khái quát là dữ kiện current do `25` kiểm soát, không đồng nghĩa mọi actor biết phả hệ hoặc bí mật.
 
 ### 15. Sự cố thứ hai — MC1 stress-test V1.0
 

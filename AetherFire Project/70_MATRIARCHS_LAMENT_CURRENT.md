@@ -4,7 +4,7 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: Matriarch's Lament internal governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha regional role and doctrine, ML–TE operations, and northeastern tribes.
 > Authority boundary: Controls internal Matriarch's Lament canon within its declared scope.
-> Cross-domain owner boundary: Global and geopolitical interfaces are controlled by `AFM-001`; Undie professional and unresolved legal interfaces by `AFM-003`; metafiction and cross-world status by `AFM-004`.
+> Cross-domain owner boundary: Global and geopolitical interfaces are controlled by `AFM-001`; detailed politics and Queen protection interface by `AFM-011`; Undie professional and unresolved legal interfaces by `AFM-003`; metafiction and cross-world status by `AFM-004`.
 > Load mode: `FULL_FILE`
 
 > **Trạng thái:** CURRENT CANON / CONTROLLING MATRIARCH'S LAMENT DOMAIN — integrated 2026-09-11; architecture split recorded 2026-09-16  
@@ -813,7 +813,7 @@ Các điểm sau **chưa cần mở** để core ML chạy:
 - full Saintess selection system;
 - full succession mechanics;
 - full map mới giữa ML, TE và AF;
-- exact custody / retcon của mẹ MC2 sau khi Quad Night bị retire.
+- cơ chế bảo hộ/custody, địa điểm, tư cách pháp lý và phạm vi biết: mẹ MC2 được TE bảo hộ theo chốt 2026-10-05 ở `10`, không còn unknown về host theo nghĩa bảo hộ.
 
 ---
 
@@ -828,13 +828,14 @@ mẹ MC2
 → trước đây bị Quad Night strategic custody
 ```
 
-Current host mới:
+Chốt thay thế 2026-10-05:
 
 ```text
-UNKNOWN
+mẹ MC2 → được TE bảo hộ
+phạm vi biết → chỉ một số tác nhân
 ```
 
-Không tự chuyển custody sang ML hoặc TE.
+`25` kiểm soát chi tiết chính trị của dữ kiện này; `10` giữ giao diện toàn cục. Không suy ML custody, quyền sở hữu/giam giữ, tị nạn, cơ quan TE, địa điểm hoặc toàn TE biết. Các cơ chế pháp lý và thiết kế lại TE vẫn UNKNOWN / DEFERRED.
 
 ---
 
