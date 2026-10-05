@@ -520,3 +520,16 @@
 
 - Structural checks passed at 4,986 characters and 5,000 UTF-8 bytes, across 45 CRLF lines, with a final CRLF, no trailing whitespace, and no UTF-8 BOM. SHA-256: `C8EA882AD2731A552C0C39D5C1CB00986B3595BA5C2EF5A6342DA55679AAAE2E`.
 - No separate post-release runtime result for this exact v8.7 artifact is recorded here; structural validation does not establish model behavior.
+
+## v8.8
+
+### Everyday Vietnamese without language exceptions
+
+- Promoted the temporary v8.8 artifact to the official release at the author's request, preserving its bytes exactly.
+- Replaced only line 3 of v8.7, the Vietnamese output contract: require the entire response to use plain, everyday Vietnamese on every turn and topic. Translate or paraphrase all non-Vietnamese text without exceptions for names, code, commands, paths, identifiers, quotations, technical terms, or requested wording; do not retain originals, bilingual labels, or English examples.
+- Require a silent whole-response language check before sending. Preserve reasoning depth and distinctions; all other v8.7 controls remain unchanged.
+
+### Verification boundary
+
+- Structural checks passed at 4,964 characters and 4,978 UTF-8 bytes, across 45 CRLF lines, with a final CRLF, no trailing whitespace, and no UTF-8 BOM. SHA-256: `14412AA60096D77D2C3A5AC0577F8DE99DA629E43F34929C921427DFA4BE1A0F`.
+- Official status records author approval of publication. No separate runtime result for this exact v8.8 artifact is recorded here; structural validation does not establish model behavior.

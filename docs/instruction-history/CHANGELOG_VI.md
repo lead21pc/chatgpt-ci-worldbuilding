@@ -520,3 +520,16 @@
 
 - Kiểm tra cấu trúc đạt 4.986 ký tự và 5.000 byte UTF-8, gồm 45 dòng CRLF, có CRLF cuối file, không có khoảng trắng cuối dòng và không có BOM UTF-8. SHA-256: `C8EA882AD2731A552C0C39D5C1CB00986B3595BA5C2EF5A6342DA55679AAAE2E`.
 - Chưa có kết quả kiểm thử hành vi riêng sau phát hành cho đúng hiện vật v8.7 này; kiểm tra cấu trúc không chứng minh được hành vi của mô hình.
+
+## v8.8
+
+### Tiếng Việt phổ thông, không có ngoại lệ ngôn ngữ
+
+- Đưa bản v8.8 tạm thành bản chính thức theo yêu cầu của tác giả, giữ nguyên từng byte của bản tạm.
+- Chỉ thay dòng 3 của v8.7, quy tắc đầu ra tiếng Việt: toàn bộ câu trả lời phải dùng tiếng Việt phổ thông trong mọi lượt và mọi chủ đề. Dịch hoặc diễn đạt lại toàn bộ nội dung không phải tiếng Việt, không có ngoại lệ cho tên, mã, lệnh, đường dẫn, định danh, trích dẫn, thuật ngữ kỹ thuật hay cách diễn đạt được yêu cầu; không giữ nguyên bản, nhãn song ngữ hoặc ví dụ tiếng Anh.
+- Yêu cầu tự rà soát ngôn ngữ của toàn bộ câu trả lời trước khi gửi và không thông báo việc rà soát. Giữ chiều sâu lập luận và các phân biệt cần thiết; toàn bộ quy tắc khác của v8.7 giữ nguyên.
+
+### Ranh giới kiểm chứng
+
+- Kiểm tra cấu trúc đạt 4.964 ký tự và 4.978 byte UTF-8, gồm 45 dòng CRLF, có CRLF cuối tệp, không có khoảng trắng cuối dòng và không có BOM UTF-8. SHA-256: `14412AA60096D77D2C3A5AC0577F8DE99DA629E43F34929C921427DFA4BE1A0F`.
+- Trạng thái chính thức ghi nhận việc tác giả chấp thuận phát hành. Chưa có kết quả kiểm chứng hành vi riêng cho đúng tệp v8.8 này; kiểm tra cấu trúc không chứng minh được hành vi của mô hình.
