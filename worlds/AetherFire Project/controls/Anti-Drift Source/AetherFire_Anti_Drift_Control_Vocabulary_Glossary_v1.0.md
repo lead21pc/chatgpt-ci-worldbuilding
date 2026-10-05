@@ -1,4 +1,4 @@
-# AetherFire Control Vocabulary Glossary v1.0
+# AetherFire Anti-Drift Control Vocabulary Glossary v1.0
 
 > Role: MAINTENANCE / INTERPRETATION REFERENCE.
 > Use: control authoring, review, translation, and terminology calibration.
@@ -85,24 +85,24 @@ The audit found distributed, compatible distinctions rather than an incompatible
 
 | Abbreviation | Inspected owner / scope |
 | --- | --- |
-| CI | [AetherFire CI 3.0](AetherFire%20CI/AetherFire_CI_version_v3.0.md): operations, canon decisions, evidence and relation boundaries. |
-| Router | [Source Router 4.3](Anti-Drift%20Source/AetherFire_Anti_Drift_Source_Router_v4.3.md): source roles, admission, loading, reconciliation, and overlay gates. |
-| MCA | [Modular Concept Architecture 1.1](Anti-Drift%20Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.1.md): architectural relations, function allocation, and actor information/agency. |
-| WIL | [Worldbuilding Internal Logic 1.2](Anti-Drift%20Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md): bounded coherence/design reasoning and imperfection intent. |
-| Actor | [Actor Reception Normative Signals 1.0](Anti-Drift%20Source/AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md): actor-specific reception and appraisals. |
-| Belief | [Belief / Culture 1.0](Anti-Drift%20Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md): cultural claim distinctions, extent, transmission, and recognition. |
-| Economy | [Interface Economy / State Stabilization 1.1](Anti-Drift%20Source/AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md): economic interface depth, intervention, and stopping. |
-| Mortality | [Mortality / Relationship / Plot Immunity 1.1](Anti-Drift%20Source/AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v1.1.md): symmetric causal resolution and survival-path evidence. |
-| TW | [Total War RP 1.1](Anti-Drift%20Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md): bounded operational transitions, availability, and persistent loss. |
-| Context | [SYSTEM_CONTEXT](../../../SYSTEM_CONTEXT.md): authoring, repository, and live-runtime boundaries. |
-| Workflow | [Milestone Executor](../../../codex-workflows/milestone-executor/SKILL.md): bounded edits and authorization. |
-| Review | [Review Before Merge](../../../codex-workflows/review-before-merge/SKILL.md): read-only acceptance assessment, not automatic fixes or canon approval. |
-| Behavior | [CI Behavior Engineering](../../../codex-workflows/ci-behavior-engineering/SKILL.md): observed failure versus wording risk and structural versus behavioral checks. |
-| Archive | [Artifact Source Archive](../../../codex-workflows/artifact-source-archive/SKILL.md): byte-preserving retirement, not canon admission. |
-| Git workflow | [Git Test Branch](../../../codex-workflows/git-test-branch/SKILL.md): repository branches, distinct from simulation branches. |
-| Audit notes | Repository [audit protocol](../../../codex-workflows/aetherfire-source-audit/references/audit-protocol.md) and [package workflow](../../../codex-workflows/aetherfire-source-audit/references/package-workflow.md), inspected as terminology evidence only; not invoked or made prerequisites. |
-| Regression | [Control regression documentation](../tests/control-regressions/README.md): tooling lifecycle, advisory results, and execution limits; dated baseline notes do not select active controls. |
+| CI | [AetherFire CI 3.0](../AetherFire%20CI/AetherFire_CI_version_v3.0.md): operations, canon decisions, evidence and relation boundaries. |
+| Router | [Source Router 4.3](AetherFire_Anti_Drift_Source_Router_v4.3.md): source roles, admission, loading, reconciliation, and overlay gates. |
+| MCA | [Modular Concept Architecture 1.1](AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.1.md): architectural relations, function allocation, and actor information/agency. |
+| WIL | [Worldbuilding Internal Logic 1.2](AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md): bounded coherence/design reasoning and imperfection intent. |
+| Actor | [Actor Reception Normative Signals 1.0](AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md): actor-specific reception and appraisals. |
+| Belief | [Belief / Culture 1.0](AetherFire_Anti_Drift_Belief_Culture_v1.0.md): cultural claim distinctions, extent, transmission, and recognition. |
+| Economy | [Interface Economy / State Stabilization 1.1](AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md): economic interface depth, intervention, and stopping. |
+| Mortality | [Mortality / Relationship / Plot Immunity 1.1](AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v1.1.md): symmetric causal resolution and survival-path evidence. |
+| TW | [Total War RP 1.1](AetherFire_Anti_Drift_Total_War_RP_v1.1.md): bounded operational transitions, availability, and persistent loss. |
+| Context | [SYSTEM_CONTEXT](../../../../SYSTEM_CONTEXT.md): authoring, repository, and live-runtime boundaries. |
+| Workflow | [Milestone Executor](../../../../codex-workflows/milestone-executor/SKILL.md): bounded edits and authorization. |
+| Review | [Review Before Merge](../../../../codex-workflows/review-before-merge/SKILL.md): read-only acceptance assessment, not automatic fixes or canon approval. |
+| Behavior | [CI Behavior Engineering](../../../../codex-workflows/ci-behavior-engineering/SKILL.md): observed failure versus wording risk and structural versus behavioral checks. |
+| Archive | [Artifact Source Archive](../../../../codex-workflows/artifact-source-archive/SKILL.md): byte-preserving retirement, not canon admission. |
+| Git workflow | [Git Test Branch](../../../../codex-workflows/git-test-branch/SKILL.md): repository branches, distinct from simulation branches. |
+| Audit notes | Repository [audit protocol](../../../../codex-workflows/aetherfire-source-audit/references/audit-protocol.md) and [package workflow](../../../../codex-workflows/aetherfire-source-audit/references/package-workflow.md), inspected as terminology evidence only; not invoked or made prerequisites. |
+| Regression | [Control regression documentation](../../tests/control-regressions/README.md): tooling lifecycle, advisory results, and execution limits; dated baseline notes do not select active controls. |
 
-Also checked [Systematic Debugging](../../../codex-workflows/systematic-debugging/SKILL.md) and [CI Language Calibration](../../../codex-workflows/ci-language-calibration/SKILL.md): supported diagnosis and contextual explanation, not technical-standard normalization or a compulsory dictionary in every response.
+Also checked [Systematic Debugging](../../../../codex-workflows/systematic-debugging/SKILL.md) and [CI Language Calibration](../../../../codex-workflows/ci-language-calibration/SKILL.md): supported diagnosis and contextual explanation, not technical-standard normalization or a compulsory dictionary in every response.
 
 Deliberately omitted: lore names and legal/status taxonomies (current lore owns them); ordinary actor/event/time/result/system definitions (no material collision found); standalone headroom metrics, intent scores, power scores, or exhaustive permission matrices (not established shared models). Specialized operational labels remain with their owner. The grouped entries are a selective maintenance aid, not a complete list of valid concepts or required source fields.
