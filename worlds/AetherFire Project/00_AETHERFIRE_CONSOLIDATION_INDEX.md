@@ -61,7 +61,7 @@ AETHERFIRE CURRENT CANON
 │  ├─ ontology schema
 │  ├─ Civil entry and allocation
 │  ├─ operational lifecycle
-│  └─ transitions among Citizen, Civil, Yellow, POW and Criminal
+│  └─ Civil service admission/completion/exit; independent citizenship, Yellow, POW and Criminal
 ├─ Undie subsystem
    ├─ professional identity and overlapping branches
    ├─ professional entry/exit, consent and mobility
@@ -129,6 +129,14 @@ STATUS
 - Yellow vẫn là disciplinary status; Yellow→Red/Undie đã nghỉ hưu, trang phục/chế tài tái phạm mới chưa chốt.
 - Cash là tiền cơ bản; Credits là tiền điện tử được nhà nước bảo chứng. Nợ ≠ sở hữu; ân tình ≠ tiền tệ. Web tín dụng Undie cũ không phải mốc hiện hành.
 - Phả hệ không tự xác lập containment, thẩm quyền hoặc dependency.
+
+## Civil — cơ sở mới 2026-10-05
+
+`AetherFire_Civil_Co_So_Canon_2026-10-05.md` thay nền Civil cũ trong `20`: service tự nguyện ở đầu vào + xét tuyển + allocation phù hợp bắt buộc + upkeep/pay + appeal/discipline + early exit + completion. Civil không Slave, punishment hoặc caste; citizenship/tình trạng nhập cư là trục riêng.
+
+Bỏ dấu Brown bắt buộc, Citizen-only intake, applicant chọn/chấp nhận billet theo sở thích trước admission, universal 5y/10y conversion, ưu đãi phí Undie và tax privilege vĩnh viễn. Giữ các primitives vận hành tương thích được đối chiếu ở `20` Part IV, không tái tạo gate cũ. Chuẩn công quyền trung lập được đồng bộ `25/30`; chưa sửa Criminal/POW hoặc lịch sử Canon 1.
+
+`91` ghi AF-CR-001–012; `92` giữ đầy đủ §22 UNKNOWN và gap về luật tài chính/Criminal, homelessness, uniform. Không tự thiết kế cơ quan, thời hạn/lương/matching/nhập tịch mới.
 
 ## Undie revamp — controlling integration 2026-10-05
 

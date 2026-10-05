@@ -59,7 +59,7 @@ Nhà nước có thể quản lý hoạt động, hợp đồng, địa điểm,
 
 ## 4. Civil, Criminal, Yellow và quyền cá nhân
 
-Civil, Criminal, POW và Yellow tiếp tục do `20` kiểm soát ngoài phạm vi đã retcon. Xóa Undie khỏi Slave không xóa các địa vị ấy.
+`20` kiểm soát Civil, Criminal, POW và Yellow. Theo retcon Civil 2026-10-05, Civil là chế độ phục vụ tự nguyện ở đầu vào, không Slave/punishment/caste; không tự xóa Criminal/POW/Yellow. Citizenship và nghề Undie là trục độc lập.
 
 Quy tắc cấm Criminal chuyển địa vị sang Undie đã nghỉ hưu vì không còn đồ thị chuyển ấy. Câu hỏi mới là người có hồ sơ hình sự được làm hoạt động nào, dùng giấy phép, địa điểm, hợp đồng hay mức truy cập nào. Loại kết án, rủi ro và luật ngành có thể liên quan khi được chốt; chưa xác lập mọi người có hồ sơ hình sự đều đủ điều kiện. Cũng không tự đồng nhất hồ sơ hình sự với người đang chịu chế độ Criminal Slave.
 
@@ -67,7 +67,7 @@ Không suy mọi Civil đều được hành mọi nhánh nghề hoặc thoát n
 
 Tư cách Undie không tự tước quyền tài sản, thừa kế, hôn nhân, tước vị, kế vị, quyền công dân hay quyền sinh sản. Những ràng buộc riêng phải có nguồn pháp lý độc lập; không kế thừa hình phạt từ danh phận Slave cũ.
 
-Công quyền vẫn phải duy trì tính công minh/trung lập về thủ tục. Không được từ chối thủ tục chỉ vì người đó hành nghề Undie. Phản ứng xã hội là hỗn hợp, không một phản ứng chung của mọi công dân, báo chí hoặc tổ chức. Quy tắc miệt thị, bắt tự nhận danh phận và đào tạo chấp nhận nhục mạ cũ không được dùng lại.
+Theo `20` Part II §18/`25` §24, công quyền phải đối xử trung lập với class/nghề/giàu nghèo/nguồn gốc; không từ chối hoặc hạ chất lượng thủ tục/bảo vệ chỉ vì nghề Undie. Phản ứng xã hội là hỗn hợp, không một phản ứng chung của mọi công dân, báo chí hoặc tổ chức. Quy tắc miệt thị, bắt tự nhận danh phận và đào tạo chấp nhận nhục mạ cũ không được dùng lại.
 
 ## 5. Sinh sản và sức khỏe
 

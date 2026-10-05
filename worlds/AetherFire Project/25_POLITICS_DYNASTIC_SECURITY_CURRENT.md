@@ -143,7 +143,7 @@ Nguồn actor đã biết:
 - staff đế quốc;
 - người nội bộ chống đối;
 - cư dân đặc khu;
-- Civil Slave;
+- Civil — người tham gia chế độ phục vụ, không Slave;
 - Undie;
 - chợ đen;
 - POW specialist;
@@ -158,9 +158,11 @@ Phản gián AF có nhiều phương án dự phòng phụ thuộc thông tin, q
 
 ## 24. Công quyền và chính danh thủ tục
 
-Triết lý thể chế đã chốt:
+Chuẩn công quyền được cụ thể hóa bởi Civil baseline 2026-10-05 §18:
 
-> công quyền phải duy trì vẻ công minh và trung lập về thủ tục ngay cả trong một nhà nước thối nát.
+Cơ quan công quyền **phải trung lập tuyệt đối trong đối xử** với class, nghề, tình trạng kinh tế và nguồn gốc xã hội; không hạ chất lượng thủ tục, bảo vệ hoặc nhân phẩm vì các trục ấy. Civil được đối xử như Citizen trong thủ tục, pháp luật, hành chính và dịch vụ áp dụng; không đồng nghĩa mọi quyền chính trị/nhập cư/nghĩa vụ giống nhau. `20` kiểm soát quyền/service Civil.
+
+Đây là chuẩn phải tuân thủ, không chỉ yêu cầu giữ vẻ ngoài công minh. Nó không tự chứng minh mọi cơ quan đã tuân thủ trong mọi sự kiện hoặc giải quyết các quyền/law implementation còn mở. Giao diện với bailout/financial liability/Criminal được giữ NEEDS RECONCILIATION tại `92` AF-CR-OPEN-006, không tự sửa hai luật này.
 
 Do đó:
 

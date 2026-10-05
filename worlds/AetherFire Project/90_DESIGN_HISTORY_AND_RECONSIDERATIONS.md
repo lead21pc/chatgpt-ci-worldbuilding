@@ -2,6 +2,15 @@
 
 > Preserved as a separate temporal layer. `DESIGN HISTORY`, `RETIRED`, `SURVIVING LEGACY`, `UNDER CONSIDERATION`, `CURRENT CANON` and `UNKNOWN` retain their original meanings. Nothing in this file becomes current canon merely because it appears here.
 
+## Civil historical-state notice — baseline 2026-10-05
+
+`20` Part II hiện kiểm soát Civil theo `AetherFire_Civil_Co_So_Canon_2026-10-05.md`. Các nhãn CURRENT/SURVIVING LEGACY/PRESERVED về Civil ở hồ sơ phía dưới là trạng thái theo thời điểm; không phục hồi Civil Slave, compulsory Brown identification, hạ class/stigma, Citizen-only input, applicant-selected billet gate, 5y/10y conversion, tax privilege vĩnh viễn hoặc preferential Undie fee.
+
+Civil là service tự nguyện ở đầu vào + xét tuyển + phân công phù hợp bắt buộc + bảo đảm/pay + appeal/early exit/completion. Không dùng proposal/history để hoàn thiện thời hạn/lương/nhập tịch hoặc tạo caste. Reserve/reassignment, empire-wide pool, demand/allocation distinction và deployment safeguards chỉ còn đúng phạm vi đã đối chiếu ở `20` Part IV; không rebuild gate cũ.
+
+Không viết lại lịch sử Canon 1, không xóa Criminal/POW/Yellow, Citizen credit/bailout hoặc MC2/RF/TE. Công quyền phải trung lập được cụ thể hóa ở `25`; giao diện bailout/Criminal và homelessness còn ở `92` AF-CR-OPEN-006/007. `91` ghi audit/ưu tiên theo đúng scope.
+
+
 ## MC2 pathway: đề xuất, giả thuyết và hoãn thiết kế — 2026-10-05
 
 Nguồn `AetherFire_MC2_Pathway_Canon_Status_2026-10-05.md`, phần IV–VII. Trích nguyên văn, giữ nhãn riêng: P1–P11 là PROPOSAL (P9 có inference); H1–H6 là HYPOTHESIS; D1–D4 là DEFERRED; ma trận VII là PROPOSAL. Operation Swap chỉ là đề xuất ưu tiên, chưa phải lịch sử. Nguyên tắc phản gián nhiều phương án đã chốt ở `10` không canon hóa cây cụ thể.

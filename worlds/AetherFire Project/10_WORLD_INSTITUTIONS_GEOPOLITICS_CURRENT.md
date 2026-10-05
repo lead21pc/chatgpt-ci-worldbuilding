@@ -249,7 +249,7 @@ Các source không phải anti-drift được dùng để tạo bản hợp nh�
 - `aetherfire_delta_since_last_export.md`
 - `aetherfire_delta_since_last_anti_drift_export.md`
 - `aetherfire_undie_civil_citizen_revamp_canon_1_42.md` — nguồn tiền nhiệm; giữ quyền ngoài phạm vi bị retcon. Undie hiện hành theo `30` và hai nguồn 2026-10-05 trong `91`.
-- `aetherfire_civil_entry_allocation_law_canon.md` — latest dedicated source cho Civil entry, billet, allocation, relocation và reassignment
+- `aetherfire_civil_entry_allocation_law_canon.md` — nguồn tiền nhiệm; không còn controlling admission/status/lifecycle. `AetherFire_Civil_Co_So_Canon_2026-10-05.md` được nhập vào `20` làm cơ sở hiện hành.
 - canon mới được người dùng xác nhận trong các lượt trao đổi sau lần xuất file gần nhất
 - loạt chốt UNKNOWN về Fictionize / Proof of Concept / V0.5 / Raging Phoenix / ontology Undie / facility / POW / Criminal trong các lượt trao đổi mới nhất
 
@@ -311,7 +311,7 @@ Bao gồm:
 - luật;
 - tư pháp;
 - Citizen / Slave / status tạm thời;
-- Civil Slave;
+- Civil — chế độ phục vụ lao động, không Slave;
 - Undie;
 - POW;
 - Criminal Slave;

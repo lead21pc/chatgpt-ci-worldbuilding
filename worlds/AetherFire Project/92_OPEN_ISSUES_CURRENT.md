@@ -27,7 +27,7 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | ID | Type / state | Open issue | Required baseline and dependency |
 | --- | --- | --- | --- |
 | AF-OPEN-001 | CONFLICT / OPEN | Whether the older Criminal labor catalogue (`metallurgy / construction / human-operated factory`) survives beside the newer dirty/dangerous-work definition. | Read `20`; full evidence: `91` AF-CX-017. Do not merge the lists silently. |
-| AF-OPEN-002 | UNKNOWN / OPEN | Whether a distinct penal class named Brown exists outside the affected current sources. | Read `20` and `30`; full evidence: `91` AF-CX-003/004. Current confirmed Brown use is Civil jumpsuit color; this does not prove a separate penal Brown exists or does not exist. |
+| AF-OPEN-002 | UNKNOWN / OPEN — Civil reference superseded | Một penal class Brown độc lập có tồn tại không. | `20`/`30`; Brown làm dấu status/jumpsuit Civil đã nghỉ hưu theo AF-CR-001. Không chứng minh penal Brown tồn tại hoặc không; mẫu Civil mới UNKNOWN. |
 | AF-OPEN-003 | UNKNOWN / OPEN | Whether Temp-Y is currently operating and, if so, its law, duration and interface. | Read `20`; full evidence: `91` AF-CX-002. Do not merge Temp-Y with disciplinary Yellow. |
 | AF-OPEN-004 | UNKNOWN / OPEN — scope revised | Thời điểm tái phạm Yellow, chế tài thay thế và trang phục Yellow. | `20`; Yellow→Red/Undie/quota ×2 đã nghỉ hưu theo `91` AF-UR-004/010; không phục hồi hình phạt nghề. |
 
@@ -35,11 +35,11 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 
 | ID | State | Unknown | Required baseline and dependency |
 | --- | --- | --- | --- |
-| AF-OPEN-007 | UNKNOWN | Civil unilateral right to quit after conversion. | `20`; `91` AF-CX-011. |
-| AF-OPEN-008 | UNKNOWN | Full Civil employer powers, liability and public-service access matrix. | `20`; `91` AF-CX-014. Receiving/demand authority is not allocation authority. |
-| AF-OPEN-009 | UNKNOWN | Civil-specific marriage rule and any resident-status pathway. | `20`; `91` AF-CX-014. Absence of a rule in reviewed sources is not canonical negation. |
-| AF-OPEN-010 | UNKNOWN | Exact year-5 review criteria, authority and exceptions. | `20`; `91` AF-CX-013. The current 5/10-year lifecycle does not supply these details. |
-| AF-OPEN-011 | UNKNOWN | Exact relocation reimbursement, housing, reassignment duration and geographic limits after Civil conversion. | `20`; `91` AF-CX-012/014. |
+| AF-OPEN-007 | PARTIALLY RESOLVED / IMPLEMENTATION OPEN | Có đường rời sớm Civil hợp pháp; có thể mất quyền lợi chưa kiếm, không nợ upkeep để giữ người. | `20` Part II §14; `91` AF-CR-008. Notice/procedure/forced termination/giới hạn cụ thể vẫn UNKNOWN; không suy bất kỳ lúc nào đều bỏ assignment không hậu quả. |
+| AF-OPEN-008 | UNKNOWN — partially specified | Employer powers/liability, authority và full service/access matrix Civil. | `20` Part II §§8–14/18 và Part IV; public neutrality/rights baseline đã chốt. Receiving/demand ≠ allocation; full law còn UNKNOWN. Không suy Slave powers. |
+| AF-OPEN-009 | PARTIALLY RESOLVED / IMPLEMENTATION OPEN | Civil có hôn nhân/đời sống cá nhân; immigrant completion có tuyến xét cư trú/nhập tịch mạnh. | `20` Part II §§13/17; `91` AF-CR-007/010. Full marriage/family law, residency-before-citizenship hoặc direct eligibility chưa chốt. |
+| AF-OPEN-010 | SUPERSEDED / NEW IMPLEMENTATION OPEN | Year-5 review/year-10 direct Citizen không còn baseline để hoàn thiện. | `20` Part II §15; `91` AF-CR-009. Minimum time + qualified service là primitive; thời hạn/công thức completion ở AF-CR-OPEN-002. |
+| AF-OPEN-011 | UNKNOWN / OPEN — service scope revised | Reimbursement/housing/family/reassignment duration/geographic limits của Civil service. | `20` Part II §§8/11/12/14 và Part IV; không Slave conversion. Assignment phù hợp là nghĩa vụ; appeal/exit có baseline nhưng implementation còn mở. |
 | AF-OPEN-012 | UNKNOWN | Full Criminal rights, mobility and labor matrix. | `20`; `91` AF-CX-004/017. Do not revive Brown-to-Black mobility. |
 | AF-OPEN-013 | SUPERSEDED IN UNDIE SCOPE | Full color graph, Credit Score thresholds và Contribution Points formulas không còn là câu hỏi triển khai Undie hiện hành. Career Rank ngoài Undie vẫn mở. | `20`/`30`; `91` AF-UR-002/007. Không xóa biến/quy tắc ngoài phạm vi. |
 | AF-OPEN-015 | UNKNOWN — partially specified | Exact Clash #2 mechanics/thematic nature ngoài narrator split, ability boundary và overlap mang áp lực kết thúc đã chốt. | `40` §14.1/`50`; không suy ability transfer/loss, state merge, MC2 phải chết hoặc Canon 1 replay. |
@@ -109,6 +109,67 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | AF-TECH-002 | UNKNOWN / OPEN | Industrial energy, possible future nano mechanism, standards authority, ID/payment ownership, data architecture, backend concentration, privacy/data rights, cybersecurity, robot/android production, automation share, rare materials, device/aircraft costs, procurement, banking/currency/public finance and inter-sector technology gaps. | `15` section 9 retains fifteen source groups; `80` controls aviation. Historical nano is not accepted canon and industry-scale inference does not close these items. |
 | AF-STATE-001 | UNKNOWN / OPEN | Domain-specific lawmaking/interpretation/enforcement/veto; Parliament budget/appointment/investigation powers; Crown rights; security data-sharing; recognition of civil/professional groups; lawful opposition boundary; infrastructure ownership; standards/operations authority across ID/payment/aviation/security; infrastructure funding; material/manpower/energy/political bottlenecks. | `25` section 5.1; ten State Notes questions preserved. Multipolar power does not establish constitutional precedence, agency mandates or universal high state capacity. |
 
+## Civil baseline: câu hỏi triển khai — 2026-10-05
+
+Nguồn `AetherFire_Civil_Co_So_Canon_2026-10-05.md`; `20` là owner Civil, `25` giữ chuẩn công quyền chung. Các ID cũ 007–011 chỉ cụ thể hóa/retire đúng scope, không đóng toàn bộ luật.
+
+| ID | Trạng thái | Phạm vi còn mở |
+| --- | --- | --- |
+| AF-CR-OPEN-001 | UNKNOWN / OPEN | Cơ quan/eligibility/health/skills/security screening, thủ tục admission, matching/priority, manpower envelope, unit/authority, assignment validation; reserve duty catalogue, reassignment window/geographic limits và relocation conditions. |
+| AF-CR-OPEN-002 | UNKNOWN / OPEN | Minimum service, completion progress/authority, trọng số ba nhóm thường/khó tuyển/cực khó–chiến lược và cách faster completion vs better benefits vận hành. Không hỏi lại 5y/10y. |
+| AF-CR-OPEN-003 | UNKNOWN / OPEN | Pay/upkeep/housing, full labor code/hours/rest/medical coverage; full appeal/discipline ladder, extension limits, repayment của khoản riêng hợp pháp ngoài upkeep. |
+| AF-CR-OPEN-004 | UNKNOWN / OPEN | Exact early-exit notice/procedure/forced termination; privacy/communication boundaries, family accompaniment, dependent support, school và spouse employment. |
+| AF-CR-OPEN-005 | UNKNOWN / OPEN | Immigration/residency/citizenship sequence/eligibility; completion bonus/reintegration/transitional housing/job/aftercare scope; time-bounded tax support nếu sau này chốt; re-entry và compatibility Undie. |
+| AF-CR-OPEN-006 | UNKNOWN / NEEDS RECONCILIATION | Quan hệ chuẩn công quyền trung lập tuyệt đối (§18) với luật bailout/tòa/Criminal hiện có: `20` Part III §28 viết có tiền→dân sự, không tiền→nguy cơ Criminal. Chưa rõ tiền là điều kiện discharge liability hợp lệ hay wealth-based inferior protection; không tự sửa/retire Criminal hoặc tuyên bố tương thích đã được chứng minh. Cần tác giả xác định causal/legal distinction. |
+| AF-CR-OPEN-007 | UNKNOWN / REQUIRES RECONCILIATION | Mẫu trang phục Civil mới; treatment khi homeless không muốn/không đủ điều kiện/không có capacity; trợ giúp ngoài Civil, pháp luật trục xuất độc lập và phạm vi policy/claim zero homelessness. Brown identification và coercive binary cũ không fallback. |
+
+### Danh sách UNKNOWN đầy đủ từ nguồn §22
+
+Trích nguyên văn, không thêm luật hoặc khôi phục chi tiết cũ:
+
+#### 22. Những điểm còn UNKNOWN
+
+Chưa tự điền các mục sau:
+
+- tên pháp lý/chính thức cuối cùng của Civil nếu sau này cần đổi;
+- cơ quan xét tuyển;
+- exact eligibility;
+- tiêu chuẩn sức khỏe/thể lực/kỹ năng;
+- mức screening an ninh;
+- matching algorithm;
+- quy tắc ưu tiên khi nhiều assignment cùng phù hợp;
+- exact manpower envelope;
+- exact thời hạn tối thiểu;
+- cách tính tiến độ hoàn thành;
+- trọng số giữa assignment thông thường / khó tuyển / cực khó hoặc chiến lược;
+- lương cụ thể;
+- mức upkeep;
+- chuẩn nhà ở;
+- full labor code;
+- ngày nghỉ và thời giờ làm;
+- exact medical coverage;
+- full appeal procedure;
+- full discipline ladder;
+- giới hạn kéo dài service;
+- early-exit notice;
+- family accompaniment;
+- dependent support;
+- school cho con;
+- spouse employment;
+- exact immigration / residency / citizenship pathway;
+- exact completion bonus;
+- exact reintegration package;
+- former-Civil tax support nếu có;
+- Civil re-entry;
+- compatibility với Undie profession;
+- các trường hợp đặc biệt khác chưa được tác giả chốt.
+
+`UNKNOWN` không cho phép phục hồi hệ Civil cũ.
+
+---
+
+Các câu hỏi nguyên nguồn ở trên và các nhóm bổ sung không biến framework thành agency/law đầy đủ. Rời sớm có đường hợp pháp ≠ unrestricted refusal; công quyền phải trung lập ≠ đã chứng minh mọi institution/event tuân thủ; upkeep ≠ debt; assignment khó có incentive direction ≠ có số canon.
+
 ## Undie revamp: các câu hỏi mới — 2026-10-05
 
 Retcon đã được người dùng chấp nhận; không phải một đề xuất đang chờ chốt. Quyền nghề không phải địa vị pháp lý, khả năng có một cơ chế không chứng minh cơ chế ấy đã được triển khai.
@@ -116,7 +177,7 @@ Retcon đã được người dùng chấp nhận; không phải một đề xu�
 | ID | State | Câu hỏi còn mở | Nguồn hiện hành |
 | --- | --- | --- | --- |
 | AF-UR-OPEN-001 | UNKNOWN / OPEN | Danh mục nhánh/giao thoa, đào tạo, chuẩn nghề, registration/licensing/certification, cơ quan và thủ tục. | `30` §§2–4/17; Decisions 1/3/4. |
-| AF-UR-OPEN-002 | UNKNOWN / OPEN | Eligibility theo hồ sơ hình sự/Criminal Slave, hoạt động Civil tương thích billet, luật địa điểm/access và giới hạn hợp pháp độc lập. | `20`/`30` §4; không suy cho phép hoặc cấm toàn nghề. |
+| AF-UR-OPEN-002 | UNKNOWN / OPEN | Eligibility theo hồ sơ hình sự/Criminal Slave, hoạt động nghề Undie tương thích assignment Civil service, luật địa điểm/access và giới hạn hợp pháp độc lập. | `20` Part II §20/`30` §4; không suy cho phép/cấm toàn nghề hoặc Civil là Slave. |
 | AF-UR-OPEN-003 | UNKNOWN / UNDER CONSIDERATION | Lending/advances/sponsorship, bảo đảm không phải người/status, enforcement/remedies/limits, hạch toán và nghĩa vụ/ân tình truy nguyên được. | `30` §6; không kế thừa old Credit Line. |
 | AF-UR-OPEN-004 | UNKNOWN / OPEN | Nhu cầu chợ xám/đen, hàng hóa/dịch vụ, ẩn danh/access, tổ chức/intermediary/House và quan hệ hợp đồng/bảo trợ cụ thể. | `30` §§7/9. Các ví dụ chưa phải catalogue hoặc tổ chức đã thành lập. |
 | AF-UR-OPEN-005 | UNKNOWN / OPEN | Undi thực tế, vật liệu/rập/độ che phủ/tùy biến, vai trò dữ liệu/hardware nghề, body link/consent/deactivation, quyền lệnh và tích hợp terminal. | `30` §§8/10; `15` giữ năng lực công nghệ/Guest Pass và unknown chuyển đổi. |
