@@ -8,8 +8,8 @@
 > Load mode: `FULL_FILE`
 
 > **Domain:** status ontology, social hierarchy, Citizen/Civil/Yellow/POW/Criminal, Civil entry/allocation/lifecycle, cross-status transitions and shared economic/access namespaces.  
-> Dedicated Civil law controls its exact scope. The ontology map controls axis separation. Remaining gaps stay `UNKNOWN / UNRESOLVED`.  
-> **Retcon — 2026-10-05:** Undie là căn tính/hệ sinh thái nghề nghiệp, không phải địa vị pháp lý hoặc lớp Slave. Đồ thị màu/rank và chuyển địa vị cũ đã nghỉ hưu; `30` kiểm soát luật nghề còn mở. Career Rank ngoài Undie không bị thay thế.
+> Cơ sở Civil 2026-10-05 trong Part II kiểm soát xét tuyển, phân công, quyền lợi, hoàn thành và rời hệ. Bản đồ định nghĩa giữ các trục độc lập; phần chưa chốt vẫn `UNKNOWN / UNRESOLVED`.
+> **Retcon — 2026-10-05:** Civil là chế độ phục vụ tự nguyện ở đầu vào, không Slave/punishment/caste; citizenship là trục riêng. Undie là nghề do `30` kiểm soát. POW/Criminal/Yellow, Career Rank ngoài phạm vi và namespace kinh tế độc lập không tự bị xóa.
 
 ## Part I — Resolved status and ontology map
 
@@ -32,21 +32,23 @@ Guest Wallet có biến tài chính riêng. Kiến trúc Credit Score/Line và b
 **Known values trong phạm vi:**
 
 - `Citizen` — citizen status.
-- `Civil Slave` — Slave legal status với civic standing ngang Citizen trong phạm vi đã chốt.
+- `Civil` — tham gia chế độ phục vụ lao động; không thuộc Slave, không hạ class. Citizenship/tình trạng nhập cư trước và sau service là trục riêng; tên pháp lý cuối cùng còn UNKNOWN.
 - `Yellow` — trạng thái kỷ luật tạm thời của Citizen, một tuần ở lần đầu rồi trở lại Citizen. Undi không còn là dấu địa vị/trừng phạt mặc định; trang phục của Yellow cần xác nhận riêng.
 - `POW` — public status; backend dùng Slave security category nhưng không kéo POW vào Civil/Criminal/Undie ontology.
-- `Slave` — phạm trù pháp lý có Civil và Criminal trong phạm vi đã chốt; không chứa Undie.
+- `Slave` — Civil và Undie bị loại khỏi phạm vi này. Criminal vẫn là lớp Slave; POW giữ backend security category riêng, không nhập vào Criminal/Civil.
 
 **Known transitions:**
 
 ```text
-Citizen
-→ accepted real Civil billet + final confirmation
-→ Civil Slave
+eligible applicant [không chỉ Citizen]
+→ tự nguyện đăng ký + xét tuyển + khả năng tiếp nhận hợp lệ
+→ được nhận vào Civil
+→ phân công phù hợp bắt buộc
+→ hoàn thành thời gian tối thiểu + nghĩa vụ đủ chuẩn
+→ rời Civil + gói hoàn thành / tuyến pháp lý theo đầu vào
 
-Civil Slave
-→ review bắt đầu từ năm 5
-→ nếu tới năm 10 chưa được duyệt/xét: Citizen trực tiếp
+rời sớm hợp pháp → có thể mất quyền lợi hoàn thành chưa kiếm được
+citizenship / residency → không tự đổi chỉ vì tham gia Civil
 
 Citizen → first offense → Yellow → 1 tuần → Citizen
 repeat Yellow-rule offense → outcome UNKNOWN [Yellow→Red/Undie đã nghỉ hưu; không tự giữ quota ×2]
@@ -54,29 +56,29 @@ repeat Yellow-rule offense → outcome UNKNOWN [Yellow→Red/Undie đã nghỉ h
 death-sentence exposure → plea → Criminal Slave
 ```
 
-**UNKNOWN:** thời điểm và chế tài tái phạm Yellow; tiêu chí/thẩm quyền/ngoại lệ review Civil năm 5; quyền đơn phương rời Civil. Gia nhập Undie là quan hệ nghề, không tạo conversion hoặc White→Citizen.
+**UNKNOWN:** tái phạm Yellow; eligibility, thời hạn/công thức Civil, thủ tục exit, giới hạn quyền lực và exact immigration pathway. Quyền rời sớm Civil và hôn nhân/tài sản/liên lạc được chốt ở Part II, không còn wholly UNKNOWN. Gia nhập Undie không tạo conversion hoặc White→Citizen.
 
 #### 1A. SOCIAL HIERARCHY / CIVIC STANDING
 
 Social hierarchy là trục riêng với legal status và class.
 
 ```text
-Hoàng gia > Quý tộc > Sĩ quan quân đội = POW > Thượng lưu > Trung lưu > Trí thức > Citizen = Civil Slave > Criminal
+Hoàng gia > Quý tộc > Sĩ quan quân đội = POW > Thượng lưu > Trung lưu > Trí thức > Citizen > Criminal
 ```
 
-`Citizen = Civil Slave` chỉ ở civic standing/social tier, không phải legal-status identity. Undie không còn là một bậc cố định của hierarchy hoặc social caste; nghề không tự quyết định giá trị xã hội. Vị trí Purple/Hazel theo đồ thị cũ không còn dùng được.
+Civil không phải bậc thấp/caste và không được công quyền đối xử kém Citizen; không đặt mọi người tham gia Civil (gồm người nhập cư) vào một citizenship/social tier chỉ từ service. Không suy mọi quyền chính trị/nhập cư/nghĩa vụ giống Citizen. Undie không là bậc cố định; Purple/Hazel cũ không dùng được.
 
 #### 2. CLASS / COLOR
 
 ##### Class
 
-- `Civil Slave` — source xác nhận đây là legal status/labor line; exact separate class-field label không được tự suy.
+- `Civil` — chế độ phục vụ, không class Slave hoặc tầng người thấp hơn.
 - `Undie` — căn tính/hệ sinh thái nghề nghiệp, không nằm trong trường class Slave.
 - `Criminal` — lớp Slave riêng. Không dùng Undie nghề nghiệp làm bậc pháp lý/xã hội đối chiếu.
 
 ##### Color / visual-functional labels
 
-- `Brown` — current confirmed use: màu jumpsuit đồng nhất của Civil; không phải rank Undie.
+- `Brown` — dấu status bắt buộc/jumpsuit đồng nhất cho Civil đã bị supersede. Trang phục nghề/an toàn Civil cụ thể chưa chốt; không cấm màu Brown nói chung hoặc chốt penal Brown.
 - `Black` — màu nhận dạng của Criminal; `Criminal` mới là class.
 - `Red`, `Scarlet`, `Pink`, `Gray`, `Purple`, `Hazel`, `White` — mã kiến trúc Undie cũ đã nghỉ hưu; chỉ tái dùng qua quyết định canon riêng.
 
@@ -88,12 +90,14 @@ Hoàng gia > Quý tộc > Sĩ quan quân đội = POW > Thượng lưu > Trung l
 
 ##### Civil
 
-- Civil = labor buffer 5–10 năm.
-- Không có billet thật thì không conversion.
-- Billet phải có job, location, receiving unit, start time và deployment conditions.
-- Applicant có thể từ chối trước conversion; sau conversion, accepted assignment là nghĩa vụ.
-- Placement kết thúc → reserve/transitional duty → reassignment; unplaced Civil không phải unemployed Civil.
-- Sau assignment, Civil hưởng labor law như Citizen trong phạm vi đã chốt.
+- Tự nguyện tham gia ở đầu vào, xét tuyển không tự động; hệ phải thực sự bảo đảm sinh hoạt/phân công/triển khai.
+- Được nhận rồi phải làm assignment và tới địa điểm hợp lệ theo năng lực/thể lực/điều kiện; preference không phải veto.
+- Assignment sai, tình trạng đổi hoặc trái chuẩn/không an toàn → có căn cứ khiếu nại, đánh giá lại/phân công lại.
+- Upkeep tách tiền công; không giữ người bằng nợ upkeep hoặc tự chuyển failure thành Criminal.
+- Rời sớm hợp pháp có thể mất quyền lợi chưa kiếm được; completion dựa thời gian tối thiểu + service đủ chuẩn, không mốc 5–10 năm.
+- Quyền hôn nhân, tài sản, tiền, nghỉ/liên lạc/điều trị/khiếu nại/riêng tư phù hợp assignment đã chốt; implementation và compatibility Undie còn mở.
+
+---
 
 ##### Undie
 
@@ -110,26 +114,24 @@ Hoàng gia > Quý tộc > Sĩ quan quân đội = POW > Thượng lưu > Trung l
 - Current confirmed regime: cực thấp/bẩn/nguy hiểm/không đáng dùng robot; ví dụ waste, hospital cleaning, sewer cleaning.
 - `UNKNOWN / NEEDS USER RESOLUTION:` metallurgy/construction/factory list trong merged source có còn current hay không.
 
-#### 3A. CIVIL AUDIT MATRIX
+#### 3A. CIVIL AUDIT MATRIX — baseline 2026-10-05
 
-| Dimension | Latest confirmed canon | Status |
+| Trục | Chốt hiện hành | Còn mở |
 | --- | --- | --- |
-| Entry | Apply → real billet → accept → final confirmation → conversion | CANON |
-| Admission | Right to apply ≠ right to be admitted; no billet means no conversion | CANON |
-| Legal status | Civil Slave; civic standing ngang Citizen nhưng legal status không đồng nhất | CANON |
-| Labor allocation | Accepted assignment bắt buộc sau conversion | CANON |
-| Right to quit | Có quyền từ chối billet trước conversion; unilateral exit khỏi Civil sau conversion chưa được định nghĩa | PARTIAL / UNKNOWN |
-| Employer relation | Receiving unit nhận labor; labor law như Citizen; exact employer powers/liability chưa có | PARTIAL / UNKNOWN |
-| State role | Receiving agency tạo demand; Civil authority kiểm tra/fill/allocate; hai authority không đồng nhất | CANON |
-| Tax/fee | Former Civil có tax reduction/exemption tốt hơn Citizen thường; Civil có preferential Undie fee; exact rate/duration unknown | PARTIAL / UNKNOWN |
-| Relocation cost | Chi phí cần thiết để placement xảy ra thuộc Civil system theo billet; exact reimbursement/housing unknown | PARTIAL / UNKNOWN |
-| Public-service access | Quyền Citizen-equivalent “trong phạm vi đã chốt”; full service/access matrix chưa có | PARTIAL / UNKNOWN |
-| Marriage | Current supplied sources chưa xác nhận Civil-specific marriage rule | UNKNOWN / NOT ESTABLISHED |
-| Citizenship pathway | Review bắt đầu năm 5; tới năm 10 chưa được xét/duyệt thì lên Citizen trực tiếp | CANON |
-| Resident pathway | Current supplied sources chưa xác nhận có hoặc không có resident-status pathway riêng | UNKNOWN / NOT ESTABLISHED |
-| Exceptions | Exact year-5 criteria/authority/exceptions chưa chốt | UNKNOWN |
-| Placement loss | Reserve/transitional duty rồi reassignment; không thành unemployed Civil | CANON |
-| Mobility | Empire-wide billet pool; pre-conversion refusal; post-conversion location obligation; Civil→Citizen 5–10y; Undie affiliation không tạo Civil exit | CANON + bounded UNKNOWN |
+| Ontology | Service, không Slave/punishment/caste; citizenship độc lập | Tên pháp lý cuối |
+| Entry | Tự nguyện; poor/homeless/immigrant/Citizen có thể ứng tuyển; phải xét khả năng tiếp nhận | Eligibility, tiêu chuẩn và cơ quan |
+| Allocation | Assignment phù hợp là nghĩa vụ; preference không veto | Matching, priority, profile verification |
+| Appeal | Sai dữ kiện, thay đổi tình trạng, trái chuẩn/an toàn | Thủ tục đầy đủ |
+| Pay / upkeep | Upkeep + tiền công tách; tài sản hợp pháp được giữ | Mức, housing, medical coverage |
+| Personal life | Hôn nhân/tài sản/liên lạc/nghỉ/privacy phù hợp assignment | Gia đình/dependents và luật đầy đủ |
+| Discipline | Tách không thể/thiện chí/từ chối/phạm tội; không hạ class tự động | Ladder, limits, appeal |
+| Early exit | Có đường hợp pháp; mất benefits chưa kiếm, không upkeep debt | Notice, procedure, forced termination |
+| Completion | Minimum time + đủ chuẩn; gói nền tự lập | Thời hạn/công thức/bonus |
+| Immigration | Completion mở tuyến xét cư trú/nhập tịch mạnh, không trì hoãn vô hạn | Cư trú trước hay direct eligibility |
+| Post-service | Gói có thể khác theo nhu cầu/đầu vào, không phân biệt pay cùng việc vì giàu nghèo | Mức cụ thể; tax support nếu có |
+| Re-entry | Không chốt nút reset vô hạn | Điều kiện quay lại |
+
+---
 
 #### 4. CAREER RANK
 
@@ -202,7 +204,7 @@ Nợ tài chính, nghĩa vụ hợp đồng, ân tình xã hội và ân tình c
 - Nghề/hoạt động, giấy phép, địa điểm và access là biến riêng; chưa chốt ma trận mới của Undie.
 - Collar là administrative terminal cho ID, access, movement, task và enforcement links.
 - Tư cách nghề nghiệp Undie không cho phép công quyền tùy tiện chặn subject; không gọi nó là legal status.
-- Civil applicant chưa conversion không có Civil benefit.
+- Chỉ đăng ký chưa được nhận không tự phát sinh quyền lợi Civil; không giữ cơ chế status-conversion cũ.
 
 **UNKNOWN:** full access matrix; permission changes của Career Rank ngoài phần đã chốt; public-service matrix Civil và điều kiện nghề/địa điểm Undie mới.
 
@@ -212,547 +214,788 @@ Nợ tài chính, nghĩa vụ hợp đồng, ân tình xã hội và ân tình c
 
 **Known rules:**
 
-- Sau voluntary Civil conversion, background vẫn ở hồ sơ nhưng không còn là biến vận hành chính.
+- Nguồn gốc/đầu vào Civil không tạo caste hay đối xử kém; assignment dùng hồ sơ phù hợp hiện tại. Nhu cầu/tình trạng đầu vào có thể ảnh hưởng gói hậu Civil, không phân biệt tiền công cùng công việc chỉ vì giàu/nghèo.
 - Không tạo Refugee/Nomad/Unemployed/Deserter Civil caste chỉ từ provenance.
 - Lịch sử nghề nghiệp không phải địa vị pháp lý. Quy trình ẩn/truy xuất hồ sơ gắn với White→Citizen cũ không còn là mốc hiện hành; luật hồ sơ nghề mới chưa chốt.
 - Genealogy của Yellow từ fake-Undie/impersonation không biến genealogy thành current class ontology.
 
-**UNKNOWN:** exact provenance access law, truy xuất lịch sử nghề và treatment của non-voluntary Civil provenance ngoài phần đã chốt.
+**UNKNOWN:** luật truy cập provenance/hồ sơ nghề và trường hợp đặc biệt chưa chốt. Civil có đầu vào tự nguyện; không dựng nhánh non-voluntary từ lịch sử.
 
 ---
 
-## Part II — Civil entry and allocation law
+## Part II — Civil cơ sở canon sau tái thiết kế 2026-10-05
 
-### AetherFire — Civil Entry / Allocation Law Canon
-
-> **Trạng thái:** CANON — user-confirmed
->
-> **Phạm vi:** luật chuyển `Citizen → Civil`, điều kiện tạo Civil billet, quyền từ chối trước conversion, nghĩa vụ allocation sau conversion, relocation, reassignment và giới hạn thẩm quyền của cơ quan Civil.
->
-> **Không phải:** full labor code, full Civil bureaucracy, full benefit table, full review criteria năm 5, hoặc full manpower formula.
->
-> **Nguyên tắc anti-drift:** Civil là **labor buffer 5–10 năm**, không phải welfare status và không phải bến chờ việc được nhà nước bảo lãnh.
-
----
+Nguồn controlling: `AetherFire_Civil_Co_So_Canon_2026-10-05.md`, đọc đủ 24 mục. Đây là mốc mới được nhập theo yêu cầu tác giả, không luật Civil/nhập cư/hình sự đầy đủ. Nội dung dưới đây giữ nguyên câu chữ của nguồn trong đúng scope; §22 giữ đủ UNKNOWN.
 
 ### 1. Nguyên tắc trung tâm
 
+Civil là một **chế độ phục vụ lao động tự nguyện ở đầu vào**, trong đó cá nhân chấp nhận giao cho hệ thống quyền phân công công việc và địa điểm trong phạm vi phù hợp với năng lực, thể lực và điều kiện đã được xác nhận.
+
+Đổi lại, AetherFire bảo đảm nền tảng sinh hoạt cần thiết, trả công lao động, cung cấp bảo vệ lao động và mở một con đường hoàn thành nghĩa vụ để người tham gia rời Civil với vị thế ổn định hơn lúc vào.
+
 ```text
-NO BILLET
-→ NO CIVIL CONVERSION
+CIVIL
+= tự nguyện tham gia ở đầu vào
++ xét tuyển
++ nhà nước bảo đảm sinh hoạt cơ bản
++ có tiền công
++ phân công bắt buộc phù hợp
++ có thể điều động địa lý
++ bảo vệ lao động
++ quyền khiếu nại tính phù hợp
++ đường rời sớm có giới hạn
++ hoàn thành nghĩa vụ
++ gói quyền lợi đã kiếm được
 ```
 
-Civil không vận hành theo mô hình:
+Civil không phải chế độ trợ cấp thụ động.
+
+Civil cũng không phải cơ chế lao động để trả nợ.
+
+Civil không tồn tại để hạ địa vị xã hội của người tham gia.
+
+---
+
+### 2. Loại bỏ hoàn toàn kiến trúc Slave cũ
+
+Trong phạm vi Civil hiện hành:
 
 ```text
-Citizen
-→ thành Civil trước
-→ rồi nhà nước mới tìm việc
+CIVIL != SLAVE
+CIVIL != PUNISHMENT STATUS
+CIVIL != UNDIE ROUTE
+CIVIL != SOCIAL CASTE THẤP
 ```
 
-Mà theo:
+Toàn bộ cách đọc Civil dựa trên `Slave`, `Civil Slave`, tầng nô lệ, hạ cấp địa vị, dấu nhận dạng của Slave hoặc quan hệ cũ với Undie đều bị loại khỏi baseline.
+
+Không được dùng lịch sử cũ để suy rằng:
+
+- Civil là một loại Slave;
+- vào Civil là “tụt xuống” một tầng người;
+- Civil phải bị đánh dấu để công chúng nhận ra;
+- Civil phải chịu nhục mạ hoặc kỳ thị do nhà nước tạo;
+- Civil là bước trung gian tới Undie;
+- thất bại trong Civil tự động dẫn tới một tầng người thấp hơn;
+- Civil phải mang cơ chế sở hữu người, thế chấp người hoặc nợ giữ người.
+
+Lịch sử cũ chỉ còn giá trị truy nguyên thiết kế nếu cần đối chiếu, không phải nền hiện hành.
+
+---
+
+### 3. Chức năng kép của Civil
+
+Civil đồng thời giải quyết hai vấn đề tương thích.
+
+#### 3.1. Đối với cá nhân
+
+Civil hấp thụ những người không đủ khả năng tự duy trì ổn định chi phí sống hằng ngày hoặc muốn chủ động đổi một phần quyền tự chọn nghề và địa điểm lấy một giai đoạn phục vụ có bảo đảm.
+
+Mục tiêu là:
 
 ```text
-Citizen
-→ đăng ký Civil
-→ tồn tại billet thật
-→ applicant chấp nhận
-→ final confirmation
-→ Citizen → Civil
-→ bắt đầu assignment
+không tự duy trì được ổn định
+hoặc
+tự nguyện muốn bước vào chế độ phục vụ
+→ có nền tảng sống
+→ có việc
+→ có tiền công
+→ có đào tạo và kinh nghiệm
+→ hoàn thành nghĩa vụ
+→ rời hệ với khả năng tự lập tốt hơn
 ```
 
-Do đó:
+#### 3.2. Đối với AetherFire
+
+Civil tạo một nguồn nhân lực có thể dự báo và điều động để bù biến động của thị trường lao động tự do, đặc biệt tại các ngành, địa điểm hoặc mắt xích khó tuyển.
 
 ```text
-CIVIL STATUS
-= consequence of accepted real allocation
+thị trường lao động tự do
+→ biến động nhân lực
+
+Civil
+→ nguồn nhân lực ổn định hơn
+→ điều phối theo nhu cầu thực
+→ giảm nguy cơ thiếu người tại mắt xích thiết yếu
+```
+
+Civil không được giữ người chỉ để làm phình bộ máy hoặc tạo nguồn lao động vô hạn.
+
+---
+
+### 4. Đối tượng có thể tham gia
+
+Các nhóm có thể đi vào Civil bao gồm:
+
+- người nghèo;
+- người vô gia cư;
+- người nhập cư không có tài sản hoặc nền tảng sinh hoạt ổn định;
+- người không đủ khả năng tự chi trả ăn, ở và chi phí duy trì cuộc sống hằng ngày;
+- Citizen tự nguyện muốn thử thách bản thân trong một chế độ phục vụ có phân công;
+- các trường hợp khác sau này nếu được canon hóa riêng.
+
+Những nhóm trên không tạo các loại Civil khác nhau về nhân phẩm hay cách đối xử.
+
+Nguồn gốc trước khi vào Civil là dữ kiện đầu vào và có thể ảnh hưởng quyền lợi sau hoàn thành, nhưng không tạo caste nội bộ.
+
+---
+
+### 5. Đầu vào là tự nguyện, nhưng admission không tự động
+
+Quyền đăng ký không đồng nghĩa quyền được nhận.
+
+```text
+ĐĂNG KÝ
+!=
+ĐƯỢC NHẬN
+```
+
+Ứng viên phải qua vòng xét loại.
+
+Tối thiểu, Civil phải đánh giá các yếu tố liên quan trực tiếp tới khả năng phục vụ như:
+
+- sức khỏe;
+- thể lực;
+- năng lực;
+- kỹ năng;
+- khả năng thích nghi;
+- điều kiện an ninh khi thật sự cần cho assignment;
+- các giới hạn có thể ảnh hưởng tới việc phân công.
+
+Exact procedure, tiêu chuẩn và cơ quan xét tuyển chưa được chốt.
+
+Civil không được nhận người nếu hệ thống không có khả năng thực tế để bảo đảm sinh hoạt, phân công và triển khai họ.
+
+```text
+KHÔNG CÓ KHẢ NĂNG TIẾP NHẬN HỢP LỆ
+→ KHÔNG NHẬN THÊM CIVIL
+```
+
+---
+
+### 6. Phân công lao động
+
+Sau khi đã qua xét tuyển và được nhận, Civil không có quyền chọn công việc theo sở thích như trên thị trường lao động tự do.
+
+Assignment dựa trên:
+
+```text
+nhu cầu nhân lực
++
+năng lực
++
+thể lực
++
+điều kiện đã được xác nhận
++
+khả năng triển khai
+```
+
+Civil có thể khai nguyện vọng hoặc mức sẵn sàng, nhưng đó là dữ liệu hỗ trợ phân công, không phải quyền veto.
+
+```text
+PREFERENCE
+!=
+QUYỀN ĐÒI ASSIGNMENT
+```
+
+Một người có thể chủ động nói rằng họ sẵn sàng đi nơi xa, nhận việc khó hoặc nhận vị trí thiếu người. Hệ thống có thể dùng thông tin đó trong matching.
+
+---
+
+### 7. Nghĩa vụ sau khi đã được phân công
+
+Khi assignment đã được xác nhận là phù hợp với hồ sơ năng lực, thể lực và điều kiện hợp lệ:
+
+```text
+ASSIGNMENT HỢP LỆ
+→ PHẢI LÀM CÔNG VIỆC ĐÃ PHÂN
+→ PHẢI ĐẾN ĐỊA ĐIỂM ĐÃ PHÂN
+```
+
+Không thích công việc, không thích địa điểm, thấy việc thấp kém, muốn chờ việc tốt hơn hoặc đơn giản không muốn đi không tạo quyền từ chối tự động.
+
+Civil trao một phần quyền tự chọn nghề và địa điểm để đổi lấy bảo đảm của chế độ.
+
+---
+
+### 8. Khiếu nại assignment
+
+Quyền khiếu nại tập trung vào **tính phù hợp và tính hợp lệ**, không phải sở thích.
+
+Ba nhóm căn cứ chính:
+
+#### 8.1. Sai dữ kiện hoặc sai đánh giá
+
+Ví dụ:
+
+- hồ sơ năng lực sai;
+- đánh giá thể lực sai;
+- assignment đòi kỹ năng không có;
+- assignment vượt điều kiện đã được xác nhận.
+
+#### 8.2. Tình trạng thay đổi
+
+Ví dụ:
+
+- chấn thương;
+- bệnh;
+- thai kỳ;
+- khuyết tật mới phát sinh;
+- tình trạng gia đình khẩn cấp được công nhận;
+- thay đổi khác làm profile cũ không còn đúng.
+
+#### 8.3. Assignment trái chuẩn hoặc không an toàn
+
+Assignment có thể bị phản đối nếu:
+
+- vượt thẩm quyền;
+- vi phạm luật hoặc chuẩn Civil;
+- có điều kiện an toàn không đạt;
+- khác bản chất nghĩa vụ mà hệ thống có quyền giao.
+
+```text
+KHIẾU NẠI ASSIGNMENT
+= kiểm tra tính phù hợp / tính hợp lệ
 
 không phải
 
-CIVIL STATUS
-= quyền được nhà nước nuôi trong khi chờ allocation
+KHIẾU NẠI ASSIGNMENT
+= quyền chọn việc theo sở thích
 ```
 
 ---
 
-### 2. Citizen có quyền đăng ký, không có quyền đòi được nhận
+### 9. Phân biệt các dạng thất bại
 
-Citizen có quyền:
-
-- tự nguyện đăng ký vào Civil;
-- nhận thông tin về billet;
-- từ chối billet trước khi status conversion có hiệu lực.
-
-Nhưng:
+Civil không được gom mọi vấn đề thành “chống lệnh”.
 
 ```text
-RIGHT TO APPLY
-≠
-RIGHT TO BE ADMITTED
+KHÔNG THỂ LÀM
+!=
+LÀM KÉM NHƯNG THIỆN CHÍ
+!=
+KHÔNG MUỐN LÀM
+!=
+CỐ TÌNH TỪ CHỐI
+!=
+PHẠM TỘI
 ```
 
-Citizen không có quyền buộc nhà nước:
-
-- tạo một billet mới theo sở thích cá nhân;
-- giữ Civil slot khi chưa có việc thật;
-- cấp Civil status trước rồi mới tìm placement.
-
----
-
-### 3. Billet phải có trước status conversion
-
-Một **Civil billet** tối thiểu phải xác định:
+Cách xử lý nền:
 
 ```text
-công việc
-+ địa điểm
-+ đơn vị tiếp nhận
-+ thời điểm bắt đầu
-+ điều kiện ăn ở / di chuyển cần thiết
+assignment sai profile / không thể làm
+→ đánh giá lại / phân công lại
+
+khả năng chưa đủ nhưng có thiện chí
+→ đào tạo lại / assignment phù hợp hơn
+
+tình trạng sức khỏe thay đổi
+→ tuyến y tế / tạm chuyển nhiệm vụ / đánh giá lại
+
+cố tình từ chối assignment hợp lệ
+→ kỷ luật Civil
+
+gian lận / bạo lực / phá hoại / hành vi phạm pháp nghiêm trọng
+→ luật thông thường có thẩm quyền
 ```
 
-Billet không phải một lời hứa việc làm chung chung.
-
-Nó là một allocation đủ cụ thể để nhà nước có thể thực thi ngay sau conversion.
-
----
-
-### 4. Civil market là pool toàn AetherFire
-
-Thiếu hoặc dư Civil không được đọc chỉ theo một thành phố.
-
 ```text
-thủ đô dư nhu cầu Civil
-≠
-AetherFire dư nhu cầu Civil
-```
-
-Civil billet có thể tồn tại ở:
-
-- thủ đô;
-- thành phố vệ tinh;
-- thuộc địa;
-- các khu vực khác thuộc mạng Civil của AetherFire.
-
-Người đăng ký Civil không có quyền mặc định yêu cầu:
-
-> chỉ nhận Civil nếu được làm tại nơi đang cư trú.
-
-Nếu billet hợp lệ nằm ở nơi khác, applicant có thể:
-
-```text
-chấp nhận
-→ conversion
-
-hoặc
-
-từ chối
-→ vẫn là Citizen
+THẤT BẠI TRONG CIVIL
+!=
+TỰ ĐỘNG TRỞ THÀNH TỘI PHẠM
 ```
 
 ---
 
-### 5. Voluntary entry đặt trước conversion
+### 10. Kỷ luật Civil
 
-Cấu trúc đúng:
+Kỷ luật nằm trong chế độ phục vụ, không tạo class thấp hơn.
 
-```text
-VOLUNTARY ENTRY
-≠
-VOLUNTARY ALLOCATION AFTER ENTRY
-```
+Các công cụ có thể gồm:
 
-Trước conversion:
+- cảnh cáo chính thức;
+- mất một số quyền lợi tùy nghi;
+- kéo dài nghĩa vụ trong giới hạn hợp pháp;
+- phân công lại;
+- mất một phần quyền lợi hoàn thành chưa kiếm được;
+- chấm dứt Civil vì lỗi;
+- chuyển sang luật thông thường nếu hành vi độc lập cấu thành vi phạm pháp luật.
 
-- applicant được biết billet;
-- applicant có quyền từ chối.
+Exact ladder, giới hạn và thủ tục kháng nghị còn `UNKNOWN`.
 
-Sau khi:
-
-```text
-accepted billet
-+ final confirmation
-→ Citizen → Civil
-```
-
-thì assignment đã chấp nhận trở thành nghĩa vụ của Civil status.
-
-Điều này không tự động có nghĩa Civil mất toàn bộ quyền cư trú trong mọi hoàn cảnh. Canon chỉ chốt rằng **địa điểm cần thiết để thực hiện billet đã chấp nhận đi cùng nghĩa vụ assignment**.
-
----
-
-### 6. Đăng ký Civil không sinh Civil benefit
-
-Trong giai đoạn:
+Không được tạo:
 
 ```text
-application
-→ matching
-→ billet offer
-```
-
-subject vẫn là Citizen.
-
-Do đó:
-
-- vẫn chịu market risk của Citizen;
-- vẫn tự tìm việc nếu muốn;
-- vẫn sống theo quyền và nghĩa vụ Citizen;
-- không tự động phát sinh Civil allowance;
-- không bắt đầu Civil 5–10 year clock.
-
-Nếu AetherFire có trợ cấp Citizen khác, nó vận hành theo luật Citizen riêng, không phải vì subject đã nộp đơn Civil.
-
----
-
-### 7. Mốc bắt đầu Civil lifecycle
-
-Civil clock chỉ bắt đầu khi:
-
-```text
-billet hợp lệ
-+ applicant chấp nhận
-+ final confirmation
-+ status conversion có hiệu lực
-```
-
-Không tính từ:
-
-- ngày nộp đơn;
-- ngày bắt đầu matching;
-- ngày xếp hàng chờ Civil.
-
----
-
-### 8. Relocation là phần của việc thực thi billet
-
-Nếu billet yêu cầu chuyển tới:
-
-- thành phố vệ tinh;
-- thuộc địa;
-- khu vực khác;
-
-thì nhà nước phải có khả năng thực thi placement đó.
-
-Chi phí cần thiết để relocation/placement xảy ra thuộc phía hệ thống Civil theo điều kiện billet.
-
-Mục đích là tránh tình trạng:
-
-```text
-billet tồn tại trên giấy
-nhưng applicant không thể thực sự tới nơi làm việc
+không tuân thủ
+→ hạ thành tầng người thấp hơn
 ```
 
 ---
 
-### 9. Remote / strategic billet có thể dùng incentive
-
-Billet ở nơi khó tuyển không bắt buộc phải dựa vào cưỡng ép trước conversion.
-
-AetherFire có thể làm billet khó nhận hấp dẫn hơn bằng incentive như:
-
-- housing tốt hơn;
-- relocation được chi trả;
-- phụ cấp;
-- ưu tiên review từ năm 5;
-- former-Civil tax benefit tốt hơn.
-
-Các mức cụ thể chưa chốt.
-
-Nguyên tắc:
+### 11. Bảo đảm sinh hoạt và tiền công là hai thứ khác nhau
 
 ```text
-hard-to-fill billet
-→ incentive cao hơn
+BẢO ĐẢM SINH HOẠT
+!=
+TIỀN CÔNG
 ```
 
-Nếu applicant vẫn từ chối:
+AetherFire phải bảo đảm phần cần thiết để Civil có thể sống và thực hiện assignment, có thể gồm:
+
+- ăn;
+- ở;
+- chăm sóc y tế cơ bản;
+- vận chuyển cần thiết cho assignment;
+- trang bị cần thiết cho công việc;
+- các nhu cầu thiết yếu khác được xác định theo assignment.
+
+Ngoài ra Civil vẫn được trả công lao động.
+
+Civil không làm việc chỉ để đổi lấy đồ ăn và chỗ ở.
+
+Tiền công có thể phản ánh việc một phần chi phí sống đã được hệ thống bảo đảm, nhưng không được bằng không chỉ vì Civil được nuôi ở.
+
+Civil có quyền tích lũy tài sản và tiền cá nhân hợp pháp.
+
+---
+
+### 12. Nhà ở Civil
+
+Nhà ở phục vụ nhu cầu triển khai, không phải mặc định giam giữ tập thể.
+
+Các hình thức có thể gồm:
+
+- ký túc hoặc nhà ở tập thể;
+- căn hộ được hỗ trợ;
+- nhà ở tại điểm triển khai;
+- nhà ở chuyển tiếp;
+- đơn vị phù hợp cho gia đình khi sau này được thiết kế.
 
 ```text
-→ họ vẫn là Citizen
+NHÀ Ở CIVIL
+→ theo nhu cầu assignment và điều kiện cá nhân hợp lệ
+
+không phải
+
+MỌI CIVIL
+→ barracks bắt buộc
+```
+
+Exact family housing, dependent support, trường học cho con, việc làm của bạn đời và quyền đi cùng người thân chưa được chốt.
+
+---
+
+### 13. Đời sống cá nhân
+
+Civil không mặc định giao toàn bộ đời sống cá nhân cho nhà nước.
+
+Civil vẫn có:
+
+- tài sản cá nhân;
+- tiền cá nhân;
+- quan hệ tình cảm;
+- hôn nhân;
+- thời gian nghỉ;
+- quyền liên lạc;
+- quyền được điều trị;
+- quyền khiếu nại;
+- quyền riêng tư ở mức phù hợp với assignment;
+- khả năng tích lũy và chuyển tiền hợp pháp.
+
+Nhà nước kiểm soát trong phạm vi Civil chủ yếu:
+
+```text
+nghĩa vụ công việc
++
+địa điểm phục vụ
++
+lịch nghĩa vụ cần thiết
++
+các điều kiện trực tiếp để assignment vận hành
+```
+
+Không tự mở rộng thành quyền kiểm soát toàn bộ cơ thể, gia đình, tài sản hoặc đời tư.
+
+---
+
+### 14. Rời Civil sớm
+
+Civil có đường rời sớm hợp pháp.
+
+```text
+RỜI SỚM
+→ có thể
+→ mất quyền lợi hoàn thành chưa kiếm được
+→ mất con đường hậu Civil nếu con đường đó phụ thuộc hoàn thành
+```
+
+Civil không bị giữ lại bằng cách biến chi phí ăn, ở và upkeep cơ bản đã sử dụng thành khoản nợ khổng lồ.
+
+```text
+UPKEEP ĐÃ ĐƯỢC BẢO ĐẢM
+!=
+KHOẢN NỢ GIỮ NGƯỜI
+```
+
+Nếu có ứng trước hoặc khoản riêng ngoài upkeep cơ bản, nghĩa vụ hoàn trả chỉ tồn tại khi được thiết lập độc lập và hợp pháp.
+
+Đối với người nhập cư, rời sớm có thể làm mất con đường cư trú hoặc nhập tịch dựa trên Civil.
+
+Đối với Citizen, rời sớm có thể làm mất gói hoàn thành và đưa họ trở lại việc tự chịu rủi ro thị trường và chi phí sống.
+
+Exact notice period, thủ tục rời sớm và trường hợp chấm dứt bắt buộc còn `UNKNOWN`.
+
+---
+
+### 15. Hoàn thành Civil
+
+Không giữ cấu trúc mặc định cũ `5 năm review / 10 năm tự động trở lại Citizen`.
+
+Civil hiện dùng primitive:
+
+```text
+THỜI GIAN TỐI THIỂU
++
+NGHĨA VỤ PHỤC VỤ ĐỦ CHUẨN
+→ đủ điều kiện hoàn thành
+```
+
+Exact thời gian và công thức chưa được chốt.
+
+Civil có thể ghi nhận mức khó của assignment để tạo động lực phục vụ tại nơi khó tuyển.
+
+Ba nhóm khung hiện hành:
+
+```text
+THÔNG THƯỜNG
+KHÓ TUYỂN
+CỰC KHÓ / CHIẾN LƯỢC
+```
+
+Assignment khó hơn có thể:
+
+- giúp hoàn thành nghĩa vụ nhanh hơn;
+- hoặc tạo quyền lợi hoàn thành tốt hơn;
+- hoặc cả hai nếu sau này được quy định.
+
+Không có con số canon hiện tại.
+
+Không biến cơ chế này thành hệ điểm số trò chơi quá chi li nếu không cần.
+
+---
+
+### 16. Gói hoàn thành chung
+
+Người hoàn thành Civil bình thường được nhận một gói giúp họ có khả năng sống độc lập sau khi rời hệ.
+
+Gói chung có thể bao gồm:
+
+- khoản tích lũy hoặc trợ lực chuyển tiếp;
+- nhà ở chuyển tiếp;
+- hồ sơ chứng nhận hoàn thành Civil;
+- chứng nhận kỹ năng và đào tạo đã tích lũy;
+- hỗ trợ chuyển sang thị trường lao động dân sự;
+- quyền giữ toàn bộ tài sản và tiền hợp pháp đã tích lũy;
+- chăm sóc hậu nhiệm vụ đối với thương tật phát sinh từ service.
+
+Primitive:
+
+```text
+GÓI HOÀN THÀNH
+→ ĐỦ NỀN ĐỂ TỰ LẬP
+
+không phải
+
+GÓI HOÀN THÀNH
+→ BẢO ĐẢM GIÀU CÓ / THOẢI MÁI VĨNH VIỄN
+```
+
+Exact số tiền, thời lượng nhà ở chuyển tiếp, phạm vi y tế và hình thức hỗ trợ việc làm còn `UNKNOWN`.
+
+---
+
+### 17. Quyền lợi sau hoàn thành phụ thuộc trạng thái đầu vào
+
+Mọi Civil chịu cùng chế độ phục vụ nền, nhưng quyền lợi dựa trên nhu cầu hoặc tình trạng pháp lý ban đầu không bắt buộc giống nhau.
+
+```text
+CÙNG CHẾ ĐỘ PHỤC VỤ
++
+TRẠNG THÁI ĐẦU VÀO KHÁC
+→ GÓI HẬU CIVIL CÓ THỂ KHÁC
+```
+
+Điều này không cho phép trả lương khác nhau cho cùng công việc chỉ vì người này giàu hay nghèo hơn.
+
+```text
+TIỀN CÔNG LAO ĐỘNG
+!=
+HỖ TRỢ DỰA TRÊN NHU CẦU
+```
+
+#### 17.1. Người nhập cư
+
+Hoàn thành Civil có thể tạo con đường mạnh tới:
+
+- cư trú dài hạn;
+- đủ điều kiện nhập tịch;
+- hoặc một tuyến tăng tốc tương đương.
+
+Baseline hiện tại:
+
+```text
+HOÀN THÀNH CIVIL
+→ quyền được xét theo tuyến cư trú / nhập tịch mạnh
+```
+
+Không dùng review cuối để trì hoãn vô hạn một người đã đáp ứng điều kiện.
+
+Exact việc là cư trú trước rồi nhập tịch, hay có trường hợp đi thẳng tới eligibility nhập tịch, còn `UNKNOWN`.
+
+#### 17.2. Citizen nghèo hoặc homeless
+
+Gói hậu Civil thiên về:
+
+- nhà ở chuyển tiếp;
+- tiền tích lũy;
+- đào tạo;
+- chứng nhận;
+- hỗ trợ việc làm;
+- tái lập khả năng sống độc lập.
+
+Không giữ tax privilege vĩnh viễn như hệ cũ.
+
+Nếu sau này có ưu đãi thuế, nó phải được thiết kế như hỗ trợ tái hòa nhập có phạm vi và thời hạn rõ.
+
+#### 17.3. Citizen tự nguyện muốn thử thách bản thân
+
+Họ vẫn được:
+
+- upkeep trong thời gian service;
+- tiền công;
+- đào tạo;
+- chứng nhận;
+- thành quả phục vụ;
+- completion bonus phù hợp.
+
+Nhưng hỗ trợ dựa trên nhu cầu sau Civil có thể thấp hơn người thật sự không có nền tảng sinh hoạt.
+
+---
+
+### 18. Công quyền trung lập tuyệt đối
+
+Cơ quan công quyền phải trung lập tuyệt đối trong đối xử với class, nghề, tình trạng kinh tế hoặc nguồn gốc xã hội.
+
+```text
+CLASS / STATUS / NGHỀ / NGHÈO GIÀU
+!=
+LÝ DO ĐỂ NHẬN THỦ TỤC KÉM HƠN
+!=
+LÝ DO ĐỂ ĐƯỢC BẢO VỆ KÉM HƠN
+!=
+LÝ DO ĐỂ CƠ QUAN CÔNG QUYỀN HẠ THẤP CÁ NHÂN
+```
+
+Civil được công quyền đối xử như Citizen trong:
+
+- thủ tục;
+- bảo vệ pháp luật;
+- xử lý hành chính;
+- tiếp cận các dịch vụ công áp dụng;
+- chuẩn tôn trọng nhân phẩm;
+- chuẩn công bằng thủ tục.
+
+```text
+CIVIL
+→ CÔNG QUYỀN ĐỐI XỬ NHƯ CITIZEN
+```
+
+Điều này không tự xác lập rằng Civil và Citizen có mọi quyền chính trị, nhập cư hoặc nghĩa vụ giống hệt nhau.
+
+Khác biệt hợp lệ của Civil phải xuất phát từ chế độ phục vụ mà họ đã tham gia, không phải từ quan niệm rằng Civil là người thấp hơn.
+
+Cơ quan công quyền không được tạo stigma, humiliation hoặc caste distinction cho Civil.
+
+---
+
+### 19. Civil không bảo đảm thành công đời đời
+
+Hoàn thành Civil cho một nền tảng để tự đứng, không phải bảo hiểm chống mọi thất bại tương lai.
+
+Former Civil vẫn có thể:
+
+- thất nghiệp;
+- phá sản;
+- tiêu hết tiền;
+- mất nhà;
+- gặp biến cố;
+- thất bại trên thị trường lao động.
+
+Việc một người có được quay lại Civil lần nữa hay không vẫn `UNKNOWN`.
+
+Không mặc định Civil là nút reset vô hạn.
+
+---
+
+### 20. Quan hệ với Undie
+
+Civil và Undie là hai miền độc lập.
+
+```text
+CIVIL
+= chế độ phục vụ lao động và bảo đảm sinh hoạt
+
+UNDIE
+= hệ sinh thái nghề nghiệp
+```
+
+Không còn:
+
+- Civil → Undie như chuyển địa vị;
+- ưu đãi phí Undie mặc định cho Civil;
+- framing Civil và Undie như hai tầng fallback tương đương;
+- dùng Undie để giải thích stigma, quyền hoặc exit của Civil.
+
+Nếu một Civil đồng thời tham gia một nhánh nghề Undie, điều đó phải được xét như một quan hệ nghề độc lập và không làm mất nghĩa vụ Civil.
+
+Exact compatibility còn `UNKNOWN`.
+
+---
+
+### 21. Những phần Civil cũ bị supersede
+
+Không dùng làm baseline hiện hành:
+
+- `Civil Slave`;
+- Civil thuộc `Slave` umbrella;
+- Civil là tầng thấp hơn Citizen;
+- Brown như dấu status bắt buộc của Civil;
+- vào Civil là “xuống” một tầng xã hội;
+- stigma nhà nước đối với Civil;
+- luật bảo vệ danh dự đặc biệt để bù cho stigma do hệ thống tạo;
+- `Citizen → Civil → Citizen` như ontology duy nhất;
+- Citizen là nguồn vào duy nhất;
+- billet phải được subject chọn và chấp nhận theo sở thích trước admission;
+- quyền từ chối assignment chỉ vì không thích;
+- `5 năm review / 10 năm tự động Citizen` như universal lifecycle;
+- ưu đãi phí Undie;
+- former-Civil tax privilege vĩnh viễn;
+- Civil và Undie như hai fallback cùng ontology;
+- homelessness → Civil như một hình phạt hoặc hạ status;
+- kỷ luật Civil bằng hạ class;
+- upkeep biến thành nợ giữ người;
+- failure trong Civil tự động dẫn tới Criminal;
+- mọi cơ chế khác chỉ có lý do tồn tại vì kiến trúc Slave–Undie cũ.
+
+---
+
+### 22. Những điểm còn UNKNOWN
+
+Chưa tự điền các mục sau:
+
+- tên pháp lý/chính thức cuối cùng của Civil nếu sau này cần đổi;
+- cơ quan xét tuyển;
+- exact eligibility;
+- tiêu chuẩn sức khỏe/thể lực/kỹ năng;
+- mức screening an ninh;
+- matching algorithm;
+- quy tắc ưu tiên khi nhiều assignment cùng phù hợp;
+- exact manpower envelope;
+- exact thời hạn tối thiểu;
+- cách tính tiến độ hoàn thành;
+- trọng số giữa assignment thông thường / khó tuyển / cực khó hoặc chiến lược;
+- lương cụ thể;
+- mức upkeep;
+- chuẩn nhà ở;
+- full labor code;
+- ngày nghỉ và thời giờ làm;
+- exact medical coverage;
+- full appeal procedure;
+- full discipline ladder;
+- giới hạn kéo dài service;
+- early-exit notice;
+- family accompaniment;
+- dependent support;
+- school cho con;
+- spouse employment;
+- exact immigration / residency / citizenship pathway;
+- exact completion bonus;
+- exact reintegration package;
+- former-Civil tax support nếu có;
+- Civil re-entry;
+- compatibility với Undie profession;
+- các trường hợp đặc biệt khác chưa được tác giả chốt.
+
+`UNKNOWN` không cho phép phục hồi hệ Civil cũ.
+
+---
+
+### 23. Hạt nhân chống drift
+
+```text
+CIVIL KHÔNG PHẢI SLAVE.
+
+CIVIL KHÔNG PHẢI HÌNH PHẠT.
+
+CIVIL KHÔNG PHẢI MỘT TẦNG NGƯỜI THẤP HƠN.
+
+CIVIL LÀ CHẾ ĐỘ PHỤC VỤ LAO ĐỘNG TỰ NGUYỆN Ở ĐẦU VÀO.
+
+QUYỀN ĐĂNG KÝ != QUYỀN ĐƯỢC NHẬN.
+
+SAU KHI ĐƯỢC NHẬN, ASSIGNMENT HỢP LỆ LÀ NGHĨA VỤ.
+
+PHÂN CÔNG DỰA TRÊN NHU CẦU + NĂNG LỰC + THỂ LỰC + ĐIỀU KIỆN HỢP LỆ.
+
+PREFERENCE != QUYỀN VETO.
+
+KHÔNG THỂ LÀM != KHÔNG MUỐN LÀM != PHẠM TỘI.
+
+BẢO ĐẢM SINH HOẠT != TIỀN CÔNG.
+
+UPKEEP != NỢ GIỮ NGƯỜI.
+
+THẤT BẠI TRONG CIVIL != TỰ ĐỘNG TRỞ THÀNH CRIMINAL.
+
+RỜI SỚM CÓ THỂ HỢP PHÁP, NHƯNG MẤT QUYỀN LỢI CHƯA KIẾM ĐƯỢC.
+
+HOÀN THÀNH CIVIL → NỀN TẢNG TỰ LẬP, KHÔNG PHẢI GIÀU CÓ BẢO ĐẢM.
+
+CÙNG NGHĨA VỤ PHỤC VỤ != MỌI GÓI HỖ TRỢ HẬU CIVIL PHẢI GIỐNG NHAU.
+
+TIỀN CÔNG LAO ĐỘNG != HỖ TRỢ DỰA TRÊN NHU CẦU.
+
+CƠ QUAN CÔNG QUYỀN PHẢI TRUNG LẬP.
+
+CIVIL ĐƯỢC CÔNG QUYỀN ĐỐI XỬ NHƯ CITIZEN.
+
+CIVIL != UNDIE.
+
+THIẾU CHI TIẾT MỚI != QUYỀN PHỤC HỒI HỆ CŨ.
 ```
 
 ---
 
-### 10. Placement kết thúc không tạo Civil thất nghiệp
-
-Nếu một billet chấm dứt trước khi Civil lifecycle kết thúc:
-
-```text
-Civil
-→ placement ends
-→ reassignment window
-```
-
-Subject vẫn là Civil.
-
-Không được biến thành:
-
-```text
-Civil thất nghiệp
-→ ngồi chờ trợ cấp
-```
-
-Trong reassignment window, subject thuộc **reserve / transitional duty**, có thể được dùng cho:
-
-- training;
-- maintenance;
-- logistics support;
-- temporary public works;
-- công việc dự phòng phù hợp năng lực.
-
-Do đó:
-
-```text
-UNPLACED CIVIL
-≠
-UNEMPLOYED CIVIL
-```
-
----
-
-### 11. Hai trạng thái vận hành, không phải hai legal status
-
-Civil có thể tồn tại ở hai operational states:
-
-```text
-ACTIVE CIVIL
-→ đang gắn với billet chính
-
-RESERVE / TRANSITIONAL CIVIL
-→ đang transit / training / reassignment
-→ vẫn có nghĩa vụ lao động
-```
-
-Đây không phải hai class hay hai status pháp lý mới.
-
-Chúng chỉ là hai trạng thái vận hành bên trong cùng Civil status.
-
----
-
-### 12. Allocation authority không được tự tạo demand cho chính mình
-
-Một điểm yếu trọng yếu cần khóa là tránh một cơ quan vừa:
-
-```text
-tự tuyên bố cần Civil
-+ tự tạo billet
-+ tự tuyển Citizen
-+ tự phân bổ Civil
-```
-
-Cấu trúc canon chốt:
-
-```text
-cơ quan / ngành sử dụng lao động
-→ yêu cầu billet / manpower need
-
-Civil authority
-→ kiểm tra / fill billet / allocation
-```
-
-Nguyên tắc:
-
-```text
-DEMAND AUTHORITY
-≠
-ALLOCATION AUTHORITY
-```
-
-Civil authority không tự phát minh nhu cầu lao động để mở rộng chính mình.
-
----
-
-### 13. Manpower envelope
-
-AetherFire có thể vận hành Civil dưới một giới hạn nhân lực được phê chuẩn ở cấp nhà nước:
-
-```text
-authorized manpower envelope
-→ giới hạn số Civil mà hệ được phép giữ / fill
-```
-
-Exact formula, authority phê chuẩn và chu kỳ điều chỉnh chưa chốt.
-
-Mục đích là ngăn:
-
-```text
-Civil demand tự phình
-→ hút quá nhiều Citizen khỏi labor market
-→ tạo dependency ngược vào Civil system
-```
-
----
-
-### 14. Core legal flow
-
-```text
-CITIZEN
-   ↓
-đăng ký Civil
-   ↓
-matching với billet thật
-   ↓
-nhận offer:
-- job
-- location
-- receiving unit
-- start time
-- deployment conditions
-   ↓
-accept?
- ├─ NO  → vẫn là Citizen
- └─ YES
-      ↓
-final confirmation
-      ↓
-Citizen → Civil
-      ↓
-assignment có hiệu lực
-      ↓
-ACTIVE CIVIL
-      ↓
-placement kết thúc trước lifecycle?
- ├─ NO  → tiếp tục
- └─ YES
-      ↓
-RESERVE / TRANSITIONAL DUTY
-      ↓
-reassignment
-      ↓
-ACTIVE CIVIL
-      ↓
-5y review / 10y route
-      ↓
-Citizen
-```
-
----
-
-### 15. Các exploit mà cấu trúc này chặn
-
-#### 15.1 Civil như bến đỗ an toàn không có việc
-
-Sai pathway bị chặn:
-
-```text
-Citizen
-→ xin Civil
-→ thành Civil
-→ chờ việc
-→ sống bằng Civil support
-```
-
-Canon mới:
-
-```text
-NO BILLET
-→ NO CIVIL CONVERSION
-```
-
-#### 15.2 Chỉ muốn Civil tại nơi mình thích
-
-Applicant có quyền từ chối billet.
-
-Nhưng:
-
-```text
-refuse billet
-→ remain Citizen
-```
-
-Không có quyền:
-
-```text
-refuse billet
-+ keep Civil status
-```
-
-#### 15.3 Địa phương dư nhưng satellite/colony thiếu
-
-Civil allocation dùng pool toàn AetherFire.
-
-```text
-local surplus
-≠ empire-wide surplus
-```
-
-#### 15.4 Placement mất thì Civil trở thành thất nghiệp
-
-Sai.
-
-```text
-placement loss
-→ reserve / transitional duty
-→ reassignment
-```
-
-#### 15.5 Civil authority tự mở rộng vô hạn
-
-Bị chặn bởi:
-
-```text
-DEMAND AUTHORITY
-≠
-ALLOCATION AUTHORITY
-```
-
-và có thể thêm manpower envelope ở cấp nhà nước.
-
----
-
-### 16. Bản nén bắt buộc
-
-```text
-CIVIL = LABOR BUFFER 5–10 NĂM.
-
-CITIZEN CÓ QUYỀN ĐĂNG KÝ, KHÔNG CÓ QUYỀN ĐÒI ĐƯỢC NHẬN.
-
-NO BILLET → NO CIVIL CONVERSION.
-
-BILLET PHẢI CÓ JOB + LOCATION + RECEIVING UNIT + START TIME + DEPLOYMENT CONDITIONS.
-
-CIVIL MARKET LÀ POOL TOÀN AETHERFIRE, KHÔNG PHẢI CHỈ LOCAL MARKET.
-
-APPLICANT CÓ THỂ TỪ CHỐI TRƯỚC CONVERSION.
-
-TỪ CHỐI → VẪN LÀ CITIZEN.
-
-SAU CONVERSION, ASSIGNMENT ĐÃ CHẤP NHẬN LÀ NGHĨA VỤ CIVIL.
-
-APPLICATION KHÔNG SINH CIVIL BENEFIT VÀ KHÔNG CHẠY CLOCK 5–10 NĂM.
-
-PLACEMENT ENDS → RESERVE / TRANSITIONAL DUTY → REASSIGNMENT.
-
-UNPLACED CIVIL ≠ UNEMPLOYED CIVIL.
-
-DEMAND AUTHORITY ≠ ALLOCATION AUTHORITY.
-
-CIVIL AUTHORITY KHÔNG TỰ TẠO NHU CẦU CHO CHÍNH MÌNH.
-```
-
----
-
-### 17. UNKNOWN / chưa chốt
-
-Không tự định nghĩa:
-
-- exact Civil application form;
-- exact billet approval procedure;
-- exact authority tạo manpower envelope;
-- exact manpower formula;
-- exact remote-placement incentive;
-- exact relocation reimbursement;
-- exact housing standard;
-- exact refusal cooling period;
-- exact matching algorithm;
-- exact reassignment duration;
-- exact reserve-duty catalogue;
-- exact limits của geographic reassignment sau khi đã vào Civil;
-- exact year-5 review criteria;
-- exact former-Civil tax benefit;
-- full labor code áp cho Civil.
+### 24. Trạng thái thiết kế sau baseline này
+
+Baseline hiện đã đủ để tiếp tục thiết kế mà không cần dựa vào ontology Slave–Undie cũ.
+
+Các trục nên được xử lý tiếp từ baseline này, không từ lịch sử cũ:
+
+1. vòng xét tuyển và điều kiện đủ;
+2. cơ quan Civil và ranh giới thẩm quyền;
+3. phân công và matching;
+4. lương, upkeep và nhà ở;
+5. thời hạn phục vụ và completion;
+6. kỷ luật, appeal và early exit;
+7. gói hậu Civil;
+8. immigration / residency / citizenship;
+9. family/dependent rules;
+10. re-entry và chống lợi dụng hệ thống.
+
+Không trục nào ở trên được tự điền bằng cơ chế Civil cũ nếu chưa có quyết định canon mới.
 
 ---
 
@@ -782,13 +1025,13 @@ Một actor có thể ở địa vị xã hội thấp nhưng có asset value r�
 
 ### 1. Thứ bậc xã hội chính thức
 
-Thứ bậc các địa vị còn hiệu lực được ghi ở Part I §1A. Civil vẫn là Slave status có lifecycle riêng và civic standing ngang Citizen. Undie không còn là một caste/bậc cố định; quan hệ nghề không xác định địa vị xã hội.
+Thứ bậc ngoài phạm vi Civil giữ ở Part I §1A. Civil không Slave/caste/tầng người thấp; công quyền đối xử như Citizen trong thủ tục/pháp luật/dịch vụ áp dụng, không tự đồng nhất citizenship hoặc mọi quyền chính trị. Undie không là caste.
 
 ---
 
 ### 2. Civil và hoạt động nghề Undie
 
-Civil→Undie như chuyển địa vị một chiều đã nghỉ hưu. Gia nhập nghề không tự giải phóng Civil khỏi billet hoặc đổi địa vị; điều kiện làm nghề bên cạnh nghĩa vụ Civil còn mở.
+Civil→Undie như chuyển địa vị một chiều đã nghỉ hưu. Gia nhập nghề không tự đổi citizenship hoặc chấm dứt Civil service/assignment; điều kiện làm nghề bên cạnh nghĩa vụ Civil còn mở.
 
 ---
 
@@ -827,56 +1070,11 @@ backend Slave
 
 ---
 
-### 7. Civil Slave — Citizen-equivalent nhưng bị phân công
+### 7. Civil, quyền cá nhân và hoàn thành
 
-**CANON**
+Part II §§6–18 kiểm soát assignment/nghĩa vụ, labor protection, tài sản/tiền/hôn nhân/nghỉ/liên lạc và public neutrality. Không giữ phạt nhục mạ Civil ×2 như luật đặc biệt bù stigma; cơ chế chế tài độc lập chưa được chốt lại.
 
-Civil Slave:
-
-- có civic standing tương đương Citizen;
-- không được nhục mạ vì status;
-- quyền công dân tương đương Citizen trong phạm vi đã chốt;
-- bị bắt buộc phân công công việc;
-- sau khi được phân công, hưởng luật lao động như Citizen.
-
-Nhục mạ Civil:
-
-```text
-→ phạt ×2
-→ tính vào tội vu khống
-+ sỉ nhục danh dự
-```
-
-trừ khi nội dung nói về hành vi phạm tội có thật.
-
----
-
----
-
-### 8. Civil → Citizen
-
-**CANON**
-
-```text
-Civil
-→ 5 năm
-→ bắt đầu được xét lên Citizen
-```
-
-Nếu đến 10 năm chưa được xét/duyệt:
-
-```text
-Civil
-→ 10 năm
-→ lên Citizen trực tiếp
-```
-
-Civil sau khi trở thành Citizen:
-
-- được miễn thuế hoặc giảm thuế tốt hơn Citizen thường;
-- ưu đãi này gây ghen tị mạnh từ Trung lưu trở xuống.
-
----
+Mốc 5y review/10y tự động Citizen và tax privilege vĩnh viễn nghỉ hưu. Civil service không tự biến mọi Citizen thành non-Citizen rồi đổi lại. Người nhập cư hoàn thành có tuyến được xét mạnh, exact pathway UNKNOWN.
 
 ---
 
@@ -923,6 +1121,8 @@ Không tự suy `không tha bổng = không kháng cáo / không tái thẩm`.
 **CANON / SUPERSEDE**
 
 Ngoại lệ loại trừ Undie theo class cũ đã bị supersede. Quy tắc Citizen bên dưới giữ nguyên; không tự chốt ma trận áp dụng mới theo nghề hoặc mọi nhánh dịch vụ.
+
+**Giao diện chưa đối chiếu xong:** chuẩn công quyền trung lập theo Part II §18 không tự giải quyết quan hệ tiền/financial liability với phân loại dân sự/Criminal ở đoạn dưới. AF-CR-OPEN-006 trong `92` giữ câu hỏi; không dùng đó để chứng minh poor people được inferior protection hợp lệ hoặc tự xóa bailout law.
 
 Nó áp dụng cho **Citizen từ Thượng lưu trở xuống**.
 
@@ -1000,39 +1200,9 @@ Citizen có thể đồng thời là người hành nghề Undie. White→Citize
 
 ---
 
-### 33. Civil → Citizen có tax privilege
+### 33. Quyền lợi hậu Civil
 
-**CANON**
-
-Former Civil sau khi thành Citizen:
-
-```text
-→ miễn thuế hoặc giảm thuế tốt hơn Citizen thường
-```
-
-Điều này gây ghen tị mạnh từ Trung lưu trở xuống.
-
----
-
----
-
-### 34. Citizen → Civil → Citizen để hưởng policy
-
-**CANON**
-
-Citizen có thể tự xuống Civil rồi quay lại Citizen và hưởng policy giảm/miễn thuế như former Civil khác.
-
-Nhưng:
-
-```text
-Civil → Citizen
-→ review từ 5 năm
-→ có thể kéo tới 10 năm
-```
-
-nên gần như không ai cố tình dùng route này chỉ để tax arbitrage.
-
----
+Completion tạo gói giúp tự lập, có thể khác theo nhu cầu/đầu vào. Không giữ tax exemption/reduction vĩnh viễn và tax-arbitrage Citizen→Civil→Citizen. Ưu đãi thuế tương lai nếu có phải có scope/thời hạn và được chốt riêng.
 
 ---
 
@@ -1069,86 +1239,19 @@ thất nghiệp / nợ
 
 ---
 
-### 37. Civil là fallback ổn định; Undie là fallback khác
+### 37. Civil và thị trường lao động
 
-**CANON**
+Civil vừa phục vụ nhu cầu ổn định cá nhân vừa giảm biến động nhân lực AF. Không phải welfare thụ động, cheap labor định nghĩa sẵn hoặc cơ chế giảm prestige. Undie là nghề độc lập; không là fallback chuyển địa vị tương đương Civil.
 
-Citizen có thể:
+### 41. Dịch vụ Undie
 
-```text
-nuốt sĩ diện
-→ xuống Civil
-```
+Civil có thể sử dụng dịch vụ nhưng **không còn preferential fee mặc định** theo Civil status. Compatibility làm nghề Undie vẫn UNKNOWN; không mất nghĩa vụ service chỉ vì quan hệ nghề.
 
-đổi lại:
+### 42. Vô gia cư và đầu vào Civil
 
-- có job;
-- có payment;
-- có chế độ;
-- có labor protection;
-- có route 5–10 năm quay lại Citizen.
+Người vô gia cư có thể tự nguyện ứng tuyển Civil, không tự được nhận và không bị phạt bằng admission/hạ status. Không giữ binary homeless→Civil Slave hoặc trục xuất như hai route duy nhất. Quy tắc xử lý khi từ chối/không đủ điều kiện/capacity, trợ giúp ngoài Civil và pháp luật trục xuất độc lập còn UNKNOWN; không khẳng định mọi người vô gia cư đều được Civil hấp thụ.
 
-Civil:
-
-```text
-employment stability ↑
-occupational agency ↓
-prestige ↓
-```
-
-Undie có thể là lựa chọn nghề nghiệp, không phải fallback đổi địa vị tương đương Civil. Gia nhập không tự giải quyết nợ, thất nghiệp hoặc nghĩa vụ Civil.
-
----
-
----
-
-### 41. Civil được ưu đãi phí khi dùng Undie
-
-**CANON**
-
-Civil có thể sử dụng dịch vụ Undie.
-
-```text
-Civil
-→ preferential fee
-```
-
-Ưu đãi này là thêm một nguồn ghen tị từ Citizen, nhất là Trung lưu trở xuống.
-
-Cumulative grievance:
-
-```text
-Civil
-→ job bảo đảm
-→ labor law như Citizen
-→ phí Undie ưu đãi
-→ route trở lại Citizen
-→ tax benefit hậu Civil
-```
-
-trong khi Citizen thường phải chịu market risk.
-
----
-
----
-
-### 42. Không có homeless population ổn định
-
-**CANON**
-
-AetherFire không duy trì người vô gia cư như một social status lâu dài.
-
-Nếu một người rơi vào vô gia cư:
-
-```text
-homeless
-├─ → Civil Slave
-└─ → trục xuất
-```
-
-Không có route thứ ba đã được chốt.
-
----
+Chính sách/khẩu hiệu không có homeless population ổn định trong hồ sơ cũ không chứng minh hệ mới đã đạt zero homelessness. Không viết thêm route trợ cấp, nhập cư hoặc hình phạt để lấp gap.
 
 ---
 
@@ -1185,7 +1288,7 @@ trong khi cost được chuyển thành debt/status/economic obligation.
 
 ### 43. Core exploitation design — phạm vi còn hiệu lực
 
-AetherFire có thể giữ tự do/lựa chọn rủi ro→trách nhiệm cá nhân→legal/economic trigger→fine/bailout/debt/status extraction. Ví dụ tuổi uống rượu và Citizen→Civil có xác nhận vẫn còn trong phạm vi đã chốt.
+AetherFire có thể giữ tự do/lựa chọn rủi ro→trách nhiệm cá nhân→legal/economic trigger→fine/bailout/debt trong các miền còn hiệu lực, ví dụ tuổi uống rượu/bailout. Civil không phải punishment/status extraction hoặc lao động trả nợ; upkeep bảo đảm không thành khoản giữ người.
 
 Không dùng Undi để tạo nhầm lẫn/hạ nhục rồi phạt như mục đích mặc định, hoặc dùng nghề Undie làm một engine kiểm soát Slave. Nợ, thị trường, patronage và lạm dụng có thể tạo hậu quả khi có cơ chế riêng; retcon không khẳng định mọi bóc lột đã biến mất.
 
@@ -1194,8 +1297,9 @@ Không dùng Undi để tạo nhầm lẫn/hạ nhục rồi phạt như mục �
 ### 44. Địa vị và nghề là hai quan hệ khác nhau
 
 ```text
-Citizen → accepted billet + final confirmation → Civil
-Civil → review từ năm 5 / tới năm 10 chưa duyệt → Citizen
+eligible applicant → voluntary application + admission screening/capacity → Civil service
+Civil → lawful early exit hoặc minimum time + qualified service → exit
+citizenship / residency / completion benefits → theo đầu vào và luật áp dụng, không automatic conversion
 Citizen → first offense → Yellow một tuần → Citizen
 death-sentence exposure → plea → Criminal
 ```
@@ -1214,12 +1318,12 @@ Chế tài tái phạm Yellow và điều kiện nghề cho Civil/Criminal còn 
 ### 46. UNKNOWN bắt buộc giữ
 
 - Full hierarchy/progression của nghề Citizen; promotion formula.
-- Review Civil năm 5, authority, ngoại lệ, tax rates/duration.
+- Thời hạn/công thức completion Civil, authority/eligibility/assignment/exit/family/residency; support thuế tương lai nếu có. Không giữ year-5 review hoặc vĩnh viễn tax privilege.
 - Criminal rights/labor matrix, bailout amount và court procedure.
 - Yellow repeat timing, chế tài mới và trang phục.
 - Nghề/giấy phép/hợp đồng/access Undie mới, tương thích nghĩa vụ Civil và eligibility Criminal.
 - Luật hồ sơ, kế vị/tước vị riêng không suy từ nghề.
-- Medical debt terms; disability không chữa được bằng hybrid treatment; vô gia cư không thể trục xuất.
+- Medical debt terms ngoài upkeep Civil; disability không chữa được bằng hybrid treatment. Điều kiện pháp lý trục xuất, xử lý vô gia cư không được nhận Civil và hỗ trợ độc lập chưa chốt; không dùng binary cũ.
 - Public-content moderation, staff/emergency exceptions của khu ăn chơi và các triển khai dịch vụ ngoài phần đã chốt.
 - Các nhóm unknown Undie mới nằm ở `30` §17 và `92`; không giữ threshold/rank/status collateral cũ như kiến trúc hiện hành.
 
@@ -1227,100 +1331,29 @@ Chế tài tái phạm Yellow và điều kiện nghề cho Civil/Criminal còn 
 
 ### 47. Tóm tắt ranh giới hiện hành
 
-Citizen = Civil về civic standing, không đồng nhất legal status. Civil bị phân công nhưng hưởng luật lao động như Citizen trong phạm vi đã chốt; lifecycle 5–10 năm và tax advantage giữ nguyên. POW frontend ngang sĩ quan, backend thuộc Slave security category. Criminal giữ pipeline riêng và quyền cơ bản trong phần đã chốt.
+Civil là service tự nguyện ở đầu vào, không Slave/caste/punishment. Được nhận rồi có assignment phù hợp bắt buộc, upkeep + pay, appeal/early exit/completion, public neutrality và quyền cá nhân; exact thời hạn/benefits/immigration còn mở. Citizenship không tự đổi. POW frontend ngang sĩ quan/backend Slave security; Criminal giữ pipeline/quyền độc lập.
 
 Undie = nghề/hệ sinh thái, không phải Slave/caste/punishment. Citizen + Undie có thể đồng thời; entry/exit không đổi địa vị. Không còn đồ thị màu, White→Citizen, Yellow→Red/Undie, triệt sản bắt buộc hoặc web tín dụng thế chấp người.
 
-Cash + Credits được nhà nước bảo chứng; nợ ≠ sở hữu người ≠ tự động dịch vụ tình dục. Hồ sơ tín dụng Citizen và luật Civil ngoài phạm vi không bị xóa.
+Cash + Credits được nhà nước bảo chứng; nợ ≠ sở hữu người ≠ tự động dịch vụ tình dục. Hồ sơ tín dụng Citizen ngoài phạm vi không bị xóa; cơ chế Civil nay theo Part II, không dùng nợ để giữ người hoặc trả upkeep.
 
 Undi là họ đồng phục nghề theo ngữ cảnh; Hoa Nguyệt appropriation có ý định thật nhưng không được người ngoài chứng minh chắc chắn. Tử vong, nghề, an ninh và MC2 theo mốc `30` mới; chưa tự viết các triển khai còn mở.
 
-Ưu đãi phí dịch vụ cho Civil, luật tuổi uống rượu, homelessness và hybrid disability treatment/debt giữ đúng phạm vi cũ; không mở rộng chúng thành luật của mọi nhánh Undie.
+Ưu đãi phí Civil đã nghỉ hưu. Luật tuổi uống rượu và hybrid disability treatment/debt độc lập giữ trong scope cũ, không áp debt vào basic upkeep Civil. Không dùng homelessness để phục hồi coercive intake hoặc caste.
 
 ---
 
-## Part IV — Civil strategic rationale and provenance boundary
+## Part IV — Giao diện phân công còn hiệu lực và ranh giới nguồn
 
-### 1. Civil Slave — chức năng chiến lược
+Các cơ chế vận hành tiền nhiệm **không phụ thuộc Civil Slave hoặc mốc 5–10 năm** được giữ trong phạm vi tương thích, không dựng lại admission gate cũ:
 
-**CANON**
+- Nguồn việc/phân công là pool toàn AetherFire, gồm thủ đô, đô thị vệ tinh, thuộc địa và điểm triển khai khác; không suy chỉ local market.
+- Phân công cụ thể có công việc, địa điểm, đơn vị tiếp nhận, thời điểm bắt đầu và điều kiện triển khai cần thiết. Không dùng danh mục này để buộc applicant phải chọn/chấp nhận một billet theo sở thích trước admission; exact admission/matching còn mở.
+- Demand từ cơ quan sử dụng lao động và allocation của hệ Civil là thẩm quyền khác nhau; Civil authority không tự tạo nhu cầu để phình hệ. Cơ quan/tổ chức và quyền hạn cụ thể chưa chốt.
+- Placement kết thúc không mặc định biến Civil thành unemployed welfare recipient; có reserve/transitional duty và reassignment phù hợp. Đây là trạng thái vận hành, không status/class Slave. Catalogue, duration, giới hạn điều động và thủ tục còn UNKNOWN.
+- Relocation cần cho assignment hợp lệ thuộc trách nhiệm bảo đảm triển khai của Civil; exact reimbursement/housing/family chưa chốt.
+- Có thể vận hành giới hạn nhân lực được phê chuẩn; exact manpower envelope, công thức, thẩm quyền và chu kỳ đều UNKNOWN. Không suy vô hạn capacity hoặc mặc định mọi applicant được nhận.
 
-Civil Slave tồn tại chủ yếu để xử lý **độ biến động của thị trường lao động tự do**.
+Ranh giới mới ở Part II kiểm soát quyền khiếu nại, rời sớm, pay/upkeep và hậu service. Những assertion cũ billet phải do applicant chọn/chấp nhận trước admission, Slave conversion, hết service tự Citizen, guaranteed tax/fee ưu đãi và humiliation identification không còn hiệu lực.
 
-AetherFire là một đế quốc đi chiếm và khai thác tài nguyên bên ngoài. Với cấu trúc hậu cần dày đặc, biến động nhân lực tại các mắt xích có thể trở thành thảm họa cấp quốc gia.
-
-Quan hệ cốt lõi:
-
-```text
-thị trường lao động tự do
-→ biến động nhân lực
-→ rủi ro đứt công suất hậu cần
-
-Civil Slave
-→ pool lao động ổn định
-→ giảm biến động
-→ tăng khả năng dự báo và duy trì công suất dài hạn
-```
-
-Không đọc Civil Slave đơn giản như:
-
-```text
-welfare cho người nghèo
-```
-
-hoặc:
-
-```text
-lao động rẻ
-```
-
-Các bảo đảm vật chất và khả năng hấp thụ dân cư bất ổn là một phần của trade-off, nhưng lý do chiến lược trung tâm là **ổn định nhân lực và hậu cần**.
-
----
-
----
-
-### 2. Voluntary Civil Slave — background bị vô hiệu hóa về mặt vận hành
-
-**CANON**
-
-Đối với route tự nguyện:
-
-```text
-background khác nhau
-→ intake
-→ xác nhận cuối
-→ vượt status boundary
-→ Civil Slave
-```
-
-Sau khi vượt ranh giới chuyển status:
-
-- background cũ vẫn tồn tại trong hồ sơ;
-- background không còn là biến vận hành chính;
-- subject được quản trị theo status/class/job hiện tại.
-
-Không tự tạo các caste như:
-
-```text
-Refugee Civil Slave
-Nomad Civil Slave
-Unemployed Civil Slave
-Deserter Civil Slave
-```
-
-chỉ từ nguồn gốc trước intake.
-
-Điểm chống drift:
-
-```text
-background
-= provenance / archival record
-
-current status
-= operational classification
-```
-
-Mệnh đề này áp cho **voluntary status conversion**; không tự lan sang POW, Criminal, Yellow hoặc các route đặc biệt.
-
----
+Nguồn cũ và các nhãn CURRENT ở hồ sơ lịch sử chỉ mang giá trị thời điểm. `91` ghi AF-CR-001–012, `92` giữ AF-CR-OPEN-001–007 và các mục được cụ thể hóa một phần. Không đọc Source_Archive để tái dựng baseline.

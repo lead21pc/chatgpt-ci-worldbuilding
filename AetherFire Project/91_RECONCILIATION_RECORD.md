@@ -2,6 +2,50 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Civil baseline admission — 2026-10-05
+
+### Quyết định, nguồn và phạm vi
+
+Người dùng yêu cầu “audit file mới và nhập vào canon”. Nguồn `AetherFire_Civil_Co_So_Canon_2026-10-05.md` ghi CANON HIỆN HÀNH, thay Civil cũ trong scope §§1–24; đã đọc đủ cả phần supersession và UNKNOWN, không dùng tên file làm quyền canon độc lập.
+
+SHA-256 nguồn: `516C2C2312A14B7DD178A3B735E18E4DAF7DD6A967282CB6504EF576DFB6792C`.
+Baseline repository: nhánh `codex/aetherfire-ci31-language-20261005`, HEAD `eec92210fd96389cc4f8e3d5cc42d622265e2d0d`; triển khai `maintenance/aetherfire-civil-baseline-20261005`. Dirty controls/regression tests, Academy và CI8.8 có sẵn được giữ ngoài staging.
+
+Owner hiện hành: `20_STATUS_CIVIL_LABOR_CURRENT.md` / AFM-002. Không tạo module, không đổi builder. `00/10/25/30/40` chỉ sửa giao diện trực tiếp; `90` ghi ranh giới lịch sử; `92` giữ câu hỏi và statuses; MANIFEST hashes do Python đồng bộ.
+
+### Findings và supersession
+
+| ID | Mốc cũ / điểm khác | Quyết định mới / đầu ra |
+| --- | --- | --- |
+| AF-CR-001 | `20` Part I STATUS/CLASS/hierarchy/Brown và Part III §§1/7 coi Civil Slave | SUPERSEDED theo source §§1–2/18/21. Civil service, không Slave/punishment/caste; Brown mandatory identification retired. Citizen/public equality không đồng nhất mọi political/immigration rights; không tự chốt màu mới hoặc penal Brown. `10/25/40` sửa nhãn actor current. |
+| AF-CR-002 | `20` Citizen-only entry/status conversion; background không có vai trò ngoài archival | Source §§3–5/17: người nghèo/homeless/immigrant/Citizen có thể tham gia; voluntary + screening/capacity. Background không tạo caste nhưng nhu cầu/tình trạng đầu vào có thể đổi completion package; không discrimination pay cùng việc vì giàu/nghèo. |
+| AF-CR-003 | `20` Part II mandatory applicant-selected/accepted billet-before-conversion gate; no-billet hard gate | Source §§5–7/21 thay admission: quyền đăng ký ≠ nhận; không nhận nếu không bảo đảm living/allocation/deployment. Sau admission assignment phù hợp bắt buộc, preference không veto. Không tự giữ pre-selected billet acceptance như gate. Matching procedure còn UNKNOWN. |
+| AF-CR-004 | `20` refusal/assignment framework chưa đủ appeal và profile changes | Source §§6–9: hợp lệ/phù hợp là điều kiện; appeal khi sai dữ kiện, tình trạng đổi, trái chuẩn/an toàn. Không suy mọi assignment hợp lệ chỉ từ lệnh hoặc no-preference veto thành không có appeal. |
+| AF-CR-005 | Discipline/failure chưa đủ ranh giới độc lập | Source §§9–10: không thể ≠ thiện chí kém ≠ không muốn ≠ cố ý từ chối ≠ phạm tội; retrain/reassign/medical, discipline hoặc luật thường nếu offense riêng. Không hạ class hoặc auto-Criminal. Ladder/limits UNKNOWN. |
+| AF-CR-006 | Pay/upkeep/housing/private life thiếu baseline; medical debt có thể bị lan vào upkeep | Source §§11–13: upkeep ≠ pay; pay không zero vì được nuôi; tài sản, hôn nhân, nghỉ/liên lạc/điều trị/privacy/appeal giữ. Housing theo deployment, không mandatory barracks. Không biến basic upkeep thành debt; medical debt độc lập ngoài scope giữ. |
+| AF-CR-007 | Quyền Citizen-equivalent chưa đủ scope; `25` chỉ yêu cầu vẻ công minh | Source §18 cụ thể hóa công quyền phải trung lập tuyệt đối với class/nghề/wealth/background; không inferior procedures/protection. `25/30` đồng bộ chuẩn phải tuân thủ, không assert perfect compliance/events. Bailout/Criminal interface vẫn NEEDS RECONCILIATION, không tự sửa. |
+| AF-CR-008 | AF-OPEN-007 và AF-CX-011 coi early exit wholly UNKNOWN | Source §14 chốt legal early exit + loss unearned benefits, không upkeep debt; separate lawful advances independent. Notice/procedure/forced termination và exact limits OPEN. `92` sửa thành PARTIALLY RESOLVED. |
+| AF-CR-009 | `20` nhiều nơi giữ 5y review/10y direct Citizen và conversion identity | Source §§15/21 supersede. Minimum time + qualified service; ba nhóm thường/khó tuyển/cực khó–chiến lược; faster completion/better benefits là option direction không công thức. Không numeric canon hoặc auto citizenship. AF-OPEN-010 retired old question; implementation AF-CR-OPEN-002. |
+| AF-CR-010 | Tax privilege, tax-arbitrage, chưa xác lập resident pathway/marriage; fee Undie | Source §§16–17/20–21: completion foundation/self-reliance, packages theo needs/input; immigrant strong review pathway, không indefinite delay; permanent tax và preferential fee retired. §19 re-entry UNKNOWN. AF-OPEN-009 cụ thể hóa một phần, không đóng full marriage/immigration law. |
+| AF-CR-011 | Homeless→Civil Slave/expulsion binary và degradation fallback | Source §§4/5/21: homeless có thể voluntary apply, screening/capacity, không punishment. Binary coercive intake không current; alternative support/deportation/zero-homelessness policy unresolved. Giữ medical hybrid/debt facts ngoài Civil theo scope, không dùng để tạo debt bondage. |
+| AF-CR-012 | Nguy cơ xóa toàn bộ operational safeguards độc lập hoặc phục hồi toàn nguồn cũ | `20` Part IV giữ empire-wide pool, concrete assignment/deployment, demand≠allocation, reserve/reassignment, relocation guarantee và khả năng manpower envelope đúng scope tương thích. Formula/agencies/cost/catalogue/duration/geographic limits vẫn OPEN. Những thứ này không tái tạo Slave, admission gate hoặc 5–10y. |
+
+Mọi finding thay thế có ưu tiên từ source CANON + yêu cầu nhập của tác giả; không phải sửa để làm setting hợp sở thích mô hình. Nội dung author source dùng “có thể” giữ mức khả năng/hướng, không thành agency/event/benefit table đã thực hiện.
+
+### Độ phủ và phần mang sang
+
+- `20` Part II giữ nguyên đầy đủ §§1–24 của nguồn (đổi cấp heading để chứa trong module), gồm §21 danh sách superseded, §22 UNKNOWN và §24 mười trục thiết kế tiếp; không điền các trục đó.
+- Rà định nghĩa/trục/caste, admission/assignment conditions, thẩm quyền/agency, fail/discipline/exit/completion, chronology/current-vs-history, scope/public neutrality, nguồn lực/capacity và mất/thêm nội dung. Không có số canon mới; không dựng min years/pay/weights.
+- Các câu hỏi §22 giữ nguyên đủ trong `20` và `92`, route AF-CR-OPEN-001–005; old questions còn phù hợp (reassignment/catalogue/cost/limits/authority) giữ thêm. AF-CR-OPEN-006 bailout/court/Criminal interface và -007 clothing/homelessness cần author decision; không đánh dấu resolved.
+- POW/Criminal/Yellow/bailout/age-alcohol/Citizen career-credit/zone/technology namespaces trong `20` giữ nội dung ngoài scope. Ngoại lệ thêm scope note không đổi legal outcome. Không xóa exploitation ngoài Civil chỉ vì retcon không Slave.
+- Source history có CURRENT/RESOLVED ở các hồ sơ phía dưới chỉ theo thời điểm trong đúng Civil scope. AF-CX-010/011/013 và Brown/Civil/tax assertions bị thay/cụ thể hóa; không kích hoạt archive làm fallback. AF-CX-012/014 giữ operational primitives trong scope Part IV, không giữ old status conversion.
+- Không sửa lore RF/MC2/Undie uniform/Academy/ML/aviation hoặc controls. Sửa nhãn Civil trong current Fiction 1 không retcon ngược lịch sử Canon 1 hoặc giữ Civil→Undie tuyến cũ.
+
+### Kiểm chứng và nguồn lưu trữ
+
+COMPLETE — đã đọc lại `00/10/20/25/30/40/92` và phần mới `90/91`, đối chiếu đủ 24 mục nguồn, danh sách UNKNOWN và các đoạn giữ nguyên về POW/Criminal/bailout/Citizen career-credit/alcohol/disability. Builder --check đạt 11 modules/15 hashes; 24 disposable-copy tests đạt. Giao diện bailout/Criminal và homelessness/uniform còn mở, không chứng nhận canon hoàn toàn không conflict hoặc live ChatGPT behavior. Nguồn được lưu byte-exact tại Source_Archive/AetherFire_Civil_Co_So_Canon_2026-10-05.md, SHA-256 khớp hash đầu vào trên; chỉ bỏ bản inbox sau kiểm hash, giữ thư mục. Checkpoint chỉ gồm task-owned changes sau kiểm staged diff. Không push trong lượt này.
+
+
 ## MC2 pathway selective admission — 2026-10-05
 
 **Quyết định:** người dùng yêu cầu “audit file mới và nhập vào canon”. Nhập đúng nhãn của nguồn, không promote đề xuất chỉ vì được ưu tiên. Đã đọc toàn bộ file (phần 0/I–X/provenance). Không nhập các controls được source nhắc tới, không đọc archive làm build input.

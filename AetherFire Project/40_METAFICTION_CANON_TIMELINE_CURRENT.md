@@ -36,7 +36,7 @@ Fiction 1 là nơi:
 - MC2;
 - Hoàng gia AetherFire;
 - Nghị viện;
-- Civil Slave;
+- Civil — chế độ phục vụ hiện hành, không Slave; lịch sử khác lớp không tự bị viết lại;
 - Undie;
 - quân đội;
 - Nội vụ;
