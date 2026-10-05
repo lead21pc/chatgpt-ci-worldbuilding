@@ -6,7 +6,8 @@
 
 ## 1. Canonical reading order
 
-1. `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` — project identity, state, institutions, geopolitics and dynastic conflict.
+1. `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` — project identity, global geopolitics, ontology and cross-domain interfaces.
+   - `25_POLITICS_DYNASTIC_SECURITY_CURRENT.md` — detailed political institutions, succession/legitimacy, MC2–AF–RF bargaining, seal-support governance, resistance and counterintelligence.
    - `15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` — shared technology/service interfaces, personal terminal, Guest Pass, prepaid wallet, deposit and device lifecycle; implementation unknowns remain open.
 2. `20_STATUS_CIVIL_LABOR_CURRENT.md` — status ontology, Citizen/Civil/Yellow/POW/Criminal, Civil entry/allocation/lifecycle and cross-status mobility.
 3. `30_UNDIE_SYSTEM_CURRENT.md` — Undie professional identity, entry/exit, mobility, cash/Credits/debt, gray access, distributed security, Undi and the unresolved MC2 pathway.
@@ -40,6 +41,7 @@
 | `AFM-008` | `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` |
 | `AFM-009` | `65_BATTLEMAGE_ACADEMY_CURRENT.md` |
 | `AFM-010` | `15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` |
+| `AFM-011` | `25_POLITICS_DYNASTIC_SECURITY_CURRENT.md` |
 
 <!-- END GENERATED MODULE CATALOG -->
 
@@ -51,6 +53,10 @@ AETHERFIRE CURRENT CANON
 │  ├─ AetherFire state, RF and global Academy/site interfaces
 │  ├─ Matriarch's Lament / Transfusion EasterFire cross-domain interface
 │  └─ Quad Night retirement and orphaned relations
+├─ Politics / dynastic security [25]
+│  ├─ AF institutions / authority / succession / regime transition
+│  ├─ MC2 / MC2.2 / Queen protection / RF blocs and bargaining
+│  └─ seal-support governance / resistance / counterintelligence
 ├─ Status / Civil / labor
 │  ├─ ontology schema
 │  ├─ Civil entry and allocation
@@ -130,6 +136,12 @@ Hai nguồn Undie Revamp Baseline v0.1 và Decisions 1–16 v0.1 được nhập
 
 Các quyết định cũ dưới đây là hồ sơ theo thời điểm. Những assertion Undie class, Criminal→Undie prohibition, compulsory apparatus/two-stage humiliation và tuyến MC2 hạ cấp trong chúng đã bị supersede; phần độc lập ngoài Undie vẫn giữ hiệu lực. Không nhập đề xuất Total War Transition, không đổi Anti-Drift/Router, không hoàn thiện tuyến MC2 hoặc thiết kế lại TE trong lượt này.
 
+## MC2 pathway — nhập chọn lọc 2026-10-05
+
+Nguồn `AetherFire_MC2_Pathway_Canon_Status_2026-10-05.md` được nhập theo nhãn từng assertion. Theo yêu cầu tách chính trị, `25` / `AFM-011` kiểm soát thể chế, kế vị, MC2–AF–RF, TE bảo hộ, hỗ trợ phong ấn và phản gián; `10` giữ toàn cục/ontology và routing. `30` giữ giao diện nghề/biến đổi; `40` giữ checkpoint/metafiction. Không đổi sự thật chỉ vì chuyển owner.
+
+Operation Swap, người thế thân, lịch giải cứu và cây phản gián cụ thể chưa thành sự kiện. `90` giữ đủ P1–P11/H1–H6/D1–D4 và ma trận ứng viên; `92` giữ đủ 10 nhóm UNKNOWN và 10 lựa chọn cần chốt; `91` ghi supersession/nguồn/phạm vi. Không phục hồi tuyến Civil→Undie→mại dâm bất hợp pháp hoặc các sự kiện RP cũ, không đổi controls và không hoàn thiện TE.
+
 ## 4. Latest retcon decisions — 2026-09-09
 
 - Historical 2026-09-09 decision: two-stage apparatus recognition; now superseded within Undi by the 2026-10-05 professional/contextual-uniform revamp.
@@ -150,7 +162,7 @@ Các quyết định cũ dưới đây là hồ sơ theo thời điểm. Những
 - `Quad Night` and its four-member-state ontology are retired. Relations that depended on that alliance remain `UNKNOWN / ORPHANED` unless the regional source explicitly replaces them.
 - The AF↔TE treaty is direct and does not transit through ML. The prior 100 km corridor and Academy-flank mapping are not automatically remapped.
 - The former foreign-spy punitive Undie route is removed because it no longer fits the political-centric setting. Archived wording is provenance only; legal/status treatment of spies remains `UNKNOWN`, and professional eligibility for Criminal is now `UNKNOWN` under the 2026-10-05 revamp rather than a status-transfer prohibition.
-- Mother MC2's Raging Fire / Prince 9 genealogy remains current; her post-Quad-Night custodian is `UNKNOWN`.
+- Phả hệ Raging Fire / Prince 9 của mẹ MC2 vẫn current. UNKNOWN về host sau Quad Night được chốt bổ sung 2026-10-05 thành TE bảo hộ; cơ chế custody/pháp lý và địa điểm còn mở.
 
 ## 7. Intentionally excluded source
 

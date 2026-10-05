@@ -76,6 +76,32 @@ class MaintenanceTests(unittest.TestCase):
             self.assertEqual(hashes[name], hashlib.sha256(before[name]).hexdigest().upper())
         self.assertNotIn(tool.MANIFEST, hashes)
 
+    def test_politics_admission_and_previous_schema_bootstrap(self):
+        name = tool.ACCEPTED['AFM-011']
+        self.assertEqual(name, '25_POLITICS_DYNASTIC_SECURITY_CURRENT.md')
+        values = tool.header((self.root / name).read_bytes(), name)
+        for owner in ('AFM-001', 'AFM-002', 'AFM-003', 'AFM-004', 'AFM-008'):
+            self.assertIn(owner, values['Cross-domain owner boundary'])
+        self.sync()
+        for filename, prefix in (
+                (tool.INDEX, b'| `AFM-011` |'),
+                (tool.MANIFEST, f'| `{name}` |'.encode())):
+            path = self.root / filename
+            path.write_bytes(b'\n'.join(line for line in path.read_bytes().split(b'\n')
+                                       if not line.startswith(prefix)))
+        before = self.snapshot()
+        self.assertEqual(self.run_cli('--check').returncode, 2)
+        self.assertEqual(before, self.snapshot())
+        self.sync()
+        self.assertEqual(self.run_cli('--check').returncode, 0)
+
+    def test_missing_older_catalog_row_is_not_admission(self):
+        self.sync()
+        path = self.root / tool.INDEX
+        path.write_bytes(b'\n'.join(line for line in path.read_bytes().split(b'\n')
+                                   if not line.startswith(b'| `AFM-002` |')))
+        self.rejected_without_writes()
+
     def test_technology_module_admission_and_owner_boundary(self):
         name = '15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md'
         self.assertEqual(tool.ACCEPTED['AFM-010'], name)

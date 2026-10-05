@@ -2,6 +2,47 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## MC2 pathway selective admission — 2026-10-05
+
+**Quyết định:** người dùng yêu cầu “audit file mới và nhập vào canon”. Nhập đúng nhãn của nguồn, không promote đề xuất chỉ vì được ưu tiên. Đã đọc toàn bộ file (phần 0/I–X/provenance). Không nhập các controls được source nhắc tới, không đọc archive làm build input.
+
+Nguồn: `AetherFire_MC2_Pathway_Canon_Status_2026-10-05.md`; SHA-256 `E0FD269CB0113B83F7B50995F6FB41FAD56CCB73179E87407B82EA23BE0682E1`. Baseline local: `93022396b365c6a0a69fb1bf52c55cdca9b92769`, nhánh `maintenance/aetherfire-undie-revamp-20261005`; nhánh tác vụ `maintenance/aetherfire-mc2-pathway-20261005`. Các thay đổi controls/tests/Academy có sẵn không thuộc lượt này.
+
+### Conflict, supersession và phạm vi
+
+| ID | Assertion / kết quả audit | Xử lý |
+| --- | --- | --- |
+| AF-MC2-001 / II.A | `00/10/40/70` còn ghi host/custodian mẹ MC2 UNKNOWN | Chốt TE bảo hộ, chỉ một số actor biết. Không chốt custody/asylum/pháp lý/địa điểm/cơ quan hoặc remap địa lý; `10` là owner, các file kia đồng bộ giao diện. |
+| AF-MC2-002 / II.B | Chưa ghi MC2.2 biết tình hình trước khủng hoảng | `10`: biết MC2 ở AF và tình hình khái quát, chính trị trong nước trì hoãn can thiệp ngay. Không suy biết genealogy/Swap/hiến tế/phản gián. |
+| AF-MC2-003 / II.C | Operational seal dependency chưa đủ cụ thể | `10`: AF relevant actors biết đủ vận hành khi nhận mẹ MC2; không RF specialist thường trực nắm lõi; RF thăm định kỳ. Cơ chế bearer/hiến tế-gia cố là thực, không chốt death/survival/ritual/authority. AF-OPEN-017 chỉ được cụ thể hóa một phần. |
+| AF-MC2-004 / II.C1 | Tín hiệu dependency break chưa ghi | `10`: nếu không cần RF định kỳ trong MC2 crisis thì đủ gây báo động/chú ý MC2.2 gần tức thời. Không chốt dependency đã cắt hoặc phản ứng cụ thể. |
+| AF-MC2-005 / II.D, IV.P1–2 | Operation Swap được ưu tiên nhưng source phủ nhận event admission | Giữ PROPOSAL ở `90`; `10/30/40` ghi boundary. Không chốt double/sponsor/consent/timing. |
+| AF-MC2-006 / II.E | Cover còn hoàn toàn UNKNOWN trong baseline | `30` §16.1 chốt chức năng Undie + biến đổi căn tính/diện mạo để tiếp cận kín; không chọn profession/operator, universal transformation hay timeline. |
+| AF-MC2-007 / II.F | Nguy cơ nhập hai lần giải cứu RP thành C2 | `10` giữ capability/motive + khả năng actor có deep information tương đương phạm vi Nội vụ/an ninh. Không chốt attempt count/event/knowledge provenance/success; giải cứu ≠ tự do. |
+| AF-MC2-008 / II.G, VII | Nguyên tắc nhiều contingency khác cây đã diễn ra | `10` chốt nguyên tắc phụ thuộc state/thẩm quyền; `90` giữ toàn ma trận ứng viên. Không đồng nhất AF agencies hay quyền disposition cuối cùng. |
+| AF-MC2-009 / II.H | Retcon trước loại cả implementation cũ, chưa phục hồi riêng checkpoint; `10` §23 còn assertion bẫy giả hiện hành | Phục hồi **checkpoint phản quốc**, không phục hồi causal chain. Sửa §23; fake/hijacked resistance là P11, không event. `40` §14.1 owner; `30/92` đồng bộ. |
+| AF-MC2-010 / II.I | Overlap chưa nêu đủ điều kiện closure/life threat | `40`: closure-bearing overlap, MC2 ở nguy hiểm sống còn thực chất khi MC1 xuất hiện. Không state merge, không chắc chết, không Canon 1 replay; mechanics và hậu MC1 UNKNOWN. |
+
+Phần I giữ baseline genealogy/True Crown/matrilineal/RF union/member-state/Prince 9/Army vs Interior/Canon 1 vs 2/Undie profession. Không chốt lại source ancestry thành mới hoặc sửa miền không liên quan. Phần VIII là skeleton có điều kiện và đoạn giữa mở, không chronology triển khai Swap/rescue/hiến tế. Phần X là bản nén truth boundaries, không Anti-Drift mới.
+
+### Yêu cầu bổ sung: tách module chính trị
+
+Tác giả yêu cầu “tách thành file chính trị riêng đi, nó đủ lớn và phức tạp rồi”. Tạo `25_POLITICS_DYNASTIC_SECURITY_CURRENT.md` / `AFM-011`, chuyển nguyên dữ kiện hiện hành ở `10` các section 4–5, 21, 23–25, RF continental union và pathway mới. Các ánh xạ `10` trong bảng audit phía trên chỉ nơi phát hiện/nhập ban đầu; **owner cuối là `25`** đối với chi tiết chính trị. `10` giữ ontology/toàn cục và giao diện; `30/40/70` giữ miền riêng, dẫn tới owner mới.
+
+Module mới chỉ current canon/hướng thiết kế đúng cấp + boundary/unknown; không nhét P/H/D vào current. Không đổi luật Civil, Terminal, ML nội bộ, Academy hoặc hàng không. Builder đăng ký một AFM mới và cho --write chuyển đúng catalog/hash schema cũ thiếu riêng AFM-011; --check vẫn nghiêm, thiếu row cũ/unknown ID vẫn fail. Hai tests mới kiểm admission và không tự sửa lỗi catalog khác.
+
+### Độ phủ và trạng thái chưa chốt
+
+- Phần III.1–10 được giữ nguyên đủ câu hỏi trong `92` dưới nhóm AF-MC2-OPEN-001–010; không đóng unknown sau khi chỉ chốt chức năng.
+- Phần IX giữ đủ 10 quyết định cần tác giả chọn ở `92`.
+- Phần IV P1–P11, V H1–H6, VI D1–D4 và VII ma trận được giữ nguyên với nhãn tại `90`. H4/H6 không promote phần suy luận rộng hơn phần II đã chốt.
+- Các hồ sơ Undie revamp và regional cũ bên dưới là quyết định theo thời điểm; trong đúng scope đã bổ sung, chốt pathway ở đây và current owners thay phần UNKNOWN checkpoint/host cũ. Chi tiết cũ độc lập ngoài scope không tự mất hiệu lực.
+- Không sửa Civil/Academy/MC4/Terminal/aviation, controls/Router hoặc triển khai TE. Kiểm tra cấu trúc không chứng minh hành vi ChatGPT.
+
+### Kiểm chứng và vòng đời nguồn
+
+COMPLETE — maintenance --check đạt 11 modules/15 hashes; 24 disposable-copy tests đạt, gồm admission AFM-011 và từ chối thiếu catalog row cũ. Đã đọc lại current files sửa và module mới; đối chiếu nguyên các khối chuyển từ `10`, toàn III UNKNOWN, IV–VII P/H/D/ma trận và IX quyết định còn mở. Source_Archive/AetherFire_MC2_Pathway_Canon_Status_2026-10-05.md giữ byte-exact SHA-256 khớp đầu vào; chỉ bỏ bản inbox sau kiểm hash, giữ thư mục. Controls/tests-regression/Academy có sẵn không stage. Kiểm chứng nội dung/cấu trúc không chứng minh live ChatGPT behavior. Checkpoint sau staged diff check; không push trong lượt này.
+
 ## Undie professional-ecosystem revamp — 2026-10-05
 
 ### Quyết định, nguồn và phạm vi

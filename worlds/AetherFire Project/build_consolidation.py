@@ -21,6 +21,7 @@ MODULE_FILES = (
     '80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md',
     '65_BATTLEMAGE_ACADEMY_CURRENT.md',
     '15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md',
+    '25_POLITICS_DYNASTIC_SECURITY_CURRENT.md',
 )
 INDEX = '00_AETHERFIRE_CONSOLIDATION_INDEX.md'
 MANIFEST = 'MANIFEST.md'
@@ -176,16 +177,25 @@ def plan(root, write=False):
         if re.search(rb'(?m)^> Runtime role:\s*`?CURRENT_SOURCE`?\s*\r?$', data):
             raise ValidationError(f'Unexpected CURRENT_SOURCE; not admitted: {path.name}')
     _, _, _, block = region(inputs[INDEX], CATALOG)
+    # Only --write may bootstrap the explicitly admitted AFM-011 from the
+    # previous complete catalog; malformed, missing older or extra rows fail.
+    catalog_expected = modules
+    if write and b'| `AFM-011` |' not in block:
+        catalog_expected = {key: name for key, name in modules.items() if key != 'AFM-011'}
     catalog_rows = rows(block,
                         '| Module ID | Current source path (relative to AetherFire Project/) |',
-                        modules)
-    if catalog_rows != modules:
+                        catalog_expected)
+    if catalog_rows != catalog_expected:
         raise ValidationError('Catalog Module ID/source path does not match current headers')
     new_index = replace_region(inputs[INDEX], CATALOG, catalog_text(modules))
     manifest = inputs[MANIFEST]
     region(manifest, METADATA)
     _, _, _, block = region(manifest, HASHES)
-    previous_hashes = rows(block, '| File | SHA-256 |', CURRENT_FILES)
+    hash_expected = CURRENT_FILES
+    political_source = ACCEPTED['AFM-011']
+    if write and f'| `{political_source}` |'.encode() not in block:
+        hash_expected = tuple(name for name in CURRENT_FILES if name != political_source)
+    previous_hashes = rows(block, '| File | SHA-256 |', hash_expected)
     if any(not re.fullmatch(r'[0-9A-F]{64}', value) for value in previous_hashes.values()):
         raise ValidationError('Invalid current hash syntax')
     current = dict(inputs)

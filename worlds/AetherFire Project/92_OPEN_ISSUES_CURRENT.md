@@ -42,14 +42,14 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | AF-OPEN-011 | UNKNOWN | Exact relocation reimbursement, housing, reassignment duration and geographic limits after Civil conversion. | `20`; `91` AF-CX-012/014. |
 | AF-OPEN-012 | UNKNOWN | Full Criminal rights, mobility and labor matrix. | `20`; `91` AF-CX-004/017. Do not revive Brown-to-Black mobility. |
 | AF-OPEN-013 | SUPERSEDED IN UNDIE SCOPE | Full color graph, Credit Score thresholds và Contribution Points formulas không còn là câu hỏi triển khai Undie hiện hành. Career Rank ngoài Undie vẫn mở. | `20`/`30`; `91` AF-UR-002/007. Không xóa biến/quy tắc ngoài phạm vi. |
-| AF-OPEN-015 | UNKNOWN | Exact Clash #2 mechanics beyond the confirmed narrator split and ability-boundary statements. | `40` and `50`; `91` Metafiction consolidation addendum. Do not infer ability transfer or loss from narrator separation. |
+| AF-OPEN-015 | UNKNOWN — partially specified | Exact Clash #2 mechanics/thematic nature ngoài narrator split, ability boundary và overlap mang áp lực kết thúc đã chốt. | `40` §14.1/`50`; không suy ability transfer/loss, state merge, MC2 phải chết hoặc Canon 1 replay. |
 
 ## 5. RF, Academy, MC4 and cross-world open issues — updated 2026-09-16
 
 | ID | Type / state | Open issue | Required baseline and dependency |
 | --- | --- | --- | --- |
 | AF-OPEN-016 | UNKNOWN / OPEN | Exact RF constitutional form and whether the four foregrounded blocs are member states, coalitions of member states or another internal layer. | `10`; `91` RF/Academy/MC4 addendum. Do not collapse bloc, state, union and lineage. |
-| AF-OPEN-017 | UNKNOWN / OPEN | Exact RF actor that supplies, contracts, maintains or authorizes the Raging Fire firewall and founding-seal dependency. | `10`; do not assign automatically to the union or strongest bloc. |
+| AF-OPEN-017 | UNKNOWN / OPEN — partially specified | Exact RF actor/contract party/authorization của firewall và phong ấn; phạm vi chức năng còn cần làm rõ. | `10`: RF chuyên gia đến định kỳ, không thường trực nắm lõi; AF biết vận hành, đường bearer/gia cố là cơ chế thực. Không gán chủ thể hợp đồng cho union/Bloc 1 hoặc chốt nghi lễ. |
 | AF-OPEN-018 | UNKNOWN / OPEN | Official names/ranks of the mother-MC2 and Prince-9 polities, plus exact RF authority over succession and royal marriage. | `10` and `40`; old `vua RF` wording is superseded. |
 | AF-OPEN-019 | UNKNOWN / OPEN | Trưởng công chúa knowledge, public murder narrative and exact chronology of Prince 9's death, pregnancy transfer, alliance and secession escalation. | `10`; knowledge must remain actor-specific. |
 | AF-OPEN-020 | UNKNOWN / OPEN | Academy official name, command chain, exact map, student/staff scale, administrative/specialist/dangerous-practice group sizes, five-person-team role allocation and activation threshold, entry age, per-term curriculum gates and field-deployment authorization. | `65` and `10`; official name remains `[ACADEMY NAME — PLACEHOLDER]`; internal military-training doctrine is accepted in `65`, but named implementation details remain open. |
@@ -107,7 +107,7 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | --- | --- | --- | --- |
 | AF-TECH-001 | UNKNOWN / OPEN | Terminal appearance/material, wearer authentication, retina/body-link/consent/deactivation, private audio, energy, foreign-currency settlement, wallet denomination, unused balance, lost/damaged deposit and wallet recovery, guest access/legal recognition/exit after revoke, responsible agencies, privacy/retention, offline continuity, deposit values and future Undie hardware relation. | `15` section 9 retains all fifteen source groups and AF-NEW-002/007; `20` controls status. AF-OPEN-008 và triển khai thiết bị vẫn mở; AF-OPEN-006/014 đã supersede trong phạm vi Undie cũ. Locking a device does not erase money/status or resolve exit rights. |
 | AF-TECH-002 | UNKNOWN / OPEN | Industrial energy, possible future nano mechanism, standards authority, ID/payment ownership, data architecture, backend concentration, privacy/data rights, cybersecurity, robot/android production, automation share, rare materials, device/aircraft costs, procurement, banking/currency/public finance and inter-sector technology gaps. | `15` section 9 retains fifteen source groups; `80` controls aviation. Historical nano is not accepted canon and industry-scale inference does not close these items. |
-| AF-STATE-001 | UNKNOWN / OPEN | Domain-specific lawmaking/interpretation/enforcement/veto; Parliament budget/appointment/investigation powers; Crown rights; security data-sharing; recognition of civil/professional groups; lawful opposition boundary; infrastructure ownership; standards/operations authority across ID/payment/aviation/security; infrastructure funding; material/manpower/energy/political bottlenecks. | `10` section 5.1; ten State Notes questions preserved. Multipolar power does not establish constitutional precedence, agency mandates or universal high state capacity. |
+| AF-STATE-001 | UNKNOWN / OPEN | Domain-specific lawmaking/interpretation/enforcement/veto; Parliament budget/appointment/investigation powers; Crown rights; security data-sharing; recognition of civil/professional groups; lawful opposition boundary; infrastructure ownership; standards/operations authority across ID/payment/aviation/security; infrastructure funding; material/manpower/energy/political bottlenecks. | `25` section 5.1; ten State Notes questions preserved. Multipolar power does not establish constitutional precedence, agency mandates or universal high state capacity. |
 
 ## Undie revamp: các câu hỏi mới — 2026-10-05
 
@@ -121,9 +121,214 @@ Retcon đã được người dùng chấp nhận; không phải một đề xu�
 | AF-UR-OPEN-004 | UNKNOWN / OPEN | Nhu cầu chợ xám/đen, hàng hóa/dịch vụ, ẩn danh/access, tổ chức/intermediary/House và quan hệ hợp đồng/bảo trợ cụ thể. | `30` §§7/9. Các ví dụ chưa phải catalogue hoặc tổ chức đã thành lập. |
 | AF-UR-OPEN-005 | UNKNOWN / OPEN | Undi thực tế, vật liệu/rập/độ che phủ/tùy biến, vai trò dữ liệu/hardware nghề, body link/consent/deactivation, quyền lệnh và tích hợp terminal. | `30` §§8/10; `15` giữ năng lực công nghệ/Guest Pass và unknown chuyển đổi. |
 | AF-UR-OPEN-006 | UNKNOWN / OPEN | Luật tử vong/điều tra/bồi thường, cơ quan và trigger an ninh, các tác nhân phản đối/cải cách, đường tiếp cận kháng chiến/scandal có căn cứ. | `30` §§11–14. Không tạo Anti-Undie Institution hoặc friendly-fire event mặc định. |
-| AF-UR-OPEN-007 | UNKNOWN / OPEN | MC2 profession, cover, organization/operator/patron, first contact, gray activity, resistance/security incident, path to mother, chronology và outcome. | `10`/`30` §16/`40`; strategic-node source chỉ là đầu vào bước thiết kế tiếp. Phả hệ và cấu trúc Clash không bị thay. |
+| AF-UR-OPEN-007 | UNKNOWN / OPEN — partially specified | Nghề MC2, triển khai cover/biến đổi, tổ chức/operator/patron, first contact, gray activity, nhân quả phản quốc, chronology, đường tới mẹ và outcome. | `10`/`30` §16.1/`40` §14.1; chức năng cover đã chốt, checkpoint phản quốc/nguy hiểm tính mạng là canon. Swap và lịch giải cứu chưa thành sự kiện; xem MC2 pathway ledger dưới đây. |
 | AF-UR-OPEN-008 | DEFERRED | TE tourism/experience-economy revamp: institutions/economy/law/professions/Undie relation. | `30` §15; không tự thay `70`. |
 | AF-UR-OPEN-009 | UNKNOWN / REQUIRES RECONCILIATION | Chi tiết cũ không tự chuyển sang nghề mới: intake ages/counts/gender, workload/bonuses, branch-specific 1:1/prepaid workline, transport/services, inheritance/health/AI rules còn phụ thuộc kiến trúc cũ. | `91` AF-UR-LEGACY; không khẳng định chúng bị phủ định hoặc đã được khôi phục. |
+
+## MC2 pathway: câu hỏi triển khai — 2026-10-05
+
+Nguồn `AetherFire_MC2_Pathway_Canon_Status_2026-10-05.md`, phần III/IX. Trích nguyên văn để giữ đủ câu hỏi, không phải canon bổ sung. ID nhóm AF-MC2-OPEN-001–010 tương ứng III.1–10. `25` là owner chính trị/phong ấn-governance/RF/TE/MC2.2/an ninh; `10` giữ ontology/toàn cục, `30` giữ cover, `40` giữ checkpoint. Mốc checkpoint không giải quyết cơ chế phía dưới; các citation section chính trị cũ ở `10` nay được route sang `25`.
+
+### III. UNKNOWN / OPEN
+
+#### 1. Seal / sacrifice mechanics
+
+The following remain UNKNOWN unless later authorized:
+
+- exact ritual or technical mechanism by which a Raging Fire bearer reinforces the seal;
+- whether reinforcement kills, consumes, binds, depletes, transforms or can leave the bearer alive;
+- whether sacrifice is mandatory for some cycles or only one available mode;
+- exact periodic interval for RF specialist visits;
+- exact specialist role during routine maintenance versus bearer use;
+- exact authority that can approve a bearer use;
+- whether bearer consent is required legally, ritually, metaphysically or not at all;
+- exact relation between sacrifice/reinforcement and the hidden `pure soul + death in fire -> demigod rebirth` trait;
+- whether AetherFire knows any part of the hidden rebirth trait;
+- exact fail-state if reinforcement is delayed or missed;
+- exact operational signatures by which RF can infer that AF substituted MC2 or another lineage source.
+
+---
+
+#### 2. Founding / settlement legal structure
+
+Still UNKNOWN:
+
+- exact founding settlement clause governing Raging Fire support;
+- whether AF has a right to demand a bearer, only a right to demand seal continuity, or something else;
+- which RF actor is the contracting party;
+- which RF actor holds maintenance authority;
+- which RF actor can refuse or renegotiate;
+- whether Bloc 1 itself owns the relevant obligation or only inherited/mediated it;
+- whether multiple RF blocs can legally substitute for Bloc 1;
+- whether bloodline access is contractual, dynastic, customary or a mixed mechanism.
+
+---
+
+#### 3. Queen / TE protection details
+
+The fact of TE protection is canon, but the following are UNKNOWN / later design:
+
+- which TE institution or actor protects her;
+- whether protection is asylum, custody, alliance protection, covert shelter, negotiated sanctuary or another form;
+- exact location;
+- who in AF knows;
+- who in RF knows;
+- whether MC2 knows;
+- how long this arrangement has existed;
+- whether the Queen can communicate freely;
+- whether TE can refuse AF/RF demands;
+- how this interfaces with later TE redesign.
+
+---
+
+#### 4. MC2.2 knowledge state
+
+Canon minimum:
+
+```text
+knows MC2 is in AF
+knows broad situation
+cannot yet freely intervene because domestic politics are unstable
+```
+
+Still UNKNOWN:
+
+- whether he knows she is Prince 9's daughter;
+- whether he knows they are paternal half-siblings;
+- whether he knows the body-double plan;
+- whether he knows MC2 is using an Undie cover;
+- whether he knows the exact treason case;
+- whether he knows the sacrifice/reinforcement risk;
+- whether he knows Bloc 1's original manipulation surrounding Prince 9;
+- which event first upgrades his concern from observation to active intervention;
+- what authority/resources he controls at that point.
+
+---
+
+#### 5. Operation Swap
+
+Still UNKNOWN because the preferred proposal has not yet been promoted to a canon event:
+
+- exact sponsor faction;
+- exact authorization path;
+- whether Parliament itself, a parliamentary faction, nobles, security actors or a coalition executes it;
+- when extraction occurs;
+- how MC2's consent is obtained or pressured;
+- who prepares the body double;
+- how long the double can plausibly function;
+- what functions the double can perform;
+- what True Crown / bloodline functions the double cannot fake;
+- exact cover identity created for real MC2;
+- exact paperwork / financial / housing / travel support;
+- who knows the swap;
+- whether Army knows all, part or none of it;
+- whether Interior/counterintelligence initially knows;
+- whether RF initially knows;
+- when/how the swap is exposed, if ever.
+
+---
+
+#### 6. Undie cover implementation
+
+The function is canon; implementation remains OPEN:
+
+- MC2's exact professional branch;
+- whether she is independent or attached to an agency/salon/House/cooperative/studio/other operator;
+- who trains her;
+- whether her role is performer, host, companion, facilitator, cultural entertainer, mixed track, etc.;
+- exact transformation limits for hair, voice, face, body presentation, magical signature or biometrics;
+- whether transformation is reversible and by whom;
+- what forensic methods defeat it;
+- what identity records support the cover;
+- what legitimate mobility/access the profession grants;
+- what gray/off-book interfaces she uses;
+- exact first contact with resistance or RF-linked actors.
+
+---
+
+#### 7. RF rescue operations
+
+Still OPEN:
+
+- which RF actor orders rescue/extraction;
+- whether the actor is Bloc 1, lineage house, covert service, coalition, MC2.2-linked network or another actor;
+- exact number of rescue attempts in current Canon 2;
+- whether old RP's "at least two" incidents are retained, replaced or discarded;
+- which attempts target real MC2 versus public double;
+- whether rescue actor knows the swap;
+- how rescue actor acquired deep AF-level intelligence;
+- whether the knowledge is complete, partial, stale, distorted or compartmentalized;
+- whether rescue goals are liberation, custody, lineage recovery, bargaining, succession or a mix;
+- whether MC2 consents to the rescue;
+- whether rescue succeeds.
+
+---
+
+#### 8. Treason implementation
+
+The treason checkpoint is canon; the causal implementation remains OPEN:
+
+- what exact act(s) form the evidentiary basis;
+- which agency investigates;
+- which authority charges/judges;
+- whether the case is legally valid, politically manipulated, or both;
+- whether resistance contact is genuine, infiltrated, fake, hijacked or mixed;
+- whether RF contact is part of the evidentiary package;
+- whether Operation Swap itself is exposed;
+- whether MC2 knowingly violates a law;
+- whether sponsor faction abandons/denies her;
+- whether the public knows any of this before Clash #2.
+
+---
+
+#### 9. Counterintelligence authority and thresholds
+
+Still UNKNOWN:
+
+- exact AF counterintelligence organizational holder;
+- relation to Interior, Security, Army, judiciary and Parliament;
+- who can authorize surveillance, sting, detention, diplomatic exploitation or controlled escape;
+- evidentiary thresholds;
+- what counts as sufficient attribution to Bloc 1;
+- whether cold-war declaration is executive, parliamentary or mixed authority;
+- who owns classified evidence;
+- who may disclose it diplomatically;
+- how body-double evidence is compartmentalized;
+- exact threshold at which intelligence gain no longer justifies allowing MC2/RF actors to move.
+
+---
+
+#### 10. Other RF blocs and substitutability
+
+Still UNKNOWN:
+
+- how widely Raging Fire-compatible bloodlines exist outside Bloc 1;
+- whether other blocs can supply equivalent bearer/reinforcement functions;
+- whether their lineage has equal compatibility, potency or legitimacy;
+- whether they want AF technology enough to accept a deal;
+- what conditions they would demand;
+- whether helping AF isolates Bloc 1 or creates a new dependency;
+- whether RF union-level rules constrain separate deals;
+- whether a bloc can independently send specialists/bearers.
+
+---
+
+### Những quyết định cần tác giả chọn
+
+The highest-value remaining canon decisions are:
+
+1. **Operation Swap event:** confirm whether it actually happens in Canon 2, not merely as the preferred first implementation.
+2. **Sponsor faction:** identify the actor/coalition that extracts MC2 and prepares the public double.
+3. **MC2 consent:** determine whether she agrees freely, under pressure, or under constrained choice.
+4. **RF rescue chronology:** decide whether old RP's two rescue incidents survive into current canon and who performs them.
+5. **RF rescue knowledge:** decide which rescue actor knows the public MC2 is fake and how that information was acquired.
+6. **Treason implementation:** choose the exact evidence/action chain that turns MC2's covert activity into the canon treason checkpoint.
+7. **Counterintelligence authority:** identify which actor can select `WATCH/STING/CAPTURE/BURN_BLOC1/...` and what requires higher political authorization.
+8. **Seal sacrifice mechanics:** define enough of death/survival/consent/authority to simulate the path without inventing ritual details.
+9. **Other RF lineage availability:** determine whether rival blocs can actually substitute for Bloc 1's lineage/specialist role.
+10. **MC2.2 escalation threshold:** define the minimum additional information that converts his current observation into active intervention.
+
+---
 
 ## 10. Scope boundary
 
