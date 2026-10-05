@@ -4,12 +4,12 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: Status ontology, Citizen, Civil, Yellow, POW, Criminal, Civil entry/allocation/lifecycle, labor, and cross-status transitions.
 > Authority boundary: Controls legal/civic status ontology and Civil/labor interfaces within its declared scope.
-> Cross-domain owner boundary: Detailed Undie internal ranks, intake, mobility, work/access, White, and Undi visual systems are controlled by `AFM-003`; shared Terminal/Guest Pass service architecture by `AFM-010` without replacing this module's status and economic-namespace authority.
+> Cross-domain owner boundary: Detailed Undie professional identity, entry/exit, mobility, work/access, and Undi are controlled by `AFM-003`; shared Terminal/Guest Pass service architecture by `AFM-010` without replacing this module's status and economic-namespace authority.
 > Load mode: `FULL_FILE`
 
 > **Domain:** status ontology, social hierarchy, Citizen/Civil/Yellow/POW/Criminal, Civil entry/allocation/lifecycle, cross-status transitions and shared economic/access namespaces.  
 > Dedicated Civil law controls its exact scope. The ontology map controls axis separation. Remaining gaps stay `UNKNOWN / UNRESOLVED`.  
-> **Terminology retcon — 2026-09-09:** within the Undie domain, unqualified `rank` means the Red/Scarlet/Pink/Gray/Purple/Hazel/White functional-role axis. `Career Rank` remains the separate Entry/Intermediate/Support/Advanced/Ultimate axis. Older source wording has been normalized to `Undie rank` in this derived current-canon file.
+> **Retcon — 2026-10-05:** Undie là căn tính/hệ sinh thái nghề nghiệp, không phải địa vị pháp lý hoặc lớp Slave. Đồ thị màu/rank và chuyển địa vị cũ đã nghỉ hưu; `30` kiểm soát luật nghề còn mở. Career Rank ngoài Undie không bị thay thế.
 
 ## Part I — Resolved status and ontology map
 
@@ -17,7 +17,7 @@
 
 `15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` controls the removable terminal and Guest Pass functional model. Guest Pass is a temporary credential/access/service profile, not a legal status, class, Citizen/Civil conversion, or immigration/residency entitlement. Device Deposit, Guest Wallet and Access Profile remain separate objects; a terminal is not an account or access authority.
 
-Guest Wallet has an explicitly named financial variable, not Undie Credit Score/Line or the unresolved bare `credit` field. AF-OPEN-006, AF-OPEN-008 and AF-OPEN-014 remain open. Guest access, legal recognition and recovery/exit after device loss/return are not inferred from existing Civil or Undie rules; AF-TECH-001 records these unknowns.
+Guest Wallet có biến tài chính riêng. Kiến trúc Credit Score/Line và bare `credit` phụ thuộc cơ chế Undie cũ đã bị supersede theo retcon 2026-10-05; AF-OPEN-008 và các unknown triển khai ví vẫn mở. Không dùng ví khách để phục hồi các biến cũ. Guest access, legal recognition and recovery/exit after device loss/return are not inferred from existing Civil or Undie rules; AF-TECH-001 records these unknowns.
 
 ### AetherFire — Current Status & Ontology Map
 
@@ -33,9 +33,9 @@ Guest Wallet has an explicitly named financial variable, not Undie Credit Score/
 
 - `Citizen` — citizen status.
 - `Civil Slave` — Slave legal status với civic standing ngang Citizen trong phạm vi đã chốt.
-- `Yellow` — temporary disciplinary status của Citizen, một tuần ở first offense, mặc Undi, rồi trở lại Citizen.
+- `Yellow` — trạng thái kỷ luật tạm thời của Citizen, một tuần ở lần đầu rồi trở lại Citizen. Undi không còn là dấu địa vị/trừng phạt mặc định; trang phục của Yellow cần xác nhận riêng.
 - `POW` — public status; backend dùng Slave security category nhưng không kéo POW vào Civil/Criminal/Undie ontology.
-- `Slave` — umbrella legal/status category có các class riêng như Civil, Undie và Criminal trong source hiện hành.
+- `Slave` — phạm trù pháp lý có Civil và Criminal trong phạm vi đã chốt; không chứa Undie.
 
 **Known transitions:**
 
@@ -48,45 +48,41 @@ Civil Slave
 → review bắt đầu từ năm 5
 → nếu tới năm 10 chưa được duyệt/xét: Citizen trực tiếp
 
-Citizen → Undie                 [one-way entry]
-Civil Slave → Undie             [one-way]
-White/Undie → Citizen           [conditional exit path]
-
 Citizen → first offense → Yellow → 1 tuần → Citizen
-repeat Yellow-rule offense → Red / Undie [vĩnh viễn + quota ×2: older unsuperseded detail]
+repeat Yellow-rule offense → outcome UNKNOWN [Yellow→Red/Undie đã nghỉ hưu; không tự giữ quota ×2]
 
 death-sentence exposure → plea → Criminal Slave
 ```
 
-**UNKNOWN:** exact Yellow repeat timing; full Citizen→Undie admission law; exact Civil year-5 criteria/authority/exceptions; unilateral right to quit Civil; exact White→Citizen legal mechanism.
+**UNKNOWN:** thời điểm và chế tài tái phạm Yellow; tiêu chí/thẩm quyền/ngoại lệ review Civil năm 5; quyền đơn phương rời Civil. Gia nhập Undie là quan hệ nghề, không tạo conversion hoặc White→Citizen.
 
 #### 1A. SOCIAL HIERARCHY / CIVIC STANDING
 
 Social hierarchy là trục riêng với legal status và class.
 
 ```text
-Hoàng gia > Quý tộc > Sĩ quan quân đội = POW > Thượng lưu > Trung lưu > Trí thức > Citizen = Civil Slave > Undie > Criminal
+Hoàng gia > Quý tộc > Sĩ quan quân đội = POW > Thượng lưu > Trung lưu > Trí thức > Citizen = Civil Slave > Criminal
 ```
 
-`Citizen = Civil Slave` chỉ ở civic standing/social tier, không phải legal-status identity. Purple/Hazel vẫn thuộc class Undie nhưng được đặt ở social tier Trí thức.
+`Citizen = Civil Slave` chỉ ở civic standing/social tier, không phải legal-status identity. Undie không còn là một bậc cố định của hierarchy hoặc social caste; nghề không tự quyết định giá trị xã hội. Vị trí Purple/Hazel theo đồ thị cũ không còn dùng được.
 
 #### 2. CLASS / COLOR
 
 ##### Class
 
 - `Civil Slave` — source xác nhận đây là legal status/labor line; exact separate class-field label không được tự suy.
-- `Undie` — class bên trong Slave umbrella; không phải một job đơn lẻ.
-- `Criminal` — Slave class riêng, dưới Undie trong official social hierarchy.
+- `Undie` — căn tính/hệ sinh thái nghề nghiệp, không nằm trong trường class Slave.
+- `Criminal` — lớp Slave riêng. Không dùng Undie nghề nghiệp làm bậc pháp lý/xã hội đối chiếu.
 
 ##### Color / visual-functional labels
 
 - `Brown` — current confirmed use: màu jumpsuit đồng nhất của Civil; không phải rank Undie.
 - `Black` — màu nhận dạng của Criminal; `Criminal` mới là class.
-- `Red`, `Scarlet`, `Pink`, `Gray`, `Purple`, `Hazel`, `White` — Undie rank labels trong class Undie, mã hóa function/track/cấp nghề; không tạo class mới.
+- `Red`, `Scarlet`, `Pink`, `Gray`, `Purple`, `Hazel`, `White` — mã kiến trúc Undie cũ đã nghỉ hưu; chỉ tái dùng qua quyết định canon riêng.
 
-**Relations:** Purple/Hazel vẫn thuộc class Undie nhưng có social tier `Trí thức`. White vẫn thuộc Undie cho đến khi transition sang Citizen hoàn tất. Yellow mặc Undi nhưng được map là disciplinary status; không tự suy full Undie-class membership.
+**Relations:** Citizen có thể đồng thời hành nghề Undie. Yellow là trạng thái kỷ luật độc lập; Undi là họ đồng phục nghề theo ngữ cảnh, không xác lập Yellow/Slave hoặc White→Citizen.
 
-**UNKNOWN:** full color/function matrix; exact one-to-one relation giữa color, function và track; current existence của một penal class Brown ngoài các source hiện hành; full Criminal color/class mobility.
+**UNKNOWN:** sự tồn tại của một penal class Brown ngoài nguồn hiện hành; ma trận quyền/mobility Criminal. Không tiếp tục hỏi full color/rank graph như thể nó còn là kiến trúc Undie hiện tại.
 
 #### 3. JOB / LABOR REGIME
 
@@ -101,10 +97,13 @@ Hoàng gia > Quý tộc > Sĩ quan quân đội = POW > Thượng lưu > Trung l
 
 ##### Undie
 
-- Undie class không đồng nghĩa một job duy nhất.
-- Legal status/class ≠ legality của current activity ≠ works at brothel.
-- Work có thể ở trong/ngoài red-light district, facility hoặc independent, legal hoặc illegal.
-- Undie ranks điều chỉnh assignment, specialization, agency, consent profile và responsibility.
+- Hệ sinh thái nhiều nhánh nghề chồng lấn, không một job hoặc thang nghề chung.
+- Citizen + người hành nghề Undie là tổ hợp đã chốt; gia nhập/rời nghề không đổi địa vị pháp lý.
+- Môi trường hoạt động rộng và di động; sex work chỉ là một nhánh có thể có.
+- Nghề, tính hợp pháp, dịch vụ, đồng thuận, hợp đồng và nơi làm việc là những biến riêng.
+- Tương thích với nghĩa vụ Civil/Criminal hoặc điều kiện giấy phép cụ thể còn mở; `30` kiểm soát chi tiết.
+
+---
 
 ##### Criminal
 
@@ -130,7 +129,7 @@ Hoàng gia > Quý tộc > Sĩ quan quân đội = POW > Thượng lưu > Trung l
 | Resident pathway | Current supplied sources chưa xác nhận có hoặc không có resident-status pathway riêng | UNKNOWN / NOT ESTABLISHED |
 | Exceptions | Exact year-5 criteria/authority/exceptions chưa chốt | UNKNOWN |
 | Placement loss | Reserve/transitional duty rồi reassignment; không thành unemployed Civil | CANON |
-| Mobility | Empire-wide billet pool; pre-conversion refusal; post-conversion location obligation; Civil→Undie one-way; Civil→Citizen 5–10y | CANON + bounded UNKNOWN |
+| Mobility | Empire-wide billet pool; pre-conversion refusal; post-conversion location obligation; Civil→Citizen 5–10y; Undie affiliation không tạo Civil exit | CANON + bounded UNKNOWN |
 
 #### 4. CAREER RANK
 
@@ -138,9 +137,9 @@ Hoàng gia > Quý tộc > Sĩ quan quân đội = POW > Thượng lưu > Trung l
 
 **Known values:** `Entry`, `Intermediate`, `Support`, `Advanced`, `Ultimate`.
 
-**Relation:** Career Rank và Undie rank labels Red/Scarlet/Pink/Gray/Purple/Hazel/White là hai trục không đồng nhất. Distinct axes không xác nhận hoặc phủ định một combination cụ thể.
+**Relation:** Career Rank ngoài Undie là trục riêng. Đồ thị màu Undie cũ đã nghỉ hưu; không dùng Career Rank để khôi phục nó hoặc áp một tiến trình phổ quát cho nghề Undie.
 
-**UNKNOWN / NOT ESTABLISHED:** full rank rules; promotion formula; cross-mapping và compatibility giữa Career Rank với từng Undie color/function/track.
+**UNKNOWN / NOT ESTABLISHED:** full Career Rank rules và promotion formula ngoài phần đã chốt; chưa chốt việc dùng Career Rank trong nhánh nghề Undie mới.
 
 #### 5. ZONE
 
@@ -150,11 +149,13 @@ Hoàng gia > Quý tộc > Sĩ quan quân đội = POW > Thượng lưu > Trung l
 
 **Relations:** Undie có thể rời red-light district và đi trong đô thị; restriction nhắm vào disruptive activity hoặc specialized restricted points, không phải blanket presence ban. Capital có full/near-full Undie infrastructure; satellite cities có partial system.
 
-**UNKNOWN:** full zone map, full access matrix, exact barrier/collar permission rules.
+**Phạm vi đô thị còn hiệu lực:** khu ăn chơi bao gồm phố đèn đỏ; tại thủ đô, cư dân phải từ 21 tuổi, kiểm soát bằng khuôn mặt/ID/vân tay. Đây là luật vào khu theo phạm vi cư dân đã chốt, không phải tuổi tuyển chung cho mọi nhánh Undie. Nội dung/quảng cáo người lớn bị hạn chế ngoài khu ăn chơi; hoạt động nghề trong đô thị không đồng nghĩa nội dung người lớn được phép khắp nơi.
+
+**UNKNOWN:** full zone map, full access matrix, exact barrier/collar permission rules; staff/emergency exceptions chưa chốt. Không giữ quyền theo màu Undie cũ.
 
 #### 6. CREDITS
 
-**Definition:** tiền điện tử nhận sau công việc, dùng cho sức mua/hàng hóa/dịch vụ và một số quyền tiêu dùng.
+**Definition:** Credits là tiền điện tử được nhà nước bảo chứng; cash là tiền cơ bản. Nhận Credits sau công việc là một giao diện đã mô tả, không phải định nghĩa mọi cách tạo/nhận Credits.
 
 **Properties:** money; không phải Credit Score, Contribution Points, Career Rank, status hay class.
 
@@ -162,7 +163,7 @@ Hoàng gia > Quý tộc > Sĩ quan quân đội = POW > Thượng lưu > Trung l
 
 Facility proposals/upgrades và một số room/customization eligibility dùng source wording `credits` hoặc `credits nội bộ`; exact relation của chúng với normal personal Credits chưa chốt.
 
-**UNKNOWN:** quan hệ kế toán chính xác giữa personal Credits và “credits nội bộ” của facility; exact variable ở uniform unlock, terminal field, Pink contact cost và các bonus +50%; full credit economy.
+**UNKNOWN:** quan hệ kế toán chính xác giữa personal Credits và “credits nội bộ” của facility ngoài kiến trúc Undie đã nghỉ hưu; full credit economy. Không phục hồi uniform unlock/Pink cost/bonus dựa trên web cũ.
 
 #### 7. CONTRIBUTION POINTS
 
@@ -170,28 +171,22 @@ Facility proposals/upgrades và một số room/customization eligibility dùng 
 
 **Properties:** không phải tiền, Credit Score hay morality score. Có thể reset khi tiến/lùi/đổi nghề trong các trường hợp đã chốt.
 
-**UNKNOWN:** formula, authority và exact reset matrix.
+**UNKNOWN:** formula, authority và exact reset matrix ngoài phạm vi Undie. Contribution Points không còn là trục bắt buộc của hệ kinh tế/tiến trình Undie; việc còn mô tả nó ở miền khác không phục hồi kiến trúc ấy.
 
 #### 8. OTHER ECONOMIC VARIABLES
 
-##### Credit Score
+##### Credit Score / Credit Line trong Undie
 
-- Performance/progression/eligibility variable trong Undie career graph.
-- Ghi nhận thành tích tại functional position hiện tại.
-- Dùng làm điều kiện mobility; reset khi chuyển local Undie rank/cấp nghề theo dedicated source.
-- Không tự động tạo White; White còn cần self-application, external nomination và selection/placement.
+Kiến trúc Credit Score, Contribution Points theo nghề Undie và Credit Line thế chấp địa vị đã nghỉ hưu. Không còn điều kiện mobility/reset/White, khoản vay thế chấp người hay default→điều phối lao động ở cơ sở tư nhân.
 
-##### Credit Line / tín dụng nội bộ
+Nợ tài chính, nghĩa vụ hợp đồng, ân tình xã hội và ân tình chính trị phải tách riêng; ân tình không phải tiền tệ. Nợ không tạo sở hữu người hoặc tự động cung cấp dịch vụ tình dục. Các nghiệp vụ vay/ứng trước/tài trợ mới còn cần thiết kế trong `30`.
 
-- Borrowing facility riêng, không phải cash đa dụng.
-- Chỉ dùng cho nhóm high-risk/high-reward shop đã nêu ví dụ.
-- Có thể dùng status làm collateral.
-- Default có thể dẫn đến private red-light facility điều phối giờ làm/pay cho tới khi trả nợ, với current caps `work time ≤ 16h/day` và `basic wage ≤ 20% minimum-wage range` của nghề tương ứng.
+---
 
 ##### Citizen credit profile / bad credit
 
 - Financial/eligibility profile của Citizen; bad debt có thể làm giảm cơ hội việc làm.
-- Quan hệ với Undie Credit Line hoặc Credit Score là `UNKNOWN`; không đồng nhất.
+- Không đồng nhất với tiền Credits hoặc các biến Undie đã nghỉ hưu; không tự xóa hồ sơ tín dụng Citizen vì retcon giới hạn ở Undie.
 
 ##### Legacy black credit
 
@@ -204,12 +199,12 @@ Facility proposals/upgrades và một số room/customization eligibility dùng 
 **Known relations:**
 
 - Career Rank có thể mở facility/shopping/necessities.
-- Undie rank và zone có thể ảnh hưởng access nhưng không phải cùng một trục.
+- Nghề/hoạt động, giấy phép, địa điểm và access là biến riêng; chưa chốt ma trận mới của Undie.
 - Collar là administrative terminal cho ID, access, movement, task và enforcement links.
-- Undie status không cho phép công quyền tùy tiện chặn subject.
+- Tư cách nghề nghiệp Undie không cho phép công quyền tùy tiện chặn subject; không gọi nó là legal status.
 - Civil applicant chưa conversion không có Civil benefit.
 
-**UNKNOWN:** full access matrix; exact permission changes của từng Career Rank và Undie rank color; public-service matrix của Civil.
+**UNKNOWN:** full access matrix; permission changes của Career Rank ngoài phần đã chốt; public-service matrix Civil và điều kiện nghề/địa điểm Undie mới.
 
 #### 10. BACKGROUND / PROVENANCE
 
@@ -219,10 +214,10 @@ Facility proposals/upgrades và một số room/customization eligibility dùng 
 
 - Sau voluntary Civil conversion, background vẫn ở hồ sơ nhưng không còn là biến vận hành chính.
 - Không tạo Refugee/Nomad/Unemployed/Deserter Civil caste chỉ từ provenance.
-- Former Undie trở thành Citizen không bị xóa lịch sử; provenance thường bị ẩn nhưng có thể được truy xuất trong một số ngành chưa xác định.
+- Lịch sử nghề nghiệp không phải địa vị pháp lý. Quy trình ẩn/truy xuất hồ sơ gắn với White→Citizen cũ không còn là mốc hiện hành; luật hồ sơ nghề mới chưa chốt.
 - Genealogy của Yellow từ fake-Undie/impersonation không biến genealogy thành current class ontology.
 
-**UNKNOWN:** exact provenance access law, ngành được truy xuất former-Undie history, và treatment của non-voluntary Civil provenance ngoài phần đã chốt.
+**UNKNOWN:** exact provenance access law, truy xuất lịch sử nghề và treatment của non-voluntary Civil provenance ngoài phần đã chốt.
 
 ---
 
@@ -787,78 +782,19 @@ Một actor có thể ở địa vị xã hội thấp nhưng có asset value r�
 
 ### 1. Thứ bậc xã hội chính thức
 
-**CANON**
-
-Thứ tự từ cao xuống thấp:
-
-```text
-Hoàng gia
->
-Quý tộc
->
-Sĩ quan quân đội = POW
->
-Thượng lưu
->
-Trung lưu
->
-Trí thức
->
-Citizen = Civil Slave
->
-Undie
->
-Criminal
-```
-
-`Citizen = Civil Slave` ở đây là ngang bậc xã hội/civic standing, không phải legal status hoàn toàn đồng nhất.
-
-Civil vẫn là Slave status và có lifecycle riêng.
+Thứ bậc các địa vị còn hiệu lực được ghi ở Part I §1A. Civil vẫn là Slave status có lifecycle riêng và civic standing ngang Citizen. Undie không còn là một caste/bậc cố định; quan hệ nghề không xác định địa vị xã hội.
 
 ---
 
----
+### 2. Civil và hoạt động nghề Undie
 
-### 2. Civil → Undie là một chiều
-
-**CANON**
-
-```text
-Civil Slave
-→ Undie
-```
-
-là route một chiều.
-
-Undie thấp hơn Civil trong hierarchy chính thức.
-
----
+Civil→Undie như chuyển địa vị một chiều đã nghỉ hưu. Gia nhập nghề không tự giải phóng Civil khỏi billet hoặc đổi địa vị; điều kiện làm nghề bên cạnh nghĩa vụ Civil còn mở.
 
 ---
 
 ### 5. Yellow
 
-**CANON**
-
-```text
-Citizen
-→ vi phạm lần đầu
-→ Yellow
-→ 1 tuần
-→ mặc Undi
-→ trở lại Citizen
-```
-
-Tái phạm:
-
-```text
-Citizen
-→ Red
-```
-
-Yellow là temporary disciplinary status, không phải career rank Undie.
-
----
+Citizen vi phạm lần đầu→Yellow một tuần→Citizen là chế tài tạm thời đã chốt. Yellow→Red/Undie, quota nghề ×2 và Undi làm dấu trừng phạt không còn là mốc mặc định. Trang phục Yellow và chế tài tái phạm cần quyết định riêng; không suy Yellow đã bị xóa.
 
 ---
 
@@ -944,21 +880,9 @@ Civil sau khi trở thành Citizen:
 
 ---
 
-### 14. Undie vi phạm pháp luật
+### 14. Người hành nghề Undie vi phạm pháp luật
 
-**CANON**
-
-Undie vi phạm pháp luật:
-
-```text
-→ không tự động xuống Criminal
-→ xét xử/xử lý nội bộ
-→ chế tài thuộc Undie system
-```
-
-Địa vị thấp không đồng nghĩa mọi vi phạm đều chuyển class.
-
----
+Undie không phải class hoặc địa vị pháp lý. Không tự duy trì hệ tư pháp/kỷ luật riêng thay luật thường chỉ vì nghề. Hành vi, địa vị thực, luật nghề/hợp đồng và cơ quan có thẩm quyền phải được xác định trong đúng phạm vi; ma trận chế tài còn mở.
 
 ---
 
@@ -984,14 +908,7 @@ Criminal làm các việc cực thấp mà robot còn “chê”, ví dụ:
 - vệ sinh cống rãnh;
 - các việc tương tự bẩn/nguy hiểm/không đáng dùng robot.
 
-Điều kiện sống:
-
-```text
-Criminal
-< Undie
-```
-
-nhưng vẫn có quyền cơ bản.
+Criminal vẫn có quyền cơ bản. So sánh điều kiện sống với một lớp Undie thấp hơn Civil đã bị supersede; không tự tạo chuẩn sống mới cho người hành nghề.
 
 Không tha bổng.
 
@@ -1005,7 +922,7 @@ Không tự suy `không tha bổng = không kháng cáo / không tái thẩm`.
 
 **CANON / SUPERSEDE**
 
-Cơ chế bailout **không áp dụng cho Undie**.
+Ngoại lệ loại trừ Undie theo class cũ đã bị supersede. Quy tắc Citizen bên dưới giữ nguyên; không tự chốt ma trận áp dụng mới theo nghề hoặc mọi nhánh dịch vụ.
 
 Nó áp dụng cho **Citizen từ Thượng lưu trở xuống**.
 
@@ -1036,7 +953,7 @@ cho phép hành vi rủi ro
 → extraction
 ```
 
-Undie vẫn dùng Undie-system discipline theo mục 14.
+Không dùng tư cách nghề Undie để thay quy tắc theo địa vị pháp lý; xem mục 14 về phần triển khai chưa chốt.
 
 ---
 
@@ -1077,13 +994,7 @@ Citizen có:
 - promotion riêng;
 - career progression riêng.
 
-White sau khi thành Citizen:
-
-```text
-→ làm các nghề như Citizen khác
-```
-
-Không có mandatory former-White career class.
+Citizen có thể đồng thời là người hành nghề Undie. White→Citizen đã nghỉ hưu; không có career class mới được tạo từ việc rời nghề.
 
 ---
 
@@ -1125,26 +1036,9 @@ nên gần như không ai cố tình dùng route này chỉ để tax arbitrage.
 
 ---
 
-### 35. Citizen → Undie
+### 35. Citizen và Undie
 
-**CANON**
-
-Citizen có thể tự xuống Undie.
-
-Route này:
-
-```text
-Citizen
-→ Undie
-```
-
-là một chiều.
-
-Rất hiếm người chọn trừ khi có lý do đặc biệt.
-
-White → Citizen là một exit path riêng của người đã ở Undie, không làm route Citizen → Undie thành reversible transition tự do.
-
----
+Citizen có thể gia nhập nghề Undie mà không mất citizenship/legal status. Quyền rời nghề và hậu quả hợp đồng/tài chính truy nguyên được do `30` kiểm soát; không còn one-way status entry hoặc White exit.
 
 ---
 
@@ -1202,11 +1096,7 @@ occupational agency ↓
 prestige ↓
 ```
 
-Undie là lựa chọn cho người:
-
-- thấy công việc Civil nhàm chán;
-- có kinh nghiệm phù hợp với domain Undie;
-- chấp nhận route rủi ro hơn.
+Undie có thể là lựa chọn nghề nghiệp, không phải fallback đổi địa vị tương đương Civil. Gia nhập không tự giải quyết nợ, thất nghiệp hoặc nghĩa vụ Civil.
 
 ---
 
@@ -1293,228 +1183,59 @@ trong khi cost được chuyển thành debt/status/economic obligation.
 
 ---
 
-### 43. Core exploitation design — bản chốt
+### 43. Core exploitation design — phạm vi còn hiệu lực
 
-**CANON / DESIGN INTENT**
+AetherFire có thể giữ tự do/lựa chọn rủi ro→trách nhiệm cá nhân→legal/economic trigger→fine/bailout/debt/status extraction. Ví dụ tuổi uống rượu và Citizen→Civil có xác nhận vẫn còn trong phạm vi đã chốt.
 
-AetherFire không tối ưu để ngăn mọi sai phạm từ trước.
-
-Nó thường giữ:
-
-```text
-freedom / ambiguity / risky choice
-→ individual responsibility
-→ violation opportunity
-→ legal trigger
-→ fine / bailout / debt / status extraction
-```
-
-Các ví dụ canon:
-
-```text
-không giới hạn tuổi uống rượu
-→ tự chịu trách nhiệm hành vi
-
-Undi cố ý dễ nhầm với quốc phục Hoa Nguyệt
-→ nhận nhầm/sàm sỡ
-→ phạt
-
-Citizen có thể tự xuống Civil/Undie
-→ state confirms choice
-→ subject chịu downstream consequence
-```
-
-Hai engine bóc lột khác nhau:
-
-```text
-CITIZEN
-→ freedom
-→ market risk / legal liability
-→ fine / bailout / debt / Criminal risk
-
-UNDIE
-→ status control
-→ labor / credit / debt / internal discipline / humiliation
-```
+Không dùng Undi để tạo nhầm lẫn/hạ nhục rồi phạt như mục đích mặc định, hoặc dùng nghề Undie làm một engine kiểm soát Slave. Nợ, thị trường, patronage và lạm dụng có thể tạo hậu quả khi có cơ chế riêng; retcon không khẳng định mọi bóc lột đã biến mất.
 
 ---
 
----
-
-### 44. Mobility graph hiện tại
+### 44. Địa vị và nghề là hai quan hệ khác nhau
 
 ```text
-                        CITIZEN
-                      /         \
-                     /           \
-            reversible-ish      one-way entry
-                   /               \
-                  v                 v
-            CIVIL SLAVE          UNDIE
-                  |                 |
-          5y review / 10y          |
-                  |                 |
-                  v                 |
-               CITIZEN          White path
-                                    |
-                                    v
-                                 CITIZEN
+Citizen → accepted billet + final confirmation → Civil
+Civil → review từ năm 5 / tới năm 10 chưa duyệt → Citizen
+Citizen → first offense → Yellow một tuần → Citizen
+death-sentence exposure → plea → Criminal
 ```
 
-Các route khác:
+Citizen từ Thượng lưu trở xuống vẫn có bailout tối đa hai lần→tòa→nguy cơ Criminal khi không có tiền, trong phạm vi đã chốt.
 
 ```text
-Citizen
-→ Yellow 1 tuần
-→ Citizen
-
-Citizen tái phạm Yellow-rule
-→ Red / Undie
-
-Citizen từ Thượng lưu trở xuống
-→ bailout tối đa 2 lần
-→ tòa
-→ nếu không có tiền: nguy cơ Criminal cao
-
-đối diện án tử
-→ plea / nhận tội
-→ Criminal
+Citizen + nghề Undie
+gia nhập/rời nghề Undie ≠ legal-status transition
 ```
 
----
+Chế tài tái phạm Yellow và điều kiện nghề cho Civil/Criminal còn mở; không nối lại đồ thị cũ.
 
 ---
 
 ### 46. UNKNOWN bắt buộc giữ
 
-Chưa tự định nghĩa:
-
-- full hierarchy nội bộ của mọi Citizen nghề nghiệp;
-- exact promotion formula của Citizen;
-- exact review criteria Civil năm 5;
-- exact authority xét Civil → Citizen;
-- exact tax exemption/reduction rate và duration;
-- exact lãi suất / debt formula của Undie credit line;
-- exact shop whitelist ngoài các ví dụ high-risk/high-reward;
-- exact cách định giá status collateral;
-- cơ sở tư nhân mua khoản nợ hay chỉ nhận quyền khai thác lao động;
-- exact repayment accounting;
-- exact definition của `20% minimum-wage range`;
-- exact full sanction matrix của Undie internal justice;
-- exact crimes nào có thể bypass Undie internal handling;
-- exact bailout amount và court procedure;
-- exact rights matrix của Criminal;
-- exact 21+ access rules cho emergency personnel / staff / special actors;
-- exact summon-gate tariff;
-- exact lane fee;
-- exact transport reimbursement rule;
-- exact retina interface coverage;
-- exact AI command authority/time window;
-- exact emergency-call payload;
-- exact Pink contact quota/cost;
-- exact commission content categories;
-- exact public-content moderation rules;
-- exact couple bonus timing/split;
-- exact Yellow-history bonus payout timing;
-- exact inheritance/title rules theo từng noble house;
-- exact medical debt terms;
-- trường hợp disability mà hybrid treatment không chữa được;
-- trường hợp vô gia cư mà không thể/không được trục xuất đi đâu;
-- full satellite-city Undie rank set ngoài Red + một số Purple/Hazel.
+- Full hierarchy/progression của nghề Citizen; promotion formula.
+- Review Civil năm 5, authority, ngoại lệ, tax rates/duration.
+- Criminal rights/labor matrix, bailout amount và court procedure.
+- Yellow repeat timing, chế tài mới và trang phục.
+- Nghề/giấy phép/hợp đồng/access Undie mới, tương thích nghĩa vụ Civil và eligibility Criminal.
+- Luật hồ sơ, kế vị/tước vị riêng không suy từ nghề.
+- Medical debt terms; disability không chữa được bằng hybrid treatment; vô gia cư không thể trục xuất.
+- Public-content moderation, staff/emergency exceptions của khu ăn chơi và các triển khai dịch vụ ngoài phần đã chốt.
+- Các nhóm unknown Undie mới nằm ở `30` §17 và `92`; không giữ threshold/rank/status collateral cũ như kiến trúc hiện hành.
 
 ---
 
----
+### 47. Tóm tắt ranh giới hiện hành
 
-### 47. Bản nén anti-drift
+Citizen = Civil về civic standing, không đồng nhất legal status. Civil bị phân công nhưng hưởng luật lao động như Citizen trong phạm vi đã chốt; lifecycle 5–10 năm và tax advantage giữ nguyên. POW frontend ngang sĩ quan, backend thuộc Slave security category. Criminal giữ pipeline riêng và quyền cơ bản trong phần đã chốt.
 
-```text
-AETHERFIRE CÓ SOCIAL HIERARCHY CHÍNH THỨC.
+Undie = nghề/hệ sinh thái, không phải Slave/caste/punishment. Citizen + Undie có thể đồng thời; entry/exit không đổi địa vị. Không còn đồ thị màu, White→Citizen, Yellow→Red/Undie, triệt sản bắt buộc hoặc web tín dụng thế chấp người.
 
-CITIZEN = CIVIL VỀ BẬC XÃ HỘI, KHÔNG PHẢI CÙNG LEGAL STATUS.
+Cash + Credits được nhà nước bảo chứng; nợ ≠ sở hữu người ≠ tự động dịch vụ tình dục. Hồ sơ tín dụng Citizen và luật Civil ngoài phạm vi không bị xóa.
 
-CIVIL BỊ PHÂN CÔNG NHƯNG HƯỞNG LUẬT LAO ĐỘNG NHƯ CITIZEN.
+Undi là họ đồng phục nghề theo ngữ cảnh; Hoa Nguyệt appropriation có ý định thật nhưng không được người ngoài chứng minh chắc chắn. Tử vong, nghề, an ninh và MC2 theo mốc `30` mới; chưa tự viết các triển khai còn mở.
 
-CIVIL → 5Y REVIEW → 10Y GUARANTEED CITIZEN.
-
-FORMER CIVIL CITIZEN CÓ TAX ADVANTAGE.
-
-UNDIE = SLAVE CLASS, DƯỚI CIVIL, TRÊN CRIMINAL.
-
-CITIZEN → UNDIE LÀ ONE-WAY ENTRY, 18+, CONFIRM 2 LẦN.
-
-UNDIE MẶC ĐỊNH TRIỆT SẢN; MC2 LÀ NGOẠI LỆ.
-
-WHITE → CITIZEN KHÔNG ĐẢO TRIỆT SẢN.
-
-UNDIE GIỮ PROPERTY/ORDINARY INHERITANCE NHƯNG MẤT/ĐÌNH CHỈ HEREDITARY TITLE/SUCCESSION.
-
-YELLOW = 1 TUẦN; TÁI PHẠM → RED.
-
-POW FRONTEND = OFFICER; BACKEND = SLAVE MANAGEMENT.
-
-RED = 996.
-
-PINK = 8H BLOCK, 4H LIBRARY, PHẦN CÒN LẠI PERSONAL.
-
-PURPLE/HAZEL = UNDIE NHƯNG SOCIAL TIER TRÍ THỨC; SELECTED EDUCATORS.
-
-UNDI CỐ Ý HẠ NHỤC QUỐC PHỤC HOA NGUYỆT VÀ TẠO VISUAL AMBIGUITY ĐỂ PHẠT.
-
-UNDIE CÓ THỂ ĐI RA NGOÀI RED-LIGHT DISTRICT.
-
-CÔNG QUYỀN KHÔNG ĐƯỢC TÙY TIỆN CHẶN UNDIE.
-
-UNDIE LEGAL PAY = PREPAID THROUGH CHECKPOINT.
-
-UNDIE ILLEGAL WORK = PEER TRANSFER, KHÔNG CÓ GUARANTEE.
-
-UNDIE CÓ SHOP, NORMAL CREDIT, CREDIT LINE RIÊNG, STATUS COLLATERAL.
-
-DEFAULT CREDIT CÓ THỂ DẪN TỚI PRIVATE RED-LIGHT FACILITY, ≤16H/DAY.
-
-CREDIT LINE CHỈ DÙNG HIGH-RISK/HIGH-REWARD SHOP.
-
-COLLAR = TERMINAL + RETINA INTERFACE + AUDIO COMMAND + EMERGENCY CHANNEL.
-
-PINK CÓ LIMITED HIGH-COST TWO-WAY CONTACT VỚI FRIENDS.
-
-CITIZEN SENSITIVE COMMISSION CÓ PRIVATE UNDIE CHANNEL.
-
-AETHERFIRE HẠN CHẾ ADULT CONTENT NGOÀI KHU ĂN CHƠI.
-
-KHU ĂN CHƠI CAPITAL = 21+ RESIDENT ACCESS, FINGERPRINT + ID + FACE.
-
-UNDIE SERVICE = 1 VS 1.
-
-SATELLITE CITIES CÓ PARTIAL UNDIE SYSTEM.
-
-UNDIE = LOW SOCIAL STATUS BUT NATIONAL ASSET.
-
-DAMAGE TO UNDIE CÓ THỂ TÍNH PHẢN QUỐC.
-
-BAILOUT CHỈ ÁP CITIZEN TỪ THƯỢNG LƯU TRỞ XUỐNG, KHÔNG ÁP UNDIE.
-
-ALCOHOL KHÔNG CÓ MINIMUM AGE; DOWNSTREAM MISCONDUCT BỊ PHẠT.
-
-CITIZEN CÓ THỂ THẤT NGHIỆP, NỢ, BAD CREDIT.
-
-CIVIL = STABLE FALLBACK.
-
-UNDIE = RISKIER / SPECIALIZED / EXTREME WAY OUT.
-
-CIVIL ĐƯỢC ƯU ĐÃI PHÍ UNDIE.
-
-HOMELESSNESS KHÔNG ĐƯỢC DUY TRÌ: CIVIL HOẶC TRỤC XUẤT.
-
-DISABILITY MẤT KHẢ NĂNG HOẠT ĐỘNG → HYBRID TREATMENT → DEBT.
-
-CORE EXPLOITATION:
-CHO RỦI RO / CHO LỰA CHỌN
-→ XÁC NHẬN TRÁCH NHIỆM
-→ TẠO LEGAL/ECONOMIC TRIGGER
-→ EXTRACTION.
-```
+Ưu đãi phí dịch vụ cho Civil, luật tuổi uống rượu, homelessness và hybrid disability treatment/debt giữ đúng phạm vi cũ; không mở rộng chúng thành luật của mọi nhánh Undie.
 
 ---
 

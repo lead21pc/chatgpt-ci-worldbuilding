@@ -9,7 +9,7 @@
 
 > **Domain:** narrator personification, Elena POV grammar, Fictionize/POC narrative functions, deadpan humor, tragedy and the narrator split at Clash #2.  
 > **Causal dependency:** `40_METAFICTION_CANON_TIMELINE_CURRENT.md` controls the clash and Canon 1/Canon 2 timeline. Narrator personification does not establish transfer or loss of the underlying esper ability.  
-> **Clothing exclusion:** source section `# 11. Dark humor của trang phục` is deliberately not imported. This file does not restate or revive its older visual reading. All Undi clothing, rank-color and two-stage perception canon remains controlled exclusively by `30_UNDIE_SYSTEM_CURRENT.md`.  
+> **Clothing exclusion:** source section `# 11. Dark humor của trang phục` is deliberately not imported. This file does not restate or revive its older visual reading. All Undi professional-uniform canon remains controlled exclusively by `30_UNDIE_SYSTEM_CURRENT.md`; compulsory rank-color/two-stage humiliation is retired by the 2026-10-05 revamp.
 > Source labels such as `CANON`, `DESIGN INTENT` and `PROPOSAL / KHÔNG PHẢI CANON` retain their original truth status.
 
 ## Part I — Narrator ontology, POV and comic grammar
@@ -318,98 +318,15 @@ Sự im lặng chính là phần hoàn tất joke.
 
 ## Part II — Fall, clashes and narrator separation
 
-### 9. Fall from grace tự thân là một dark humor
+### 9. Hài đen của ý định, cơ chế và hệ quả — ranh giới retcon
 
-#### CANON / DESIGN READING
+Nguyên tắc trình bày vẫn là ý định, cơ chế và kết quả lệch nhau nhưng hợp nhân quả. Không còn dùng chuỗi Civil→Undie→kháng chiến giả→án phản quốc để chứng minh nguyên tắc ấy trong current canon.
 
-Fall from grace của Elena không chỉ là tragedy.
+Undie không tự sinh bất mãn/kháng chiến hoặc là một bộ máy an ninh thống nhất. Mạng nghề có thể cho tiếp cận vùng xám, nhưng tuyến MC2, bẫy, agency biết gì và hậu quả phải được chốt riêng. Không tạo một joke mới rồi dùng nó làm lore.
 
-Nó có cấu trúc dark humor do **ý định, cơ chế và kết quả lệch nhau nhưng vẫn hợp nhân quả**.
+### 10. Hài đen thể chế — không phục hồi hồ sơ hạ cấp
 
-Chuỗi hiện hành:
-
-```text
-Elena mất địa vị
-→ Civil
-→ tự chọn Civil → Undie
-→ vì nghĩ sẽ dễ tiếp cận kháng chiến
-→ đi sâu vào các kênh rủi ro
-→ càng muốn tìm kháng chiến
-→ cuối cùng gặp “kháng chiến”
-→ đó là kháng chiến giả do chính quyền dựng
-→ bị kết tội phản quốc
-→ tuyệt vọng
-→ gọi MC1
-```
-
-Cái hài đen nằm ở chỗ:
-
-> **Kế hoạch tìm kháng chiến của Elena thành công theo cách tệ nhất có thể.**
-
-Elena không sai hoàn toàn khi nghĩ:
-
-```text
-Undie
-→ có thể gần tầng bất mãn
-→ có thể gần kháng chiến
-```
-
-Nhưng nhà nước cũng biết điều đó.
-
-Do vậy:
-
-```text
-Elena dùng Undie để tìm kháng chiến
-
-nhà nước dùng chính logic đó
-để quan sát / cài cắm / dựng kháng chiến giả
-```
-
-Hai bên đều có logic cục bộ hợp lý.
-
-Kết quả ghép lại trở thành dark humor.
-
----
-
----
-
-### 10. Dark humor của thể chế
-
-Fall from grace còn có một lớp hài đen thể chế.
-
-AetherFire không cần làm:
-
-```text
-công chúa
-→ phản loạn
-→ bắt giữ
-→ ngục tối
-→ xiềng xích
-```
-
-Nó có thể làm:
-
-```text
-công chúa
-→ giấy tờ bị đánh tráo
-→ status boundary
-→ Civil
-→ quy trình nghề nghiệp
-→ tự chọn Undie
-→ Undie rank / credits / facility / upkeep
-→ vùng hoạt động
-→ hồ sơ
-```
-
-Điểm tàn nhẫn là:
-
-> **Mọi thứ có thể vận hành “đúng quy trình”.**
-
-Không cần một quan chức cười man rợ.
-
-Hồ sơ chỉ cần hợp lệ.
-
----
+Sự lệch giữa bề ngoài thủ tục và tác động thực có thể là nguyên tắc hài đen thể chế. Chuỗi đánh tráo giấy tờ→mất status→Civil→Undie rank/credit cũ đã bị supersede, không còn là sự kiện hiện hành để dùng mặc định. Nguyên tắc kể chuyện không cấp quyền viết thủ tục hoặc tội ác thay thế.
 
 ---
 
@@ -429,15 +346,12 @@ Elena nhượng bộ
 Trong Canon 2:
 
 ```text
-Elena không đi đúng trajectory cũ
-→ sống
-→ mất status
-→ Civil
-→ tự vào Undie
-→ cố tìm kháng chiến
-→ bị kháng chiến giả bắt
-→ tuyệt vọng
-→ gọi đúng tác giả của trajectory mình đã không đi theo
+Elena không đi đúng trajectory Canon 1
+→ còn sống
+→ tuyến tiếp cận mẹ/chính trị hiện đang thiết kế
+→ checkpoint gọi MC1 vẫn thuộc miền metafiction
+
+Không suy Civil/Undie hạ cấp hoặc bẫy kháng chiến giả từ checkpoint này.
 ```
 
 Dark humor cấp meta:
@@ -886,7 +800,7 @@ NARRATORS ĐANG ĐÙA
 
 Bi kịch của fall from grace vì vậy có thêm một tầng:
 
-1. Elena vốn ngây thơ về Undie và tự chọn đi vào hệ vì đánh giá sai độ khắc nghiệt của nó.
+1. Lý do và nghề/vùng xám Elena lựa chọn trên tuyến mới còn mở; không giữ sai mô hình Undie/độ khắc nghiệt của chế độ Slave cũ làm premise.
 2. Elena đồng thời có hai meta engine ở ngay bên cạnh.
 3. Fictionize và POC có thể mô tả pattern, option hoặc nguy cơ mà Elena không tự nhìn thấy.
 4. Nhưng vì cô đã sống quá lâu với một cặp narrator whose ontology tự tạo deadpan gag, cô có thể coi cảnh báo thật như tiếng ồn quen thuộc.

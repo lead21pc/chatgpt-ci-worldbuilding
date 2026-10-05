@@ -29,9 +29,7 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | AF-OPEN-001 | CONFLICT / OPEN | Whether the older Criminal labor catalogue (`metallurgy / construction / human-operated factory`) survives beside the newer dirty/dangerous-work definition. | Read `20`; full evidence: `91` AF-CX-017. Do not merge the lists silently. |
 | AF-OPEN-002 | UNKNOWN / OPEN | Whether a distinct penal class named Brown exists outside the affected current sources. | Read `20` and `30`; full evidence: `91` AF-CX-003/004. Current confirmed Brown use is Civil jumpsuit color; this does not prove a separate penal Brown exists or does not exist. |
 | AF-OPEN-003 | UNKNOWN / OPEN | Whether Temp-Y is currently operating and, if so, its law, duration and interface. | Read `20`; full evidence: `91` AF-CX-002. Do not merge Temp-Y with disciplinary Yellow. |
-| AF-OPEN-004 | UNKNOWN / OPEN | Whether Yellow repeat offense occurs only after return to Citizen or can occur during the Yellow week. | Read `20`; full evidence: `91` AF-CX-001. Current destination is Red/Undie, not Brown. |
-| AF-OPEN-005 | UNKNOWN / OPEN | Exact crosswalk or compatibility, if any, between Undie ranks and Career Rank. | Read `20` and `30`; full evidence: `91` AF-CX-005. Distinct axes do not prove mapping, non-mapping or compatibility. |
-| AF-OPEN-006 | UNKNOWN / OPEN | Exact variable behind bare `credit` uses: terminal display, Pink contact cost, two +50% bonuses and uniform customization unlock. | Read `20` and `30`; full evidence: `91` AF-CX-007/008/009. Do not collapse Credits, Credit Score, Contribution Points or Credit Line. |
+| AF-OPEN-004 | UNKNOWN / OPEN — scope revised | Thời điểm tái phạm Yellow, chế tài thay thế và trang phục Yellow. | `20`; Yellow→Red/Undie/quota ×2 đã nghỉ hưu theo `91` AF-UR-004/010; không phục hồi hình phạt nghề. |
 
 ## 4. Intentionally unknown implementation details
 
@@ -43,8 +41,7 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | AF-OPEN-010 | UNKNOWN | Exact year-5 review criteria, authority and exceptions. | `20`; `91` AF-CX-013. The current 5/10-year lifecycle does not supply these details. |
 | AF-OPEN-011 | UNKNOWN | Exact relocation reimbursement, housing, reassignment duration and geographic limits after Civil conversion. | `20`; `91` AF-CX-012/014. |
 | AF-OPEN-012 | UNKNOWN | Full Criminal rights, mobility and labor matrix. | `20`; `91` AF-CX-004/017. Do not revive Brown-to-Black mobility. |
-| AF-OPEN-013 | UNKNOWN | Full Undie-rank graph, Career Rank rules, Credit Score thresholds and Contribution Points formulas. | `20` and `30`; `91` AF-CX-005/007. |
-| AF-OPEN-014 | UNKNOWN | Full Credit Line underwriting, valuation, debt accounting and dispute/exit procedure. | `30`; `91` AF-CX-008/009. |
+| AF-OPEN-013 | SUPERSEDED IN UNDIE SCOPE | Full color graph, Credit Score thresholds và Contribution Points formulas không còn là câu hỏi triển khai Undie hiện hành. Career Rank ngoài Undie vẫn mở. | `20`/`30`; `91` AF-UR-002/007. Không xóa biến/quy tắc ngoài phạm vi. |
 | AF-OPEN-015 | UNKNOWN | Exact Clash #2 mechanics beyond the confirmed narrator split and ability-boundary statements. | `40` and `50`; `91` Metafiction consolidation addendum. Do not infer ability transfer or loss from narrator separation. |
 
 ## 5. RF, Academy, MC4 and cross-world open issues — updated 2026-09-16
@@ -76,8 +73,8 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | AF-ML-004 | UNKNOWN / OPEN | Exact relation between ML's central Temple and the religious/Temple network operating inside AetherFire. | `70`; influence and information flow are current, but branch/subordinate/affiliate status is not established. |
 | AF-ML-005 | UNKNOWN / OPEN | Exact distinction and interaction among the three-clergy Creed quorum, the three priests witnessing relic loans, and activation/issuance of a Holy Guard oath. | `70`; shared number or personnel does not establish one procedure. |
 | AF-ML-006 | UNKNOWN / OPEN | Exact relation between the plural relic catalogue and the singular regenerative-consumable seal relic, including seal target, renewal interval, custody, ownership, authority and cost. | `70` and `10`; periodic AF access is current, these mechanics are not. |
-| AF-ML-007 | UNKNOWN / OPEN | Exact legal mechanism, consent, selection criteria, post-transfer status, and return/exit rights for the Undie transferred by AF to TE. | `30` and `70`; do not infer sale, compulsory reassignment, voluntary migration, citizenship, or unchanged AF status. |
-| AF-ML-008 | UNKNOWN / OPEN | Status, rights, destination and legal recognition of Undie “freed on site” through ML covert interference. | `70` and `30`; liberation wording does not establish citizenship, custody, return or exit route. |
+| AF-ML-007 | UNKNOWN / OPEN — scope revised | Cơ chế, đồng thuận, lựa chọn, địa vị pháp lý và quyền về/rời đi cho người hành nghề Undie được AF chuyển sang TE. | `30`/`70`; không suy mua bán người, sở hữu, cưỡng bức, nhập tịch hoặc status giữ nguyên. Undie không là Slave class. |
+| AF-ML-008 | UNKNOWN / OPEN — scope revised | Đối tượng/ràng buộc của “giải phóng tại chỗ”, quyền, đích đến và công nhận pháp lý trong can thiệp ML. | `70`/`30`; wording không chứng minh đối tượng là Slave hoặc tự thành Citizen. |
 | AF-ML-010 | UNKNOWN / OPEN | Granularity of Saintess/Temple knowledge concerning leaks and covert activity. | `70`; institution-level awareness does not establish knowledge or authorization of every operative or operation. |
 
 ## 7. Stable aviation and RF airspace open issues — updated 2026-09-17
@@ -95,6 +92,9 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 
 | ID | State | Resolution |
 | --- | --- | --- |
+| AF-OPEN-005 | SUPERSEDED — not an active mapping problem | Đồ thị màu/rank Undie đã nghỉ hưu; không tiếp tục tìm crosswalk như thể nó còn hiệu lực. | `30` §2; `91` AF-UR-002. Career Rank ngoài Undie và khả năng dùng trong nghề mới chưa chốt. |
+| AF-OPEN-006 | SUPERSEDED | Bare credit/cost/bonus/unlock trong web Undie cũ không còn là biến mặc định cần ánh xạ. | `20`/`30`; `91` AF-UR-007. Cash + state-backed Credits là mốc tiền; denomination ví khách vẫn UNKNOWN độc lập. |
+| AF-OPEN-014 | SUPERSEDED — replacement design remains OPEN | Credit Line thế chấp địa vị/người và thủ tục exit cũ đã nghỉ hưu; lending/advances/remedies mới chưa chốt. | `30` §6; `91` AF-UR-007; AF-UR-OPEN-003. Không tạo thế chấp người hoặc nợ→dịch vụ tình dục. |
 | AF-AV-001 | RESOLVED | AF is the only currently confirmed actor with stable, scalable aviation infrastructure; this is not a universal/permanent monopoly claim and does not negate other actors' flight capability. |
 | AF-AV-004 | RESOLVED | No numeric flight volume is canonized. Exact capacity/throughput remains `UNKNOWN`; current wording is mass, scheduled and scalable operation. |
 | AF-OPEN-030 | RESOLVED / REMOVED | `Academy failure → Undie` is not a current or reconsideration route. Archived occurrence is provenance only. |
@@ -105,9 +105,25 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 
 | ID | Type / state | Open issue | Required baseline and dependency |
 | --- | --- | --- | --- |
-| AF-TECH-001 | UNKNOWN / OPEN | Terminal appearance/material, wearer authentication, retina/body-link/consent/deactivation, private audio, energy, foreign-currency settlement, wallet denomination, unused balance, lost/damaged deposit and wallet recovery, guest access/legal recognition/exit after revoke, responsible agencies, privacy/retention, offline continuity, deposit values and future Undie hardware relation. | `15` section 9 retains all fifteen source groups and AF-NEW-002/007; `20` controls status. AF-OPEN-006/008/014 remain open. Locking a device does not erase money/status or resolve exit rights. |
+| AF-TECH-001 | UNKNOWN / OPEN | Terminal appearance/material, wearer authentication, retina/body-link/consent/deactivation, private audio, energy, foreign-currency settlement, wallet denomination, unused balance, lost/damaged deposit and wallet recovery, guest access/legal recognition/exit after revoke, responsible agencies, privacy/retention, offline continuity, deposit values and future Undie hardware relation. | `15` section 9 retains all fifteen source groups and AF-NEW-002/007; `20` controls status. AF-OPEN-008 và triển khai thiết bị vẫn mở; AF-OPEN-006/014 đã supersede trong phạm vi Undie cũ. Locking a device does not erase money/status or resolve exit rights. |
 | AF-TECH-002 | UNKNOWN / OPEN | Industrial energy, possible future nano mechanism, standards authority, ID/payment ownership, data architecture, backend concentration, privacy/data rights, cybersecurity, robot/android production, automation share, rare materials, device/aircraft costs, procurement, banking/currency/public finance and inter-sector technology gaps. | `15` section 9 retains fifteen source groups; `80` controls aviation. Historical nano is not accepted canon and industry-scale inference does not close these items. |
 | AF-STATE-001 | UNKNOWN / OPEN | Domain-specific lawmaking/interpretation/enforcement/veto; Parliament budget/appointment/investigation powers; Crown rights; security data-sharing; recognition of civil/professional groups; lawful opposition boundary; infrastructure ownership; standards/operations authority across ID/payment/aviation/security; infrastructure funding; material/manpower/energy/political bottlenecks. | `10` section 5.1; ten State Notes questions preserved. Multipolar power does not establish constitutional precedence, agency mandates or universal high state capacity. |
+
+## Undie revamp: các câu hỏi mới — 2026-10-05
+
+Retcon đã được người dùng chấp nhận; không phải một đề xuất đang chờ chốt. Quyền nghề không phải địa vị pháp lý, khả năng có một cơ chế không chứng minh cơ chế ấy đã được triển khai.
+
+| ID | State | Câu hỏi còn mở | Nguồn hiện hành |
+| --- | --- | --- | --- |
+| AF-UR-OPEN-001 | UNKNOWN / OPEN | Danh mục nhánh/giao thoa, đào tạo, chuẩn nghề, registration/licensing/certification, cơ quan và thủ tục. | `30` §§2–4/17; Decisions 1/3/4. |
+| AF-UR-OPEN-002 | UNKNOWN / OPEN | Eligibility theo hồ sơ hình sự/Criminal Slave, hoạt động Civil tương thích billet, luật địa điểm/access và giới hạn hợp pháp độc lập. | `20`/`30` §4; không suy cho phép hoặc cấm toàn nghề. |
+| AF-UR-OPEN-003 | UNKNOWN / UNDER CONSIDERATION | Lending/advances/sponsorship, bảo đảm không phải người/status, enforcement/remedies/limits, hạch toán và nghĩa vụ/ân tình truy nguyên được. | `30` §6; không kế thừa old Credit Line. |
+| AF-UR-OPEN-004 | UNKNOWN / OPEN | Nhu cầu chợ xám/đen, hàng hóa/dịch vụ, ẩn danh/access, tổ chức/intermediary/House và quan hệ hợp đồng/bảo trợ cụ thể. | `30` §§7/9. Các ví dụ chưa phải catalogue hoặc tổ chức đã thành lập. |
+| AF-UR-OPEN-005 | UNKNOWN / OPEN | Undi thực tế, vật liệu/rập/độ che phủ/tùy biến, vai trò dữ liệu/hardware nghề, body link/consent/deactivation, quyền lệnh và tích hợp terminal. | `30` §§8/10; `15` giữ năng lực công nghệ/Guest Pass và unknown chuyển đổi. |
+| AF-UR-OPEN-006 | UNKNOWN / OPEN | Luật tử vong/điều tra/bồi thường, cơ quan và trigger an ninh, các tác nhân phản đối/cải cách, đường tiếp cận kháng chiến/scandal có căn cứ. | `30` §§11–14. Không tạo Anti-Undie Institution hoặc friendly-fire event mặc định. |
+| AF-UR-OPEN-007 | UNKNOWN / OPEN | MC2 profession, cover, organization/operator/patron, first contact, gray activity, resistance/security incident, path to mother, chronology và outcome. | `10`/`30` §16/`40`; strategic-node source chỉ là đầu vào bước thiết kế tiếp. Phả hệ và cấu trúc Clash không bị thay. |
+| AF-UR-OPEN-008 | DEFERRED | TE tourism/experience-economy revamp: institutions/economy/law/professions/Undie relation. | `30` §15; không tự thay `70`. |
+| AF-UR-OPEN-009 | UNKNOWN / REQUIRES RECONCILIATION | Chi tiết cũ không tự chuyển sang nghề mới: intake ages/counts/gender, workload/bonuses, branch-specific 1:1/prepaid workline, transport/services, inheritance/health/AI rules còn phụ thuộc kiến trúc cũ. | `91` AF-UR-LEGACY; không khẳng định chúng bị phủ định hoặc đã được khôi phục. |
 
 ## 10. Scope boundary
 

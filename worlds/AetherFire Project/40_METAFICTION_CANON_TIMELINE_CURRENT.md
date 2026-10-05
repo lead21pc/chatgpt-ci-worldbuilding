@@ -786,44 +786,17 @@ Hai lịch sử có thể chia sẻ root, actor, checkpoint hoặc causal residu
 
 ---
 
-### 14. Pathway MC2 trong Canon 2 trước khi gọi MC1
+### 14. Pathway MC2 trong Canon 2 — retcon 2026-10-05
 
-Current trajectory đã chốt:
+Tuyến mất địa vị→Civil→Undie→mại dâm bất hợp pháp→kháng chiến giả→án phản quốc không còn là triển khai hiện hành. Không dùng nó để suy ngược giấy tờ, thời lượng, triệt sản/ngoại lệ, bắt buộc dịch vụ tình dục hoặc kết quả của tuyến nghề mới.
 
-```text
-MC2 mất địa vị
-→ rơi vào Civil
-→ tự chọn Civil → Undie
-→ sống/hoạt động trong hệ
-→ đi vào mại dâm bất hợp pháp/risk channel
-→ tăng exposure với abuse / quỵt tiền / violence
-→ càng muốn tìm kháng chiến
-→ tiếp xúc channel rủi ro hơn
-→ chính quyền dựng kháng chiến giả
-→ MC2 mắc bẫy
-→ bị kết tội phản quốc
-→ rơi xuống đáy tuyệt vọng
-→ gọi MC1
-```
+Hướng đã chốt: MC2 cần tiếp cận mẹ/trục Raging Fire/chính trị AF; đường chính thức có thể quá lộ, nguy hiểm hoặc không khả dụng. Undie có thể cho môi trường nghề/xã hội/vùng xám mà không cần mất legal status. Nghề, tổ chức, vỏ bọc, patron, tiếp xúc kháng chiến/an ninh, đường tới mẹ và kết quả còn `UNKNOWN`, do `30` ghi phạm vi thiết kế.
 
-Đây là causal pathway sống của Canon 2.
+Giá trị huyết hệ và sự quan tâm của tác nhân nước ngoài giữ nguyên. Không còn triệt sản bắt buộc theo nghề; y tế/tránh thai trên tuyến mới cần chốt riêng.
 
-Divergence không xóa strategic value của MC2: foreign rivals vẫn theo dõi cô chặt. Current reproductive rule còn có ngoại lệ deliberate:
+Quan hệ Canon 1/Canon 2, hai Clash, MC2 còn sống và checkpoint gọi MC1 không bị quyết định này thay bằng một cơ chế mới. Nhưng đường nhân quả nghề nghiệp dẫn tới checkpoint phải được xây lại; checkpoint không phục hồi các sự kiện hạ cấp/bẫy cũ.
 
-```text
-Undie thông thường → triệt sản vĩnh viễn
-MC2 → không triệt sản → tránh thai phép thuật tạm thời
-```
-
-Nhà nước cố ý giữ fertility của MC2 vì Raging Phoenix/True Crown lineage value.
-
-Nó không cần lặp chain:
-
-```text
-MC2 chết → martyr → fiancé
-```
-
-của Canon 1.
+Nguồn strategic-node MC2 được chỉ định làm đầu vào thiết kế tiếp theo; không nhập các HYPOTHETICAL/PROPOSAL của nó thành lịch sử đã xảy ra.
 
 ---
 
@@ -1286,9 +1259,9 @@ CANON 2 CURRENT                          MC1 Fictionize V1.0
         │                                  để stress test
         │                                        │
 MC2 còn sống                                     ▼
-MC2 rơi xuống Undie                      CANON 1 REALIZED
-kháng chiến giả                                  │
-tuyệt vọng                                       │
+tuyến MC2 đang thiết kế                  CANON 1 REALIZED
+giao diện nghề/vùng xám còn mở                   │
+không phục hồi tuyến hạ cấp cũ                   │
         │                                        │
         └──────────── trajectory overlap ────────┘
                               │
@@ -1429,9 +1402,9 @@ EXACT CANON-1 IMPLEMENTATION IS GUARANTEED.
 | **Vai trò MC3** | MC1 nghĩ MC3 đã bỏ đi | MC3 bị kéo vào và trở thành actor lịch sử |
 | **AetherFire** | đi tới collapse cuối Arc 1 | vẫn tồn tại tại lúc MC1 được gọi |
 | **Nhà nước sau Arc 1** | AetherFire bị thay bằng nhà nước khác | chưa đi tới endpoint đó |
-| **MC2** | nhượng bộ → Nữ hoàng → chết → martyr | còn sống; bị status degradation; tự đi vào Undie; gọi MC1 |
+| **MC2** | nhượng bộ → Nữ hoàng → chết → martyr | còn sống; gọi MC1; tuyến tiếp cận mẹ/chính trị qua nghề/vùng xám còn mở, không mặc định hạ cấp |
 | **Hôn phu MC2** | cái chết MC2 kích hoạt tuyến lật AetherFire | không mặc định đi đúng trajectory Canon 1 |
-| **Undie** | bắt cóc/bị bán/cưỡng chế cực nặng, gần mô hình nô lệ cổ | subsystem thể chế hóa sâu, đã tiến hóa qua lịch sử khác |
+| **Undie** | mô hình bắt cóc/bị bán/cưỡng chế của lịch sử Canon 1 | hệ sinh thái nghề nghiệp; không Slave/caste/punishment, nhiều nhánh chồng lấn |
 | **Cấu trúc nhà nước** | grimdark/thối nát theo bản gốc | nghị viện và nhiều subsystem đa cực phát triển sâu |
 | **Tri thức MC1** | rất cao | lỗi thời nghiêm trọng |
 | **Tri thức MC3** | không mặc định biết phần V1.0 MC1 viết sau khi mình biến mất | có lived knowledge về divergence nhưng không toàn tri |
@@ -1447,8 +1420,8 @@ EXACT CANON-1 IMPLEMENTATION IS GUARANTEED.
 | MC2 đã chết | MC2 còn sống và gọi mình | trajectory + nhân vật |
 | AetherFire đã bị đánh sập | AetherFire vẫn vận hành | chính trị + lịch sử |
 | nhà nước thay thế đã tồn tại | nghị viện AetherFire vẫn nắm quyền | thể chế |
-| Undie là hệ bắt cóc/bị bán | Undie là subsystem pháp lý–hành chính rất sâu | ontology |
-| MC2 không bao giờ tự vào Undie | MC2 đã tự gieo mình vào Undie sau divergence | agency + tâm lý |
+| Undie là hệ bắt cóc/bị bán | Undie là hệ sinh thái nghề nghiệp, không địa vị Slave | ontology |
+| MC2 không bao giờ tự vào Undie | tuyến nghề/vùng xám mới chưa chốt; không suy từ mất địa vị | giới hạn tri thức / pathway mở |
 | MC3 không còn tham gia project | MC3 đã sống trong Fiction 1 khoảng 5 năm | lịch sử meta |
 | MC1 hiểu fiction mình viết | tri thức của MC1 là baseline lỗi thời | nhận thức |
 

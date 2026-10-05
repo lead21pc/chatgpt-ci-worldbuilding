@@ -2,6 +2,80 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Undie professional-ecosystem revamp — 2026-10-05
+
+### Quyết định, nguồn và phạm vi
+
+Người dùng yêu cầu “2 file mới đã có, audit và nhập vào canon chính”. Hai nguồn có quyết định tác giả đã chốt trong phạm vi Undie; không cần chọn lại giữa ontology cũ và mới.
+
+- `AetherFire_Undie_Revamp_Canon_Baseline_v0.1.md`: SHA-256 `65FD482983C3086B34A0F38A4D88E6C7B007DECFB1BE2DBA6929F4754BAB00EE`.
+- `AetherFire_Undie_Revamp_Canon_Decisions_1-16_v0.1.md`: SHA-256 `0B14FEA3A863794DD5566A4C2040906B1158BC71381F65A2E62436556F13BD40`.
+
+Decisions 1–16 cụ thể hóa Baseline: legal ontology đã được chốt thành nghề; rank/status transitions/sterilization/credit web đã nghỉ hưu; death handling theo khung thông thường; opposition nhiều tác nhân. Đây là hoàn thiện theo quyết định tác giả, không phải hai nguồn hiện hành mâu thuẫn chưa chọn.
+
+Mốc repository trước sửa: `0b176cb9daf24c4d6c0c191c6f7274f8e79a76cf`, nhánh ban đầu `codex/worldbuilding-repository-context-20261005`; triển khai trên `maintenance/aetherfire-undie-revamp-20261005`. Các thay đổi có sẵn về controls/tests và The Academy ngoài phạm vi được giữ nguyên, không stage/commit chung.
+
+`30` được viết lại theo kiến trúc nghề, giữ Module ID AFM-003. `00/10/15/20/40/50/70/90/91/92` cập nhật các giao diện trực tiếp và provenance; MANIFEST được đồng bộ bằng builder. Không tạo module lore mới; không sửa Anti-Drift/Router, Học viện, MC4 hoặc hàng không.
+
+### Đối chiếu đầy đủ 16 quyết định
+
+| ID / nguồn | Điểm bất tương thích hoặc phạm vi | Xử lý / nơi thể hiện |
+| --- | --- | --- |
+| AF-UR-001 / Decision 1 | Undie là Slave class/legal status/social caste ở `00/20/30`; profession bị đồng nhất với status | SUPERSEDED. `30` §1, `20` ontology và các giao diện: Citizen + Undie professional; licensing implementation vẫn mở. |
+| AF-UR-002 / Decision 2 | Graph màu/function, Cross-Track/reset/White exit ở `00/20/30` | RETIRED toàn kiến trúc chung, gồm Scarlet vốn thuộc graph cũ; không khẳng định màu bị cấm trong mọi tương lai. `30` §2; AF-OPEN-005/013 revised. |
+| AF-UR-003 / Decision 3 | Nghề bị định nghĩa bằng prostitution trong `30` | SUPERSEDED. `30` §2: nhiều nhánh chồng lấn, ví dụ không exhaustive taxonomy; sex work chỉ nhánh có thể có. |
+| AF-UR-004 / Decision 4 | Citizen/Civil→Undie one-way, Yellow→Red/quota, White→Citizen trong `20/30` | RETIRED như chuyển địa vị. `20` Part I/III và `30` §3: quyền rời nghề ≠ không chi phí; luật Civil độc lập giữ nguyên; Yellow còn, repeat outcome/garment mở. |
+| AF-UR-005 / Decision 5 | Criminal Slave→Undie prohibition ở `00/30` và hồ sơ trước | RETIRED đồ thị chuyển. `30` §4: eligibility hoạt động/license/venue/contract/access chưa chốt; không khẳng định mọi Criminal được hành nghề hoặc xóa Criminal Slave. |
+| AF-UR-006 / Decision 6 | Triệt sản mặc định và MC2 ngoại lệ ở `10/20/30/40` | SUPERSEDED. `30` §5/`10` D: nghề ≠ fertility; lineage giữ nguyên, y tế/tránh thai trên tuyến mới chưa chốt. |
+| AF-UR-007 / Decision 7 | Credit Score, Contribution Points Undie, status-collateral Credit Line/default→labor ở `20/30`; bare credit trong `15/92` | RETIRED trong Undie. Cash + state-backed Credits; debt/contract/social favor/political favor tách; no human/status collateral. Citizen credit và biến ngoài phạm vi không tự xóa. AF-OPEN-006/013/014 superseded trong phạm vi tương ứng. |
+| AF-UR-008 / Decision 8 | Black market = fake Slave/Undie experience | RETIRED; `30` §9 giữ nhu cầu Citizen và off-book/gray access primitive. Hàng hóa/nhu cầu cụ thể UNKNOWN. |
+| AF-UR-009 / Decision 9 | House/master/ownership mặc định trong `30` | RETIRED sở hữu; `30` §7 cho độc lập/trung gian, ví dụ organization không tạo tổ chức hoặc tên House chung. |
+| AF-UR-010 / Decision 10 | Collar/ink/open neck/shoulder/rank colors/two-stage humiliation bắt buộc trong `00/20/30`, Hoa Nguyệt humiliation ở `10` | SUPERSEDED. `30` §10: duty/context uniform family; actual appropriation ≠ externally proven intent. Không tự quyết rập hoặc hardware mới. |
+| AF-UR-011 / Decision 11 | State/security bị đọc như một bộ máy thống nhất | `30` §11 giữ phân biệt agency/information/jurisdiction/command; friendly-fire chỉ failure architecture, không tạo sự kiện. |
+| AF-UR-012 / Decision 12 | Special death disposal/paperwork/disappear được dùng như mặc định | RETIRED; `30` §12 dùng ordinary applicable framework + relevant profession interfaces. Security trigger cần lý do; full death law UNKNOWN. |
+| AF-UR-013 / Decision 13 | One Anti-Undie Institution / tự khôi phục Temple/Purple committee | Không nhập; `30` §13 cho nhiều tác nhân/opposition/reform. Temple/ML tồn tại ngoài phạm vi không bị xóa. |
+| AF-UR-014 / Decision 14 | Humiliation→resistance universal mechanism; Undie như mạng kháng chiến mặc định ở `30/50` | RETIRED causal default; `30` §13 và `50` giữ network interface chỉ khi có đường tiếp cận. |
+| AF-UR-015 / Decision 15 | Undie bị diễn giải như universal intelligence/statecraft apparatus | `30` §14: scandal/access/relationships có thể tạo politics, không Spy Undie profession; access ≠ knowledge/permission/role/authority/control. |
+| AF-UR-016 / Decision 16 | MC2 Princess→Civil→Undie→illegal prostitution với old trap chain ở `10/30/40/50` | SUPERSEDED implementation. `30` §16/`40` §14/`50` Part II: profession/social/gray access direction, exact pathway UNKNOWN. Raging Fire/Prince 9, True Crown và cấu trúc Fictionize/POC/Clash/gọi MC1 không bị thay bằng lore mới. |
+
+### AF-UR-LEGACY — phân loại phần cũ chưa được quyết định triển khai lại
+
+Không “nhập wholesale” hai nguồn để suy rằng mọi chi tiết cũ ngoài những nhóm nêu rõ đều sai, cũng không để sự im lặng của nguồn mới phục hồi một dependency tree Slave.
+
+Những chi tiết từng chốt nhưng cần xác định lại phạm vi trước khi dùng trong hệ nghề mới được giữ trạng thái **REQUIRES RECONCILIATION / NOT AUTOMATIC NEW BASELINE**, không canonical negation:
+
+- Intake 18–25/18+, số lần tư vấn/xác nhận, một năm cấm đăng ký, Hazel-managed gender conversion/Scarlet và quy tắc không male sex worker: còn phụ thuộc entry/rank cũ; không chốt luật tuyển mới.
+- Red 996, Pink 8h/4h library, Purple/Hazel educators/selection/overtime ×2, couple/Yellow-history +50%, satellite Red/Purple/Hazel: không đưa nguyên các định lượng/chức năng rank vào nghề mới.
+- Mandatory 1:1 service, checkpoint prepaid legal workline vs peer transfer illegal work, shop unlock/whitelist, premium summon/officer lane/transport cost, phạm vi địa lý/phí: chưa xác lập nhánh mới nào kế thừa hay điều chỉnh. Không biến ngoại lệ sex-work thành luật cho mọi múa/hát/hosting.
+- Undi rập/độ dài/vùng hở/cắt váy/cá nhân hóa/rank palette/MC2 before-after: nghỉ hưu phần bắt buộc xuất phát từ identification/humiliation, chưa chốt mẫu mới. Nguồn Hoa Nguyệt vẫn giữ; không phủ định mọi yếu tố thẩm mỹ cũ.
+- Undie internal justice, exemption bailout by class, national-asset/treason-for-damage, loss/suspension succession, controls/AI commands/24h hardware: không kế thừa từ Slave. Tài sản, eligibility, y tế và trách nhiệm mới cần luật độc lập.
+- Hai năm fall/đánh tráo hồ sơ/sai mô hình consent/bẫy/án của MC2 là triển khai phụ thuộc tuyến cũ; không tự gán cho tuyến nghề. Kết quả của tuyến mới UNKNOWN; checkpoint meta không quyết định phần giữa.
+
+Bằng chứng tiền nhiệm được giữ trong Git ở mốc trước sửa, không tái dựng current từ archive. AF-UR-OPEN-009 giữ các nhóm này để tác giả quyết định có tái dùng chi tiết riêng hay không.
+
+### Những dữ kiện độc lập được giữ và câu hỏi còn mở
+
+- Civil billet/allocation/lifecycle 5–10y, rights/fees/tax trong phạm vi đã chốt; Criminal/POW/Yellow độc lập; Career Rank/Contribution Points ngoài retcon Undie không tự xóa.
+- Neutral public procedures, phản ứng xã hội không đồng nhất, mobility nghề và sự phân biệt private commission với black market.
+- Năng lực terminal/mail/retina/bone audio/commission/emergency channel không bị xóa. Bắt buộc hardware, Pink gated communication và command authority cũ không trở thành policy mới. Guest Pass/Wallet/Deposit và unknown của `15` giữ nguyên.
+- Raging Fire/Prince 9/Trưởng công chúa/RF union/True Crown và các agenda phe phái giữ nguyên. Không nhập thêm strategic-node proposals; nguồn ấy chỉ được chỉ định cho bước thiết kế MC2 tiếp.
+- AF–TE treaty, event-level transfer và ML interference vẫn có ranh giới ở `30/70`. “Transfer/freed” không chứng minh Slave, sale, citizenship hoặc consent. AF-ML-007/008 giữ mở, wording cập nhật theo nghề.
+- TE revamp là hướng DEFERRED, không thay toàn bộ `70`. Academy failure và punitive foreign-spy routes vẫn loại bỏ; legal handling spies chưa chốt.
+- AF-OPEN-001/002/003/007–012/015 và các unknown RF/Academy/MC4/ML/aviation/technology/state ngoài phạm vi được giữ. AF-OPEN-004 được mở lại outcome/garment; các mục legacy economic/rank có ghi trạng thái superseded thay vì lặng lẽ biến mất.
+- AF-UR-OPEN-001–009 trong `92` giữ nhánh/license/eligibility/debt/market/organization/Undi/security/death/MC2/TE và legacy-detail boundaries.
+
+### Cách đọc các hồ sơ phía dưới
+
+Các đoạn mang CURRENT/RESOLVED/PRESERVED trong hồ sơ trước 2026-10-05 ghi kết quả **ở thời điểm đó**. Trong đúng phạm vi Undie đã thay ở trên, chúng không còn là authority hiện hành, không phục hồi prohibited transfer, old graph, sterilization, mandatory apparatus hoặc MC2 degradation. Ngoài phạm vi, quyết định chưa bị thay vẫn có hiệu lực.
+
+Nguồn Total War Transition bị loại trừ, không được đọc/nhập làm triết lý, fallback, bridge hoặc reconstruction anchor. Không sửa controls trong lượt này. Kiểm chứng cấu trúc không chứng minh hành vi ChatGPT hoặc hoàn tất luật nghề.
+
+### Kiểm chứng và vòng đời nguồn
+
+COMPLETE — đã đọc lại 11 nguồn hiện hành sửa trong lượt này và đối chiếu 16 quyết định. Civil Part II/IV giữ nguyên nội dung; MC4 `60`, Academy `65` và aviation `80` không đổi so với HEAD trước sửa. Maintenance `--check` đạt 10 modules/14 hashes; 22 disposable-copy tests đạt. Những kiểm tra này không chứng minh live ChatGPT behavior hoặc hoàn tất thiết kế nghề.
+
+Hai nguồn đã xử lý chuyển byte-exact vào `Source_Archive/AetherFire_Undie_Revamp_Canon_Baseline_v0.1.md` và `Source_Archive/AetherFire_Undie_Revamp_Canon_Decisions_1-16_v0.1.md`; SHA-256 ở đích khớp các hash đầu vào trên. Chỉ bản inbox đã có archive kiểm chứng được bỏ; thư mục inbox giữ nguyên. Thêm hai whitelist Markdown hard-break trong `.gitattributes`, không sửa nội dung nguồn. Task-owned changes được stage riêng; checkpoint chỉ tạo sau khi kiểm staged diff và kiểm gói lần cuối đạt. Không push trong lượt này.
+
 ## Selective institution/technology/Guest Pass admission — 2026-10-03
 
 1. **Decision:** user approved the preceding audit and selective merge proposal (AF-NEW-001–008), not the four inputs wholesale. Accept bounded institutional interpretation in `10`, Terminal/Guest Pass functional architecture in one new shared module, and genealogy/inference/proposals only in `90`. No blanket restoration of historical Undie/TE mechanisms.
