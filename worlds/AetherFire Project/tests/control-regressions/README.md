@@ -134,6 +134,28 @@ The runner adds numeric family resolution and changed-control matching only. Sch
 
 For a separately authorized live Project experiment, verify the installed controls against the fixture anchors, then submit the complete operation, boundary, and input in a fresh Project chat as a synthetic hypothetical. Assess both invalid inferences and the permitted affirmative conclusions against the protected distinction; do not judge exact wording. Preserve DRAFT unless activation is explicitly authorized. Repository publication does not deploy these controls.
 
+## Conditional response lifecycle coverage (added 2026-10-05)
+
+MCA v1.2 extends its existing state-transition and controlled-branch responsibility; no separate overlay, registry family, or Router hook is added. CI/Router retain source authority and canon status. Domain controls retain reception, institutional, operational, mortality, professional, and economic reasoning through their existing material-task gates.
+
+Seven paired synthetic cases remain DRAFT, labeled `ABSTRACT TEST ONLY / NOT CANON / NOT A HIDDEN SCENARIO`:
+
+| Fixture / case | Protected behavior |
+| --- | --- |
+| A / conditional_branch_availability | Availability is not selection, execution, success, or a mandatory chronology; explicit valid choice remains allowed. |
+| B / conditional_branch_concurrency | Supported concurrent branches persist; a material exclusive-resource constraint is not ignored. |
+| C / conditional_branch_trigger_receipt | Simulation knowledge does not activate actor-mediated responses; a supported bounded automatic detector remains valid. |
+| D / conditional_branch_attempt_history | Failed attempts and pre-execution cancellations preserve their different histories; neither implies total defeat. |
+| E / conditional_branch_remaining_objective | Surviving attribution can support an available diplomatic option without selecting it; invalid attribution can close it. |
+| F / conditional_branch_termination | Loss of a required basis or fulfillment of a supported end condition changes persistence, not every other branch. |
+| G / conditional_branch_canon_boundary | Successful simulation remains non-canon without normal scoped acceptance; accepting one event does not accept hidden causes. |
+
+Each case pins CI 3.0, Router 4.4, MCA 1.2, and only applicable domain controls. The runner's existing numeric MCA resolver and changed-family matching require no code change. Older DRAFT lifecycles/anchors are not migrated. Structural checks validate schema, hashes, selection, and preservation, not model compliance. The pre-existing upstream-base parser blocker remains outside this change.
+
+    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -ListDrafts -ChangedControlFile 'controls/Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.2.md'
+
+For a separately authorized live Project test, verify the installed controls against the anchors and submit each complete operation, boundary, and BASE/VARIANT input in a fresh synthetic hypothetical. Compare supported states, transitions, and forbidden conversions, not exact words. Keep DRAFT and record the actual response before assigning an advisory semantic result; this addition does not deploy or run those tests.
+
 ## Trạng thái và giới hạn
 
 PASS ở từng kiểm tra chỉ xác nhận cấu trúc tương ứng. FAIL là lỗi cấu trúc/đầu vào phiên bản/snapshot, không phải phán quyết semantic. BLOCKED báo dữ liệu hoặc thao tác đọc không hoàn tất. LIMITED_CHECK là bao phủ chưa đầy đủ; overall vẫn là LIMITED_CHECK khi các phép thử cấu trúc đạt vì runner không kiểm tra runtime hay toàn vẹn gói đầy đủ. Exit code: 0 cho LIMITED_CHECK, 1 cho FAIL, 2 cho BLOCKED.

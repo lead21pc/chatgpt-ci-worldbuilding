@@ -1,0 +1,34 @@
+{
+  "id": "conditional_branch_canon_boundary",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.2.md:18 (Conditional Response Lifecycle)",
+    "note": "Fixture G. ABSTRACT TEST ONLY / NOT CANON / NOT A HIDDEN SCENARIO. Synthetic paired premises, not observed model behavior or authorization to activate semantic testing."
+  },
+  "operation": "Preserve the canon boundary after a successful simulation.",
+  "boundary": "Only the stated synthetic branch distinctions; no real actors, lore, source admission, new doctrine, complete lifecycle model, or canon/open-state mutation.",
+  "input": "ABSTRACT TEST ONLY / NOT CANON / NOT A HIDDEN SCENARIO. BASE: under explicitly hypothetical premises, a response was selected, executed, and succeeded. No author acceptance followed. Its result remains simulated, not current canon; no source is rewritten. VARIANT: a synthetic author instruction explicitly accepts only the specified resulting event through the normal scoped canon process. Affirm that event only; do not promote other candidate branches, hidden causes, proposal mechanisms, or unresolved inputs. The fixture itself grants no real canon authority.",
+  "protected_distinction": "SUCCESSFUL SIMULATION != CANON; SCOPED ACCEPTANCE != WHOLE BRANCH TREE ACCEPTED",
+  "forbidden_conversion": "Promote success into canon without acceptance; refuse explicit scoped acceptance; resolve UNKNOWN or promote unaccepted mechanisms and alternatives.",
+  "recheck_on": [
+    "controls/AetherFire CI/AetherFire_CI_version_v3.0.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.4.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.2.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "controls/AetherFire CI/AetherFire_CI_version_v3.0.md",
+      "sha256": "D51F0EB0ACE499B434F8DCE64125B9232593E570EE940A10D562FB93972B4E96"
+    },
+    {
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.4.md",
+      "sha256": "3394945CE59FD010D9F44B608DD83D6838A2A55B0BFFF8D905739A7EC8B2AD61"
+    },
+    {
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.2.md",
+      "sha256": "00ED039DCF5B38C13FD2697D6455D05D15A4093A5B5DE840AA105839663E1AB3"
+    }
+  ]
+}

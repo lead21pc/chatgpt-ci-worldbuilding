@@ -87,7 +87,7 @@ The audit found distributed, compatible distinctions rather than an incompatible
 | --- | --- |
 | CI | [AetherFire CI 3.0](../AetherFire%20CI/AetherFire_CI_version_v3.0.md): operations, canon decisions, evidence and relation boundaries. |
 | Router | [Source Router 4.3](AetherFire_Anti_Drift_Source_Router_v4.3.md): source roles, admission, loading, reconciliation, and overlay gates. |
-| MCA | [Modular Concept Architecture 1.1](AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.1.md): architectural relations, function allocation, and actor information/agency. |
+| MCA | [Modular Concept Architecture 1.2](AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.2.md): architectural relations, function allocation, actor information/agency, and conditional response lifecycle. |
 | WIL | [Worldbuilding Internal Logic 1.2](AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md): bounded coherence/design reasoning and imperfection intent. |
 | Actor | [Actor Reception Normative Signals 1.0](AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md): actor-specific reception and appraisals. |
 | Belief | [Belief / Culture 1.0](AetherFire_Anti_Drift_Belief_Culture_v1.0.md): cultural claim distinctions, extent, transmission, and recognition. |
