@@ -29,7 +29,7 @@ Start with the source index, select the relevant current documents, and distingu
 
 Controls guide this work but do not supply missing lore or turn a proposal into canon. A source router determines applicable source authority and overlay scope; a Custom Instructions file governs behavior. Keep those roles separate when reading or changing either collection.
 
-The repository currently contains [CI 3.0](controls/AetherFire%20CI/AetherFire_CI_version_v3.0.md) and [Router 4.3](controls/Anti-Drift%20Source/AetherFire_Anti_Drift_Source_Router_v4.3.md). Router 4.3 explicitly requires a separately installed CI 3.0 and declares itself a final local control. That relationship does not prove which files are installed in a live ChatGPT Project or Library. Follow explicit control requirements and source status; a larger version number alone is not a universal authority rule.
+The repository currently contains [CI 3.0](controls/AetherFire%20CI/AetherFire_CI_version_v3.0.md) and [Router 4.4](controls/Anti-Drift%20Source/AetherFire_Anti_Drift_Source_Router_v4.4.md). Router 4.4 explicitly requires a separately installed CI 3.0 and declares itself a final local control. That relationship does not prove which files are installed in a live ChatGPT Project or Library. Follow explicit control requirements and source status; a larger version number alone is not a universal authority rule.
 
 Directory organization in Git does not relocate a live Project's files or change its configured Library folder. Publishing repository changes is separate from installing controls and validating live model behavior.
 

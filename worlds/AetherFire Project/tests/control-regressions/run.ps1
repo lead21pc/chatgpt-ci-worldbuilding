@@ -136,7 +136,8 @@ $families = @(
     [pscustomobject]@{ name = 'Total_War_RP'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Total_War_RP_v'; pattern = '^AetherFire_Anti_Drift_Total_War_RP_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
     [pscustomobject]@{ name = 'Mortality_Relationship_Plot_Immunity'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v'; pattern = '^AetherFire_Anti_Drift_Mortality_Relationship_Plot_Immunity_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
     [pscustomobject]@{ name = 'Actor_Reception_Normative_Signals'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v'; pattern = '^AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
-    [pscustomobject]@{ name = 'Belief_Culture'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Belief_Culture_v'; pattern = '^AetherFire_Anti_Drift_Belief_Culture_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' }
+    [pscustomobject]@{ name = 'Belief_Culture'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Belief_Culture_v'; pattern = '^AetherFire_Anti_Drift_Belief_Culture_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' },
+    [pscustomobject]@{ name = 'Undie_Professional_Gray_Zone'; directory = 'controls/Anti-Drift Source'; stem = 'AetherFire_Anti_Drift_Undie_Professional_Gray_Zone_v'; pattern = '^AetherFire_Anti_Drift_Undie_Professional_Gray_Zone_v(?<version>\d+\.\d+(?:\.\d+)?)\.md$' }
 )
 $resolutions = @(
     foreach ($family in $families) {
