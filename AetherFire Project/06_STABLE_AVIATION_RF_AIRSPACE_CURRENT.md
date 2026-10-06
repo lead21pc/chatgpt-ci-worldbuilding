@@ -4,11 +4,11 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: AetherFire stable/scalable aviation, AF–RF aviation dependency, RF airspace, ATC, aviation economy, mixed airspace, and air-route leverage.
 > Authority boundary: Controls detailed stable-aviation and RF-airspace canon within its declared scope.
-> Cross-domain owner boundary: Global and geopolitical interfaces are controlled by `AFM-001`; unresolved RF constitutional authority remains subject to the controlling world/institutional and open-state sources.
+> Cross-domain owner boundary: Global and geopolitical interfaces are controlled by `AFM-001`; AF national profile by `AFM-013`; RF internal canon and unresolved constitutional authority by `AFM-014` and open-state sources; AF political bargaining by `AFM-011`.
 > Load mode: `FULL_FILE`
 
 > **Trạng thái:** CURRENT CANON / CONTROLLING STABLE AVIATION & RF AIRSPACE DOMAIN — integrated 2026-09-17; RF retcon 2026-10-06.
-> **Authority boundary:** this file controls AF stable/scalable aviation, the AF–RF aviation dependency, airspace/ATC/economy separation, mixed airspace and air-route leverage. `10` retains only the world/geopolitics interface.
+> **Authority boundary:** this file controls AF stable/scalable aviation, the AF–RF aviation dependency, airspace/ATC/economy separation, mixed airspace and air-route leverage. `01` retains only the world/geopolitics interface.
 > **Interpretation boundary:** AF is the only currently confirmed actor with stable, scalable aviation infrastructure; this is not proof that no other actor can ever possess it. Statements about RF response describe incentives and strategic direction for relevant RF/member-state authorities, not proof of a unitary RF policy or completed implementation.
 > **Cross-project exclusion:** the source sentence about The Kingdom airspace is not imported as AetherFire lore or as a claim about The Kingdom canon.  
 > **Phạm vi:** chỉ chốt logic hàng không ổn định của AetherFire, tác động lên RF, kinh tế phụ thuộc đường hàng không và kiểm soát không lưu.  
@@ -21,7 +21,7 @@
 Các điểm sau đã có trong current canon và là nền của phần chốt này:
 
 - **AetherFire (AF)** là một quốc gia Neo Fantasy dùng engineering để cưỡng ép compatibility giữa phép thuật và công nghệ ở cấp hạ tầng.
-- **RF** là một **liên hiệp lục địa gồm nhiều quốc gia thành viên**, không phải một vương quốc đơn nhất hoặc khối tu tiên. Huyết hệ Raging Fire là node riêng; `25` giữ toàn bộ quyết định 2026-10-06.
+- **RF** là một **liên hiệp lục địa gồm nhiều quốc gia thành viên**, không phải một vương quốc đơn nhất hoặc khối tu tiên. Huyết hệ Raging Fire là node riêng; `30` giữ toàn bộ quyết định 2026-10-06.
 - Exact constitutional form của RF vẫn **UNKNOWN**; không tự chọn federation, confederation, tributary hierarchy hay empire-of-states.
 - AF và RF bị ngăn bởi đại dương.
 - Giao lưu AF↔RF **phụ thuộc mạnh vào đường hàng không** vì vùng biển có **Seaborne**, khiến hải vận cực kỳ nguy hiểm.
@@ -31,7 +31,7 @@ Các điểm sau đã có trong current canon và là nền của phần chốt 
 Nguồn baseline:
 
 - `00_AETHERFIRE_CONSOLIDATION_INDEX.md`
-- `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`
+- `01_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`
 - `91_RECONCILIATION_RECORD.md`
 - `92_OPEN_ISSUES_CURRENT.md`
 

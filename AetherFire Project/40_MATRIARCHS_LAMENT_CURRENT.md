@@ -8,7 +8,7 @@
 > Load mode: `FULL_FILE`
 
 > **Trạng thái:** CURRENT CANON / CONTROLLING MATRIARCH'S LAMENT DOMAIN — integrated 2026-09-11; architecture split recorded 2026-09-16; Matriarch/Saint's Fresh delta 2026-10-06
-> **Authority boundary:** this file controls internal Matriarch's Lament governance, Temple/Cult, Matriarch origin and Saint's Fresh, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and the northeastern tribes. Cross-domain interfaces are summarized in `10`; Undie professional and unresolved legal interfaces are controlled by `30`; cross-world status is controlled by `40`.
+> **Authority boundary:** this file controls internal Matriarch's Lament governance, Temple/Cult, Matriarch origin and Saint's Fresh, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and the northeastern tribes. Cross-domain interfaces are summarized in `01`; Undie professional and unresolved legal interfaces are controlled by `13`; cross-world status is controlled by `03`.
 > **Trúc Nha boundary:** membership and regional role in ML are current canon. A summoned/cross-world origin remains `UNDER CONSTRUCTION / NOT CURRENT CANON`.  
 > **Phạm vi:** retcon Holy State, quan hệ với AetherFire, Transfusion EasterFire, Trinity Hexagon, Matriarch/Saint's Fresh, Thần điện, Thánh Nữ Trần Trúc Nha và các dependency lịch sử liên quan.
 > **Không phải:** full world bible, full constitution, full economy, full military doctrine hoặc full magic system.  
@@ -474,7 +474,7 @@ Undie trong giao diện AF–TE/ML nay là căn tính nghề, không một lớp
 
 “Giải phóng tại chỗ” là wording sự kiện/tuyên bố trong hoạt động can thiệp, không đủ chứng minh đối tượng là Slave, hoàn thành chuyển citizenship, tự nguyện được cứu hay được ML tiếp nhận. Hoạt động can thiệp/frame vẫn giữ phạm vi chính trị; đối tượng/ràng buộc được giải thoát cần làm rõ theo căn tính nghề mới (AF-ML-008).
 
-TE tourism/experience-economy revamp là hướng `DEFERRED` ở `30`, không tự thay các thể chế/quan hệ TE trong miền này.
+TE tourism/experience-economy revamp là hướng `DEFERRED` ở `13`, không tự thay các thể chế/quan hệ TE trong miền này.
 
 
 ### CANON
@@ -647,7 +647,7 @@ Các điểm sau **chưa cần mở** để core ML chạy:
 - full Saintess selection system;
 - full succession mechanics;
 - full map mới giữa ML, TE và AF;
-- cơ chế bảo hộ/custody, địa điểm, tư cách pháp lý và phạm vi biết: mẹ MC2 được TE bảo hộ theo chốt 2026-10-05 ở `10`, không còn unknown về host theo nghĩa bảo hộ.
+- cơ chế bảo hộ/custody, địa điểm, tư cách pháp lý và phạm vi biết: mẹ MC2 được TE bảo hộ theo chốt 2026-10-05 ở `01`, không còn unknown về host theo nghĩa bảo hộ.
 
 ---
 
@@ -669,7 +669,7 @@ mẹ MC2 → được TE bảo hộ
 phạm vi biết → chỉ một số tác nhân
 ```
 
-`25` kiểm soát chi tiết chính trị của dữ kiện này; `10` giữ giao diện toàn cục. Không suy ML custody, quyền sở hữu/giam giữ, tị nạn, cơ quan TE, địa điểm hoặc toàn TE biết. Các cơ chế pháp lý và thiết kế lại TE vẫn UNKNOWN / DEFERRED.
+`12` kiểm soát chi tiết chính trị của dữ kiện này; `01` giữ giao diện toàn cục. Không suy ML custody, quyền sở hữu/giam giữ, tị nạn, cơ quan TE, địa điểm hoặc toàn TE biết. Các cơ chế pháp lý và thiết kế lại TE vẫn UNKNOWN / DEFERRED.
 
 ---
 
@@ -724,7 +724,7 @@ UNKNOWN ≠ PERMISSION TO INVENT.
 
 ## 25. Matriarch, nguồn thánh lực và Saint's Fresh — chốt 2026-10-06
 
-Nguồn tác giả `AetherFire_Matriarchs_Lament_Matriarch_Origin_Saints_Fresh_Canon_2026-10-06.md`; yêu cầu audit và nhập canon. Giữ đầy đủ §§1–15 dưới đây; chỉ đổi cấp heading để chứa trong module. `40` giữ thứ tự nhân quả Fiction 0/điểm đến Fiction 1, không định nghĩa cơ chế transfer chung. Trúc Nha và Matriarch không bị nhập làm một; nguồn gốc Trúc Nha vẫn UNDER CONSTRUCTION.
+Nguồn tác giả `AetherFire_Matriarchs_Lament_Matriarch_Origin_Saints_Fresh_Canon_2026-10-06.md`; yêu cầu audit và nhập canon. Giữ đầy đủ §§1–15 dưới đây; chỉ đổi cấp heading để chứa trong module. `03` giữ thứ tự nhân quả Fiction 0/điểm đến Fiction 1, không định nghĩa cơ chế transfer chung. Trúc Nha và Matriarch không bị nhập làm một; nguồn gốc Trúc Nha vẫn UNDER CONSTRUCTION.
 
 ### 1. Matriarch — nguồn gốc
 

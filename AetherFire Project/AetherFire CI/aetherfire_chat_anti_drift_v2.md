@@ -73,11 +73,20 @@ After the route-only pass, open the active index and `92_OPEN_ISSUES_CURRENT.md`
 
 | Task domain | Required current source |
 | --- | --- |
-| world, state, institutions, geopolitics, foreign relations | `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` |
-| status, Citizen, Civil, Yellow, POW, Criminal, labor, cross-status transition | `20_STATUS_CIVIL_LABOR_CURRENT.md` |
-| Undie, Undi, intake, consent, ranks, mobility, White, work/economy/access, visual system | `30_UNDIE_SYSTEM_CURRENT.md` |
-| Fiction 0/1, Fictionize, POC, Canon 1/2, timeline, clashes, causal overlap | `40_METAFICTION_CANON_TIMELINE_CURRENT.md` |
-| narrator, POV, humor, narrator split | `50_NARRATORS_POV_AND_HUMOR_CURRENT.md`; also `40` when clash causality matters |
+| world, geopolitics, cross-national interfaces | `01_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` |
+| AF national profile, Mage Council, northeastern site, lab/cult/gate, institutional design principles | `10_AETHERFIRE_NATIONAL_CANON_CURRENT.md`; also `12` for political authority and actor knowledge |
+| AF politics, dynasty, security, MC2, AF–RF bargaining | `12_POLITICS_DYNASTIC_SECURITY_CURRENT.md`; also `30` for RF internal politics and southern genealogy |
+| world technology, terminal architecture, AF Guest Pass application | `02_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` |
+| Academy internal organization, training, admission, scholarship, uniform | `14_BATTLEMAGE_ACADEMY_CURRENT.md` |
+| Hoa Nguyệt national canon and trade geography | `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` |
+| RF union, member blocs, southern genealogy, removal of cultivation premise | `30_RF_NATIONAL_CANON_CURRENT.md` |
+| Matriarch's Lament, Temple, relics and regional interfaces | `40_MATRIARCHS_LAMENT_CURRENT.md` |
+| stable aviation, RF airspace, transport-capacity boundaries | `06_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` |
+| MC4 identity and personal application | `05_MC4_IDENTITY_CURRENT.md`; also `14` for Academy rules |
+| status, Citizen, Civil, Yellow, POW, Criminal, labor, cross-status transition | `11_STATUS_CIVIL_LABOR_CURRENT.md` |
+| Undie, Undi, intake, consent, ranks, mobility, White, work/economy/access, visual system | `13_UNDIE_SYSTEM_CURRENT.md` |
+| Fiction 0/1, Fictionize, POC, Canon 1/2, timeline, clashes, causal overlap | `03_METAFICTION_CANON_TIMELINE_CURRENT.md` |
+| narrator, POV, humor, narrator split | `04_NARRATORS_POV_AND_HUMOR_CURRENT.md`; also `03` when clash causality matters |
 | genealogy, retired designs, reconsideration | `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md`, never as current world-bible authority |
 | conflict reasoning, supersession, provenance | the relevant entries in `91_RECONCILIATION_RECORD.md` |
 

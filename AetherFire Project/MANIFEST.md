@@ -12,15 +12,19 @@
 
 <!-- END GENERATED PACKAGE METADATA -->
 
+## National-family organization — 2026-10-07
+
+Current paths are grouped by domain: `01–06` shared/transnational, `10` AF profile with `11–14` specialist sources, `20` Hoa Nguyệt, `30` RF, `40` ML; `90–92` remain history/audit. Filename prefix is not a Module ID or command relation. Original twelve IDs remain stable; AFM-013/014 admit AF/RF profiles. See `91` for the predecessor map and moved-content authority. `02` is the world technology foundation; AF guest-service policy retains its explicit local scope. Archive inventory and bytes remain historical and unchanged.
+
 ## Politics domain admission — 2026-10-05
 
-`25_POLITICS_DYNASTIC_SECURITY_CURRENT.md` / `AFM-011` controls detailed political institutions, dynasty/MC2–AF–RF bargaining and security contingencies. Political sections move from `10` without changing their accepted facts; `10` retains global/ontology interfaces. `30` owns professions, `40` metafiction. Proposals/hypotheses/deferred remain in `90`, open decisions in `92`, source/hash/supersession in `91`. The current module/hash catalog is synchronized by the builder; the historical archive inventory remains unchanged.
+`12_POLITICS_DYNASTIC_SECURITY_CURRENT.md` / `AFM-011` controls detailed political institutions, dynasty/MC2–AF–RF bargaining and security contingencies. Political sections move from `01` without changing their accepted facts; `01` retains global/ontology interfaces. `13` owns professions, `03` metafiction. Proposals/hypotheses/deferred remain in `90`, open decisions in `92`, source/hash/supersession in `91`. The current module/hash catalog is synchronized by the builder; the historical archive inventory remains unchanged.
 
 ## Historical consolidation notes
 
-Selective technology/guest-service admission (2026-10-03): `15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` / `AFM-010` controls the accepted functional model. `10` receives the bounded institutional interpretation; `90` holds genealogy/inference/proposals only; `92` preserves implementation unknowns. The four input hashes, processing boundaries and archival lifecycle are recorded in `91`; their original wording does not override the accepted current view.
+Selective technology/guest-service admission (2026-10-03): `02_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` / `AFM-010` controls the accepted functional model. `01` receives the bounded institutional interpretation; `90` holds genealogy/inference/proposals only; `92` preserves implementation unknowns. The four input hashes, processing boundaries and archival lifecycle are recorded in `91`; their original wording does not override the accepted current view.
 
-Current Academy admission (2026-10-02): `65_BATTLEMAGE_ACADEMY_CURRENT.md` / `AFM-009` controls internal Academy canon. The newly preserved military-training source and acceptance boundaries are recorded in `91_RECONCILIATION_RECORD.md`; the historical inventory below remains unchanged.
+Current Academy admission (2026-10-02): `14_BATTLEMAGE_ACADEMY_CURRENT.md` / `AFM-009` controls internal Academy canon. The newly preserved military-training source and acceptance boundaries are recorded in `91_RECONCILIATION_RECORD.md`; the historical inventory below remains unchanged.
 
 The following records describe the former archive reconstruction workflow and its historical decisions. References to generation, build inputs, or reproducibility in these records are historical; they do not authorize current regeneration.
 
@@ -30,11 +34,11 @@ The following records describe the former archive reconstruction workflow and it
 - `modular_engine_concept_anti_drift_revised.md` was not imported.
 - `aetherfire_undi_hoa_nguyet_cultural_humiliation_design_philosophy.md` was imported into the Undi visual domain with explicit reconciliation of recognition order, MC2 genealogy and rank namespace.
 - `aetherfire_fiction0_fiction1_model.md`, `aetherfire_canon1_canon2.md` and `aetherfire_canon_story_line_v0_5_v1_0_overlap.md` were consolidated into the metafiction/canon-timeline domain with the story-line source controlling causal conflicts.
-- `aetherfire_narrators_pov_clash_humor.md` was consolidated into a separate narrator/POV domain. Its clothing section was explicitly excluded so it cannot override the latest Undi visual canon in `30_UNDIE_SYSTEM_CURRENT.md`.
+- `aetherfire_narrators_pov_clash_humor.md` was consolidated into a separate narrator/POV domain. Its clothing section was explicitly excluded so it cannot override the latest Undi visual canon in `13_UNDIE_SYSTEM_CURRENT.md`.
 - `matriarchs_lament_working_retcon_canon.md` was imported as the controlling regional retcon. Its unmatched final source fence is repaired only in generated output; the archived source remains byte-preserved.
-- `70_MATRIARCHS_LAMENT_CURRENT.md` controls the internal ML domain. `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` retains only ML/TE global and cross-domain interfaces; this split is architectural and does not change lore status.
+- `40_MATRIARCHS_LAMENT_CURRENT.md` controls the internal ML domain. `01_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` retains only ML/TE global and cross-domain interfaces; this split is architectural and does not change lore status.
 - `aetherfire_stable_aviation_rf_airspace_control_canon_delta_2026-09-16.md` was imported with explicit reconciliation of sole-confirmed versus literal-monopoly wording, non-numeric throughput, RF actor granularity and localization-pathway status.
-- `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` controls the detailed stable-aviation/RF-airspace domain. `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` retains only its global/geopolitical interface.
+- `06_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` controls the detailed stable-aviation/RF-airspace domain. `01_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` retains only its global/geopolitical interface.
 - The source sentence about The Kingdom airspace was excluded from generated AetherFire canon because it is a cross-project anti-drift boundary, not AetherFire lore or a The Kingdom canon decision.
 - The four 2026-09-15 candidate files were archived byte-exactly and imported only according to the explicit user decisions recorded in `91_RECONCILIATION_RECORD.md`.
 - `The Tainted Cosmos - MERGED.md` is archived for MC4 identity genealogy; its cosmology, power scale, mastery, Fusion and Spear mechanics are not imported into current AetherFire canon.
@@ -42,7 +46,7 @@ The following records describe the former archive reconstruction workflow and it
 - The former Academy-failure-to-Undie route was removed from generated current/reconsideration layers and remains visible only in immutable archived provenance.
 - The former foreign-spy punitive Undie route was removed as an active current/reconsideration candidate for political-setting fit. `90`/`91` retain only provenance and the removal log; no replacement legal/status route is inferred.
 - The AF→TE transfer of some Undie is retained only as a bounded event. Legal mechanism, consent, selection, post-transfer status and return/exit rights remain `UNKNOWN`.
-- `30_UNDIE_SYSTEM_CURRENT.md` remains the sole authority for Undi clothing. The Academy combat uniform is a separate functional-uniform domain.
+- `13_UNDIE_SYSTEM_CURRENT.md` remains the sole authority for Undi clothing. The Academy combat uniform is a separate functional-uniform domain.
 - Current canon, design history and audit provenance remain separate layers.
 - `aetherfire_rp_cu_ba_truc_lich_su_va_de_xuat.md` is archived byte-exactly and curated into `90` as design history, inference and proposals only. It does not alter either Undie canon or restore the removed punitive spy route.
 - Rollback uses Git history. `Source_Archive` keeps the package reproducible without parent-folder dependencies.
@@ -52,22 +56,24 @@ The following records describe the former archive reconstruction workflow and it
 
 | File | SHA-256 |
 | --- | --- |
-| `00_AETHERFIRE_CONSOLIDATION_INDEX.md` | `BA9B303956B04A2BB62A25D2708B37B3C7FDECB69EFC3AF6B7B831A8B65F87A6` |
-| `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` | `85FD8886BFC6870BCE7F9EE3B229FF290FCBEF9A8AFA648BAED66A779566E208` |
-| `20_STATUS_CIVIL_LABOR_CURRENT.md` | `6CED06C22A30F191F43E86A6B36644B97B09BCDA68D8CB0EE21F14169E09BBC2` |
-| `30_UNDIE_SYSTEM_CURRENT.md` | `E2B692650F42CFFE30F420488A1847F375330D805A96CD58C9C34D3CB47A9279` |
-| `40_METAFICTION_CANON_TIMELINE_CURRENT.md` | `F0C4D0F0F7E1C9DC6B3AF569F5FAEAFD9CE3BE6A3026844CDB8AD388EDB96B14` |
-| `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` | `DBD564071379E6D4881A4EB26EFC338FADFF5E16884E651B3082CD21B992F5F8` |
-| `60_MC4_IDENTITY_CURRENT.md` | `A0EEC1DF93863661DFBA840D10D8B945B157F6907189F7425A330F5D76A335AB` |
-| `70_MATRIARCHS_LAMENT_CURRENT.md` | `961E86C96145A05A735CF2E89C5633E3FFEC2E17588DA2F7B329A830A050426A` |
-| `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` | `5091BA08ACE45EA30B90EB9E576B717C95744FDEDD8D21B6255B57012227D714` |
-| `65_BATTLEMAGE_ACADEMY_CURRENT.md` | `3F57563B836579C94AE3FCBA34413650DA9E19E82D397CF524CB625E15888995` |
-| `15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` | `D6491FB99C5402D35D009D9F3DE05720D10EB7048A273D55AEE33A2251B25BD9` |
-| `25_POLITICS_DYNASTIC_SECURITY_CURRENT.md` | `C075C1612EBB2005258FA95DFB3902CEB3F6D94B0518C5E162E9B0D8BFC6419F` |
-| `85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` | `633D133F1D73045F5FED1DC723B678B7793FE6DFDD545DA1C4CE04A3BEEF75D3` |
-| `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` | `7FC78810B40F8D9444B11830F439C703E02CB84B44DAD274E8B255A184FE2C1B` |
-| `91_RECONCILIATION_RECORD.md` | `CD223C625135E59F3A2DBA84B3B75AED5CB4A65A9F4AC984494328A935AB1F43` |
-| `92_OPEN_ISSUES_CURRENT.md` | `AF85DB327A0B6D15CCE7CD57172D4C6396CE45183AE6D8176706A7EF81B85AC3` |
+| `00_AETHERFIRE_CONSOLIDATION_INDEX.md` | `EC61B5F255131FE52F168212BE6EAFDDD3541695D1D308F730E956CBC24746A4` |
+| `01_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` | `E50299A9DDE2CA3E8D035D95A2B0A0EF1E1E852A458DBDC7D0F761B07C4F9386` |
+| `11_STATUS_CIVIL_LABOR_CURRENT.md` | `B814636063A61E52A9B9F0C948A2A722BA96D58B6A3DFFCD27ED087C03F68E82` |
+| `13_UNDIE_SYSTEM_CURRENT.md` | `D29461A2653474B7BAFE472F016027920BCCBB4F653D63231CE9CC3C24851308` |
+| `03_METAFICTION_CANON_TIMELINE_CURRENT.md` | `3F6A3974E7A7530C24FC1C7BD3554DA5E183CC2AB05B287087779EE2A824AA20` |
+| `04_NARRATORS_POV_AND_HUMOR_CURRENT.md` | `E8C6419F89D82DD77A057C85B65EC326717C5B059604A619504B7CF6A6C260C4` |
+| `05_MC4_IDENTITY_CURRENT.md` | `74FE991E8E4858834B9E0A86A39A6F0C8E3E73C2A8DCFE6AEAF503DFA21B4063` |
+| `40_MATRIARCHS_LAMENT_CURRENT.md` | `B4AAFD58F6B41A3BAA4453C6081D40AA7B13A5B5A8C6036C2462F55B8E197EC7` |
+| `06_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` | `14396504E68C549D9F77DFE295645B9A4BA5054200C3B3BD13F9EB08C51C398D` |
+| `14_BATTLEMAGE_ACADEMY_CURRENT.md` | `ED392A0964DA7A3E655832D7BA54083A783BD67BBD76E1F0974CDA76BC70BBD6` |
+| `02_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` | `E9AF98B89E0699ED0767BD86C16BCF7734B1E7450E952CAFC5FD775E3E1F6CE3` |
+| `12_POLITICS_DYNASTIC_SECURITY_CURRENT.md` | `F9B2BAD1F27D351A06DE16F8A22806CAE9673FFD43853924E7C7ADBA7664AD0E` |
+| `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` | `E6BA555F8E280365C36C16859E80D5C72634902EE66E4AE57D8DD9DD87EE67C9` |
+| `10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` | `A17E50FBBA60666A12C40CF4054A8C64710A9480F2B3020D768D7FAE182DF066` |
+| `30_RF_NATIONAL_CANON_CURRENT.md` | `0D87480493F9BCE7EC4143040B2C12CAC6F41A9C2876240927B0CDCE34D1D1F3` |
+| `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` | `4C1A9F710937151F842C78861E3107B58BF1909E2C870BEF94624EA5419CAFDA` |
+| `91_RECONCILIATION_RECORD.md` | `4C81F2A5BF77E74512A880FFFF57D6E46524AD5D22177201681F1477F27C1FB9` |
+| `92_OPEN_ISSUES_CURRENT.md` | `1A6EE2E3194713C8264BDAEFF218B9273B707901191AA8D28E663E21D917D044` |
 
 <!-- END GENERATED CURRENT HASHES -->
 

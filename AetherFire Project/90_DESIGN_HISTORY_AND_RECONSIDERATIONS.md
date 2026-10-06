@@ -5,36 +5,36 @@
 
 ## Hoa Nguyệt — ranh giới hồ sơ lịch sử, chốt 2026-10-07
 
-`85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát canon Hoa Nguyệt hiện hành; `10` chỉ giữ giao diện thế giới. Những wording cũ tại §24.1 và cây tổng kết về “tên chính thức Hoa Nguyệt” chưa phân biệt nội địa/đối ngoại, cùng UNKNOWN Hán tự “Hoa”, đã được thay thế có giới hạn: 鏡華水月 / 華月, chữ 華. Bản lịch sử vẫn giữ nguyên để truy nguồn, không là fallback.
+`20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát canon Hoa Nguyệt hiện hành; `01` chỉ giữ giao diện thế giới. Những wording cũ tại §24.1 và cây tổng kết về “tên chính thức Hoa Nguyệt” chưa phân biệt nội địa/đối ngoại, cùng UNKNOWN Hán tự “Hoa”, đã được thay thế có giới hạn: 鏡華水月 / 華月, chữ 華. Bản lịch sử vẫn giữ nguyên để truy nguồn, không là fallback.
 
 Dark foundation/Lục Kì Nhân, văn hóa/quốc phục, triết lý phép thuật, nhân quyền và Silk Road còn hiệu lực. Nội địa/đối ngoại không thành hai quốc gia; giao thương đa hướng không phục hồi corridor Quad Night/Holy State, không tự tạo route/node nhỏ hoặc viết lại Undi. `91` ghi đối chiếu; `92` giữ mục mở.
 
 ## ML historical-state notice — Matriarch/Saint's Fresh 2026-10-06
 
-`70` §25 kiểm soát Matriarch/Fiction 0 origin, thần tính/thi hài/Saint's Fresh/Redemption Rope; `40` Part IV giữ timing interface. Các mô tả CURRENT/SURVIVING trong lịch sử về Creed/oath/quorum3/cardio/family-binding, relic-lending dưới Creed hoặc split-self bypass không còn quyền hiện hành. Creed và dependency đã rút chờ revamp; không dùng history làm fallback hoặc đặt replacement.
+`40` §25 kiểm soát Matriarch/Fiction 0 origin, thần tính/thi hài/Saint's Fresh/Redemption Rope; `03` Part IV giữ timing interface. Các mô tả CURRENT/SURVIVING trong lịch sử về Creed/oath/quorum3/cardio/family-binding, relic-lending dưới Creed hoặc split-self bypass không còn quyền hiện hành. Creed và dependency đã rút chờ revamp; không dùng history làm fallback hoặc đặt replacement.
 
 Các actor độc lập Temple/Cult/public state/Holy Guard, split-self/doctrine Trúc Nha và địa lý/quan hệ ML–TE vẫn giữ theo current owners. Không dùng nguồn gốc Matriarch để canon hóa origin Trúc Nha/candidates khác, không suy AF biết thi hài hoặc Saintess access gate là toàn quyền ngoại giao. `91` ghi AF-ML-DELTA-001–010; `92` giữ AF-ML-ORIGIN-001–006 và đầy đủ UNKNOWN.
 
 ## RF historical-state notice — 2026-10-06
 
-`25` giữ đầy đủ quyết định bỏ tiền đề tu tiên RF; `10` giữ ontology độc lập và `80` giữ aviation đã cập nhật. Các mô tả lịch sử CURRENT/SURVIVING về cultivation RF, mục tiêu scale cultivation, bay tu tiên, mixed-airspace ba lớp và ưu thế cá nhân/hệ thống không còn quyền hiện hành trong phạm vi phụ thuộc. Không dùng đề xuất hoặc lịch sử để phục hồi hoặc đặt hệ thay thế.
+`30` giữ đầy đủ quyết định bỏ tiền đề tu tiên RF; `01` giữ ontology độc lập và `06` giữ aviation đã cập nhật. Các mô tả lịch sử CURRENT/SURVIVING về cultivation RF, mục tiêu scale cultivation, bay tu tiên, mixed-airspace ba lớp và ưu thế cá nhân/hệ thống không còn quyền hiện hành trong phạm vi phụ thuộc. Không dùng đề xuất hoặc lịch sử để phục hồi hoặc đặt hệ thay thế.
 
 Phả hệ Raging Fire/Prince 9/MC2/MC2.2, trait và phong ấn đã chốt độc lập, cấu trúc liên hiệp và quan hệ chính trị giữ theo nguồn hiện hành; không biến “bỏ tu tiên” thành xóa sức mạnh hoặc AF mạnh hơn. Các mục cần thiết kế lại được giữ tại `92` AF-RF-OPEN-001–004; `91` ghi AF-RF-RET-001–008.
 
 ## Civil historical-state notice — baseline 2026-10-05
 
-`20` Part II hiện kiểm soát Civil theo `AetherFire_Civil_Co_So_Canon_2026-10-05.md`. Các nhãn CURRENT/SURVIVING LEGACY/PRESERVED về Civil ở hồ sơ phía dưới là trạng thái theo thời điểm; không phục hồi Civil Slave, compulsory Brown identification, hạ class/stigma, Citizen-only input, applicant-selected billet gate, 5y/10y conversion, tax privilege vĩnh viễn hoặc preferential Undie fee.
+`11` Part II hiện kiểm soát Civil theo `AetherFire_Civil_Co_So_Canon_2026-10-05.md`. Các nhãn CURRENT/SURVIVING LEGACY/PRESERVED về Civil ở hồ sơ phía dưới là trạng thái theo thời điểm; không phục hồi Civil Slave, compulsory Brown identification, hạ class/stigma, Citizen-only input, applicant-selected billet gate, 5y/10y conversion, tax privilege vĩnh viễn hoặc preferential Undie fee.
 
-Civil là service tự nguyện ở đầu vào + xét tuyển + phân công phù hợp bắt buộc + bảo đảm/pay + appeal/early exit/completion. Không dùng proposal/history để hoàn thiện thời hạn/lương/nhập tịch hoặc tạo caste. Reserve/reassignment, empire-wide pool, demand/allocation distinction và deployment safeguards chỉ còn đúng phạm vi đã đối chiếu ở `20` Part IV; không rebuild gate cũ.
+Civil là service tự nguyện ở đầu vào + xét tuyển + phân công phù hợp bắt buộc + bảo đảm/pay + appeal/early exit/completion. Không dùng proposal/history để hoàn thiện thời hạn/lương/nhập tịch hoặc tạo caste. Reserve/reassignment, empire-wide pool, demand/allocation distinction và deployment safeguards chỉ còn đúng phạm vi đã đối chiếu ở `11` Part IV; không rebuild gate cũ.
 
-Không viết lại lịch sử Canon 1, không xóa Criminal/POW/Yellow, Citizen credit/bailout hoặc MC2/RF/TE. Công quyền phải trung lập được cụ thể hóa ở `25`; giao diện bailout/Criminal và homelessness còn ở `92` AF-CR-OPEN-006/007. `91` ghi audit/ưu tiên theo đúng scope.
+Không viết lại lịch sử Canon 1, không xóa Criminal/POW/Yellow, Citizen credit/bailout hoặc MC2/RF/TE. Công quyền phải trung lập được cụ thể hóa ở `12`; giao diện bailout/Criminal và homelessness còn ở `92` AF-CR-OPEN-006/007. `91` ghi audit/ưu tiên theo đúng scope.
 
 
 ## MC2 pathway: đề xuất, giả thuyết và hoãn thiết kế — 2026-10-05
 
-Nguồn `AetherFire_MC2_Pathway_Canon_Status_2026-10-05.md`, phần IV–VII. Trích nguyên văn, giữ nhãn riêng: P1–P11 là PROPOSAL (P9 có inference); H1–H6 là HYPOTHESIS; D1–D4 là DEFERRED; ma trận VII là PROPOSAL. Operation Swap chỉ là đề xuất ưu tiên, chưa phải lịch sử. Nguyên tắc phản gián nhiều phương án đã chốt ở `10` không canon hóa cây cụ thể.
+Nguồn `AetherFire_MC2_Pathway_Canon_Status_2026-10-05.md`, phần IV–VII. Trích nguyên văn, giữ nhãn riêng: P1–P11 là PROPOSAL (P9 có inference); H1–H6 là HYPOTHESIS; D1–D4 là DEFERRED; ma trận VII là PROPOSAL. Operation Swap chỉ là đề xuất ưu tiên, chưa phải lịch sử. Nguyên tắc phản gián nhiều phương án đã chốt ở `12` không canon hóa cây cụ thể.
 
-H4 chỉ đã chốt tín hiệu gây báo động MC2.2; suy luận đã dùng bearer nội địa/MC2/hậu duệ còn hypothesis. H6 chỉ tương thích overlap mang áp lực kết thúc ở `40`, không khóa cả gói khủng hoảng hiến pháp/RF/collapse. Không dùng các ứng viên để phục hồi tuyến Undie cũ.
+H4 chỉ đã chốt tín hiệu gây báo động MC2.2; suy luận đã dùng bearer nội địa/MC2/hậu duệ còn hypothesis. H6 chỉ tương thích overlap mang áp lực kết thúc ở `03`, không khóa cả gói khủng hoảng hiến pháp/RF/collapse. Không dùng các ứng viên để phục hồi tuyến Undie cũ.
 
 ### IV. PROPOSALS — preferred or available implementations, NOT canon outcomes yet
 
@@ -577,7 +577,7 @@ BRANCH OPENS != BRANCH MUST BE TAKEN
 
 ## Historical-state notice — Undie revamp 2026-10-05
 
-Các nhãn CURRENT CANON/SURVIVING LEGACY và các kết luận preservation trong hồ sơ cũ bên dưới là trạng thái ở thời điểm ghi. Trong phạm vi Undie, chúng không còn giữ authority nếu trái mốc nghề nghiệp `30` ngày 2026-10-05.
+Các nhãn CURRENT CANON/SURVIVING LEGACY và các kết luận preservation trong hồ sơ cũ bên dưới là trạng thái ở thời điểm ghi. Trong phạm vi Undie, chúng không còn giữ authority nếu trái mốc nghề nghiệp `13` ngày 2026-10-05.
 
 Undie không còn Slave class/caste/punishment; graph màu/White→Citizen, legal-status entry, compulsory sterilization, credit web thế chấp địa vị, ownership/master và humiliation apparatus đã nghỉ hưu. Không dùng history/proposal để lấp phần triển khai mới còn UNKNOWN. Các đề xuất Purple committee/White reallocation/TE vice/spy hoặc cơ chế cũ không được phục hồi bằng retcon này.
 
@@ -589,19 +589,19 @@ Retcon không xóa Temple/ML hoặc lịch sử Canon 1, không thay Civil/Crimi
 
 ## Genealogy, thể chế và công nghệ — xử lý chọn lọc 2026-10-03
 
-> **DESIGN HISTORY / ANALYTICAL INFERENCE / PROPOSAL — NOT CURRENT CANON.** Các ghi chú State Institution Model, Technology Infrastructure và Undie Design History Genealogy ngày 2026-10-03 được xử lý tại đây. Bản nguồn byte-exact và SHA-256 được ghi trong `91`; lưu trữ không phục hồi mọi khẳng định làm canon. Phần chức năng Terminal/Guest Pass đã được chấp nhận chỉ có hiệu lực theo bản đã đối chiếu trong `15`; khung thể chế có giới hạn nằm ở `25` §5.1.
+> **DESIGN HISTORY / ANALYTICAL INFERENCE / PROPOSAL — NOT CURRENT CANON.** Các ghi chú State Institution Model, Technology Infrastructure và Undie Design History Genealogy ngày 2026-10-03 được xử lý tại đây. Bản nguồn byte-exact và SHA-256 được ghi trong `91`; lưu trữ không phục hồi mọi khẳng định làm canon. Phần chức năng Terminal/Guest Pass đã được chấp nhận chỉ có hiệu lực theo bản đã đối chiếu trong `02`; khung thể chế có giới hạn nằm ở `12` §5.1.
 
 ### Hệ Undie gốc và hệ hiện hành không cùng triết lý nền
 
 **USER-PROVIDED DESIGN HISTORY:** hệ gốc là nghề bị xã hội dị nghị nhưng có chuyên môn, thu nhập cao, uy tín và cộng đồng nghề; so sánh thu nhập với porn actor ngoài đời là cách diễn đạt lịch sử, không phải số liệu kinh tế canon. Nó không được thiết kế như humiliation có chủ ý của nhà nước.
 
-**CURRENT BOUNDARY:** `30` vẫn kiểm soát class, social tier, chức năng humiliation chính trị, loyalty/resistance và public readability của Undi/apparatus. Prestige nghề nghiệp không xóa legal class hoặc đổi Undie thành một nghề tự do. Purple/Hazel hiện thuộc Undie nhưng ở social tier Trí thức; uy tín giáo dục hiện hành không tự chứng minh đại diện chính trị.
+**CURRENT BOUNDARY:** `13` vẫn kiểm soát class, social tier, chức năng humiliation chính trị, loyalty/resistance và public readability của Undi/apparatus. Prestige nghề nghiệp không xóa legal class hoặc đổi Undie thành một nghề tự do. Purple/Hazel hiện thuộc Undie nhưng ở social tier Trí thức; uy tín giáo dục hiện hành không tự chứng minh đại diện chính trị.
 
 ### Governance và trung gian xã hội trong bản gốc
 
 **DESIGN HISTORY:** SOP, protocol, fail-safe, backup, security, entry, training, adaptation, vận hành, lấy ý kiến và Purple thường trực trong committee đại diện Undie. Diễn giải chúng như tự quản nghề nghiệp có giới hạn là **ANALYTICAL INFERENCE**, không chứng minh chủ quyền hoặc quyền đại diện hiện hành.
 
-**DESIGN HISTORY:** biểu tình ôn hòa, tổ chức dân sự cải thiện đời sống Undie, nhóm được/không được phê chuẩn và nhà nước đôi khi nhượng bộ để giảm áp lực dư luận. Đây không tự xác lập luật biểu tình, cơ chế công nhận tổ chức hoặc mọi quyền phản đối. Các quan hệ phản đối tôn giáo/ML đã có trong `10`/`70` giữ phạm vi riêng, không đồng nhất với toàn bộ genealogy này.
+**DESIGN HISTORY:** biểu tình ôn hòa, tổ chức dân sự cải thiện đời sống Undie, nhóm được/không được phê chuẩn và nhà nước đôi khi nhượng bộ để giảm áp lực dư luận. Đây không tự xác lập luật biểu tình, cơ chế công nhận tổ chức hoặc mọi quyền phản đối. Các quan hệ phản đối tôn giáo/ML đã có trong `01`/`40` giữ phạm vi riêng, không đồng nhất với toàn bộ genealogy này.
 
 **PROPOSAL:** `state ↔ intermediary institution ↔ represented group` có thể là hướng phát triển cho hiệp hội nghề nghiệp, merchant organization, House, Temple hoặc cộng đồng chức năng. Chưa chốt tổ chức nào tồn tại theo mô hình này, ai quản trị, quyền đại diện hay khả năng veto. Purple committee chưa được phục hồi.
 
@@ -609,7 +609,7 @@ Retcon không xóa Temple/ML hoặc lịch sử Canon 1, không thay Civil/Crimi
 
 **DESIGN HISTORY:** merchant có thể hối lộ official để tái phân bổ White tới House nơi mình đầu tư, tăng lợi nhuận/prestige và lợi ích nhà đầu tư.
 
-**ANALYTICAL INFERENCE:** White lịch sử có thể là high-value labor, prestige/revenue asset, patronage resource, corruption target và cầu nối vốn tư nhân–bureaucracy. House có thể được đọc như tổ hợp dịch vụ, salon/xã hội, quản trị nghề, đầu tư, mạng patronage và kết nối merchant–official–khách hàng. Các vai trò suy ra này không tự tạo pháp nhân, quyền phân bổ hoặc cơ chế White hiện hành; `30` tiếp tục kiểm soát White mobility/exit.
+**ANALYTICAL INFERENCE:** White lịch sử có thể là high-value labor, prestige/revenue asset, patronage resource, corruption target và cầu nối vốn tư nhân–bureaucracy. House có thể được đọc như tổ hợp dịch vụ, salon/xã hội, quản trị nghề, đầu tư, mạng patronage và kết nối merchant–official–khách hàng. Các vai trò suy ra này không tự tạo pháp nhân, quyền phân bổ hoặc cơ chế White hiện hành; `13` tiếp tục kiểm soát White mobility/exit.
 
 `House` nghề nghiệp/cơ sở dịch vụ trong genealogy không mặc nhiên là `noble House` của ghi chú phân tích thể chế. Chung tên không đủ nhập cùng thực thể, chủ sở hữu, cơ cấu quản trị hoặc quan hệ cha–con.
 
@@ -617,15 +617,15 @@ Retcon không xóa Temple/ML hoặc lịch sử Canon 1, không thay Civil/Crimi
 
 **DESIGN HISTORY:** collar từng liên kết mua hàng/siêu thị/vending, payment, blacklist recognition, cảnh báo khách có tiền sử bạo lực, AI safety và trigger trợ giúp. Các chức năng retail/payment/blacklist/AI-safety chưa được phục hồi cho collar hiện hành bởi lần nhập này.
 
-**CURRENT BOUNDARY:** hai ghi chú mới mô tả thiếu baseline hiện hành nếu chỉ liệt kê ID/access/movement/task/enforcement. `30` §18–20 đã chốt mail/user information, retina có phần tích hợp vào cơ thể, bone-integrated audio command, gọi an ninh khẩn cấp một chiều khi bị quấy rối ngoài workline, Pink communication có giới hạn và commission forum. Không hạ các chức năng này thành genealogy; emergency trigger rộng của hệ gốc cũng không xóa điều kiện hiện hành.
+**CURRENT BOUNDARY:** hai ghi chú mới mô tả thiếu baseline hiện hành nếu chỉ liệt kê ID/access/movement/task/enforcement. `13` §18–20 đã chốt mail/user information, retina có phần tích hợp vào cơ thể, bone-integrated audio command, gọi an ninh khẩn cấp một chiều khi bị quấy rối ngoài workline, Pink communication có giới hạn và commission forum. Không hạ các chức năng này thành genealogy; emergency trigger rộng của hệ gốc cũng không xóa điều kiện hiện hành.
 
-**DESIGN HISTORY:** Undi nanofabric chống xé/rách, dùng tạm như băng/bông sơ cứu, self-repair khi core còn hoạt động. Current clothing chỉ xác lập khả năng vận hành, vệ sinh, độ bền, chỉnh trang, đồ vệ sinh cá nhân và quản trị sức khỏe. Không nhập cơ chế nano, self-heal hoặc medical reuse vào `30`.
+**DESIGN HISTORY:** Undi nanofabric chống xé/rách, dùng tạm như băng/bông sơ cứu, self-repair khi core còn hoạt động. Current clothing chỉ xác lập khả năng vận hành, vệ sinh, độ bền, chỉnh trang, đồ vệ sinh cá nhân và quản trị sức khỏe. Không nhập cơ chế nano, self-heal hoặc medical reuse vào `13`.
 
 ### TE genealogy không thay quan hệ hiện hành
 
 **DESIGN HISTORY:** TE tách từ old Undie gravity well, từng có genealogy “Las Vegas cho Undie”, entertainment/vice economy, trò chính trị, chuốc say/gài người, nhảy/quỵt hóa đơn, dùng biểu diễn/tình huống nhạy cảm hay quan hệ tình dục/tống tình để khai thác access.
 
-**ANALYTICAL INFERENCE:** đây là một nhánh genealogy entertainment/access/intelligence, không chứng minh current TE giữ những cơ chế đó. Current AF→TE transfer chỉ có hiệu lực trong phạm vi `30`/`70`; AF-ML-007 vẫn giữ legal mechanism, consent, selection, post-transfer status và exit/return là `UNKNOWN`. Không phục hồi punitive spy→Undie hoặc Academy failure→Undie.
+**ANALYTICAL INFERENCE:** đây là một nhánh genealogy entertainment/access/intelligence, không chứng minh current TE giữ những cơ chế đó. Current AF→TE transfer chỉ có hiệu lực trong phạm vi `13`/`40`; AF-ML-007 vẫn giữ legal mechanism, consent, selection, post-transfer status và exit/return là `UNKNOWN`. Không phục hồi punitive spy→Undie hoặc Academy failure→Undie.
 
 ### Suy luận nền công nghiệp — có điều kiện, không phải capability đã chốt
 
@@ -639,7 +639,7 @@ Các nhận định công nghệ đủ rẻ, hàng hóa hóa, mass-deployed ho�
 
 ### Đọc nhà nước theo nhiều trục, không tự viết hiến pháp
 
-`25` §5.1 chấp nhận tách hình thức quốc gia, cấu trúc quyền lực, năng lực vận hành và độ gắn kết chính trị. Mô tả “nền công nghiệp magitech mức cao, hành chính–kỹ thuật mạnh trên toàn hệ thống” vẫn là **ANALYTICAL SYNTHESIS**, không phải nhãn thể chế hoặc kết quả đo năng lực canon.
+`12` §5.1 chấp nhận tách hình thức quốc gia, cấu trúc quyền lực, năng lực vận hành và độ gắn kết chính trị. Mô tả “nền công nghiệp magitech mức cao, hành chính–kỹ thuật mạnh trên toàn hệ thống” vẫn là **ANALYTICAL SYNTHESIS**, không phải nhãn thể chế hoặc kết quả đo năng lực canon.
 
 Tách formal authority với informal influence là **khung phân tích**. Crown/Parliament/agencies/military/judiciary/diplomacy/security cần đọc theo current source; noble Houses, merchant capital, investment, patronage, bribery, civil/professional organizations, religious legitimacy, public opinion, black market và foreign ties trong ghi chú không tự chốt toàn bộ network tương tác hiện hành.
 
@@ -647,7 +647,7 @@ Tách formal authority với informal influence là **khung phân tích**. Crown
 
 ### Trạng thái proposal Terminal sau chốt
 
-Nguồn Terminal nguyên văn vẫn là working proposal. Bản hiện hành trong `15` nhận functional model có giới hạn: removable core/dock, private/contextual UI direction, Guest Pass không phải status, ví/đặt cọc/access tách riêng, QR request, vending minimal claims, return/refund entitlement và lost-device revocation.
+Nguồn Terminal nguyên văn vẫn là working proposal. Bản hiện hành trong `02` nhận functional model có giới hạn: removable core/dock, private/contextual UI direction, Guest Pass không phải status, ví/đặt cọc/access tách riêng, QR request, vending minimal claims, return/refund entitlement và lost-device revocation.
 
 Lựa chọn deposit mới khi cấp replacement và giữ deposit cũ theo điều kiện trả thiết bị chưa chốt. Chuyển retina/bone audio sang removable guest hardware chưa có implementation. Hoàn deposit cùng nominal denomination không tự giải quyết toàn bộ ngoại hối. Khóa credential không đồng nghĩa mất số dư/legal status/right of exit; exit ordering và recovery vẫn mở. Không đọc dòng tóm tắt của proposal để vượt các giới hạn này.
 
@@ -661,10 +661,10 @@ Lựa chọn deposit mới khi cấp replacement và giữ deposit cũ theo đi�
 
 ## Latest source-state boundary — updated 2026-09-16
 
-- Internal Matriarch's Lament current canon is routed to `70_MATRIARCHS_LAMENT_CURRENT.md`. `10` now retains only its global/cross-domain interface; this is a document-authority split, not a lore retcon.
-- RF single-kingdom wording is superseded by the continental-union/member-state ontology now recorded in `10`.
+- Internal Matriarch's Lament current canon is routed to `40_MATRIARCHS_LAMENT_CURRENT.md`. `01` now retains only its global/cross-domain interface; this is a document-authority split, not a lore retcon.
+- RF single-kingdom wording is superseded by the continental-union/member-state ontology now recorded in `01`.
 - The former Academy-failure-to-Undie route is removed from both current canon and reconsideration. It survives only inside byte-preserved archived sources as provenance.
-- The Academy's six-year model, five-person team, twelve competency blocks, daily rhythm, multi-axis scholarship profile and functional uniform direction are no longer working proposals; they are current canon in `65_BATTLEMAGE_ACADEMY_CURRENT.md` after the 2026-10-02 domain split. `10` retains global/site interfaces.
+- The Academy's six-year model, five-person team, twelve competency blocks, daily rhythm, multi-axis scholarship profile and functional uniform direction are no longer working proposals; they are current canon in `14_BATTLEMAGE_ACADEMY_CURRENT.md` after the 2026-10-02 domain split. `01` retains global/site interfaces.
 - MC4 legacy mastery, Fusion and Spear mechanics remain genealogy-only and are not current.
 - Trần Trúc Nha's membership and regional role in Matriarch's Lament remain current. Her proposed summoned/cross-world origin, MC4's proposed in-world cross-fiction origin and the other unconfirmed cross-world/cross-time candidates are `UNDER CONSTRUCTION / NOT CURRENT CANON`.
 - The `Nguyên Chủ / Nguyên Anh` concept and the `元主 / 元嬰` wordplay remain proposal/design material. They are not assigned to MC2's mother by this integration.

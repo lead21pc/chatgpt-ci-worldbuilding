@@ -4,11 +4,11 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: Battlemage Academy internal organization, training, authority, assessment, qualification, scholarship, and functional uniform.
 > Authority boundary: Controls the Academy's internal institutional and training canon; does not establish Academy ownership of the northeastern site, lab, cult, or teleport gate.
-> Cross-domain owner boundary: Global geopolitics, Mage Council and northeastern-site interfaces are controlled by `AFM-001`; MC4 identity and biological/cognitive configurations by `AFM-006`; Undie and Undi by `AFM-003`; metafiction and cross-world status by `AFM-004`.
+> Cross-domain owner boundary: AF national, Mage Council and northeastern-site profile by `AFM-013`; global geopolitics and cross-domain interfaces by `AFM-001`; MC4 identity and biological/cognitive configurations by `AFM-006`; Undie and Undi by `AFM-003`; metafiction and cross-world status by `AFM-004`.
 > Load mode: `FULL_FILE`
 
 > **Integration:** 2026-10-02; user-approved Academy domain split and military-training delta integration.
-> **Sources:** Academy canon previously maintained in `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`, plus `Source_Archive/aetherfire_battlemage_academy_military_training_canon_delta_2026-09-25.md`.
+> **Sources:** Academy canon previously maintained in `01_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`, plus `Source_Archive/aetherfire_battlemage_academy_military_training_canon_delta_2026-09-25.md`.
 > **Truth boundary:** unanswered implementation details remain `UNKNOWN`; this consolidation does not adopt MC2 sacrifice proposals or historical RP events.
 
 ## 1. Định danh, phạm vi và giao diện
@@ -21,7 +21,7 @@ The Academy is an institution/faction within the northeastern Mage Council site 
 
 The cult is not part of the Academy. It exploits the apparent-POW-to-Mage-Council-specialist interface. Exact infiltration, Academy awareness and gate access remain `UNKNOWN`.
 
-Detailed global/site relations remain controlled by `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`. Location and interaction do not establish ownership or command authority.
+Chi tiết site/Council/lab/cult/cổng ở `10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` §5; giao diện địa chính trị thế giới ở `01_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md`. Location and interaction do not establish ownership or command authority.
 
 ---
 
@@ -321,30 +321,9 @@ Mục tiêu là bảo đảm hệ thống có thể tin vào:
 - trách nhiệm;
 - dữ liệu huấn luyện của chính nó.
 
-### Nguyên tắc thiết kế thể chế rộng hơn
+### Nguyên tắc thiết kế thể chế rộng hơn — nơi quản lý
 
-### CANON
-
-Đối với Học viện và là định hướng cho thiết kế quân đội/nhà nước AetherFire về sau:
-
-> **Một thể chế có thể tham nhũng, tàn nhẫn, chia phe hoặc phục vụ lợi ích xấu mà vẫn phải có cấu trúc chức năng đủ nghiêm túc để tồn tại. Sự xấu xa không được dùng làm lý do cho sự ngu xuẩn về tổ chức.**
-
-AetherFire có thể tồn tại:
-
-- tham nhũng;
-- đấu đá phe phái;
-- xung đột quyền lực;
-- lợi ích nhóm;
-- chính sách tàn nhẫn;
-- động cơ xấu.
-
-Những yếu tố đó không cho phép:
-
-- chuỗi trách nhiệm vô nghĩa;
-- quyền hạn tùy tiện không có giao diện;
-- mọi nhân vật cấp cao có toàn quyền;
-- thủ tục chỉ tồn tại khi cốt truyện cần;
-- tổ chức tự phá dữ liệu và năng lực hoạt động của chính mình mà không có hậu quả.
+`10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` §7 quản lý nguyên tắc thể chế nghiêm túc dù tham nhũng/tàn nhẫn/chia phe, với phạm vi Học viện và định hướng thiết kế quân đội/nhà nước AF về sau. Quy tắc toàn chuỗi ở trên vẫn thuộc nội bộ Học viện; không tự áp toàn bộ mô hình quyền Học viện cho nhà nước.
 
 The whole-chain restriction does not establish that every pair of functions must be held by different people. Exact permitted overlap and review procedures remain `UNKNOWN`.
 
@@ -576,7 +555,7 @@ Một tổ có thể thất bại nhưng vẫn được đánh giá tốt ở m�
 - rút lui có trật tự;
 - xác định đúng nguyên nhân thất bại.
 
-MC4-specific application is maintained in `60_MC4_IDENTITY_CURRENT.md`; all students remain subject to the institutional rules here.
+MC4-specific application is maintained in `05_MC4_IDENTITY_CURRENT.md`; all students remain subject to the institutional rules here.
 
 ---
 
@@ -614,7 +593,7 @@ The standard direction is:
 - combat boots;
 - hair kept short, tied, braided or in a bun.
 
-The two battlemage schools may differ in armor load, outer-layer length and equipment load. Protection, movement, spellcasting and equipment carriage control the design; sexual appeal is not a functional requirement. This Academy uniform is a separate domain and does not modify Undi clothing canon in `30_UNDIE_SYSTEM_CURRENT.md`.
+The two battlemage schools may differ in armor load, outer-layer length and equipment load. Protection, movement, spellcasting and equipment carriage control the design; sexual appeal is not a functional requirement. This Academy uniform is a separate domain and does not modify Undi clothing canon in `13_UNDIE_SYSTEM_CURRENT.md`.
 
 ---
 
@@ -663,7 +642,7 @@ Các điểm sau chưa được tài liệu này giải quyết:
 
 Không được tự động lấp các mục trên bằng cấu trúc quân đội ngoài đời hoặc mô hình Marine Corps nếu chưa được người dùng chốt.
 
-Additional preserved unknowns from the prior Academy baseline: entry age; exact site map; specialist/dangerous-practice group sizes; per-term competency gates; scholarship weights, thresholds, funding percentage, approving authority and external-work liability; definition of `quality`; and lab-subject/live-target details stated above. `10` retains the site-level interfaces and `92` retains the open-issue routing.
+Additional preserved unknowns from the prior Academy baseline: entry age; exact site map; specialist/dangerous-practice group sizes; per-term competency gates; scholarship weights, thresholds, funding percentage, approving authority and external-work liability; definition of `quality`; and lab-subject/live-target details stated above. `10` §5 retains the site-level profile, `01` the global interface and `92` the open-issue routing.
 
 ### Khóa chống trôi
 

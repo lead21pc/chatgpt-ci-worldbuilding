@@ -1,10 +1,10 @@
-# AetherFire — Technology & Public-Service Infrastructure Current Canon
+# Thế giới AetherFire — Nền công nghệ & kiến trúc dịch vụ hiện hành
 
 > Module ID: `AFM-010`
 > Runtime role: `CURRENT_SOURCE`
-> Domain / Scope: Shared technology/service interfaces, removable personal terminal, Guest Pass, prepaid wallet, device deposit, and device lifecycle.
-> Authority boundary: Controls the accepted general-terminal and guest-service model; does not establish universal deployment, a single backend, agency ownership, or unresolved implementation details.
-> Cross-domain owner boundary: Global institutions and geopolitics are controlled by `AFM-001`; legal/civic status and shared economic namespaces by `AFM-002`; Undie professions, occupational hardware and Undi by `AFM-003`; detailed aviation and RF airspace by `AFM-008`.
+> Domain / Scope: Nền công nghệ chung của thế giới AetherFire, kiến trúc terminal/giao diện dịch vụ và mô hình ứng dụng Guest Pass AF đã được chấp nhận.
+> Authority boundary: Kiểm soát kiến trúc chức năng chung; Guest Pass/đặt cọc/quy trình khách giữ phạm vi ứng dụng AF. Không xác lập phổ cập toàn thế giới, chuẩn liên quốc gia, backend chung, ownership hoặc implementation chưa chốt.
+> Cross-domain owner boundary: AF national engineering/deployment context by `AFM-013`; RF internal canon by `AFM-014`; Global institutions and geopolitics are controlled by `AFM-001`; legal/civic status and shared economic namespaces by `AFM-002`; Undie professions, occupational hardware and Undi by `AFM-003`; detailed aviation and RF airspace by `AFM-008`.
 > Load mode: `FULL_FILE`
 
 > **Integration:** 2026-10-03; user-approved selective admission after audit AF-NEW-001–008.
@@ -13,13 +13,15 @@
 
 ## 1. Nền công nghệ và ranh giới miền
 
-AetherFire dùng engineering để cưỡng ép compatibility giữa magic và technology. Hội đồng Pháp sư là actor quan trọng; quan hệ thể chế thuộc `10`. Hàng không ổn định, theo lịch và có thể scale là bằng chứng trực tiếp về năng lực tổ chức trong miền hàng không, do `80` kiểm soát; không suy mọi ngành hoặc địa phương có cùng năng lực.
+Theo phê duyệt 2026-10-07, file này quản lý nền công nghệ/kiến trúc dịch vụ chung của **thế giới AetherFire**, không thuộc riêng một quốc gia. Việc một kiến trúc được mô tả ở đây không chứng minh mọi nước đã sở hữu, triển khai hoặc dùng chung tiêu chuẩn. Cách AF cưỡng ép compatibility, vai trò Hội đồng Pháp sư và năng lực tổ chức AF thuộc `10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` §4; chi tiết hàng không ở `06_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md`.
+
+Các §§2–3 mô tả nguồn gốc và kiến trúc chức năng; §§4–8 giữ mô hình ứng dụng khách AF đã được chấp nhận, trong đó primitives kỹ thuật có thể được tham chiếu độc lập nhưng chính sách không tự áp cho quốc gia khác. Mọi cơ chế quốc gia/chuyển giao/triển khai mới cần canon riêng. Nền chung không phải một hệ magic hoàn chỉnh hoặc một hệ thống kỹ thuật phổ cập.
 
 Các capability định danh, xác thực, thanh toán, dữ liệu, bảo trì và dịch vụ có thể được sử dụng qua giao diện chung. Giao diện tương tác không chứng minh một database, một chủ sở hữu, một cơ quan quản trị hay mức phổ cập toàn quốc. Không dùng độ trưởng thành của một hệ chuyên dụng để áp thứ bậc bắt buộc giữa công nghệ nghề nghiệp, dân dụng và chiến lược. Nguồn năng lượng, sản xuất, chi phí và chuỗi cung ứng chưa được xác lập.
 
 ## 2. Chuyển giao công nghệ, không chuyển giao địa vị hoặc cưỡng chế
 
-Undie là nguồn gốc thiết kế công nghệ giao diện, không phải mẫu ontology/policy cho khách. Năng lực terminal, mail/user information, retina có thành phần tích hợp cơ thể, audio tích hợp xương tai, commission forum và gọi an ninh khẩn cấp có điều kiện vẫn là năng lực đã chốt. Retcon 2026-10-05 ở `30` bỏ collar/dấu cơ thể bắt buộc và quyền liên lạc theo Pink/rank; không suy mọi người hành nghề mới phải cấy ghép hoặc chịu quyền lệnh cũ.
+Undie là nguồn gốc thiết kế công nghệ giao diện, không phải mẫu ontology/policy cho khách. Năng lực terminal, mail/user information, retina có thành phần tích hợp cơ thể, audio tích hợp xương tai, commission forum và gọi an ninh khẩn cấp có điều kiện vẫn là năng lực đã chốt. Retcon 2026-10-05 ở `13` bỏ collar/dấu cơ thể bắt buộc và quyền liên lạc theo Pink/rank; không suy mọi người hành nghề mới phải cấy ghép hoặc chịu quyền lệnh cũ.
 
 Chuyển giao công nghệ không nhập đồ thị rank, Credit Score/Line đã nghỉ hưu, workline, quyền lệnh, hạn chế di chuyển hay cưỡng chế vào terminal khách hoặc vào mặc định nghề Undie mới. Payment/retail, blacklist và AI safety của collar lịch sử chưa được phục hồi thành chức năng collar hiện hành. Nanofabric/self-repair/first-aid của Undi cũng chỉ là genealogy.
 
@@ -51,7 +53,9 @@ Hướng thiết kế chấp nhận private retina interface và private audio k
 
 Terminal ưu tiên ngữ cảnh: transit ở cổng, mua hàng ở vending, định danh/access ở checkpoint, giấy tờ/thủ tục ở nơi cung cấp dịch vụ. Đây là thiết kế AetherFire được chấp nhận tại đây, không nhập ontology, quyền hạn hay implementation từ The Kingdom POT.
 
-## 4. Guest Pass và quy trình cấp
+## 4. Guest Pass AF và quy trình cấp
+
+> **Phạm vi §§4–8:** mô hình dịch vụ khách AF ở cấp kiến trúc chức năng, không xác nhận rollout hiện tại hoặc chính sách toàn thế giới. Phạm vi này đi cùng mọi bước cấp, ví, đặt cọc, giao dịch và trả/mất thiết bị.
 
 Guest Pass gồm credential định danh tạm thời, access profile tạm thời, service profile và giao diện tới Guest Wallet. Nó không phải legal status/class mới, không đồng nghĩa Citizen/Civil và không tự cấp quyền nhập cảnh/cư trú.
 
@@ -133,4 +137,4 @@ Giữ đủ 15 nhóm câu hỏi của nguồn Terminal:
 
 Giữ 15 nhóm của Technology Notes: industrial energy; cơ chế nanotechnology nếu sau này phục hồi; device standards authority; ownership ID/payment network; national data architecture; backend concentration/distribution; privacy/data-rights; cybersecurity; robot/android production scale; automation share; rare-material supply; collar/Undi/aircraft cost; procurement; banking/currency/public finance; civilian/commercial/military/intelligence technology gaps. Việc ghi câu hỏi không chấp nhận nanofabric hay một ngành công nghiệp cụ thể thành canon.
 
-`10` kiểm soát thể chế; `20` kiểm soát status và economic namespaces; `30` kiểm soát nghề Undie, phần cứng nghề còn mở và Undi; `80` kiểm soát aviation. Các unknown hiện có trong những miền này vẫn có hiệu lực; module này không thay quyền sở hữu nội bộ của chúng.
+`01` kiểm soát giao diện thế giới; `10` giữ hồ sơ quốc gia AF, `12` giữ chính trị/thể chế; `11` kiểm soát status và economic namespaces; `13` kiểm soát nghề Undie, phần cứng nghề còn mở và Undi; `06` kiểm soát aviation. Các unknown hiện có trong những miền này vẫn có hiệu lực; module này không thay quyền sở hữu nội bộ của chúng.

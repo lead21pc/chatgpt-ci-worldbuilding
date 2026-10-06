@@ -4,7 +4,7 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: Undie professional ecosystem, entry/exit, mobility, economic and political interfaces, Undi, and the unresolved MC2 access pathway.
 > Authority boundary: Controls the 2026-10-05 Undie revamp; does not establish a final branch taxonomy, licensing code, MC2 route, or TE redesign.
-> Cross-domain owner boundary: Legal/civic status and Civil, Criminal, POW, Yellow boundaries belong to `AFM-002`; shared terminal/guest architecture to `AFM-010`; global interfaces to `AFM-001`; detailed politics and MC2 security pathway to `AFM-011`; MC2 metafiction to `AFM-004`; regional ML interfaces to `AFM-007`.
+> Cross-domain owner boundary: AF national context by `AFM-013`; Legal/civic status and Civil, Criminal, POW, Yellow boundaries belong to `AFM-002`; shared terminal/guest architecture to `AFM-010`; global interfaces to `AFM-001`; detailed politics and MC2 security pathway to `AFM-011`; MC2 metafiction to `AFM-004`; regional ML interfaces to `AFM-007`.
 > Load mode: `FULL_FILE`
 
 > **Mốc canon:** 2026-10-05, theo hai nguồn Undie Revamp Baseline v0.1 và Decisions 1–16 v0.1 đã được người dùng cho phép nhập.
@@ -45,7 +45,7 @@ cùng hệ sinh thái ≠ cùng nghề ≠ cùng dịch vụ
 
 Đồ thị màu/rank Red/Scarlet/Pink/Gray/Purple/Hazel/White cũ đã nghỉ hưu như kiến trúc nghề nghiệp toàn hệ. Không có tiến trình bắt buộc kết thúc ở White, không có White→Citizen. Màu cũ chỉ được trở lại qua quyết định canon riêng, chẳng hạn mã tổ chức địa phương, thương hiệu hoặc chứng nhận; không khôi phục thang pháp lý, xã hội, nghề nghiệp hay đường thoát cũ.
 
-Career Rank thuộc miền `20`; việc còn tồn tại trục ấy ngoài Undie không phục hồi đồ thị màu hoặc quan hệ ánh xạ cũ.
+Career Rank thuộc miền `11`; việc còn tồn tại trục ấy ngoài Undie không phục hồi đồ thị màu hoặc quan hệ ánh xạ cũ.
 
 ## 3. Gia nhập, rời nghề và luật nghề
 
@@ -59,7 +59,7 @@ Nhà nước có thể quản lý hoạt động, hợp đồng, địa điểm,
 
 ## 4. Civil, Criminal, Yellow và quyền cá nhân
 
-`20` kiểm soát Civil, Criminal, POW và Yellow. Theo retcon Civil 2026-10-05, Civil là chế độ phục vụ tự nguyện ở đầu vào, không Slave/punishment/caste; không tự xóa Criminal/POW/Yellow. Citizenship và nghề Undie là trục độc lập.
+`11` kiểm soát Civil, Criminal, POW và Yellow. Theo retcon Civil 2026-10-05, Civil là chế độ phục vụ tự nguyện ở đầu vào, không Slave/punishment/caste; không tự xóa Criminal/POW/Yellow. Citizenship và nghề Undie là trục độc lập.
 
 Quy tắc cấm Criminal chuyển địa vị sang Undie đã nghỉ hưu vì không còn đồ thị chuyển ấy. Câu hỏi mới là người có hồ sơ hình sự được làm hoạt động nào, dùng giấy phép, địa điểm, hợp đồng hay mức truy cập nào. Loại kết án, rủi ro và luật ngành có thể liên quan khi được chốt; chưa xác lập mọi người có hồ sơ hình sự đều đủ điều kiện. Cũng không tự đồng nhất hồ sơ hình sự với người đang chịu chế độ Criminal Slave.
 
@@ -67,7 +67,7 @@ Không suy mọi Civil đều được hành mọi nhánh nghề hoặc thoát n
 
 Tư cách Undie không tự tước quyền tài sản, thừa kế, hôn nhân, tước vị, kế vị, quyền công dân hay quyền sinh sản. Những ràng buộc riêng phải có nguồn pháp lý độc lập; không kế thừa hình phạt từ danh phận Slave cũ.
 
-Theo `20` Part II §18/`25` §24, công quyền phải đối xử trung lập với class/nghề/giàu nghèo/nguồn gốc; không từ chối hoặc hạ chất lượng thủ tục/bảo vệ chỉ vì nghề Undie. Phản ứng xã hội là hỗn hợp, không một phản ứng chung của mọi công dân, báo chí hoặc tổ chức. Quy tắc miệt thị, bắt tự nhận danh phận và đào tạo chấp nhận nhục mạ cũ không được dùng lại.
+Theo `11` Part II §18/`12` §24, công quyền phải đối xử trung lập với class/nghề/giàu nghèo/nguồn gốc; không từ chối hoặc hạ chất lượng thủ tục/bảo vệ chỉ vì nghề Undie. Phản ứng xã hội là hỗn hợp, không một phản ứng chung của mọi công dân, báo chí hoặc tổ chức. Quy tắc miệt thị, bắt tự nhận danh phận và đào tạo chấp nhận nhục mạ cũ không được dùng lại.
 
 ## 5. Sinh sản và sức khỏe
 
@@ -81,7 +81,7 @@ Giá trị huyết hệ Raging Fire/Raging Phoenix/True Crown của MC2 không t
 
 Nền tiền tệ: cash là tiền cơ bản; Credits là tiền điện tử được nhà nước bảo chứng. Credits không phải điểm thành tích, điểm cấp nghề hay biến tiến trình tự động.
 
-Credit Score, Contribution Points và Credit Line thế chấp địa vị trong kiến trúc Undie cũ đã nghỉ hưu. Không có thế chấp con người/địa vị trong mốc Undie hiện hành. Việc xét các biến hoặc nghiệp vụ khác ngoài Undie thuộc `20`, không tự xóa toàn bộ nền kinh tế.
+Credit Score, Contribution Points và Credit Line thế chấp địa vị trong kiến trúc Undie cũ đã nghỉ hưu. Không có thế chấp con người/địa vị trong mốc Undie hiện hành. Việc xét các biến hoặc nghiệp vụ khác ngoài Undie thuộc `11`, không tự xóa toàn bộ nền kinh tế.
 
 ```text
 nợ tài chính ≠ nghĩa vụ hợp đồng ≠ ân tình xã hội ≠ ân tình chính trị
@@ -105,9 +105,9 @@ Các kênh nhận commission công khai/riêng tư và di chuyển đã được
 
 ## 8. Giao diện công nghệ còn hiệu lực và phần triển khai cần xét lại
 
-Năng lực giao diện đã được chốt ở `15` vẫn còn: terminal, thư/thông tin người dùng, giao diện retina có thành phần tích hợp cơ thể, âm thanh qua thành phần tích hợp xương tai, commission forum và kênh gọi an ninh khẩn cấp có điều kiện. Đây không phải xác nhận mọi người Undie mới phải cấy ghép hay đeo collar.
+Năng lực giao diện đã được chốt ở `02` vẫn còn: terminal, thư/thông tin người dùng, giao diện retina có thành phần tích hợp cơ thể, âm thanh qua thành phần tích hợp xương tai, commission forum và kênh gọi an ninh khẩn cấp có điều kiện. Đây không phải xác nhận mọi người Undie mới phải cấy ghép hay đeo collar.
 
-Kiến trúc terminal khách tháo rời, Guest Pass, ví/đặt cọc/truy cập tách riêng và unknown triển khai vẫn do `15` kiểm soát. Không nhập chúng tự động thành phần cứng Undie mới.
+Kiến trúc terminal khách tháo rời, Guest Pass, ví/đặt cọc/truy cập tách riêng và unknown triển khai vẫn do `02` kiểm soát. Không nhập chúng tự động thành phần cứng Undie mới.
 
 Collar bắt buộc chỉ vì định danh Undie, mực/dấu trên cơ thể, điều khiển cưỡng chế và quyền liên lạc khóa theo Pink/rank không còn là mặc định. Quyền lệnh AI, gắn cơ thể, đồng thuận, tháo/vô hiệu hóa, dữ liệu, thẩm quyền và cách tích hợp vào nghề mới cần xác định riêng.
 
@@ -123,26 +123,19 @@ Commission riêng tư/nhạy cảm không tự đồng nghĩa chợ đen. Hợp 
 
 ## 10. Undi và Hoa Nguyệt
 
-Quốc hiệu/biểu tượng của cùng quốc gia do `85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` §2 kiểm soát: Kính Hoa Thuỷ Nguyệt / 鏡華水月 trong nước, Hoa Nguyệt / 華月 đối ngoại. Việc AF vay mượn hoặc tái mã hóa quốc phục không đổi quốc hiệu hay quyền tự định danh của họ; phản ứng ngoại giao từng trường hợp còn mở. Hệ lục giác/tròn của quốc gia không tự thành rập hoặc motif bắt buộc của Undi.
+Quốc hiệu/biểu tượng của cùng quốc gia do `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` §2 kiểm soát: Kính Hoa Thuỷ Nguyệt / 鏡華水月 trong nước, Hoa Nguyệt / 華月 đối ngoại. Việc AF vay mượn hoặc tái mã hóa quốc phục không đổi quốc hiệu hay quyền tự định danh của họ; phản ứng ngoại giao từng trường hợp còn mở. Hệ lục giác/tròn của quốc gia không tự thành rập hoặc motif bắt buộc của Undi.
 
 Undi là họ đồng phục nghề nghiệp / giao diện thị giác nghề nghiệp **khi được sử dụng**, không phải đồng phục Slave hay dấu địa vị pháp lý. Hướng mặc theo nhiệm vụ/ngữ cảnh không đồng nghĩa dấu căn tính bắt buộc 24/7.
 
 Đã loại bỏ mặc định: độ che phủ thấp để nhục mạ, collar/mực/dấu cơ thể bắt buộc và apparatus khiến công chúng đọc ra sự hạ cấp. Chuỗi “thiếu nữ Hoa Nguyệt → nhìn kỹ → apparatus → Undie” không còn là cơ chế nhục mạ bắt buộc. Màu, độ hở hoặc hình dáng không tự xác lập nhánh nghề, tình dục, quyền tiếp cận hay địa vị người mặc.
 
-AF **thực sự cố ý vay mượn/chiếm dụng ý tưởng quốc phục Hoa Nguyệt**. Bằng chứng bên ngoài không đủ chứng minh ý định ấy một cách dứt khoát. Có thể có bất bình văn hóa, cáo buộc, tranh cãi, ma sát ngoại giao và khả năng phủ nhận; không phải lời tuyên bố nhục mạ công khai tự chứng minh.
-
-```text
-ý định thật của AF ≠ điều người ngoài chứng minh được
-tương đồng thị giác ≠ ý định thù địch đã được chứng minh công khai
-```
+Ý định chiếm dụng quốc phục của AF và ranh giới giữa ý định thật với điều người ngoài chứng minh được do `10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` §6 quản lý. Trong nghề Undie, bất bình văn hóa/cáo buộc/ma sát có thể xảy ra nhưng không tự xác lập phản ứng ngoại giao cụ thể hoặc khôi phục đồng phục nhục mạ.
 
 Nguồn biểu tượng Hoa Nguyệt/Hanfu/Kimono/Yukata vẫn có giá trị nguồn gốc. Yêu cầu công năng không phụ thuộc nhục mạ vẫn được giữ: cho phép di chuyển/làm việc/mang đồ cần thiết; không lấy độ hở làm mục tiêu tự thân; không cần thật sự bẩn hoặc dễ hỏng để gợi hình ảnh. Hướng váy/robe liền mạch, bố cục hài hòa và độ rủ của thiết kế trước không tự trở thành mẫu bắt buộc cho mọi nhánh nghề hoặc người mặc. Các rập, độ dài, độ che phủ, cổ/vai bắt buộc để phơi dấu, mã màu/rank, tùy biến khóa theo credit và hình ảnh MC2 trước/sau hạ cấp không được nhập lại mặc định. Hình thức thực tế, vật liệu, biến thể nghề, dấu hiệu tự nguyện, quyền tùy biến, lịch sử phê duyệt và phản ứng từng tác nhân còn mở.
 
 ## 11. An ninh: nhiều tác nhân, không một tâm trí
 
-Các cơ quan có thể khác nhau về thông tin, địa hạt, thẩm quyền, chỉ huy, mục tiêu, mức chịu rủi ro và động cơ chính trị. Phối hợp có thể thành công, thất bại, trùng lặp, cản trở hoặc leo thang; kiến trúc cho phép lỗi thể chế kiểu friendly-fire/code-blue.
-
-Không tạo danh sách cơ quan, chuỗi chỉ huy hoặc một sự cố cụ thể bằng quyết định này. Một cơ quan biết không có nghĩa toàn nhà nước biết; lợi ích nhà nước không chứng minh mọi cơ quan thi hành cùng chính sách.
+`12_POLITICS_DYNASTIC_SECURITY_CURRENT.md` quản lý nguyên tắc an ninh nhiều tác nhân/thông tin/thẩm quyền, không một tâm trí nhà nước. Giao diện nghề Undie phải giữ các khác biệt ấy; nghề không trao toàn quyền cho một cơ quan hoặc xác lập một sự cố friendly-fire/code-blue cụ thể.
 
 ## 12. Xử lý tử vong
 
@@ -171,9 +164,9 @@ Hướng này áp dụng cho AF và có thể tương tác TE. Không mặc đ�
 
 ## 15. Giao diện khu vực và TE
 
-Sự kiện đã chốt AF ký trực tiếp với TE, TE tiếp xúc để quan sát mô hình, AF chuyển một số Undie nhằm tăng quan hệ vẫn là giao diện giới hạn trong `70`. Từ “chuyển giao” không xác lập mua bán người, sở hữu, cưỡng bức điều chuyển, nhập tịch hoặc địa vị pháp lý giữ nguyên. Phải đọc Undie theo căn tính nghề mới; cơ chế, đồng thuận, tiêu chí, địa vị và quyền về/rời đi còn `UNKNOWN`.
+Sự kiện đã chốt AF ký trực tiếp với TE, TE tiếp xúc để quan sát mô hình, AF chuyển một số Undie nhằm tăng quan hệ vẫn là giao diện giới hạn trong `40`. Từ “chuyển giao” không xác lập mua bán người, sở hữu, cưỡng bức điều chuyển, nhập tịch hoặc địa vị pháp lý giữ nguyên. Phải đọc Undie theo căn tính nghề mới; cơ chế, đồng thuận, tiêu chí, địa vị và quyền về/rời đi còn `UNKNOWN`.
 
-Hoạt động ML can thiệp tuyến AF–TE vẫn do `70` kiểm soát. “Giải phóng tại chỗ” không chứng minh người đó vốn là Slave, tự động thành Citizen, được ML nhận hoặc có một đường thoát mới.
+Hoạt động ML can thiệp tuyến AF–TE vẫn do `40` kiểm soát. “Giải phóng tại chỗ” không chứng minh người đó vốn là Slave, tự động thành Citizen, được ML nhận hoặc có một đường thoát mới.
 
 TE dự kiến được thiết kế lại thành nhà nước thương mại lớn, mạnh về du lịch/kinh tế trải nghiệm, lấy cảm hứng rộng từ Las Vegas, Dubai và khu nghỉ dưỡng cao cấp. **Triển khai DEFERRED**: chưa thay thể chế, kinh tế, luật, cơ cấu nghề hoặc quan hệ Undie hiện hành của TE.
 
@@ -190,7 +183,7 @@ MC2 cần tiếp cận trục mẹ / Raging Fire / chính trị AF
 → đường chính trị phát triển qua giao diện có căn cứ
 ```
 
-Tuyến Civil→Undie→mại dâm bất hợp pháp và các bước bẫy/án phụ thuộc vào nó không còn là triển khai mặc định. Không tự thay bằng một nghề, người môi giới, patron, chiến dịch hoặc kết quả mới. Phả hệ Raging Fire/Prince 9 và chức năng True Crown giữ nguyên; cấu trúc Fictionize/POC/Clash do `40` kiểm soát.
+Tuyến Civil→Undie→mại dâm bất hợp pháp và các bước bẫy/án phụ thuộc vào nó không còn là triển khai mặc định. Không tự thay bằng một nghề, người môi giới, patron, chiến dịch hoặc kết quả mới. Phả hệ Raging Fire/Prince 9 và chức năng True Crown giữ nguyên; cấu trúc Fictionize/POC/Clash do `03` kiểm soát.
 
 Nguồn `AetherFire_MC2_RF_AF_Resistance_Strategic_Node_Analysis.md` được chỉ định làm đầu vào thiết kế tiếp theo cho đúng trục MC2/mẹ/Raging Fire/chính trị/kháng chiến/an ninh/đối ngoại. Nó không được nhập toàn bộ: CANON chỉ trong phạm vi đã chốt; HYPOTHETICAL/PROPOSAL là ứng viên; UNKNOWN vẫn mở. Lượt này không nhập hoặc thực hiện các đề xuất tuyến mới từ nguồn ấy.
 
@@ -198,7 +191,7 @@ Nguồn `AetherFire_MC2_RF_AF_Resistance_Strategic_Node_Analysis.md` được ch
 
 Undie + biến đổi diện mạo/căn tính là giao diện vỏ bọc và tiếp cận kín cho MC2 dưới căn tính bề ngoài khác. Đây là hướng thiết kế đã chốt; không khẳng định nghề đã chọn, quy trình đã thực hiện hoặc mọi Undie đều có khả năng biến đổi. Công dụng chính trị của MC2 không biến Undie thành thiết chế tình báo phổ quát.
 
-Operation Swap (rút MC2 thật, duy trì người thế thân công khai) chỉ là **PROPOSAL ưu tiên**, chưa là sự kiện. `25` kiểm soát chi tiết chính trị và TE bảo hộ Nữ hoàng; thiết kế lại TE vẫn DEFERRED. Mốc phản quốc và nguy hiểm tính mạng trước Clash #2 được khôi phục ở `40`, nhưng đoạn nhân quả mới và kết quả sau MC1 vẫn mở. Nghề, tổ chức/operator, patron, giấy tờ, hình thức/giới hạn biến đổi, thời gian, first contact, kháng chiến và an ninh vẫn UNKNOWN.
+Operation Swap (rút MC2 thật, duy trì người thế thân công khai) chỉ là **PROPOSAL ưu tiên**, chưa là sự kiện. `12` kiểm soát chi tiết chính trị và TE bảo hộ Nữ hoàng; thiết kế lại TE vẫn DEFERRED. Mốc phản quốc và nguy hiểm tính mạng trước Clash #2 được khôi phục ở `03`, nhưng đoạn nhân quả mới và kết quả sau MC1 vẫn mở. Nghề, tổ chức/operator, patron, giấy tờ, hình thức/giới hạn biến đổi, thời gian, first contact, kháng chiến và an ninh vẫn UNKNOWN.
 
 Nguồn pathway 2026-10-05 cụ thể hóa hướng trong §16, không wholesale nhập nguồn strategic-node hoặc RP cũ. `90` giữ đề xuất/giả thuyết; `92` giữ câu hỏi triển khai.
 

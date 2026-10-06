@@ -4,7 +4,7 @@
   "status": "DRAFT",
   "provenance": {
     "kind": "CURRENT_RECONCILIATION_EVIDENCE",
-    "reference": "80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md:5; 91_RECONCILIATION_RECORD.md:9; AetherFire CI/AetherFire_CI_version_v2.6.md:Claim Dependency and Canon Status; Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md:Read Order Is Not Authority Order, Reconciliation Before Execution; Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md:847-863",
+    "reference": "06_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md:Interpretation boundary; 91_RECONCILIATION_RECORD.md:Stable aviation and RF airspace integration — 2026-09-17; AetherFire CI/AetherFire_CI_version_v2.6.md:Claim Dependency and Canon Status; Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md:Read Order Is Not Authority Order, Reconciliation Before Execution; Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md:847-863",
     "note": "Canon hiện tại và bản ghi hoà giải giới hạn phát biểu về hạ tầng; CI, Router và overlay chi phối suy luận trong nhiệm vụ liên quan. Không xác nhận lỗi runtime lịch sử."
   },
   "operation": "Giữ giới hạn kết luận về ưu thế hàng không trong kịch bản.",
@@ -16,7 +16,7 @@
     "AetherFire CI/AetherFire_CI_version_v2.6.md",
     "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md",
     "Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md",
-    "80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md",
+    "06_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md",
     "91_RECONCILIATION_RECORD.md"
   ],
   "active_control_anchors": [

@@ -31,7 +31,7 @@ Hán tự chính thức của “Hoa” trong quốc hiệu là **華**, không 
 
 ## 2. Quốc hiệu, biểu tượng và sử dụng xuyên biên giới
 
-Nguồn tác giả `AetherFire_Hoa_Nguyet_National_Name_Cross_Border_Usage_Canon_2026-10-07.md`; người dùng yêu cầu audit và nhập canon. Giữ đủ §§1–12, chỉ đổi cấp heading để chứa trong module. Đây là tên/biểu tượng và giao diện đối ngoại của cùng quốc gia, không thay canon Undi hoặc lập thêm thiết chế chính trị. `30` giữ trang phục nghề; `92` giữ các mục chưa chốt.
+Nguồn tác giả `AetherFire_Hoa_Nguyet_National_Name_Cross_Border_Usage_Canon_2026-10-07.md`; người dùng yêu cầu audit và nhập canon. Giữ đủ §§1–12, chỉ đổi cấp heading để chứa trong module. Đây là tên/biểu tượng và giao diện đối ngoại của cùng quốc gia, không thay canon Undi hoặc lập thêm thiết chế chính trị. `13` giữ trang phục nghề; `92` giữ các mục chưa chốt.
 
 ### 1. Quyết định canon
 

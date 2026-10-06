@@ -2,13 +2,62 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Tách quốc gia và đánh số theo họ — chốt 2026-10-07
+
+**Quyền:** tác giả phê duyệt audit file cũ 10/15/25/30/65, đồng thời yêu cầu `01` cho thế giới, `10` chủ AF/`11–19` subsystem và cách tương tự cho quốc gia khác. Chốt thay nơi quản lý và tổ chức tài liệu, không chốt thêm cơ chế/tri thức/quan hệ sở hữu.
+
+**Baseline:** HEAD `1db08d875a75652ec316c9e0485e1214d9cec638`, nhánh trước `maintenance/aetherfire-hoa-nguyet-name-20261007`; tác vụ tại `maintenance/aetherfire-national-families-20261007`. Dirty controls/tests/Academy và inbox mới giữ ngoài tác vụ/commit.
+
+### Bản đồ tiền nhiệm → hiện hành
+
+| Số/miền tiền nhiệm | File hiện hành | Module ID |
+| --- | --- | --- |
+| 10: thế giới | `01_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` | AFM-001 |
+| 15: công nghệ/dịch vụ | `02_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` | AFM-010 |
+| 40: metafiction | `03_METAFICTION_CANON_TIMELINE_CURRENT.md` | AFM-004 |
+| 50: narrators | `04_NARRATORS_POV_AND_HUMOR_CURRENT.md` | AFM-005 |
+| 60: MC4 | `05_MC4_IDENTITY_CURRENT.md` | AFM-006 |
+| 80: hàng không/không phận RF | `06_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` | AFM-008 |
+| Hồ sơ AF tách mới | `10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` | AFM-013 |
+| 20: status/Civil/lao động | `11_STATUS_CIVIL_LABOR_CURRENT.md` | AFM-002 |
+| 25: chính trị | `12_POLITICS_DYNASTIC_SECURITY_CURRENT.md` | AFM-011 |
+| 30: Undie | `13_UNDIE_SYSTEM_CURRENT.md` | AFM-003 |
+| 65: Học viện | `14_BATTLEMAGE_ACADEMY_CURRENT.md` | AFM-009 |
+| 85: Hoa Nguyệt | `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` | AFM-012 |
+| Nội bộ RF từ 25 | `30_RF_NATIONAL_CANON_CURRENT.md` | AFM-014 |
+| 70: Matriarch's Lament | `40_MATRIARCHS_LAMENT_CURRENT.md` | AFM-007 |
+
+`90–92` và index/manifest giữ tên. Các tham chiếu tên file/số tắt trong nguồn hiện hành và hồ sơ phía dưới đã được dịch sang địa chỉ mới để tra cứu; **số section cũ và quyết định lịch sử vẫn là hồ sơ theo thời điểm**, không chứng nhận vị trí/owner cũ còn hiệu lực. Bản đồ chuyển nội dung dưới đây có ưu tiên cho lookup hiện tại. Không sửa/read/rebuild Source_Archive; nguồn vẫn hoạt động chỉ đổi tên, không archive chúng như đã nghỉ hưu. Rollback qua Git.
+
+### Chuyển nội dung và bảo toàn
+
+- Thế giới cũ §3/I/§20.0c → `10` §§1/2/4/6/8: premise, mục tiêu, tuổi 200 năm/hiệp ước, long mạch, firewall/trụ tinh thể, compatibility và dependencies. `01` giữ giao diện; ontology huyết hệ/metafiction không chuyển thành sở hữu AF.
+- Thế giới cũ §§20A.1/2/4/5 → `10` §5 nguyên nội dung, gồm legacy/history/current-state conditions và mọi UNKNOWN. §20A.3 → `12` phần phân mảnh thông tin, giữ nguyên actor-specific knowledge. `14` chỉ sở hữu nội bộ Học viện.
+- Chính trị cũ §24A0 và phần RF Ontology/Four blocs/Prince 9 → `30`; toàn bộ quyết định RF bỏ tu tiên §§1–10 cũng chuyển nguyên nội dung sang `30`. Guarded alliance, agenda phe AF và pathway giữ `12`. Không đổi RF thành một vương quốc hoặc đưa lịch sử Canon 1 vào Canon 2.
+- Undie cũ §10: ý định AF/giới hạn chứng minh → `10` §6; Undi/công năng/nghề và giới hạn phản ứng giữ `13`. §11 nguyên tắc an ninh nhiều actor → `12`; `13` giữ giao diện nghề. Các quyền/status/debt/consent/rank và giới hạn TE/MC2 không đổi.
+- Học viện cũ §4 nguyên tắc thể chế rộng hơn → `10` §7, giữ nguyên **Học viện + định hướng thiết kế AF về sau**, không tuyên bố toàn nhà nước đã triển khai. Quy tắc whole-chain/function overlap, sáu năm/tổ5/12blocks/scholarship/uniform và các UNKNOWN giữ `14`.
+- Công nghệ `02`: nền chung của thế giới, không owner độc quyền AF; cách triển khai quốc gia ở `10`. Giữ nguyên kiến trúc terminal/credential/service và đầy đủ workflow Guest Pass §§4–8 dưới nhãn **ứng dụng AF**, không áp toàn cầu. AF-TECH-001/002, ownership/rollout/retina/audio/exit/settlement vẫn mở.
+- Các nguồn chỉ đổi tên còn lại không đổi lore; stable AFM-ID giữ nguyên. Cập nhật địa chỉ/định tuyến nguồn theo miền ở router v2 sạch và fixture stable aviation, không thay quy tắc canon/status; không đổi controls/overlay đang dirty, không sửa công cụ legacy tái dựng archive.
+
+### Hồ sơ phát hiện từ audit được phê duyệt
+
+| ID | Loại / xử lý | Vị trí hiện hành và giới hạn |
+| --- | --- | --- |
+| AF-ORG-001 | LOGIC / RESOLVED ở cấu trúc tài liệu | `01` phân biệt project/thế giới; `10` hồ sơ quốc gia; không nhập thể loại/HOPE/metafiction vào cơ quan AF. |
+| AF-ORG-002 | UNKNOWN / OPEN; phạm vi tài liệu đã làm rõ | `02` §1/§4: nền chung không chứng minh universal rollout/standard/backend; Guest Pass AF không chính sách mọi nước. Không giải quyết implementation. |
+| AF-ORG-003 | UNKNOWN / OPEN | `10` §5/§8, `14` §11 và AF-AC-001: command/ownership/site/lab/cổng chưa chốt; cult không thuộc Học viện. |
+| AF-ORG-004 | LOGIC / RESOLVED ở phân miền | `30` kiểm soát RF nội bộ/retcon, `12` chỉ giữ AF–RF interface và actor AF. |
+| AF-OPEN-031 | CONFLICT / OPEN, giữ nguyên | Tên “khu nghiên cứu cơ thể người” vs Elf/Thú Nhân/Long tộc ở `10` §5; chưa chọn đổi tên hoặc giải thích nhãn bao quát. |
+
+**COMPLETE — kiểm chứng cấu trúc/nội dung:** đã đọc lại đầu ra và đối chiếu nguyên các block Council/site/lab/cult/gate, phân mảnh thông tin, RF baseline/phả hệ/quyết định §§1–10, appropriation, nguyên tắc an ninh/thể chế tại nơi nhận. Các phần đào tạo Học viện §§2–3/5–10 và kiến trúc công nghệ §§2–3/5–8 giữ nguyên sau dịch tham chiếu; 83 dòng issue tiền nhiệm giữ nguyên ID/trạng thái/nội dung, chỉ cập nhật địa chỉ. Các nguồn metafiction/narrator/ML/Hoa Nguyệt chỉ đổi tên/tham chiếu. Builder --check đạt 14 current modules/18 current hashes; 33 tests đạt, gồm migration chỉ qua --write, stable IDs, missing-source/duplicate/wrong-owner rejection và giới hạn canon. Không tuyên bố đã kiểm runtime LLM hoặc canon không còn conflict. Các UNKNOWN/SEALED/DEFERRED/PROPOSAL không được đóng do đổi file. Không nhập inbox mới, không push hoặc đồng bộ với layout remote trong lượt này; checkpoint local giữ rollback Git.
+
 ## Tách miền Hoa Nguyệt — yêu cầu bổ sung 2026-10-07
 
-Người dùng yêu cầu “tách mọi thứ thuộc hoa nguyệt thành một file riêng”. `85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` sở hữu căn tính quốc gia, văn hóa/quốc phục, nguồn gốc, triết lý phép thuật, hai quốc hiệu/biểu tượng và địa lý thương mại. Chuyển đầy đủ E và chi tiết §20.0 từ `10`, chỉ đổi heading/tham chiếu; không đổi trạng thái canon.
+Người dùng yêu cầu “tách mọi thứ thuộc hoa nguyệt thành một file riêng”. `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` sở hữu căn tính quốc gia, văn hóa/quốc phục, nguồn gốc, triết lý phép thuật, hai quốc hiệu/biểu tượng và địa lý thương mại. Chuyển đầy đủ E và chi tiết §20.0 từ `01`, chỉ đổi heading/tham chiếu; không đổi trạng thái canon.
 
-`10` E/§20.0 chỉ giữ giao diện; I/§20.0c vẫn giữ Silk Road cross-domain. `30` sở hữu Undi, `40` MC2/metafiction, `90` lịch sử; không gom mọi occurrence Hoa Nguyệt thành sở hữu quốc gia. Reading order/tree, owner links, catalog và hashes đồng bộ. Builder thêm AFM-012 cuối registry để giữ ID cũ; bootstrap chỉ cho AFM-011/012 đã được nhận. Ba test mới kiểm admission/previous schema, missing source và canon/open boundaries.
+`01` E/§20.0 chỉ giữ giao diện; I/§20.0c vẫn giữ Silk Road cross-domain. `13` sở hữu Undi, `03` MC2/metafiction, `90` lịch sử; không gom mọi occurrence Hoa Nguyệt thành sở hữu quốc gia. Reading order/tree, owner links, catalog và hashes đồng bộ. Builder thêm AFM-012 cuối registry để giữ ID cũ; bootstrap chỉ cho AFM-011/012 đã được nhận. Ba test mới kiểm admission/previous schema, missing source và canon/open boundaries.
 
-Mốc tiếp theo là `85`, thay owner `10` của bản nháp nhập đầu lượt. Unknown và nguồn archive byte-exact giữ nguyên; không mở lại archive để dựng file. Không tạo lore mới hoặc push.
+Mốc tiếp theo là `20`, thay owner `01` của bản nháp nhập đầu lượt. Unknown và nguồn archive byte-exact giữ nguyên; không mở lại archive để dựng file. Không tạo lore mới hoặc push.
 
 ## Hoa Nguyệt — quốc hiệu, biểu tượng và địa lý thương mại, nhập 2026-10-07
 
@@ -19,25 +68,25 @@ Nguồn đã đọc đủ:
 - `AetherFire_Hoa_Nguyet_National_Name_Cross_Border_Usage_Canon_2026-10-07.md`, §§1–12; SHA-256 `0A740A5CDB4FE3DC7CF0CAA04658E2AC7DDEAE2ABE570C74F019207F8C35B69C`.
 - `AetherFire_Hoa_Nguyet_Trade_Geography_Canon_Delta_2026-10-07.md`, §§1–6; SHA-256 `DB68C16E346552FB0E4CCED9A5290467BA4E4907FDEACA49538AA9B6C90E53E7`.
 
-Mốc đối chiếu: `10` E/I/§20.0/§20.0c, `30` §10 và boundaries, `80` §1 về AF–RF/Seaborne; `90` §24.1–24.6 và cây tổng kết chỉ là lịch sử. Đã đọc routing/index, manifest và hồ sơ đang có. Không đọc archive làm fallback.
+Mốc đối chiếu: `01` E/I/§20.0/§20.0c, `13` §10 và boundaries, `06` §1 về AF–RF/Seaborne; `90` §24.1–24.6 và cây tổng kết chỉ là lịch sử. Đã đọc routing/index, manifest và hồ sơ đang có. Không đọc archive làm fallback.
 
 | ID | Nguồn cũ → mới / phạm vi | Phân loại và xử lý |
 | --- | --- | --- |
-| AF-HN-001 | `10` E/§20.0: “Hoa Nguyệt là tên chính thức”; nguồn quốc hiệu §§1/12. | SUPERSEDED có giới hạn: 鏡華水月 đầy đủ trong nước, 華月 đối ngoại, cùng chủ thể. Sửa cả hai wording lặp; không đổi mọi occurrence tên Hoa Nguyệt hoặc lập hai pháp nhân. |
-| AF-HN-002 | `10` E/§20.0 và `90` §24.1: exact Hán tự UNKNOWN → nguồn §§1.1/12 chốt 華. | RESOLVED tại `85`; 花 không chữ chính thức của quốc hiệu. `90` thêm notice, không sửa hồ sơ cũ hoặc suy luôn dùng 華 từ lập quốc. |
-| AF-HN-003 | Nguồn quốc hiệu §§2/3/6/7 thêm nghĩa quan hệ 鏡華水月 và lựa chọn 華月. | CANON bổ sung đủ tại `85` §2; không bốn vật thể rời, không suy cô lập, bí mật, cấm người ngoài, hai chính phủ/công dân hoặc chỉ cắt góc. |
+| AF-HN-001 | `01` E/§20.0: “Hoa Nguyệt là tên chính thức”; nguồn quốc hiệu §§1/12. | SUPERSEDED có giới hạn: 鏡華水月 đầy đủ trong nước, 華月 đối ngoại, cùng chủ thể. Sửa cả hai wording lặp; không đổi mọi occurrence tên Hoa Nguyệt hoặc lập hai pháp nhân. |
+| AF-HN-002 | `01` E/§20.0 và `90` §24.1: exact Hán tự UNKNOWN → nguồn §§1.1/12 chốt 華. | RESOLVED tại `20`; 花 không chữ chính thức của quốc hiệu. `90` thêm notice, không sửa hồ sơ cũ hoặc suy luôn dùng 華 từ lập quốc. |
+| AF-HN-003 | Nguồn quốc hiệu §§2/3/6/7 thêm nghĩa quan hệ 鏡華水月 và lựa chọn 華月. | CANON bổ sung đủ tại `20` §2; không bốn vật thể rời, không suy cô lập, bí mật, cấm người ngoài, hai chính phủ/công dân hoặc chỉ cắt góc. |
 | AF-HN-004 | Nguồn §§4/5 thêm nội địa lục giác/khảm đá tường thành và đối ngoại tròn/quốc kỳ vuông. | CANON chức năng/cách dùng; hình học chính xác, loài/số cánh, màu, luật, lịch sử và cơ quan UNKNOWN. Không dựng design cụ thể hoặc đồng nhất “vuông” với mọi lá cờ trong nước. |
-| AF-HN-005 | `10` E/§20.0 và `30` §10 về dark foundation, quốc phục, appropriation; nguồn §§1.3/8/9. | PRESERVED: nhân quyền không lịch sử sạch; Lục Kì Nhân vẫn sáu linh hồn trấn đại trận. Không suy toàn dân/AF biết, cải chính lịch sử hay phản ứng ngoại giao mới; `30` chỉ thêm interface, không phục hồi humiliation/rập cũ. |
-| AF-HN-006 | `10` I/§20.0c giữ Silk Road song phương, chưa khẳng định sole outlet → địa lý §§1/2. | CANON bổ sung, không confirmed conflict: AF không chắn ngang lục địa để cô lập Hoa Nguyệt, có giao thương ngoài AF. Silk Road là một trong nhiều kết nối; không biến omission cũ thành phủ định. |
+| AF-HN-005 | `01` E/§20.0 và `13` §10 về dark foundation, quốc phục, appropriation; nguồn §§1.3/8/9. | PRESERVED: nhân quyền không lịch sử sạch; Lục Kì Nhân vẫn sáu linh hồn trấn đại trận. Không suy toàn dân/AF biết, cải chính lịch sử hay phản ứng ngoại giao mới; `13` chỉ thêm interface, không phục hồi humiliation/rập cũ. |
+| AF-HN-006 | `01` I/§20.0c giữ Silk Road song phương, chưa khẳng định sole outlet → địa lý §§1/2. | CANON bổ sung, không confirmed conflict: AF không chắn ngang lục địa để cô lập Hoa Nguyệt, có giao thương ngoài AF. Silk Road là một trong nhiều kết nối; không biến omission cũ thành phủ định. |
 | AF-HN-007 | Địa lý §§2/3/6 mở không gian Bắc/Nam/đi vòng AF. | Khả thi địa lý ≠ tuyến vận hành; ML/Raging Fire/phương Bắc cụ thể UNKNOWN. Trade≠alliance/military/command/intelligence. Không dùng hai quốc hiệu để nhân đôi node đối tác. |
-| AF-HN-008 | `10` I/§20.0c corridor Quad Night retired; địa lý §§4/5. | PRESERVED retirement; node nhỏ/trung gian/romantic/social route là khả năng thiết kế, chưa CANON và chưa tạo proposal riêng. AF–RF/Seaborne trong `80` không bị retcon hoặc tự áp cho mọi route biển Hoa Nguyệt. |
-| AF-HN-009 | Quốc hiệu §§8/10 và địa lý §3 liệt kê các mục chưa xác lập. | UNKNOWN / OPEN giữ đủ tại `85` và `92`; không giải quyết quyền nhập cư/tri thức/treaty/flag geometry bằng sự tồn tại tên hoặc thương mại. |
+| AF-HN-008 | `01` I/§20.0c corridor Quad Night retired; địa lý §§4/5. | PRESERVED retirement; node nhỏ/trung gian/romantic/social route là khả năng thiết kế, chưa CANON và chưa tạo proposal riêng. AF–RF/Seaborne trong `06` không bị retcon hoặc tự áp cho mọi route biển Hoa Nguyệt. |
+| AF-HN-009 | Quốc hiệu §§8/10 và địa lý §3 liệt kê các mục chưa xác lập. | UNKNOWN / OPEN giữ đủ tại `20` và `92`; không giải quyết quyền nhập cư/tri thức/treaty/flag geometry bằng sự tồn tại tên hoặc thương mại. |
 
 Đã rà đồng nhất/định nghĩa, điều kiện/phạm vi, chân trị, thẩm quyền, actor knowledge, thời gian/lịch sử, nhân quả/phụ thuộc, hình học/số sáu và mất/thêm nội dung. Không cần kiểm tính đúng lịch sử/ngôn ngữ ngoài đời: đây là tác giả chốt Hán tự/ý nghĩa in-setting, không assertion học thuật. Không suy lục giác bắt nguồn Lục Kì Nhân chỉ vì cùng số sáu.
 
-Owner đầu ra: `85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` §§1–3; `10` giữ interface; `30` §10 interface; `00` routing, `90` notice, `92` AF-HN-OPEN-001–005. Giữ mọi canon độc lập MC2/RF/ML/Academy/Undie; không sửa controls, geopolitical actors/treaties hoặc archive cũ; builder/tests bổ sung admission AFM-012 theo yêu cầu tách miền.
+Owner đầu ra: `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` §§1–3; `01` giữ interface; `13` §10 interface; `00` routing, `90` notice, `92` AF-HN-OPEN-001–005. Giữ mọi canon độc lập MC2/RF/ML/Academy/Undie; không sửa controls, geopolitical actors/treaties hoặc archive cũ; builder/tests bổ sung admission AFM-012 theo yêu cầu tách miền.
 
-Kiểm chứng: COMPLETE trong phạm vi hai delta. Đã đọc lại đầu ra, đối chiếu đủ 12 mục quốc hiệu (giữ nguyên nội dung, chỉ đổi heading) và 6 mục địa lý (diễn đạt tiếng Việt), giữ 16 unknown quốc hiệu và 10 nhóm unknown thương mại cùng các ranh giới phân tán. Đối chiếu ngược xác nhận mọi nội dung ngoài các block cho phép của `10` không đổi; chuyển sang `85` không mất nội dung; `30` chỉ thêm interface, `90/91` chỉ thêm hồ sơ, `92` chỉ thêm ledger. Builder `--check` đạt 12 modules/16 hashes; 27 kiểm thử đạt. Hai nguồn đã vào `Source_Archive`, SHA-256 giữ nguyên như trên; giữ inbox folder. Kiểm chứng nội dung/cấu trúc không chứng minh runtime hoặc chốt các UNKNOWN. Không push.
+Kiểm chứng: COMPLETE trong phạm vi hai delta. Đã đọc lại đầu ra, đối chiếu đủ 12 mục quốc hiệu (giữ nguyên nội dung, chỉ đổi heading) và 6 mục địa lý (diễn đạt tiếng Việt), giữ 16 unknown quốc hiệu và 10 nhóm unknown thương mại cùng các ranh giới phân tán. Đối chiếu ngược xác nhận mọi nội dung ngoài các block cho phép của `01` không đổi; chuyển sang `20` không mất nội dung; `13` chỉ thêm interface, `90/91` chỉ thêm hồ sơ, `92` chỉ thêm ledger. Builder `--check` đạt 12 modules/16 hashes; 27 kiểm thử đạt. Hai nguồn đã vào `Source_Archive`, SHA-256 giữ nguyên như trên; giữ inbox folder. Kiểm chứng nội dung/cấu trúc không chứng minh runtime hoặc chốt các UNKNOWN. Không push.
 
 ## Matriarch / Saint's Fresh — nhập delta 2026-10-06
 
@@ -48,26 +97,26 @@ Baseline: nhánh `codex/aetherfire-ci31-proper-names-20261006`, HEAD `9fe594311a
 
 | ID | Bằng chứng hiện hành → nguồn mới | Phân loại / xử lý |
 | --- | --- | --- |
-| AF-ML-DELTA-001 | `70` §§1–3 chưa có origin người Matriarch; nguồn §§1/4/5 xác lập Fiction 0 human/healing esper, forced transfer sau Clash #1, assassination/lament/community. | CANON bổ sung; `70` §25 giữ đủ, `40` Part IV thêm trường hợp riêng, không canon hóa Trúc Nha/MC4/candidates khác hoặc cơ chế chung. |
-| AF-ML-DELTA-002 | `70` §2 ML≈500/AF≈200; nguồn §1 arrival≈500, §§2–5 có nhiều bước trước lập quốc. | UNKNOWN / OPEN, không confirmed conflict: các mốc xấp xỉ, thời lượng chuỗi chưa chốt. AF-ML-ORIGIN-006 giữ timing và ý nghĩa “hệ phép thuật AetherFire” trước tuổi quốc gia; không tự dời age/Clash hoặc dựng AF từ 500 năm trước. |
-| AF-ML-DELTA-003 | Nguồn §§2–4 phân biệt holy power/divinity/godhood; worship trong trường hợp Matriarch, bị ám sát dù thần tính thật. | CANON case-specific, không luật phổ quát hoặc immortality. Full ontology/threshold/linh thể/ý thức OPEN tại `70` §25 và `92`. |
+| AF-ML-DELTA-001 | `40` §§1–3 chưa có origin người Matriarch; nguồn §§1/4/5 xác lập Fiction 0 human/healing esper, forced transfer sau Clash #1, assassination/lament/community. | CANON bổ sung; `40` §25 giữ đủ, `03` Part IV thêm trường hợp riêng, không canon hóa Trúc Nha/MC4/candidates khác hoặc cơ chế chung. |
+| AF-ML-DELTA-002 | `40` §2 ML≈500/AF≈200; nguồn §1 arrival≈500, §§2–5 có nhiều bước trước lập quốc. | UNKNOWN / OPEN, không confirmed conflict: các mốc xấp xỉ, thời lượng chuỗi chưa chốt. AF-ML-ORIGIN-006 giữ timing và ý nghĩa “hệ phép thuật AetherFire” trước tuổi quốc gia; không tự dời age/Clash hoặc dựng AF từ 500 năm trước. |
+| AF-ML-DELTA-003 | Nguồn §§2–4 phân biệt holy power/divinity/godhood; worship trong trường hợp Matriarch, bị ám sát dù thần tính thật. | CANON case-specific, không luật phổ quát hoặc immortality. Full ontology/threshold/linh thể/ý thức OPEN tại `40` §25 và `92`. |
 | AF-ML-DELTA-004 | Nguồn §6 thi hài thật bí mật dưới central Temple, relic-preserved, nguồn lực hiệu lực; Saintess/limited inner actors biết. | CANON bổ sung; không suy toàn ML/AF/Cult hoặc chuyên gia Trinity biết, không đồng nhất nguồn thi hài với toàn bộ catalogue. |
-| AF-ML-DELTA-005 | `70` §§6–7 Creed life/family-bound/cardio/quorum3/attack surface → nguồn §7 rút toàn bộ Creed/dependencies. | CONFLICT lịch sử / SUPERSEDED có quyền từ tác giả. Bỏ current activation/oath, giữ Temple/Cult/public state/Holy Guard và coerced religion độc lập; không đưa oath/quorum vào UNKNOWN triển khai như còn current. |
-| AF-ML-DELTA-006 | `70` §§5/20/21/24 chain success500y→Creed immunity/bypass Trúc Nha. | SUPERSEDED phần phụ thuộc Creed. Split-self/doctrine/phản triết lý giữ; không khẳng định cơ chế betrayal mới hoặc xóa character identity. Holy Guard allegiance không còn oath siêu nhiên. |
-| AF-ML-DELTA-007 | `70` §9 timed relic lending dưới Creed, Saintess đại diện/3priests witness/Guard bảo vệ. | Rút Creed enforcement; timed lending và roles có căn cứ riêng giữ. Witness3≠Creed quorum≠quyền mở Saint's Fresh; replacement enforcement OPEN. AF-ML-005 sửa phạm vi. |
-| AF-ML-DELTA-008 | `70` §10 unnamed regenerative-consumable seal relic → nguồn §§8–12 Saint's Fresh hộp5cạnh, relic tự tái tạo + máu/thịt/xương thật + blessedcloth + Rope. | PARTIALLY RESOLVED AF-ML-006, giữ periodic bought-use dependency và consumable/regenerative relic ngoài scope retcon. Fresh có tiêu hao/tái tạo hay không vẫn OPEN; không suy bản sao hoặc mọi relic cùng nguồn. |
+| AF-ML-DELTA-005 | `40` §§6–7 Creed life/family-bound/cardio/quorum3/attack surface → nguồn §7 rút toàn bộ Creed/dependencies. | CONFLICT lịch sử / SUPERSEDED có quyền từ tác giả. Bỏ current activation/oath, giữ Temple/Cult/public state/Holy Guard và coerced religion độc lập; không đưa oath/quorum vào UNKNOWN triển khai như còn current. |
+| AF-ML-DELTA-006 | `40` §§5/20/21/24 chain success500y→Creed immunity/bypass Trúc Nha. | SUPERSEDED phần phụ thuộc Creed. Split-self/doctrine/phản triết lý giữ; không khẳng định cơ chế betrayal mới hoặc xóa character identity. Holy Guard allegiance không còn oath siêu nhiên. |
+| AF-ML-DELTA-007 | `40` §9 timed relic lending dưới Creed, Saintess đại diện/3priests witness/Guard bảo vệ. | Rút Creed enforcement; timed lending và roles có căn cứ riêng giữ. Witness3≠Creed quorum≠quyền mở Saint's Fresh; replacement enforcement OPEN. AF-ML-005 sửa phạm vi. |
+| AF-ML-DELTA-008 | `40` §10 unnamed regenerative-consumable seal relic → nguồn §§8–12 Saint's Fresh hộp5cạnh, relic tự tái tạo + máu/thịt/xương thật + blessedcloth + Rope. | PARTIALLY RESOLVED AF-ML-006, giữ periodic bought-use dependency và consumable/regenerative relic ngoài scope retcon. Fresh có tiêu hao/tái tạo hay không vẫn OPEN; không suy bản sao hoặc mọi relic cùng nguồn. |
 | AF-ML-DELTA-009 | Nguồn §§9–11 fresh không thể làm giả; Redemption Rope riêng, chỉ chính tay Saintess mở/buộc lại. | CANON access gate / authenticity; không ownership/authorization/full Temple authority. Counterfeit detection/failure/authority/custody/cost OPEN. Không tự sửa tên Fresh thành Flesh. |
-| AF-ML-DELTA-010 | Nguồn §13 Trinity district giữ/cung cấp catalogue nhưng nơi chế tạo/quản lý/body/custody chưa chốt; §14 đủ23 câu hỏi. | UNKNOWN / OPEN, `70` §25 giữ toàn văn15mục, `92` giữ đủ23 cùng unknown phân tán; chronology interface `40`, global `10`, routing `00`. |
+| AF-ML-DELTA-010 | Nguồn §13 Trinity district giữ/cung cấp catalogue nhưng nơi chế tạo/quản lý/body/custody chưa chốt; §14 đủ23 câu hỏi. | UNKNOWN / OPEN, `40` §25 giữ toàn văn15mục, `92` giữ đủ23 cùng unknown phân tán; chronology interface `03`, global `01`, routing `00`. |
 
 ### Ranh giới thay thế và kiểm chứng
 
 Đã rà định nghĩa/quan hệ, scope/conditions, chân trị, thẩm quyền, chuyển trạng thái, chronology/lớp fiction, nhân quả và mất/thêm nội dung. Nguồn dùng “khoảng 500 năm”, không exact duration; không dựng số/hệ thần/ritual/Cult culprit để kiểm. Arrival timing là trường hợp riêng, không cách ánh xạ tuyến tính hai fiction. Access≠authority≠ownership; awareness từng actor≠toàn tổ chức.
 
-Không sửa RF non-cultivation, Civil/Undie/MC2/Academy/aviation, controls, builder hoặc legacy archive. `70` giữ nguyên §§1/3/4/8 ngoài lời thề Creed, §§11–19/23 về kinh tế/địa lý/TE/custody/các bộ tộc; `40` chỉ thêm origin/timeline interface, giữ các candidates và Canon1/Canon2 mechanics độc lập. Hồ sơ `90/91` cũ giữ trạng thái theo thời điểm, không làm fallback Creed.
+Không sửa RF non-cultivation, Civil/Undie/MC2/Academy/aviation, controls, builder hoặc legacy archive. `40` giữ nguyên §§1/3/4/8 ngoài lời thề Creed, §§11–19/23 về kinh tế/địa lý/TE/custody/các bộ tộc; `03` chỉ thêm origin/timeline interface, giữ các candidates và Canon1/Canon2 mechanics độc lập. Hồ sơ `90/91` cũ giữ trạng thái theo thời điểm, không làm fallback Creed.
 
-Owner mốc mới: `70` §25, `40` Part IV, `10` ML interface; `00` routing và `92` AF-ML-ORIGIN-001–006, AF-ML-005/006 giữ các mục mở. Nguồn chỉ archive byte-exact sau kiểm đầu ra/hash và tests; giữ inbox folder. Không mở full temple/state/economy/magic/succession hay thiết kế replacement Creed.
+Owner mốc mới: `40` §25, `03` Part IV, `01` ML interface; `00` routing và `92` AF-ML-ORIGIN-001–006, AF-ML-005/006 giữ các mục mở. Nguồn chỉ archive byte-exact sau kiểm đầu ra/hash và tests; giữ inbox folder. Không mở full temple/state/economy/magic/succession hay thiết kế replacement Creed.
 
-Kiểm chứng: COMPLETE trong phạm vi nhập delta — đã đọc đầu ra thực tế, đối chiếu đủ 15 mục nguồn tại `70` §25 và 23 câu hỏi chưa chốt tại `92`, rà các quan hệ Creed đã rút và các phần canon độc lập được giữ. Builder `--check` đạt 11 modules / 15 hashes; 24 kiểm thử đạt. Nguồn chuyển vào `Source_Archive` với SHA-256 giữ nguyên như trên, giữ thư mục `New Canon and Consideration`. Đây là kiểm chứng nội dung/cấu trúc gói, không chứng minh runtime hoặc giải quyết các UNKNOWN; chưa push.
+Kiểm chứng: COMPLETE trong phạm vi nhập delta — đã đọc đầu ra thực tế, đối chiếu đủ 15 mục nguồn tại `40` §25 và 23 câu hỏi chưa chốt tại `92`, rà các quan hệ Creed đã rút và các phần canon độc lập được giữ. Builder `--check` đạt 11 modules / 15 hashes; 24 kiểm thử đạt. Nguồn chuyển vào `Source_Archive` với SHA-256 giữ nguyên như trên, giữ thư mục `New Canon and Consideration`. Đây là kiểm chứng nội dung/cấu trúc gói, không chứng minh runtime hoặc giải quyết các UNKNOWN; chưa push.
 
 ## RF — loại bỏ tiền đề tu tiên, nhập 2026-10-06
 
@@ -78,22 +127,22 @@ Baseline local: `97573828fdd5314656f4897a02d0eae391e9af0a`, nhánh `maintenance/
 
 | ID | Bằng chứng cũ → nguồn mới | Xử lý / vị trí hiện hành |
 | --- | --- | --- |
-| AF-RF-RET-001 | `25` RF Ontology, `10` RF interface, `80` §1 và `00` §8 coi RF là liên hiệp quốc gia tu luyện → nguồn §§1–2 bỏ tiền đề nhưng giữ liên hiệp. | CONFLICT lịch sử / SUPERSEDED có quyền từ quyết định tác giả. Sửa đúng nhãn, không xóa member states hoặc chọn hiến pháp. |
-| AF-RF-RET-002 | `25` Four blocs và `80` §1: công nghệ AF để scale cultivation → nguồn §4 bỏ mục đích kỹ thuật cũ. | SUPERSEDED. Quan hệ tìm công nghệ/bảo trợ/ly khai giữ; mục tiêu cụ thể UNKNOWN tại AF-RF-OPEN-003. |
-| AF-RF-RET-003 | `80` §2 và giao diện `00/10` mặc định tu sĩ/pháp khí/phi chu/linh thú/cá nhân vượt aircraft → nguồn §§1/5. | SUPERSEDED trong current sources; không suy phủ định khả năng bay, không đặt hệ mới. |
-| AF-RF-RET-004 | `80` §5: hệ sinh thái bay có sẵn, magical-flight layer, tông môn và ba lớp → nguồn §5. | SUPERSEDED. Cấu hình mixed airspace phải xác lập lại; AF-AV-007 sửa trạng thái, không chỉ giữ implementation UNKNOWN trên sơ đồ cũ. |
-| AF-RF-RET-005 | `80` §6: RF mạnh cá nhân/AF mạnh hệ thống → nguồn §6 không còn nền tương quan. | SUPERSEDED. AF stable aviation giữ; so sánh quân sự, răn đe, viễn chinh, phòng thủ và chi phí OPEN. |
-| AF-RF-RET-006 | `80` §8 mục 7–8, §9 cultivation leverage, §10/11 danh mục và anti-drift → nguồn §§1/5/8–9. | SUPERSEDED các safeguard/capability tu tiên; giữ hướng ATC/data/maintenance/gateway độc lập, không nhập như chronology. AF-AV-008 đổi phạm vi. |
+| AF-RF-RET-001 | `12` RF Ontology, `01` RF interface, `06` §1 và `00` §8 coi RF là liên hiệp quốc gia tu luyện → nguồn §§1–2 bỏ tiền đề nhưng giữ liên hiệp. | CONFLICT lịch sử / SUPERSEDED có quyền từ quyết định tác giả. Sửa đúng nhãn, không xóa member states hoặc chọn hiến pháp. |
+| AF-RF-RET-002 | `12` Four blocs và `06` §1: công nghệ AF để scale cultivation → nguồn §4 bỏ mục đích kỹ thuật cũ. | SUPERSEDED. Quan hệ tìm công nghệ/bảo trợ/ly khai giữ; mục tiêu cụ thể UNKNOWN tại AF-RF-OPEN-003. |
+| AF-RF-RET-003 | `06` §2 và giao diện `00/01` mặc định tu sĩ/pháp khí/phi chu/linh thú/cá nhân vượt aircraft → nguồn §§1/5. | SUPERSEDED trong current sources; không suy phủ định khả năng bay, không đặt hệ mới. |
+| AF-RF-RET-004 | `06` §5: hệ sinh thái bay có sẵn, magical-flight layer, tông môn và ba lớp → nguồn §5. | SUPERSEDED. Cấu hình mixed airspace phải xác lập lại; AF-AV-007 sửa trạng thái, không chỉ giữ implementation UNKNOWN trên sơ đồ cũ. |
+| AF-RF-RET-005 | `06` §6: RF mạnh cá nhân/AF mạnh hệ thống → nguồn §6 không còn nền tương quan. | SUPERSEDED. AF stable aviation giữ; so sánh quân sự, răn đe, viễn chinh, phòng thủ và chi phí OPEN. |
+| AF-RF-RET-006 | `06` §8 mục 7–8, §9 cultivation leverage, §10/11 danh mục và anti-drift → nguồn §§1/5/8–9. | SUPERSEDED các safeguard/capability tu tiên; giữ hướng ATC/data/maintenance/gateway độc lập, không nhập như chronology. AF-AV-008 đổi phạm vi. |
 | AF-RF-RET-007 | Raging Fire, mẫu hệ, trait tái sinh, True Crown/phong ấn, phả hệ Prince 9/MC2/MC2.2, RF specialists và actor reception đã chốt không dựa vào mô tả tu tiên → nguồn §§2–3/8. | Giữ nguyên dữ kiện độc lập. Không xóa trait đã chốt hoặc giải thích thành tu tiên; cơ chế/giới hạn/truyền thừa ngoài phần chốt vẫn UNKNOWN. Khả năng giải cứu RF không tự thành chuyến bay/viễn chinh hoặc sức mạnh quân sự. |
-| AF-RF-RET-008 | Nguồn §§3/4/5/6/7 cố ý không thiết kế hệ mới. | UNKNOWN / OPEN, không phải lỗi cần tự sửa. `25` giữ đủ §§1–10; `92` giữ nguyên danh sách §7 và AF-RF-OPEN-001–004. Các open items độc lập vẫn giữ. |
+| AF-RF-RET-008 | Nguồn §§3/4/5/6/7 cố ý không thiết kế hệ mới. | UNKNOWN / OPEN, không phải lỗi cần tự sửa. `12` giữ đủ §§1–10; `92` giữ nguyên danh sách §7 và AF-RF-OPEN-001–004. Các open items độc lập vẫn giữ. |
 
 ### Độ phủ, ưu tiên và kiểm chứng
 
 Đã rà định nghĩa/trục, điều kiện/phạm vi, chân trị, authority, chuyển trạng thái, thời gian/lớp canon, nhân quả/phụ thuộc và mất/thêm nội dung. Không có số lượng/quân số/capacity mới để kiểm hoặc tự dựng. Quyết định mới chỉ thay tiền đề tu tiên RF và hệ quả trực tiếp, không rewrite toàn bộ Canon 1 hoặc full magic system. Lịch sử `90` và các mục cũ của `91` giữ theo thời điểm, không làm fallback.
 
-Owner quyết định đầy đủ: `25` phần “RF — quyết định thay thế có phạm vi 2026-10-06”; ontology độc lập `10`; aviation `80`; routing `00`; questions `92`. Không tạo module mới, không đổi builder/controls/nguồn archive cũ. Nguồn inbox được lưu byte-exact vào `Source_Archive/Quyet_Dinh_Hien_Hanh_RF_Bo_Tu_Tien_2026-10-06.md` sau xác minh đầu ra và hash; giữ thư mục inbox.
+Owner quyết định đầy đủ: `12` phần “RF — quyết định thay thế có phạm vi 2026-10-06”; ontology độc lập `01`; aviation `06`; routing `00`; questions `92`. Không tạo module mới, không đổi builder/controls/nguồn archive cũ. Nguồn inbox được lưu byte-exact vào `Source_Archive/Quyet_Dinh_Hien_Hanh_RF_Bo_Tu_Tien_2026-10-06.md` sau xác minh đầu ra và hash; giữ thư mục inbox.
 
-COMPLETE — đã đọc lại đầu ra thực tế `00/10/25/80/92` và hồ sơ mới `90/91`; `25` giữ đủ §§1–10, `92` giữ đủ danh sách §7. Đối chiếu phạm vi supersession và các dữ kiện độc lập được giữ; builder --check đạt 11 current modules/15 hashes, 24 tests đạt. Nguồn archive SHA-256 được kiểm khớp; các câu hỏi sức mạnh mới vẫn OPEN. Không tuyên bố canon hoàn toàn không conflict hoặc runtime đã được kiểm. Chỉ checkpoint local trong lượt này, chưa push.
+COMPLETE — đã đọc lại đầu ra thực tế `00/01/12/06/92` và hồ sơ mới `90/91`; `12` giữ đủ §§1–10, `92` giữ đủ danh sách §7. Đối chiếu phạm vi supersession và các dữ kiện độc lập được giữ; builder --check đạt 11 current modules/15 hashes, 24 tests đạt. Nguồn archive SHA-256 được kiểm khớp; các câu hỏi sức mạnh mới vẫn OPEN. Không tuyên bố canon hoàn toàn không conflict hoặc runtime đã được kiểm. Chỉ checkpoint local trong lượt này, chưa push.
 
 ## Civil baseline admission — 2026-10-05
 
@@ -104,39 +153,39 @@ Người dùng yêu cầu “audit file mới và nhập vào canon”. Nguồn 
 SHA-256 nguồn: `516C2C2312A14B7DD178A3B735E18E4DAF7DD6A967282CB6504EF576DFB6792C`.
 Baseline repository: nhánh `codex/aetherfire-ci31-language-20261005`, HEAD `eec92210fd96389cc4f8e3d5cc42d622265e2d0d`; triển khai `maintenance/aetherfire-civil-baseline-20261005`. Dirty controls/regression tests, Academy và CI8.8 có sẵn được giữ ngoài staging.
 
-Owner hiện hành: `20_STATUS_CIVIL_LABOR_CURRENT.md` / AFM-002. Không tạo module, không đổi builder. `00/10/25/30/40` chỉ sửa giao diện trực tiếp; `90` ghi ranh giới lịch sử; `92` giữ câu hỏi và statuses; MANIFEST hashes do Python đồng bộ.
+Owner hiện hành: `11_STATUS_CIVIL_LABOR_CURRENT.md` / AFM-002. Không tạo module, không đổi builder. `00/01/12/13/03` chỉ sửa giao diện trực tiếp; `90` ghi ranh giới lịch sử; `92` giữ câu hỏi và statuses; MANIFEST hashes do Python đồng bộ.
 
 ### Findings và supersession
 
 | ID | Mốc cũ / điểm khác | Quyết định mới / đầu ra |
 | --- | --- | --- |
-| AF-CR-001 | `20` Part I STATUS/CLASS/hierarchy/Brown và Part III §§1/7 coi Civil Slave | SUPERSEDED theo source §§1–2/18/21. Civil service, không Slave/punishment/caste; Brown mandatory identification retired. Citizen/public equality không đồng nhất mọi political/immigration rights; không tự chốt màu mới hoặc penal Brown. `10/25/40` sửa nhãn actor current. |
-| AF-CR-002 | `20` Citizen-only entry/status conversion; background không có vai trò ngoài archival | Source §§3–5/17: người nghèo/homeless/immigrant/Citizen có thể tham gia; voluntary + screening/capacity. Background không tạo caste nhưng nhu cầu/tình trạng đầu vào có thể đổi completion package; không discrimination pay cùng việc vì giàu/nghèo. |
-| AF-CR-003 | `20` Part II mandatory applicant-selected/accepted billet-before-conversion gate; no-billet hard gate | Source §§5–7/21 thay admission: quyền đăng ký ≠ nhận; không nhận nếu không bảo đảm living/allocation/deployment. Sau admission assignment phù hợp bắt buộc, preference không veto. Không tự giữ pre-selected billet acceptance như gate. Matching procedure còn UNKNOWN. |
-| AF-CR-004 | `20` refusal/assignment framework chưa đủ appeal và profile changes | Source §§6–9: hợp lệ/phù hợp là điều kiện; appeal khi sai dữ kiện, tình trạng đổi, trái chuẩn/an toàn. Không suy mọi assignment hợp lệ chỉ từ lệnh hoặc no-preference veto thành không có appeal. |
+| AF-CR-001 | `11` Part I STATUS/CLASS/hierarchy/Brown và Part III §§1/7 coi Civil Slave | SUPERSEDED theo source §§1–2/18/21. Civil service, không Slave/punishment/caste; Brown mandatory identification retired. Citizen/public equality không đồng nhất mọi political/immigration rights; không tự chốt màu mới hoặc penal Brown. `01/12/03` sửa nhãn actor current. |
+| AF-CR-002 | `11` Citizen-only entry/status conversion; background không có vai trò ngoài archival | Source §§3–5/17: người nghèo/homeless/immigrant/Citizen có thể tham gia; voluntary + screening/capacity. Background không tạo caste nhưng nhu cầu/tình trạng đầu vào có thể đổi completion package; không discrimination pay cùng việc vì giàu/nghèo. |
+| AF-CR-003 | `11` Part II mandatory applicant-selected/accepted billet-before-conversion gate; no-billet hard gate | Source §§5–7/21 thay admission: quyền đăng ký ≠ nhận; không nhận nếu không bảo đảm living/allocation/deployment. Sau admission assignment phù hợp bắt buộc, preference không veto. Không tự giữ pre-selected billet acceptance như gate. Matching procedure còn UNKNOWN. |
+| AF-CR-004 | `11` refusal/assignment framework chưa đủ appeal và profile changes | Source §§6–9: hợp lệ/phù hợp là điều kiện; appeal khi sai dữ kiện, tình trạng đổi, trái chuẩn/an toàn. Không suy mọi assignment hợp lệ chỉ từ lệnh hoặc no-preference veto thành không có appeal. |
 | AF-CR-005 | Discipline/failure chưa đủ ranh giới độc lập | Source §§9–10: không thể ≠ thiện chí kém ≠ không muốn ≠ cố ý từ chối ≠ phạm tội; retrain/reassign/medical, discipline hoặc luật thường nếu offense riêng. Không hạ class hoặc auto-Criminal. Ladder/limits UNKNOWN. |
 | AF-CR-006 | Pay/upkeep/housing/private life thiếu baseline; medical debt có thể bị lan vào upkeep | Source §§11–13: upkeep ≠ pay; pay không zero vì được nuôi; tài sản, hôn nhân, nghỉ/liên lạc/điều trị/privacy/appeal giữ. Housing theo deployment, không mandatory barracks. Không biến basic upkeep thành debt; medical debt độc lập ngoài scope giữ. |
-| AF-CR-007 | Quyền Citizen-equivalent chưa đủ scope; `25` chỉ yêu cầu vẻ công minh | Source §18 cụ thể hóa công quyền phải trung lập tuyệt đối với class/nghề/wealth/background; không inferior procedures/protection. `25/30` đồng bộ chuẩn phải tuân thủ, không assert perfect compliance/events. Bailout/Criminal interface vẫn NEEDS RECONCILIATION, không tự sửa. |
+| AF-CR-007 | Quyền Citizen-equivalent chưa đủ scope; `12` chỉ yêu cầu vẻ công minh | Source §18 cụ thể hóa công quyền phải trung lập tuyệt đối với class/nghề/wealth/background; không inferior procedures/protection. `12/13` đồng bộ chuẩn phải tuân thủ, không assert perfect compliance/events. Bailout/Criminal interface vẫn NEEDS RECONCILIATION, không tự sửa. |
 | AF-CR-008 | AF-OPEN-007 và AF-CX-011 coi early exit wholly UNKNOWN | Source §14 chốt legal early exit + loss unearned benefits, không upkeep debt; separate lawful advances independent. Notice/procedure/forced termination và exact limits OPEN. `92` sửa thành PARTIALLY RESOLVED. |
-| AF-CR-009 | `20` nhiều nơi giữ 5y review/10y direct Citizen và conversion identity | Source §§15/21 supersede. Minimum time + qualified service; ba nhóm thường/khó tuyển/cực khó–chiến lược; faster completion/better benefits là option direction không công thức. Không numeric canon hoặc auto citizenship. AF-OPEN-010 retired old question; implementation AF-CR-OPEN-002. |
+| AF-CR-009 | `11` nhiều nơi giữ 5y review/10y direct Citizen và conversion identity | Source §§15/21 supersede. Minimum time + qualified service; ba nhóm thường/khó tuyển/cực khó–chiến lược; faster completion/better benefits là option direction không công thức. Không numeric canon hoặc auto citizenship. AF-OPEN-010 retired old question; implementation AF-CR-OPEN-002. |
 | AF-CR-010 | Tax privilege, tax-arbitrage, chưa xác lập resident pathway/marriage; fee Undie | Source §§16–17/20–21: completion foundation/self-reliance, packages theo needs/input; immigrant strong review pathway, không indefinite delay; permanent tax và preferential fee retired. §19 re-entry UNKNOWN. AF-OPEN-009 cụ thể hóa một phần, không đóng full marriage/immigration law. |
 | AF-CR-011 | Homeless→Civil Slave/expulsion binary và degradation fallback | Source §§4/5/21: homeless có thể voluntary apply, screening/capacity, không punishment. Binary coercive intake không current; alternative support/deportation/zero-homelessness policy unresolved. Giữ medical hybrid/debt facts ngoài Civil theo scope, không dùng để tạo debt bondage. |
-| AF-CR-012 | Nguy cơ xóa toàn bộ operational safeguards độc lập hoặc phục hồi toàn nguồn cũ | `20` Part IV giữ empire-wide pool, concrete assignment/deployment, demand≠allocation, reserve/reassignment, relocation guarantee và khả năng manpower envelope đúng scope tương thích. Formula/agencies/cost/catalogue/duration/geographic limits vẫn OPEN. Những thứ này không tái tạo Slave, admission gate hoặc 5–10y. |
+| AF-CR-012 | Nguy cơ xóa toàn bộ operational safeguards độc lập hoặc phục hồi toàn nguồn cũ | `11` Part IV giữ empire-wide pool, concrete assignment/deployment, demand≠allocation, reserve/reassignment, relocation guarantee và khả năng manpower envelope đúng scope tương thích. Formula/agencies/cost/catalogue/duration/geographic limits vẫn OPEN. Những thứ này không tái tạo Slave, admission gate hoặc 5–10y. |
 
 Mọi finding thay thế có ưu tiên từ source CANON + yêu cầu nhập của tác giả; không phải sửa để làm setting hợp sở thích mô hình. Nội dung author source dùng “có thể” giữ mức khả năng/hướng, không thành agency/event/benefit table đã thực hiện.
 
 ### Độ phủ và phần mang sang
 
-- `20` Part II giữ nguyên đầy đủ §§1–24 của nguồn (đổi cấp heading để chứa trong module), gồm §21 danh sách superseded, §22 UNKNOWN và §24 mười trục thiết kế tiếp; không điền các trục đó.
+- `11` Part II giữ nguyên đầy đủ §§1–24 của nguồn (đổi cấp heading để chứa trong module), gồm §21 danh sách superseded, §22 UNKNOWN và §24 mười trục thiết kế tiếp; không điền các trục đó.
 - Rà định nghĩa/trục/caste, admission/assignment conditions, thẩm quyền/agency, fail/discipline/exit/completion, chronology/current-vs-history, scope/public neutrality, nguồn lực/capacity và mất/thêm nội dung. Không có số canon mới; không dựng min years/pay/weights.
-- Các câu hỏi §22 giữ nguyên đủ trong `20` và `92`, route AF-CR-OPEN-001–005; old questions còn phù hợp (reassignment/catalogue/cost/limits/authority) giữ thêm. AF-CR-OPEN-006 bailout/court/Criminal interface và -007 clothing/homelessness cần author decision; không đánh dấu resolved.
-- POW/Criminal/Yellow/bailout/age-alcohol/Citizen career-credit/zone/technology namespaces trong `20` giữ nội dung ngoài scope. Ngoại lệ thêm scope note không đổi legal outcome. Không xóa exploitation ngoài Civil chỉ vì retcon không Slave.
+- Các câu hỏi §22 giữ nguyên đủ trong `11` và `92`, route AF-CR-OPEN-001–005; old questions còn phù hợp (reassignment/catalogue/cost/limits/authority) giữ thêm. AF-CR-OPEN-006 bailout/court/Criminal interface và -007 clothing/homelessness cần author decision; không đánh dấu resolved.
+- POW/Criminal/Yellow/bailout/age-alcohol/Citizen career-credit/zone/technology namespaces trong `11` giữ nội dung ngoài scope. Ngoại lệ thêm scope note không đổi legal outcome. Không xóa exploitation ngoài Civil chỉ vì retcon không Slave.
 - Source history có CURRENT/RESOLVED ở các hồ sơ phía dưới chỉ theo thời điểm trong đúng Civil scope. AF-CX-010/011/013 và Brown/Civil/tax assertions bị thay/cụ thể hóa; không kích hoạt archive làm fallback. AF-CX-012/014 giữ operational primitives trong scope Part IV, không giữ old status conversion.
 - Không sửa lore RF/MC2/Undie uniform/Academy/ML/aviation hoặc controls. Sửa nhãn Civil trong current Fiction 1 không retcon ngược lịch sử Canon 1 hoặc giữ Civil→Undie tuyến cũ.
 
 ### Kiểm chứng và nguồn lưu trữ
 
-COMPLETE — đã đọc lại `00/10/20/25/30/40/92` và phần mới `90/91`, đối chiếu đủ 24 mục nguồn, danh sách UNKNOWN và các đoạn giữ nguyên về POW/Criminal/bailout/Citizen career-credit/alcohol/disability. Builder --check đạt 11 modules/15 hashes; 24 disposable-copy tests đạt. Giao diện bailout/Criminal và homelessness/uniform còn mở, không chứng nhận canon hoàn toàn không conflict hoặc live ChatGPT behavior. Nguồn được lưu byte-exact tại Source_Archive/AetherFire_Civil_Co_So_Canon_2026-10-05.md, SHA-256 khớp hash đầu vào trên; chỉ bỏ bản inbox sau kiểm hash, giữ thư mục. Checkpoint chỉ gồm task-owned changes sau kiểm staged diff. Không push trong lượt này.
+COMPLETE — đã đọc lại `00/01/11/12/13/03/92` và phần mới `90/91`, đối chiếu đủ 24 mục nguồn, danh sách UNKNOWN và các đoạn giữ nguyên về POW/Criminal/bailout/Citizen career-credit/alcohol/disability. Builder --check đạt 11 modules/15 hashes; 24 disposable-copy tests đạt. Giao diện bailout/Criminal và homelessness/uniform còn mở, không chứng nhận canon hoàn toàn không conflict hoặc live ChatGPT behavior. Nguồn được lưu byte-exact tại Source_Archive/AetherFire_Civil_Co_So_Canon_2026-10-05.md, SHA-256 khớp hash đầu vào trên; chỉ bỏ bản inbox sau kiểm hash, giữ thư mục. Checkpoint chỉ gồm task-owned changes sau kiểm staged diff. Không push trong lượt này.
 
 
 ## MC2 pathway selective admission — 2026-10-05
@@ -149,22 +198,22 @@ Nguồn: `AetherFire_MC2_Pathway_Canon_Status_2026-10-05.md`; SHA-256 `E0FD269CB
 
 | ID | Assertion / kết quả audit | Xử lý |
 | --- | --- | --- |
-| AF-MC2-001 / II.A | `00/10/40/70` còn ghi host/custodian mẹ MC2 UNKNOWN | Chốt TE bảo hộ, chỉ một số actor biết. Không chốt custody/asylum/pháp lý/địa điểm/cơ quan hoặc remap địa lý; `10` là owner, các file kia đồng bộ giao diện. |
-| AF-MC2-002 / II.B | Chưa ghi MC2.2 biết tình hình trước khủng hoảng | `10`: biết MC2 ở AF và tình hình khái quát, chính trị trong nước trì hoãn can thiệp ngay. Không suy biết genealogy/Swap/hiến tế/phản gián. |
-| AF-MC2-003 / II.C | Operational seal dependency chưa đủ cụ thể | `10`: AF relevant actors biết đủ vận hành khi nhận mẹ MC2; không RF specialist thường trực nắm lõi; RF thăm định kỳ. Cơ chế bearer/hiến tế-gia cố là thực, không chốt death/survival/ritual/authority. AF-OPEN-017 chỉ được cụ thể hóa một phần. |
-| AF-MC2-004 / II.C1 | Tín hiệu dependency break chưa ghi | `10`: nếu không cần RF định kỳ trong MC2 crisis thì đủ gây báo động/chú ý MC2.2 gần tức thời. Không chốt dependency đã cắt hoặc phản ứng cụ thể. |
-| AF-MC2-005 / II.D, IV.P1–2 | Operation Swap được ưu tiên nhưng source phủ nhận event admission | Giữ PROPOSAL ở `90`; `10/30/40` ghi boundary. Không chốt double/sponsor/consent/timing. |
-| AF-MC2-006 / II.E | Cover còn hoàn toàn UNKNOWN trong baseline | `30` §16.1 chốt chức năng Undie + biến đổi căn tính/diện mạo để tiếp cận kín; không chọn profession/operator, universal transformation hay timeline. |
-| AF-MC2-007 / II.F | Nguy cơ nhập hai lần giải cứu RP thành C2 | `10` giữ capability/motive + khả năng actor có deep information tương đương phạm vi Nội vụ/an ninh. Không chốt attempt count/event/knowledge provenance/success; giải cứu ≠ tự do. |
-| AF-MC2-008 / II.G, VII | Nguyên tắc nhiều contingency khác cây đã diễn ra | `10` chốt nguyên tắc phụ thuộc state/thẩm quyền; `90` giữ toàn ma trận ứng viên. Không đồng nhất AF agencies hay quyền disposition cuối cùng. |
-| AF-MC2-009 / II.H | Retcon trước loại cả implementation cũ, chưa phục hồi riêng checkpoint; `10` §23 còn assertion bẫy giả hiện hành | Phục hồi **checkpoint phản quốc**, không phục hồi causal chain. Sửa §23; fake/hijacked resistance là P11, không event. `40` §14.1 owner; `30/92` đồng bộ. |
-| AF-MC2-010 / II.I | Overlap chưa nêu đủ điều kiện closure/life threat | `40`: closure-bearing overlap, MC2 ở nguy hiểm sống còn thực chất khi MC1 xuất hiện. Không state merge, không chắc chết, không Canon 1 replay; mechanics và hậu MC1 UNKNOWN. |
+| AF-MC2-001 / II.A | `00/01/03/40` còn ghi host/custodian mẹ MC2 UNKNOWN | Chốt TE bảo hộ, chỉ một số actor biết. Không chốt custody/asylum/pháp lý/địa điểm/cơ quan hoặc remap địa lý; `01` là owner, các file kia đồng bộ giao diện. |
+| AF-MC2-002 / II.B | Chưa ghi MC2.2 biết tình hình trước khủng hoảng | `01`: biết MC2 ở AF và tình hình khái quát, chính trị trong nước trì hoãn can thiệp ngay. Không suy biết genealogy/Swap/hiến tế/phản gián. |
+| AF-MC2-003 / II.C | Operational seal dependency chưa đủ cụ thể | `01`: AF relevant actors biết đủ vận hành khi nhận mẹ MC2; không RF specialist thường trực nắm lõi; RF thăm định kỳ. Cơ chế bearer/hiến tế-gia cố là thực, không chốt death/survival/ritual/authority. AF-OPEN-017 chỉ được cụ thể hóa một phần. |
+| AF-MC2-004 / II.C1 | Tín hiệu dependency break chưa ghi | `01`: nếu không cần RF định kỳ trong MC2 crisis thì đủ gây báo động/chú ý MC2.2 gần tức thời. Không chốt dependency đã cắt hoặc phản ứng cụ thể. |
+| AF-MC2-005 / II.D, IV.P1–2 | Operation Swap được ưu tiên nhưng source phủ nhận event admission | Giữ PROPOSAL ở `90`; `01/13/03` ghi boundary. Không chốt double/sponsor/consent/timing. |
+| AF-MC2-006 / II.E | Cover còn hoàn toàn UNKNOWN trong baseline | `13` §16.1 chốt chức năng Undie + biến đổi căn tính/diện mạo để tiếp cận kín; không chọn profession/operator, universal transformation hay timeline. |
+| AF-MC2-007 / II.F | Nguy cơ nhập hai lần giải cứu RP thành C2 | `01` giữ capability/motive + khả năng actor có deep information tương đương phạm vi Nội vụ/an ninh. Không chốt attempt count/event/knowledge provenance/success; giải cứu ≠ tự do. |
+| AF-MC2-008 / II.G, VII | Nguyên tắc nhiều contingency khác cây đã diễn ra | `01` chốt nguyên tắc phụ thuộc state/thẩm quyền; `90` giữ toàn ma trận ứng viên. Không đồng nhất AF agencies hay quyền disposition cuối cùng. |
+| AF-MC2-009 / II.H | Retcon trước loại cả implementation cũ, chưa phục hồi riêng checkpoint; `01` §23 còn assertion bẫy giả hiện hành | Phục hồi **checkpoint phản quốc**, không phục hồi causal chain. Sửa §23; fake/hijacked resistance là P11, không event. `03` §14.1 owner; `13/92` đồng bộ. |
+| AF-MC2-010 / II.I | Overlap chưa nêu đủ điều kiện closure/life threat | `03`: closure-bearing overlap, MC2 ở nguy hiểm sống còn thực chất khi MC1 xuất hiện. Không state merge, không chắc chết, không Canon 1 replay; mechanics và hậu MC1 UNKNOWN. |
 
 Phần I giữ baseline genealogy/True Crown/matrilineal/RF union/member-state/Prince 9/Army vs Interior/Canon 1 vs 2/Undie profession. Không chốt lại source ancestry thành mới hoặc sửa miền không liên quan. Phần VIII là skeleton có điều kiện và đoạn giữa mở, không chronology triển khai Swap/rescue/hiến tế. Phần X là bản nén truth boundaries, không Anti-Drift mới.
 
 ### Yêu cầu bổ sung: tách module chính trị
 
-Tác giả yêu cầu “tách thành file chính trị riêng đi, nó đủ lớn và phức tạp rồi”. Tạo `25_POLITICS_DYNASTIC_SECURITY_CURRENT.md` / `AFM-011`, chuyển nguyên dữ kiện hiện hành ở `10` các section 4–5, 21, 23–25, RF continental union và pathway mới. Các ánh xạ `10` trong bảng audit phía trên chỉ nơi phát hiện/nhập ban đầu; **owner cuối là `25`** đối với chi tiết chính trị. `10` giữ ontology/toàn cục và giao diện; `30/40/70` giữ miền riêng, dẫn tới owner mới.
+Tác giả yêu cầu “tách thành file chính trị riêng đi, nó đủ lớn và phức tạp rồi”. Tạo `12_POLITICS_DYNASTIC_SECURITY_CURRENT.md` / `AFM-011`, chuyển nguyên dữ kiện hiện hành ở `01` các section 4–5, 21, 23–25, RF continental union và pathway mới. Các ánh xạ `01` trong bảng audit phía trên chỉ nơi phát hiện/nhập ban đầu; **owner cuối là `12`** đối với chi tiết chính trị. `01` giữ ontology/toàn cục và giao diện; `13/03/40` giữ miền riêng, dẫn tới owner mới.
 
 Module mới chỉ current canon/hướng thiết kế đúng cấp + boundary/unknown; không nhét P/H/D vào current. Không đổi luật Civil, Terminal, ML nội bộ, Academy hoặc hàng không. Builder đăng ký một AFM mới và cho --write chuyển đúng catalog/hash schema cũ thiếu riêng AFM-011; --check vẫn nghiêm, thiếu row cũ/unknown ID vẫn fail. Hai tests mới kiểm admission và không tự sửa lỗi catalog khác.
 
@@ -178,7 +227,7 @@ Module mới chỉ current canon/hướng thiết kế đúng cấp + boundary/u
 
 ### Kiểm chứng và vòng đời nguồn
 
-COMPLETE — maintenance --check đạt 11 modules/15 hashes; 24 disposable-copy tests đạt, gồm admission AFM-011 và từ chối thiếu catalog row cũ. Đã đọc lại current files sửa và module mới; đối chiếu nguyên các khối chuyển từ `10`, toàn III UNKNOWN, IV–VII P/H/D/ma trận và IX quyết định còn mở. Source_Archive/AetherFire_MC2_Pathway_Canon_Status_2026-10-05.md giữ byte-exact SHA-256 khớp đầu vào; chỉ bỏ bản inbox sau kiểm hash, giữ thư mục. Controls/tests-regression/Academy có sẵn không stage. Kiểm chứng nội dung/cấu trúc không chứng minh live ChatGPT behavior. Checkpoint sau staged diff check; không push trong lượt này.
+COMPLETE — maintenance --check đạt 11 modules/15 hashes; 24 disposable-copy tests đạt, gồm admission AFM-011 và từ chối thiếu catalog row cũ. Đã đọc lại current files sửa và module mới; đối chiếu nguyên các khối chuyển từ `01`, toàn III UNKNOWN, IV–VII P/H/D/ma trận và IX quyết định còn mở. Source_Archive/AetherFire_MC2_Pathway_Canon_Status_2026-10-05.md giữ byte-exact SHA-256 khớp đầu vào; chỉ bỏ bản inbox sau kiểm hash, giữ thư mục. Controls/tests-regression/Academy có sẵn không stage. Kiểm chứng nội dung/cấu trúc không chứng minh live ChatGPT behavior. Checkpoint sau staged diff check; không push trong lượt này.
 
 ## Undie professional-ecosystem revamp — 2026-10-05
 
@@ -193,28 +242,28 @@ Decisions 1–16 cụ thể hóa Baseline: legal ontology đã được chốt t
 
 Mốc repository trước sửa: `0b176cb9daf24c4d6c0c191c6f7274f8e79a76cf`, nhánh ban đầu `codex/worldbuilding-repository-context-20261005`; triển khai trên `maintenance/aetherfire-undie-revamp-20261005`. Các thay đổi có sẵn về controls/tests và The Academy ngoài phạm vi được giữ nguyên, không stage/commit chung.
 
-`30` được viết lại theo kiến trúc nghề, giữ Module ID AFM-003. `00/10/15/20/40/50/70/90/91/92` cập nhật các giao diện trực tiếp và provenance; MANIFEST được đồng bộ bằng builder. Không tạo module lore mới; không sửa Anti-Drift/Router, Học viện, MC4 hoặc hàng không.
+`13` được viết lại theo kiến trúc nghề, giữ Module ID AFM-003. `00/01/02/11/03/04/40/90/91/92` cập nhật các giao diện trực tiếp và provenance; MANIFEST được đồng bộ bằng builder. Không tạo module lore mới; không sửa Anti-Drift/Router, Học viện, MC4 hoặc hàng không.
 
 ### Đối chiếu đầy đủ 16 quyết định
 
 | ID / nguồn | Điểm bất tương thích hoặc phạm vi | Xử lý / nơi thể hiện |
 | --- | --- | --- |
-| AF-UR-001 / Decision 1 | Undie là Slave class/legal status/social caste ở `00/20/30`; profession bị đồng nhất với status | SUPERSEDED. `30` §1, `20` ontology và các giao diện: Citizen + Undie professional; licensing implementation vẫn mở. |
-| AF-UR-002 / Decision 2 | Graph màu/function, Cross-Track/reset/White exit ở `00/20/30` | RETIRED toàn kiến trúc chung, gồm Scarlet vốn thuộc graph cũ; không khẳng định màu bị cấm trong mọi tương lai. `30` §2; AF-OPEN-005/013 revised. |
-| AF-UR-003 / Decision 3 | Nghề bị định nghĩa bằng prostitution trong `30` | SUPERSEDED. `30` §2: nhiều nhánh chồng lấn, ví dụ không exhaustive taxonomy; sex work chỉ nhánh có thể có. |
-| AF-UR-004 / Decision 4 | Citizen/Civil→Undie one-way, Yellow→Red/quota, White→Citizen trong `20/30` | RETIRED như chuyển địa vị. `20` Part I/III và `30` §3: quyền rời nghề ≠ không chi phí; luật Civil độc lập giữ nguyên; Yellow còn, repeat outcome/garment mở. |
-| AF-UR-005 / Decision 5 | Criminal Slave→Undie prohibition ở `00/30` và hồ sơ trước | RETIRED đồ thị chuyển. `30` §4: eligibility hoạt động/license/venue/contract/access chưa chốt; không khẳng định mọi Criminal được hành nghề hoặc xóa Criminal Slave. |
-| AF-UR-006 / Decision 6 | Triệt sản mặc định và MC2 ngoại lệ ở `10/20/30/40` | SUPERSEDED. `30` §5/`10` D: nghề ≠ fertility; lineage giữ nguyên, y tế/tránh thai trên tuyến mới chưa chốt. |
-| AF-UR-007 / Decision 7 | Credit Score, Contribution Points Undie, status-collateral Credit Line/default→labor ở `20/30`; bare credit trong `15/92` | RETIRED trong Undie. Cash + state-backed Credits; debt/contract/social favor/political favor tách; no human/status collateral. Citizen credit và biến ngoài phạm vi không tự xóa. AF-OPEN-006/013/014 superseded trong phạm vi tương ứng. |
-| AF-UR-008 / Decision 8 | Black market = fake Slave/Undie experience | RETIRED; `30` §9 giữ nhu cầu Citizen và off-book/gray access primitive. Hàng hóa/nhu cầu cụ thể UNKNOWN. |
-| AF-UR-009 / Decision 9 | House/master/ownership mặc định trong `30` | RETIRED sở hữu; `30` §7 cho độc lập/trung gian, ví dụ organization không tạo tổ chức hoặc tên House chung. |
-| AF-UR-010 / Decision 10 | Collar/ink/open neck/shoulder/rank colors/two-stage humiliation bắt buộc trong `00/20/30`, Hoa Nguyệt humiliation ở `10` | SUPERSEDED. `30` §10: duty/context uniform family; actual appropriation ≠ externally proven intent. Không tự quyết rập hoặc hardware mới. |
-| AF-UR-011 / Decision 11 | State/security bị đọc như một bộ máy thống nhất | `30` §11 giữ phân biệt agency/information/jurisdiction/command; friendly-fire chỉ failure architecture, không tạo sự kiện. |
-| AF-UR-012 / Decision 12 | Special death disposal/paperwork/disappear được dùng như mặc định | RETIRED; `30` §12 dùng ordinary applicable framework + relevant profession interfaces. Security trigger cần lý do; full death law UNKNOWN. |
-| AF-UR-013 / Decision 13 | One Anti-Undie Institution / tự khôi phục Temple/Purple committee | Không nhập; `30` §13 cho nhiều tác nhân/opposition/reform. Temple/ML tồn tại ngoài phạm vi không bị xóa. |
-| AF-UR-014 / Decision 14 | Humiliation→resistance universal mechanism; Undie như mạng kháng chiến mặc định ở `30/50` | RETIRED causal default; `30` §13 và `50` giữ network interface chỉ khi có đường tiếp cận. |
-| AF-UR-015 / Decision 15 | Undie bị diễn giải như universal intelligence/statecraft apparatus | `30` §14: scandal/access/relationships có thể tạo politics, không Spy Undie profession; access ≠ knowledge/permission/role/authority/control. |
-| AF-UR-016 / Decision 16 | MC2 Princess→Civil→Undie→illegal prostitution với old trap chain ở `10/30/40/50` | SUPERSEDED implementation. `30` §16/`40` §14/`50` Part II: profession/social/gray access direction, exact pathway UNKNOWN. Raging Fire/Prince 9, True Crown và cấu trúc Fictionize/POC/Clash/gọi MC1 không bị thay bằng lore mới. |
+| AF-UR-001 / Decision 1 | Undie là Slave class/legal status/social caste ở `00/11/13`; profession bị đồng nhất với status | SUPERSEDED. `13` §1, `11` ontology và các giao diện: Citizen + Undie professional; licensing implementation vẫn mở. |
+| AF-UR-002 / Decision 2 | Graph màu/function, Cross-Track/reset/White exit ở `00/11/13` | RETIRED toàn kiến trúc chung, gồm Scarlet vốn thuộc graph cũ; không khẳng định màu bị cấm trong mọi tương lai. `13` §2; AF-OPEN-005/013 revised. |
+| AF-UR-003 / Decision 3 | Nghề bị định nghĩa bằng prostitution trong `13` | SUPERSEDED. `13` §2: nhiều nhánh chồng lấn, ví dụ không exhaustive taxonomy; sex work chỉ nhánh có thể có. |
+| AF-UR-004 / Decision 4 | Citizen/Civil→Undie one-way, Yellow→Red/quota, White→Citizen trong `11/13` | RETIRED như chuyển địa vị. `11` Part I/III và `13` §3: quyền rời nghề ≠ không chi phí; luật Civil độc lập giữ nguyên; Yellow còn, repeat outcome/garment mở. |
+| AF-UR-005 / Decision 5 | Criminal Slave→Undie prohibition ở `00/13` và hồ sơ trước | RETIRED đồ thị chuyển. `13` §4: eligibility hoạt động/license/venue/contract/access chưa chốt; không khẳng định mọi Criminal được hành nghề hoặc xóa Criminal Slave. |
+| AF-UR-006 / Decision 6 | Triệt sản mặc định và MC2 ngoại lệ ở `01/11/13/03` | SUPERSEDED. `13` §5/`01` D: nghề ≠ fertility; lineage giữ nguyên, y tế/tránh thai trên tuyến mới chưa chốt. |
+| AF-UR-007 / Decision 7 | Credit Score, Contribution Points Undie, status-collateral Credit Line/default→labor ở `11/13`; bare credit trong `02/92` | RETIRED trong Undie. Cash + state-backed Credits; debt/contract/social favor/political favor tách; no human/status collateral. Citizen credit và biến ngoài phạm vi không tự xóa. AF-OPEN-006/013/014 superseded trong phạm vi tương ứng. |
+| AF-UR-008 / Decision 8 | Black market = fake Slave/Undie experience | RETIRED; `13` §9 giữ nhu cầu Citizen và off-book/gray access primitive. Hàng hóa/nhu cầu cụ thể UNKNOWN. |
+| AF-UR-009 / Decision 9 | House/master/ownership mặc định trong `13` | RETIRED sở hữu; `13` §7 cho độc lập/trung gian, ví dụ organization không tạo tổ chức hoặc tên House chung. |
+| AF-UR-010 / Decision 10 | Collar/ink/open neck/shoulder/rank colors/two-stage humiliation bắt buộc trong `00/11/13`, Hoa Nguyệt humiliation ở `01` | SUPERSEDED. `13` §10: duty/context uniform family; actual appropriation ≠ externally proven intent. Không tự quyết rập hoặc hardware mới. |
+| AF-UR-011 / Decision 11 | State/security bị đọc như một bộ máy thống nhất | `13` §11 giữ phân biệt agency/information/jurisdiction/command; friendly-fire chỉ failure architecture, không tạo sự kiện. |
+| AF-UR-012 / Decision 12 | Special death disposal/paperwork/disappear được dùng như mặc định | RETIRED; `13` §12 dùng ordinary applicable framework + relevant profession interfaces. Security trigger cần lý do; full death law UNKNOWN. |
+| AF-UR-013 / Decision 13 | One Anti-Undie Institution / tự khôi phục Temple/Purple committee | Không nhập; `13` §13 cho nhiều tác nhân/opposition/reform. Temple/ML tồn tại ngoài phạm vi không bị xóa. |
+| AF-UR-014 / Decision 14 | Humiliation→resistance universal mechanism; Undie như mạng kháng chiến mặc định ở `13/04` | RETIRED causal default; `13` §13 và `04` giữ network interface chỉ khi có đường tiếp cận. |
+| AF-UR-015 / Decision 15 | Undie bị diễn giải như universal intelligence/statecraft apparatus | `13` §14: scandal/access/relationships có thể tạo politics, không Spy Undie profession; access ≠ knowledge/permission/role/authority/control. |
+| AF-UR-016 / Decision 16 | MC2 Princess→Civil→Undie→illegal prostitution với old trap chain ở `01/13/03/04` | SUPERSEDED implementation. `13` §16/`03` §14/`04` Part II: profession/social/gray access direction, exact pathway UNKNOWN. Raging Fire/Prince 9, True Crown và cấu trúc Fictionize/POC/Clash/gọi MC1 không bị thay bằng lore mới. |
 
 ### AF-UR-LEGACY — phân loại phần cũ chưa được quyết định triển khai lại
 
@@ -235,10 +284,10 @@ Bằng chứng tiền nhiệm được giữ trong Git ở mốc trước sửa,
 
 - Civil billet/allocation/lifecycle 5–10y, rights/fees/tax trong phạm vi đã chốt; Criminal/POW/Yellow độc lập; Career Rank/Contribution Points ngoài retcon Undie không tự xóa.
 - Neutral public procedures, phản ứng xã hội không đồng nhất, mobility nghề và sự phân biệt private commission với black market.
-- Năng lực terminal/mail/retina/bone audio/commission/emergency channel không bị xóa. Bắt buộc hardware, Pink gated communication và command authority cũ không trở thành policy mới. Guest Pass/Wallet/Deposit và unknown của `15` giữ nguyên.
+- Năng lực terminal/mail/retina/bone audio/commission/emergency channel không bị xóa. Bắt buộc hardware, Pink gated communication và command authority cũ không trở thành policy mới. Guest Pass/Wallet/Deposit và unknown của `02` giữ nguyên.
 - Raging Fire/Prince 9/Trưởng công chúa/RF union/True Crown và các agenda phe phái giữ nguyên. Không nhập thêm strategic-node proposals; nguồn ấy chỉ được chỉ định cho bước thiết kế MC2 tiếp.
-- AF–TE treaty, event-level transfer và ML interference vẫn có ranh giới ở `30/70`. “Transfer/freed” không chứng minh Slave, sale, citizenship hoặc consent. AF-ML-007/008 giữ mở, wording cập nhật theo nghề.
-- TE revamp là hướng DEFERRED, không thay toàn bộ `70`. Academy failure và punitive foreign-spy routes vẫn loại bỏ; legal handling spies chưa chốt.
+- AF–TE treaty, event-level transfer và ML interference vẫn có ranh giới ở `13/40`. “Transfer/freed” không chứng minh Slave, sale, citizenship hoặc consent. AF-ML-007/008 giữ mở, wording cập nhật theo nghề.
+- TE revamp là hướng DEFERRED, không thay toàn bộ `40`. Academy failure và punitive foreign-spy routes vẫn loại bỏ; legal handling spies chưa chốt.
 - AF-OPEN-001/002/003/007–012/015 và các unknown RF/Academy/MC4/ML/aviation/technology/state ngoài phạm vi được giữ. AF-OPEN-004 được mở lại outcome/garment; các mục legacy economic/rank có ghi trạng thái superseded thay vì lặng lẽ biến mất.
 - AF-UR-OPEN-001–009 trong `92` giữ nhánh/license/eligibility/debt/market/organization/Undi/security/death/MC2/TE và legacy-detail boundaries.
 
@@ -250,18 +299,18 @@ Nguồn Total War Transition bị loại trừ, không được đọc/nhập l�
 
 ### Kiểm chứng và vòng đời nguồn
 
-COMPLETE — đã đọc lại 11 nguồn hiện hành sửa trong lượt này và đối chiếu 16 quyết định. Civil Part II/IV giữ nguyên nội dung; MC4 `60`, Academy `65` và aviation `80` không đổi so với HEAD trước sửa. Maintenance `--check` đạt 10 modules/14 hashes; 22 disposable-copy tests đạt. Những kiểm tra này không chứng minh live ChatGPT behavior hoặc hoàn tất thiết kế nghề.
+COMPLETE — đã đọc lại 11 nguồn hiện hành sửa trong lượt này và đối chiếu 16 quyết định. Civil Part II/IV giữ nguyên nội dung; MC4 `05`, Academy `14` và aviation `06` không đổi so với HEAD trước sửa. Maintenance `--check` đạt 10 modules/14 hashes; 22 disposable-copy tests đạt. Những kiểm tra này không chứng minh live ChatGPT behavior hoặc hoàn tất thiết kế nghề.
 
 Hai nguồn đã xử lý chuyển byte-exact vào `Source_Archive/AetherFire_Undie_Revamp_Canon_Baseline_v0.1.md` và `Source_Archive/AetherFire_Undie_Revamp_Canon_Decisions_1-16_v0.1.md`; SHA-256 ở đích khớp các hash đầu vào trên. Chỉ bản inbox đã có archive kiểm chứng được bỏ; thư mục inbox giữ nguyên. Thêm hai whitelist Markdown hard-break trong `.gitattributes`, không sửa nội dung nguồn. Task-owned changes được stage riêng; checkpoint chỉ tạo sau khi kiểm staged diff và kiểm gói lần cuối đạt. Không push trong lượt này.
 
 ## Selective institution/technology/Guest Pass admission — 2026-10-03
 
-1. **Decision:** user approved the preceding audit and selective merge proposal (AF-NEW-001–008), not the four inputs wholesale. Accept bounded institutional interpretation in `10`, Terminal/Guest Pass functional architecture in one new shared module, and genealogy/inference/proposals only in `90`. No blanket restoration of historical Undie/TE mechanisms.
-2. **Current owner:** `15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` / `AFM-010` is the maintained authority for shared terminal/guest-service architecture. `10` §5.1 controls bounded institutional interpretation; `20` retains status/economic namespaces, `30` Undie/collar/Undi, and `80` aviation. Prior domain facts remain effective outside these additions; no prior module is replaced wholesale.
+1. **Decision:** user approved the preceding audit and selective merge proposal (AF-NEW-001–008), not the four inputs wholesale. Accept bounded institutional interpretation in `01`, Terminal/Guest Pass functional architecture in one new shared module, and genealogy/inference/proposals only in `90`. No blanket restoration of historical Undie/TE mechanisms.
+2. **Current owner:** `02_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` / `AFM-010` is the maintained authority for shared terminal/guest-service architecture. `01` §5.1 controls bounded institutional interpretation; `11` retains status/economic namespaces, `13` Undie/collar/Undi, and `06` aviation. Prior domain facts remain effective outside these additions; no prior module is replaced wholesale.
 3. **Accepted functional model:** removable core/body dock; anti-snatch/wearer binding/device credential lock with safety breakaway; private retina/audio direction and contextual service UI; temporary Guest Pass/profile distinct from legal status; separate prepaid wallet/deposit/access; original-denomination nominal deposit refund; QR payment requests; vending minimum claims; return transaction preserving refund entitlement; lost-device credential revocation and possible profile-bound replacement. Present rollout, full access and engineering implementation are not inferred.
-4. **Preserved baseline:** retina, bone-integrated audio, the conditional one-way emergency call, Pink communication and commission forum remain current in `30`. Guest civilianization does not migrate Undie coercion, ranks, workline, movement restrictions, Credit Score/Line or the unresolved bare credit variable.
-5. **AF-NEW-001 — RESOLVED in maintained view:** corrected the under-described baseline in `15` §2 and `90` collar boundary without modifying original inputs. **AF-NEW-003/004/005/006/008 — RESOLVED as admission boundaries:** no compulsory technology-floor ranking, artisanal-production exclusion, universal state-capacity/cheapness inference, House entity collapse, historic-mechanism restoration or complete-FX-resolution claim is adopted. This does not resolve the underlying unknown industrial/legal implementation.
-6. **AF-NEW-002/007 — UNKNOWN / OPEN:** retinal/audio adaptation and service/exit continuity after loss/return/revoke are explicitly preserved in `15` §§3/8/9. `92` AF-TECH-001 carries these plus the source's fifteen terminal unknowns; AF-TECH-002 carries fifteen industrial unknown groups; AF-STATE-001 carries ten institutional questions. Existing AF-OPEN-006/008/014 and AF-ML-007 remain open.
+4. **Preserved baseline:** retina, bone-integrated audio, the conditional one-way emergency call, Pink communication and commission forum remain current in `13`. Guest civilianization does not migrate Undie coercion, ranks, workline, movement restrictions, Credit Score/Line or the unresolved bare credit variable.
+5. **AF-NEW-001 — RESOLVED in maintained view:** corrected the under-described baseline in `02` §2 and `90` collar boundary without modifying original inputs. **AF-NEW-003/004/005/006/008 — RESOLVED as admission boundaries:** no compulsory technology-floor ranking, artisanal-production exclusion, universal state-capacity/cheapness inference, House entity collapse, historic-mechanism restoration or complete-FX-resolution claim is adopted. This does not resolve the underlying unknown industrial/legal implementation.
+6. **AF-NEW-002/007 — UNKNOWN / OPEN:** retinal/audio adaptation and service/exit continuity after loss/return/revoke are explicitly preserved in `02` §§3/8/9. `92` AF-TECH-001 carries these plus the source's fifteen terminal unknowns; AF-TECH-002 carries fifteen industrial unknown groups; AF-STATE-001 carries ten institutional questions. Existing AF-OPEN-006/008/014 and AF-ML-007 remain open.
 7. **Not accepted as current:** Purple committee/representation, White bribery/reallocation, nanofabric/self-repair/first-aid, TE vice mechanisms, broader intermediary institutions and the history-derived national infrastructure hierarchy. Replacement-deposit accounting is a candidate, not a closed rule. The Kingdom POT contributes a locally accepted contextual-interface seed only; no other project's ontology/implementation is imported.
 8. **Provenance / hashes:** each input is retained byte-exact; its original status and superseded/overbroad wording cannot override this record and the accepted current views:
    - `AetherFire_Personal_Terminal_Guest_Pass_Design_Proposal.md`: `77E98E8A4F259744A8512DB5E575D38C0CE79A69CAEAE685B254386106DFC0FA`.
@@ -269,7 +318,7 @@ Hai nguồn đã xử lý chuyển byte-exact vào `Source_Archive/AetherFire_Un
    - `AetherFire_Technology_Infrastructure_Working_Notes_2026-10-03.md`: `2D6A2821A224276C45826057C044714CF55087ACEFE02133355614C2F1885A7A`.
    - `AetherFire_Undie_Design_History_Genealogy_2026-10-03.md`: `9A83824437CF6174A4E2713E2F7AE3132FD70D9F25889A7151C643E5E433E244`.
 9. **Inbox lifecycle — completed:** after reading and verifying the accepted output, all four fully classified inputs moved byte-exact from `New Canon and Consideration` to `Source_Archive`; their hashes match the pre-edit inbox snapshot. This records processing of their proposal/history content, not wholesale canon admission. Historical archive inventory stays a historical snapshot; source hashes above record this admission. The inbox directory is retained for future inputs.
-10. **Verified next baseline:** `15` is the accepted terminal/guest view; `10` §5.1 the institutional interpretation; `90` the classified history/proposal view; `92` the remaining questions. These actual files were read and compared with the approved scope. Maintenance check and 22 disposable-copy tests passed; isolated metadata synchronization was byte-idempotent. Unchanged domain sources retain their earlier authority. This verifies repository structure/content, not live ChatGPT behavior or a complete guest-system implementation. `build_consolidation.py` does not regenerate lore from archives.
+10. **Verified next baseline:** `02` is the accepted terminal/guest view; `01` §5.1 the institutional interpretation; `90` the classified history/proposal view; `92` the remaining questions. These actual files were read and compared with the approved scope. Maintenance check and 22 disposable-copy tests passed; isolated metadata synchronization was byte-idempotent. Unchanged domain sources retain their earlier authority. This verifies repository structure/content, not live ChatGPT behavior or a complete guest-system implementation. `build_consolidation.py` does not regenerate lore from archives.
 
 ## Explicit inbox archival — 2026-10-02
 
@@ -281,10 +330,10 @@ Hai nguồn đã xử lý chuyển byte-exact vào `Source_Archive/AetherFire_Un
 ## Academy domain split and military-training integration — 2026-10-02
 
 1. **Acceptance:** the user approved the dedicated Academy source and consolidation of the existing Academy canon with the 2026-09-25 military-training delta.
-2. **Current owner:** `65_BATTLEMAGE_ACADEMY_CURRENT.md` (`AFM-009`) supersedes the detailed Academy training section previously maintained in `10`; `10` retains global/site interfaces and external authority unknowns.
+2. **Current owner:** `14_BATTLEMAGE_ACADEMY_CURRENT.md` (`AFM-009`) supersedes the detailed Academy training section previously maintained in `01`; `01` retains global/site interfaces and external authority unknowns.
 3. **Preserved baseline:** two battlemage schools, competence order, six-year model, five-person standard, twelve blocks, daily rhythm, seven-factor scholarship profile, functional uniform, lab/live-target unknowns and the removed failure-to-Undie route are retained.
 4. **Accepted additions:** professional reliability; DI doctrine and reduced direct control; distinct authority domains; whole-chain power restriction; delegated/rotating mission command; structured orders; differentiated error assessment and integrity; supervised professional-unit exposure in year 6; functional organization. Broader institutional-design principles retain the source's Academy/forward-design scope.
-5. **MC4 boundary:** source section 13 is applied in `60`; identity, biology, legacy quarantine and information-access unknowns remain unchanged. Academy doctrine now routes to `65`.
+5. **MC4 boundary:** source section 13 is applied in `05`; identity, biology, legacy quarantine and information-access unknowns remain unchanged. Academy doctrine now routes to `14`.
 6. **Open items:** all twenty unknowns from source section 16 remain open. Earlier entry-age, map, curriculum-gate, group-size, scholarship, quality and lab unknowns remain open; AF-OPEN-020–023 are rerouted and AF-AC-001 records new implementation questions. No automatic closure or Marine Corps organization import occurs.
 7. **Provenance:** the military-training delta is preserved byte-exact in `Source_Archive/aetherfire_battlemage_academy_military_training_canon_delta_2026-09-25.md`. After user-approved inbox cleanup, the identical untracked inbox copy is removed; the archived source remains recoverable through Git. Historical archive inventory in the manifest remains a historical snapshot; this new admission is recorded here.
 8. **Excluded decisions:** MC2 sacrifice/rescue proposals and historical RP events are not admitted by this approval.
@@ -293,7 +342,7 @@ Hai nguồn đã xử lý chuyển byte-exact vào `Source_Archive/AetherFire_Un
 ## Stable aviation and RF airspace integration — 2026-09-17
 
 1. **Source priority:** `aetherfire_stable_aviation_rf_airspace_control_canon_delta_2026-09-16.md` controls AF stable/scalable aviation, AF–RF aviation dependency, RF airspace/ATC/economy separation, mixed airspace and air-route leverage within its declared scope.
-2. **Document authority:** `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` controls the detailed domain. `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` retains only the global/geopolitical interface.
+2. **Document authority:** `06_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` controls the detailed domain. `01_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` retains only the global/geopolitical interface.
 3. **AF-AV-001 — RESOLVED:** AF is the only currently confirmed actor with stable, scalable aviation infrastructure. This does not establish that AF owns all flight, that no other actor can ever possess comparable infrastructure, or that AF automatically has air supremacy.
 4. **RF actor boundary:** statements about RF response are strategic incentives/direction for relevant RF/member-state authorities. Exact union/member-state/shared sovereignty and ATC authority remain `UNKNOWN`; no unitary RF implementation is inferred.
 5. **AF-AV-003 boundary:** the initial AF-supported stage followed by RF localization is a dependency-reduction pathway, not a confirmed chronology or current implementation state.
@@ -311,10 +360,10 @@ Hai nguồn đã xử lý chuyển byte-exact vào `Source_Archive/AetherFire_Un
 ## Matriarch's Lament document-authority integration — 2026-09-16
 
 1. **Architecture only:** splitting the ML material is a document-authority refactor, not a change to canon truth values.
-2. **Internal ML authority:** `70_MATRIARCHS_LAMENT_CURRENT.md` controls ML governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and northeastern tribes.
-3. **Global interface:** `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` retains only the ML/TE facts required by the global AetherFire institutional and geopolitical model.
-4. **Undie interface:** `30_UNDIE_SYSTEM_CURRENT.md` controls Undie status boundaries, including the removed foreign-spy route and the bounded AF→TE transfer statement.
-5. **Cross-world interface:** `40_METAFICTION_CANON_TIMELINE_CURRENT.md` controls the `UNDER CONSTRUCTION / NOT CURRENT CANON` status of Trúc Nha's proposed cross-world origin.
+2. **Internal ML authority:** `40_MATRIARCHS_LAMENT_CURRENT.md` controls ML governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and northeastern tribes.
+3. **Global interface:** `01_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` retains only the ML/TE facts required by the global AetherFire institutional and geopolitical model.
+4. **Undie interface:** `13_UNDIE_SYSTEM_CURRENT.md` controls Undie status boundaries, including the removed foreign-spy route and the bounded AF→TE transfer statement.
+5. **Cross-world interface:** `03_METAFICTION_CANON_TIMELINE_CURRENT.md` controls the `UNDER CONSTRUCTION / NOT CURRENT CANON` status of Trúc Nha's proposed cross-world origin.
 6. **Source preservation:** `matriarchs_lament_working_retcon_canon.md` remains byte-exact in `Source_Archive`; no source outside `Temp` was rewritten.
 
 ## RF, Academy and MC4 canon integration addendum — 2026-09-15
@@ -337,7 +386,7 @@ Hai nguồn đã xử lý chuyển byte-exact vào `Source_Archive/AetherFire_Un
 2. **Canon 1 / Canon 2:** Canon 1 is authored and Fictionize-realized; Canon 2 is the current five-year live history. They share a V0.5 source, are not independent universes, do not merge world-states and later overlap at the MC1 summon point.
 3. **MC1 entry:** MC1 is pulled while Fictionizing/stress-testing Canon 1 at the overlap, not directly from a purely external operator position.
 4. **Narrator boundary:** the known narrator split is `POC-personification → MC1` and `Fictionize-personification → Elena`. It does not establish transfer or loss of MC1/MC3's underlying esper abilities; exact Clash #2 mechanics remain `UNKNOWN`.
-5. **Clothing exclusion:** section `# 11. Dark humor của trang phục` from `aetherfire_narrators_pov_clash_humor.md` was deliberately not imported. `30_UNDIE_SYSTEM_CURRENT.md` remains the sole current authority for Undi clothing and the two-stage visual reading.
+5. **Clothing exclusion:** section `# 11. Dark humor của trang phục` from `aetherfire_narrators_pov_clash_humor.md` was deliberately not imported. `13_UNDIE_SYSTEM_CURRENT.md` remains the sole current authority for Undi clothing and the two-stage visual reading.
 
 ## Regional canon reconciliation addendum — 2026-09-11
 

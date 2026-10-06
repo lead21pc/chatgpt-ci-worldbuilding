@@ -78,7 +78,7 @@ class MaintenanceTests(unittest.TestCase):
 
     def test_politics_admission_and_previous_schema_bootstrap(self):
         name = tool.ACCEPTED['AFM-011']
-        self.assertEqual(name, '25_POLITICS_DYNASTIC_SECURITY_CURRENT.md')
+        self.assertEqual(name, '12_POLITICS_DYNASTIC_SECURITY_CURRENT.md')
         values = tool.header((self.root / name).read_bytes(), name)
         for owner in ('AFM-001', 'AFM-002', 'AFM-003', 'AFM-004', 'AFM-008'):
             self.assertIn(owner, values['Cross-domain owner boundary'])
@@ -104,7 +104,7 @@ class MaintenanceTests(unittest.TestCase):
 
     def test_hoa_nguyet_admission_and_previous_schema_bootstrap(self):
         name = tool.ACCEPTED['AFM-012']
-        self.assertEqual(name, '85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md')
+        self.assertEqual(name, '20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md')
         values = tool.header((self.root / name).read_bytes(), name)
         for owner in ('AFM-001', 'AFM-003', 'AFM-004', 'AFM-007', 'AFM-008', 'AFM-011'):
             self.assertIn(owner, values['Cross-domain owner boundary'])
@@ -140,8 +140,112 @@ class MaintenanceTests(unittest.TestCase):
         (self.root / tool.ACCEPTED['AFM-012']).unlink()
         self.rejected_without_writes()
 
+    def test_national_families_keep_original_module_ids(self):
+        prefixes = {
+            'AFM-001': '01', 'AFM-002': '11', 'AFM-003': '13',
+            'AFM-004': '03', 'AFM-005': '04', 'AFM-006': '05',
+            'AFM-007': '40', 'AFM-008': '06', 'AFM-009': '14',
+            'AFM-010': '02', 'AFM-011': '12', 'AFM-012': '20',
+            'AFM-013': '10', 'AFM-014': '30',
+        }
+        self.assertEqual(set(prefixes), set(tool.ACCEPTED))
+        for key, prefix in prefixes.items():
+            name = tool.ACCEPTED[key]
+            self.assertTrue(name.startswith(prefix + '_'), name)
+            self.assertEqual(tool.header((self.root / name).read_bytes(), name)['Module ID'], key)
+
+    def test_af_and_rf_admission_from_previous_catalog(self):
+        self.sync()
+        for key in ('AFM-013', 'AFM-014'):
+            for filename, prefix in (
+                    (tool.INDEX, f'| `{key}` |'.encode()),
+                    (tool.MANIFEST, f'| `{tool.ACCEPTED[key]}` |'.encode())):
+                path = self.root / filename
+                path.write_bytes(b'\n'.join(line for line in path.read_bytes().split(b'\n')
+                                           if not line.startswith(prefix)))
+        before = self.snapshot()
+        self.assertEqual(self.run_cli('--check').returncode, 2)
+        self.assertEqual(before, self.snapshot())
+        self.sync()
+        self.assertEqual(self.run_cli('--check').returncode, 0)
+
+    def test_exact_predecessor_paths_migrate_only_with_write(self):
+        self.sync()
+        reverse = {new: old for old, new in tool.LEGACY_PATHS.items()}
+        for mode in ('all', 'mixed'):
+            with self.subTest(mode=mode):
+                for filename, label in ((tool.INDEX, tool.CATALOG),
+                                        (tool.MANIFEST, tool.HASHES)):
+                    path = self.root / filename
+                    data = path.read_bytes()
+                    _, _, _, block = tool.region(data, label)
+                    for number, (new, old) in enumerate(reverse.items()):
+                        if mode == 'all' or number % 2 == 0:
+                            block = block.replace(new.encode(), old.encode())
+                    if mode == 'all':
+                        for key in ('AFM-013', 'AFM-014'):
+                            prefix = (f'| `{key}` |' if label == tool.CATALOG
+                                      else f'| `{tool.ACCEPTED[key]}` |').encode()
+                            block = b'\n'.join(line for line in block.split(b'\n')
+                                               if not line.startswith(prefix))
+                    path.write_bytes(tool.replace_region(data, label, block.decode()))
+                before = self.snapshot()
+                self.assertEqual(self.run_cli('--check').returncode, 2)
+                self.assertEqual(before, self.snapshot())
+                lore = {name: (self.root / name).read_bytes() for name in tool.MODULE_FILES}
+                self.sync()
+                self.assertEqual(self.run_cli('--check').returncode, 0)
+                self.assertEqual(lore, {name: (self.root / name).read_bytes()
+                                        for name in tool.MODULE_FILES})
+
+    def test_wrong_predecessor_owner_and_duplicate_hash_are_rejected(self):
+        self.sync()
+        index = self.root / tool.INDEX
+        manifest = self.root / tool.MANIFEST
+        original_index = index.read_bytes()
+        original_manifest = manifest.read_bytes()
+        index.write_bytes(original_index.replace(
+            tool.ACCEPTED['AFM-001'].encode(), b'20_STATUS_CIVIL_LABOR_CURRENT.md'))
+        self.rejected_without_writes()
+        index.write_bytes(original_index)
+        _, _, _, block = tool.region(original_manifest, tool.HASHES)
+        block += b'| `20_STATUS_CIVIL_LABOR_CURRENT.md` | `' + b'0' * 64 + b'` |\n'
+        manifest.write_bytes(tool.replace_region(original_manifest, tool.HASHES, block.decode()))
+        self.rejected_without_writes()
+
+    def test_missing_national_profiles_fail_before_writes(self):
+        for key in ('AFM-013', 'AFM-014'):
+            with self.subTest(key=key):
+                path = self.root / tool.ACCEPTED[key]
+                data = path.read_bytes()
+                path.unlink()
+                self.rejected_without_writes()
+                path.write_bytes(data)
+
+    def test_world_technology_and_national_authority_boundaries(self):
+        tech = (self.root / tool.ACCEPTED['AFM-010']).read_text(encoding='utf-8')
+        for marker in ('thế giới AetherFire', 'Phạm vi §§4–8', 'ứng dụng AF',
+                       'không xác nhận rollout', 'AF-TECH-001', 'AF-TECH-002'):
+            self.assertIn(marker, tech)
+        national = (self.root / tool.ACCEPTED['AFM-013']).read_text(encoding='utf-8')
+        for marker in ('không phải sơ đồ cấp dưới hành chính', 'CULT BELONGS_TO ACADEMY = FALSE',
+                       'SHARED PRE-DIVERGENCE STATE', 'AF-OPEN-031',
+                       'định hướng cho thiết kế quân đội/nhà nước AetherFire về sau'):
+            self.assertIn(marker, national)
+        rf = (self.root / tool.ACCEPTED['AFM-014']).read_text(encoding='utf-8')
+        for marker in ('RF KHÔNG CÒN LÀ KHỐI TU TIÊN', 'Four foregrounded blocs',
+                       'anh em cùng cha khác mẹ', 'CHƯA CHỐT', 'not one kingdom'):
+            self.assertIn(marker, rf)
+        academy = (self.root / tool.ACCEPTED['AFM-009']).read_text(encoding='utf-8')
+        self.assertIn('Academy failure → Undie = REMOVED', academy)
+        ledger = (self.root / '92_OPEN_ISSUES_CURRENT.md').read_text(encoding='utf-8')
+        for marker in ('AF-ORG-002 | UNKNOWN / OPEN', 'AF-ORG-003 | UNKNOWN / OPEN',
+                       'AF-OPEN-031 | CONFLICT / OPEN', 'Lab-subject personhood',
+                       'Exact RF constitutional form', 'DI legal powers'):
+            self.assertIn(marker, ledger)
+
     def test_technology_module_admission_and_owner_boundary(self):
-        name = '15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md'
+        name = '02_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md'
         self.assertEqual(tool.ACCEPTED['AFM-010'], name)
         values = tool.header((self.root / name).read_bytes(), name)
         self.assertEqual(values['Module ID'], 'AFM-010')
