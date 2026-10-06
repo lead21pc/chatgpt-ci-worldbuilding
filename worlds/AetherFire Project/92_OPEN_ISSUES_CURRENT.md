@@ -464,3 +464,56 @@ Tất cả giữ CHƯA CHỐT. Danh sách là câu hỏi thiết kế, không b�
 
 
 Các UNKNOWN ở §§3/6/9/11/13 và tại các owner vẫn giữ: ngưỡng người/thần, vật chất/linh hồn/tín đồ/quyền siêu hình, transformation, danh sách người biết, counterfeit/failure, quyền mở các relic khác, nơi tạo/quản lý Saint's Fresh, body location relative Trinity và knowledge của chuyên gia. Không đổi spelling **Saint's Fresh** hoặc **Redemption Rope** theo suy đoán; không tự đổi Fresh thành Flesh.
+
+## Hoa Nguyệt — các mục mở sau chốt 2026-10-07
+
+`85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát hai quốc hiệu và địa lý giao thương; Hán tự 華 đã RESOLVED, không còn UNKNOWN hiện hành. Một chủ thể nhà nước với hai lớp trình diện không tạo hai quốc gia hoặc hai địa vị công dân.
+
+| ID | Trạng thái | Phạm vi |
+| --- | --- | --- |
+| AF-HN-OPEN-001 | UNKNOWN / OPEN | Màu/quốc kỳ, hình học cuối cùng, Hoa/số cánh/chữ 月, relation lục giác–Lục Kì Nhân; không suy nguyên nhân từ cùng số sáu. |
+| AF-HN-OPEN-002 | UNKNOWN / OPEN | Lịch sử quốc hiệu kép/chữ 華, cơ quan chuẩn hóa, luật/nghi lễ, tên thông tục, dark-foundation disclosure và tri thức từng actor. |
+| AF-HN-OPEN-003 | UNKNOWN / OPEN | Tuyến ML/Raging Fire/phương Bắc nào đang tồn tại, bản đồ/path/mode/hub/tác nhân trung gian, capacity/cost/seasonality/safety và goods/tariffs/treaties. |
+| AF-HN-OPEN-004 | UNKNOWN / OPEN | Di trú/cư trú/hôn nhân/tị nạn/dẫn độ/citizenship, liên minh/quân sự/chỉ huy/tình báo/political alignment; thương mại không tự cấp các quan hệ ấy. |
+| AF-HN-OPEN-005 | UNKNOWN / DESIGN NOT ADMITTED | Node/tiểu quốc/định cư biên giới/mạng caravan/thương nhân và không gian địa chính trị áp lực vừa phải. Delta chỉ cho nền thiết kế, không xác lập từng thực thể; không khôi phục Quad Night/Holy State gate. |
+
+### Đủ mục chưa chốt từ nguồn quốc hiệu §10
+
+File này không tự chốt:
+
+- màu quốc gia chính thức;
+- bảng màu quốc kỳ đối ngoại;
+- kích thước chính xác của lục giác;
+- tỷ lệ hình học chính xác của biểu tượng tròn;
+- loài hoặc hình học cuối cùng của Hoa;
+- số cánh chính thức;
+- exact quan hệ biểu tượng giữa Lục Kì Nhân và số sáu trong quốc huy;
+- exact cách cách điệu chữ `月`;
+- việc nguyệt khuyết có tạo toàn bộ hay phần lớn chu vi của biểu tượng đối ngoại;
+- thời điểm lịch sử hệ tên kép được hình thành;
+- cơ quan nào chuẩn hóa quốc hiệu và quốc kỳ;
+- luật bắt buộc sử dụng tên nào trong từng loại văn bản;
+- nghi thức ngoại giao chi tiết;
+- mức người dân và người nước ngoài biết ý nghĩa sâu của quốc hiệu;
+- tên gọi thông tục trong đời sống nội địa;
+- exact lịch sử chữ `華` thay thế hoặc kế thừa cách viết trước đó nếu có.
+
+`UNKNOWN` ở các điểm trên không làm suy yếu quyết định canon về `鏡華水月 / 華月`.
+
+
+### Đủ phạm vi chưa chốt từ nguồn địa lý §3
+
+- Tuyến Hoa Nguyệt–Matriarch's Lament đang vận hành hay không.
+- Tuyến Hoa Nguyệt–Raging Fire đang vận hành hay không.
+- Cường quốc phía Bắc nào, nếu có, giao thương trực tiếp với Hoa Nguyệt.
+- Đường bộ, tuyến biển/hàng không/sông, đèo, cửa khẩu, cảng, trạm caravan hoặc polity trung gian cụ thể.
+- Phương thức vận tải trên từng tuyến.
+- Năng lực, tần suất, thời gian đi, chi phí, an toàn, mùa vụ, tầm quan trọng chiến lược.
+- Hàng hóa/dịch vụ/tiền tệ, thuế quan/hải quan/điều khoản điều ước.
+- Tuyến trực tiếp hay qua một/nhiều tác nhân trung gian.
+- Di trú, cư trú, hôn nhân, tị nạn, dẫn độ, citizenship.
+- Liên minh, tiếp cận quân sự, chung chỉ huy, chia sẻ tình báo hoặc political alignment.
+
+### Các unknown ngoài danh sách nén
+
+Nguồn quốc hiệu §§5/8/9 vẫn không chốt nghĩa vụ của từng công trình/cơ quan, lịch sử chữ 華 từ lập quốc/thí nghiệm, công khai/tôn vinh/phủ nhận dark foundation hoặc toàn dân biết, và phản ứng chính thức từng vụ appropriation. Nhận diện Hoa Nguyệt không chứng minh hiểu toàn bộ tên/biểu tượng; không cấp tri thức cho mọi actor. AF–RF Seaborne/aviation giữ scope cũ, không được áp toàn mọi tuyến Hoa Nguyệt.

@@ -1,12 +1,13 @@
 # AetherFire — Consolidation Index
 
-> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-10-06
+> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-10-07
 > **Location:** self-contained `AetherFire Project/` package. Current root files are maintained current sources; `Source_Archive/` preserves historical/provenance material only.
 > **Truth rule:** `ABSENCE OF CANON ≠ CANONICAL NEGATION`; `NOT ESTABLISHED ≠ FALSE`; unresolved relations remain `UNKNOWN / UNRESOLVED`.
 
 ## 1. Canonical reading order
 
 1. `10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` — project identity, global geopolitics, ontology and cross-domain interfaces.
+   - `85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` — căn tính Hoa Nguyệt, văn hóa, quốc hiệu/biểu tượng và địa lý thương mại đa hướng.
    - `25_POLITICS_DYNASTIC_SECURITY_CURRENT.md` — detailed political institutions, succession/legitimacy, MC2–AF–RF bargaining, seal-support governance, resistance and counterintelligence.
    - `15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` — shared technology/service interfaces, personal terminal, Guest Pass, prepaid wallet, deposit and device lifecycle; implementation unknowns remain open.
 2. `20_STATUS_CIVIL_LABOR_CURRENT.md` — status ontology, Citizen/Civil/Yellow/POW/Criminal, Civil entry/allocation/lifecycle and cross-status mobility.
@@ -42,6 +43,7 @@
 | `AFM-009` | `65_BATTLEMAGE_ACADEMY_CURRENT.md` |
 | `AFM-010` | `15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` |
 | `AFM-011` | `25_POLITICS_DYNASTIC_SECURITY_CURRENT.md` |
+| `AFM-012` | `85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` |
 
 <!-- END GENERATED MODULE CATALOG -->
 
@@ -88,6 +90,10 @@ CHILD CURRENT-CANON DOMAIN
 │  ├─ internal organization / DI / consultant / authority domains
 │  ├─ six-year training / five-person teams / twelve competency blocks
 │  └─ assessment / qualification / scholarship / functional uniform
+├─ Hoa Nguyệt [85]
+│  ├─ văn hóa / nguồn gốc / triết lý phép thuật
+│  ├─ 鏡華水月 / 華月: quốc hiệu và biểu tượng
+│  └─ địa lý tiếp cận / giao thương đa hướng / các tuyến chưa chốt
 ├─ Matriarch's Lament
 │  ├─ puppet state / Temple / apocalyptic cult
 │  ├─ Matriarch / Saint's Fresh / Redemption Rope
@@ -130,6 +136,12 @@ STATUS
 - Yellow vẫn là disciplinary status; Yellow→Red/Undie đã nghỉ hưu, trang phục/chế tài tái phạm mới chưa chốt.
 - Cash là tiền cơ bản; Credits là tiền điện tử được nhà nước bảo chứng. Nợ ≠ sở hữu; ân tình ≠ tiền tệ. Web tín dụng Undie cũ không phải mốc hiện hành.
 - Phả hệ không tự xác lập containment, thẩm quyền hoặc dependency.
+
+## Hoa Nguyệt — quốc hiệu và địa lý thương mại, chốt 2026-10-07
+
+`85` §2 giữ đủ quốc hiệu/biểu tượng: 鏡華水月 trong nước, 華月 đối ngoại, cùng một quốc gia; Hoa chính thức là 華. Nội địa lục giác đầy đủ, đối ngoại bố cục tròn và quốc kỳ vuông; hình học/màu/luật/tri thức tác nhân vẫn mở. `30` giữ Undi, không nhập biểu tượng thành rập nghề bắt buộc.
+
+`85` §3 chốt Hoa Nguyệt không bị AF cô lập, có giao thương ngoài AF, Silk Road không là cửa duy nhất. Khả năng phía Bắc/phía Nam/đi vòng AF không xác lập tuyến ML/Raging Fire/phương Bắc cụ thể; không hồi sinh Quad Night/Holy State gate. `91` ghi AF-HN-001–009; `92` giữ các unknown. Theo yêu cầu tách miền, `85` / `AFM-012` là module Hoa Nguyệt riêng; `10` giữ interface. Không tạo quốc gia, tuyến, cơ quan hoặc nghi lễ mới.
 
 ## Matriarch / Saint's Fresh — chốt 2026-10-06
 

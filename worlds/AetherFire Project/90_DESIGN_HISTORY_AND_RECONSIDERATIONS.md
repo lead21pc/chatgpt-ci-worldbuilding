@@ -2,6 +2,13 @@
 
 > Preserved as a separate temporal layer. `DESIGN HISTORY`, `RETIRED`, `SURVIVING LEGACY`, `UNDER CONSIDERATION`, `CURRENT CANON` and `UNKNOWN` retain their original meanings. Nothing in this file becomes current canon merely because it appears here.
 
+
+## Hoa Nguyệt — ranh giới hồ sơ lịch sử, chốt 2026-10-07
+
+`85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát canon Hoa Nguyệt hiện hành; `10` chỉ giữ giao diện thế giới. Những wording cũ tại §24.1 và cây tổng kết về “tên chính thức Hoa Nguyệt” chưa phân biệt nội địa/đối ngoại, cùng UNKNOWN Hán tự “Hoa”, đã được thay thế có giới hạn: 鏡華水月 / 華月, chữ 華. Bản lịch sử vẫn giữ nguyên để truy nguồn, không là fallback.
+
+Dark foundation/Lục Kì Nhân, văn hóa/quốc phục, triết lý phép thuật, nhân quyền và Silk Road còn hiệu lực. Nội địa/đối ngoại không thành hai quốc gia; giao thương đa hướng không phục hồi corridor Quad Night/Holy State, không tự tạo route/node nhỏ hoặc viết lại Undi. `91` ghi đối chiếu; `92` giữ mục mở.
+
 ## ML historical-state notice — Matriarch/Saint's Fresh 2026-10-06
 
 `70` §25 kiểm soát Matriarch/Fiction 0 origin, thần tính/thi hài/Saint's Fresh/Redemption Rope; `40` Part IV giữ timing interface. Các mô tả CURRENT/SURVIVING trong lịch sử về Creed/oath/quorum3/cardio/family-binding, relic-lending dưới Creed hoặc split-self bypass không còn quyền hiện hành. Creed và dependency đã rút chờ revamp; không dùng history làm fallback hoặc đặt replacement.
