@@ -1,4 +1,4 @@
-# AetherFire CI v3.1 — ChatGPT 8.8 temp language
+# AetherFire CI v3.1 — ChatGPT 8.8 base
 
 ## Output and invariants
 
