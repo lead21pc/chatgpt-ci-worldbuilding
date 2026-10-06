@@ -123,6 +123,8 @@ Commission riêng tư/nhạy cảm không tự đồng nghĩa chợ đen. Hợp 
 
 ## 10. Undi và Hoa Nguyệt
 
+Quốc hiệu/biểu tượng của cùng quốc gia do `85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` §2 kiểm soát: Kính Hoa Thuỷ Nguyệt / 鏡華水月 trong nước, Hoa Nguyệt / 華月 đối ngoại. Việc AF vay mượn hoặc tái mã hóa quốc phục không đổi quốc hiệu hay quyền tự định danh của họ; phản ứng ngoại giao từng trường hợp còn mở. Hệ lục giác/tròn của quốc gia không tự thành rập hoặc motif bắt buộc của Undi.
+
 Undi là họ đồng phục nghề nghiệp / giao diện thị giác nghề nghiệp **khi được sử dụng**, không phải đồng phục Slave hay dấu địa vị pháp lý. Hướng mặc theo nhiệm vụ/ngữ cảnh không đồng nghĩa dấu căn tính bắt buộc 24/7.
 
 Đã loại bỏ mặc định: độ che phủ thấp để nhục mạ, collar/mực/dấu cơ thể bắt buộc và apparatus khiến công chúng đọc ra sự hạ cấp. Chuỗi “thiếu nữ Hoa Nguyệt → nhìn kỹ → apparatus → Undie” không còn là cơ chế nhục mạ bắt buộc. Màu, độ hở hoặc hình dáng không tự xác lập nhánh nghề, tình dục, quyền tiếp cận hay địa vị người mặc.

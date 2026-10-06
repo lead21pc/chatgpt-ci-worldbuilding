@@ -4,7 +4,7 @@
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: AetherFire world state, institutions, geopolitics, foreign relations, global interfaces, and Academy institutional context.
 > Authority boundary: Controls global, institutional, and geopolitical canon except detailed domains explicitly controlled by another accepted current module.
-> Cross-domain owner boundary: Detailed Matriarch's Lament canon is controlled by `AFM-007`; detailed stable aviation and RF-airspace canon by `AFM-008`; metafiction detail by `AFM-004`; MC4 identity detail by `AFM-006`; internal Academy institutional and training canon by `AFM-009`; shared technology/service and Terminal/Guest Pass architecture by `AFM-010`; detailed dynastic politics, AF–RF strategic bargaining and counterintelligence by `AFM-011`.
+> Cross-domain owner boundary: Hoa Nguyệt national canon is controlled by `AFM-012`; detailed Matriarch's Lament canon is controlled by `AFM-007`; detailed stable aviation and RF-airspace canon by `AFM-008`; metafiction detail by `AFM-004`; MC4 identity detail by `AFM-006`; internal Academy institutional and training canon by `AFM-009`; shared technology/service and Terminal/Guest Pass architecture by `AFM-010`; detailed dynastic politics, AF–RF strategic bargaining and counterintelligence by `AFM-011`.
 > Load mode: `FULL_FILE`
 
 > Consolidated current-domain view. Detailed Citizen/Civil/Undie material was moved to sibling files. Design genealogy remains in `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md`.  
@@ -138,25 +138,9 @@ Triệt sản bắt buộc do là Undie đã nghỉ hưu. Không còn mô hình 
 
 MC2 vẫn có giá trị huyết hệ Raging Fire/Raging Phoenix/True Crown. Giao diện y tế/tránh thai trên tuyến mới phải được chốt riêng; giá trị ấy không tự cho phép một cơ chế cưỡng chế sinh sản.
 
-### E. Hoa Nguyệt / Tây quốc là đối trọng văn minh nhưng không phải phe sáng sạch
+### E. Hoa Nguyệt / Tây quốc — giao diện miền quốc gia
 
-**Hoa Nguyệt** là tên chính thức của quốc gia ở phía tây AetherFire, hợp nhất cảm hứng Trung Hoa + Nhật Bản. Hanfu và Kimono/Yukata thuộc hệ quốc phục/truyền thống của Hoa Nguyệt.
-
-Hoa Nguyệt:
-
-- là quốc gia đối địch AetherFire;
-- tôn trọng quyền con người ở current canon;
-- có đại hiệp / nam hiệp / nữ hiệp hành hiệp nghĩa xuyên thế giới;
-- coi magic phải dựa trên căn tính, tố chất, truyền thống huyền học phương Đông và sự hòa hợp với võ thuật.
-
-Nhưng dark foundation của bản quốc vẫn tồn tại: “Hoa” là tên Hoa Nguyệt tự đặt, có referent từ thí nghiệm cơ thể người tạo hình Hoa; tâm Hoa là **Lục Kì Nhân**, sáu thánh nhân có linh hồn làm trấn cho trấn quốc đại trận.
-
-```text
-CURRENT HUMAN-RIGHTS ORIENTATION
-≠ CLEAN FOUNDING HISTORY
-```
-
-Exact Hán tự của “Hoa” chưa được chốt; không tự chọn `花`/`華` làm canon.
+`85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát căn tính, văn hóa, quốc hiệu, biểu tượng và địa lý thương mại Hoa Nguyệt. Đây là quốc gia ở phía tây AF, đối địch nhưng vẫn có thương mại. `30` kiểm soát Undi; phả hệ MC2 không đổi.
 
 ### F. AetherFire magic-tech = coercive integration
 
@@ -401,20 +385,11 @@ Nhà nước **không phải một khối độc tài đơn nhất**.
 
 Các quốc gia bên ngoài không có cùng lập trường.
 
-### 20.0 Hoa Nguyệt / Tây quốc — current canon
+### 20.0 Hoa Nguyệt / Tây quốc — giao diện địa chính trị
 
-**Hoa Nguyệt** là tên chính thức của quốc gia ở phía tây AetherFire, hợp nhất cảm hứng Trung Hoa + Nhật Bản. Hanfu/Kimono/Yukata thuộc hệ quốc phục/truyền thống của họ.
+`85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát canon quốc gia Hoa Nguyệt; `10` chỉ giữ giao diện thế giới. Hoa Nguyệt / 華月 là tên đối ngoại của cùng quốc gia Kính Hoa Thuỷ Nguyệt / 鏡華水月 ở phía tây AF, không một chủ thể riêng.
 
-Hoa Nguyệt là đối thủ của AetherFire nhưng không phải một “good faction” sạch:
-
-- current orientation tôn trọng quyền con người;
-- có ecology đại hiệp / nam hiệp / nữ hiệp hành hiệp nghĩa;
-- magic gắn với huyền học phương Đông, căn tính, tố chất và hòa hợp với võ thuật;
-- dark founding: “Hoa” gắn với thí nghiệm cơ thể người tạo hình Hoa, tâm Hoa là Lục Kì Nhân, sáu linh hồn thánh nhân làm trấn cho trấn quốc đại trận.
-
-Exact Hán tự của “Hoa” chưa chốt.
-
-AetherFire cố ý vay mượn/chiếm dụng ý tưởng quốc phục Hoa Nguyệt khi phát triển Undi, nhưng bằng chứng ngoài không chứng minh chắc chắn ý định ấy. Có thể có bất bình/tranh cãi/ma sát ngoại giao và khả năng phủ nhận; không còn lời nhục mạ thị giác tự chứng minh. `30` kiểm soát chi tiết.
+Đối địch AF và giao thương song phương cùng tồn tại. Con đường Tơ lụa là một trong nhiều kết nối đối ngoại; AF không cô lập Hoa Nguyệt bằng địa lý. Các tuyến ML/Raging Fire/phương Bắc cụ thể vẫn chưa chốt. Trang phục nghề/appropriation do `30` kiểm soát; hệ tên/biểu tượng không tự thay đổi Undi hoặc tạo sự kiện ngoại giao.
 
 ### 20.0b Tam cường phương Bắc — current canon
 

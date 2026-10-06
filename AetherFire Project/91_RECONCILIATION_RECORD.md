@@ -2,6 +2,43 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Tách miền Hoa Nguyệt — yêu cầu bổ sung 2026-10-07
+
+Người dùng yêu cầu “tách mọi thứ thuộc hoa nguyệt thành một file riêng”. `85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` sở hữu căn tính quốc gia, văn hóa/quốc phục, nguồn gốc, triết lý phép thuật, hai quốc hiệu/biểu tượng và địa lý thương mại. Chuyển đầy đủ E và chi tiết §20.0 từ `10`, chỉ đổi heading/tham chiếu; không đổi trạng thái canon.
+
+`10` E/§20.0 chỉ giữ giao diện; I/§20.0c vẫn giữ Silk Road cross-domain. `30` sở hữu Undi, `40` MC2/metafiction, `90` lịch sử; không gom mọi occurrence Hoa Nguyệt thành sở hữu quốc gia. Reading order/tree, owner links, catalog và hashes đồng bộ. Builder thêm AFM-012 cuối registry để giữ ID cũ; bootstrap chỉ cho AFM-011/012 đã được nhận. Ba test mới kiểm admission/previous schema, missing source và canon/open boundaries.
+
+Mốc tiếp theo là `85`, thay owner `10` của bản nháp nhập đầu lượt. Unknown và nguồn archive byte-exact giữ nguyên; không mở lại archive để dựng file. Không tạo lore mới hoặc push.
+
+## Hoa Nguyệt — quốc hiệu, biểu tượng và địa lý thương mại, nhập 2026-10-07
+
+Quyền: người dùng yêu cầu “audit file mới và nhập vào canon”, sau đó “audit thêm một file nữa mới add” và xác nhận “Nhập luôn vào canon” cho file địa lý thương mại. FULL_AUDIT giới hạn hai delta và các giao diện trực tiếp; không quyết định từ filename/mtime.
+Baseline: nhánh `maintenance/aetherfire-matriarch-fresh-20261006`, HEAD `1aa9843`; nhánh tác vụ `maintenance/aetherfire-hoa-nguyet-name-20261007`. Các dirty controls/tests/Academy/CI giữ ngoài commit.
+
+Nguồn đã đọc đủ:
+- `AetherFire_Hoa_Nguyet_National_Name_Cross_Border_Usage_Canon_2026-10-07.md`, §§1–12; SHA-256 `0A740A5CDB4FE3DC7CF0CAA04658E2AC7DDEAE2ABE570C74F019207F8C35B69C`.
+- `AetherFire_Hoa_Nguyet_Trade_Geography_Canon_Delta_2026-10-07.md`, §§1–6; SHA-256 `DB68C16E346552FB0E4CCED9A5290467BA4E4907FDEACA49538AA9B6C90E53E7`.
+
+Mốc đối chiếu: `10` E/I/§20.0/§20.0c, `30` §10 và boundaries, `80` §1 về AF–RF/Seaborne; `90` §24.1–24.6 và cây tổng kết chỉ là lịch sử. Đã đọc routing/index, manifest và hồ sơ đang có. Không đọc archive làm fallback.
+
+| ID | Nguồn cũ → mới / phạm vi | Phân loại và xử lý |
+| --- | --- | --- |
+| AF-HN-001 | `10` E/§20.0: “Hoa Nguyệt là tên chính thức”; nguồn quốc hiệu §§1/12. | SUPERSEDED có giới hạn: 鏡華水月 đầy đủ trong nước, 華月 đối ngoại, cùng chủ thể. Sửa cả hai wording lặp; không đổi mọi occurrence tên Hoa Nguyệt hoặc lập hai pháp nhân. |
+| AF-HN-002 | `10` E/§20.0 và `90` §24.1: exact Hán tự UNKNOWN → nguồn §§1.1/12 chốt 華. | RESOLVED tại `85`; 花 không chữ chính thức của quốc hiệu. `90` thêm notice, không sửa hồ sơ cũ hoặc suy luôn dùng 華 từ lập quốc. |
+| AF-HN-003 | Nguồn quốc hiệu §§2/3/6/7 thêm nghĩa quan hệ 鏡華水月 và lựa chọn 華月. | CANON bổ sung đủ tại `85` §2; không bốn vật thể rời, không suy cô lập, bí mật, cấm người ngoài, hai chính phủ/công dân hoặc chỉ cắt góc. |
+| AF-HN-004 | Nguồn §§4/5 thêm nội địa lục giác/khảm đá tường thành và đối ngoại tròn/quốc kỳ vuông. | CANON chức năng/cách dùng; hình học chính xác, loài/số cánh, màu, luật, lịch sử và cơ quan UNKNOWN. Không dựng design cụ thể hoặc đồng nhất “vuông” với mọi lá cờ trong nước. |
+| AF-HN-005 | `10` E/§20.0 và `30` §10 về dark foundation, quốc phục, appropriation; nguồn §§1.3/8/9. | PRESERVED: nhân quyền không lịch sử sạch; Lục Kì Nhân vẫn sáu linh hồn trấn đại trận. Không suy toàn dân/AF biết, cải chính lịch sử hay phản ứng ngoại giao mới; `30` chỉ thêm interface, không phục hồi humiliation/rập cũ. |
+| AF-HN-006 | `10` I/§20.0c giữ Silk Road song phương, chưa khẳng định sole outlet → địa lý §§1/2. | CANON bổ sung, không confirmed conflict: AF không chắn ngang lục địa để cô lập Hoa Nguyệt, có giao thương ngoài AF. Silk Road là một trong nhiều kết nối; không biến omission cũ thành phủ định. |
+| AF-HN-007 | Địa lý §§2/3/6 mở không gian Bắc/Nam/đi vòng AF. | Khả thi địa lý ≠ tuyến vận hành; ML/Raging Fire/phương Bắc cụ thể UNKNOWN. Trade≠alliance/military/command/intelligence. Không dùng hai quốc hiệu để nhân đôi node đối tác. |
+| AF-HN-008 | `10` I/§20.0c corridor Quad Night retired; địa lý §§4/5. | PRESERVED retirement; node nhỏ/trung gian/romantic/social route là khả năng thiết kế, chưa CANON và chưa tạo proposal riêng. AF–RF/Seaborne trong `80` không bị retcon hoặc tự áp cho mọi route biển Hoa Nguyệt. |
+| AF-HN-009 | Quốc hiệu §§8/10 và địa lý §3 liệt kê các mục chưa xác lập. | UNKNOWN / OPEN giữ đủ tại `85` và `92`; không giải quyết quyền nhập cư/tri thức/treaty/flag geometry bằng sự tồn tại tên hoặc thương mại. |
+
+Đã rà đồng nhất/định nghĩa, điều kiện/phạm vi, chân trị, thẩm quyền, actor knowledge, thời gian/lịch sử, nhân quả/phụ thuộc, hình học/số sáu và mất/thêm nội dung. Không cần kiểm tính đúng lịch sử/ngôn ngữ ngoài đời: đây là tác giả chốt Hán tự/ý nghĩa in-setting, không assertion học thuật. Không suy lục giác bắt nguồn Lục Kì Nhân chỉ vì cùng số sáu.
+
+Owner đầu ra: `85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` §§1–3; `10` giữ interface; `30` §10 interface; `00` routing, `90` notice, `92` AF-HN-OPEN-001–005. Giữ mọi canon độc lập MC2/RF/ML/Academy/Undie; không sửa controls, geopolitical actors/treaties hoặc archive cũ; builder/tests bổ sung admission AFM-012 theo yêu cầu tách miền.
+
+Kiểm chứng: COMPLETE trong phạm vi hai delta. Đã đọc lại đầu ra, đối chiếu đủ 12 mục quốc hiệu (giữ nguyên nội dung, chỉ đổi heading) và 6 mục địa lý (diễn đạt tiếng Việt), giữ 16 unknown quốc hiệu và 10 nhóm unknown thương mại cùng các ranh giới phân tán. Đối chiếu ngược xác nhận mọi nội dung ngoài các block cho phép của `10` không đổi; chuyển sang `85` không mất nội dung; `30` chỉ thêm interface, `90/91` chỉ thêm hồ sơ, `92` chỉ thêm ledger. Builder `--check` đạt 12 modules/16 hashes; 27 kiểm thử đạt. Hai nguồn đã vào `Source_Archive`, SHA-256 giữ nguyên như trên; giữ inbox folder. Kiểm chứng nội dung/cấu trúc không chứng minh runtime hoặc chốt các UNKNOWN. Không push.
+
 ## Matriarch / Saint's Fresh — nhập delta 2026-10-06
 
 Nguồn `AetherFire_Matriarchs_Lament_Matriarch_Origin_Saints_Fresh_Canon_2026-10-06.md` ghi CANON DELTA do tác giả chốt; người dùng yêu cầu “audit file mới và nhập vào canon”. Đã đọc đủ §§1–15; không dùng tên file/mtime làm quyền độc lập. SHA-256: `554737F621D9186CC2C9187B716301794D21D50C2078289A085B6AAC748AFA79`.

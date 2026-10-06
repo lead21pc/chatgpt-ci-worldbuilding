@@ -102,6 +102,44 @@ class MaintenanceTests(unittest.TestCase):
                                    if not line.startswith(b'| `AFM-002` |')))
         self.rejected_without_writes()
 
+    def test_hoa_nguyet_admission_and_previous_schema_bootstrap(self):
+        name = tool.ACCEPTED['AFM-012']
+        self.assertEqual(name, '85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md')
+        values = tool.header((self.root / name).read_bytes(), name)
+        for owner in ('AFM-001', 'AFM-003', 'AFM-004', 'AFM-007', 'AFM-008', 'AFM-011'):
+            self.assertIn(owner, values['Cross-domain owner boundary'])
+        self.sync()
+        for filename, prefix in (
+                (tool.INDEX, b'| `AFM-012` |'),
+                (tool.MANIFEST, f'| `{name}` |'.encode())):
+            path = self.root / filename
+            path.write_bytes(b'\n'.join(line for line in path.read_bytes().split(b'\n')
+                                       if not line.startswith(prefix)))
+        before = self.snapshot()
+        self.assertEqual(self.run_cli('--check').returncode, 2)
+        self.assertEqual(before, self.snapshot())
+        self.sync()
+        self.assertEqual(self.run_cli('--check').returncode, 0)
+
+    def test_hoa_nguyet_source_and_open_boundaries_survive(self):
+        name = tool.ACCEPTED['AFM-012']
+        text = (self.root / name).read_text(encoding='utf-8')
+        for marker in ('鏡華水月', '華月', 'Lục Kì Nhân', 'Hanfu', 'UNKNOWN',
+                       'Con đường Tơ lụa', 'không phải cửa ngõ đối ngoại duy nhất',
+                       'Không phục hồi hoặc ánh xạ lại', 'chung chỉ huy'):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+        world = (self.root / tool.ACCEPTED['AFM-001']).read_text(encoding='utf-8')
+        self.assertIn(name, world)
+        self.assertNotIn('#### 1. Quyết định canon', world)
+        ledger = (self.root / '92_OPEN_ISSUES_CURRENT.md').read_text(encoding='utf-8')
+        self.assertIn('AF-HN-OPEN-005', ledger)
+        self.assertIn(name, ledger)
+
+    def test_missing_hoa_nguyet_source_fails_before_writes(self):
+        (self.root / tool.ACCEPTED['AFM-012']).unlink()
+        self.rejected_without_writes()
+
     def test_technology_module_admission_and_owner_boundary(self):
         name = '15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md'
         self.assertEqual(tool.ACCEPTED['AFM-010'], name)

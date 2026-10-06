@@ -22,6 +22,7 @@ MODULE_FILES = (
     '65_BATTLEMAGE_ACADEMY_CURRENT.md',
     '15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md',
     '25_POLITICS_DYNASTIC_SECURITY_CURRENT.md',
+    '85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md',
 )
 INDEX = '00_AETHERFIRE_CONSOLIDATION_INDEX.md'
 MANIFEST = 'MANIFEST.md'
@@ -177,11 +178,14 @@ def plan(root, write=False):
         if re.search(rb'(?m)^> Runtime role:\s*`?CURRENT_SOURCE`?\s*\r?$', data):
             raise ValidationError(f'Unexpected CURRENT_SOURCE; not admitted: {path.name}')
     _, _, _, block = region(inputs[INDEX], CATALOG)
-    # Only --write may bootstrap the explicitly admitted AFM-011 from the
+    # Only --write may bootstrap the explicitly admitted AFM-011/AFM-012 from the
     # previous complete catalog; malformed, missing older or extra rows fail.
     catalog_expected = modules
-    if write and b'| `AFM-011` |' not in block:
-        catalog_expected = {key: name for key, name in modules.items() if key != 'AFM-011'}
+    if write:
+        for key in ('AFM-011', 'AFM-012'):
+            if f'| `{key}` |'.encode() not in block:
+                catalog_expected = {item: name for item, name in catalog_expected.items()
+                                    if item != key}
     catalog_rows = rows(block,
                         '| Module ID | Current source path (relative to AetherFire Project/) |',
                         catalog_expected)
@@ -192,9 +196,12 @@ def plan(root, write=False):
     region(manifest, METADATA)
     _, _, _, block = region(manifest, HASHES)
     hash_expected = CURRENT_FILES
-    political_source = ACCEPTED['AFM-011']
-    if write and f'| `{political_source}` |'.encode() not in block:
-        hash_expected = tuple(name for name in CURRENT_FILES if name != political_source)
+    if write:
+        for key in ('AFM-011', 'AFM-012'):
+            admitted_source = ACCEPTED[key]
+            if f'| `{admitted_source}` |'.encode() not in block:
+                hash_expected = tuple(name for name in hash_expected
+                                      if name != admitted_source)
     previous_hashes = rows(block, '| File | SHA-256 |', hash_expected)
     if any(not re.fullmatch(r'[0-9A-F]{64}', value) for value in previous_hashes.values()):
         raise ValidationError('Invalid current hash syntax')
