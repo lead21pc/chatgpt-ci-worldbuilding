@@ -2,6 +2,31 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Matriarch's Lament — thần quyền hậu-Creed, chốt 2026-10-07
+
+**Quyền:** tác giả yêu cầu audit file mới và nhập vào canon. Nguồn `AetherFire_Matriarchs_Lament_Post_Creed_Divine_Governance_Canon_2026-10-07.md` tự xác lập CANON DELTA; tiếp nhận đủ §§1–13 vào `40` §26, không tạo file canon mới.
+
+**Baseline:** HEAD `f39741ba1bf60122fdcbcf756866c801b97431f3`; nhánh tác vụ `maintenance/aetherfire-ml-post-creed-20261007`. Dirty controls/tests control-regressions/Academy và các file ngoài phạm vi giữ nguyên, không đưa vào commit.
+
+**Nguồn:** SHA256 `76F2F25F42E8CD319D34CD2AC6D849D004CF256F172C6C8E9FE7ACB7FDFC91E6`, 14,088 byte. Phạm vi audit: toàn bộ delta và canon ML hiện hành, các giao diện/sổ vấn đề liên quan; không tuyên bố audit toàn bộ lore hoặc runtime LLM.
+
+| ID | Kết luận audit | Xử lý / giới hạn |
+|---|---|---|
+| AF-ML-PC-001 | Tiếp nhận đủ §§1–13 của delta; khung hậu-Creed thay trạng thái chờ thiết kế, không phục hồi Creed cũ. | `40` §§6/25/26; `00`, `90` cập nhật thông báo hiện hành. |
+| AF-ML-PC-002 | Oath chức vụ có thể tạo chứng cứ siêu nhiên; không tự bãi nhiệm, kết tội hoặc áp hình phạt. | `40` §26.2–3; sai số, chứng cứ và thủ tục vẫn mở. |
+| AF-ML-PC-003 | Access cần actor/thẩm quyền/thủ tục hợp lệ; không tự mất do vi phạm hoặc nổi loạn. Từ chối chữa trị vẫn có thể gây hại qua chuỗi nhân quả. | `40` §26.4–5; không suy ra độc quyền chữa trị hoặc kill-switch. |
+| AF-ML-PC-004 | Dân thường, quan chức, clergy và Holy Guard khác nhau; capability của Guard là định hướng có điều kiện, không phải tự mất khi bất đồng. | `40` §§8/26.6–7; allegiance hiện hành và authority/ownership tách biệt. |
+| AF-ML-PC-005 | Family curse vẫn rút; nghi ngờ/kiểm tra gia đình thuộc thể chế không phải tội di truyền. | `40` §26.8; phạm vi và bảo đảm chống lạm dụng chưa chốt. |
+| AF-ML-PC-006 | Nổi loạn phải qua đường chính trị/an ninh/nguồn lực/thẩm quyền thực tế; các nhánh phản ứng không phải biến cố lịch sử đã xảy ra. | `40` §§20–22/26.9; không phục hồi split-self bypass. |
+| AF-ML-PC-007 | Healing legacy không chứng minh Temple nhân từ hoặc ý chí hiện hành của Matriarch. | `40` §26.10; không suy ra đồng thuận, độc quyền hoặc divine demand. |
+| AF-ML-PC-008 | Relic lending, ba linh mục làm chứng và Saint's Fresh giữ ranh giới cũ: chỉ Saintess tự tay mở/bọc; không cấp toàn quyền ngoại giao/sở hữu. | `40` §§9–10/26; không gộp witness thành Creed quorum hoặc access gate. |
+| AF-ML-PC-009 | Giữ nguyên đủ 30 câu hỏi mới; khung chức năng chỉ giải quyết một phần vấn đề cũ về thay Creed. | `92` AF-ML-005, AF-ML-ORIGIN-005 và AF-ML-PC-OPEN-001–010; không đóng các vấn đề triển khai. |
+| AF-ML-PC-010 | Trúc Nha thuộc ML, cross-world còn xây dựng; nguồn gốc, niên đại, địa lý, quan hệ TE/AF và phân biệt Temple/state/Cult không bị thay. | `40` các phần ngoài phạm vi giữ nguyên; `01` chỉ cập nhật giao diện hậu-Creed. |
+
+**Conflict:** không phát hiện mâu thuẫn canon chưa giải quyết trong phạm vi delta; trạng thái cũ chờ mô hình hậu-Creed được supersede ở mức khung chức năng. Các câu hỏi triển khai và ý chí Matriarch không được suy đoán thành canon.
+
+**Kiểm chứng:** PASS — đủ §§1–13 giữ nguyên nội dung sau đổi cấp heading; 30 UNKNOWN được giữ nguyên ở canon và ledger; các phần ML §§1–4/10–19 và toàn bộ record cũ không đổi. 35 kiểm tra hồi quy đạt; metadata xác nhận 14 module/18 hash, không đọc archive. Nguồn được chuyển byte-exact vào `Source_Archive/AetherFire_Matriarchs_Lament_Post_Creed_Divine_Governance_Canon_2026-10-07.md`, SHA256 khớp nguồn. Đây là kiểm chứng cấu trúc/nội dung cục bộ, không phải chứng minh hành vi runtime LLM. Đường dẫn mặc định cho lần push được yêu cầu sau này: `worlds/AetherFire Project`; lượt này chỉ checkpoint nội bộ.
+
 ## Tách quốc gia và đánh số theo họ — chốt 2026-10-07
 
 **Quyền:** tác giả phê duyệt audit file cũ 10/15/25/30/65, đồng thời yêu cầu `01` cho thế giới, `10` chủ AF/`11–19` subsystem và cách tương tự cho quốc gia khác. Chốt thay nơi quản lý và tổ chức tài liệu, không chốt thêm cơ chế/tri thức/quan hệ sở hữu.

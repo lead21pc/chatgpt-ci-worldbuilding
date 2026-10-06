@@ -127,7 +127,11 @@ STATUS
 
 `40` giữ đầy đủ delta §§1–15 về Matriarch (người/esper chữa lành từ Fiction 0), thánh lực/thần tính, bị ám sát, thi hài bí mật dưới Thần điện, Saint's Fresh và Redemption Rope. `03` giữ thứ tự Clash #1 trước forced transfer ở Fiction 0, điểm đến Fiction 1 khoảng 500 năm trước; không chốt thời lượng hoặc cơ chế chung.
 
-Creed/oath/quorum/attack surface và các dependency đã rút chờ revamp. Thần điện/Cult/Holy Guard/nhà nước, split-self/doctrine Trúc Nha và các dữ kiện độc lập giữ; không suy loyalty siêu nhiên hoặc nguồn gốc Trúc Nha. AF dependency định kỳ vào Saint's Fresh không chứng minh AF biết nguồn thi hài; access gate Saintess không thành toàn quyền chính trị. `91` ghi AF-ML-DELTA-001–010; `92` giữ đầy đủ 23 UNKNOWN và các điểm chronology/authority mới.
+Creed cũ/oath cưỡng chế/quorum/attack surface và các dependency vẫn đã rút; khung hậu-Creed hiện hành ở `40` §26, chốt 2026-10-07. Thần điện/Cult/Holy Guard/nhà nước, split-self/doctrine Trúc Nha và các dữ kiện độc lập giữ; không suy loyalty siêu nhiên hoặc nguồn gốc Trúc Nha. AF dependency định kỳ vào Saint's Fresh không chứng minh AF biết nguồn thi hài; access gate Saintess không thành toàn quyền chính trị. `91` ghi AF-ML-DELTA-001–010; `92` giữ đủ 23 câu hỏi nguồn cùng trạng thái hiện hành: câu hỏi về khung thay Creed đã giải quyết một phần, chi tiết triển khai và các điểm chronology/authority vẫn mở.
+
+## Matriarch's Lament — thần quyền hậu-Creed, chốt 2026-10-07
+
+`40` §26 giữ đầy đủ delta §§1–13: xác minh oath ≠ quyết định access ≠ trừng phạt thể chế. Không injury/death/family curse hoặc mass magical death tự động; grant/suspend/revoke cần actor/thẩm quyền/thủ tục hợp lệ. ML có thể tàn nhẫn bằng từ chối cứu chữa, không tự độc quyền mọi chữa bệnh. Holy Guard capability là hướng có điều kiện, không tự mất khi bất đồng. Ba linh mục làm chứng/access gate Saint's Fresh/Trúc Nha split-self giữ ranh giới độc lập. Tên hệ và đủ 30 câu hỏi UNKNOWN ở `40`/`92`; `91` ghi AF-ML-PC-001–010. Không mở full luật, catalogue hoặc sự kiện phản bội.
 
 ## RF — bỏ tiền đề tu tiên 2026-10-06
 

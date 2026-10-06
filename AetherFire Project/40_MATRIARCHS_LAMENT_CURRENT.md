@@ -2,12 +2,12 @@
 
 > Module ID: `AFM-007`
 > Runtime role: `CURRENT_SOURCE`
-> Domain / Scope: Matriarch's Lament internal governance, Temple/Cult, Matriarch origin and Saint's Fresh, Holy Guard, Trinity/relic economy, Trần Trúc Nha regional role and doctrine, ML–TE operations, and northeastern tribes.
+> Domain / Scope: Matriarch's Lament internal governance, Temple/Cult, Matriarch origin and Saint's Fresh, post-Creed divine governance, Holy Guard, Trinity/relic economy, Trần Trúc Nha regional role and doctrine, ML–TE operations, and northeastern tribes.
 > Authority boundary: Controls internal Matriarch's Lament canon within its declared scope.
 > Cross-domain owner boundary: Global and geopolitical interfaces are controlled by `AFM-001`; detailed politics and Queen protection interface by `AFM-011`; Undie professional and unresolved legal interfaces by `AFM-003`; metafiction and cross-world status by `AFM-004`.
 > Load mode: `FULL_FILE`
 
-> **Trạng thái:** CURRENT CANON / CONTROLLING MATRIARCH'S LAMENT DOMAIN — integrated 2026-09-11; architecture split recorded 2026-09-16; Matriarch/Saint's Fresh delta 2026-10-06
+> **Trạng thái:** CURRENT CANON / CONTROLLING MATRIARCH'S LAMENT DOMAIN — integrated 2026-09-11; architecture split recorded 2026-09-16; Matriarch/Saint's Fresh delta 2026-10-06; post-Creed governance delta 2026-10-07
 > **Authority boundary:** this file controls internal Matriarch's Lament governance, Temple/Cult, Matriarch origin and Saint's Fresh, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and the northeastern tribes. Cross-domain interfaces are summarized in `01`; Undie professional and unresolved legal interfaces are controlled by `13`; cross-world status is controlled by `03`.
 > **Trúc Nha boundary:** membership and regional role in ML are current canon. A summoned/cross-world origin remains `UNDER CONSTRUCTION / NOT CURRENT CANON`.  
 > **Phạm vi:** retcon Holy State, quan hệ với AetherFire, Transfusion EasterFire, Trinity Hexagon, Matriarch/Saint's Fresh, Thần điện, Thánh Nữ Trần Trúc Nha và các dependency lịch sử liên quan.
@@ -202,13 +202,15 @@ Trúc Nha không phản bội vì một sự kiện ngẫu nhiên hoặc vì tá
 
 Failure doctrine vẫn là hướng thiết kế có chủ đích, không một twist ngẫu nhiên. Tuy nhiên chuỗi Creed/oath vận hành 500 năm → tự tin thể chế → split-self bypass đã bị rút cùng Creed; không giữ làm lời giải hiện hành.
 
-Split-self và doctrine phản đối triết lý tàn bạo của Trúc Nha vẫn giữ theo §4–5. Không tự chọn cơ chế loyalty thay thế hoặc sự kiện phản bội mới.
+Split-self và doctrine phản đối triết lý tàn bạo của Trúc Nha vẫn giữ theo §4–5. Khung thần quyền hậu-Creed đã chốt ở §26, không tự xác lập loyalty/obedience hoặc sự kiện phản bội mới. Split-self không mặc nhiên qua mặt xác minh oath hay quyền tiếp cận của hệ mới.
 
-## 6. Creed — đã rút, chờ revamp
+## 6. Creed cũ đã rút; khung thần quyền hậu-Creed
 
 Quyết định 2026-10-06 rút toàn bộ Creed, loyalty/life/family-bound oath, hậu quả tim mạch và dependency thể chế. Không dùng làm fallback. Thần điện, Thánh Nữ, Holy Guard, nhà nước công khai và Cult vẫn có căn cứ riêng.
 
 Dữ kiện độc lập về giáo dân bị ép gia nhập tôn giáo giữ; không còn lấy family-set hay lời thề Creed làm cơ chế ràng buộc. Thần tính Matriarch có thật không định nghĩa một luật thần phổ quát (§25).
+
+Chốt 2026-10-07 tại §26 tách xác minh lời thề, cấp/rút quyền tiếp cận và trừng phạt thể chế. Oath chức vụ có thể tạo bằng chứng siêu hình nhưng vi phạm oath không tự gây thương tích/tử vong, hại gia đình, tước chức hoặc cưỡng ép obedience. Rút access cần actor/thẩm quyền/thủ tục hợp lệ. Khung chức năng đã chốt; tên hệ, cơ chế triển khai và danh mục capability còn UNKNOWN. Đây không phải phục hồi Creed hoặc đổi tên cơ chế cũ.
 
 ## 7. Quorum Creed — đã rút
 
@@ -229,7 +231,7 @@ Bảo vệ:
 - Thần điện;
 - Thánh Nữ.
 
-Quan hệ allegiance/bảo vệ Thánh Nữ độc lập được giữ; lời thề siêu nhiên Creed và hiệu lực cưỡng chế cũ đã rút. Cơ chế loyalty/authority thay thế chưa chốt.
+Quan hệ allegiance/bảo vệ Thánh Nữ độc lập được giữ; lời thề siêu nhiên Creed và hiệu lực cưỡng chế cũ đã rút. §26.6 cho phép hướng capability thánh phụ thuộc recognized relation với Saintess/sacred office; blessing/equipment/activation/loss condition và full loyalty/authority vẫn UNKNOWN. Bất đồng hoặc phản đối không tự làm mất năng lực.
 
 ### Vệ binh quốc gia
 
@@ -257,7 +259,7 @@ Matriarch's Lament kiếm tiền bằng:
 
 ```text
 cho cá nhân mượn thánh vật có thời hạn
-→ cơ chế ràng buộc cho mượn thay thế Creed còn UNKNOWN
+→ quyền tiếp cận theo khung hậu-Creed §26; cơ chế ràng buộc từng khoản cho mượn còn UNKNOWN
 ```
 
 Trong hoạt động cho mượn thánh vật:
@@ -279,7 +281,7 @@ toàn bộ hệ thần quyền
 → phán xét
 ```
 
-Không cần mở full ownership law ở giai đoạn hiện tại. Ba linh mục làm chứng không phải quorum Creed hoặc đủ quyền mở Saint's Fresh; riêng cấu hình Redemption Rope cần chính tay Thánh Nữ (§25).
+Không cần mở full ownership law ở giai đoạn hiện tại. Ba linh mục làm chứng không phải quorum Creed hoặc đủ quyền mở Saint's Fresh; riêng cấu hình Redemption Rope cần chính tay Thánh Nữ (§25). Khung grant/suspend/revoke ở §26 không tự xác lập hợp đồng mượn, relic access law, thẩm quyền thu hồi Saint's Fresh hoặc catalogue thánh vật.
 
 ---
 
@@ -571,7 +573,7 @@ Không cần mở full macroeconomy ở giai đoạn hiện tại.
 
 ## 20. Failure mode — ranh giới sau khi rút Creed
 
-Trúc Nha có split-self, doctrine riêng và về sau phản đối triết lý tàn bạo ML; ý định không viết như phản bội ngẫu nhiên giữ. Cơ chế success-induced vulnerability từng dựa trên Creed/oath/quorum đã bị rút, kể cả luận điểm 500 năm kiểm chứng loyalty hoặc split-self phá binding. Chưa thiết kế cơ chế thay thế hoặc khẳng định một cuộc phản bội cụ thể đã xảy ra.
+Trúc Nha có split-self, doctrine riêng và về sau phản đối triết lý tàn bạo ML; ý định không viết như phản bội ngẫu nhiên giữ. Cơ chế success-induced vulnerability từng dựa trên Creed/oath/quorum đã bị rút, kể cả luận điểm 500 năm kiểm chứng loyalty hoặc split-self phá binding. Khung hậu-Creed §26 xác lập phản ứng qua actor/thiết chế khi compliance, access, legitimacy hoặc enforcement biến đổi; không chốt nhánh phản ứng, cơ chế split-self bypass mới hoặc một cuộc phản bội cụ thể đã xảy ra.
 
 ---
 
@@ -600,12 +602,17 @@ POWER
    ├─ relic representation role
    └─ Holy Guard allegiance
 
-CREED → REMOVED / REVAMP LATER
+OLD CREED → REMOVED / NO FALLBACK
+POST-CREED GOVERNANCE (§26)
+├─ verify office/duty oath → evidence, not automatic sanction
+├─ grant / suspend / revoke sacred access → valid actor/authority/procedure
+└─ institutional punishment → separate decision and enforcement
+BROKEN OATH / MASS REBELLION ≠ AUTOMATIC INJURY / DEATH / FAMILY CURSE
 
 STRATEGIC RESOURCE
 └─ Trinity Hexagon district
    → sacred relics
-   → timed lending; replacement enforcement UNKNOWN
+   → timed lending; specific loan enforcement UNKNOWN under post-Creed framework
    → Saint's Fresh: regenerative relic + authentic Matriarch fresh
    → AF periodic licensed-use dependency
 
@@ -626,7 +633,8 @@ ML ↔ northeastern matriarchal tribes
 PRIMARY INTERNAL FAILURE
 Trúc Nha
 → rejects ML brutality
-→ loyalty/conflict implementation after Creed removal UNKNOWN
+→ post-Creed institutional conflict → branches depend on actual actor/state
+→ exact loyalty/conflict implementation and outcome UNKNOWN
 ```
 
 ---
@@ -641,7 +649,7 @@ Các điểm sau **chưa cần mở** để core ML chạy:
 - full economy;
 - full taxation;
 - full military structure;
-- cơ chế thay thế Creed; không triển khai magic/bypass/family-bound target của cơ chế đã rút;
+- triển khai khung hậu-Creed §26: tên hệ, oath/access/thẩm quyền/thủ tục/danh mục capability; khung chức năng không còn deferred, các chi tiết vẫn UNKNOWN; không phục hồi magic/bypass/family-bound target cũ;
 - full artifact ownership law;
 - full cult command structure;
 - full Saintess selection system;
@@ -700,7 +708,10 @@ HOLY GUARD ≠ NATIONAL GUARD.
 
 HOLY GUARD LOYALTY → SAINTESS.
 
-CREED / OATH / THREE-CLERGY QUORUM REMOVED PENDING REVAMP.
+OLD CREED / COERCIVE OATH / THREE-CLERGY QUORUM REMAIN RETIRED.
+POST-CREED: VERIFICATION ≠ ACCESS DECISION ≠ INSTITUTIONAL PUNISHMENT.
+NEW OFFICE OATH EVIDENCE ≠ AUTOMATIC OBEDIENCE / INJURY / DEATH.
+ACCESS WITHDRAWAL REQUIRES VALID ACTOR / AUTHORITY / PROCEDURE.
 
 NO SPLIT-SELF CREED BYPASS IS CURRENT.
 
@@ -717,7 +728,8 @@ AF DEPENDS ON RF AND ML THROUGH DIFFERENT STRATEGIC AXES.
 AF↔ML HOSTILITY CAN RUN WITH MANDATORY TRADE.
 
 TRÚC NHA'S DOCTRINE AND SPLIT-SELF REMAIN.
-CREED-BASED FAILURE CHAIN IS RETIRED; REPLACEMENT IMPLEMENTATION UNKNOWN.
+CREED-BASED FAILURE CHAIN IS RETIRED; POST-CREED FRAMEWORK §26 IS CURRENT.
+EXACT IMPLEMENTATION / SPLIT-SELF INTERACTION / BETRAYAL OUTCOME UNKNOWN.
 
 UNKNOWN ≠ PERMISSION TO INVENT.
 ```
@@ -931,7 +943,8 @@ Trạng thái mới:
 ```text
 CREED
 → REMOVED FROM CURRENT CANON
-→ TO BE REVAMPED LATER
+→ OLD MECHANICS REMAIN RETIRED
+→ POST-CREED FUNCTIONAL FRAMEWORK NOW CONTROLLED BY §26
 ```
 
 Không được dùng cơ chế Creed cũ làm fallback, baseline, analogy anchor hoặc lời giải cho các khoảng trống mới.
@@ -1167,7 +1180,7 @@ Chưa chốt:
 20. exact quá trình cộng đồng Matriarch trở thành nhà nước ML;
 21. full Saintess selection / succession;
 22. quan hệ giữa Saintess, Matriarch và thần tính ngoài những điểm đã chốt;
-23. cơ chế thay thế Creed trong revamp sau.
+23. Khung hậu-Creed đã chốt ở §26; triển khai oath/access/punishment còn UNKNOWN, không khôi phục Creed.
 
 ---
 
@@ -1202,7 +1215,7 @@ SAINTESS KNOWS THE BODY TRUTH.
 LIMITED INNER RELIGIOUS ACTORS ALSO KNOW.
 AF KNOWLEDGE = UNKNOWN.
 
-CREED IS REMOVED FROM CURRENT CANON PENDING REVAMP.
+OLD CREED REMAINS REMOVED; POST-CREED FUNCTIONAL FRAMEWORK IS CURRENT IN §26.
 
 SAINT'S FRESH = PENTAGONAL SEAL-REINFORCEMENT RELIC.
 
@@ -1229,5 +1242,554 @@ AETHERFIRE
 
 NOT EVERY ML RELIC IS DERIVED FROM MATRIARCH.
 
+UNKNOWN REMAINS UNKNOWN.
+```
+
+## 26. Thần quyền hậu-Creed — chốt 2026-10-07
+
+Nguồn tác giả `AetherFire_Matriarchs_Lament_Post_Creed_Divine_Governance_Canon_2026-10-07.md`; yêu cầu audit và nhập canon. Giữ đầy đủ §§1–13 dưới đây, chỉ hạ cấp heading. Đây là khung chức năng có phạm vi, không full luật/hệ chữa lành/catalogue/thiết chế xét xử hoặc canon hóa một sự kiện mới. Tên hệ vẫn UNKNOWN. §25 giữ nguồn Matriarch/Saint's Fresh; access gate chính tay Saintess, ba linh mục làm chứng và authority ngoại giao không bị đồng nhất hoặc thay thế.
+
+### 1. Quyết định nền
+
+#### CANON
+
+Matriarch's Lament không còn dùng một cơ chế thần thuật tự động gây thương tích hoặc tử vong khi cá nhân phá lời thề.
+
+```text
+BROKEN OATH
+!= AUTOMATIC INJURY
+!= AUTOMATIC DEATH
+!= AUTOMATIC FAMILY PUNISHMENT
+```
+
+Cơ chế thay Creed phải tránh việc một lượng lớn dân chúng có thể đồng loạt tự kích hoạt hậu quả chết người lên chính mình và qua đó biến tín ngưỡng thành nút tự hủy của nhà nước.
+
+```text
+MASS REBELLION
+!= AUTOMATIC MASS DIVINE PUNISHMENT
+```
+
+Bạo loạn, bất tuân hoặc phản đối phải tạo ra khủng hoảng chính trị / hành chính / an ninh qua các actor và thiết chế thực sự, không qua một kill-switch thần thuật tự động.
+
+---
+
+### 2. Tách ba chức năng từng bị Creed gộp chung
+
+#### CANON
+
+Hệ hậu-Creed tách ít nhất ba chức năng:
+
+```text
+1. XÁC MINH
+2. CẤP / RÚT QUYỀN TIẾP CẬN
+3. TRỪNG PHẠT THỂ CHẾ
+```
+
+Không một chức năng nào tự động kéo theo hai chức năng còn lại.
+
+```text
+VERIFY
+!= PUNISH
+
+PUNISH
+!= KILL
+
+LOSS OF ACCESS
+!= LOSS OF LIFE
+
+DIVINE SIGNAL
+!= FINAL LEGAL / POLITICAL DECISION
+```
+
+---
+
+### 3. Lời thề thần thuật — chức năng xác minh
+
+#### CANON
+
+Một số actor giữ chức vụ quan trọng có thể phải thực hiện lời thề trước một thánh vật hoặc giao diện thần thuật hợp lệ.
+
+Lời thề:
+
+```text
+office / duty oath
+→ được ghi nhận siêu hình
+```
+
+Nếu actor về sau vi phạm đúng phạm vi lời thề đã được ghi nhận:
+
+```text
+vi phạm
+→ trạng thái lời thề có thể thay đổi
+→ thay đổi này có thể được kiểm tra / xác minh bằng phương thức thần thuật phù hợp
+```
+
+Chức năng chính của hệ này là:
+
+> **tạo bằng chứng siêu hình khó chối về việc một lời thề cụ thể đã bị vi phạm.**
+
+#### Boundary
+
+Việc lời thề bị xác nhận là đã vi phạm không tự:
+
+- gây đau tim;
+- gây bệnh;
+- giết actor;
+- gây hại người thân;
+- tước chức ngay lập tức;
+- xác lập tội hình sự;
+- xác lập phản quốc;
+- trao quyền trừng phạt cho bất kỳ cá nhân nào.
+
+Chuỗi hợp lệ phải còn tầng thể chế:
+
+```text
+vi phạm
+→ phát hiện / kiểm tra
+→ xác minh
+→ diễn giải đúng phạm vi
+→ actor có thẩm quyền quyết định
+→ thực thi nếu được quyết định
+```
+
+Exact thẩm quyền, thủ tục và chuẩn chứng cứ vẫn `UNKNOWN`.
+
+---
+
+### 4. Divine mercy / ân điển như tài nguyên tiếp cận
+
+#### CANON
+
+Một phần quyền lực thần quyền của ML vận hành qua:
+
+```text
+quyền tiếp cận
+```
+
+chứ không qua hình phạt sinh học tự động.
+
+Matriarch vốn có nền năng lực chữa lành; di sản holy/divine của bà có thể được thể chế ML phân phối qua các kênh thần thuật, thánh vật hoặc dịch vụ tôn giáo phù hợp.
+
+Một actor hoặc nhóm có thể bị:
+
+```text
+suspend / revoke sacred access
+```
+
+theo quyết định thể chế hợp lệ trong phạm vi được xác lập.
+
+#### Có thể bị rút trong phạm vi đã chốt ở mức chức năng
+
+Việc rút quyền có thể ảnh hưởng tới:
+
+- quyền tiếp cận một số chữa lành thánh thuật cấp cao;
+- quyền sử dụng một số thánh vật;
+- eligibility đối với một số chức vụ được thánh hóa;
+- eligibility đối với một số nghi lễ có giá trị tôn giáo / thể chế.
+
+Exact danh mục giữ `UNKNOWN`.
+
+#### Invariant
+
+```text
+ACTOR MISCONDUCT
+!= AUTOMATIC LOSS OF DIVINE ACCESS
+```
+
+Mất quyền tiếp cận cần một transition có actor / authority / procedure hợp lệ.
+
+```text
+một triệu người nổi loạn
+!= một triệu người tự động mất ân điển
+```
+
+Nhà nước / Thần điện phải thật sự lựa chọn đối tượng, phạm vi và mức can thiệp.
+
+---
+
+### 5. Kiểu dã man cốt lõi của hệ hậu-Creed
+
+#### CANON DESIGN DIRECTION
+
+ML có thể thực hiện bạo lực thể chế bằng cách:
+
+```text
+không trực tiếp giết
+→ nhưng cố ý từ chối một nguồn cứu chữa / ân điển mà thiết chế kiểm soát
+```
+
+Quan hệ cần giữ:
+
+```text
+TEMPLE DOES NOT DIRECTLY KILL
+```
+
+không đồng nghĩa:
+
+```text
+TEMPLE IS NOT CAUSALLY RESPONSIBLE
+```
+
+nếu:
+
+```text
+Temple / authorized institution
+→ có quyền kiểm soát access
+→ biết actor cần một dạng cứu chữa / ân điển
+→ chủ động từ chối access
+```
+
+Đây là một dạng tàn nhẫn thể chế có chủ đích của ML:
+
+> **biến lòng thương xót và chữa lành thành tài nguyên được phân phối có điều kiện.**
+
+Điều này không xác lập rằng mọi chữa bệnh trong ML đều do nhà nước độc quyền hoặc mọi ca bệnh đều cần holy power.
+
+---
+
+### 6. Không dùng cùng một leash cho toàn xã hội
+
+#### CANON
+
+Các nhóm actor khác nhau không mặc định bị ràng buộc bằng cùng một cơ chế.
+
+Tách tối thiểu:
+
+```text
+DÂN THƯỜNG
+QUAN CHỨC CẤP CAO
+CLERGY
+HOLY GUARD
+```
+
+#### Dân thường
+
+Dân thường:
+
+```text
+không có magical kill switch mặc định
+```
+
+Họ chịu:
+
+- luật;
+- thiết chế;
+- social/religious pressure;
+- access decisions;
+- enforcement thông thường;
+
+theo scope riêng.
+
+#### Quan chức cấp cao
+
+Quan chức cấp cao có thể phải dùng lời thề có khả năng được xác minh thần thuật.
+
+Vai trò của lời thề:
+
+```text
+oath
+→ evidentiary / legitimacy interface
+```
+
+không phải:
+
+```text
+oath
+→ automatic obedience
+```
+
+#### Clergy
+
+Một số quyền sử dụng nghi lễ / thánh vật / chức năng thánh có thể phụ thuộc trạng thái được Thần điện hoặc cơ chế thẩm quyền hợp lệ công nhận.
+
+```text
+recognized sacred office
+→ access / capability eligibility
+
+loss of recognized office
+→ some access / capability may be withdrawn
+```
+
+Exact capability catalogue vẫn `UNKNOWN`.
+
+#### Holy Guard
+
+Holy Guard không còn bị ràng buộc bởi oath siêu nhiên kiểu Creed cũ.
+
+Quan hệ allegiance hiện hành với Saintess vẫn có thể tồn tại độc lập.
+
+Hướng canon của hệ hậu-Creed cho phép:
+
+```text
+Holy Guard sacred capability
+→ có thể phụ thuộc vào recognized relation với Saintess / sacred office
+```
+
+nhưng exact blessing, holy equipment, activation và loss condition vẫn `UNKNOWN`.
+
+Không tự suy Holy Guard mất năng lực chỉ vì bất đồng ý kiến hoặc phản đối.
+
+---
+
+### 7. Capability phụ thuộc thiết chế
+
+#### CANON
+
+Một primitive nền của hệ hậu-Creed là:
+
+```text
+INSTITUTION GRANTS / MEDIATES SACRED CAPABILITY
+→ INSTITUTION MAY HAVE A VALID PATH TO WITHDRAW THAT CAPABILITY
+```
+
+Nhưng:
+
+```text
+WITHDRAW CAPABILITY
+!= CONTROL LIFE
+!= OWN ACTOR
+!= AUTOMATIC MORAL RIGHT
+```
+
+Khả năng thu hồi quyền sử dụng / tư cách / blessing không tự tạo quyền tối cao trên actor.
+
+Cần tách:
+
+```text
+capability
+authority
+permission
+jurisdiction
+ownership
+legitimacy
+```
+
+---
+
+### 8. Gia đình và liên đới
+
+#### CANON SUPERSESSION
+
+Không phục hồi family-bound punishment của Creed cũ.
+
+```text
+PARENT BETRAYS
+!= CHILD IS CURSED
+!= CHILD IS INJURED
+!= CHILD DIES
+```
+
+Tuy nhiên ML có thể duy trì:
+
+```text
+institutional suspicion
+```
+
+đối với mạng gia đình / bảo trợ nếu actor liên quan đến phản loạn, phản bội hoặc vi phạm chức vụ.
+
+Điều này có thể ảnh hưởng tới:
+
+- screening;
+- eligibility đối với một số sacred office;
+- mức giám sát;
+- yêu cầu chứng minh / kiểm tra tăng thêm;
+
+nhưng không tạo tội di truyền tự động.
+
+#### UNKNOWN
+
+Chưa chốt:
+
+- pháp luật liên đới gia đình;
+- thời hạn suspicion;
+- review / appeal;
+- mức độ công khai;
+- có hay không hồ sơ tôn giáo riêng;
+- có bị lạm dụng chính trị hay không.
+
+---
+
+### 9. Rebellion và failure mode mới
+
+#### CANON DESIGN INVARIANT
+
+Hệ hậu-Creed không được biến mass rebellion thành mass magical death.
+
+Nếu ML gặp nổi loạn quy mô lớn:
+
+```text
+mass rebellion
+→ compliance giảm
+→ enforcement load tăng
+→ legitimacy pressure
+→ institutional division có thể tăng
+→ security / political / religious response
+```
+
+Các hướng phản ứng có thể gồm:
+
+- điều tra có mục tiêu;
+- xác minh oath nếu actor thuộc nhóm có oath;
+- tước chức vụ thánh;
+- đình chỉ một số sacred access;
+- bắt giữ hoặc trấn áp theo cơ chế nhà nước;
+- thương lượng;
+- nhượng bộ;
+- xung đột nội bộ giữa Thần điện / nhà nước / Holy Guard / Saintess / actor khác.
+
+Không nhánh nào tự động được chọn chỉ vì rebellion tồn tại.
+
+#### Failure hợp lệ của ML
+
+ML có thể sụp hoặc phân mảnh nếu các dependency thực sự đứt:
+
+```text
+dân chúng không tuân
++ enforcement quá tải
++ military / guard split
++ clergy split
++ Saintess opposition
++ legitimacy collapse
++ Cult exploitation
+→ state failure có thể xảy ra
+```
+
+Nhưng failure phải đến từ causal state, không từ một self-triggered mass curse.
+
+---
+
+### 10. Quan hệ theme với Matriarch
+
+#### CANON DESIGN DIRECTION
+
+Matriarch khi còn sống gắn với chữa lành.
+
+Sau nhiều thế kỷ, ML có thể biến di sản này thành:
+
+```text
+MERCY
+→ INSTITUTIONALLY MEDIATED RESOURCE
+```
+
+Do đó tồn tại một tension có chủ đích:
+
+```text
+MATRIARCH'S POWER CAN HEAL
+!= TEMPLE POLICY IS MERCIFUL
+```
+
+Một tôn giáo có thần tính thật, holy power thật và phép chữa thật không tự chứng minh rằng thiết chế phân phối các khả năng đó là nhân từ hoặc đúng với ý chí của Matriarch.
+
+Không chốt trong file này rằng Matriarch hiện còn ý thức hoặc đồng ý / phản đối cách ML vận hành.
+
+---
+
+### 11. Không chốt tên hệ thống mới
+
+#### CANON BOUNDARY
+
+Cơ chế hậu-Creed hiện chưa có tên chính thức.
+
+Không tự dùng lại:
+
+> Creed
+
+làm tên mặc định cho hệ mới.
+
+Có thể tồn tại nhiều nghi lễ / quyền / procedure khác nhau dưới một kiến trúc chung; chưa chốt rằng toàn bộ phải mang một tên duy nhất.
+
+---
+
+### 12. Những phần chưa chốt
+
+#### UNKNOWN / OPEN
+
+Chưa chốt:
+
+1. tên chính thức của hệ hậu-Creed;
+2. thánh vật / giao diện nào ghi nhận oath;
+3. oath nào bắt buộc đối với chức vụ nào;
+4. exact phạm vi câu oath;
+5. cách phát hiện / xác minh vi phạm;
+6. error rate, false positive, false negative;
+7. khả năng cưỡng ép actor tuyên oath;
+8. actor có quyền yêu cầu kiểm tra;
+9. actor diễn giải kết quả;
+10. chuẩn chứng cứ;
+11. thủ tục xét xử / kỷ luật;
+12. review / appeal;
+13. exact danh mục divine healing;
+14. ai có quyền phân phối;
+15. điều kiện khẩn cấp;
+16. quyền của người không theo tôn giáo;
+17. phạm vi sacred access;
+18. exact relic access law;
+19. sacred office catalogue;
+20. clergy capability catalogue;
+21. Holy Guard blessing / equipment / capability;
+22. relation giữa Holy Guard và Saintess ngoài allegiance hiện hành;
+23. phạm vi family suspicion;
+24. quy tắc chống lạm dụng access denial;
+25. quan hệ giữa hệ này với Cult;
+26. liệu Cult có thể giả mạo, thao túng hoặc chiếm quyền xác minh / access hay không;
+27. quan hệ giữa Matriarch's divinity và từng loại capability;
+28. Matriarch có ý chí hiện hành hay không;
+29. Matriarch có thể từ chối Temple use hay không;
+30. mức nào của hệ này là tôn giáo, luật, hành chính hay hỗn hợp.
+
+---
+
+### 13. Anti-drift nén
+
+```text
+CREED OLD MECHANICS REMAIN RETIRED.
+
+BROKEN OATH
+!= AUTOMATIC INJURY
+!= AUTOMATIC DEATH
+!= FAMILY CURSE.
+
+MASS REBELLION
+!= MASS MAGICAL DEATH.
+
+POST-CREED GOVERNANCE SEPARATES:
+VERIFY
+ACCESS
+INSTITUTIONAL PUNISHMENT.
+
+OATH CAN CREATE SUPERNATURAL EVIDENCE.
+OATH DOES NOT AUTOMATICALLY ENFORCE OBEDIENCE.
+
+DIVINE ACCESS CAN BE GRANTED / SUSPENDED / REVOKED
+ONLY THROUGH A VALID ACTOR / AUTHORITY / PROCEDURE PATH.
+
+LOSS OF ACCESS
+!= LOSS OF LIFE.
+
+MATRIARCH HEALING LEGACY
+→ CAN BE MEDIATED AS SCARCE / CONTROLLED MERCY.
+
+TEMPLE MAY BE CRUEL BY WITHHOLDING MERCY
+WITHOUT USING AN AUTOMATIC KILL-SWITCH.
+
+CIVILIANS DO NOT HAVE A DEFAULT MAGICAL LEASH.
+
+OFFICIALS / CLERGY / HOLY GUARD
+MAY USE DIFFERENT SACRED INTERFACES.
+
+INSTITUTIONAL CAPABILITY WITHDRAWAL
+!= OWNERSHIP OF PERSON
+!= TOTAL AUTHORITY.
+
+FAMILY RELATION
+!= HEREDITARY CURSE.
+
+REBELLION MUST FAIL OR SUCCEED THROUGH REAL
+POLITICAL / SECURITY / LEGITIMACY / RESOURCE / AUTHORITY PATHS.
+
+MATRIARCH'S POWER CAN HEAL
+!= TEMPLE POLICY IS MERCIFUL.
+
+SYSTEM NAME = UNKNOWN.
 UNKNOWN REMAINS UNKNOWN.
 ```

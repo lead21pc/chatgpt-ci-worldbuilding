@@ -550,7 +550,7 @@ The cult is not part of the Academy. It exploits the apparent-POW-to-Mage-Counci
 
 Matriarch là người/esper chữa lành từ Fiction 0, đến Fiction 1 khoảng 500 năm trước theo thứ tự phía Fiction 0 sau Clash #1. Bà có thánh lực, thần tính thật, đã bị ám sát; thi hài bí mật dưới Thần điện trung tâm vẫn là nguồn lực. Saintess và một số tác nhân tôn giáo cấp trong biết; không suy toàn ML/AF/Cult biết. `40` giữ nguồn gốc/tôn giáo, `03` giữ timeline interface.
 
-Creed và các oath/quorum/cơ chế cưỡng chế phụ thuộc đã rút chờ revamp; ba lớp nhà nước–Thần điện–Cult và các actor độc lập không bị xóa.
+Creed cũ và oath cưỡng chế/quorum/cơ chế phụ thuộc vẫn đã rút. Khung hậu-Creed chốt 2026-10-07 ở `40` §26 tách xác minh lời thề, quyền tiếp cận ân điển và trừng phạt thể chế; không có oath/mass-rebellion kill-switch tự động. Tên hệ/thủ tục/capability cụ thể còn UNKNOWN; ba lớp nhà nước–Thần điện–Cult và các actor độc lập không bị nhập làm một. Hệ mới không thay access gate Saint's Fresh hoặc hoàn thiện luật ML.
 
 ### AetherFire dependencies and treaty edge
 
