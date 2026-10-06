@@ -8,8 +8,8 @@
 > Load mode: `FULL_FILE`
 
 > **Domain:** narrator personification, Elena POV grammar, Fictionize/POC narrative functions, deadpan humor, tragedy and the narrator split at Clash #2.  
-> **Causal dependency:** `40_METAFICTION_CANON_TIMELINE_CURRENT.md` controls the clash and Canon 1/Canon 2 timeline. Narrator personification does not establish transfer or loss of the underlying esper ability.  
-> **Clothing exclusion:** source section `# 11. Dark humor của trang phục` is deliberately not imported. This file does not restate or revive its older visual reading. All Undi professional-uniform canon remains controlled exclusively by `30_UNDIE_SYSTEM_CURRENT.md`; compulsory rank-color/two-stage humiliation is retired by the 2026-10-05 revamp.
+> **Causal dependency:** `03_METAFICTION_CANON_TIMELINE_CURRENT.md` controls the clash and Canon 1/Canon 2 timeline. Narrator personification does not establish transfer or loss of the underlying esper ability.\
+> **Clothing exclusion:** source section `# 11. Dark humor của trang phục` is deliberately not imported. This file does not restate or revive its older visual reading. All Undi professional-uniform canon remains controlled exclusively by `13_UNDIE_SYSTEM_CURRENT.md`; compulsory rank-color/two-stage humiliation is retired by the 2026-10-05 revamp.
 > Source labels such as `CANON`, `DESIGN INTENT` and `PROPOSAL / KHÔNG PHẢI CANON` retain their original truth status.
 
 ## Part I — Narrator ontology, POV and comic grammar

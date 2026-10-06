@@ -3,19 +3,19 @@
 > Module ID: `AFM-002`
 > Runtime role: `CURRENT_SOURCE`
 > Domain / Scope: Status ontology, Citizen, Civil, Yellow, POW, Criminal, Civil entry/allocation/lifecycle, labor, and cross-status transitions.
-> Authority boundary: Controls legal/civic status ontology and Civil/labor interfaces within its declared scope.
-> Cross-domain owner boundary: Detailed Undie professional identity, entry/exit, mobility, work/access, and Undi are controlled by `AFM-003`; shared Terminal/Guest Pass service architecture by `AFM-010` without replacing this module's status and economic-namespace authority.
+> Authority boundary: Controls legal/civic status ontology and Civil/labor interfaces within the AetherFire national scope; does not establish one universal legal regime for every country.
+> Cross-domain owner boundary: AF national profile by `AFM-013`; detailed Undie professional identity, entry/exit, mobility, work/access, and Undi are controlled by `AFM-003`; shared Terminal/Guest Pass service architecture by `AFM-010` without replacing this module's status and economic-namespace authority.
 > Load mode: `FULL_FILE`
 
 > **Domain:** status ontology, social hierarchy, Citizen/Civil/Yellow/POW/Criminal, Civil entry/allocation/lifecycle, cross-status transitions and shared economic/access namespaces.  
 > Cơ sở Civil 2026-10-05 trong Part II kiểm soát xét tuyển, phân công, quyền lợi, hoàn thành và rời hệ. Bản đồ định nghĩa giữ các trục độc lập; phần chưa chốt vẫn `UNKNOWN / UNRESOLVED`.
-> **Retcon — 2026-10-05:** Civil là chế độ phục vụ tự nguyện ở đầu vào, không Slave/punishment/caste; citizenship là trục riêng. Undie là nghề do `30` kiểm soát. POW/Criminal/Yellow, Career Rank ngoài phạm vi và namespace kinh tế độc lập không tự bị xóa.
+> **Retcon — 2026-10-05:** Civil là chế độ phục vụ tự nguyện ở đầu vào, không Slave/punishment/caste; citizenship là trục riêng. Undie là nghề do `13` kiểm soát. POW/Criminal/Yellow, Career Rank ngoài phạm vi và namespace kinh tế độc lập không tự bị xóa.
 
 ## Part I — Resolved status and ontology map
 
 ### Guest-service interface — accepted 2026-10-03
 
-`15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` controls the removable terminal and Guest Pass functional model. Guest Pass is a temporary credential/access/service profile, not a legal status, class, Citizen/Civil conversion, or immigration/residency entitlement. Device Deposit, Guest Wallet and Access Profile remain separate objects; a terminal is not an account or access authority.
+`02_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` controls the removable terminal and Guest Pass functional model. Guest Pass is a temporary credential/access/service profile, not a legal status, class, Citizen/Civil conversion, or immigration/residency entitlement. Device Deposit, Guest Wallet and Access Profile remain separate objects; a terminal is not an account or access authority.
 
 Guest Wallet có biến tài chính riêng. Kiến trúc Credit Score/Line và bare `credit` phụ thuộc cơ chế Undie cũ đã bị supersede theo retcon 2026-10-05; AF-OPEN-008 và các unknown triển khai ví vẫn mở. Không dùng ví khách để phục hồi các biến cũ. Guest access, legal recognition and recovery/exit after device loss/return are not inferred from existing Civil or Undie rules; AF-TECH-001 records these unknowns.
 
@@ -105,7 +105,7 @@ Civil không phải bậc thấp/caste và không được công quyền đối 
 - Citizen + người hành nghề Undie là tổ hợp đã chốt; gia nhập/rời nghề không đổi địa vị pháp lý.
 - Môi trường hoạt động rộng và di động; sex work chỉ là một nhánh có thể có.
 - Nghề, tính hợp pháp, dịch vụ, đồng thuận, hợp đồng và nơi làm việc là những biến riêng.
-- Tương thích với nghĩa vụ Civil/Criminal hoặc điều kiện giấy phép cụ thể còn mở; `30` kiểm soát chi tiết.
+- Tương thích với nghĩa vụ Civil/Criminal hoặc điều kiện giấy phép cụ thể còn mở; `13` kiểm soát chi tiết.
 
 ---
 
@@ -181,7 +181,7 @@ Facility proposals/upgrades và một số room/customization eligibility dùng 
 
 Kiến trúc Credit Score, Contribution Points theo nghề Undie và Credit Line thế chấp địa vị đã nghỉ hưu. Không còn điều kiện mobility/reset/White, khoản vay thế chấp người hay default→điều phối lao động ở cơ sở tư nhân.
 
-Nợ tài chính, nghĩa vụ hợp đồng, ân tình xã hội và ân tình chính trị phải tách riêng; ân tình không phải tiền tệ. Nợ không tạo sở hữu người hoặc tự động cung cấp dịch vụ tình dục. Các nghiệp vụ vay/ứng trước/tài trợ mới còn cần thiết kế trong `30`.
+Nợ tài chính, nghĩa vụ hợp đồng, ân tình xã hội và ân tình chính trị phải tách riêng; ân tình không phải tiền tệ. Nợ không tạo sở hữu người hoặc tự động cung cấp dịch vụ tình dục. Các nghiệp vụ vay/ứng trước/tài trợ mới còn cần thiết kế trong `13`.
 
 ---
 
@@ -1208,7 +1208,7 @@ Completion tạo gói giúp tự lập, có thể khác theo nhu cầu/đầu v�
 
 ### 35. Citizen và Undie
 
-Citizen có thể gia nhập nghề Undie mà không mất citizenship/legal status. Quyền rời nghề và hậu quả hợp đồng/tài chính truy nguyên được do `30` kiểm soát; không còn one-way status entry hoặc White exit.
+Citizen có thể gia nhập nghề Undie mà không mất citizenship/legal status. Quyền rời nghề và hậu quả hợp đồng/tài chính truy nguyên được do `13` kiểm soát; không còn one-way status entry hoặc White exit.
 
 ---
 
@@ -1325,7 +1325,7 @@ Chế tài tái phạm Yellow và điều kiện nghề cho Civil/Criminal còn 
 - Luật hồ sơ, kế vị/tước vị riêng không suy từ nghề.
 - Medical debt terms ngoài upkeep Civil; disability không chữa được bằng hybrid treatment. Điều kiện pháp lý trục xuất, xử lý vô gia cư không được nhận Civil và hỗ trợ độc lập chưa chốt; không dùng binary cũ.
 - Public-content moderation, staff/emergency exceptions của khu ăn chơi và các triển khai dịch vụ ngoài phần đã chốt.
-- Các nhóm unknown Undie mới nằm ở `30` §17 và `92`; không giữ threshold/rank/status collateral cũ như kiến trúc hiện hành.
+- Các nhóm unknown Undie mới nằm ở `13` §17 và `92`; không giữ threshold/rank/status collateral cũ như kiến trúc hiện hành.
 
 ---
 
@@ -1337,7 +1337,7 @@ Undie = nghề/hệ sinh thái, không phải Slave/caste/punishment. Citizen + 
 
 Cash + Credits được nhà nước bảo chứng; nợ ≠ sở hữu người ≠ tự động dịch vụ tình dục. Hồ sơ tín dụng Citizen ngoài phạm vi không bị xóa; cơ chế Civil nay theo Part II, không dùng nợ để giữ người hoặc trả upkeep.
 
-Undi là họ đồng phục nghề theo ngữ cảnh; Hoa Nguyệt appropriation có ý định thật nhưng không được người ngoài chứng minh chắc chắn. Tử vong, nghề, an ninh và MC2 theo mốc `30` mới; chưa tự viết các triển khai còn mở.
+Undi là họ đồng phục nghề theo ngữ cảnh; Hoa Nguyệt appropriation có ý định thật nhưng không được người ngoài chứng minh chắc chắn. Tử vong, nghề, an ninh và MC2 theo mốc `13` mới; chưa tự viết các triển khai còn mở.
 
 Ưu đãi phí Civil đã nghỉ hưu. Luật tuổi uống rượu và hybrid disability treatment/debt độc lập giữ trong scope cũ, không áp debt vào basic upkeep Civil. Không dùng homelessness để phục hồi coercive intake hoặc caste.
 

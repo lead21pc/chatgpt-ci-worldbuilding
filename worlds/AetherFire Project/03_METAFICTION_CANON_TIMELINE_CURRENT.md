@@ -355,7 +355,7 @@ Prince 9 của hoàng gia một quốc gia thành viên rank thấp hơn trong R
 MC2 + MC2.2 = anh em cùng cha khác mẹ
 ```
 
-Relation này bị che giấu có chủ ý bên trong RF; exact responsible actor và knowledge distribution giữ `UNKNOWN`. Vị vua AetherFire đã bỏ trốn không phải cha ruột MC2; mẹ MC2 đã mang thai trước khi vào hoàng gia AetherFire và bị gả đi để che giấu pregnancy. Quan hệ custody cũ dưới Quad Night đã bị orphan; chốt 2026-10-05 xác lập Hoàng hậu được TE bảo hộ, chỉ một số tác nhân biết. Cơ chế, địa điểm và tư cách pháp lý vẫn `UNKNOWN`, do `10` kiểm soát; không gán fact current này ngược cho mọi thời điểm Canon 1.
+Relation này bị che giấu có chủ ý bên trong RF; exact responsible actor và knowledge distribution giữ `UNKNOWN`. Vị vua AetherFire đã bỏ trốn không phải cha ruột MC2; mẹ MC2 đã mang thai trước khi vào hoàng gia AetherFire và bị gả đi để che giấu pregnancy. Quan hệ custody cũ dưới Quad Night đã bị orphan; chốt 2026-10-05 xác lập Hoàng hậu được TE bảo hộ, chỉ một số tác nhân biết. Cơ chế, địa điểm và tư cách pháp lý vẫn `UNKNOWN`, do `12` kiểm soát; `30` giữ phả hệ RF. Không gán fact current này ngược cho mọi thời điểm Canon 1.
 
 Các primitive này có thể sinh consequences khác nhau sau divergence; `shared genealogy ≠ same later outcome`.
 
@@ -790,7 +790,7 @@ Hai lịch sử có thể chia sẻ root, actor, checkpoint hoặc causal residu
 
 Tuyến mất địa vị→Civil→Undie→mại dâm bất hợp pháp→kháng chiến giả→án phản quốc không còn là triển khai hiện hành. Không dùng nó để suy ngược giấy tờ, thời lượng, triệt sản/ngoại lệ, bắt buộc dịch vụ tình dục hoặc kết quả của tuyến nghề mới.
 
-Hướng đã chốt: MC2 cần tiếp cận mẹ/trục Raging Fire/chính trị AF; đường chính thức có thể quá lộ, nguy hiểm hoặc không khả dụng. Undie có thể cho môi trường nghề/xã hội/vùng xám mà không cần mất legal status. Nghề, tổ chức, vỏ bọc, patron, tiếp xúc kháng chiến/an ninh, đường tới mẹ và kết quả còn `UNKNOWN`, do `30` ghi phạm vi thiết kế.
+Hướng đã chốt: MC2 cần tiếp cận mẹ/trục Raging Fire/chính trị AF; đường chính thức có thể quá lộ, nguy hiểm hoặc không khả dụng. Undie có thể cho môi trường nghề/xã hội/vùng xám mà không cần mất legal status. Nghề, tổ chức, vỏ bọc, patron, tiếp xúc kháng chiến/an ninh, đường tới mẹ và kết quả còn `UNKNOWN`, do `13` ghi phạm vi thiết kế.
 
 Giá trị huyết hệ và sự quan tâm của tác nhân nước ngoài giữ nguyên. Không còn triệt sản bắt buộc theo nghề; y tế/tránh thai trên tuyến mới cần chốt riêng.
 
@@ -806,7 +806,7 @@ Nguồn strategic-node MC2 được chỉ định làm đầu vào thiết kế 
 
 Clash #2 là overlap mang áp lực kết thúc, không phải điểm triệu hồi tùy tiện. HOPE cho phép nhiều đoạn giữa hợp nhân quả; Canon 2 vào vùng overlap với Canon 1 đã realized cùng áp lực giải quyết. Không khóa việc MC2 phải chết, MC2.2 phải lặp Canon 1 hoặc hợp nhất state/history. Exact mechanics/thematic nature ngoài phần đã chốt và kết quả sau MC1 vẫn UNKNOWN.
 
-Undie + biến đổi căn tính đã chốt ở cấp giao diện vỏ bọc/tiếp cận kín; Operation Swap vẫn đề xuất ưu tiên. Mẹ MC2 được TE bảo hộ và MC2.2 đã biết MC2 ở AF/tình hình khái quát là dữ kiện current do `25` kiểm soát, không đồng nghĩa mọi actor biết phả hệ hoặc bí mật.
+Undie + biến đổi căn tính đã chốt ở cấp giao diện vỏ bọc/tiếp cận kín; Operation Swap vẫn đề xuất ưu tiên. Mẹ MC2 được TE bảo hộ và MC2.2 đã biết MC2 ở AF/tình hình khái quát là dữ kiện current do `12` kiểm soát, không đồng nghĩa mọi actor biết phả hệ hoặc bí mật.
 
 ### 15. Sự cố thứ hai — MC1 stress-test V1.0
 
@@ -1532,11 +1532,11 @@ Vì vậy sự tồn tại của cả hai không tự động xóa bất đối 
 
 MC1 and MC3 are confirmed Fiction 0 → Fiction 1 cases. Matriarch is a separately confirmed Fiction 0 human/healing esper forced into Fiction 1 under the 2026-10-06 delta; this does not confirm the other candidates or establish a shared transfer mechanism. Raging Fire rebirth potential is a different mechanism: bearing the trait does not establish that MC2 or her mother has died and been reborn.
 
-Trần Trúc Nha currently belongs to Matriarch's Lament and holds the role established in `70_MATRIARCHS_LAMENT_CURRENT.md`.
+Trần Trúc Nha currently belongs to Matriarch's Lament and holds the role established in `40_MATRIARCHS_LAMENT_CURRENT.md`.
 
 ### Matriarch — thứ tự nhân quả và tọa độ thời gian đã chốt 2026-10-06
 
-`70` §25 giữ đủ nguồn gốc và delta thánh vật. Theo thứ tự nhân quả Fiction 0: Clash #1 → sau đó Matriarch bị cưỡng ép triệu hồi/đưa sang Fiction 1. Điểm xuất hiện phía Fiction 1 ≈ 500 năm trước hiện tại. Không đồng nhất thứ tự ở Fiction 0 với đồng thời lịch Fiction 1; không dời Clash #1 về 500 năm trước trên cả hai tầng.
+`40` §25 giữ đủ nguồn gốc và delta thánh vật. Theo thứ tự nhân quả Fiction 0: Clash #1 → sau đó Matriarch bị cưỡng ép triệu hồi/đưa sang Fiction 1. Điểm xuất hiện phía Fiction 1 ≈ 500 năm trước hiện tại. Không đồng nhất thứ tự ở Fiction 0 với đồng thời lịch Fiction 1; không dời Clash #1 về 500 năm trước trên cả hai tầng.
 
 Cơ chế xuyên fiction/thời gian, tác nhân cưỡng ép, body/soul/memory transfer, đường về và quan hệ với Fictionize/POC vẫn chưa chốt. Matriarch là người thật từ Fiction 0 trong canon này; không suy nàng do MC1 tạo hoặc có admin powers. Matriarch có thần tính rồi bị ám sát, không suy immortality, ý thức/linh thể hiện còn hay thờ phụng là luật tạo thần phổ quát.
 

@@ -11,18 +11,20 @@ import tempfile
 
 
 MODULE_FILES = (
-    '10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md',
-    '20_STATUS_CIVIL_LABOR_CURRENT.md',
-    '30_UNDIE_SYSTEM_CURRENT.md',
-    '40_METAFICTION_CANON_TIMELINE_CURRENT.md',
-    '50_NARRATORS_POV_AND_HUMOR_CURRENT.md',
-    '60_MC4_IDENTITY_CURRENT.md',
-    '70_MATRIARCHS_LAMENT_CURRENT.md',
-    '80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md',
-    '65_BATTLEMAGE_ACADEMY_CURRENT.md',
-    '15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md',
-    '25_POLITICS_DYNASTIC_SECURITY_CURRENT.md',
-    '85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md',
+    '01_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md',
+    '11_STATUS_CIVIL_LABOR_CURRENT.md',
+    '13_UNDIE_SYSTEM_CURRENT.md',
+    '03_METAFICTION_CANON_TIMELINE_CURRENT.md',
+    '04_NARRATORS_POV_AND_HUMOR_CURRENT.md',
+    '05_MC4_IDENTITY_CURRENT.md',
+    '40_MATRIARCHS_LAMENT_CURRENT.md',
+    '06_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md',
+    '14_BATTLEMAGE_ACADEMY_CURRENT.md',
+    '02_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md',
+    '12_POLITICS_DYNASTIC_SECURITY_CURRENT.md',
+    '20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md',
+    '10_AETHERFIRE_NATIONAL_CANON_CURRENT.md',
+    '30_RF_NATIONAL_CANON_CURRENT.md',
 )
 INDEX = '00_AETHERFIRE_CONSOLIDATION_INDEX.md'
 MANIFEST = 'MANIFEST.md'
@@ -33,6 +35,24 @@ CURRENT_FILES = (INDEX,) + MODULE_FILES + (
 )
 ACCEPTED = {f'AFM-{number:03d}': name
             for number, name in enumerate(MODULE_FILES, 1)}
+# Filename order is not Module ID order. Keep the original twelve IDs stable.
+# Only --write accepts these exact predecessor paths in derived metadata;
+# source files must already exist at their current paths. This never moves lore.
+LEGACY_PATHS = {
+    '10_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md': '01_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md',
+    '15_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md': '02_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md',
+    '20_STATUS_CIVIL_LABOR_CURRENT.md': '11_STATUS_CIVIL_LABOR_CURRENT.md',
+    '25_POLITICS_DYNASTIC_SECURITY_CURRENT.md': '12_POLITICS_DYNASTIC_SECURITY_CURRENT.md',
+    '30_UNDIE_SYSTEM_CURRENT.md': '13_UNDIE_SYSTEM_CURRENT.md',
+    '40_METAFICTION_CANON_TIMELINE_CURRENT.md': '03_METAFICTION_CANON_TIMELINE_CURRENT.md',
+    '50_NARRATORS_POV_AND_HUMOR_CURRENT.md': '04_NARRATORS_POV_AND_HUMOR_CURRENT.md',
+    '60_MC4_IDENTITY_CURRENT.md': '05_MC4_IDENTITY_CURRENT.md',
+    '65_BATTLEMAGE_ACADEMY_CURRENT.md': '14_BATTLEMAGE_ACADEMY_CURRENT.md',
+    '70_MATRIARCHS_LAMENT_CURRENT.md': '40_MATRIARCHS_LAMENT_CURRENT.md',
+    '80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md': '06_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md',
+    '85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md': '20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md',
+}
+ADMISSION_IDS = ('AFM-011', 'AFM-012', 'AFM-013', 'AFM-014')
 FIELDS = ('Module ID', 'Runtime role', 'Domain / Scope',
           'Authority boundary', 'Cross-domain owner boundary', 'Load mode')
 FORBIDDEN_HEADER_FIELDS = {'MODULE_REQUIRES', 'NODE_REQUIRES'}
@@ -178,17 +198,20 @@ def plan(root, write=False):
         if re.search(rb'(?m)^> Runtime role:\s*`?CURRENT_SOURCE`?\s*\r?$', data):
             raise ValidationError(f'Unexpected CURRENT_SOURCE; not admitted: {path.name}')
     _, _, _, block = region(inputs[INDEX], CATALOG)
-    # Only --write may bootstrap the explicitly admitted AFM-011/AFM-012 from the
-    # previous complete catalog; malformed, missing older or extra rows fail.
+    # Only --write may bootstrap explicitly admitted IDs or translate exact
+    # predecessor paths; malformed, missing older or extra rows still fail.
     catalog_expected = modules
     if write:
-        for key in ('AFM-011', 'AFM-012'):
+        for key in ADMISSION_IDS:
             if f'| `{key}` |'.encode() not in block:
                 catalog_expected = {item: name for item, name in catalog_expected.items()
                                     if item != key}
     catalog_rows = rows(block,
                         '| Module ID | Current source path (relative to AetherFire Project/) |',
                         catalog_expected)
+    if write:
+        catalog_rows = {key: LEGACY_PATHS.get(name, name)
+                        for key, name in catalog_rows.items()}
     if catalog_rows != catalog_expected:
         raise ValidationError('Catalog Module ID/source path does not match current headers')
     new_index = replace_region(inputs[INDEX], CATALOG, catalog_text(modules))
@@ -197,11 +220,20 @@ def plan(root, write=False):
     _, _, _, block = region(manifest, HASHES)
     hash_expected = CURRENT_FILES
     if write:
-        for key in ('AFM-011', 'AFM-012'):
+        for key in ADMISSION_IDS:
             admitted_source = ACCEPTED[key]
-            if f'| `{admitted_source}` |'.encode() not in block:
+            previous_source = next((old for old, new in LEGACY_PATHS.items()
+                                    if new == admitted_source), admitted_source)
+            if (f'| `{admitted_source}` |'.encode() not in block
+                    and f'| `{previous_source}` |'.encode() not in block):
                 hash_expected = tuple(name for name in hash_expected
                                       if name != admitted_source)
+        predecessor_names = {new: old for old, new in LEGACY_PATHS.items()}
+        hash_expected = tuple(
+            predecessor_names[name]
+            if name in predecessor_names
+            and f'| `{predecessor_names[name]}` |'.encode() in block
+            else name for name in hash_expected)
     previous_hashes = rows(block, '| File | SHA-256 |', hash_expected)
     if any(not re.fullmatch(r'[0-9A-F]{64}', value) for value in previous_hashes.values()):
         raise ValidationError('Invalid current hash syntax')

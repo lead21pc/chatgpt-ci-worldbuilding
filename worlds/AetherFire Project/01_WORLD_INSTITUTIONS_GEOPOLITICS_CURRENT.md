@@ -2,15 +2,15 @@
 
 > Module ID: `AFM-001`
 > Runtime role: `CURRENT_SOURCE`
-> Domain / Scope: AetherFire world state, institutions, geopolitics, foreign relations, global interfaces, and Academy institutional context.
-> Authority boundary: Controls global, institutional, and geopolitical canon except detailed domains explicitly controlled by another accepted current module.
-> Cross-domain owner boundary: Hoa Nguyệt national canon is controlled by `AFM-012`; detailed Matriarch's Lament canon is controlled by `AFM-007`; detailed stable aviation and RF-airspace canon by `AFM-008`; metafiction detail by `AFM-004`; MC4 identity detail by `AFM-006`; internal Academy institutional and training canon by `AFM-009`; shared technology/service and Terminal/Guest Pass architecture by `AFM-010`; detailed dynastic politics, AF–RF strategic bargaining and counterintelligence by `AFM-011`.
+> Domain / Scope: Thế giới AetherFire/project, ontology xuyên quốc gia, địa chính trị, quan hệ quốc tế và các giao diện giữa miền.
+> Authority boundary: Kiểm soát thế giới/ontology/giao diện xuyên quốc gia; không quản lý nội bộ quốc gia AF hoặc biến căn tính project thành căn tính nhà nước.
+> Cross-domain owner boundary: AF national profile by `AFM-013`; RF internal canon by `AFM-014`; Hoa Nguyệt national canon is controlled by `AFM-012`; detailed Matriarch's Lament canon is controlled by `AFM-007`; detailed stable aviation and RF-airspace canon by `AFM-008`; metafiction detail by `AFM-004`; MC4 identity detail by `AFM-006`; internal Academy institutional and training canon by `AFM-009`; shared technology/service and Terminal/Guest Pass architecture by `AFM-010`; detailed dynastic politics, AF–RF strategic bargaining and counterintelligence by `AFM-011`.
 > Load mode: `FULL_FILE`
 
 > Consolidated current-domain view. Detailed Citizen/Civil/Undie material was moved to sibling files. Design genealogy remains in `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md`.  
 > **Genealogy lock — 2026-09-09:** MC2 remains tied to Raging Fire / Prince 9; the Undi–Hoa Nguyệt visual retcon does not create Hoa Nguyệt ancestry or origin for MC2.
-> Detailed Fiction 0/Fiction 1 and Canon 1/Canon 2 causality is routed to `40_METAFICTION_CANON_TIMELINE_CURRENT.md`; narrator/POV presentation is routed to `50_NARRATORS_POV_AND_HUMOR_CURRENT.md`.
-> Detailed stable-aviation and RF-airspace canon is routed to `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md`.
+> Detailed Fiction 0/Fiction 1 and Canon 1/Canon 2 causality is routed to `03_METAFICTION_CANON_TIMELINE_CURRENT.md`; narrator/POV presentation is routed to `04_NARRATORS_POV_AND_HUMOR_CURRENT.md`.
+> Detailed stable-aviation and RF-airspace canon is routed to `06_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md`.
 
 ## AetherFire — Canon hợp nhất
 
@@ -34,7 +34,7 @@ Cách lưu thế giới vẫn ưu tiên ban ngành/tác nhân/quy trình/địa 
 
 Undie nay là hệ sinh thái nghề nghiệp đa nhánh, không phải terminal status/sink cho output thất bại của ban ngành. Sex work chỉ là một nhánh có thể có; humiliation regime không còn là lý do tồn tại. Nghề có thể tạo giao diện thị trường, di chuyển, tiếp cận và quan hệ chính trị khi có đường nhân quả.
 
-Nhà nước, quân đội, Hội đồng Pháp sư, True Crown/Raging Fire, long mạch, ML, Hoa Nguyệt, các cường quốc phía Bắc, cult, kế vị và cạnh tranh cường quốc vẫn là các trục độc lập. Không dựng lại funnel toàn hệ quanh Undie; `30` kiểm soát retcon nghề.
+Nhà nước, quân đội, Hội đồng Pháp sư, True Crown/Raging Fire, long mạch, ML, Hoa Nguyệt, các cường quốc phía Bắc, cult, kế vị và cạnh tranh cường quốc vẫn là các trục độc lập. Không dựng lại funnel toàn hệ quanh Undie; `13` kiểm soát retcon nghề.
 
 ### A. AetherFire hiện tại là political grimdark đa trục
 
@@ -140,21 +140,11 @@ MC2 vẫn có giá trị huyết hệ Raging Fire/Raging Phoenix/True Crown. Gia
 
 ### E. Hoa Nguyệt / Tây quốc — giao diện miền quốc gia
 
-`85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát căn tính, văn hóa, quốc hiệu, biểu tượng và địa lý thương mại Hoa Nguyệt. Đây là quốc gia ở phía tây AF, đối địch nhưng vẫn có thương mại. `30` kiểm soát Undi; phả hệ MC2 không đổi.
+`20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát căn tính, văn hóa, quốc hiệu, biểu tượng và địa lý thương mại Hoa Nguyệt. Đây là quốc gia ở phía tây AF, đối địch nhưng vẫn có thương mại. `13` kiểm soát Undi; phả hệ MC2 không đổi.
 
-### F. AetherFire magic-tech = coercive integration
+### F. Hai hướng tích hợp magic–technology
 
-AetherFire tích hợp công nghệ và phép thuật ở cấp hạ tầng, nhưng integration thường được đạt bằng **engineering cưỡng ép compatibility**, với Hội đồng Pháp sư là actor quan trọng và một phần Thánh điện có thể thỏa hiệp vì lợi ích cụ thể.
-
-Đối lập khái quát:
-
-```text
-Hoa Nguyệt
-→ identity / aptitude / harmony / tradition
-
-AetherFire
-→ implementation / engineering / forced compatibility
-```
+Cách AF cưỡng ép compatibility bằng engineering thuộc hồ sơ quốc gia `10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` §4; hướng identity/aptitude/harmony/tradition của Hoa Nguyệt thuộc `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md`. `02_TECHNOLOGY_AND_PUBLIC_SERVICE_INFRASTRUCTURE_CURRENT.md` quản lý nền công nghệ chung, không áp phương thức AF hoặc sự phổ cập thiết bị cho mọi quốc gia.
 
 ### G. Phía Bắc là ba cường quốc, không phải “tribal mobs” yếu
 
@@ -178,47 +168,13 @@ Cả ba thường xuyên đánh xuyên biên giới AetherFire. Họ chưa chọ
 
 Thủy tổ ba tộc phía Bắc có chức năng rào chắn đối với chủng tộc không phải con người. Exact relation giữa barrier này và Raging Phoenix seal giữ `UNKNOWN`.
 
-### H. Canon 1 — dynastic politics đứng trước tuyến hôn phu
+### H. Canon 1 — giao diện nhân quả chính trị
 
-Canon 1 được làm rõ:
+`12_POLITICS_DYNASTIC_SECURITY_CURRENT.md` §24A giữ đầy đủ chain dynastic competition → foreign balancing → cái chết MC2 → martyrdom → tuyến hôn phu → collapse Canon 1. Tuyến hôn phu là hệ quả, không nguyên nhân gốc duy nhất; `03_METAFICTION_CANON_TIMELINE_CURRENT.md` quản lý realization/overlap, không khóa Canon 2 về Canon 1.
 
-```text
-MC2 nhượng bộ
-→ quý tộc đưa/ép cô lên ngai để hợp thức hóa lineage
-→ dùng hậu duệ và hôn nhân làm bàn đẩy chính trị
-→ tạo các nhánh huyết thống tiếp tục có legitimacy
-→ các quốc gia con người lo ảnh hưởng quý tộc AetherFire quá lớn
-→ thủ tiêu MC2
-→ martyrdom
-→ tuyến hôn phu bùng lên như hệ quả
-→ AetherFire đi tới collapse theo Canon 1
-```
+### I. AF — quốc gia phong ấn và quan hệ phụ thuộc
 
-Tuyến hôn phu là downstream consequence của dynastic competition + foreign balancing + cái chết của MC2, không phải nguyên nhân gốc duy nhất.
-
-
-### I. Địa chính trị nền — AF là seal-state trẻ, không phải một khối tự trị cô lập
-
-**LATEST CANON / GLOBAL PRIORITY**
-
-AetherFire mới thành lập khoảng **200 năm**. Nền lập quốc ban đầu gắn với một **hiệp ước phong ấn thủy tổ của ba cường quốc phía Bắc**, được cấu trúc bằng liên minh chính trị và hôn nhân. Vì vậy quan hệ AF–phương Bắc bắt đầu từ một settlement chính trị–ma thuật chung rồi mới phát triển thành thù địch hiện tại.
-
-Phía Bắc AF được chặn bởi một **tường lửa dùng huyết thống Raging Fire**, được duy trì/bảo trì qua hệ **trụ tinh thể dưới lãnh thổ AF**. Đổi lại dependency này, AF phải trả chi phí và có các nhượng bộ chính trị–thương mại cho RF.
-
-```text
-AF powerful
-≠ AF strategically autonomous
-
-RF bloodline / firewall
-→ national-defense dependency
-→ recurring political + commercial concessions
-```
-
-AF và RF cách nhau bởi một đại dương; giao lưu thực tế phụ thuộc mạnh vào đường hàng không vì vùng biển bị **Seaborne** — sinh vật tương tự kraken, rất khó giết — làm cho hải vận cực kỳ nguy hiểm.
-
-Hoa Nguyệt nối với AF bằng **Con đường Tơ lụa song phương** được lập theo hiệp định thương mại. Tense chính trị **không tự động cắt trade**.
-
-Mô hình hành lang 100 km AF↔Quad Night và Holy State làm cửa vào đã bị retire cùng Quad Night. Exact map mới giữa AF, ML và TE giữ `UNKNOWN`; không tự remap các buffer/micro-polity cũ sang actor mới.
+`10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` §§2/6/8 quản lý lịch sử lập quốc khoảng 200 năm, long mạch/phòng thủ, firewall và trụ tinh thể, các phụ thuộc và giao diện giao thông AF. `01` giữ quan hệ giữa các quốc gia: năng lực AF không chứng minh tự trị chiến lược; RF, ML, Hoa Nguyệt và tam cường phía Bắc là các tác nhân độc lập. Không phục hồi hành lang Quad Night hoặc remap địa lý chưa chốt.
 
 ---
 
@@ -232,8 +188,8 @@ Các source không phải anti-drift được dùng để tạo bản hợp nh�
 - `aetherfire_chot_canons_mc2_fall_from_grace.md` — chỉ lấy phần canon đã chốt; các mục từng ghi “canon tiềm năng” chỉ được dùng nếu đã được canon mới xác nhận
 - `aetherfire_delta_since_last_export.md`
 - `aetherfire_delta_since_last_anti_drift_export.md`
-- `aetherfire_undie_civil_citizen_revamp_canon_1_42.md` — nguồn tiền nhiệm; giữ quyền ngoài phạm vi bị retcon. Undie hiện hành theo `30` và hai nguồn 2026-10-05 trong `91`.
-- `aetherfire_civil_entry_allocation_law_canon.md` — nguồn tiền nhiệm; không còn controlling admission/status/lifecycle. `AetherFire_Civil_Co_So_Canon_2026-10-05.md` được nhập vào `20` làm cơ sở hiện hành.
+- `aetherfire_undie_civil_citizen_revamp_canon_1_42.md` — nguồn tiền nhiệm; giữ quyền ngoài phạm vi bị retcon. Undie hiện hành theo `13` và hai nguồn 2026-10-05 trong `91`.
+- `aetherfire_civil_entry_allocation_law_canon.md` — nguồn tiền nhiệm; không còn controlling admission/status/lifecycle. `AetherFire_Civil_Co_So_Canon_2026-10-05.md` được nhập vào `11` làm cơ sở hiện hành.
 - canon mới được người dùng xác nhận trong các lượt trao đổi sau lần xuất file gần nhất
 - loạt chốt UNKNOWN về Fictionize / Proof of Concept / V0.5 / Raging Phoenix / ontology Undie / facility / POW / Criminal trong các lượt trao đổi mới nhất
 
@@ -241,7 +197,7 @@ Các file anti-drift không được nhập nguyên khối. Assertion user-confi
 
 ---
 
-## 1. Định danh tổng thể của AetherFire
+## 1. Định danh tổng thể của thế giới/project AetherFire
 
 ### 1.1 Thể loại và trọng tâm
 
@@ -353,31 +309,15 @@ Ba section là các cụm tương tác, không phải cây cha–con cố địn
 
 ---
 
-## 3. Premise đế quốc AetherFire
+## Quốc gia AetherFire — nơi quản lý riêng
 
-AetherFire là một đế quốc Neo Fantasy đa chủng tộc, nơi phép thuật phổ biến và một số huyết thống giới hạn có giá trị chiến lược.
-
-“Magic + technology integrated” mô tả **output/hạ tầng**, không có nghĩa hai miền tự nhiên hòa hợp. Current canon xác nhận AetherFire thường dùng engineering để **cưỡng ép compatibility** giữa phép thuật và công nghệ; Hội đồng Pháp sư là một actor quan trọng trong việc này, và một phần Thánh điện có thể thỏa hiệp/tham gia vì lợi ích cụ thể.
-
-Các mục tiêu lớn của nhà nước gồm:
-
-- chiến tranh mở rộng;
-- chiếm và khai thác tài nguyên;
-- bảo đảm công suất hậu cần dài hạn;
-- ổn định nhân lực;
-- kiểm soát hành chính cao;
-- giám sát và cưỡng chế tự động hóa;
-- duy trì vị thế giữa cạnh tranh của hoàng gia, nghị viện, quân đội, Nội vụ, tư pháp, thương mại, tình báo và tác nhân nước ngoài.
-
-Nhà nước **không phải một khối độc tài đơn nhất**.
+`10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` / `AFM-013` giữ căn tính, lập quốc, lãnh thổ/phòng thủ, mục tiêu nhà nước, ứng dụng công nghệ và cơ sở liên quan AF. `11–14` là các miền tài liệu AF chuyên biệt, không chuỗi chỉ huy tự động. Nội bộ RF do `30_RF_NATIONAL_CANON_CURRENT.md` / `AFM-014` quản lý.
 
 ---
 
----
+## Chính trị và thể chế — giao diện với `12`
 
-## Chính trị và thể chế — giao diện với `25`
-
-`25_POLITICS_DYNASTIC_SECURITY_CURRENT.md` / `AFM-011` kiểm soát chi tiết kế vị, khủng hoảng triều đại, nhà nước đa cực, thẩm quyền và agenda chính trị. AF có kế vị mẫu hệ; quyền lực chia giữa hoàng gia/nghị viện/quân đội/Nội vụ/các cơ quan khác, không một node thống nhất. `10` giữ địa chính trị toàn cục; các miền luật địa vị/hạ tầng vẫn ở `20/15`.
+`12_POLITICS_DYNASTIC_SECURITY_CURRENT.md` / `AFM-011` kiểm soát chi tiết kế vị, khủng hoảng triều đại, nhà nước đa cực, thẩm quyền và agenda chính trị. AF có kế vị mẫu hệ; quyền lực chia giữa hoàng gia/nghị viện/quân đội/Nội vụ/các cơ quan khác, không một node thống nhất. `01` giữ địa chính trị toàn cục; các miền luật địa vị/hạ tầng vẫn ở `11/02`.
 
 ---
 
@@ -387,9 +327,9 @@ Các quốc gia bên ngoài không có cùng lập trường.
 
 ### 20.0 Hoa Nguyệt / Tây quốc — giao diện địa chính trị
 
-`85_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát canon quốc gia Hoa Nguyệt; `10` chỉ giữ giao diện thế giới. Hoa Nguyệt / 華月 là tên đối ngoại của cùng quốc gia Kính Hoa Thuỷ Nguyệt / 鏡華水月 ở phía tây AF, không một chủ thể riêng.
+`20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát canon quốc gia Hoa Nguyệt; `01` chỉ giữ giao diện thế giới. Hoa Nguyệt / 華月 là tên đối ngoại của cùng quốc gia Kính Hoa Thuỷ Nguyệt / 鏡華水月 ở phía tây AF, không một chủ thể riêng.
 
-Đối địch AF và giao thương song phương cùng tồn tại. Con đường Tơ lụa là một trong nhiều kết nối đối ngoại; AF không cô lập Hoa Nguyệt bằng địa lý. Các tuyến ML/Raging Fire/phương Bắc cụ thể vẫn chưa chốt. Trang phục nghề/appropriation do `30` kiểm soát; hệ tên/biểu tượng không tự thay đổi Undi hoặc tạo sự kiện ngoại giao.
+Đối địch AF và giao thương song phương cùng tồn tại. Con đường Tơ lụa là một trong nhiều kết nối đối ngoại; AF không cô lập Hoa Nguyệt bằng địa lý. Các tuyến ML/Raging Fire/phương Bắc cụ thể vẫn chưa chốt. Trang phục nghề do `13` kiểm soát, ý định appropriation của AF ở `10` §6; hệ tên/biểu tượng không tự thay đổi Undi hoặc tạo sự kiện ngoại giao.
 
 ### 20.0b Tam cường phương Bắc — current canon
 
@@ -402,19 +342,9 @@ Phía Bắc có ít nhất ba cường quốc thường xuyên đánh xuyên bi�
 Họ chưa chọc thủng phòng hộ AetherFire do political/racial/geopolitical conflicts, lợi ích không đồng nhất và constraints quanh long mạch. Thủy tổ ba tộc có chức năng một rào chắn đối với chủng tộc không phải con người; exact mechanics và relation với Raging Phoenix seal giữ `UNKNOWN`.
 
 
-### 20.0c AetherFire — nguồn gốc 200 năm, firewall RF và các trục giao thông
+### 20.0c AetherFire — giao diện quốc gia
 
-**CANON**
-
-AetherFire mới thành lập khoảng **200 năm**. Nền lập quốc bắt đầu từ một **hiệp ước phong ấn thủy tổ của ba cường quốc phía Bắc**, kết hợp liên minh chính trị và hôn nhân. Exact ritual/ancestral mechanics ngoài phần đã xác nhận giữ `UNKNOWN`.
-
-Biên giới Bắc được chặn bởi **tường lửa dùng huyết thống Raging Fire**, được duy trì/bảo trì bằng các **trụ tinh thể nằm phía dưới AF**. AF phải trả chi phí và nhượng bộ chính trị–thương mại cho RF để duy trì dependency này.
-
-AF và RF bị ngăn bởi đại dương. Exchange chủ yếu phải dựa vào đường hàng không vì vùng biển bị **Seaborne** — sinh vật tương tự kraken, rất khó giết — khiến hải vận cực kỳ nguy hiểm.
-
-AF↔Hoa Nguyệt có **Con đường Tơ lụa** do hai bên đồng thuận lập theo hiệp định thương mại. Political tension không mặc định triệt tiêu economic interdependence.
-
-Mô hình hành lang 100 km AF↔Quad Night và Holy State làm cửa vào đã bị retire cùng Quad Night. Exact map mới giữa AF, ML và TE giữ `UNKNOWN`; không tự remap các buffer/micro-polity cũ sang actor mới.
+Lập quốc, firewall/trụ tinh thể và các trục giao thông được quản lý tại `10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` §§2/6. `01` giữ interface địa chính trị; `12` giữ hợp đồng/vận hành/phong ấn; `06` giữ hàng không/không phận. Quan hệ với RF và ML không đồng nhất một dependency hoặc chứng minh các tác nhân ngoài AF thuộc AF.
 
 ### 20.1 Nhóm phản đối
 
@@ -436,9 +366,7 @@ Có thể muốn:
 - học automation;
 - sao chép một phần mô hình quản lý lao động.
 
-Canon mới xác nhận **Bộ Ngoại giao AetherFire muốn nhân rộng mô hình Undie sang các quốc gia khác để tạo connection/mạng quan hệ**.
-
-Chi tiết cơ chế xuất khẩu, điều kiện đối tác, hợp đồng và phạm vi kiểm soát chưa được chốt.
+Chủ trương Bộ Ngoại giao AF và giới hạn cơ chế xuất khẩu được quản lý tại `10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` §6 và `12_POLITICS_DYNASTIC_SECURITY_CURRENT.md` §25; không chứng minh mọi nước đã nhận mô hình.
 
 ### 20.3 Nhóm muốn chống phá
 
@@ -453,124 +381,17 @@ Có thể dùng:
 
 ---
 
-## 20A. Hội đồng Pháp sư, chi nhánh Đông Bắc và chiến tranh thông tin quanh Raging Fire
+## 20A. Hội đồng Pháp sư / site Đông Bắc — giao diện thế giới
 
-### 20A.1 Hai chi nhánh và site Đông Bắc
+`10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` §5 giữ hai chi nhánh, site sau núi lửa, lab/cổng, cult khai thác POW-specialist và giới hạn chronology/operational state. Nghiên cứu cư dân Elf/Thú Nhân/Long tộc và thả sản phẩm phá hoại có signature là căn cứ grievance phía Bắc trong phạm vi lịch sử đã chốt; trạng thái sau divergence vẫn mở.
 
-**CANON**
-
-Hội đồng Pháp sư có ít nhất hai chi nhánh:
-
-```text
-Mage Council
-├─ chi nhánh bên trong AetherFire
-└─ chi nhánh chếch Đông Bắc
-   → nằm phía sau một núi lửa
-   → có Học viện Phép thuật
-   → có khu nghiên cứu cơ thể người ở bên dưới
-```
-
-Đối tượng nghiên cứu cơ thể người được lấy từ ba cường quốc phía Bắc: **Elf, Thú Nhân, Long tộc**. Đây là một nguyên nhân lịch sử trực tiếp khiến ba nước có grievance rất nặng và muốn ăn thua đủ với AetherFire; hostility phía Bắc không được mô tả như xung đột tùy tiện của các “bộ tộc yếu”.
-
-Exact temporal placement của site này trong mô hình `Canon 1 / Canon 2 overlap` chưa được chốt hoàn toàn vì concept site có trước khi hai trajectory được tách thành mô hình overlap hiện tại. **Nội dung site là canon; vị trí chính xác của từng event so với điểm divergence giữ `UNKNOWN` nếu source chưa chốt.**
-
-### 20A.2 Cult không thuộc Học viện; cult khai thác POW-specialist interface
-
-Cult tận thế **không phải một bộ phận chính thức của Học viện**.
-
-```text
-Cult members
-→ giả dạng POW
-→ được Hội đồng Pháp sư sử dụng như specialist
-```
-
-Do đó:
-
-```text
-CULT BELONGS_TO ACADEMY = FALSE
-CULT USES fake-POW identity = CANON
-MAGE COUNCIL USES those apparent POW as specialists = CANON
-```
-
-Exact degree mà Hội đồng biết provenance thật của từng specialist, và mức cult đã thâm nhập từng tầng của site/hệ thống, giữ `UNKNOWN` nếu chưa được chốt.
-
-### 20A.3 X2 — state knowledge bị phân mảnh và cố tình làm mờ
-
-AetherFire biết Raging Fire có thứ gì đó vượt ngoài phần chức năng seal/barrier mà họ đã nhận biết, nên muốn tìm hiểu thêm; research cost quá cao khiến MC2 trở thành một trường hợp đặc biệt để nhà nước nghiên cứu/khai thác.
-
-Cult tận thế cung cấp thông tin cho nhà nước, nhưng luồng thông tin không sạch:
-
-```text
-Cult
-→ cung cấp information
-
-Counterintelligence
-→ có lý do nghi ngờ information/provenance
-
-Security
-→ từng được Raging Fire tiếp cận trước
-→ cố tình lấp liếm / làm mờ một phần information
-
-field agents
-→ truyền lại information không rõ ràng do distortion này
-
-Army
-→ ủng hộ True Crown
-→ cố tình cho một số mật vụ Raging Fire đi vào
-→ đồng thời gây khó/chống Bộ Nội vụ
-```
-
-Đây là **information asymmetry giữa các cơ quan**, không phải một “nhà nước biết tất cả nhưng tự mâu thuẫn”.
-
-```text
-SEES
-≠ UNDERSTANDS
-≠ HAS SAME INFORMATION
-≠ HAS SAME AUTHORITY
-≠ CHOOSES SAME ACTION
-```
-
-
-### 20A.4 Cult đã lọt vào AF trước Clash #1
-
-**CANON / SHARED PRE-DIVERGENCE STATE**
-
-Cult đã trà trộn vào POW-specialist pipeline **từ trước khi MC3 bị kéo vào Fiction 1** và đã có người lọt vào bên trong AF. Vì vậy infiltration này không phải hậu quả của HOPE/Clash #1; cả authored trajectory và live trajectory đều phải được đọc trên nền một state đã có cult penetration từ trước, trừ khi một event sau đó thay đổi tình trạng đó.
-
-### 20A.5 Z2–Z4 — strategic placement, sabotage production và teleport-gate vulnerability
-
-**CANON HISTORY / SITE PROPERTY CONFIRMED; exact current placement/operational state sau divergence còn `UNKNOWN` nơi chưa chốt.**
-
-Placement cũ của site Đông Bắc theo sườn Quad Night/T.Gear chỉ còn là design genealogy. Current relation giữa Học viện, ML, TE và các bộ tộc mẫu hệ phía đông bắc tuân theo regional retcon; exact full map giữ `UNKNOWN`.
-
-Học viện không chỉ nghiên cứu cư dân tam cường. Trong legacy canon, học viên tạo **experimental subjects/products** từ cư dân Elf/Thú Nhân/Long tộc rồi thả ngược vào lãnh thổ của họ để phá hoại. Các sản phẩm được cài một **signature** có chủ ý, làm attribution rõ ràng như một lời thách thức/đánh dấu nguồn. Vì vậy grievance phía Bắc gồm:
-
-```text
-abduction / acquisition
-→ human-body experimentation
-→ weaponized/sabotage products
-→ release back into victim states
-→ deliberate signature / attribution
-```
-
-Đây là một causal scar mạnh hơn nhiều so với “bị lấy người để nghiên cứu”.
-
-Bên trong Học viện có một **teleport gate trực tiếp về AF**. Đầu bên kia nằm trong **một quận cô lập ở thủ đô**, nơi tập trung các lực lượng tinh nhuệ nhất. Gate này là lỗ hổng an ninh được thiết kế có chủ đích:
-
-```text
-Academy compromise
-→ gate seized/exploited
-→ geographic depth của AF bị bypass
-→ attackers có thể xuất hiện thẳng ở capital containment district
-```
-
-Nếu ba cường quốc phía Bắc tạm gác ân oán với nhau và đạt operational consensus, họ có thể dùng cảm tử quân qua gate. Elite defenders làm tăng attacker cost nhưng không xóa vulnerability vì suicide force không cần survival. Exact access-control/activation rule của gate và current post-divergence operational status chưa chốt.
+`12_POLITICS_DYNASTIC_SECURITY_CURRENT.md` giữ phân mảnh/thao túng thông tin Cult–Security–Army–Nội vụ. `14_BATTLEMAGE_ACADEMY_CURRENT.md` giữ nội bộ Học viện. Cult không thuộc Học viện; vị trí trong site không chứng minh sở hữu lab/cổng hoặc quyền chỉ huy. Nội dung này không đồng nhất cult tại ML với cult khai thác site.
 
 ---
 
 ## MC2 — giao diện chính trị
 
-Chi tiết tính cách, tuyến tiếp cận kín, tranh chấp chính danh và phản quốc do `25` kiểm soát; giao diện nghề/biến đổi do `30`, checkpoint/metafiction do `40`. Không phục hồi Civil→Undie→illegal prostitution. Phả hệ Raging Fire/Prince 9 và ontology huyết hệ bên dưới giữ nguyên.
+Chi tiết tính cách, tuyến tiếp cận kín, tranh chấp chính danh và phản quốc do `12` kiểm soát; giao diện nghề/biến đổi do `13`, checkpoint/metafiction do `03`. Không phục hồi Civil→Undie→illegal prostitution. Phả hệ Raging Fire/Prince 9 và ontology huyết hệ bên dưới giữ nguyên.
 
 ---
 
@@ -638,9 +459,9 @@ Các powerset khác của Raging Phoenix hiện được **SEALED / để dành 
 
 ---
 
-## Kháng chiến, phả hệ chính trị và thay chế độ — giao diện với `25`
+## Kháng chiến, phả hệ chính trị và thay chế độ — giao diện với `12`
 
-`25` kiểm soát mạng kháng chiến, chính danh thủ tục, hidden genealogy áp dụng vào tranh chấp kế vị, agenda Canon 1 và ràng buộc thay chế độ 5–8 năm. Bẫy kháng chiến giả không còn sự kiện hiện hành; phản quốc là checkpoint đã chốt, triển khai mới còn mở. Lịch sử Canon 1 không khóa kết quả Canon 2; `40` giữ thẩm quyền về realization/overlap.
+`12` kiểm soát mạng kháng chiến, chính danh thủ tục, hidden genealogy áp dụng vào tranh chấp kế vị, agenda Canon 1 và ràng buộc thay chế độ 5–8 năm. Bẫy kháng chiến giả không còn sự kiện hiện hành; phản quốc là checkpoint đã chốt, triển khai mới còn mở. Lịch sử Canon 1 không khóa kết quả Canon 2; `03` giữ thẩm quyền về realization/overlap.
 
 ---
 
@@ -681,15 +502,15 @@ Không tự lấp các mục `UNKNOWN`, `SEALED` hoặc `deferred` bằng suy lu
 
 ---
 
-## RF — giao diện chính trị với `25`
+## RF — giao diện quốc gia với `30_RF_NATIONAL_CANON_CURRENT.md`
 
-RF là liên hiệp lục địa nhiều quốc gia thành viên, không một vương quốc; từ quyết định 2026-10-06 không còn là khối tu tiên. `25` giữ đủ quyết định và ranh giới thay thế; nền sức mạnh mới chưa chốt. Huyết hệ Raging Fire, liên hiệp, khối mạnh nhất của mẹ MC2 và chính thể Prince 9 là các node khác nhau. `25` giữ bốn khối foreground, secession/Prince 9, guarded alliance, agenda quý tộc và giới hạn thông tin. `80` giữ hàng không; `10` giữ ontology/phong ấn và địa lý toàn cục.
+RF là liên hiệp lục địa nhiều quốc gia thành viên, không một vương quốc; từ quyết định 2026-10-06 không còn là khối tu tiên. `30_RF_NATIONAL_CANON_CURRENT.md` giữ cấu trúc RF, bốn khối foreground, Prince 9/phả hệ, giới hạn tri thức và toàn bộ quyết định thay thế; nền sức mạnh mới chưa chốt. Huyết hệ, liên hiệp, khối mạnh nhất và chính thể Prince 9 vẫn là các node khác nhau. `12_POLITICS_DYNASTIC_SECURITY_CURRENT.md` giữ bargaining AF–RF/MC2 và agenda phe AF; `06` giữ hàng không; `01` giữ ontology huyết hệ và địa chính trị.
 
 ---
 
 ## Stable aviation and RF airspace — global interface
 
-> **Authority boundary:** `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` controls the detailed aviation, airspace, ATC, mixed-flight and route-leverage domain. This section keeps only the interfaces required by the wider world/geopolitics model.
+> **Authority boundary:** `06_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` controls the detailed aviation, airspace, ATC, mixed-flight and route-leverage domain. This section keeps only the interfaces required by the wider world/geopolitics model.
 
 - AF and RF are separated by an ocean where Seaborne make maritime transport extremely dangerous, so exchange depends strongly on aviation.
 - AF is the only currently confirmed actor able to operate stable, scheduled and scalable aviation as infrastructure. This does not mean AF monopolizes flight or that no other actor can ever build comparable infrastructure.
@@ -702,7 +523,7 @@ RF là liên hiệp lục địa nhiều quốc gia thành viên, không một v
 
 ## Battlemage Academy — global and site interface
 
-> **Internal Academy authority:** `65_BATTLEMAGE_ACADEMY_CURRENT.md` (`AFM-009`) controls internal organization, training, DI/consultant functions, authority domains, combat teams, assessment, qualification, scholarship, and functional uniform.
+> **Internal Academy authority:** `14_BATTLEMAGE_ACADEMY_CURRENT.md` (`AFM-009`) controls internal organization, training, DI/consultant functions, authority domains, combat teams, assessment, qualification, scholarship, and functional uniform.
 
 > **Official name:** `[ACADEMY NAME — PLACEHOLDER]`. “Học viện Lục Quang” is not canon.
 
@@ -710,13 +531,13 @@ The Academy is an institution/faction within the northeastern Mage Council site 
 
 The cult is not part of the Academy. It exploits the apparent-POW-to-Mage-Council-specialist interface. Exact infiltration, Academy awareness and gate access remain `UNKNOWN`.
 
-`10` retains global, Council, lab, cult, geography and gate interfaces; document containment does not assign those actors or facilities to Academy control. `65` retains the student-facing lab/live-target unknowns and the removed `Academy failure → Undie` route; no automatic Undie transition follows academic failure.
+`01` giữ giao diện thế giới; `10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` §5 giữ chi tiết Council/lab/cult/site/gate. Document containment does not assign those actors or facilities to Academy control. `14` retains the student-facing lab/live-target unknowns and the removed `Academy failure → Undie` route; no automatic Undie transition follows academic failure.
 
 ---
 
 ## Matriarch's Lament / Transfusion EasterFire — global interface
 
-> **Authority boundary:** internal Matriarch's Lament governance, Temple/Cult, Matriarch origin and Saint's Fresh, Holy Guard, Trinity/relic economy, Trần Trúc Nha doctrine, ML–TE operations and northeastern-tribe relations are controlled by `70_MATRIARCHS_LAMENT_CURRENT.md`. This section keeps only the interfaces needed by the wider AetherFire world model.
+> **Authority boundary:** internal Matriarch's Lament governance, Temple/Cult, Matriarch origin and Saint's Fresh, Holy Guard, Trinity/relic economy, Trần Trúc Nha doctrine, ML–TE operations and northeastern-tribe relations are controlled by `40_MATRIARCHS_LAMENT_CURRENT.md`. This section keeps only the interfaces needed by the wider AetherFire world model.
 
 ### Regional supersession and chronology
 
@@ -727,7 +548,7 @@ The cult is not part of the Academy. It exploits the apparent-POW-to-Mage-Counci
 - ML is approximately 500 years old; AetherFire is approximately 200 years old.
 - ML participated in the sealing event before AetherFire's foundation. An RF/Raging Fire actor also participated, but the exact lineage/union/member-state level remains `UNKNOWN`.
 
-Matriarch là người/esper chữa lành từ Fiction 0, đến Fiction 1 khoảng 500 năm trước theo thứ tự phía Fiction 0 sau Clash #1. Bà có thánh lực, thần tính thật, đã bị ám sát; thi hài bí mật dưới Thần điện trung tâm vẫn là nguồn lực. Saintess và một số tác nhân tôn giáo cấp trong biết; không suy toàn ML/AF/Cult biết. `70` giữ nguồn gốc/tôn giáo, `40` giữ timeline interface.
+Matriarch là người/esper chữa lành từ Fiction 0, đến Fiction 1 khoảng 500 năm trước theo thứ tự phía Fiction 0 sau Clash #1. Bà có thánh lực, thần tính thật, đã bị ám sát; thi hài bí mật dưới Thần điện trung tâm vẫn là nguồn lực. Saintess và một số tác nhân tôn giáo cấp trong biết; không suy toàn ML/AF/Cult biết. `40` giữ nguồn gốc/tôn giáo, `03` giữ timeline interface.
 
 Creed và các oath/quorum/cơ chế cưỡng chế phụ thuộc đã rút chờ revamp; ba lớp nhà nước–Thần điện–Cult và các actor độc lập không bị xóa.
 
@@ -739,7 +560,7 @@ AF dependency on RF arrangement / Raging Fire lineage
 AF periodic dependency on ML relic access
 ```
 
-ML controls access to **Saint's Fresh**, a pentagonal self-regenerative seal-reinforcement relic containing authentic Matriarch blood/flesh/bone, Saintess-blessed holy cloth and a distinct binding relic, **Redemption Rope**. Saintess's own hands are the opening/rebinding gate, not automatically diplomatic authorization or ownership. AF periodically buys access; political hostility and mandatory commerce may coexist. Fresh consumption, ritual, legal custody and AF knowledge of the secret body remain UNKNOWN; `70` §25 controls detail.
+ML controls access to **Saint's Fresh**, a pentagonal self-regenerative seal-reinforcement relic containing authentic Matriarch blood/flesh/bone, Saintess-blessed holy cloth and a distinct binding relic, **Redemption Rope**. Saintess's own hands are the opening/rebinding gate, not automatically diplomatic authorization or ownership. AF periodically buys access; political hostility and mandatory commerce may coexist. Fresh consumption, ritual, legal custody and AF knowledge of the secret body remain UNKNOWN; `40` §25 controls detail.
 
 The AF↔TE treaty is direct and was negotiated inside AetherFire. It does not transit through ML.
 
@@ -749,22 +570,22 @@ Hành lang AF↔Quad Night 100 km, vị trí sườn Học viện và quan hệ 
 
 ### Trần Trúc Nha and Undie boundaries
 
-Trần Trúc Nha's membership and regional role in ML are current canon. Her proposed summoned/cross-world origin is `UNDER CONSTRUCTION / NOT CURRENT CANON` and is routed to `40_METAFICTION_CANON_TIMELINE_CURRENT.md`.
+Trần Trúc Nha's membership and regional role in ML are current canon. Her proposed summoned/cross-world origin is `UNDER CONSTRUCTION / NOT CURRENT CANON` and is routed to `03_METAFICTION_CANON_TIMELINE_CURRENT.md`.
 
-The former `foreign spy / infiltrator → punitive Undie` route is `RESOLVED / REMOVED` because it no longer fits the political-centric setting. No replacement legal/status route is inferred; Undie-related interfaces are controlled by `30_UNDIE_SYSTEM_CURRENT.md`.
+The former `foreign spy / infiltrator → punitive Undie` route is `RESOLVED / REMOVED` because it no longer fits the political-centric setting. No replacement legal/status route is inferred; Undie-related interfaces are controlled by `13_UNDIE_SYSTEM_CURRENT.md`.
 
 ---
 
 ## MC2 pathway — giao diện đã chốt 2026-10-05
 
-`25` kiểm soát TE bảo hộ Nữ hoàng, MC2.2 biết tình hình khái quát, RF hỗ trợ phong ấn định kỳ và cơ chế bearer-gia cố, tín hiệu báo động cùng nguyên tắc phản gián. AF relevant actors biết đủ vận hành phong ấn, không biết toàn ontology Raging Fire; RF không thường trực nắm lõi. Mẹ MC2 được TE bảo hộ chỉ với phạm vi biết hạn chế, không tự giải quyết luật custody/địa lý.
+`12` kiểm soát TE bảo hộ Nữ hoàng, MC2.2 biết tình hình khái quát, RF hỗ trợ phong ấn định kỳ và cơ chế bearer-gia cố, tín hiệu báo động cùng nguyên tắc phản gián. AF relevant actors biết đủ vận hành phong ấn, không biết toàn ontology Raging Fire; RF không thường trực nắm lõi. Mẹ MC2 được TE bảo hộ chỉ với phạm vi biết hạn chế, không tự giải quyết luật custody/địa lý.
 
-Đường bearer/hiến tế-gia cố là cơ chế thực nhưng death/survival/consent/thẩm quyền chưa chốt. Tín hiệu không còn cần hỗ trợ RF định kỳ chỉ là trigger có điều kiện, không sự kiện đã xảy ra. Operation Swap và lịch giải cứu là phần chưa chốt. `30` giữ interface Undie; `40` giữ phản quốc/nguy hiểm tính mạng và overlap mang áp lực kết thúc.
+Đường bearer/hiến tế-gia cố là cơ chế thực nhưng death/survival/consent/thẩm quyền chưa chốt. Tín hiệu không còn cần hỗ trợ RF định kỳ chỉ là trigger có điều kiện, không sự kiện đã xảy ra. Operation Swap và lịch giải cứu là phần chưa chốt. `13` giữ interface Undie; `03` giữ phản quốc/nguy hiểm tính mạng và overlap mang áp lực kết thúc.
 
 ---
 
 ## Metafiction interfaces
 
 - World-state facts established here feed the live Canon 2 context but do not by themselves define metafiction mechanics.
-- `40_METAFICTION_CANON_TIMELINE_CURRENT.md` controls the fiction layers, continuation modes, causal overlap and clash timeline.
-- `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` controls narrator personification, POV grammar and humor design.
+- `03_METAFICTION_CANON_TIMELINE_CURRENT.md` controls the fiction layers, continuation modes, causal overlap and clash timeline.
+- `04_NARRATORS_POV_AND_HUMOR_CURRENT.md` controls narrator personification, POV grammar and humor design.
