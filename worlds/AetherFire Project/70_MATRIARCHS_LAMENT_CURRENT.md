@@ -2,15 +2,15 @@
 
 > Module ID: `AFM-007`
 > Runtime role: `CURRENT_SOURCE`
-> Domain / Scope: Matriarch's Lament internal governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha regional role and doctrine, ML–TE operations, and northeastern tribes.
+> Domain / Scope: Matriarch's Lament internal governance, Temple/Cult, Matriarch origin and Saint's Fresh, Holy Guard, Trinity/relic economy, Trần Trúc Nha regional role and doctrine, ML–TE operations, and northeastern tribes.
 > Authority boundary: Controls internal Matriarch's Lament canon within its declared scope.
 > Cross-domain owner boundary: Global and geopolitical interfaces are controlled by `AFM-001`; detailed politics and Queen protection interface by `AFM-011`; Undie professional and unresolved legal interfaces by `AFM-003`; metafiction and cross-world status by `AFM-004`.
 > Load mode: `FULL_FILE`
 
-> **Trạng thái:** CURRENT CANON / CONTROLLING MATRIARCH'S LAMENT DOMAIN — integrated 2026-09-11; architecture split recorded 2026-09-16  
-> **Authority boundary:** this file controls internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and the northeastern tribes. Cross-domain interfaces are summarized in `10`; Undie professional and unresolved legal interfaces are controlled by `30`; cross-world status is controlled by `40`.
+> **Trạng thái:** CURRENT CANON / CONTROLLING MATRIARCH'S LAMENT DOMAIN — integrated 2026-09-11; architecture split recorded 2026-09-16; Matriarch/Saint's Fresh delta 2026-10-06
+> **Authority boundary:** this file controls internal Matriarch's Lament governance, Temple/Cult, Matriarch origin and Saint's Fresh, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and the northeastern tribes. Cross-domain interfaces are summarized in `10`; Undie professional and unresolved legal interfaces are controlled by `30`; cross-world status is controlled by `40`.
 > **Trúc Nha boundary:** membership and regional role in ML are current canon. A summoned/cross-world origin remains `UNDER CONSTRUCTION / NOT CURRENT CANON`.  
-> **Phạm vi:** retcon Holy State, quan hệ với AetherFire, Transfusion EasterFire, Trinity Hexagon, Creed, Thần điện, Thánh Nữ Trần Trúc Nha và các dependency lịch sử liên quan.  
+> **Phạm vi:** retcon Holy State, quan hệ với AetherFire, Transfusion EasterFire, Trinity Hexagon, Matriarch/Saint's Fresh, Thần điện, Thánh Nữ Trần Trúc Nha và các dependency lịch sử liên quan.
 > **Không phải:** full world bible, full constitution, full economy, full military doctrine hoặc full magic system.  
 > **Quy tắc:** nội dung dưới đây chỉ ghi các điểm đã được người dùng xác nhận trong chuỗi retcon hiện tại. UNKNOWN được giữ nguyên; không tự lấp.
 
@@ -92,7 +92,7 @@ Do đó:
 ML tồn tại trước AF khoảng 300 năm
 ```
 
-Không có conflict giữa tuổi 500 năm của ML và tuổi 200 năm của AF.
+Tuổi ML khoảng 500 năm và AF khoảng 200 năm vẫn giữ. Matriarch đến Fiction 1 khoảng 500 năm trước rồi trải qua biến đổi, thờ phụng, ám sát và cộng đồng hình thành polity (§25). Hai mốc xấp xỉ không tự định nghĩa thời lượng từng bước hoặc nhà nước hình thành tức thì; chronology chi tiết còn mở.
 
 ---
 
@@ -200,140 +200,19 @@ phản đối triết lý tàn bạo của Matriarch's Lament
 
 Trúc Nha không phản bội vì một sự kiện ngẫu nhiên hoặc vì tác giả cần một cú twist đơn lẻ.
 
-Failure này được đặt trên nền:
+Failure doctrine vẫn là hướng thiết kế có chủ đích, không một twist ngẫu nhiên. Tuy nhiên chuỗi Creed/oath vận hành 500 năm → tự tin thể chế → split-self bypass đã bị rút cùng Creed; không giữ làm lời giải hiện hành.
 
-```text
-ML vận hành hệ Creed / loyalty architecture
-→ trong khoảng 500 năm
-→ hiệu quả đủ lâu
-→ hình thành sự tự tin quá đáng
-→ institution coi assumption của mình là đáng tin
-→ Trúc Nha xuất hiện với split-self
-→ assumption có khả năng không còn đúng
-```
+Split-self và doctrine phản đối triết lý tàn bạo của Trúc Nha vẫn giữ theo §4–5. Không tự chọn cơ chế loyalty thay thế hoặc sự kiện phản bội mới.
 
-### UNKNOWN / chưa chốt cơ chế sâu
+## 6. Creed — đã rút, chờ revamp
 
-Exact reason vì sao split-self làm Creed có khả năng không ảnh hưởng / không bind được Trúc Nha vẫn chưa được định nghĩa đầy đủ.
+Quyết định 2026-10-06 rút toàn bộ Creed, loyalty/life/family-bound oath, hậu quả tim mạch và dependency thể chế. Không dùng làm fallback. Thần điện, Thánh Nữ, Holy Guard, nhà nước công khai và Cult vẫn có căn cứ riêng.
 
-Giữ:
+Dữ kiện độc lập về giáo dân bị ép gia nhập tôn giáo giữ; không còn lấy family-set hay lời thề Creed làm cơ chế ràng buộc. Thần tính Matriarch có thật không định nghĩa một luật thần phổ quát (§25).
 
-```text
-split-self
-→ Creed compatibility không chắc chắn
-```
+## 7. Quorum Creed — đã rút
 
-Không tự suy thêm cơ chế linh hồn, target selection hoặc bypass cụ thể.
-
----
-
-## 6. Creed — chức năng oath hiện hành
-
-### CANON
-
-Creed có khả năng ràng buộc loyalty bằng lời thề.
-
-Các oath đã xác nhận:
-
-### 6.1 Người đứng đầu quốc gia
-
-```text
-Head of State
-→ thề trên tính mạng
-→ trung thành với hệ thần quyền
-```
-
-Nếu phá oath:
-
-```text
-→ đau tim
-```
-
-### 6.2 Giáo dân
-
-Giáo dân bị ép gia nhập tôn giáo.
-
-Trong setting có thần thực hữu, tôn giáo và belief không chỉ là declaration xã hội.
-
-Thần quyền xác lập những người liên quan trong cùng một gia đình để đưa họ vào phạm vi oath.
-
-```text
-individual believer
-+
-recognized family relation set
-→ family-bound oath unit
-```
-
-Nếu oath bị phá:
-
-```text
-→ Creed gây hậu quả tim mạch
-```
-
-### UNKNOWN
-
-Exact target khi một giáo dân phá oath chưa chốt:
-
-```text
-người phản oath?
-một người thân?
-nhiều người trong family set?
-cơ chế chọn target khác?
-```
-
-Không tự định nghĩa.
-
-### 6.3 Guardian / Holy Guard
-
-```text
-Holy Guard
-→ thề trung thành trực tiếp với Thánh Nữ
-```
-
-Điểm này tạo một loyalty path không hoàn toàn trùng với Thần điện.
-
----
-
-## 7. Creed quorum
-
-### CANON
-
-Để thực thi Creed ở tầng clergy:
-
-```text
-cần 3 clergy cùng đồng thuận
-```
-
-Không yêu cầu:
-
-- Thánh Nữ bắt buộc tham gia;
-- một cá nhân duy nhất có quyền độc quyền kích hoạt.
-
-Đây là:
-
-> **một kẽ hở có chủ đích**
-
-Quan hệ:
-
-```text
-3 clergy
-→ đủ quorum
-→ Creed có thể được thực thi
-```
-
-### Hệ quả cấu trúc đã xác nhận ở mức architecture
-
-```text
-Cult
-→ có thể ảnh hưởng nội bộ Thần điện
-
-Creed
-→ cần quorum 3 clergy
-
-→ attack surface tồn tại
-```
-
-Không tự suy Cult đã kiểm soát một quorum cụ thể.
+Quorum ba clergy và Creed attack surface không còn current; không suy Cult đã kiểm soát một quorum. Ba linh mục làm chứng hoạt động cho mượn thánh vật ở §9 là vai trò độc lập, không cơ chế kích hoạt Creed.
 
 ---
 
@@ -350,7 +229,7 @@ Bảo vệ:
 - Thần điện;
 - Thánh Nữ.
 
-Holy Guard thề allegiance trực tiếp với Thánh Nữ.
+Quan hệ allegiance/bảo vệ Thánh Nữ độc lập được giữ; lời thề siêu nhiên Creed và hiệu lực cưỡng chế cũ đã rút. Cơ chế loyalty/authority thay thế chưa chốt.
 
 ### Vệ binh quốc gia
 
@@ -378,7 +257,7 @@ Matriarch's Lament kiếm tiền bằng:
 
 ```text
 cho cá nhân mượn thánh vật có thời hạn
-→ dưới các lời thề Creed nhất định
+→ cơ chế ràng buộc cho mượn thay thế Creed còn UNKNOWN
 ```
 
 Trong hoạt động cho mượn thánh vật:
@@ -400,7 +279,7 @@ toàn bộ hệ thần quyền
 → phán xét
 ```
 
-Không cần mở full ownership law ở giai đoạn hiện tại.
+Không cần mở full ownership law ở giai đoạn hiện tại. Ba linh mục làm chứng không phải quorum Creed hoặc đủ quyền mở Saint's Fresh; riêng cấu hình Redemption Rope cần chính tay Thánh Nữ (§25).
 
 ---
 
@@ -408,13 +287,14 @@ Không cần mở full ownership law ở giai đoạn hiện tại.
 
 ### CANON
 
-ML kiểm soát một thánh vật do Trinity Hexagon district cung cấp.
+ML giữ quyền tiếp cận/cấp quyền sử dụng thánh vật gia cố phong ấn tên **Saint's Fresh**. Trinity Hexagon vẫn giữ/cung cấp thánh vật, nhưng Saint's Fresh được chế tạo hay quản lý tại đó và custody/ownership pháp lý chưa chốt (§25).
 
 Đặc tính chiến lược:
 
 ```text
 thánh vật
-→ bị tiêu hao trong quá trình sử dụng
+→ relic có tính tiêu hao/tái tạo đã chốt
+→ không suy fresh thật bên trong bị tiêu hao
 → có khả năng tái tạo chính nó
 → sau một khoảng thời gian có thể được sử dụng lại
 ```
@@ -454,7 +334,7 @@ AF
 ML relic access
 ```
 
-Đây là dependency định kỳ, không phải sự kiện một lần.
+Đây là dependency định kỳ, không phải sự kiện một lần. Saint's Fresh là hộp năm cạnh; fresh thật từ Matriarch + relic tự tái tạo, vải thánh được Saintess ban phép và Redemption Rope là các quan hệ riêng. Saintess mở/buộc lại bằng chính tay không đồng nghĩa độc quyền cho phép AF sử dụng, ownership hoặc toàn quyền ngoại giao (§25).
 
 ---
 
@@ -689,47 +569,9 @@ Không cần mở full macroeconomy ở giai đoạn hiện tại.
 
 ---
 
-## 20. Failure mode xuyên 500 năm
+## 20. Failure mode — ranh giới sau khi rút Creed
 
-### CANON / DESIGN INTENT
-
-Failure mode quanh Thánh Nữ không phải một tai nạn đột ngột.
-
-Nó hoạt động trên nền lịch sử:
-
-```text
-Creed
-+ oath architecture
-+ thần quyền
-+ clergy quorum
-→ vận hành đủ lâu
-
-~500 năm
-→ success history
-→ confidence tăng
-→ institution tin rằng loyalty architecture là đáng tin
-
-Trúc Nha
-→ split-self
-→ doctrine riêng
-→ phản triết lý tàn bạo của ML
-→ Creed có khả năng không bind cô đúng như assumption cũ
-
-Holy Guard
-→ allegiance với chính Trúc Nha
-```
-
-Đây là:
-
-```text
-success-induced institutional vulnerability
-```
-
-không phải:
-
-```text
-random betrayal event
-```
+Trúc Nha có split-self, doctrine riêng và về sau phản đối triết lý tàn bạo ML; ý định không viết như phản bội ngẫu nhiên giữ. Cơ chế success-induced vulnerability từng dựa trên Creed/oath/quorum đã bị rút, kể cả luận điểm 500 năm kiểm chứng loyalty hoặc split-self phá binding. Chưa thiết kế cơ chế thay thế hoặc khẳng định một cuộc phản bội cụ thể đã xảy ra.
 
 ---
 
@@ -747,7 +589,6 @@ POWER
 ├─ Temple
 │  ├─ real political influence
 │  ├─ clergy
-│  ├─ Creed
 │  └─ manipulation of public leadership
 │
 ├─ apocalyptic cult
@@ -759,17 +600,13 @@ POWER
    ├─ relic representation role
    └─ Holy Guard allegiance
 
-CREED
-├─ head of state oath → life-bound
-├─ believer oath → family-bound
-├─ Holy Guard oath → Saintess
-└─ activation/execution quorum → 3 clergy
+CREED → REMOVED / REVAMP LATER
 
 STRATEGIC RESOURCE
 └─ Trinity Hexagon district
    → sacred relics
-   → timed lending under Creed
-   → regenerative-consumable seal relic
+   → timed lending; replacement enforcement UNKNOWN
+   → Saint's Fresh: regenerative relic + authentic Matriarch fresh
    → AF periodic licensed-use dependency
 
 AF FOREIGN DEPENDENCY
@@ -789,8 +626,7 @@ ML ↔ northeastern matriarchal tribes
 PRIMARY INTERNAL FAILURE
 Trúc Nha
 → rejects ML brutality
-→ Creed may not fully bind split-self
-→ Holy Guard loyalty creates authority conflict
+→ loyalty/conflict implementation after Creed removal UNKNOWN
 ```
 
 ---
@@ -805,9 +641,7 @@ Các điểm sau **chưa cần mở** để core ML chạy:
 - full economy;
 - full taxation;
 - full military structure;
-- full Creed magic system;
-- exact split-self bypass mechanism;
-- exact target của family-bound oath khi phản bội;
+- cơ chế thay thế Creed; không triển khai magic/bypass/family-bound target của cơ chế đã rút;
 - full artifact ownership law;
 - full cult command structure;
 - full Saintess selection system;
@@ -866,11 +700,9 @@ HOLY GUARD ≠ NATIONAL GUARD.
 
 HOLY GUARD LOYALTY → SAINTESS.
 
-CREED EXECUTION QUORUM = 3 CLERGY.
+CREED / OATH / THREE-CLERGY QUORUM REMOVED PENDING REVAMP.
 
-HEAD-OF-STATE OATH → LIFE-BOUND.
-
-BELIEVER OATH → FAMILY-BOUND.
+NO SPLIT-SELF CREED BYPASS IS CURRENT.
 
 ML AGE ≈ 500 YEARS.
 
@@ -884,7 +716,518 @@ AF DEPENDS ON RF AND ML THROUGH DIFFERENT STRATEGIC AXES.
 
 AF↔ML HOSTILITY CAN RUN WITH MANDATORY TRADE.
 
-TRÚC NHA'S BETRAYAL = LONG-TERM INSTITUTIONAL FAILURE, NOT RANDOM EVENT.
+TRÚC NHA'S DOCTRINE AND SPLIT-SELF REMAIN.
+CREED-BASED FAILURE CHAIN IS RETIRED; REPLACEMENT IMPLEMENTATION UNKNOWN.
 
 UNKNOWN ≠ PERMISSION TO INVENT.
+```
+
+## 25. Matriarch, nguồn thánh lực và Saint's Fresh — chốt 2026-10-06
+
+Nguồn tác giả `AetherFire_Matriarchs_Lament_Matriarch_Origin_Saints_Fresh_Canon_2026-10-06.md`; yêu cầu audit và nhập canon. Giữ đầy đủ §§1–15 dưới đây; chỉ đổi cấp heading để chứa trong module. `40` giữ thứ tự nhân quả Fiction 0/điểm đến Fiction 1, không định nghĩa cơ chế transfer chung. Trúc Nha và Matriarch không bị nhập làm một; nguồn gốc Trúc Nha vẫn UNDER CONSTRUCTION.
+
+### 1. Matriarch — nguồn gốc
+
+#### CANON
+
+`Matriarch` trong tên **Matriarch's Lament** chỉ chính người phụ nữ có thi hài hiện được giữ bí mật bên dưới Thần điện trung tâm của Matriarch's Lament.
+
+Bà vốn là:
+
+- một con người;
+- một esper;
+- người đến từ **Fiction 0**, cùng thế giới xuất thân với MC1 và MC3;
+- có năng lực esper gốc thiên về chữa lành.
+
+Theo thứ tự nhân quả phía Fiction 0:
+
+```text
+Clash #1
+→ sau đó Matriarch bị cưỡng ép triệu hồi / đưa sang Fiction 1
+```
+
+Nhưng tọa độ bà xuất hiện trong Fiction 1 nằm khoảng:
+
+```text
+~500 năm trước thời điểm hiện tại
+```
+
+Quan hệ này xác lập thứ tự và điểm đến thời gian, không tự định nghĩa full cơ chế xuyên fiction / xuyên thời gian.
+
+---
+
+### 2. Esper chữa lành → holy power
+
+#### CANON
+
+Sau khi đi vào Fiction 1 và tiếp xúc với hệ phép thuật của AetherFire:
+
+```text
+healing esper ability
++ magic exposure / interaction
+→ năng lực được khuếch đại / biến đổi
+→ holy power
+```
+
+`Holy power` ở đây là sức mạnh có hiệu lực thật trong ontology của thế giới.
+
+Không tự suy:
+
+```text
+holy power = divinity
+holy power = godhood
+mọi esper chữa lành + magic → cùng kết quả
+```
+
+Exact transformation mechanism vẫn `UNKNOWN`.
+
+---
+
+### 3. Thờ phụng và thần tính
+
+#### CANON
+
+Matriarch về sau:
+
+- sở hữu hoặc tiếp cận một số thánh vật;
+- được cộng đồng thờ phụng;
+- qua quá trình đó mang **thần tính có thật**.
+
+Quan hệ chốt ở mức:
+
+```text
+Matriarch
++ worship
+→ divinity thật xuất hiện / tích tụ
+```
+
+Không tự nâng thành luật phổ quát cho toàn setting rằng mọi đối tượng được thờ phụng đều sẽ thành thần.
+
+#### UNKNOWN / OPEN
+
+Chưa chốt:
+
+- Matriarch đã trở thành “thần” theo ontology nào;
+- có ngưỡng rõ ràng giữa người có thần tính và thần hay không;
+- thần tính là vật chất, trạng thái linh hồn, quan hệ với tín đồ, quyền hạn siêu hình hay cơ chế khác;
+- cái chết của cơ thể có làm biến đổi trạng thái thần tính hay không;
+- linh thể / ý thức của Matriarch hiện còn tồn tại hay không.
+
+Do đó:
+
+```text
+DIVINITY thật
+≠
+đã xác lập full GOD ontology
+```
+
+---
+
+### 4. Thần tính không tạo plot armor
+
+#### CANON
+
+Matriarch có thể bị giết dù đã mang thần tính.
+
+```text
+DIVINITY
+≠
+IMMORTALITY
+≠
+INVULNERABILITY
+```
+
+Bà đã bị ám sát.
+
+Exact hung thủ, actor hỗ trợ, động cơ và causal chain của vụ ám sát vẫn chưa chốt trong delta này.
+
+---
+
+### 5. Lament và sự hình thành Matriarch's Lament
+
+#### CANON
+
+Tại thời điểm Matriarch bị ám sát, một trong những người thờ phụng bà đã khóc thương cho bà.
+
+Biến cố này là nguồn trực tiếp của cái tên:
+
+> **Matriarch's Lament**
+
+Cái chết của Matriarch và cộng đồng hình thành quanh di sản của bà trở thành nền dẫn tới sự hình thành quốc gia Matriarch's Lament.
+
+Quan hệ chốt:
+
+```text
+Matriarch bị ám sát
+→ follower mourning / lament
+→ ký ức tôn giáo và cộng đồng quanh di sản Matriarch
+→ Matriarch's Lament hình thành
+```
+
+Không bắt buộc nhà nước hoàn chỉnh xuất hiện ngay lập tức sau cái chết. Exact quá trình từ cộng đồng tôn giáo sang polity vẫn có thể được thiết kế sau.
+
+---
+
+### 6. Thi hài dưới Thần điện
+
+#### CANON
+
+Thi hài thật của Matriarch được giữ bí mật:
+
+```text
+bên dưới Thần điện trung tâm của Matriarch's Lament
+```
+
+Thi hài:
+
+- được bảo quản bằng các thánh vật;
+- vẫn giữ giá trị siêu nhiên sau cái chết;
+- tiếp tục là một nguồn holy/divine power có hiệu lực.
+
+Việc cơ thể đã chết không làm cho toàn bộ holy/divine property biến mất.
+
+#### Knowledge boundary
+
+Sự thật về thi hài không phải kiến thức công khai.
+
+CANON minimum:
+
+```text
+Saintess
+→ biết sự thật
+
+một số người trong bộ máy tôn giáo cấp trong
+→ biết sự thật
+```
+
+Exact danh sách người biết, chức vụ, số lượng, compartmentalization và quy trình tiếp cận vẫn `UNKNOWN`.
+
+AetherFire có biết nguồn thật này hay không vẫn:
+
+```text
+UNKNOWN
+```
+
+---
+
+### 7. Creed — rút khỏi canon hiện hành
+
+#### CANON SUPERSESSION
+
+Toàn bộ cơ chế **Creed** của Matriarch's Lament bị rút khỏi canon hiện hành trong phạm vi revamp này.
+
+Bao gồm các cơ chế từng gắn với Creed như:
+
+- loyalty oath;
+- life-bound oath;
+- family-bound oath;
+- hậu quả tim mạch do phá oath;
+- clergy quorum ba người;
+- Creed attack surface;
+- các dependency thể chế được xây dựa trên việc Creed có hiệu lực.
+
+Trạng thái mới:
+
+```text
+CREED
+→ REMOVED FROM CURRENT CANON
+→ TO BE REVAMPED LATER
+```
+
+Không được dùng cơ chế Creed cũ làm fallback, baseline, analogy anchor hoặc lời giải cho các khoảng trống mới.
+
+Việc Creed bị rút không tự xóa các actor / institution khác như Thần điện, Thánh Nữ, Holy Guard, nhà nước công khai hoặc Cult nếu chúng có căn cứ canon độc lập.
+
+---
+
+### 8. Thánh vật gia cố phong ấn cho AetherFire
+
+#### CANON
+
+AetherFire vẫn có dependency định kỳ vào một thánh vật của Matriarch's Lament để gia cố phong ấn.
+
+Thánh vật này có tên:
+
+> **Saint's Fresh**
+
+Saint's Fresh là artifact cụ thể dùng trong giao diện gia cố phong ấn cho AetherFire.
+
+#### Hình dạng
+
+Saint's Fresh có hình dạng:
+
+```text
+một chiếc hộp năm cạnh
+```
+
+#### Thành phần tạo nên chức năng
+
+Chức năng thần thánh của Saint's Fresh dựa trên hai thành phần liên kết:
+
+```text
+1. relic / artifact có khả năng tự tái tạo
+2. fresh thật của Matriarch ở bên trong
+```
+
+`Fresh` thật của Matriarch bao gồm vật chất cơ thể thật như:
+
+- máu;
+- thịt;
+- xương.
+
+Những thành phần này là thật, bắt nguồn trực tiếp từ thi hài Matriarch, không phải bản sao hay vật thay thế.
+
+Quan hệ:
+
+```text
+self-regenerative relic
++ authentic Matriarch blood / flesh / bone
+→ Saint's Fresh
+→ nhận / mang thần tính cần thiết
+→ dùng để gia cố phong ấn cho AetherFire
+```
+
+Không tự suy rằng toàn bộ thánh vật của ML đều dùng vật chất từ Matriarch.
+
+---
+
+### 9. Holy cloth — lớp xác thực bên trong
+
+#### CANON
+
+`Fresh` thật của Matriarch được đặt bên trong Saint's Fresh và được:
+
+```text
+bọc trong vải thánh
+```
+
+Vải thánh này đã được:
+
+```text
+Saintess
+→ niệm phép / ban phép
+→ xác thực và bảo vệ phần fresh bên trong
+```
+
+Hệ quả canon:
+
+```text
+authentic Matriarch fresh
++ Saintess-blessed holy cloth
+→ cấu hình hợp lệ
+```
+
+Cơ chế này khiến phần `fresh` dùng cho Saint's Fresh:
+
+```text
+không thể làm giả
+```
+
+Exact cách hệ thống phát hiện giả mạo, phản ứng khi bị thay thế, mức độ phá hủy hay failure mode vẫn chưa cần chốt.
+
+---
+
+### 10. Redemption Rope
+
+#### CANON
+
+Saint's Fresh được quấn / khóa bên ngoài bằng dây leo thuộc một thánh tích khác có tên:
+
+> **Redemption Rope**
+
+Quan hệ vật lý:
+
+```text
+Saint's Fresh
+→ được gói / buộc bởi Redemption Rope
+```
+
+Redemption Rope không phải tên khác của Saint's Fresh; đây là hai thánh vật riêng.
+
+---
+
+### 11. Quyền mở và buộc lại Saint's Fresh
+
+#### CANON
+
+Redemption Rope trong cấu hình với Saint's Fresh chỉ có thể:
+
+```text
+được mở
+và
+được buộc lại
+```
+
+bởi:
+
+> **chính tay Thánh Nữ của Matriarch's Lament**
+
+Không chỉ cần chức danh trên giấy hoặc sự cho phép của Thần điện.
+
+Điều kiện chốt là:
+
+```text
+Saintess's own hands
+→ can open / rebind Redemption Rope on Saint's Fresh
+```
+
+Do đó Saintess là một access gate vật lý–siêu hình trực tiếp của Saint's Fresh.
+
+Không tự suy từ đó rằng Saintess:
+
+- sở hữu Saint's Fresh;
+- có toàn quyền quyết định ngoại giao về artifact;
+- một mình có authority cho AF sử dụng;
+- có quyền tối cao trên toàn bộ Thần điện;
+- có thể mở mọi thánh vật khác;
+- là nguồn thần tính của Saint's Fresh.
+
+Các quan hệ authority / custody / policy khác vẫn cần chốt riêng.
+
+---
+
+### 12. Quan hệ Matriarch → Saint's Fresh → phong ấn
+
+#### CANON
+
+Chuỗi nhân quả tối thiểu:
+
+```text
+Matriarch
+→ thi hài được bảo quản dưới Thần điện
+→ máu / thịt / xương thật vẫn mang holy/divine property
+
+authentic fresh
++ self-regenerative relic
++ Saintess-blessed holy cloth
++ Redemption Rope
+→ Saint's Fresh
+
+Saint's Fresh
+→ mang / nhận thần tính dựa trên fresh thật của Matriarch
+→ được dùng để gia cố phong ấn của AetherFire
+```
+
+Do đó dependency thật có tầng sâu hơn quan hệ ngoại giao bề mặt:
+
+```text
+AetherFire
+→ phụ thuộc quyền sử dụng Saint's Fresh
+→ Saint's Fresh phụ thuộc authentic Matriarch fresh
+→ authentic fresh phụ thuộc thi hài thật được ML giữ bí mật
+```
+
+---
+
+### 13. Quan hệ với Trinity Hexagon
+
+#### CANON PRESERVED
+
+Trinity Hexagon vẫn là quận của Matriarch's Lament gắn với việc giữ / cung cấp thánh vật.
+
+Saint's Fresh thuộc danh mục thánh vật chiến lược được dùng trong giao diện ML–AF.
+
+Delta này không tự chốt:
+
+- Saint's Fresh được chế tạo ở Trinity Hexagon hay chỉ được quản lý tại đó;
+- Matriarch's body có nằm ở Trinity Hexagon hay không;
+- chuyên gia Trinity biết bao nhiêu về nguồn `fresh`;
+- ownership / custody pháp lý của Saint's Fresh;
+- toàn bộ relic catalogue của Trinity Hexagon.
+
+Những quan hệ này giữ `UNKNOWN` nếu chưa được quyết định riêng.
+
+---
+
+### 14. Các điểm vẫn mở sau delta này
+
+#### UNKNOWN / OPEN
+
+Chưa chốt:
+
+1. định nghĩa cuối cùng của “thần”;
+2. exact ontology của thần tính;
+3. Matriarch hiện có linh thể / ý thức hay không;
+4. Matriarch có thể giao tiếp với người sống hay không;
+5. exact cơ chế holy power còn tồn tại trong thi hài;
+6. cơ chế self-regeneration của phần relic trong Saint's Fresh;
+7. tốc độ / giới hạn / chi phí tái tạo;
+8. lượng fresh cần cho mỗi chu kỳ;
+9. fresh bị tiêu hao, biến đổi hay chỉ làm nguồn thần tính;
+10. exact seal target;
+11. exact renewal interval;
+12. exact ritual / technical procedure khi AF dùng Saint's Fresh;
+13. actor nào của ML có quyền cho phép AF sử dụng ngoài access gate của Saintess;
+14. actor nào của AF tiếp nhận / vận hành / chứng kiến;
+15. AF biết đến mức nào về cấu tạo thật của Saint's Fresh;
+16. Cult biết đến mức nào về Matriarch và Saint's Fresh;
+17. ai ám sát Matriarch;
+18. Cult có liên quan vụ ám sát hay không;
+19. động cơ gốc của vụ ám sát;
+20. exact quá trình cộng đồng Matriarch trở thành nhà nước ML;
+21. full Saintess selection / succession;
+22. quan hệ giữa Saintess, Matriarch và thần tính ngoài những điểm đã chốt;
+23. cơ chế thay thế Creed trong revamp sau.
+
+---
+
+### 15. Anti-drift nén
+
+```text
+MATRIARCH = NGƯỜI NẰM DƯỚI THẦN ĐIỆN.
+
+MATRIARCH ORIGIN = FICTION 0 HUMAN ESPER.
+
+CLASH #1 PRECEDES HER FORCED TRANSFER IN FICTION-0 CAUSAL ORDER.
+
+HER FICTION-1 ARRIVAL POINT ≈ 500 YEARS BEFORE PRESENT.
+
+HEALING ESPER + MAGIC INTERACTION → HOLY POWER.
+
+WORSHIP CONTRIBUTES TO REAL DIVINITY.
+
+DIVINITY != FULL GOD ONTOLOGY.
+DIVINITY != IMMORTALITY.
+MATRIARCH WAS ASSASSINATED.
+
+THE LAMENT IS ROOTED IN AN ACTUAL MOURNING AFTER HER DEATH.
+
+HER DEATH / LEGACY → FORMATION OF MATRIARCH'S LAMENT.
+
+MATRIARCH'S BODY IS SECRETLY PRESERVED UNDER THE CENTRAL TEMPLE.
+
+HER BODY REMAINS A REAL HOLY / DIVINE POWER SOURCE.
+
+SAINTESS KNOWS THE BODY TRUTH.
+LIMITED INNER RELIGIOUS ACTORS ALSO KNOW.
+AF KNOWLEDGE = UNKNOWN.
+
+CREED IS REMOVED FROM CURRENT CANON PENDING REVAMP.
+
+SAINT'S FRESH = PENTAGONAL SEAL-REINFORCEMENT RELIC.
+
+SAINT'S FRESH
+= SELF-REGENERATIVE RELIC
++ AUTHENTIC MATRIARCH BLOOD / FLESH / BONE.
+
+AUTHENTIC FRESH
+→ WRAPPED IN SAINTESS-BLESSED HOLY CLOTH
+→ CANNOT BE COUNTERFEITED.
+
+SAINT'S FRESH
+→ WRAPPED / BOUND BY REDEMPTION ROPE.
+
+REDEMPTION ROPE
+→ CAN BE OPENED AND REBOUND ONLY BY THE SAINTESS'S OWN HANDS.
+
+SAINTESS ACCESS GATE
+!= AUTOMATIC TOTAL POLITICAL AUTHORITY.
+
+AETHERFIRE
+→ DEPENDS ON ACCESS TO SAINT'S FRESH
+→ FOR PERIODIC SEAL REINFORCEMENT.
+
+NOT EVERY ML RELIC IS DERIVED FROM MATRIARCH.
+
+UNKNOWN REMAINS UNKNOWN.
 ```

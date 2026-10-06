@@ -1530,9 +1530,17 @@ Vì vậy sự tồn tại của cả hai không tự động xóa bất đối 
 
 ### Confirmed
 
-MC1 and MC3 are confirmed Fiction 0 → Fiction 1 cases. Raging Fire rebirth potential is a different mechanism: bearing the trait does not establish that MC2 or her mother has died and been reborn.
+MC1 and MC3 are confirmed Fiction 0 → Fiction 1 cases. Matriarch is a separately confirmed Fiction 0 human/healing esper forced into Fiction 1 under the 2026-10-06 delta; this does not confirm the other candidates or establish a shared transfer mechanism. Raging Fire rebirth potential is a different mechanism: bearing the trait does not establish that MC2 or her mother has died and been reborn.
 
 Trần Trúc Nha currently belongs to Matriarch's Lament and holds the role established in `70_MATRIARCHS_LAMENT_CURRENT.md`.
+
+### Matriarch — thứ tự nhân quả và tọa độ thời gian đã chốt 2026-10-06
+
+`70` §25 giữ đủ nguồn gốc và delta thánh vật. Theo thứ tự nhân quả Fiction 0: Clash #1 → sau đó Matriarch bị cưỡng ép triệu hồi/đưa sang Fiction 1. Điểm xuất hiện phía Fiction 1 ≈ 500 năm trước hiện tại. Không đồng nhất thứ tự ở Fiction 0 với đồng thời lịch Fiction 1; không dời Clash #1 về 500 năm trước trên cả hai tầng.
+
+Cơ chế xuyên fiction/thời gian, tác nhân cưỡng ép, body/soul/memory transfer, đường về và quan hệ với Fictionize/POC vẫn chưa chốt. Matriarch là người thật từ Fiction 0 trong canon này; không suy nàng do MC1 tạo hoặc có admin powers. Matriarch có thần tính rồi bị ám sát, không suy immortality, ý thức/linh thể hiện còn hay thờ phụng là luật tạo thần phổ quát.
+
+Matriarch đến khoảng 500 năm trước và ML tuổi khoảng 500 năm là các mốc xấp xỉ, không chứng minh quá trình chữa lành → holy power → thờ phụng → ám sát → cộng đồng/nhà nước mất zero thời gian. Thời điểm tương tác với “hệ phép thuật AetherFire” và ý nghĩa tên ấy trước quốc gia AF khoảng 200 năm tuổi còn cần làm rõ, không tự dựng AF có từ 500 năm trước hoặc đổi tuổi quốc gia (`92` AF-ML-ORIGIN-006).
 
 ### Under construction / not current canon
 

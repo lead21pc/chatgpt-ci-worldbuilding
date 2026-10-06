@@ -2,6 +2,36 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Matriarch / Saint's Fresh — nhập delta 2026-10-06
+
+Nguồn `AetherFire_Matriarchs_Lament_Matriarch_Origin_Saints_Fresh_Canon_2026-10-06.md` ghi CANON DELTA do tác giả chốt; người dùng yêu cầu “audit file mới và nhập vào canon”. Đã đọc đủ §§1–15; không dùng tên file/mtime làm quyền độc lập. SHA-256: `554737F621D9186CC2C9187B716301794D21D50C2078289A085B6AAC748AFA79`.
+Baseline: nhánh `codex/aetherfire-ci31-proper-names-20261006`, HEAD `9fe594311abdd20975efafe2d79a1a15ec1cbb7d`; nhánh tác vụ `maintenance/aetherfire-matriarch-fresh-20261006`. Dirty controls/tests/Academy/CI giữ ngoài staging/commit; không đổi CI3.1.
+
+### Đối chiếu đủ phạm vi và quyết định
+
+| ID | Bằng chứng hiện hành → nguồn mới | Phân loại / xử lý |
+| --- | --- | --- |
+| AF-ML-DELTA-001 | `70` §§1–3 chưa có origin người Matriarch; nguồn §§1/4/5 xác lập Fiction 0 human/healing esper, forced transfer sau Clash #1, assassination/lament/community. | CANON bổ sung; `70` §25 giữ đủ, `40` Part IV thêm trường hợp riêng, không canon hóa Trúc Nha/MC4/candidates khác hoặc cơ chế chung. |
+| AF-ML-DELTA-002 | `70` §2 ML≈500/AF≈200; nguồn §1 arrival≈500, §§2–5 có nhiều bước trước lập quốc. | UNKNOWN / OPEN, không confirmed conflict: các mốc xấp xỉ, thời lượng chuỗi chưa chốt. AF-ML-ORIGIN-006 giữ timing và ý nghĩa “hệ phép thuật AetherFire” trước tuổi quốc gia; không tự dời age/Clash hoặc dựng AF từ 500 năm trước. |
+| AF-ML-DELTA-003 | Nguồn §§2–4 phân biệt holy power/divinity/godhood; worship trong trường hợp Matriarch, bị ám sát dù thần tính thật. | CANON case-specific, không luật phổ quát hoặc immortality. Full ontology/threshold/linh thể/ý thức OPEN tại `70` §25 và `92`. |
+| AF-ML-DELTA-004 | Nguồn §6 thi hài thật bí mật dưới central Temple, relic-preserved, nguồn lực hiệu lực; Saintess/limited inner actors biết. | CANON bổ sung; không suy toàn ML/AF/Cult hoặc chuyên gia Trinity biết, không đồng nhất nguồn thi hài với toàn bộ catalogue. |
+| AF-ML-DELTA-005 | `70` §§6–7 Creed life/family-bound/cardio/quorum3/attack surface → nguồn §7 rút toàn bộ Creed/dependencies. | CONFLICT lịch sử / SUPERSEDED có quyền từ tác giả. Bỏ current activation/oath, giữ Temple/Cult/public state/Holy Guard và coerced religion độc lập; không đưa oath/quorum vào UNKNOWN triển khai như còn current. |
+| AF-ML-DELTA-006 | `70` §§5/20/21/24 chain success500y→Creed immunity/bypass Trúc Nha. | SUPERSEDED phần phụ thuộc Creed. Split-self/doctrine/phản triết lý giữ; không khẳng định cơ chế betrayal mới hoặc xóa character identity. Holy Guard allegiance không còn oath siêu nhiên. |
+| AF-ML-DELTA-007 | `70` §9 timed relic lending dưới Creed, Saintess đại diện/3priests witness/Guard bảo vệ. | Rút Creed enforcement; timed lending và roles có căn cứ riêng giữ. Witness3≠Creed quorum≠quyền mở Saint's Fresh; replacement enforcement OPEN. AF-ML-005 sửa phạm vi. |
+| AF-ML-DELTA-008 | `70` §10 unnamed regenerative-consumable seal relic → nguồn §§8–12 Saint's Fresh hộp5cạnh, relic tự tái tạo + máu/thịt/xương thật + blessedcloth + Rope. | PARTIALLY RESOLVED AF-ML-006, giữ periodic bought-use dependency và consumable/regenerative relic ngoài scope retcon. Fresh có tiêu hao/tái tạo hay không vẫn OPEN; không suy bản sao hoặc mọi relic cùng nguồn. |
+| AF-ML-DELTA-009 | Nguồn §§9–11 fresh không thể làm giả; Redemption Rope riêng, chỉ chính tay Saintess mở/buộc lại. | CANON access gate / authenticity; không ownership/authorization/full Temple authority. Counterfeit detection/failure/authority/custody/cost OPEN. Không tự sửa tên Fresh thành Flesh. |
+| AF-ML-DELTA-010 | Nguồn §13 Trinity district giữ/cung cấp catalogue nhưng nơi chế tạo/quản lý/body/custody chưa chốt; §14 đủ23 câu hỏi. | UNKNOWN / OPEN, `70` §25 giữ toàn văn15mục, `92` giữ đủ23 cùng unknown phân tán; chronology interface `40`, global `10`, routing `00`. |
+
+### Ranh giới thay thế và kiểm chứng
+
+Đã rà định nghĩa/quan hệ, scope/conditions, chân trị, thẩm quyền, chuyển trạng thái, chronology/lớp fiction, nhân quả và mất/thêm nội dung. Nguồn dùng “khoảng 500 năm”, không exact duration; không dựng số/hệ thần/ritual/Cult culprit để kiểm. Arrival timing là trường hợp riêng, không cách ánh xạ tuyến tính hai fiction. Access≠authority≠ownership; awareness từng actor≠toàn tổ chức.
+
+Không sửa RF non-cultivation, Civil/Undie/MC2/Academy/aviation, controls, builder hoặc legacy archive. `70` giữ nguyên §§1/3/4/8 ngoài lời thề Creed, §§11–19/23 về kinh tế/địa lý/TE/custody/các bộ tộc; `40` chỉ thêm origin/timeline interface, giữ các candidates và Canon1/Canon2 mechanics độc lập. Hồ sơ `90/91` cũ giữ trạng thái theo thời điểm, không làm fallback Creed.
+
+Owner mốc mới: `70` §25, `40` Part IV, `10` ML interface; `00` routing và `92` AF-ML-ORIGIN-001–006, AF-ML-005/006 giữ các mục mở. Nguồn chỉ archive byte-exact sau kiểm đầu ra/hash và tests; giữ inbox folder. Không mở full temple/state/economy/magic/succession hay thiết kế replacement Creed.
+
+Kiểm chứng: COMPLETE trong phạm vi nhập delta — đã đọc đầu ra thực tế, đối chiếu đủ 15 mục nguồn tại `70` §25 và 23 câu hỏi chưa chốt tại `92`, rà các quan hệ Creed đã rút và các phần canon độc lập được giữ. Builder `--check` đạt 11 modules / 15 hashes; 24 kiểm thử đạt. Nguồn chuyển vào `Source_Archive` với SHA-256 giữ nguyên như trên, giữ thư mục `New Canon and Consideration`. Đây là kiểm chứng nội dung/cấu trúc gói, không chứng minh runtime hoặc giải quyết các UNKNOWN; chưa push.
+
 ## RF — loại bỏ tiền đề tu tiên, nhập 2026-10-06
 
 Nguồn: `Quyet_Dinh_Hien_Hanh_RF_Bo_Tu_Tien_2026-10-06.md`, CANON HIỆN HÀNH / THAY THẾ CÓ PHẠM VI; tác giả yêu cầu “audit file mới và nhập vào canon”. Đã đọc đầy đủ §§1–10. SHA-256: `9CBD1674C6770BDAB01A040855D48062BACA111F7B7A885A7209D87ECFF9467D`.

@@ -15,7 +15,7 @@
 5. `50_NARRATORS_POV_AND_HUMOR_CURRENT.md` — narrator personification, Elena POV, deadpan humor and the narrator split at Clash #2.
 6. `60_MC4_IDENTITY_CURRENT.md` — current MC4 identity, Academy membership and strict legacy-import boundaries.
 7. `65_BATTLEMAGE_ACADEMY_CURRENT.md` — internal Academy organization, military training, authority, assessment, qualification, scholarship and functional uniform.
-8. `70_MATRIARCHS_LAMENT_CURRENT.md` — internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha, ML–TE operations and northeastern tribes.
+8. `70_MATRIARCHS_LAMENT_CURRENT.md` — internal Matriarch's Lament governance, Temple/Cult, Matriarch origin and Saint's Fresh, Holy Guard, Trinity/relic economy, Trần Trúc Nha, ML–TE operations and northeastern tribes.
 9. `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` — AF stable/scalable aviation, AF–RF aviation dependency, RF airspace/ATC/economy separation, mixed airspace and route leverage.
 10. `90_DESIGN_HISTORY_AND_RECONSIDERATIONS.md` — genealogy, retired designs, surviving mechanisms and proposals under consideration; not a current world bible.
 11. `91_RECONCILIATION_RECORD.md` — resolved conflicts, unresolved questions and source provenance.
@@ -90,7 +90,8 @@ CHILD CURRENT-CANON DOMAIN
 │  └─ assessment / qualification / scholarship / functional uniform
 ├─ Matriarch's Lament
 │  ├─ puppet state / Temple / apocalyptic cult
-│  ├─ Creed / Holy Guard / Trần Trúc Nha
+│  ├─ Matriarch / Saint's Fresh / Redemption Rope
+│  ├─ Holy Guard / Trần Trúc Nha
 │  ├─ Trinity Hexagon / relic economy
 │  └─ ML–TE routes, covert operations and northeastern tribes
 └─ Stable aviation / RF airspace
@@ -129,6 +130,12 @@ STATUS
 - Yellow vẫn là disciplinary status; Yellow→Red/Undie đã nghỉ hưu, trang phục/chế tài tái phạm mới chưa chốt.
 - Cash là tiền cơ bản; Credits là tiền điện tử được nhà nước bảo chứng. Nợ ≠ sở hữu; ân tình ≠ tiền tệ. Web tín dụng Undie cũ không phải mốc hiện hành.
 - Phả hệ không tự xác lập containment, thẩm quyền hoặc dependency.
+
+## Matriarch / Saint's Fresh — chốt 2026-10-06
+
+`70` giữ đầy đủ delta §§1–15 về Matriarch (người/esper chữa lành từ Fiction 0), thánh lực/thần tính, bị ám sát, thi hài bí mật dưới Thần điện, Saint's Fresh và Redemption Rope. `40` giữ thứ tự Clash #1 trước forced transfer ở Fiction 0, điểm đến Fiction 1 khoảng 500 năm trước; không chốt thời lượng hoặc cơ chế chung.
+
+Creed/oath/quorum/attack surface và các dependency đã rút chờ revamp. Thần điện/Cult/Holy Guard/nhà nước, split-self/doctrine Trúc Nha và các dữ kiện độc lập giữ; không suy loyalty siêu nhiên hoặc nguồn gốc Trúc Nha. AF dependency định kỳ vào Saint's Fresh không chứng minh AF biết nguồn thi hài; access gate Saintess không thành toàn quyền chính trị. `91` ghi AF-ML-DELTA-001–010; `92` giữ đầy đủ 23 UNKNOWN và các điểm chronology/authority mới.
 
 ## RF — bỏ tiền đề tu tiên 2026-10-06
 
@@ -170,7 +177,7 @@ Operation Swap, người thế thân, lịch giải cứu và cây phản gián 
 
 ## 6. Regional retcon consolidation — 2026-09-11
 
-- `matriarchs_lament_working_retcon_canon.md` controls Holy State → Matriarch's Lament, T.Gear → Transfusion EasterFire, Trinity Hexagon, Creed, Trần Trúc Nha, regional routes and the ML relic dependency.
+- `matriarchs_lament_working_retcon_canon.md` controls Holy State → Matriarch's Lament, T.Gear → Transfusion EasterFire, Trinity Hexagon, Trần Trúc Nha, regional routes and the ML relic dependency.
 - `Quad Night` and its four-member-state ontology are retired. Relations that depended on that alliance remain `UNKNOWN / ORPHANED` unless the regional source explicitly replaces them.
 - The AF↔TE treaty is direct and does not transit through ML. The prior 100 km corridor and Academy-flank mapping are not automatically remapped.
 - The former foreign-spy punitive Undie route is removed because it no longer fits the political-centric setting. Archived wording is provenance only; legal/status treatment of spies remains `UNKNOWN`, and professional eligibility for Criminal is now `UNKNOWN` under the 2026-10-05 revamp rather than a status-transfer prohibition.

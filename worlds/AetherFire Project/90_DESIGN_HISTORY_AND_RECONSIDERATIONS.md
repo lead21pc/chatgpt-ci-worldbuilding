@@ -2,6 +2,12 @@
 
 > Preserved as a separate temporal layer. `DESIGN HISTORY`, `RETIRED`, `SURVIVING LEGACY`, `UNDER CONSIDERATION`, `CURRENT CANON` and `UNKNOWN` retain their original meanings. Nothing in this file becomes current canon merely because it appears here.
 
+## ML historical-state notice — Matriarch/Saint's Fresh 2026-10-06
+
+`70` §25 kiểm soát Matriarch/Fiction 0 origin, thần tính/thi hài/Saint's Fresh/Redemption Rope; `40` Part IV giữ timing interface. Các mô tả CURRENT/SURVIVING trong lịch sử về Creed/oath/quorum3/cardio/family-binding, relic-lending dưới Creed hoặc split-self bypass không còn quyền hiện hành. Creed và dependency đã rút chờ revamp; không dùng history làm fallback hoặc đặt replacement.
+
+Các actor độc lập Temple/Cult/public state/Holy Guard, split-self/doctrine Trúc Nha và địa lý/quan hệ ML–TE vẫn giữ theo current owners. Không dùng nguồn gốc Matriarch để canon hóa origin Trúc Nha/candidates khác, không suy AF biết thi hài hoặc Saintess access gate là toàn quyền ngoại giao. `91` ghi AF-ML-DELTA-001–010; `92` giữ AF-ML-ORIGIN-001–006 và đầy đủ UNKNOWN.
+
 ## RF historical-state notice — 2026-10-06
 
 `25` giữ đầy đủ quyết định bỏ tiền đề tu tiên RF; `10` giữ ontology độc lập và `80` giữ aviation đã cập nhật. Các mô tả lịch sử CURRENT/SURVIVING về cultivation RF, mục tiêu scale cultivation, bay tu tiên, mixed-airspace ba lớp và ưu thế cá nhân/hệ thống không còn quyền hiện hành trong phạm vi phụ thuộc. Không dùng đề xuất hoặc lịch sử để phục hồi hoặc đặt hệ thay thế.
