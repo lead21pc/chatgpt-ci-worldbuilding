@@ -2,6 +2,12 @@
 
 > Preserved as a separate temporal layer. `DESIGN HISTORY`, `RETIRED`, `SURVIVING LEGACY`, `UNDER CONSIDERATION`, `CURRENT CANON` and `UNKNOWN` retain their original meanings. Nothing in this file becomes current canon merely because it appears here.
 
+## RF historical-state notice — 2026-10-06
+
+`25` giữ đầy đủ quyết định bỏ tiền đề tu tiên RF; `10` giữ ontology độc lập và `80` giữ aviation đã cập nhật. Các mô tả lịch sử CURRENT/SURVIVING về cultivation RF, mục tiêu scale cultivation, bay tu tiên, mixed-airspace ba lớp và ưu thế cá nhân/hệ thống không còn quyền hiện hành trong phạm vi phụ thuộc. Không dùng đề xuất hoặc lịch sử để phục hồi hoặc đặt hệ thay thế.
+
+Phả hệ Raging Fire/Prince 9/MC2/MC2.2, trait và phong ấn đã chốt độc lập, cấu trúc liên hiệp và quan hệ chính trị giữ theo nguồn hiện hành; không biến “bỏ tu tiên” thành xóa sức mạnh hoặc AF mạnh hơn. Các mục cần thiết kế lại được giữ tại `92` AF-RF-OPEN-001–004; `91` ghi AF-RF-RET-001–008.
+
 ## Civil historical-state notice — baseline 2026-10-05
 
 `20` Part II hiện kiểm soát Civil theo `AetherFire_Civil_Co_So_Canon_2026-10-05.md`. Các nhãn CURRENT/SURVIVING LEGACY/PRESERVED về Civil ở hồ sơ phía dưới là trạng thái theo thời điểm; không phục hồi Civil Slave, compulsory Brown identification, hạ class/stigma, Citizen-only input, applicant-selected billet gate, 5y/10y conversion, tax privilege vĩnh viễn hoặc preferential Undie fee.

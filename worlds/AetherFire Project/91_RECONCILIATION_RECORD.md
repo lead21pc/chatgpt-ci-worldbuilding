@@ -2,6 +2,32 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## RF — loại bỏ tiền đề tu tiên, nhập 2026-10-06
+
+Nguồn: `Quyet_Dinh_Hien_Hanh_RF_Bo_Tu_Tien_2026-10-06.md`, CANON HIỆN HÀNH / THAY THẾ CÓ PHẠM VI; tác giả yêu cầu “audit file mới và nhập vào canon”. Đã đọc đầy đủ §§1–10. SHA-256: `9CBD1674C6770BDAB01A040855D48062BACA111F7B7A885A7209D87ECFF9467D`.
+Baseline local: `97573828fdd5314656f4897a02d0eae391e9af0a`, nhánh `maintenance/aetherfire-civil-baseline-20261005`; nhánh tác vụ `maintenance/aetherfire-rf-no-cultivation-20261006`. Controls/tests/Academy/CI có sẵn ngoài phạm vi được giữ nguyên, không stage hoặc commit.
+
+### Đối chiếu và quyết định
+
+| ID | Bằng chứng cũ → nguồn mới | Xử lý / vị trí hiện hành |
+| --- | --- | --- |
+| AF-RF-RET-001 | `25` RF Ontology, `10` RF interface, `80` §1 và `00` §8 coi RF là liên hiệp quốc gia tu luyện → nguồn §§1–2 bỏ tiền đề nhưng giữ liên hiệp. | CONFLICT lịch sử / SUPERSEDED có quyền từ quyết định tác giả. Sửa đúng nhãn, không xóa member states hoặc chọn hiến pháp. |
+| AF-RF-RET-002 | `25` Four blocs và `80` §1: công nghệ AF để scale cultivation → nguồn §4 bỏ mục đích kỹ thuật cũ. | SUPERSEDED. Quan hệ tìm công nghệ/bảo trợ/ly khai giữ; mục tiêu cụ thể UNKNOWN tại AF-RF-OPEN-003. |
+| AF-RF-RET-003 | `80` §2 và giao diện `00/10` mặc định tu sĩ/pháp khí/phi chu/linh thú/cá nhân vượt aircraft → nguồn §§1/5. | SUPERSEDED trong current sources; không suy phủ định khả năng bay, không đặt hệ mới. |
+| AF-RF-RET-004 | `80` §5: hệ sinh thái bay có sẵn, magical-flight layer, tông môn và ba lớp → nguồn §5. | SUPERSEDED. Cấu hình mixed airspace phải xác lập lại; AF-AV-007 sửa trạng thái, không chỉ giữ implementation UNKNOWN trên sơ đồ cũ. |
+| AF-RF-RET-005 | `80` §6: RF mạnh cá nhân/AF mạnh hệ thống → nguồn §6 không còn nền tương quan. | SUPERSEDED. AF stable aviation giữ; so sánh quân sự, răn đe, viễn chinh, phòng thủ và chi phí OPEN. |
+| AF-RF-RET-006 | `80` §8 mục 7–8, §9 cultivation leverage, §10/11 danh mục và anti-drift → nguồn §§1/5/8–9. | SUPERSEDED các safeguard/capability tu tiên; giữ hướng ATC/data/maintenance/gateway độc lập, không nhập như chronology. AF-AV-008 đổi phạm vi. |
+| AF-RF-RET-007 | Raging Fire, mẫu hệ, trait tái sinh, True Crown/phong ấn, phả hệ Prince 9/MC2/MC2.2, RF specialists và actor reception đã chốt không dựa vào mô tả tu tiên → nguồn §§2–3/8. | Giữ nguyên dữ kiện độc lập. Không xóa trait đã chốt hoặc giải thích thành tu tiên; cơ chế/giới hạn/truyền thừa ngoài phần chốt vẫn UNKNOWN. Khả năng giải cứu RF không tự thành chuyến bay/viễn chinh hoặc sức mạnh quân sự. |
+| AF-RF-RET-008 | Nguồn §§3/4/5/6/7 cố ý không thiết kế hệ mới. | UNKNOWN / OPEN, không phải lỗi cần tự sửa. `25` giữ đủ §§1–10; `92` giữ nguyên danh sách §7 và AF-RF-OPEN-001–004. Các open items độc lập vẫn giữ. |
+
+### Độ phủ, ưu tiên và kiểm chứng
+
+Đã rà định nghĩa/trục, điều kiện/phạm vi, chân trị, authority, chuyển trạng thái, thời gian/lớp canon, nhân quả/phụ thuộc và mất/thêm nội dung. Không có số lượng/quân số/capacity mới để kiểm hoặc tự dựng. Quyết định mới chỉ thay tiền đề tu tiên RF và hệ quả trực tiếp, không rewrite toàn bộ Canon 1 hoặc full magic system. Lịch sử `90` và các mục cũ của `91` giữ theo thời điểm, không làm fallback.
+
+Owner quyết định đầy đủ: `25` phần “RF — quyết định thay thế có phạm vi 2026-10-06”; ontology độc lập `10`; aviation `80`; routing `00`; questions `92`. Không tạo module mới, không đổi builder/controls/nguồn archive cũ. Nguồn inbox được lưu byte-exact vào `Source_Archive/Quyet_Dinh_Hien_Hanh_RF_Bo_Tu_Tien_2026-10-06.md` sau xác minh đầu ra và hash; giữ thư mục inbox.
+
+COMPLETE — đã đọc lại đầu ra thực tế `00/10/25/80/92` và hồ sơ mới `90/91`; `25` giữ đủ §§1–10, `92` giữ đủ danh sách §7. Đối chiếu phạm vi supersession và các dữ kiện độc lập được giữ; builder --check đạt 11 current modules/15 hashes, 24 tests đạt. Nguồn archive SHA-256 được kiểm khớp; các câu hỏi sức mạnh mới vẫn OPEN. Không tuyên bố canon hoàn toàn không conflict hoặc runtime đã được kiểm. Chỉ checkpoint local trong lượt này, chưa push.
+
 ## Civil baseline admission — 2026-10-05
 
 ### Quyết định, nguồn và phạm vi
