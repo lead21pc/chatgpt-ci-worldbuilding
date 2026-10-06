@@ -708,7 +708,7 @@ Không tự lấp các mục `UNKNOWN`, `SEALED` hoặc `deferred` bằng suy lu
 
 ## RF — giao diện chính trị với `25`
 
-RF là liên hiệp lục địa các quốc gia tu luyện, không một vương quốc. Huyết hệ Raging Fire, liên hiệp, khối mạnh nhất của mẹ MC2 và chính thể Prince 9 là các node khác nhau. `25` giữ bốn khối foreground, secession/Prince 9, guarded alliance, agenda quý tộc và giới hạn thông tin. `80` giữ hàng không; `10` giữ ontology/phong ấn và địa lý toàn cục.
+RF là liên hiệp lục địa nhiều quốc gia thành viên, không một vương quốc; từ quyết định 2026-10-06 không còn là khối tu tiên. `25` giữ đủ quyết định và ranh giới thay thế; nền sức mạnh mới chưa chốt. Huyết hệ Raging Fire, liên hiệp, khối mạnh nhất của mẹ MC2 và chính thể Prince 9 là các node khác nhau. `25` giữ bốn khối foreground, secession/Prince 9, guarded alliance, agenda quý tộc và giới hạn thông tin. `80` giữ hàng không; `10` giữ ontology/phong ấn và địa lý toàn cục.
 
 ---
 
@@ -718,10 +718,10 @@ RF là liên hiệp lục địa các quốc gia tu luyện, không một vươn
 
 - AF and RF are separated by an ocean where Seaborne make maritime transport extremely dangerous, so exchange depends strongly on aviation.
 - AF is the only currently confirmed actor able to operate stable, scheduled and scalable aviation as infrastructure. This does not mean AF monopolizes flight or that no other actor can ever build comparable infrastructure.
-- RF cultivators, artifacts, formations and flying creatures can possess exceptional flight or combat capability. Raw flight capability does not establish mass aviation capacity, and AF aviation does not establish automatic air supremacy.
+- Năng lực bay, chiến đấu và cơ động bản địa RF chưa chốt lại; không mặc định tu sĩ/pháp khí/trận pháp/sinh vật bay. Stable aviation AF không chứng minh RF yếu, không có khả năng bay hoặc AF có ưu thế quân sự trên không.
 - Direct AF↔RF member-state air routes can alter transit dependency, trade autonomy, diplomatic access and secession leverage.
 - Relevant RF/member-state authorities have strategic incentives to retain airspace sovereignty, localize ATC and traffic data, and domesticate aviation dependency. Exact union/member-state/shared authority and current implementation remain `UNKNOWN`.
-- AF carrier/engineering capacity and RF market/airspace/cultivation leverage produce bargaining and mutual dependency rather than automatic dominance by either side.
+- AF carrier/engineering capacity, RF market/airspace access và dependency Raging Fire/phong ấn còn tạo bargaining trong các miền đã chốt độc lập. Không giữ cultivation leverage; mục tiêu kỹ thuật RF và tương quan quân sự phải xác lập lại, không suy một bên áp đảo.
 
 ---
 

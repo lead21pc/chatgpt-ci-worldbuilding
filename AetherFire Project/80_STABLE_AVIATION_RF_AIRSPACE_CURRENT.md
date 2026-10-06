@@ -7,7 +7,7 @@
 > Cross-domain owner boundary: Global and geopolitical interfaces are controlled by `AFM-001`; unresolved RF constitutional authority remains subject to the controlling world/institutional and open-state sources.
 > Load mode: `FULL_FILE`
 
-> **Trạng thái:** CURRENT CANON / CONTROLLING STABLE AVIATION & RF AIRSPACE DOMAIN — integrated 2026-09-17.
+> **Trạng thái:** CURRENT CANON / CONTROLLING STABLE AVIATION & RF AIRSPACE DOMAIN — integrated 2026-09-17; RF retcon 2026-10-06.
 > **Authority boundary:** this file controls AF stable/scalable aviation, the AF–RF aviation dependency, airspace/ATC/economy separation, mixed airspace and air-route leverage. `10` retains only the world/geopolitics interface.
 > **Interpretation boundary:** AF is the only currently confirmed actor with stable, scalable aviation infrastructure; this is not proof that no other actor can ever possess it. Statements about RF response describe incentives and strategic direction for relevant RF/member-state authorities, not proof of a unitary RF policy or completed implementation.
 > **Cross-project exclusion:** the source sentence about The Kingdom airspace is not imported as AetherFire lore or as a claim about The Kingdom canon.  
@@ -21,11 +21,11 @@
 Các điểm sau đã có trong current canon và là nền của phần chốt này:
 
 - **AetherFire (AF)** là một quốc gia Neo Fantasy dùng engineering để cưỡng ép compatibility giữa phép thuật và công nghệ ở cấp hạ tầng.
-- **Raging Fire (RF)** là một **liên hiệp lục địa gồm các quốc gia thành viên tu tiên**, không phải một vương quốc đơn nhất.
+- **RF** là một **liên hiệp lục địa gồm nhiều quốc gia thành viên**, không phải một vương quốc đơn nhất hoặc khối tu tiên. Huyết hệ Raging Fire là node riêng; `25` giữ toàn bộ quyết định 2026-10-06.
 - Exact constitutional form của RF vẫn **UNKNOWN**; không tự chọn federation, confederation, tributary hierarchy hay empire-of-states.
 - AF và RF bị ngăn bởi đại dương.
 - Giao lưu AF↔RF **phụ thuộc mạnh vào đường hàng không** vì vùng biển có **Seaborne**, khiến hải vận cực kỳ nguy hiểm.
-- Khối mạnh nhất đang foreground trong RF muốn giảm dependency vào RF, muốn AF bảo trợ và muốn công nghệ forced-magic của AF để scale cultivation.
+- Khối mạnh nhất đang foreground trong RF muốn giảm dependency vào RF, muốn AF bảo trợ và vẫn tìm công nghệ AF; mục tiêu kỹ thuật cụ thể CHƯA CHỐT, không còn scale cultivation.
 - AF đồng thời có dependency chiến lược riêng đối với Raging Fire/RF arrangement ở trục firewall/founding seal.
 
 Nguồn baseline:
@@ -45,21 +45,9 @@ AetherFire là actor duy nhất hiện được chốt có khả năng biến **
 
 Điều này **không** có nghĩa các quốc gia khác không thể bay.
 
-Trong một thế giới có phép thuật, đặc biệt đối với RF là một liên hiệp các quốc gia tu tiên:
+Năng lực bay, sức mạnh cá nhân, quân sự và cơ động bản địa RF cần nguồn mới. Không giữ tu sĩ tự bay, pháp khí/phi chu/trận pháp/linh thú hoặc cá nhân vượt aircraft làm khả năng mặc định. Bỏ tiền đề không chứng minh các năng lực này không tồn tại, cũng không chốt một hệ thay thế.
 
-- tu sĩ có thể tự bay;
-- pháp khí có thể bay;
-- phi chu hoặc phương tiện ma thuật riêng lẻ có thể tồn tại;
-- linh thú hoặc sinh vật bay có thể được sử dụng;
-- cá nhân cấp cao có thể vượt xa aircraft AF về tốc độ, độ cao, khả năng cơ động hoặc sức chiến đấu.
-
-Điểm khác biệt của AF nằm ở **institutionalized reliability**:
-
-```text
-khả năng bay của cá nhân / pháp khí
-≠
-hàng không ổn định cấp quốc gia
-```
+Khả năng bay đơn lẻ, nếu được xác lập, vẫn khác hàng không ổn định cấp quốc gia; hiện không gán loại khả năng ấy cho RF.
 
 Stable aviation của AF phải được hiểu là một stack gồm ít nhất:
 
@@ -78,7 +66,7 @@ phương tiện có thể sản xuất / duy trì
 
 Do đó:
 
-> **RF có thể có những người bay tốt hơn aircraft AF. AF có khả năng khiến hoạt động bay hàng loạt, theo lịch và có thể scale diễn ra như một utility.**
+> **AF có khả năng khiến hoạt động bay hàng loạt, theo lịch và có thể scale diễn ra như một utility. Chưa chốt so sánh năng lực bay cá nhân RF với aircraft AF.**
 
 Đây là khác biệt giữa **exceptional capability** và **institutional capacity**.
 
@@ -96,7 +84,7 @@ Các giao dịch có xu hướng hưởng lợi mạnh nhất từ hàng không 
 - ngoại giao;
 - thư tín;
 - hàng hóa giá trị cao;
-- artifact / pháp khí / vật tư cần deadline;
+- vật tư cần deadline; danh mục pháp khí RF không được mặc định;
 - y tế và vận chuyển khẩn cấp;
 - linh kiện kỹ thuật;
 - personnel có giá trị cao;
@@ -134,7 +122,7 @@ Trong bối cảnh khối mạnh nhất của RF đang có xu hướng ly khai v
 
 ### CANON DELTA / INSTITUTIONAL LOGIC ĐÃ CHỐT
 
-Giới lãnh đạo RF không được viết theo trope “tu sĩ nghìn năm nhưng cổ lỗ sĩ và không hiểu infrastructure”.
+Giới lãnh đạo RF không bị mặc định thiếu lý trí hoặc không hiểu hạ tầng. Không giữ mô tả tu sĩ nghìn năm làm nền.
 
 Nếu stable aviation AF mang lại lợi ích kinh tế rõ ràng, response hợp lý là:
 
@@ -217,78 +205,21 @@ Không yêu cầu RF phải vượt AF ngay. Mục tiêu tối thiểu là trán
 
 ---
 
-## 5. Mixed airspace: RF không xóa hệ sinh thái bay tu tiên để chiều AF
+## 5. Không phận RF — cấu hình bay bản địa chưa chốt lại
 
-### CANON DELTA
+Tiền đề RF có sẵn hệ sinh thái bay tu tiên và yêu cầu dành lớp riêng cho cultivator/pháp khí/sinh vật bay đã bị thay thế. Không giữ sơ đồ ba lớp cũ hoặc “tông môn” làm hạ tầng mặc định RF.
 
-RF đã có khả năng bay phi công nghiệp từ trước khi stable aviation của AF trở thành vấn đề.
-
-Do đó không hợp lý nếu AF yêu cầu toàn bộ cultivator/pháp khí/sinh vật bay rời khỏi bầu trời để aircraft AF vận hành.
-
-Hướng vận hành hợp lý là **mixed airspace**:
-
-```text
-controlled aviation corridors
-→ traffic hàng loạt / scheduled aviation
-
-general magical-flight space
-→ cultivator / pháp khí / phương tiện nhỏ
-
-restricted airspace
-→ hoàng cung / quân sự / tông môn / hạ tầng chiến lược
-```
-
-Các lớp này cần crossing rule, identification và separation riêng.
-
-Đây là điểm AF có lợi thế: không phải vì AF phát minh ra bay, mà vì AF có khả năng **chuẩn hóa và điều phối nhiều loại actor biết bay thành một hệ thống có throughput cao**.
+Không phận, ATC và kinh tế hàng không vẫn là các miền riêng như §4. Tuy nhiên cấu hình không phận hỗn hợp, các loại tác nhân bay bản địa, hành lang/nhận diện/crossing/separation và phần dành cho mỗi loại phải được xác lập lại từ nền mới; không tự thay lớp magical-flight bằng một hệ khác.
 
 ---
 
-## 6. RF không yếu hơn về raw flight capability
+## 6. Ranh giới so sánh sức mạnh RF — AF
 
-### CANON BOUNDARY
+AF vẫn có năng lực vận tải ổn định/theo lịch/mở rộng đã chốt; đặc tính vận hành gồm throughput, predictability, logistics, replacement, scheduling và mass transport. Đây không phải đánh giá ưu thế tương đối về quân sự.
 
-Không được suy:
+Không giữ lập luận “RF mạnh cá nhân/tu tiên, AF mạnh hệ thống”, danh sách ưu thế chiến thuật hoặc lớp resilience tu tiên RF. Khả năng bay, tốc độ, độ cao, cơ động, chiến đấu, răn đe, viễn chinh, phòng thủ và chi phí chiến tranh cần xác lập lại.
 
-```text
-AF stable aviation
-→ RF không có air power
-```
-
-hoặc:
-
-```text
-AF có aircraft
-→ AF tự động có air supremacy
-```
-
-Một cultivator cấp cao, pháp khí chiến đấu hoặc formation RF có thể vượt aircraft AF trong nhiều metric chiến thuật.
-
-Lợi thế của AF nằm chủ yếu ở:
-
-- throughput;
-- predictability;
-- logistics;
-- replacement;
-- scheduling;
-- mass transport;
-- organizational mobility.
-
-RF có thể mạnh hơn ở:
-
-- individual mobility;
-- exceptional combat capability;
-- phi chuẩn hóa;
-- ability to bypass infrastructure;
-- resilience của các actor mạnh độc lập với network.
-
-Do đó conflict không phải:
-
-> “technology AF đánh bại tu tiên RF”.
-
-Mà là:
-
-> **AF mạnh ở hệ thống có thể lặp lại; RF có thể mạnh ở capability cá nhân/pháp hệ đặc biệt.**
+Bỏ tu tiên ≠ RF yếu hoặc không có air power. AF có aircraft ≠ AF có air supremacy. Dependency phong ấn/hàng không không tự biến thành ưu thế quân sự.
 
 ---
 
@@ -339,8 +270,8 @@ Do exact constitutional form của RF vẫn UNKNOWN, file này **không chốt**
 4. **Nội địa hóa maintenance và manpower càng sớm càng tốt.**
 5. **Dự trữ phụ tùng / năng lực dự phòng để giảm khả năng bị bóp cổ.**
 6. **Duy trì nhiều gateway/hub thay vì một single point of failure.**
-7. **Giữ các flight-capability tu tiên bản địa như một lớp resilience riêng.**
-8. **Dùng standardization đủ để interoperability, nhưng không bắt mọi cultivation tradition phải đồng nhất.**
+7. **Safeguard dựa trên flight-capability tu tiên bản địa đã bị thay thế; năng lực dự phòng thay thế chưa chốt.**
+8. **Safeguard đồng bộ cultivation traditions đã bị thay thế; cấu hình interoperability bản địa cần nguồn mới.**
 9. **Coi air-route approval là công cụ kinh tế và địa chính trị, không chỉ logistics.**
 10. **Phát triển domestic aviation capacity từng bước thay vì cố từ chối hệ thống AF vì tự ái.**
 
@@ -368,7 +299,6 @@ AF
 
 RF
 → market / airspace access
-→ cultivation capability
 → RF/Raging Fire strategic dependency của AF
 ```
 
@@ -391,7 +321,7 @@ File này cố ý không quyết định các mục sau:
 - exact cabotage law;
 - exact customs/tax allocation;
 - exact military flight-control doctrine;
-- exact capability của từng cultivation tradition trong RF;
+- nền sức mạnh, năng lực bay/chiến đấu/cơ động bản địa RF và cấu hình không phận cần xác lập lại; không dùng cultivation traditions làm danh mục mặc định;
 - exact mức độ domestic aviation mà RF đã đạt ở hiện tại.
 
 ```text
@@ -411,7 +341,8 @@ AETHERFIRE AIRSPACE IS DESIGNED FROM AETHERFIRE CURRENT CANON.
 AF DOES NOT MONOPOLIZE FLIGHT.
 AF IS THE ONLY CURRENTLY CONFIRMED ACTOR WITH STABLE, SCALABLE AVIATION AS INFRASTRUCTURE.
 
-RF CULTIVATORS / MAGIC USERS CAN FLY.
+RF LOCAL FLIGHT / COMBAT / MOBILITY CAPABILITY REMAINS UNESTABLISHED.
+NO CULTIVATION DEFAULT OR REPLACEMENT POWER SYSTEM IS ADMITTED.
 INDIVIDUAL FLIGHT CAPABILITY ≠ MASS AVIATION SYSTEM.
 
 AF AVIATION ADVANTAGE = RELIABILITY + THROUGHPUT + STANDARDIZATION + LOGISTICS.
@@ -425,7 +356,8 @@ RF WILL NOT VOLUNTARILY GIVE AF ALL THREE.
 
 ATC DATA = ECONOMIC + SECURITY + MILITARY INTELLIGENCE.
 
-MIXED AIRSPACE MUST ACCOMMODATE CULTIVATORS / MAGIC FLIGHT / MASS AVIATION.
+RF MIXED-AIRSPACE CONFIGURATION MUST BE REESTABLISHED FROM NEW SOURCES.
+AF STABLE AVIATION DOES NOT ESTABLISH MILITARY SUPERIORITY.
 
 DIRECT AIR ROUTES CAN ALTER INTERNAL RF DEPENDENCY AND SECESSION LEVERAGE.
 

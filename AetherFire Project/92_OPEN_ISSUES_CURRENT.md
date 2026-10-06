@@ -85,8 +85,8 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | AF-AV-003 | UNKNOWN / OPEN | Current stage and achieved degree of RF domestic aviation, including crew, maintenance, spare-parts, ground operations, navigation and ATC localization. | `80`; the staged sequence is a strategic pathway, not confirmed chronology. |
 | AF-AV-005 | UNKNOWN / OPEN | Exact aircraft technology/resources, altitude bands, capacity/throughput and route-network topology. | `80`; do not infer numerical traffic volume from scalable capability. |
 | AF-AV-006 | UNKNOWN / OPEN | Airport ownership, cabotage law, customs/tax allocation and cross-member-state air-service authority. | `80`; carrier access does not establish domestic operating rights or sovereignty. |
-| AF-AV-007 | UNKNOWN / OPEN | Exact identification, crossing, separation, restricted-zone, rescue, accident-investigation and military-control rules for mixed airspace. | `80`; the three airspace categories are current, their implementation is not supplied. |
-| AF-AV-008 | UNKNOWN / OPEN | Exact flight/combat capabilities of each RF cultivation tradition, artifact, formation or flying creature. | `80`; exceptional capability must not be converted into a uniform RF-wide metric. |
+| AF-AV-007 | UNKNOWN / OPEN — nền cũ SUPERSEDED | Cấu hình không phận hỗn hợp và exact identification/crossing/separation/restricted-zone/rescue/accident-investigation/military-control. | `80` §§5–6; sơ đồ ba lớp với magical flight không còn current theo quyết định 2026-10-06. Giữ các câu hỏi độc lập; không gán một hệ thay thế. |
+| AF-AV-008 | UNKNOWN / OPEN — danh mục tu tiên SUPERSEDED | Năng lực bay/chiến đấu/cơ động bản địa RF phải xác lập lại. | `80`; không mặc định cultivation tradition/pháp khí/trận pháp/sinh vật bay, không suy RF yếu hoặc AF air supremacy. |
 
 ## 8. Closed/superseded items from these integrations
 
@@ -394,3 +394,31 @@ The highest-value remaining canon decisions are:
 ## 10. Scope boundary
 
 This compact register carries the material open items recorded by the current reconciliation layer. It does not replace local `UNKNOWN` sections inside current-domain files `10`–`80` (including `15` and `65`), and it is not proof that no other unknown exists. When a domain file exposes another relevant unknown, preserve it and route to the full reconciliation record if provenance is needed.
+
+## RF — nền sức mạnh chưa chốt sau quyết định 2026-10-06
+
+`25` giữ toàn bộ quyết định; `10` giữ ontology, `80` giữ hàng không. AF-OPEN-016–019 và các cơ chế Raging Fire đã chốt độc lập giữ hiệu lực; không dùng khoảng trống để phục hồi tu tiên.
+
+| ID | Trạng thái | Phạm vi cần chốt |
+| --- | --- | --- |
+| AF-RF-OPEN-001 | UNKNOWN / OPEN | Nền sức mạnh RF, nguồn/giới hạn cá nhân, phối hợp, nhà nước hóa; cơ chế, giới hạn và truyền thừa Raging Fire ngoài phần đã chốt. |
+| AF-RF-OPEN-002 | UNKNOWN / OPEN | Quân đội/học thuyết, viễn chinh, răn đe/phòng thủ/chi phí chiến tranh và tương quan đa bên; dependency không chứng minh quân sự. |
+| AF-RF-OPEN-003 | UNKNOWN / OPEN | Mục tiêu kỹ thuật cụ thể của khối RF khi tìm công nghệ AF; không tự gán quân sự/công nghiệp/ma thuật/hàng không/huyết hệ. |
+| AF-RF-OPEN-004 | UNKNOWN / OPEN | Năng lực bay và kiểm soát không phận bản địa/cấu hình mixed airspace; nối AF-AV-007/008, không giữ lớp tu tiên dự phòng. |
+
+### Đầy đủ danh sách thiết kế lại từ nguồn §7
+
+- hệ sức mạnh mới của RF;
+- nguồn và giới hạn sức mạnh cá nhân;
+- khả năng phối hợp nhiều tác nhân mạnh;
+- khả năng nhà nước hóa sức mạnh;
+- quân đội và học thuyết chiến tranh RF;
+- năng lực viễn chinh qua đại dương;
+- năng lực bay và kiểm soát không phận bản địa;
+- lý do kỹ thuật cụ thể khiến RF muốn công nghệ AetherFire;
+- tương quan sức mạnh RF — AetherFire — Hoa Nguyệt — Matriarch's Lament — ba cường quốc phía Bắc;
+- mức độ mà Raging Fire là năng lực cá nhân, huyết hệ chiến lược, cơ chế phong ấn hay một hệ khác ngoài phần đã chốt;
+- cơ chế mới giải thích cân bằng địa chính trị.
+
+
+Tất cả giữ CHƯA CHỐT. Danh sách là câu hỏi thiết kế, không bằng chứng một cơ chế đã tồn tại hoặc quyền tự điền.

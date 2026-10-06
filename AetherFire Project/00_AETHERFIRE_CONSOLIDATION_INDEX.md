@@ -1,6 +1,6 @@
 # AetherFire — Consolidation Index
 
-> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-10-05
+> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-10-06
 > **Location:** self-contained `AetherFire Project/` package. Current root files are maintained current sources; `Source_Archive/` preserves historical/provenance material only.
 > **Truth rule:** `ABSENCE OF CANON ≠ CANONICAL NEGATION`; `NOT ESTABLISHED ≠ FALSE`; unresolved relations remain `UNKNOWN / UNRESOLVED`.
 
@@ -130,6 +130,10 @@ STATUS
 - Cash là tiền cơ bản; Credits là tiền điện tử được nhà nước bảo chứng. Nợ ≠ sở hữu; ân tình ≠ tiền tệ. Web tín dụng Undie cũ không phải mốc hiện hành.
 - Phả hệ không tự xác lập containment, thẩm quyền hoặc dependency.
 
+## RF — bỏ tiền đề tu tiên 2026-10-06
+
+`25` giữ đầy đủ quyết định tác giả §§1–10: RF vẫn là liên hiệp lục địa, không còn khối tu tiên. `10` giữ phả hệ/ontology/phong ấn và giao diện; `80` bỏ hệ sinh thái bay tu tiên mặc định, các phân tầng và so sánh sức mạnh phụ thuộc. Không dựng hệ thay thế hoặc dùng thiết kế cũ làm fallback. `91` ghi AF-RF-RET-001–008; `92` giữ đầy đủ các mục cần thiết kế lại và các câu hỏi độc lập còn hiệu lực.
+
 ## Civil — cơ sở mới 2026-10-05
 
 `AetherFire_Civil_Co_So_Canon_2026-10-05.md` thay nền Civil cũ trong `20`: service tự nguyện ở đầu vào + xét tuyển + allocation phù hợp bắt buộc + upkeep/pay + appeal/discipline + early exit + completion. Civil không Slave, punishment hoặc caste; citizenship/tình trạng nhập cư là trục riêng.
@@ -179,7 +183,7 @@ Operation Swap, người thế thân, lịch giải cứu và cây phản gián 
 
 ## 8. RF, Academy and MC4 integration — 2026-09-15
 
-- RF is a continental union of cultivation member states, not one kingdom. The Raging Fire lineage, the RF union, the strongest bloc/member polity of MC2's mother and Prince 9's lower-ranked member polity remain distinct nodes.
+- RF is a continental union of member states, not one kingdom. The Raging Fire lineage, the RF union, the strongest bloc/member polity of MC2's mother and Prince 9's lower-ranked member polity remain distinct nodes.
 - MC2's mother is the **Trưởng công chúa** of the strongest RF bloc/member polity. Prince 9 belongs to a lower-ranked member polity. Current unnamed polity and academy names remain placeholders.
 - The strongest bloc's secession strategy, Prince 9 succession manipulation, guarded RF–AF alliance and the AF noble lineage-exploitation agenda are current canon only in the bounded form stated in `10`.
 - The Academy's six-year structure, five-person combat team, twelve competency blocks, daily training rhythm, multi-axis scholarship profile and concrete functional uniform direction are current canon. Exact hours, weights, thresholds and official names remain `UNKNOWN`.
@@ -191,7 +195,7 @@ Operation Swap, người thế thân, lịch giải cứu và cây phản gián 
 ## 9. Stable aviation and RF airspace integration — 2026-09-17
 
 - AF is the only currently confirmed actor with stable, scalable aviation infrastructure; this does not establish a universal or permanent monopoly on flight or aviation.
-- RF cultivators, artifacts, formations and flying creatures may exceed AF aircraft in raw or exceptional capability. Individual flight capability remains distinct from mass scheduled aviation.
+- Tiền đề tu tiên và so sánh RF cá nhân cực mạnh/AF mạnh hệ thống đã bị thay thế ngày 2026-10-06. Năng lực bay/chiến đấu bản địa RF chưa chốt lại; AF stable aviation không xác lập air supremacy.
 - Relevant RF/member-state authorities have incentives to retain airspace sovereignty, localize ATC/data/maintenance/manpower and domesticate dependency. Exact constitutional authority and current implementation remain `UNKNOWN`.
 - The staged localization sequence is a strategic dependency-reduction pathway, not a confirmed chronology. Exact capacity/throughput remains `UNKNOWN`; no numerical flight volume is canonized.
 - `80_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` controls the detailed domain. `10` retains only its global and geopolitical interface.
