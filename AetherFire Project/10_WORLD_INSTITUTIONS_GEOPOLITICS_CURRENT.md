@@ -741,7 +741,7 @@ The cult is not part of the Academy. It exploits the apparent-POW-to-Mage-Counci
 
 ## Matriarch's Lament / Transfusion EasterFire — global interface
 
-> **Authority boundary:** internal Matriarch's Lament governance, Temple/Cult/Creed, Holy Guard, Trinity/relic economy, Trần Trúc Nha doctrine, ML–TE operations and northeastern-tribe relations are controlled by `70_MATRIARCHS_LAMENT_CURRENT.md`. This section keeps only the interfaces needed by the wider AetherFire world model.
+> **Authority boundary:** internal Matriarch's Lament governance, Temple/Cult, Matriarch origin and Saint's Fresh, Holy Guard, Trinity/relic economy, Trần Trúc Nha doctrine, ML–TE operations and northeastern-tribe relations are controlled by `70_MATRIARCHS_LAMENT_CURRENT.md`. This section keeps only the interfaces needed by the wider AetherFire world model.
 
 ### Regional supersession and chronology
 
@@ -752,6 +752,10 @@ The cult is not part of the Academy. It exploits the apparent-POW-to-Mage-Counci
 - ML is approximately 500 years old; AetherFire is approximately 200 years old.
 - ML participated in the sealing event before AetherFire's foundation. An RF/Raging Fire actor also participated, but the exact lineage/union/member-state level remains `UNKNOWN`.
 
+Matriarch là người/esper chữa lành từ Fiction 0, đến Fiction 1 khoảng 500 năm trước theo thứ tự phía Fiction 0 sau Clash #1. Bà có thánh lực, thần tính thật, đã bị ám sát; thi hài bí mật dưới Thần điện trung tâm vẫn là nguồn lực. Saintess và một số tác nhân tôn giáo cấp trong biết; không suy toàn ML/AF/Cult biết. `70` giữ nguồn gốc/tôn giáo, `40` giữ timeline interface.
+
+Creed và các oath/quorum/cơ chế cưỡng chế phụ thuộc đã rút chờ revamp; ba lớp nhà nước–Thần điện–Cult và các actor độc lập không bị xóa.
+
 ### AetherFire dependencies and treaty edge
 
 ```text
@@ -760,7 +764,7 @@ AF dependency on RF arrangement / Raging Fire lineage
 AF periodic dependency on ML relic access
 ```
 
-ML controls access to a regenerative-consumable relic that AetherFire periodically needs to reinforce the seal. Political hostility and mandatory commerce may therefore coexist.
+ML controls access to **Saint's Fresh**, a pentagonal self-regenerative seal-reinforcement relic containing authentic Matriarch blood/flesh/bone, Saintess-blessed holy cloth and a distinct binding relic, **Redemption Rope**. Saintess's own hands are the opening/rebinding gate, not automatically diplomatic authorization or ownership. AF periodically buys access; political hostility and mandatory commerce may coexist. Fresh consumption, ritual, legal custody and AF knowledge of the secret body remain UNKNOWN; `70` §25 controls detail.
 
 The AF↔TE treaty is direct and was negotiated inside AetherFire. It does not transit through ML.
 

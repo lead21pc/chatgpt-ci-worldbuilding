@@ -71,8 +71,8 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | --- | --- | --- | --- |
 | AF-ML-003 | UNKNOWN / OPEN | Whether ML's apocalyptic cult and the cult operating through the AF/Academy-side interface are the same organization, branches, affiliates, or merely share a label. | `70` and `10`; do not merge organizations from label overlap. |
 | AF-ML-004 | UNKNOWN / OPEN | Exact relation between ML's central Temple and the religious/Temple network operating inside AetherFire. | `70`; influence and information flow are current, but branch/subordinate/affiliate status is not established. |
-| AF-ML-005 | UNKNOWN / OPEN | Exact distinction and interaction among the three-clergy Creed quorum, the three priests witnessing relic loans, and activation/issuance of a Holy Guard oath. | `70`; shared number or personnel does not establish one procedure. |
-| AF-ML-006 | UNKNOWN / OPEN | Exact relation between the plural relic catalogue and the singular regenerative-consumable seal relic, including seal target, renewal interval, custody, ownership, authority and cost. | `70` and `10`; periodic AF access is current, these mechanics are not. |
+| AF-ML-005 | SUPERSEDED IN CREED SCOPE / OTHER IMPLEMENTATION OPEN | Creed quorum/oath đã rút; vai trò ba linh mục làm chứng relic loans giữ độc lập, không thay thế access gate Saintess hoặc thành quyền ngoại giao. | `70` §§7/9/25; replacement Creed và witness procedure chưa chốt; không phục hồi ba-clergy activation. |
+| AF-ML-006 | PARTIALLY RESOLVED / IMPLEMENTATION OPEN | Thánh vật gia cố là Saint's Fresh; Redemption Rope riêng; fresh thật Matriarch/vải thánh/access gate Saintess đã chốt. | `70` §25; không suy mọi relic cùng nguồn. Seal target/interval/cost/authority/custody/ownership và vị trí/liên hệ Trinity vẫn mở. |
 | AF-ML-007 | UNKNOWN / OPEN — scope revised | Cơ chế, đồng thuận, lựa chọn, địa vị pháp lý và quyền về/rời đi cho người hành nghề Undie được AF chuyển sang TE. | `30`/`70`; không suy mua bán người, sở hữu, cưỡng bức, nhập tịch hoặc status giữ nguyên. Undie không là Slave class. |
 | AF-ML-008 | UNKNOWN / OPEN — scope revised | Đối tượng/ràng buộc của “giải phóng tại chỗ”, quyền, đích đến và công nhận pháp lý trong can thiệp ML. | `70`/`30`; wording không chứng minh đối tượng là Slave hoặc tự thành Citizen. |
 | AF-ML-010 | UNKNOWN / OPEN | Granularity of Saintess/Temple knowledge concerning leaks and covert activity. | `70`; institution-level awareness does not establish knowledge or authorization of every operative or operation. |
@@ -422,3 +422,45 @@ This compact register carries the material open items recorded by the current re
 
 
 Tất cả giữ CHƯA CHỐT. Danh sách là câu hỏi thiết kế, không bằng chứng một cơ chế đã tồn tại hoặc quyền tự điền.
+
+## Matriarch / Saint's Fresh — các mục mở 2026-10-06
+
+`70` §25 giữ đủ canon delta, `40` giữ timeline interface. Chỉ Matriarch được chốt origin Fiction 0; AF-OPEN-027/028 về Trúc Nha và các ứng viên khác không đổi.
+
+| ID | Trạng thái | Phạm vi |
+| --- | --- | --- |
+| AF-ML-ORIGIN-001 | UNKNOWN / OPEN | Full GOD/divinity ontology, linh thể/ý thức/giao tiếp và trạng thái sau chết; holy power ≠ divinity ≠ godhood, không luật worship chung. |
+| AF-ML-ORIGIN-002 | UNKNOWN / OPEN | Holy power transformation và tồn tại trong thi hài; regenerative relic tốc độ/giới hạn/chi phí, lượng fresh/chu kỳ/tiêu hao/biến đổi, counterfeit detection/failure mode; không suy fresh được sao chép. |
+| AF-ML-ORIGIN-003 | UNKNOWN / OPEN | Seal target/renewal/procedure, actor ML cho phép và AF tiếp nhận/vận hành/chứng kiến, custody/ownership/Trinity; access gate Saintess không toàn quyền chính trị. |
+| AF-ML-ORIGIN-004 | UNKNOWN / OPEN | Danh sách/compartmentalization người biết thi hài, AF/Cult knowledge; nguồn gốc divine component và authority không đồng nhất. |
+| AF-ML-ORIGIN-005 | UNKNOWN / OPEN / CREED REVAMP DEFERRED | Hung thủ/hỗ trợ/động cơ/Cult assassination role, chuyển cộng đồng thành polity, Saintess selection/succession/relation, cơ chế thay Creed; không giữ split-self bypass chain cũ. |
+| AF-ML-ORIGIN-006 | UNKNOWN / CHRONOLOGY CLARIFICATION | Exact transfer actor/mechanism/timing, khoảng từ arrival ≈500 năm trước tới ML foundation ≈500 năm tuổi; thời điểm/ý nghĩa “hệ phép thuật AetherFire” với AF ≈200 năm tuổi. Hai mốc xấp xỉ không buộc zero thời lượng; chưa kết luận conflict hoặc tự đặt luật chung. |
+
+### Đầy đủ 23 câu hỏi nguồn §14
+
+1. định nghĩa cuối cùng của “thần”;
+2. exact ontology của thần tính;
+3. Matriarch hiện có linh thể / ý thức hay không;
+4. Matriarch có thể giao tiếp với người sống hay không;
+5. exact cơ chế holy power còn tồn tại trong thi hài;
+6. cơ chế self-regeneration của phần relic trong Saint's Fresh;
+7. tốc độ / giới hạn / chi phí tái tạo;
+8. lượng fresh cần cho mỗi chu kỳ;
+9. fresh bị tiêu hao, biến đổi hay chỉ làm nguồn thần tính;
+10. exact seal target;
+11. exact renewal interval;
+12. exact ritual / technical procedure khi AF dùng Saint's Fresh;
+13. actor nào của ML có quyền cho phép AF sử dụng ngoài access gate của Saintess;
+14. actor nào của AF tiếp nhận / vận hành / chứng kiến;
+15. AF biết đến mức nào về cấu tạo thật của Saint's Fresh;
+16. Cult biết đến mức nào về Matriarch và Saint's Fresh;
+17. ai ám sát Matriarch;
+18. Cult có liên quan vụ ám sát hay không;
+19. động cơ gốc của vụ ám sát;
+20. exact quá trình cộng đồng Matriarch trở thành nhà nước ML;
+21. full Saintess selection / succession;
+22. quan hệ giữa Saintess, Matriarch và thần tính ngoài những điểm đã chốt;
+23. cơ chế thay thế Creed trong revamp sau.
+
+
+Các UNKNOWN ở §§3/6/9/11/13 và tại các owner vẫn giữ: ngưỡng người/thần, vật chất/linh hồn/tín đồ/quyền siêu hình, transformation, danh sách người biết, counterfeit/failure, quyền mở các relic khác, nơi tạo/quản lý Saint's Fresh, body location relative Trinity và knowledge của chuyên gia. Không đổi spelling **Saint's Fresh** hoặc **Redemption Rope** theo suy đoán; không tự đổi Fresh thành Flesh.
