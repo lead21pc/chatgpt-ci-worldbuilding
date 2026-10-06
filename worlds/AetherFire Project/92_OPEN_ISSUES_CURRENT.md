@@ -82,7 +82,7 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | --- | --- | --- | --- |
 | AF-ML-003 | UNKNOWN / OPEN | Whether ML's apocalyptic cult and the cult operating through the AF/Academy-side interface are the same organization, branches, affiliates, or merely share a label. | `40` and `10` §5; `01` retains the global interface. Do not merge organizations from label overlap. |
 | AF-ML-004 | UNKNOWN / OPEN | Exact relation between ML's central Temple and the religious/Temple network operating inside AetherFire. | `40`; influence and information flow are current, but branch/subordinate/affiliate status is not established. |
-| AF-ML-005 | SUPERSEDED IN CREED SCOPE / OTHER IMPLEMENTATION OPEN | Creed quorum/oath đã rút; vai trò ba linh mục làm chứng relic loans giữ độc lập, không thay thế access gate Saintess hoặc thành quyền ngoại giao. | `40` §§7/9/25; replacement Creed và witness procedure chưa chốt; không phục hồi ba-clergy activation. |
+| AF-ML-005 | PARTIALLY RESOLVED / IMPLEMENTATION OPEN | Khung hậu-Creed đã chốt: VERIFY / ACCESS / INSTITUTIONAL PUNISHMENT tách biệt; Creed quorum/oath cũ vẫn rút. Ba linh mục làm chứng relic loans giữ độc lập, không thay access gate Saintess hoặc thành quyền ngoại giao. | `40` §§7/9/25/26; thủ tục oath, access và witness cụ thể còn mở; không phục hồi ba-clergy activation. |
 | AF-ML-006 | PARTIALLY RESOLVED / IMPLEMENTATION OPEN | Thánh vật gia cố là Saint's Fresh; Redemption Rope riêng; fresh thật Matriarch/vải thánh/access gate Saintess đã chốt. | `40` §25; không suy mọi relic cùng nguồn. Seal target/interval/cost/authority/custody/ownership và vị trí/liên hệ Trinity vẫn mở. |
 | AF-ML-007 | UNKNOWN / OPEN — scope revised | Cơ chế, đồng thuận, lựa chọn, địa vị pháp lý và quyền về/rời đi cho người hành nghề Undie được AF chuyển sang TE. | `13`/`40`; không suy mua bán người, sở hữu, cưỡng bức, nhập tịch hoặc status giữ nguyên. Undie không là Slave class. |
 | AF-ML-008 | UNKNOWN / OPEN — scope revised | Đối tượng/ràng buộc của “giải phóng tại chỗ”, quyền, đích đến và công nhận pháp lý trong can thiệp ML. | `40`/`13`; wording không chứng minh đối tượng là Slave hoặc tự thành Citizen. |
@@ -444,7 +444,7 @@ Tất cả giữ CHƯA CHỐT. Danh sách là câu hỏi thiết kế, không b�
 | AF-ML-ORIGIN-002 | UNKNOWN / OPEN | Holy power transformation và tồn tại trong thi hài; regenerative relic tốc độ/giới hạn/chi phí, lượng fresh/chu kỳ/tiêu hao/biến đổi, counterfeit detection/failure mode; không suy fresh được sao chép. |
 | AF-ML-ORIGIN-003 | UNKNOWN / OPEN | Seal target/renewal/procedure, actor ML cho phép và AF tiếp nhận/vận hành/chứng kiến, custody/ownership/Trinity; access gate Saintess không toàn quyền chính trị. |
 | AF-ML-ORIGIN-004 | UNKNOWN / OPEN | Danh sách/compartmentalization người biết thi hài, AF/Cult knowledge; nguồn gốc divine component và authority không đồng nhất. |
-| AF-ML-ORIGIN-005 | UNKNOWN / OPEN / CREED REVAMP DEFERRED | Hung thủ/hỗ trợ/động cơ/Cult assassination role, chuyển cộng đồng thành polity, Saintess selection/succession/relation, cơ chế thay Creed; không giữ split-self bypass chain cũ. |
+| AF-ML-ORIGIN-005 | PARTIALLY RESOLVED / OTHER IMPLEMENTATION OPEN | Khung hậu-Creed đã chốt tại `40` §26; hung thủ/hỗ trợ/động cơ/Cult assassination role, chuyển cộng đồng thành polity, Saintess selection/succession/relation và thủ tục triển khai hậu-Creed vẫn UNKNOWN / OPEN; không giữ split-self bypass chain cũ. |
 | AF-ML-ORIGIN-006 | UNKNOWN / CHRONOLOGY CLARIFICATION | Exact transfer actor/mechanism/timing, khoảng từ arrival ≈500 năm trước tới ML foundation ≈500 năm tuổi; thời điểm/ý nghĩa “hệ phép thuật AetherFire” với AF ≈200 năm tuổi. Hai mốc xấp xỉ không buộc zero thời lượng; chưa kết luận conflict hoặc tự đặt luật chung. |
 
 ### Đầy đủ 23 câu hỏi nguồn §14
@@ -471,7 +471,7 @@ Tất cả giữ CHƯA CHỐT. Danh sách là câu hỏi thiết kế, không b�
 20. exact quá trình cộng đồng Matriarch trở thành nhà nước ML;
 21. full Saintess selection / succession;
 22. quan hệ giữa Saintess, Matriarch và thần tính ngoài những điểm đã chốt;
-23. cơ chế thay thế Creed trong revamp sau.
+23. cơ chế thay thế Creed: khung chức năng đã chốt tại `40` §26; thủ tục triển khai cụ thể vẫn UNKNOWN / OPEN.
 
 
 Các UNKNOWN ở §§3/6/9/11/13 và tại các owner vẫn giữ: ngưỡng người/thần, vật chất/linh hồn/tín đồ/quyền siêu hình, transformation, danh sách người biết, counterfeit/failure, quyền mở các relic khác, nơi tạo/quản lý Saint's Fresh, body location relative Trinity và knowledge của chuyên gia. Không đổi spelling **Saint's Fresh** hoặc **Redemption Rope** theo suy đoán; không tự đổi Fresh thành Flesh.
@@ -528,3 +528,54 @@ File này không tự chốt:
 ### Các unknown ngoài danh sách nén
 
 Nguồn quốc hiệu §§5/8/9 vẫn không chốt nghĩa vụ của từng công trình/cơ quan, lịch sử chữ 華 từ lập quốc/thí nghiệm, công khai/tôn vinh/phủ nhận dark foundation hoặc toàn dân biết, và phản ứng chính thức từng vụ appropriation. Nhận diện Hoa Nguyệt không chứng minh hiểu toàn bộ tên/biểu tượng; không cấp tri thức cho mọi actor. AF–RF Seaborne/aviation giữ scope cũ, không được áp toàn mọi tuyến Hoa Nguyệt.
+
+
+## Matriarch's Lament — hậu-Creed, 2026-10-07
+
+Khung chức năng đã được tác giả chốt; không đồng nghĩa chốt triển khai. `40` §26 là nơi quản lý canon. Các nhóm dưới đây chỉ là chỉ mục, không thay thế 30 câu hỏi gốc.
+
+| ID | Status | Phạm vi chưa chốt |
+|---|---|---|
+| AF-ML-PC-OPEN-001 | UNKNOWN / OPEN | Tên hệ và ranh giới luật/tôn giáo/hành chính (1, 30) |
+| AF-ML-PC-OPEN-002 | UNKNOWN / OPEN | Oath, giao diện, phạm vi và cưỡng ép (2–4, 7) |
+| AF-ML-PC-OPEN-003 | UNKNOWN / OPEN | Xác minh, sai số, yêu cầu kiểm tra và diễn giải (5–6, 8–9) |
+| AF-ML-PC-OPEN-004 | UNKNOWN / OPEN | Chứng cứ, kỷ luật và kháng nghị (10–12) |
+| AF-ML-PC-OPEN-005 | UNKNOWN / OPEN | Healing, phân phối, khẩn cấp và người ngoài tôn giáo (13–16) |
+| AF-ML-PC-OPEN-006 | UNKNOWN / OPEN | Sacred access, relic law và office catalogue (17–19) |
+| AF-ML-PC-OPEN-007 | UNKNOWN / OPEN | Clergy và Holy Guard capability; Saintess relation (20–22) |
+| AF-ML-PC-OPEN-008 | UNKNOWN / OPEN | Family suspicion và chống lạm dụng access denial (23–24) |
+| AF-ML-PC-OPEN-009 | UNKNOWN / OPEN | Cult và thao túng xác minh/access (25–26) |
+| AF-ML-PC-OPEN-010 | UNKNOWN / OPEN | Divinity, ý chí Matriarch và khả năng từ chối Temple (27–29) |
+
+### 30 câu hỏi nguồn giữ nguyên
+
+1. tên chính thức của hệ hậu-Creed;
+2. thánh vật / giao diện nào ghi nhận oath;
+3. oath nào bắt buộc đối với chức vụ nào;
+4. exact phạm vi câu oath;
+5. cách phát hiện / xác minh vi phạm;
+6. error rate, false positive, false negative;
+7. khả năng cưỡng ép actor tuyên oath;
+8. actor có quyền yêu cầu kiểm tra;
+9. actor diễn giải kết quả;
+10. chuẩn chứng cứ;
+11. thủ tục xét xử / kỷ luật;
+12. review / appeal;
+13. exact danh mục divine healing;
+14. ai có quyền phân phối;
+15. điều kiện khẩn cấp;
+16. quyền của người không theo tôn giáo;
+17. phạm vi sacred access;
+18. exact relic access law;
+19. sacred office catalogue;
+20. clergy capability catalogue;
+21. Holy Guard blessing / equipment / capability;
+22. relation giữa Holy Guard và Saintess ngoài allegiance hiện hành;
+23. phạm vi family suspicion;
+24. quy tắc chống lạm dụng access denial;
+25. quan hệ giữa hệ này với Cult;
+26. liệu Cult có thể giả mạo, thao túng hoặc chiếm quyền xác minh / access hay không;
+27. quan hệ giữa Matriarch's divinity và từng loại capability;
+28. Matriarch có ý chí hiện hành hay không;
+29. Matriarch có thể từ chối Temple use hay không;
+30. mức nào của hệ này là tôn giáo, luật, hành chính hay hỗn hợp.

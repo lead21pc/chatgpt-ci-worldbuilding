@@ -457,5 +457,33 @@ class MaintenanceTests(unittest.TestCase):
         self.assertEqual(before, self.snapshot())
 
 
+    def test_post_creed_unknowns_and_partial_resolution(self):
+        lore = (self.root / '40_MATRIARCHS_LAMENT_CURRENT.md').read_text(encoding='utf-8')
+        delta = lore.split('## 26. Thần quyền hậu-Creed', 1)[1]
+        questions = delta.split('### 12. Những phần chưa chốt', 1)[1].split('### 13.', 1)[0]
+        expected = ["1. tên chính thức của hệ hậu-Creed;","2. thánh vật / giao diện nào ghi nhận oath;","3. oath nào bắt buộc đối với chức vụ nào;","4. exact phạm vi câu oath;","5. cách phát hiện / xác minh vi phạm;","6. error rate, false positive, false negative;","7. khả năng cưỡng ép actor tuyên oath;","8. actor có quyền yêu cầu kiểm tra;","9. actor diễn giải kết quả;","10. chuẩn chứng cứ;","11. thủ tục xét xử / kỷ luật;","12. review / appeal;","13. exact danh mục divine healing;","14. ai có quyền phân phối;","15. điều kiện khẩn cấp;","16. quyền của người không theo tôn giáo;","17. phạm vi sacred access;","18. exact relic access law;","19. sacred office catalogue;","20. clergy capability catalogue;","21. Holy Guard blessing / equipment / capability;","22. relation giữa Holy Guard và Saintess ngoài allegiance hiện hành;","23. phạm vi family suspicion;","24. quy tắc chống lạm dụng access denial;","25. quan hệ giữa hệ này với Cult;","26. liệu Cult có thể giả mạo, thao túng hoặc chiếm quyền xác minh / access hay không;","27. quan hệ giữa Matriarch's divinity và từng loại capability;","28. Matriarch có ý chí hiện hành hay không;","29. Matriarch có thể từ chối Temple use hay không;","30. mức nào của hệ này là tôn giáo, luật, hành chính hay hỗn hợp."]
+        self.assertEqual([line for line in questions.splitlines() if line[:1].isdigit()], expected)
+        ledger = (self.root / '92_OPEN_ISSUES_CURRENT.md').read_text(encoding='utf-8')
+        for question in expected:
+            self.assertIn(question, ledger)
+        self.assertIn('AF-ML-PC-OPEN-010', ledger)
+        self.assertIn('PARTIALLY RESOLVED / IMPLEMENTATION OPEN', ledger)
+
+    def test_post_creed_separates_authority_and_preserves_relic_gate(self):
+        lore = (self.root / '40_MATRIARCHS_LAMENT_CURRENT.md').read_text(encoding='utf-8')
+        delta = lore.split('## 26. Thần quyền hậu-Creed', 1)[1]
+        for boundary in (
+            'CREED OLD MECHANICS REMAIN RETIRED.',
+            'DIVINE SIGNAL\n!= FINAL LEGAL / POLITICAL DECISION',
+            'OATH DOES NOT AUTOMATICALLY ENFORCE OBEDIENCE.',
+            'ONLY THROUGH A VALID ACTOR / AUTHORITY / PROCEDURE PATH.',
+            'TEMPLE MAY BE CRUEL BY WITHHOLDING MERCY',
+            'SYSTEM NAME = UNKNOWN.',
+        ):
+            self.assertIn(boundary, delta)
+        self.assertIn("SAINTESS'S OWN HANDS", lore)
+        self.assertIn('AF-ML-PC-010', (self.root / '91_RECONCILIATION_RECORD.md').read_text(encoding='utf-8'))
+
+
 if __name__ == '__main__':
     unittest.main()

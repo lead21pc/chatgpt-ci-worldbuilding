@@ -11,7 +11,7 @@ Dark foundation/Lục Kì Nhân, văn hóa/quốc phục, triết lý phép thu�
 
 ## ML historical-state notice — Matriarch/Saint's Fresh 2026-10-06
 
-`40` §25 kiểm soát Matriarch/Fiction 0 origin, thần tính/thi hài/Saint's Fresh/Redemption Rope; `03` Part IV giữ timing interface. Các mô tả CURRENT/SURVIVING trong lịch sử về Creed/oath/quorum3/cardio/family-binding, relic-lending dưới Creed hoặc split-self bypass không còn quyền hiện hành. Creed và dependency đã rút chờ revamp; không dùng history làm fallback hoặc đặt replacement.
+`40` §25 kiểm soát Matriarch/Fiction 0 origin, thần tính/thi hài/Saint's Fresh/Redemption Rope; `03` Part IV giữ timing interface. Các mô tả CURRENT/SURVIVING trong lịch sử về Creed/oath/quorum3/cardio/family-binding, relic-lending dưới Creed hoặc split-self bypass không còn quyền hiện hành. Creed cũ và dependency vẫn đã rút; không dùng history làm fallback. Khung hậu-Creed hiện hành đã được chốt 2026-10-07 tại `40` §26; các mô tả cũ về oath cưỡng chế/family/quorum/split-self bypass không được nhập vào hệ mới. Xác minh, access và trừng phạt qua thiết chế là các chức năng riêng, chưa triển khai đầy đủ.
 
 Các actor độc lập Temple/Cult/public state/Holy Guard, split-self/doctrine Trúc Nha và địa lý/quan hệ ML–TE vẫn giữ theo current owners. Không dùng nguồn gốc Matriarch để canon hóa origin Trúc Nha/candidates khác, không suy AF biết thi hài hoặc Saintess access gate là toàn quyền ngoại giao. `91` ghi AF-ML-DELTA-001–010; `92` giữ AF-ML-ORIGIN-001–006 và đầy đủ UNKNOWN.
 
