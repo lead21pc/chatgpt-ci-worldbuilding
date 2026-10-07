@@ -1,13 +1,13 @@
 # AetherFire Anti-Drift - Source Router v4.4
 
-> Status: FINAL LOCAL CONTROL FILE. Project use requires separate explicit deployment with the installed AetherFire CI 3.1; file presence does not deploy it.
+> Status: FINAL LOCAL CONTROL FILE. Project use requires separate explicit deployment with the installed AetherFire CI 3.1 or 3.2; file presence does not deploy it.
 > Type: task-scoped source router and pre-response gate.
 > Not: canon, a lore source, a CI selector, or permission to complete missing world state.
-> Authority: subordinate to the active installed AetherFire CI 3.1. If that CI is absent, ambiguous, or incompatible, return SOURCE_LOAD_BLOCKED for the dependent canon task. Do not select a CI from repository files or substitute CI 2.6.
+> Authority: subordinate to the active installed AetherFire CI 3.1 or 3.2. If that CI is absent, ambiguous, or incompatible, return SOURCE_LOAD_BLOCKED for the dependent canon task. Do not select a CI from repository files or substitute CI 2.6.
 
 ## 1. Execution order
 
-    ACTIVE AETHERFIRE CI 3.1
+    ACTIVE AETHERFIRE CI 3.1 OR 3.2
     -> this Router
     -> PROMPT_ROUTE_ONLY
     -> BOOTSTRAP GATE
