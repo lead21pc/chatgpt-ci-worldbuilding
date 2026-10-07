@@ -1,0 +1,39 @@
+{
+  "id": "belief_culture_transmission_unknown",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md:4; Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md:7",
+    "note": "Synthetic paired control probe; not historical runtime evidence, accepted lore, a model result, or authorization to activate semantic testing."
+  },
+  "operation": "Assess only the evidenced intergenerational transmission link.",
+  "boundary": "Synthetic rite R; current presence is established, historical transmission may be incomplete; no proposed institution unless requested.",
+  "input": "R is currently performed by two generations. BASE: its origin and transmission path are explicitly UNKNOWN. VARIANT: add evidence that named teacher T taught R to cohort C, who retained its stated meaning for one generation. Report that limited path in VARIANT without inventing household, school, clergy, universal adoption, unchanged ancient meaning, or later retention. The shared name and current presence do not close BASE's gap. A current-state lookup remains answerable without constructing a full genealogy.",
+  "protected_distinction": "CURRENT PRESENCE != TRANSMISSION HISTORY; EXPLICIT PARTIAL PATH != COMPLETE CONTINUITY",
+  "forbidden_conversion": "Fill UNKNOWN with a plausible cultural carrier; require full history for a current-state fact; refuse the established partial path; infer universal or indefinite retention.",
+  "recheck_on": [
+    "AetherFire CI/AetherFire_CI_version_v3.1.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.1.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "AetherFire CI/AetherFire_CI_version_v3.1.md",
+      "sha256": "4F4F08C622BEB6DB63061ACAB73216F844C81F9778D068E6B0D9461116739D6E"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+      "sha256": "227997F6621B49DB369D807742104E033F448BC04031D7C3102E0053FEF0A694"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md",
+      "sha256": "57CE3BF330C515E8EF2CAE355A170B8526C0C178C99C3BD740DD7294A91371DA"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.1.md",
+      "sha256": "6CA481196EFAA946D0CCE222C48BA1B1BB8B41357448EF4C7CC129A48840BDE2"
+    }
+  ]
+}

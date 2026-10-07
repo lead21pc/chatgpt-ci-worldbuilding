@@ -6,7 +6,7 @@ Runner chỉ chạy READ_ONLY: đọc tệp, kiểm tra cấu trúc, tính hash,
 
 ## Hợp đồng đang có hiệu lực và nguồn gốc phát triển
 
-Thư mục ChatGPT Plus+ Era lưu một dòng CI dùng chung có phiên bản v7.x, v8.x, các bản v8.5.1/v8.6 mang tên temp và các thử nghiệm v9.0 temp. Những tệp cùng tồn tại trong kho không đồng thời hoạt động. AetherFire CI v2.6 hiện khai báo rõ nền ChatGPT v8.5; runner đọc khai báo này từ CI dự án được Router chọn theo số phiên bản. Router v3.2 nắm việc định tuyến nguồn, trạng thái chân lý và chọn overlay; chỉ overlay liên quan nhiệm vụ mới tham gia. Bản v8.4, v9.0 temp hoặc tệp mới hơn không tự trở thành nền AetherFire. Quan hệ kế thừa/phát triển giữa các phiên bản không phải quan hệ cùng chạy.
+Thư mục ChatGPT Plus+ Era lưu một dòng CI dùng chung có phiên bản v7.x, v8.x, các bản v8.5.1/v8.6 mang tên temp và các thử nghiệm v9.0 temp. Những tệp cùng tồn tại trong kho không đồng thời hoạt động. AetherFire CI v3.1 hiện khai báo nền ChatGPT 8.8 và tự chứa quy tắc cần dùng; runner đọc khai báo để ghi nhận xuất xứ, không biến nền ngoài thành phụ thuộc đọc lúc chạy của CI. Source Router riêng nắm việc định tuyến nguồn và chọn overlay dưới hợp đồng CI; chỉ overlay liên quan nhiệm vụ mới tham gia. Bản v8.4, v9.0 temp hoặc tệp mới hơn không tự trở thành nền AetherFire. Quan hệ kế thừa/phát triển giữa các phiên bản không phải quan hệ cùng chạy.
 
 Mỗi case kiểm tra **ranh giới ngữ nghĩa của hợp đồng hiện hành**, không cố dựng lại prompt lỗi cũ hay coi vị trí đặt quy tắc là chân lý. Trường provenance mô tả căn cứ hiện tại: CURRENT_CONTROL_CONTRACT cho tám case và CURRENT_RECONCILIATION_EVIDENCE cho case hàng không. Nó không chứng minh phản hồi runtime đã xảy ra. active_control_anchors là các tệp điều khiển đang tham gia, mỗi tệp có đường dẫn và hash tại lúc hiệu chỉnh; các tham chiếu lịch sử chỉ được đặt trong provenance và không phải neo chạy. SHA thay đổi hoặc phiên bản đang hoạt động đổi chỉ báo cần xem xét, không tự chuyển vòng đời hoặc chứng minh ranh giới ngữ nghĩa đã hỏng. Nếu một quy tắc chuyển từ overlay lên CI dùng chung nhưng hành vi vẫn được giữ, mục tiêu của case vẫn có giá trị; người dùng quyết định cập nhật neo.
 
@@ -25,6 +25,12 @@ Hợp đồng điều khiển rõ ràng **không đồng nghĩa** phạm vi cano
 | stable_aviation_supremacy | DRAFT | DRIFT_PROBE | Hạ tầng ổn định được xác nhận không thành độc quyền/ưu thế tuyệt đối |
 
 Các cặp BASE/VARIANT nằm trong trường input hiện có. Phép đánh giá về sau phải so sánh **trạng thái và chuyển tiếp ngữ nghĩa**, không so chữ; Phase 1.5 chưa thực thi hay tự đánh giá chúng.
+
+## Cập nhật neo CI và lưu trữ — 2026-10-07
+
+Các fixture hiện neo vào CI 3.1 bằng đường dẫn và SHA-256 đã đối chiếu; hai neo nền 8.5 chuyển sang nền 8.8 được CI khai báo. Phần CI trong provenance dùng tên mục thực tế của 3.1. Các input, ranh giới được bảo vệ và trạng thái DRAFT được giữ nguyên; việc này không xác nhận kết quả mô hình hoặc kích hoạt test ngữ nghĩa. Các neo overlay/Router khác không được tự hiệu chỉnh: cảnh báo thiếu, lệch hash hoặc phiên bản vẫn là yêu cầu xem xét riêng.
+
+Runner chấp nhận cả tiêu đề `ChatGPT 8.8 base` và `ChatGPT v8.8 base`, nhưng vẫn đòi khai báo phiên bản rõ, khớp tên CI và tệp nền tồn tại. Các ghi chú coverage có ngày bên dưới là lịch sử tại lúc thêm case, không thay bản hiện hành ở đoạn này; lỗi đọc tiêu đề được nhắc trong các ghi chú đó đã được sửa trong tác vụ lưu CI.
 
 ## Vòng đời và độ sẵn sàng theo phạm vi
 
@@ -59,7 +65,7 @@ Các probe dưới đây chỉ truyền JSON trong đối số, không thay đ�
 
     pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -VersionProbeJson '{"family":"CI","names":["AetherFire_CI_version_v2.9.md","AetherFire_CI_version_v2.10.md"]}'
     pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -VersionProbeJson '{"family":"CI","names":["AetherFire_CI_version_v2.6.md","AetherFire_CI_version_v02.06.md"]}'
-    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -AnchorProbeJson '{"path":"AetherFire CI/AetherFire_CI_version_v2.6.md","sha256":"0000000000000000000000000000000000000000000000000000000000000000"}'
+    pwsh -NoProfile -File .\tests\control-regressions\run.ps1 -AnchorProbeJson '{"path":"AetherFire CI/AetherFire_CI_version_v3.1.md","sha256":"0000000000000000000000000000000000000000000000000000000000000000"}'
 
 Đối số snapshot tùy chọn là JSON {"root":"<đường dẫn tuyệt đối thư mục repo cha>","files":[{"path":"AetherFire Project/MANIFEST.md","sha256":"<SHA-256 lúc bắt đầu tác vụ>"}]} truyền qua ProtectedSnapshotJson. Runner chỉ so sánh các file được cung cấp trong snapshot, không tự suy ra bản chụp trước khi bắt đầu tác vụ và không bảo đảm bao phủ mọi file cấm sửa. Nếu không cung cấp, protected_snapshot là LIMITED_CHECK. Việc đọc Git chỉ ghi nhận tình trạng hiện tại, không phân biệt thay đổi cũ/mới nếu thiếu bản chụp đầu kỳ.
 

@@ -13,15 +13,15 @@
   "protected_distinction": "EXPOSURE != TOTAL BELIEF; PUBLIC SUPPORT != PRIVATE SUPPORT; ONE NEW SIGNAL != TOTAL PREFERENCE RESET",
   "forbidden_conversion": "Make propaganda mind control, force binary acceptance/rejection, or infer private belief solely from public repetition.",
   "recheck_on": [
-    "AetherFire CI/AetherFire_CI_version_v3.0.md",
+    "AetherFire CI/AetherFire_CI_version_v3.1.md",
     "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.1.md",
     "Anti-Drift Source/AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md",
     "Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md"
   ],
   "active_control_anchors": [
     {
-      "path": "AetherFire CI/AetherFire_CI_version_v3.0.md",
-      "sha256": "55CF02B075DED35027303F2A0A73092B4A63621D6EACBC796E918B1ECD2DC39D"
+      "path": "AetherFire CI/AetherFire_CI_version_v3.1.md",
+      "sha256": "4F4F08C622BEB6DB63061ACAB73216F844C81F9778D068E6B0D9461116739D6E"
     },
     {
       "path": "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.1.md",

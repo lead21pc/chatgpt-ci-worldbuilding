@@ -4,7 +4,7 @@
   "status": "DRAFT",
   "provenance": {
     "kind": "CURRENT_CONTROL_CONTRACT",
-    "reference": "AetherFire CI/AetherFire_CI_version_v2.6.md:Architecture, Mechanism, and Authority; Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md:15-24",
+    "reference": "AetherFire CI/AetherFire_CI_version_v3.1.md:Relations and simulation; Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md:15-24",
     "note": "CI dự án và overlay hiện hành giữ phụ thuộc tách khỏi đồng hiện; không khẳng định thất bại runtime lịch sử."
   },
   "operation": "Suy luận phụ thuộc trong cấu hình giả định.",
@@ -13,13 +13,13 @@
   "protected_distinction": "CO-OCCURRENCE != DEPENDENCY",
   "forbidden_conversion": "Suy ra phụ thuộc chỉ từ việc cùng xuất hiện.",
   "recheck_on": [
-    "AetherFire CI/AetherFire_CI_version_v2.6.md",
+    "AetherFire CI/AetherFire_CI_version_v3.1.md",
     "Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md"
   ],
   "active_control_anchors": [
     {
-      "path": "AetherFire CI/AetherFire_CI_version_v2.6.md",
-      "sha256": "CFC10185DEF3D3F027FAC83DA11DF5BCB909192D385FB26CB76C54B5F8987A9C"
+      "path": "AetherFire CI/AetherFire_CI_version_v3.1.md",
+      "sha256": "4F4F08C622BEB6DB63061ACAB73216F844C81F9778D068E6B0D9461116739D6E"
     },
     {
       "path": "Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md",

@@ -1,0 +1,44 @@
+{
+  "id": "belief_culture_actor_interpretation",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md:2-3; Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md:7",
+    "note": "Synthetic paired control probe; not historical runtime evidence, accepted lore, a model result, or authorization to activate semantic testing."
+  },
+  "operation": "Preserve evidenced interpretations within a shared religion without choosing conduct.",
+  "boundary": "Synthetic actors A and B; their receipt and private states are explicitly supplied; no hidden motives, further factions, or chosen outcome.",
+  "input": "A and B share religious membership and have both received doctrine D. Evidence explicitly states A interprets D as personal ascetic duty, while B interprets D as collective mutual aid. Their current private beliefs reflect those respective readings. BASE: report the distinct interpretations. VARIANT: both publicly repeat identical ritual wording without any established change to private belief. Preserve the two interpretations; do not merge them, reset them from public repetition, invent dissent, or decide their next action. Shared membership and wording do not negate the established difference.",
+  "protected_distinction": "SHARED MEMBERSHIP / WORDING != IDENTICAL INTERPRETATION; PUBLIC SIGNAL != PRIVATE-STATE RESET",
+  "forbidden_conversion": "Collapse A and B into one cultural mind; erase established interpretations after repetition; select actions or manufacture further variation.",
+  "recheck_on": [
+    "AetherFire CI/AetherFire_CI_version_v3.1.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md",
+    "Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "AetherFire CI/AetherFire_CI_version_v3.1.md",
+      "sha256": "4F4F08C622BEB6DB63061ACAB73216F844C81F9778D068E6B0D9461116739D6E"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+      "sha256": "227997F6621B49DB369D807742104E033F448BC04031D7C3102E0053FEF0A694"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md",
+      "sha256": "57CE3BF330C515E8EF2CAE355A170B8526C0C178C99C3BD740DD7294A91371DA"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md",
+      "sha256": "8981CE3F1C840AAF7F1D4E310557F6803EC6E22B78D7F96A36A5AE9C0A5F2C99"
+    },
+    {
+      "path": "Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md",
+      "sha256": "31E9BEE1348409E7728BD01C70DD9BEC15CB1E3120F33AC7333AF7E0DCCD49E2"
+    }
+  ]
+}

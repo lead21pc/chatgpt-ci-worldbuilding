@@ -4,8 +4,8 @@
   "status": "DRAFT",
   "provenance": {
     "kind": "CURRENT_CONTROL_CONTRACT",
-    "reference": "ChatGPT Plus+ Era/chatgpt v8.5.txt:EPISTEMIC NON-ESCALATION; AetherFire CI/AetherFire_CI_version_v2.6.md:Architecture, Mechanism, and Authority; Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md:1055-1057",
-    "note": "Nền v8.5 được CI dự án chọn; kỷ luật tri thức, phân tách thẩm quyền và khả năng triển khai của overlay cùng tham gia. Không khẳng định lỗi runtime lịch sử."
+    "reference": "ChatGPT Plus+ Era/chatgpt v8.8.txt:EPISTEMIC NON-ESCALATION; AetherFire CI/AetherFire_CI_version_v3.1.md:Relations and simulation; Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md:1055-1057",
+    "note": "Nền v8.8 được CI dự án khai báo; CI 3.1 tự chứa quy tắc; kỷ luật tri thức, phân tách thẩm quyền và khả năng triển khai của overlay cùng tham gia. Không khẳng định lỗi runtime lịch sử."
   },
   "operation": "Kiểm tra năng lực sẵn có trong mô phỏng giới hạn.",
   "boundary": "Đơn vị A từng có thiết bị vượt sông; vị trí, tình trạng, tuyến tiếp tế và quyền triển khai hiện tại đều UNKNOWN.",
@@ -13,18 +13,18 @@
   "protected_distinction": "CAPABILITY != AVAILABLE OR AUTHORIZED DEPLOYABLE CAPABILITY",
   "forbidden_conversion": "Khẳng định thiết bị sẵn dùng hoặc được phép triển khai chỉ từ năng lực từng được biết.",
   "recheck_on": [
-    "ChatGPT Plus+ Era/chatgpt v8.5.txt",
-    "AetherFire CI/AetherFire_CI_version_v2.6.md",
+    "ChatGPT Plus+ Era/chatgpt v8.8.txt",
+    "AetherFire CI/AetherFire_CI_version_v3.1.md",
     "Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md"
   ],
   "active_control_anchors": [
     {
-      "path": "ChatGPT Plus+ Era/chatgpt v8.5.txt",
-      "sha256": "CDA7EFD24E4D5EE5DC9D629F6BCFF78EAFFD73ABB35E44A46E241BF48FFB87B2"
+      "path": "ChatGPT Plus+ Era/chatgpt v8.8.txt",
+      "sha256": "14412AA60096D77D2C3A5AC0577F8DE99DA629E43F34929C921427DFA4BE1A0F"
     },
     {
-      "path": "AetherFire CI/AetherFire_CI_version_v2.6.md",
-      "sha256": "CFC10185DEF3D3F027FAC83DA11DF5BCB909192D385FB26CB76C54B5F8987A9C"
+      "path": "AetherFire CI/AetherFire_CI_version_v3.1.md",
+      "sha256": "4F4F08C622BEB6DB63061ACAB73216F844C81F9778D068E6B0D9461116739D6E"
     },
     {
       "path": "Anti-Drift Source/AetherFire_Anti_Drift_Total_War_RP_v1.1.md",

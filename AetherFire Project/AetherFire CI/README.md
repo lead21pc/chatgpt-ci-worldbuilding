@@ -1,20 +1,25 @@
 # AetherFire CI
 
-> **Role:** independent Custom Instructions archetype and associated anti-drift routing assets for AetherFire.
->
-> **Boundary:** this directory is stored inside `AetherFire Project` only for management and comparison. It is not generated canon, a world-bible source, a build input, or canon evidence. Directory containment does not import, merge, or grant authority over the project's canon documents.
+## Bản hiện hành
 
-Files here define CI behavior and retain historical compact instructions and routing assets. Canon facts and reconciliation remain authoritative only in the current package sources selected by the active index and source router.
+Cập nhật 2026-10-07: thư mục chính chỉ giữ [AetherFire CI 3.1](AetherFire_CI_version_v3.1.md) và README này.
 
-## Active baseline
+CI 3.1 ghi nền ChatGPT 8.8 và tự chứa các quy tắc cần dùng; nhãn nền là thông tin xuất xứ, không phải lệnh đọc một CI ngoài để áp dụng lúc chạy. Phần ngôn ngữ yêu cầu tiếng Việt phổ thông nhưng giữ nguyên tên riêng trong lore, gồm tên quốc gia và địa danh; không dịch nghĩa đen hoặc tự đặt dạng Việt hóa. Tên được nhận diện từ nguồn/ngữ cảnh, không chỉ từ chữ viết hoa.
 
-Updated 2026-09-21: v2.6 adapts ChatGPT CI v8.5 for AetherFire and delegates source authority, loading order, and overlay selection to the separate project router.
+## Ranh giới
 
-- CI kernel: `AetherFire_CI_version_v2.6.md`
-- Source router: `../Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v3.2.md`
-- Economy/state-stabilization overlay: `../Anti-Drift Source/AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md`, loaded only for matching tasks and only after the source gate
-- Canon open-issues register: `../92_OPEN_ISSUES_CURRENT.md`
+Đây là thư mục điều khiển hành vi cho AetherFire, không phải canon, world bible, đầu vào build hoặc bằng chứng lore. Vị trí thư mục không cấp thẩm quyền nguồn hay nhập nội dung vào canon.
 
-The v2.5 CI remains in this directory for historical comparison. The v3.1 router, v1.0 economy overlay, and v1.0 worldbuilding overlay are preserved in `../Anti-Drift Source/Source_Archive/`; all are superseded by the active versions above. This baseline record is a snapshot; later eligible versions follow the router's numeric resolution rule.
+CI giữ quyền quyết định canon của người dùng, trạng thái chưa rõ/xung đột và hợp đồng đọc nguồn. [Source Router và các overlay](../Anti-Drift%20Source/) riêng chịu trách nhiệm định tuyến và suy luận trong phạm vi được khai báo, dưới CI; chúng không được thay CI hoặc tự chốt canon. [Sổ vấn đề hiện hành](../92_OPEN_ISSUES_CURRENT.md) giữ các vấn đề chưa chốt.
 
-`aetherfire_chat_anti_drift.md` and `aetherfire_chat_anti_drift_v2.md` are inactive historical routers. Their embedded snapshots contain superseded canon and must not be used as the current baseline, fallback, or reference anchor. The rejected `aetherfire_chat_anti_drift_v3.md` is deleted and must not be reconstructed or used. Old canon may be opened only for explicitly labeled provenance or comparison; current silence never reactivates it.
+## Lưu nguồn cũ
+
+[source_archive](source_archive/) giữ nguyên byte các CI tiền nhiệm, bản compact cũ và tài liệu anti-drift/router cũ trước đây nằm trong thư mục này. Các tài liệu ấy không hoạt động: không dùng làm mặc định, fallback, tiền đề, đầu vào build hoặc mốc đối chiếu hiện hành.
+
+Chỉ đọc lại nguồn lưu trữ khi người dùng chỉ định rõ file hoặc phạm vi lịch sử cần đối chiếu. Quyền đối chiếu không tự khôi phục hiệu lực; việc phục hồi cần quyết định rõ về phạm vi thay thế. Không sửa, gộp hoặc ghi đè tài liệu đã lưu.
+
+## Kiểm chứng
+
+Việc lưu trữ dùng SHA-256 trước/sau để xác nhận không đổi nội dung. Tham chiếu CI trong glossary và fixture được cập nhật sang 3.1; các fixture giữ trạng thái DRAFT và chỉ thay neo CI/nền liên quan. Các neo overlay khác vẫn cần được xem xét riêng nếu runner báo lệch.
+
+Kiểm tra cấu trúc, hash và đường dẫn không chứng minh hành vi ChatGPT Project hay việc cài đặt runtime. Lưu trữ không thay canon hoặc tự triển khai control.
