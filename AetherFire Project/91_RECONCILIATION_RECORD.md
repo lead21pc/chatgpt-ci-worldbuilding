@@ -2,6 +2,42 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Ba góc nhìn chức năng — thay §1.2, chốt 2026-10-08
+
+**Quyền:** yêu cầu tác giả AUDIT → DESIGN → IMPLEMENT trong tệp đính kèm `Pasted text.txt`; §1.2 phải thay đổi để xử lý lỗi runtime tác giả báo: model dùng taxonomy cũ kéo thế giới về topology/sự kiện/roster MC cũ. SHA-256 yêu cầu: `D66DE59524F7D3FE1DFF76C17262B401DD6F97E986F7B54A3E81691E2D14FD1F`. Đây là quan sát runtime do tác giả cung cấp; lượt này không tái hiện trực tiếp bằng ChatGPT Project.
+
+**Baseline:** repository `C:/Users/Sheeplark/Desktop/CI Versioning Audit & Changelog`, HEAD `ed526262b1b341b0fefebdac309c495d4a444b2b`, nhánh trước `codex/aetherfire-ci-archive-20261007`; nhánh tác vụ `codex/aetherfire-functional-perspectives-20261008`. Controls/tests/Academy dirty và Router v4.4 staged từ trước giữ nguyên ngoài commit; chỉ stage file tác vụ, không nhận untracked ngoài phạm vi.
+
+**Chẩn đoán / AF-CLASS-001 — LOGIC, RESOLVED ở tài liệu:** §1.2 tiền nhiệm chứa status/technology/credit inventory, đóng Section 2 quanh MC1–MC3 và metafiction, trộn địa chính trị với side stories ở Section 3. Câu “không phải cây cha–con cố định” chưa ngăn danh mục bị đọc thành topology cố định. `01` A0/A/§20 và các giao diện quốc gia, `00` ranh giới miền, `10` §§1–7, `11` Part I/retcon Civil, `13` §§1–6 chứng minh world state hiện hành rộng hơn snapshot và đã thay nền Civil/Undie/credit cũ.
+
+**Đối chiếu bổ sung:** `02` §§1–4 cho công nghệ/hạ tầng; `06` §§1–2 cho aviation/dependency; `20` §§1–2 và `30` §1 cho miền quốc gia độc lập; `40` header/§§1–2 và giao diện ML trong `01` cho state/chronology/authority. `12` §§1/4/5/an ninh/phân mảnh thông tin giữ agenda MC2 và tác nhân ngoài MC; `05` §§1–6 xác nhận MC4 và knowledge/authority chưa chốt. `03` Part I §§1–3 phân biệt world state, actor và năng lực metafiction; `04` §§1–3/14–17/22A–24 phân biệt POV, pattern, tri thức và diễn giải. Đây là đối chiếu các phần trực tiếp cần cho abstraction, không chứng nhận FULL_FILE toàn bộ package hoặc audit hết lore.
+
+**Lựa chọn:** `REWRITE IN 01`. Ba góc nhìn gọn và cùng thuộc cách đọc project/thế giới; không cần controlling artifact độc lập, module/registry/schema mới hoặc đổi numbering. Section 1 là World State có thể vận hành không cần MC làm động cơ trực tiếp; Section 2 là Actor Involvement của tác nhân có agency, không roster; Section 3 là Situated Narrative/RP/side stories từ vị trí cụ thể. Tính tự vận hành không làm nhân vật mất vai trò. Metafiction vẫn do `03`, narrator/POV do `04`, các module khác giữ owner. Một fact có thể tham gia nhiều góc nhìn mà không nhân bản authority.
+
+### Tham chiếu và tác động điều khiển
+
+| Phân loại | Vị trí / xử lý |
+| --- | --- |
+| MUST UPDATE | `01` §1.2: thay toàn định nghĩa tiền nhiệm; bỏ inventory concrete, roster/sự kiện/tuyến cố định và nhóm quốc tế dưới side story. |
+| MUST UPDATE / AF-CLASS-002 | Economy v1.1 dòng Scope hook: “Section 1/3 tasks” phụ thuộc taxonomy cũ → có thể loại phân tích kinh tế qua actor ở Section 2 → sửa §1.2 đơn thuần vẫn để scope control sai. Đổi đúng dòng này sang suy luận kinh tế–thể chế thực sự cần thiết, không gate theo section hoặc chỉ nhắc tên. Không đổi phần cơ chế/stopping phía sau. |
+| COMPATIBLE AS-IS | Router v4.4 §§3/6/7 route theo owner/task/material trigger; không tìm thấy chuỗi wording cũ → section assumption → routing sai để biện minh patch Router. CI 3.1, MCA v1.2, Actor Reception, Worldbuilding và Total War giữ ranh giới tri thức/agency/canon/activation theo task; không sửa. |
+| COMPATIBLE AS-IS | `00`, headers/catalog và các miền `02–06`, `10–14`, `20/30/40` không dùng ba section cũ làm ownership; các roster/event ở source chi tiết không tự là structural definition. `14` tham chiếu “section 3” là mục đào tạo của chính file, không §1.2 thế giới. |
+| HISTORICAL — DO NOT MODIFY | Nhãn cũ trong `Source_Archive/aetherfire_canon_hop_nhat_merged_v2.md`, các bản `aetherfire_chat_anti_drift.md` và Economy cũ trong thư mục archive ở root/CI/Anti-Drift. Tìm kiếm phân biệt tên thư mục không phân biệt hoa/thường. Giữ nguyên; không dùng làm fallback hiện hành. |
+
+`91` chỉ thêm hồ sơ này; `MANIFEST` chỉ đồng bộ hash bằng builder. Authority, AFM-ID, nguồn current/archive và UNKNOWN/DEFERRED ngoài phạm vi giữ nguyên. Không archive current source hoặc sửa builder/tests.
+
+### Kiểm chứng và giới hạn
+
+- Đọc lại toàn §1.2 đã sửa từ disk cùng §1.1 và giao diện quốc gia theo sau; giữ nguyên toàn nội dung `01` ngoài block thay thế và header.
+- 35 kiểm tra `python -B -m unittest discover -s tests` đạt, gồm maintenance/admission/owner boundaries, giới hạn vùng generated, bảo toàn archive inventory và post-Creed. Không thêm framework hoặc test chỉ phản chiếu wording.
+- `build_consolidation.py --write` đồng bộ metadata; `--check` đạt 14 module/18 current hash, không truy cập archive. `00` không cần thay catalog.
+- Tìm nhãn cũ, “Section 1/3”, roster MC1/MC2/MC3 và tham chiếu §1.2 trong Markdown package; nhãn controlling cũ đã bỏ, occurrence lịch sử giữ. `91` nhắc chúng chỉ trong chẩn đoán supersession này.
+- Runner control-regressions READ_ONLY với Economy v1.1 trả `LIMITED_CHECK`, `selected_cases=[]`, `model_executed=false`. Hai DRAFT `actor_reception_mixed_signals` / `belief_culture_change_pressure` báo hash Economy thay đổi cùng các neo Router/MCA/Worldbuilding đã lệch từ trước. Giữ DRAFT/neo nguyên trạng, không tự hiệu chỉnh hoặc kích hoạt test.
+- Các probe A–E chỉ được đối chiếu thiết kế: A world state không cần MC; B knowledge/authority/capability của quan chức; C trải nghiệm checkpoint có giới hạn tri thức; D dependency AF–RF thuộc world state; E nguồn `03` + actor involvement, không đồng nhất toàn metafiction với Section 2. Đây không phải phản hồi model hay behavioral PASS.
+- Bảo toàn bằng snapshot các file ngoài bốn đường dẫn tác vụ, index staged có sẵn, nội dung `01` ngoài §1.2, Economy ngoài một dòng và toàn record tiền nhiệm; manifest ngoài vùng generated không đổi. Chỉ checkpoint nội bộ, không push hoặc triển khai Library/Project.
+
+**Còn chưa xác minh:** mức drift trong ChatGPT Project sau khi cài nguồn/overlay mới và trạng thái deployment thực tế. Các UNKNOWN hiện hành vẫn mở; task không chọn thêm cơ chế/sự kiện/roster hoặc giải quyết lore gap. Mốc tiếp theo cho cách phân loại là `01` §1.2 đã thay; chi tiết vẫn tra owner tương ứng.
+
 ## Matriarch's Lament — thần quyền hậu-Creed, chốt 2026-10-07
 
 **Quyền:** tác giả yêu cầu audit file mới và nhập vào canon. Nguồn `AetherFire_Matriarchs_Lament_Post_Creed_Divine_Governance_Canon_2026-10-07.md` tự xác lập CANON DELTA; tiếp nhận đủ §§1–13 vào `40` §26, không tạo file canon mới.

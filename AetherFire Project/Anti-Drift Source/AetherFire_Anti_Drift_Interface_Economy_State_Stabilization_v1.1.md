@@ -2,7 +2,7 @@
 
 > Type: local anti-drift config for task-scoped economic and institutional interfaces.
 > Not: a CI, world bible, complete economy model, fiscal law, banking design, or new canon.
-> Scope hook: Section 1/3 tasks involving Civil, Undie, Forum, Facilities, Dorm, Rule Zone, Yellow, gambling, entertainment, logistics, labor, housing, trade, state intervention, or related economy-institution interfaces.
+> Scope hook: áp dụng khi câu trả lời cần suy luận về giao diện kinh tế–thể chế, như lao động, nhà ở, thương mại, logistics, khan hiếm, động cơ vật chất hoặc can thiệp nhà nước. Góc nhìn World State, Actor Involvement hay Situated Narrative không tự kích hoạt hoặc loại trừ overlay; tra cứu trực tiếp hoặc chỉ nhắc một đối tượng không đủ kích hoạt.
 > Authority hook: inherits source authority and priority from the active AetherFire CI and active AetherFire Source Router. Historical chat anti-drift routers are not authority sources. This file does not create canon, override confirmed canon, or turn proposals into facts.
 > Core purpose: allow enough depth to close the current task's causal path while preventing interface questions from expanding into full economic realism.
 
