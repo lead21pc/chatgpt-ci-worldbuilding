@@ -241,69 +241,39 @@ phần còn lại
 → political / institutional / geopolitical focus
 ```
 
-### 1.2 Ba section cấp cao
+### 1.2 Ba góc nhìn chức năng của cùng một thế giới
 
-#### Section 1 — Hệ thống đế quốc / xã hội / kinh tế
+Ba section dưới đây phân biệt **loại suy luận đang thực hiện**, không chia AetherFire thành ba thế giới, ba tuyến truyện cố định hoặc ba nơi sở hữu canon. Một dữ kiện có thể được xét qua nhiều góc nhìn; nguồn quản lý dữ kiện ấy vẫn giữ nguyên.
 
-Bao gồm:
+#### Section 1 — World State: thế giới tồn tại và vận hành
 
-- nhà nước;
-- luật;
-- tư pháp;
-- Citizen / Slave / status tạm thời;
-- Civil — chế độ phục vụ lao động, không Slave;
-- Undie;
-- POW;
-- Criminal Slave;
-- lao động;
-- giáo dục;
-- y tế;
-- collar;
-- barrier;
-- zone;
-- camera / drone / android / robot;
-- Career Rank / Credits / Credit Score / điểm cống hiến;
-- chợ đen;
-- kinh tế công dân;
-- hạ tầng đô thị;
-- kháng chiến nội địa.
+Xét trạng thái, cơ chế và quan hệ của thế giới: quốc gia/nhà nước/thể chế, xã hội/luật/văn hóa/lịch sử, kinh tế/nghề nghiệp/lao động, công nghệ/hạ tầng/tài nguyên, chiến tranh/địa chính trị và tương tác giữa chúng. Đây là các miền để đọc thế giới, không phải danh mục subsystem hoặc nội dung canon hiện tại.
 
-Section 1 có thể tự tạo lịch sử và xung đột mà không cần MC1, MC2 hoặc MC3 làm engine trực tiếp.
+Thế giới có thể vận hành, tạo lịch sử, xung đột và thay đổi **mà không cần MC làm động cơ trực tiếp**. Cách đọc này vẫn dùng được khi không MC nào xuất hiện, actor/MC hoặc quốc gia/subsystem mới được thêm, hay một tuyến tự sự biến mất. Tác nhân vẫn có thể tạo hệ quả lớn; tính tự vận hành không làm nhân vật mất vai trò.
 
-#### Section 2 — Story chính / siêu hư cấu
+Quốc tế, lãnh thổ, logistics, quan hệ giữa các quốc gia và các hệ quả của chúng thuộc góc nhìn này khi xét như dữ kiện của thế giới, không bị đẩy sang Section 3 vì nằm ngoài một “story chính”.
 
-Bao gồm:
+#### Section 2 — Actor Involvement: tác nhân tham gia và tạo hệ quả
 
-- MC1;
-- MC2;
-- MC3;
-- Hoàng hậu;
-- The Raging Phoenix;
-- canon gốc và canon bị lệch;
-- can thiệp xuyên Fiction 0 / Fiction 1;
-- chính danh hoàng gia;
-- xung đột giữa trajectory được viết và lịch sử đã thực sự xảy ra.
+Xét cách tác nhân có agency tham gia vào, chịu ảnh hưởng, khai thác hoặc làm thay đổi world state. MC là một loại tác nhân nổi bật trong tự sự, không phải toàn bộ tác nhân nhân quả hay chủ sở hữu thế giới. Nhân vật phụ, cá nhân, lãnh đạo/quan chức, đại diện phe, tác nhân bản địa hoặc xuyên fiction đều có thể liên quan tùy tác vụ; không có roster MC cố định trong định nghĩa này.
 
-Chi tiết cơ cấu được tách sang hai file riêng.
+Chỉ mở các yếu tố thực sự quyết định câu hỏi: thông tin có thể tiếp cận, điều biết/điều tin, mục tiêu, thẩm quyền/quyền cho phép, năng lực/nguồn lực, quan hệ, lựa chọn, hành động, can thiệp nhân quả và phản ứng. Đây không phải schema bắt buộc cho mọi tác nhân. Tham gia không xác lập sở hữu; biết hoặc có năng lực không tự cấp quyền, chọn hành động hay bảo đảm kết quả.
 
-#### Section 3 — Quốc tế / lãnh thổ / side stories
+#### Section 3 — Situated Narrative: trải nghiệm và kể từ một vị trí cụ thể
 
-Bao gồm:
+Xét thế giới được trải nghiệm, quan sát hoặc kể từ một vị trí cụ thể: RP, side stories, đời sống/sự kiện cục bộ, trải nghiệm nhân vật, POV, nhận thức, tin đồn, hiểu lầm và cách trình bày. Phạm vi nhìn cục bộ không trở thành mô hình toàn thế giới.
 
-- quốc gia bên ngoài;
-- mô hình quản trị nước ngoài;
-- lãnh thổ vệ tinh;
-- vùng khai thác;
-- tài nguyên;
-- logistics;
-- đối ngoại;
-- tình báo;
-- trao đổi POW;
-- trừng phạt;
-- xuất khẩu mô hình thể chế;
-- side stories độc lập.
+Giữ riêng **sự thật của thế giới**, **điều tác nhân biết** và **điều tác nhân tin**; tri thức cần đường tiếp cận thông tin phù hợp, trải nghiệm không tự chứng minh chân trị toàn cục. Đầu ra RP/mô phỏng không tự thành canon. Một side story có thể chứa sự kiện canon nếu tác giả chấp nhận trong phạm vi cụ thể; cách kể không tự quyết định trạng thái canon.
 
-Ba section là các cụm tương tác, không phải cây cha–con cố định.
+#### Quan hệ giữa ba góc nhìn, nguồn và điều khiển
+
+Cùng một cuộc chiến có thể được xét như hệ quả thể chế/kinh tế/địa chính trị ở Section 1, lựa chọn/can thiệp/phản ứng của tác nhân ở Section 2, và trải nghiệm của một người trong cuộc ở Section 3. Đó vẫn là một thế giới và cùng dữ kiện, không nhân bản thẩm quyền.
+
+Metafiction là miền ontology/nhân quả do `03_METAFICTION_CANON_TIMELINE_CURRENT.md` quản lý, **không đồng nghĩa Section 2**: trạng thái metafiction có thể được xét ở Section 1, can thiệp của tác nhân xuyên fiction ở Section 2, và cách kể/trải nghiệm ở Section 3. `04_NARRATORS_POV_AND_HUMOR_CURRENT.md` vẫn quản lý narrator/POV; các module khác giữ nguyên miền và ranh giới thẩm quyền đã khai báo.
+
+Phân loại section chỉ giúp hiểu tác vụ; không tạo cây module, cấp ưu tiên canon, cây sở hữu hoặc thứ bậc hành chính/tự sự. Định nghĩa section không chứa số MC, roster, đồ thị status, biến kinh tế, danh sách sự kiện hay tuyến truyện hiện tại; dữ kiện cụ thể phải đọc ở nguồn quản lý tương ứng.
+
+**Phân loại section không tự kích hoạt overlay.** Router vẫn chọn nguồn và anti-drift theo nội dung suy luận, primitive và failure mode thực sự liên quan. Tra cứu trực tiếp một dữ kiện không tự bật Worldbuilding Internal Logic; nhắc tác nhân hoặc yêu cầu RP không tự tải mọi overlay. Ba section không thay hợp đồng Router, quyền quyết định canon hoặc các trạng thái UNKNOWN/DEFERRED hiện hành.
 
 ---
 
