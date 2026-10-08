@@ -166,7 +166,7 @@ Long tộc
 
 Cả ba thường xuyên đánh xuyên biên giới AetherFire. Họ chưa chọc thủng tầng phòng hộ không phải vì yếu mà do political/racial/geopolitical conflicts, lợi ích không đồng nhất và constraints quanh long mạch.
 
-Thủy tổ ba tộc phía Bắc có chức năng rào chắn đối với chủng tộc không phải con người. Exact relation giữa barrier này và Raging Phoenix seal giữ `UNKNOWN`.
+Thủy tổ của ba tộc phía Bắc và một Giant sinh ra ba chủng tộc phía Bắc; cấu trúc sinh thành chi tiết vẫn `UNKNOWN`. Giant này là đối tượng ML và RF thời cổ hợp lực giết và phong ấn tại long mạch nơi AF về sau lập quốc. Phong ấn tạo tường lửa phía Bắc; không còn đọc tường lửa như một barrier độc lập do ba thủy tổ dựng.
 
 ### H. Canon 1 — giao diện nhân quả chính trị
 
@@ -309,7 +309,7 @@ Phía Bắc có ít nhất ba cường quốc thường xuyên đánh xuyên bi�
 - **Thú Nhân** — một đại quốc thống nhất;
 - **Long tộc** — cường quốc gồm ít nhất Vrouvre và Dragon.
 
-Họ chưa chọc thủng phòng hộ AetherFire do political/racial/geopolitical conflicts, lợi ích không đồng nhất và constraints quanh long mạch. Thủy tổ ba tộc có chức năng một rào chắn đối với chủng tộc không phải con người; exact mechanics và relation với Raging Phoenix seal giữ `UNKNOWN`.
+Họ chưa chọc thủng phòng hộ AetherFire do political/racial/geopolitical conflicts, lợi ích không đồng nhất và constraints quanh long mạch. Tường lửa phát sinh từ phong ấn Giant của ML–RF: sinh vật được phân loại không phải humanoid đi qua bị thiêu đốt liên tục và tiêu hao rất lớn sức mạnh/tinh thần. Phân loại từng chủng tộc/lai/chuyển dạng, maintenance, authority và điều kiện vô hiệu hóa vẫn `UNKNOWN`; không suy mọi tộc phía Bắc đều non-humanoid.
 
 
 ### 20.0c AetherFire — giao diện quốc gia
@@ -540,7 +540,7 @@ Hành lang AF↔Quad Night 100 km, vị trí sườn Học viện và quan hệ 
 
 ### Trần Trúc Nha and Undie boundaries
 
-Trần Trúc Nha's membership and regional role in ML are current canon. Her proposed summoned/cross-world origin is `UNDER CONSTRUCTION / NOT CURRENT CANON` and is routed to `03_METAFICTION_CANON_TIMELINE_CURRENT.md`.
+Trần Trúc Nha's membership and regional role in ML are current canon. Cô là người Việt Nam đến từ Fiction 0, cùng thế giới với MC1/MC3; cơ chế, thời điểm và đường về vẫn `UNKNOWN`, do `03_METAFICTION_CANON_TIMELINE_CURRENT.md` quản lý.
 
 The former `foreign spy / infiltrator → punitive Undie` route is `RESOLVED / REMOVED` because it no longer fits the political-centric setting. No replacement legal/status route is inferred; Undie-related interfaces are controlled by `13_UNDIE_SYSTEM_CURRENT.md`.
 
@@ -559,3 +559,10 @@ The former `foreign spy / infiltrator → punitive Undie` route is `RESOLVED / R
 - World-state facts established here feed the live Canon 2 context but do not by themselves define metafiction mechanics.
 - `03_METAFICTION_CANON_TIMELINE_CURRENT.md` controls the fiction layers, continuation modes, causal overlap and clash timeline.
 - `04_NARRATORS_POV_AND_HUMOR_CURRENT.md` controls narrator personification, POV grammar and humor design.
+
+## World / Giant / trade interface — chốt 2026-10-08
+
+- Fiction 1/AetherFire là tác phẩm hư cấu thương mại do MC1 viết, với vai trò hỗ trợ/đồng sáng tác của MC3; Fictionize biến fiction thành thế giới có thể đi vào trải nghiệm. Điều này không trao quyền admin lên Canon 2 hoặc giải quyết vật lý siêu hình chính xác.
+- Hoa Nguyệt–ML có mạng thương mại đang hoạt động mạnh; nền phép thuật Hoa Nguyệt tương thích với hình ảnh/thông điệp ML muốn trình diện. Hoa Nguyệt–RF cũng có thương mại đang hoạt động và mạnh hơn AF–RF; quan hệ phía sau này gây sức ép vào sườn AF. Không suy liên minh, chuỗi chỉ huy, tuyến/hàng hóa/đối tác cụ thể hoặc một chiến dịch phá hoại đã xảy ra.
+- ML và RF thời cổ hợp lực giết/phong ấn Giant tại long mạch; phong ấn sinh ra tường lửa phía Bắc. Một mục tiêu lịch sử của phía RF và ML khi tạo AF là nhà nước bù nhìn/vùng đệm hấp thụ thiệt hại khi các chủng tộc phía Bắc đánh xuống. Mục đích lập quốc không chứng minh ML/RF kiểm soát toàn bộ AF ở mọi thời kỳ.
+- AF hiện đồng thời đối kháng và phụ thuộc vào cả ML lẫn RF. Một số bộ phận AF bất bình với vai trò vùng đệm; sự bất bình này là nguyên nhân chính trị có liên quan vụ ám sát Matriarch, nhưng actor và chuỗi hành động chưa chốt. Chronology Matriarch–ML–AF còn `CONFLICTED / CHRONOLOGY OPEN` theo `40` và `92`.

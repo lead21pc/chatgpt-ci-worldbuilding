@@ -19,7 +19,7 @@
 
 **Fiction 0** là thế giới xuất thân của MC1 và MC3.
 
-Fiction 0 là một thế giới esper:
+Fiction 0 là thế giới giả tưởng lấy thế giới thật làm cơ sở tham chiếu, nhưng không mặc định trùng lịch sử, bản đồ, luật pháp hay quốc gia của thế giới thật. Fiction 0 là một thế giới thuần esper:
 
 > mọi người sinh ra đều có năng lực đặc biệt.
 
@@ -204,7 +204,7 @@ AetherFire trở thành trường hợp đặc biệt vì giao thức phối h�
 | Thành phần | Chủ thể | Tác dụng đã xác nhận | Không được tự suy |
 |---|---|---|---|
 | **Fictionize** | MC1 | biến fiction thành trải nghiệm giải trí có thể tham gia và bán cho người trả tiền | quyền admin, rewrite lore/plot, toàn tri, bất tử |
-| **Proof of Concept** | MC3 | thay trajectory khi MC3 thấy hướng không hợp | viết plot trực tiếp, sửa lore trực tiếp, khóa outcome |
+| **Proof of Concept** | MC3 | ở Fiction 0: thay trajectory khi MC3 thấy hướng không hợp; ở Fiction 1: giảm cấp thành ảnh hưởng nhận thức lúc giao tiếp (Part V) | viết plot trực tiếp, sửa lore trực tiếp, khóa outcome, ép tin tưởng/tuân lệnh |
 | **The Raging Phoenix / cơ chế gọi** | MC2/Hoàng hậu theo các sự kiện đã chốt | có liên hệ với việc kéo actor từ Fiction 0 vào Fiction 1 | full mechanism, quyền tổng quát xuyên fiction |
 
 ---
@@ -253,7 +253,7 @@ Chưa được chốt:
 
 - Fiction 1 được tạo ra, hiện thực hóa hay truy cập theo cơ chế nào;
 - full mechanics của Fictionize;
-- Fictionize thay đổi thế nào khi MC1 ở bên trong Fiction 1;
+- full giới hạn Fictionize khi MC1 ở bên trong Fiction 1, ngoài khả năng đã chốt tại Part V;
 - full mechanics của Proof of Concept;
 - vì sao “hope” dẫn tới MC3 bị kéo vào;
 - ai/điều gì là chủ thể trực tiếp thực hiện thao tác kéo MC3 ở tầng cơ chế;
@@ -262,7 +262,7 @@ Chưa được chốt:
 - MC3 có thể rời Fiction 1 bằng cách nào;
 - competency ngoài năng lực esper của MC1;
 - competency ngoài phần đã biết của MC3;
-- extent tri thức meta của MC2;
+- thời điểm và độ sâu từng lớp tri thức meta của MC2 ngoài phạm vi đã chốt tại Part V;
 - extent tri thức meta của các actor khác.
 
 ---
@@ -402,10 +402,11 @@ Concept Y có trước khi model Canon 1/Canon 2 overlap được nghĩ ra. Vì 
 
 ```text
 Y content = CANON
-exact temporal placement relative to divergence = UNKNOWN
+site existence before V0.5 / Clash #1 divergence = CANON
+individual event timing / post-divergence operation = UNKNOWN
 ```
 
-File story-line không tự ép site/event này hoàn toàn sang một trajectory nếu user chưa khóa chronology.
+Site có từ bản thể gốc Fiction 1; niên đại từng event và trạng thái vận hành sau phân kỳ vẫn UNKNOWN.
 
 ---
 
@@ -1040,6 +1041,8 @@ MC1 không có ground truth tự động.
 
 ### 21. Tri thức MC1 / MC3 / MC2
 
+Chốt 2026-10-08: MC2 đủ hiểu POC/Fictionize, bản thân và thực chất thế giới nhờ hai personification đã ở cùng cô; không toàn tri. Phạm vi và mốc tri thức theo Part V, không mặc định actor bản địa hoàn toàn không biết fiction.
+
 #### MC1
 
 Biết:
@@ -1542,15 +1545,30 @@ Cơ chế xuyên fiction/thời gian, tác nhân cưỡng ép, body/soul/memory 
 
 Matriarch đến khoảng 500 năm trước và ML tuổi khoảng 500 năm là các mốc xấp xỉ, không chứng minh quá trình chữa lành → holy power → thờ phụng → ám sát → cộng đồng/nhà nước mất zero thời gian. Thời điểm tương tác với “hệ phép thuật AetherFire” và ý nghĩa tên ấy trước quốc gia AF khoảng 200 năm tuổi còn cần làm rõ, không tự dựng AF có từ 500 năm trước hoặc đổi tuổi quốc gia (`92` AF-ML-ORIGIN-006).
 
-### Under construction / not current canon
+### Trần Trúc Nha — confirmed 2026-10-08
 
-```text
-Trần Trúc Nha summoned from another world
-= UNDER CONSTRUCTION / NOT CURRENT CANON
-```
-
-This origin is not current canon unless a later dedicated file is finalized and approved. Her current ML membership and regional role do not depend on that origin.
+Trần Trúc Nha là người Việt Nam đến từ Fiction 0, cùng thế giới xuất thân với MC1 và MC3. Fiction 0 là thế giới thuần esper lấy thế giới thật làm cơ sở tham chiếu; esper ở từng quốc gia có những kiểu khác nhau. Cơ chế, tác nhân, thời điểm chuyển sang Fiction 1, body/soul/memory transfer và đường về vẫn `UNKNOWN`. Nguồn gốc này không thay membership/vai trò hiện hành của cô trong ML.
 
 ### Other unconfirmed cross-world/cross-time candidates
 
-MC4, the undead west of Hoa Nguyệt, the sheep-man in the northern Beastman power, the painter, bard, time-traveling businessperson and political prisoner remain `UNDER CONSTRUCTION / NOT CURRENT CANON` as cross-world/cross-time candidates. They do not share a mechanism, cosmology, faction or mutual knowledge by default.
+MC4 được xác nhận đến từ một chiều không gian khác và là con của Cosmos. Bản chất Cosmos/quan hệ sinh thành là DEFERRED cho lần bàn sau;  cơ chế/thời điểm xuất hiện, body/soul/memory transfer và quan hệ với các tầng fiction vẫn `UNKNOWN`. The undead west of Hoa Nguyệt, the sheep-man in the northern Beastman power, the painter, bard, time-traveling businessperson and political prisoner remain `UNDER CONSTRUCTION / NOT CURRENT CANON`. Không ứng viên nào mặc định chia sẻ cơ chế, cosmology, faction hoặc mutual knowledge.
+
+## Part V — World/meta delta chốt 2026-10-08
+
+### Fiction 1 và Fictionize của MC1
+
+Fiction 1/AetherFire là sản phẩm hư cấu thương mại do MC1 viết, với MC3 giữ vai trò hỗ trợ/đồng sáng tác đã chốt. Fictionize biến thế giới được mô tả thành thế giới có thể đi vào và du lịch/trải nghiệm; đây là cách MC1 thương mại hóa AetherFire.
+
+Khi ở Fiction 1, MC1 vẫn dùng Fictionize và có thể truy cập fiction bên trong Fiction 1 qua tác phẩm anh tiếp cận, như sách trong thư viện, để trải nghiệm/tập luyện. Giới hạn cụ thể DEFERRED cho lần bàn sau. Exact điều kiện vào/ra, mang vật/người/kỹ năng, chi phí, quyền sửa và hiệu ứng xuyên tầng còn `UNKNOWN`. Khả năng này không trao quyền viết lại lịch sử hay điều khiển Canon 2; vật lý siêu hình của sự hiện thực hóa và tồn tại độc lập vẫn mở.
+
+### Proof of Concept của MC3 trong Fiction 1
+
+Trong Fiction 1, POC của MC3 là phiên bản thấp hơn năng lực đổi trajectory ở Fiction 0. Nó điều chỉnh cách người đối diện nhìn nhận MC3 trong lúc giao tiếp; một người ác ý hoặc mặc định nghi ngờ có thể bớt ngờ vực. Lòng tin vẫn phải được xây dựng thật, không tự tạo tin tưởng/yêu quý/đồng ý/tuân lệnh. Ngưỡng, phạm vi, cường độ, duy trì, đối kháng và ảnh hưởng lên actor khác còn `UNKNOWN`.
+
+Năng lực esper của MC3 và POC-personification là hai lớp khác nhau; narrator tồn tại không chứng minh năng lực gốc giữ cùng mức.
+
+### Tri thức MC2 và Site Y
+
+MC2 đủ hiểu POC và Fictionize là gì, bản thân cô là gì và thực chất thế giới cô đang sống là gì, vì hai personification đã ở cùng cô trước đó. Điều này không đồng nghĩa MC2 biết toàn Canon 1/V1.0, lịch sử Fiction 0, kỹ thuật năng lực hoặc sự kiện chưa tiếp cận; thời điểm đạt từng mức tri thức còn mở.
+
+Site Y là bộ phận của bản thể gốc Fiction 1 và tồn tại trước phân kỳ V0.5/Clash #1. Niên đại từng hoạt động, thay đổi quản lý, phá hoại và trạng thái vận hành sau phân kỳ vẫn `UNKNOWN`.

@@ -982,3 +982,16 @@ Giữ `UNKNOWN` nếu chưa có chốt mới:
 - cách joke “we / me / switch roles” cuối cùng sẽ được chốt ở bản tiếng Anh.
 
 Không tự lấp các điểm trên chỉ vì chúng hợp trope hoặc hợp một cách đọc meta cụ thể.
+
+## 25. Tri thức MC2 và ranh giới narrator/năng lực — chốt 2026-10-08
+
+POC-personification và Fictionize-personification đã ở cùng MC2 trong khoảng thời gian trước đó. Vì vậy MC2 đủ hiểu POC/Fictionize là gì, bản thân cô là gì và thực chất thế giới cô đang sống là gì. Không suy cô biết toàn bộ Canon 1/V1.0, lịch sử Fiction 0, kỹ thuật năng lực hoặc sự kiện chưa tiếp cận; thời điểm đạt từng mức tri thức còn `UNKNOWN`.
+
+Giữ tách:
+
+```text
+POC-personification ≠ esper ability của MC3
+Fictionize-personification ≠ esper ability của MC1
+```
+
+Trong Fiction 1, năng lực POC của MC3 giảm cấp thành ảnh hưởng có giới hạn lên cách người đối diện nhìn nhận cô khi giao tiếp; không tự tạo lòng tin hoặc obedience. MC1 vẫn có thể dùng Fictionize để truy cập fiction trong tác phẩm sẵn có ở Fiction 1. Các dữ kiện năng lực này do `03` quản lý; file narrator chỉ giữ ontology/personification, POV và biểu hiện.

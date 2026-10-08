@@ -244,3 +244,11 @@ THIẾU NỀN SỨC MẠNH MỚI
 Nền sức mạnh thay thế của RF chưa được chọn.
 
 Mọi thiết kế sau quyết định này phải bắt đầu từ trạng thái đó và không được dùng lại tu tiên như nền mặc định nếu chưa có một quyết định canon mới của tác giả.
+
+## 11. Giant, lập quốc AF và thương mại Hoa Nguyệt — chốt 2026-10-08
+
+Các thế lực ML và RF thời cổ đã hợp lực giết và phong ấn Giant tại long mạch nơi AF về sau lập quốc; phong ấn sinh ra tường lửa phía Bắc. Một mục tiêu lịch sử của phía RF và ML khi tạo AF là nhà nước bù nhìn/vùng đệm chịu tổn thất trước các đợt phương Bắc đánh xuống. Không gán quyết định/hợp đồng cho toàn RF hiện hành hoặc một member state/bloc cụ thể, và không suy quyền kiểm soát AF kéo dài mọi thời kỳ.
+
+Hoa Nguyệt–RF có thương mại đang hoạt động, mạnh hơn AF–RF. Hoa Nguyệt gần như không có cạnh tranh chính trị trực tiếp với RF như AF; quan hệ phía sau này tạo sức ép chiến lược lên AF. Cơ quan/đối tác RF, member state tham gia, hiệp định, luồng hàng, vận tải và kênh bí mật còn `UNKNOWN`.
+
+AF hiện vừa đối kháng vừa phụ thuộc vào RF. Quan hệ này không kết luận tương quan quân sự, union-wide policy, tuyên chiến, cắt thương mại hoặc mất tự trị.

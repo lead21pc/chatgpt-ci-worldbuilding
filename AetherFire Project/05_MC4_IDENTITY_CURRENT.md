@@ -97,8 +97,18 @@ Ngược lại, hệ thống cũng phải có khả năng ghi nhận rằng phá
 - Physical sex/morphology across configurations is `UNKNOWN`.
 - Trigger, direction, speed and control of switching are `UNKNOWN`.
 - The official character name remains a placeholder.
-- Authorial remake genealogy does not establish in-world cross-fiction provenance; MC4 as a cross-world actor remains `UNDER CONSTRUCTION / NOT CURRENT CANON`.
+- MC4 được xác nhận có nguồn gốc từ một chiều không gian khác và là con của Cosmos. Authorial remake genealogy không nhập cosmology/power scale/history; bản chất Cosmos/quan hệ sinh thành DEFERRED cho lần bàn sau; cơ chế/thời điểm xuất hiện, body/soul/memory transfer và liên hệ với các tầng fiction vẫn `UNKNOWN`.
 
 ## 6. Visual boundary
 
 MC4 follows the current functional Academy uniform standard in `14_BATTLEMAGE_ACADEMY_CURRENT.md`. Legacy colors or visual tendencies may inform later personal accents only if they do not override protection, movement, spellcasting, equipment carriage or Academy standards.
+
+## 7. Cross-dimensional origin — chốt 2026-10-08
+
+```text
+MC4
+→ origin: another dimension
+→ child of Cosmos
+```
+
+Hai mệnh đề trên không tự cấp năng lực, địa vị, thẩm quyền, miễn nhiễm, ký ức hoặc cơ chế xuyên không; không đồng nhất chiều không gian đó với Fiction 0/Fiction 1 hay nguồn của actor khác. Căn tính liên tục, hai configuration và Academy membership ở §§1–4 giữ nguyên.

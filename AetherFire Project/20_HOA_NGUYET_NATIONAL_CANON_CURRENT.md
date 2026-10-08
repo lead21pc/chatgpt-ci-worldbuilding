@@ -582,8 +582,8 @@ Hoa Nguyệt có quan hệ/tuyến giao thương với các quốc gia ngoài AF
 
 ### 3. UNKNOWN — chưa xác lập
 
-- Có tuyến Hoa Nguyệt–Matriarch's Lament đang vận hành hay không.
-- Có tuyến Hoa Nguyệt–Raging Fire đang vận hành hay không; không tự đồng nhất Raging Fire lineage với RF union.
+- Thương mại Hoa Nguyệt–ML và Hoa Nguyệt–RF đang hoạt động đã chốt ngày 2026-10-08; đường đi/cơ chế vẫn UNKNOWN.
+- Đối tác RF và quan hệ với Raging Fire lineage vẫn UNKNOWN; không đồng nhất lineage với RF union.
 - Cường quốc phía bắc nào, nếu có, đang giao thương trực tiếp với Hoa Nguyệt.
 - Đường bộ/biển/hàng không/sông, đèo, cửa khẩu, cảng, trạm caravan hoặc polity trung gian cụ thể.
 - Phương thức vận tải trên từng tuyến.
@@ -605,4 +605,16 @@ Nền địa lý giao thương đa hướng có thể dùng để thiết kế k
 
 ### 6. Ranh giới nén
 
-Hoa Nguyệt ở phía tây AF nhưng không bị AF cô lập. Có giao thương ngoài AF; Silk Road song phương không độc quyền. Không gian phía nam/phía bắc/đi vòng AF là khả năng địa lý, không bản đồ tuyến hiện hành. Các tuyến đến ML/Raging Fire/phương Bắc cụ thể vẫn UNKNOWN; thương mại không tự thành liên minh.
+Hoa Nguyệt ở phía tây AF nhưng không bị AF cô lập. Có giao thương ngoài AF; Silk Road song phương không độc quyền. Không gian phía nam/phía bắc/đi vòng AF là khả năng địa lý, không bản đồ tuyến hiện hành. Quan hệ thương mại với ML và RF đã được xác nhận, nhưng path/mode/hub/tác nhân/hàng hóa/luật cụ thể vẫn UNKNOWN; thương mại không tự thành liên minh.
+
+## 4. Thương mại ML/RF và áp lực chiến lược — chốt 2026-10-08
+
+### Hoa Nguyệt–Matriarch's Lament
+
+Hoa Nguyệt và ML có quan hệ cùng mạng thương mại đang hoạt động mạnh. Một nguyên nhân thuận lợi là nền phép thuật Hoa Nguyệt tương thích với hình ảnh/thông điệp tuyên truyền ML muốn thể hiện. Không suy hai bên chung bản thể phép thuật, tín ngưỡng, liên minh quân sự hoặc chuỗi chỉ huy.
+
+### Hoa Nguyệt–RF
+
+Hoa Nguyệt có quan hệ thương mại đang hoạt động với RF và mức giao thương mạnh hơn AF–RF. Một nguyên nhân là Hoa Nguyệt/RF gần như không có cạnh tranh chính trị trực tiếp như AF/RF. Hoa Nguyệt đi đường quan hệ phía sau với RF nhằm gây sức ép vào sườn AF; AF có động cơ chiến lược phá hoại Hoa Nguyệt.
+
+Không đồng nhất toàn RF, member states, blocs và Raging Fire lineage. Động cơ AF không chứng minh chiến dịch cụ thể đã xảy ra. Tuyến, đối tác, luồng hàng, vận tải, định lượng, điều ước, kênh bí mật và mức chính thức vẫn `UNKNOWN`; không suy alliance/intelligence/military access.

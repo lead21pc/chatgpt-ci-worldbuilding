@@ -1,8 +1,13 @@
 # AetherFire — Consolidation Index
-
-> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-10-07
+> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-10-08
 > **Location:** self-contained `AetherFire Project/` package. Current root files are maintained current sources; `Source_Archive/` preserves historical/provenance material only.
 > **Truth rule:** `ABSENCE OF CANON ≠ CANONICAL NEGATION`; `NOT ESTABLISHED ≠ FALSE`; unresolved relations remain `UNKNOWN / UNRESOLVED`.
+
+
+## World/meta/Giant — nhập canon 2026-10-08
+
+`01/10/12/20/30/40` giữ Giant, firewall có điều kiện, lập quốc vùng đệm và thương mại Hoa Nguyệt–ML/RF. `03/04/05` giữ Trúc Nha Fiction 0, MC4 con Cosmos/khác chiều, Site Y trước phân kỳ, tri thức MC2 và năng lực MC1/MC3 trong Fiction 1. UNKNOWN cũ chỉ đóng đúng assertion; lịch sử quyết định trước không thay canon mới. `92` AF-WMG-CHRON-001 giữ conflict Matriarch–ML–AF; không đổi tuổi hoặc tự dựng tiền thân. `91` giữ provenance; nguồn mới lưu byte-exact trong Source_Archive sau kiểm chứng.
+
 
 ## 1. Quy tắc đánh số và chọn nguồn
 
@@ -192,7 +197,7 @@ Operation Swap, người thế thân, lịch giải cứu và cây phản gián 
 - The Academy's six-year structure, five-person combat team, twelve competency blocks, daily training rhythm, multi-axis scholarship profile and concrete functional uniform direction are current canon. Exact hours, weights, thresholds and official names remain `UNKNOWN`.
 - The former Academy-failure-to-Undie route is removed from current and reconsideration layers. Archived sources retain it only as byte-exact provenance; it must not be reactivated.
 - MC4 is a current Academy actor with one continuous identity and two biological/cognitive configurations. Legacy mastery, Fusion, Spear mechanics, morphology and in-world cross-world origin are not imported.
-- Trần Trúc Nha belongs to Matriarch's Lament in current canon. Her proposed summoned/cross-world origin and the other unconfirmed cross-world/cross-time candidates are `UNDER CONSTRUCTION / NOT CURRENT CANON`.
+- Trần Trúc Nha belongs to Matriarch's Lament in current canon. Nguồn gốc Trúc Nha từ Fiction 0 đã chốt ngày 2026-10-08; cơ chế vẫn UNKNOWN. MC4 từ chiều khác, con Cosmos; ứng viên khác vẫn UNDER CONSTRUCTION / NOT CURRENT CANON.
 - `40_MATRIARCHS_LAMENT_CURRENT.md` is the authority for ML's internal domain. `01` retains only the global/cross-domain interface; this architecture split changes no lore status.
 
 ## 9. Stable aviation and RF airspace integration — 2026-09-17

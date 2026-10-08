@@ -27,11 +27,11 @@ Nhà nước **không phải một khối độc tài đơn nhất**. Độ sâu
 
 ## 2. Lập quốc, lãnh thổ và phòng thủ
 
-AetherFire mới thành lập khoảng **200 năm**. Nền lập quốc ban đầu gắn với một **hiệp ước phong ấn thủy tổ của ba cường quốc phía Bắc**, được cấu trúc bằng liên minh chính trị và hôn nhân. Vì vậy quan hệ AF–phương Bắc bắt đầu từ một settlement chính trị–ma thuật chung rồi mới phát triển thành thù địch hiện tại. Exact ritual/ancestral mechanics ngoài phần đã xác nhận giữ `UNKNOWN`.
+AetherFire mới thành lập khoảng **200 năm**. Trước khi AF tồn tại, ML và RF thời cổ đã hợp lực giết và phong ấn một Giant tại long mạch; Giant cùng thủy tổ ba tộc phía Bắc gắn với nguồn gốc ba chủng tộc theo mệnh đề ở `01`. Việc phong ấn sinh ra tường lửa phía Bắc. Cấu trúc sinh thành, ritual ban đầu, actor/thẩm quyền và cách dùng Raging Fire/Raging Phoenix vẫn `UNKNOWN`.
 
-AetherFire được xây trên long mạch. Dưới long mạch có thực thể cổ xưa có khả năng gây tận thế. Dòng Raging Phoenix của hoàng tộc có chức năng trấn áp/phong ấn liên quan tới cấu trúc này. Ontology huyết hệ và quan hệ với barrier thủy tổ phía Bắc ở `01`; việc vận hành và thẩm quyền phong ấn ở `12_POLITICS_DYNASTIC_SECURITY_CURRENT.md`.
+AetherFire được xây trên long mạch nơi Giant bị phong ấn. Mô tả cũ về thực thể cổ xưa/tận thế bị phong ấn giữ độc lập; danh tính so với Giant vẫn UNKNOWN, không đồng nhất chỉ vì cùng long mạch. Dòng Raging Phoenix của hoàng tộc có chức năng trấn áp/phong ấn liên quan tới cấu trúc này. Ontology huyết hệ và nguồn gốc Giant/tường lửa ở `01`; việc vận hành và thẩm quyền phong ấn ở `12_POLITICS_DYNASTIC_SECURITY_CURRENT.md`.
 
-Phía Bắc AF được chặn bởi một **tường lửa dùng huyết thống Raging Fire**, được duy trì/bảo trì qua hệ **trụ tinh thể dưới lãnh thổ AF**. Đổi lại dependency này, AF phải trả chi phí và có các nhượng bộ chính trị–thương mại cho RF.
+Phía Bắc AF được chặn bởi **tường lửa phát sinh từ phong ấn Giant**, có liên quan Raging Phoenix dưới long mạch. Sinh vật được phân loại không phải humanoid khi đi qua bị thiêu đốt liên tục và tiêu hao rất lớn sức mạnh/tinh thần. Không suy mọi chủng tộc phía Bắc đều non-humanoid hoặc firewall chắc chắn giết/ngăn mọi đối tượng. Dữ kiện độc lập hiện hành về huyết thống Raging Fire, bảo trì qua trụ tinh thể dưới lãnh thổ AF, chi phí và nhượng bộ chính trị–thương mại cho RF vẫn giữ; nguồn mới không xác nhận thêm ritual, actor cụ thể, authorization, chu kỳ hoặc điều kiện vô hiệu hóa, không gộp với Saint's Fresh thành một hợp đồng.
 
 ```text
 AF powerful ≠ AF strategically autonomous
@@ -40,7 +40,7 @@ RF bloodline / firewall
 → recurring political + commercial concessions
 ```
 
-Không gán chủ thể cung cấp/bảo trì/hợp đồng cho toàn liên hiệp RF hoặc khối mạnh nhất khi chưa có quyết định. Tường lửa, phong ấn long mạch và barrier thủy tổ không được nhập thành một cơ chế duy nhất; quan hệ chính xác còn mở. Hỗ trợ RF không đồng nhất dependency thánh vật ML.
+Không gán chủ thể cung cấp/bảo trì/hợp đồng cho toàn liên hiệp RF hoặc khối mạnh nhất khi chưa có quyết định. Tường lửa và phong ấn Giant là cùng chuỗi nguồn gốc lịch sử; không giữ một barrier thủy tổ độc lập để giải thích riêng tường lửa. Hỗ trợ RF không đồng nhất dependency thánh vật ML.
 
 ## 3. Nhà nước đa cực và các miền chuyên biệt
 
@@ -86,7 +86,7 @@ Mage Council
 
 Đối tượng nghiên cứu cơ thể người được lấy từ ba cường quốc phía Bắc: **Elf, Thú Nhân, Long tộc**. Đây là một nguyên nhân lịch sử trực tiếp khiến ba nước có grievance rất nặng và muốn ăn thua đủ với AetherFire; hostility phía Bắc không được mô tả như xung đột tùy tiện của các “bộ tộc yếu”.
 
-Exact temporal placement của site này trong mô hình `Canon 1 / Canon 2 overlap` chưa được chốt hoàn toàn vì concept site có trước khi hai trajectory được tách thành mô hình overlap hiện tại. **Nội dung site là canon; vị trí chính xác của từng event so với điểm divergence giữ `UNKNOWN` nếu source chưa chốt.**
+Site Y thuộc bản thể gốc Fiction 1 và đã tồn tại trước phân kỳ V0.5/Clash #1. **Nội dung site và sự tồn tại trước phân kỳ là canon; vị trí chính xác của từng event, thay đổi quản lý và trạng thái vận hành sau divergence giữ `UNKNOWN` nếu source chưa chốt.**
 
 ### 20A.2 Cult không thuộc Học viện; cult khai thác POW-specialist interface
 
@@ -192,7 +192,7 @@ Những yếu tố đó không cho phép:
 
 ## 8. UNKNOWN và ranh giới không tự lấp
 
-- Exact ritual/ancestral mechanics của lập quốc, quan hệ firewall–long mạch–barrier thủy tổ.
+- Exact ritual/ancestral mechanics của phong ấn Giant/lập quốc, maintenance và quan hệ Raging Fire/Raging Phoenix–long mạch–firewall ngoài chuỗi nguồn gốc đã chốt.
 - Nhà cung cấp, bên hợp đồng, bảo trì, authorization và cơ chế bearer/hiến tế; consent/sống-chết và liên hệ trait tái sinh.
 - Hiến định, quyền làm luật/diễn giải/thi hành/veto, ngân sách/bổ nhiệm/điều tra, ownership hạ tầng và chia sẻ thông tin.
 - Mage Council–chi nhánh–Học viện: pháp lý/chỉ huy, địa hạt/lãnh thổ, lab/cổng, gate access và trạng thái sau divergence.
@@ -202,3 +202,11 @@ Những yếu tố đó không cho phép:
 - Địa lý mới AF–ML–TE; không remap hành lang Quad Night 100 km, custody hoặc sườn Học viện cũ.
 
 `92_OPEN_ISSUES_CURRENT.md` giữ các ID và câu hỏi đầy đủ; `91_RECONCILIATION_RECORD.md` ghi bản đồ chuyển nội dung. Mốc này không giải quyết UNKNOWN, phục hồi tuyến Academy failure/spy → Undie, xác lập Operation Swap, hoàn thiện TE hoặc bổ sung lore.
+
+## 9. Mục đích lập quốc và thế đối kháng–phụ thuộc — chốt 2026-10-08
+
+Một mục tiêu lịch sử của phía RF và ML khi tạo AetherFire là dùng AF như nhà nước bù nhìn và vùng đệm hấp thụ tổn thất khi các chủng tộc phía Bắc đánh xuống, giúp họ có thời gian ứng phó. Đây là ý đồ lúc lập quốc, không phải quy tắc AF phải thua hoặc bằng chứng ML/RF kiểm soát AF ở mọi thời kỳ.
+
+Một số bộ phận AF bất bình vì vai trò chịu đòn; bất bình đó là nguyên nhân chính trị có liên quan vụ ám sát Matriarch, nhưng actor, người ra lệnh/hỗ trợ, phương thức, Cult involvement và phân bố tri thức chưa chốt. Quan hệ này còn `CONFLICTED / CHRONOLOGY OPEN` với tuổi ML/AF và chuỗi Matriarch chết → cộng đồng → ML.
+
+AF hiện vừa đối kháng vừa khó thoát phụ thuộc với ML và RF. Không suy toàn AF đồng thuận, đã tuyên chiến/cắt thương mại, mất tự trị hoặc đã thực hiện một chiến dịch trả đũa.
