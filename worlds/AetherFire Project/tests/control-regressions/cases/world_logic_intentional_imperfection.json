@@ -1,0 +1,39 @@
+{
+  "id": "world_logic_intentional_imperfection",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md:14, Imperfection And Design Intent",
+    "note": "Synthetic bounded paired probe; not accepted lore, a historical runtime failure, a model result, or authorization to activate semantic testing."
+  },
+  "operation": "Audit a bounded institutional ambiguity without redesigning it.",
+  "boundary": "Synthetic current design D, not AetherFire canon. Only the supplied legal/visual interface and its purpose; no full economy, sanction matrix, or actor outcome.",
+  "input": "The author explicitly establishes that D retains first-glance visual ambiguity, while identity must become legible upon closer inspection. This creates opportunities for legally defined misconduct and downstream fine extraction. The treasury benefits from the specified fines; observers who commit the defined misconduct bear those costs. The accepted boundary is delayed recognition, not permanent non-identification; the acceptance extent of other spillover is UNKNOWN. BASE: D satisfies both-stage recognition. Do not recommend instant universal identification merely as cleaner, safer, or fairer. VARIANT: markers become unreadable even on close inspection, violating the stated boundary. Report this actual functional failure without declaring all intended ambiguity defective, inventing a fix or sanction scope, or claiming intent guarantees successful containment.",
+  "protected_distinction": "INTENTIONAL AMBIGUITY != MISSING DEFINITION; FUNCTION PRESERVATION != FAILURE DENIAL; CONTROLLED VULNERABILITY != UNLIMITED VULNERABILITY",
+  "forbidden_conversion": "Optimize away the established delayed-recognition/extraction function; dismiss the VARIANT failure as intentional; invent accepted spillover, regulations, or repair.",
+  "recheck_on": [
+    "controls/AetherFire CI/AetherFire_CI_version_v3.0.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "controls/AetherFire CI/AetherFire_CI_version_v3.0.md",
+      "sha256": "D51F0EB0ACE499B434F8DCE64125B9232593E570EE940A10D562FB93972B4E96"
+    },
+    {
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+      "sha256": "227997F6621B49DB369D807742104E033F448BC04031D7C3102E0053FEF0A694"
+    },
+    {
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md",
+      "sha256": "20153ED4980D04CAF5CAF26EB04773C1B3EE40C9AF104012486F06488E566F0A"
+    },
+    {
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md",
+      "sha256": "3C9940F55C34D8725517AA0403ECE70D4815B93E0AF393530DEDAEF99308375A"
+    }
+  ]
+}

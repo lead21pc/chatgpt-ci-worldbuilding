@@ -1,0 +1,29 @@
+{
+  "id": "power_authority",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "controls/AetherFire CI/AetherFire_CI_version_v2.6.md:Architecture, Mechanism, and Authority; controls/Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md:21,293-311",
+    "note": "Phân biệt thẩm quyền hiện hành dựa trên CI dự án và overlay; không khẳng định thất bại runtime lịch sử."
+  },
+  "operation": "Đánh giá quyền quyết định trong tình huống giả định.",
+  "boundary": "Nhân vật X có sức mạnh tác động lên môi trường; không có nguồn giao quyền chỉ huy Y.",
+  "input": "BASE: X có năng lực tác động môi trường, quyền chỉ huy Y là UNKNOWN. VARIANT: sức mạnh thô của X tăng áp đảo, không xuất hiện nguồn giao quyền mới. So sánh trạng thái quyền chỉ huy ở hai tình huống; sức mạnh tăng có tự xác lập quyền ra lệnh không?",
+  "protected_distinction": "POWER != AUTHORITY",
+  "forbidden_conversion": "Biến sức mạnh thành quyền chỉ huy.",
+  "recheck_on": [
+    "controls/AetherFire CI/AetherFire_CI_version_v2.6.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "controls/AetherFire CI/AetherFire_CI_version_v2.6.md",
+      "sha256": "CFC10185DEF3D3F027FAC83DA11DF5BCB909192D385FB26CB76C54B5F8987A9C"
+    },
+    {
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md",
+      "sha256": "31E9BEE1348409E7728BD01C70DD9BEC15CB1E3120F33AC7333AF7E0DCCD49E2"
+    }
+  ]
+}

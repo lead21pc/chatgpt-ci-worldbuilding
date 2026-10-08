@@ -1,0 +1,34 @@
+{
+  "id": "belief_culture_doctrine_practice",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md:2; controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md:7",
+    "note": "Synthetic paired control probe; not historical runtime evidence, accepted lore, a model result, or authorization to activate semantic testing."
+  },
+  "operation": "Audit doctrine and practice without conflating their claim types.",
+  "boundary": "Synthetic rule and one village; no explanation of motives, enforcement machinery, or canon conflict resolution.",
+  "input": "An institution prohibits practice X. BASE: no practice evidence is supplied. VARIANT: a current source additionally reports X occurring in village V while the prohibition remains in force. In BASE do not conclude X never occurs. In VARIANT affirm that the rule and the documented practice coexist; they are not logically incompatible claims. Do not select hypocrisy, dissent, local exemption, or a hidden tradition as the explanation. If a separate source explicitly claims X never occurs in V at that same time, preserve that factual conflict rather than dissolving it into cultural variation.",
+  "protected_distinction": "PRESCRIPTION != OBSERVED PRACTICE; SOCIAL TENSION != SOURCE CONTRADICTION; GENUINE CONFLICT REMAINS OPEN",
+  "forbidden_conversion": "Treat a prohibition as total compliance; label contrary practice alone a canon conflict; invent a causal explanation; erase an explicit same-scope factual conflict.",
+  "recheck_on": [
+    "controls/AetherFire CI/AetherFire_CI_version_v3.0.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "controls/AetherFire CI/AetherFire_CI_version_v3.0.md",
+      "sha256": "D51F0EB0ACE499B434F8DCE64125B9232593E570EE940A10D562FB93972B4E96"
+    },
+    {
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+      "sha256": "227997F6621B49DB369D807742104E033F448BC04031D7C3102E0053FEF0A694"
+    },
+    {
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Belief_Culture_v1.0.md",
+      "sha256": "57CE3BF330C515E8EF2CAE355A170B8526C0C178C99C3BD740DD7294A91371DA"
+    }
+  ]
+}

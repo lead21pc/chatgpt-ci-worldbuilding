@@ -1,0 +1,34 @@
+{
+  "id": "world_logic_unknown_intent_and_repair",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md:14, Imperfection And Design Intent",
+    "note": "Synthetic bounded paired probe; not accepted lore, a historical runtime failure, a model result, or authorization to activate semantic testing."
+  },
+  "operation": "Distinguish unknown intent, a bounded tolerated leak, and an explicitly requested repair proposal.",
+  "boundary": "Synthetic information interface L; no real black-market mechanism, consent, surveillance system, or canon decision.",
+  "input": "L leaks information. A possible surveillance benefit is analytically plausible but no source confirms that purpose. BASE: report the known leak and UNKNOWN INTENT; do not call it deliberate, controlled, or necessarily a design failure, and do not redesign it during the audit. VARIANT: the author explicitly confirms that one named channel is tolerated, marks a separate spill as unintended, and requests a proposal to stop only that spill while preserving the named channel. Analyze that bounded distinction and offer a labeled proposal with explicit assumptions and any preserved/sacrificed function. Do not infer all leaks are tolerated, invent control capacity or accepted spillover, or present the requested proposal as current canon.",
+  "protected_distinction": "PLAUSIBLE FUNCTION != CONFIRMED DESIGN INTENT; CONTROLLED LOOPHOLE != BLANKET TOLERANCE; REQUESTED REPAIR PROPOSAL != CANON MUTATION",
+  "forbidden_conversion": "Promote the possible surveillance benefit to established intent; treat all flaws as intentional or all leaks as defects; reject a specifically requested bounded repair; silently close the tolerated channel or canonize the proposal.",
+  "recheck_on": [
+    "controls/AetherFire CI/AetherFire_CI_version_v3.0.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+    "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "controls/AetherFire CI/AetherFire_CI_version_v3.0.md",
+      "sha256": "D51F0EB0ACE499B434F8DCE64125B9232593E570EE940A10D562FB93972B4E96"
+    },
+    {
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+      "sha256": "227997F6621B49DB369D807742104E033F448BC04031D7C3102E0053FEF0A694"
+    },
+    {
+      "path": "controls/Anti-Drift Source/AetherFire_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md",
+      "sha256": "20153ED4980D04CAF5CAF26EB04773C1B3EE40C9AF104012486F06488E566F0A"
+    }
+  ]
+}
