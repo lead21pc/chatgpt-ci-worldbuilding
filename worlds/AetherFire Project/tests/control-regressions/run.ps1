@@ -169,7 +169,7 @@ try {
     $ciPath = Join-Path $projectRoot $currentVersioned['CI']
     $declaration = [regex]::Match(
         [IO.File]::ReadAllText($ciPath),
-        '^# AetherFire CI v(?<project>\d+\.\d+(?:\.\d+)?)\s+[—-]\s+ChatGPT v(?<base>\d+\.\d+(?:\.\d+)?)(?<qualifier> temp(?: \d+)?)? base\s*$',
+        '^# AetherFire CI v(?<project>\d+\.\d+(?:\.\d+)?)\s+[—-]\s+ChatGPT v?(?<base>\d+\.\d+(?:\.\d+)?)(?<qualifier> temp(?: \d+)?)? base\s*$',
         [Text.RegularExpressions.RegexOptions]::Multiline -bor [Text.RegularExpressions.RegexOptions]::IgnoreCase
     )
     if (-not $declaration.Success) { throw 'Selected Project CI has no unambiguous ChatGPT CI base declaration.' }
