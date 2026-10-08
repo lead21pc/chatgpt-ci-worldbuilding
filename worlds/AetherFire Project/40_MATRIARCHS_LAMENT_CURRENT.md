@@ -9,7 +9,7 @@
 
 > **Trạng thái:** CURRENT CANON / CONTROLLING MATRIARCH'S LAMENT DOMAIN — integrated 2026-09-11; architecture split recorded 2026-09-16; Matriarch/Saint's Fresh delta 2026-10-06; post-Creed governance delta 2026-10-07
 > **Authority boundary:** this file controls internal Matriarch's Lament governance, Temple/Cult, Matriarch origin and Saint's Fresh, Holy Guard, Trinity/relic economy, Trần Trúc Nha's regional role and doctrine, ML–TE routes/covert operations, and the northeastern tribes. Cross-domain interfaces are summarized in `01`; Undie professional and unresolved legal interfaces are controlled by `13`; cross-world status is controlled by `03`.
-> **Trúc Nha boundary:** membership and regional role in ML are current canon. A summoned/cross-world origin remains `UNDER CONSTRUCTION / NOT CURRENT CANON`.  
+> **Trúc Nha boundary:** membership and regional role in ML are current canon. Trúc Nha là người Việt Nam đến từ Fiction 0; transfer mechanism/timing/return remains `UNKNOWN`.  
 > **Phạm vi:** retcon Holy State, quan hệ với AetherFire, Transfusion EasterFire, Trinity Hexagon, Matriarch/Saint's Fresh, Thần điện, Thánh Nữ Trần Trúc Nha và các dependency lịch sử liên quan.
 > **Không phải:** full world bible, full constitution, full economy, full military doctrine hoặc full magic system.  
 > **Quy tắc:** nội dung dưới đây chỉ ghi các điểm đã được người dùng xác nhận trong chuỗi retcon hiện tại. UNKNOWN được giữ nguyên; không tự lấp.
@@ -72,7 +72,7 @@ ML year 0
 → Matriarch's Lament hình thành
 
 ML year ~300
-→ sự kiện phong ấn các thực thể / thủy tổ liên quan ba quốc gia phía Bắc
+→ ML và RF hợp lực giết và phong ấn Giant tại long mạch; không hiểu thành phong ấn chính ba thủy tổ
 → ML tham gia
 → một actor thuộc RF/Raging Fire tham gia; exact cấp lineage/liên hiệp/member-state giữ `UNKNOWN`
 → các actor khác theo canon riêng
@@ -92,7 +92,7 @@ Do đó:
 ML tồn tại trước AF khoảng 300 năm
 ```
 
-Tuổi ML khoảng 500 năm và AF khoảng 200 năm vẫn giữ. Matriarch đến Fiction 1 khoảng 500 năm trước rồi trải qua biến đổi, thờ phụng, ám sát và cộng đồng hình thành polity (§25). Hai mốc xấp xỉ không tự định nghĩa thời lượng từng bước hoặc nhà nước hình thành tức thì; chronology chi tiết còn mở.
+Tuổi ML khoảng 500 năm và AF khoảng 200 năm vẫn giữ. Matriarch đến Fiction 1 khoảng 500 năm trước rồi trải qua biến đổi, thờ phụng, ám sát và cộng đồng hình thành polity (§25). Xác nhận 2026-10-08 rằng bất bình của một số bộ phận AF với vai trò vùng đệm góp phần vào vụ ám sát không thể xếp vào chuỗi này mà không thêm tiền đề. Giữ `CONFLICTED / CHRONOLOGY OPEN`; không tự tạo AF tiền thân, đổi tuổi, thêm Matriarch/vụ ám sát hoặc tráo chủ thể.
 
 ---
 
@@ -736,7 +736,7 @@ UNKNOWN ≠ PERMISSION TO INVENT.
 
 ## 25. Matriarch, nguồn thánh lực và Saint's Fresh — chốt 2026-10-06
 
-Nguồn tác giả `AetherFire_Matriarchs_Lament_Matriarch_Origin_Saints_Fresh_Canon_2026-10-06.md`; yêu cầu audit và nhập canon. Giữ đầy đủ §§1–15 dưới đây; chỉ đổi cấp heading để chứa trong module. `03` giữ thứ tự nhân quả Fiction 0/điểm đến Fiction 1, không định nghĩa cơ chế transfer chung. Trúc Nha và Matriarch không bị nhập làm một; nguồn gốc Trúc Nha vẫn UNDER CONSTRUCTION.
+Nguồn tác giả `AetherFire_Matriarchs_Lament_Matriarch_Origin_Saints_Fresh_Canon_2026-10-06.md`; yêu cầu audit và nhập canon. Giữ đầy đủ §§1–15 dưới đây; chỉ đổi cấp heading để chứa trong module. `03` giữ thứ tự nhân quả Fiction 0/điểm đến Fiction 1, không định nghĩa cơ chế transfer chung. Trúc Nha và Matriarch không bị nhập làm một; nguồn gốc Fiction 0 của Trúc Nha đã chốt 2026-10-08, còn cơ chế transfer vẫn mở.
 
 ### 1. Matriarch — nguồn gốc
 
@@ -851,7 +851,7 @@ INVULNERABILITY
 
 Bà đã bị ám sát.
 
-Exact hung thủ, actor hỗ trợ, động cơ và causal chain của vụ ám sát vẫn chưa chốt trong delta này.
+Một số bộ phận AF bất bình vì AF bị ML/RF dùng làm vùng đệm; bất bình đó là một nguyên nhân chính trị có liên quan vụ ám sát. Exact hung thủ, người ra lệnh/hỗ trợ, phương thức, Cult involvement, causal chain và phân bố tri thức vẫn chưa chốt. Quan hệ thời gian với sự hình thành ML/AF giữ conflict ở §2/§27.
 
 ---
 
@@ -1176,7 +1176,7 @@ Chưa chốt:
 16. Cult biết đến mức nào về Matriarch và Saint's Fresh;
 17. ai ám sát Matriarch;
 18. Cult có liên quan vụ ám sát hay không;
-19. động cơ gốc của vụ ám sát;
+19. động cơ đầy đủ ngoài bất bình chính trị của một số bộ phận AF đã chốt; niên đại nguyên nhân này CONFLICTED / CHRONOLOGY OPEN;
 20. exact quá trình cộng đồng Matriarch trở thành nhà nước ML;
 21. full Saintess selection / succession;
 22. quan hệ giữa Saintess, Matriarch và thần tính ngoài những điểm đã chốt;
@@ -1793,3 +1793,30 @@ MATRIARCH'S POWER CAN HEAL
 SYSTEM NAME = UNKNOWN.
 UNKNOWN REMAINS UNKNOWN.
 ```
+
+## 27. Giant, Hoa Nguyệt và conflict Matriarch–ML–AF — chốt 2026-10-08
+
+### Ancient Giant / firewall
+
+ML và RF thời cổ hợp lực giết và phong ấn Giant tại long mạch nơi AF về sau lập quốc. Giant cùng thủy tổ ba tộc phía Bắc gắn với nguồn gốc ba chủng tộc; cấu trúc sinh thành chi tiết còn `UNKNOWN`. Phong ấn tạo tường lửa phía Bắc. Không gộp quyền bảo trì/ritual với Saint's Fresh hoặc suy ML hiện nắm quyền điều khiển firewall.
+
+### Hoa Nguyệt–ML
+
+Hoa Nguyệt và ML có quan hệ cùng mạng thương mại đang hoạt động mạnh. Nền phép thuật Hoa Nguyệt tương thích với hình ảnh/thông điệp tuyên truyền ML muốn thể hiện. Điều này không xác lập cùng ontology, chung tín ngưỡng, liên minh quân sự, chuỗi chỉ huy, tuyến/hàng hóa/luật hoặc actor vận hành cụ thể.
+
+### AF buffer history và current relation
+
+Một mục tiêu lịch sử của phía RF và ML khi tạo AF là nhà nước bù nhìn/vùng đệm hấp thụ tổn thất từ phương Bắc. AF hiện vừa căm ghét ML vừa khó thoát phụ thuộc vào ML; hostility và commerce/dependency cùng tồn tại, không chứng minh chiến tranh, cắt thương mại, mất tự trị hoặc toàn AF có cùng ý chí.
+
+Một số bộ phận AF bất bình với vai trò vùng đệm; bất bình này góp phần vào nguyên nhân vụ ám sát Matriarch ở cấp động cơ/bối cảnh. Tuy nhiên:
+
+```text
+Matriarch bị ám sát
+→ follower mourning
+→ cộng đồng / Matriarch's Lament hình thành
+
+ML age ≈ 500 years
+AF age ≈ 200 years
+```
+
+không tự tương thích với việc bộ phận AF quốc gia đã bất bình trước vụ ám sát. Trạng thái bắt buộc là `CONFLICTED / CHRONOLOGY OPEN`. Không sửa bằng AF tiền thân, dời tuổi, nhiều Matriarch/nhiều vụ ám sát hoặc premise chưa được tác giả chốt.

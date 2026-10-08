@@ -1,8 +1,51 @@
 # AetherFire — Open Issues Current
-
 > **Generated control view:** compact routing layer derived from the active reconciliation record; not a world-bible source and not authority to resolve its own entries.  
 > **Use:** read after `00_AETHERFIRE_CONSOLIDATION_INDEX.md` and before relevant current canon, new sources, or substantive prompt execution.  
 > **Truth rule:** `UNKNOWN / NOT ESTABLISHED` is neither `FALSE` nor permission to invent.
+
+
+## World/meta/Giant — các mục mở 2026-10-08
+
+**AF-WMG-CHRON-001 — CONFLICTED / CHRONOLOGY OPEN.** `40` / `03` giữ hai nhóm mệnh đề. Cosmos/quan hệ sinh thành và giới hạn Fictionize trong Fiction 1 DEFERRED cho lần bàn sau; chi tiết chưa chốt khác UNKNOWN.
+
+### 16. Xung đột niên đại Matriarch–ML–AF — PHẢI GIỮ MỞ
+
+**Hai nhóm mệnh đề đều có nguồn, nhưng hiện chưa thể đồng thời xếp thành một niên biểu hoàn chỉnh mà không thêm tiền đề chưa được xác nhận:**
+
+1. **Nguồn `40` hiện hành:** ML có tuổi khoảng 500 năm; AF khoảng 200 năm; Matriarch bị ám sát trước giai đoạn người theo bà thương tiếc, hình thành cộng đồng quanh di sản rồi hình thành Matriarch's Lament. Như vậy vụ ám sát đứng **trước sự hình thành ML** trong nguồn đang có.
+2. **Xác nhận tác giả ngày 2026-10-08:** một số bộ phận AF bất bình với vai trò vùng đệm và sự bất bình đó góp phần vào **vụ ám sát Matriarch về sau**. AF với tư cách quốc gia vùng đệm được hình thành sau liên minh/phong ấn cổ.
+
+**Trạng thái:** `CONFLICTED / CHRONOLOGY OPEN` ở quan hệ thời gian giữa vụ ám sát Matriarch, sự hình thành ML và sự tồn tại của AF đủ để xuất hiện các bộ phận bất bình. **Không** tự chữa bằng cách đặt thêm một “AF tiền thân”, dời tuổi ML, dời tuổi AF, tạo một Matriarch khác, giả định nhiều vụ ám sát hoặc tráo chủ thể chịu trách nhiệm. Mệnh đề tác giả vừa xác nhận về **nguyên nhân chính trị có liên quan** được giữ; xung đột là **cách đặt nó vào niên biểu hiện hành**.
+
+### 17. Những điểm chỉ được giải quyết một phần
+
+| Phạm vi | Đã xác nhận | Vẫn chưa xác lập |
+| --- | --- | --- |
+| Hoa Nguyệt–ML | Có thương mại đang hoạt động mạnh và một cơ sở tương thích về phép thuật/hình ảnh tuyên truyền | Tuyến, tác nhân, hàng hóa, luật và cơ chế giao dịch |
+| Hoa Nguyệt–RF | Có thương mại mạnh hơn AF–RF và ảnh hưởng cạnh tranh đến AF | Thành viên RF tham gia, hiệp định, kênh hoạt động, chiến dịch phá hoại cụ thể |
+| Trúc Nha | Người Việt Nam từ Fiction 0; thế giới thuần esper lấy thế giới thật làm cơ sở tham chiếu | Cơ chế xuyên giới, lịch riêng, cách esper khác nhau giữa các quốc gia |
+| MC4 | Từ chiều không gian khác; con của Cosmos | Bản chất Cosmos, quan hệ với các tầng fiction, cơ chế và thời điểm xuất hiện |
+| Site Y | Tồn tại trước phân kỳ | Niên đại từng sự kiện, trạng thái/chuỗi quản lý sau phân kỳ |
+| MC2 | Có hiểu biết thực chất về Fictionize, POC, bản thân và thế giới | Mốc đạt từng tri thức, toàn bộ nội dung Canon 1 hoặc cơ chế kỹ thuật sâu |
+| POC của MC3 ở Fiction 1 | Giảm cấp thành tác động đến cách người đối diện nhìn nhận trong giao tiếp | Điều kiện, giới hạn, kháng cự và duy trì tác dụng |
+| Fictionize của MC1 ở Fiction 1 | Dùng fiction trong các sách/tác phẩm có thể tiếp cận để đi vào trải nghiệm và tập luyện | Toàn bộ giới hạn vận hành và hệ quả xuyên tầng |
+| Tường lửa | Phát sinh từ phong ấn Giant; tác động mạnh lên sinh vật không phải humanoid khi vượt qua | Phân loại hình thái cụ thể, chi phí bảo trì, ritual/authority, điều kiện vô hiệu hóa |
+| Fiction 1 | AetherFire là sản phẩm MC1 viết và thương mại hóa bằng Fictionize | Vật lý siêu hình chính xác của sự hiện thực hóa và vận hành độc lập |
+| Matriarch | Có nguyên nhân bất bình chính trị từ một số bộ phận AF | **Xung đột niên đại** với nguồn `40`; thủ phạm, hành động và chuỗi thực hiện |
+
+### 18. Những điều không được suy từ bản bổ sung này
+
+- Không tự xác nhận Hoa Nguyệt, ML và RF là liên minh chính thức hoặc có quyền quân sự chung chỉ vì giao thương.
+- Không coi mọi tác nhân RF thống nhất ý chí hay toàn AF cùng chia sẻ bất bình/hành động.
+- Không coi **Cosmos** là một vị thần, thực thể vũ trụ toàn năng, tác giả sáng tạo fiction hay người quản lý thế giới chỉ từ tên gọi.
+- Không mặc định cơ chế xuyên giới của Trúc Nha giống MC1, MC3, MC4 hoặc Matriarch.
+- Không biến ảnh hưởng giao tiếp của MC3 thành thao túng lòng tin chắc chắn.
+- Không dùng Fictionize để trao quyền chỉnh sửa trực tiếp Canon 2 cho MC1.
+- Không kết luận mọi chủng tộc phía Bắc đều là **non-humanoid** hoặc cùng chịu một mức sát thương; điều kiện màn phép và phân loại thực thể là hai dữ kiện khác nhau.
+- Không gọi lịch sử Matriarch đã hòa giải khi xung đột tại mục 16 chưa được tác giả xử lý.
+- Không xóa các dữ kiện độc lập về tuổi quốc gia, phụ thuộc RF/ML, Saint's Fresh, phân quyền AF, cấu trúc liên hiệp RF, canon Civil/Undie hoặc quan hệ Canon 1/Canon 2.
+
+
 
 ## Địa chỉ miền hiện hành — 2026-10-07
 
@@ -70,8 +113,8 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | AF-OPEN-024 | UNKNOWN / OPEN | Current teleport-gate access and post-divergence sabotage/lab operational state. | `10` §5 and `03`. |
 | AF-OPEN-025 | UNKNOWN / OPEN | MC4 morphology, switching trigger/control, medical/magical interaction, official name and who knows/detects the secret. | `05`. |
 | AF-OPEN-026 | UNKNOWN / OPEN | MC4 current specialization and any future import of Fusion, restraint philosophy or a redesigned Spear. | `05`; legacy mastery and absolute Spear mechanics are not current. |
-| AF-OPEN-027 | UNDER CONSTRUCTION / NOT CURRENT CANON | Whether Trần Trúc Nha was summoned from another world. | `03`; her membership and regional role in ML remain canon, while the proposed cross-world origin is not current. |
-| AF-OPEN-028 | UNDER CONSTRUCTION / NOT CURRENT CANON | Cross-world/cross-time status of MC4 and the other proposed outsiders, plus origin, mechanism, body/soul/memory transfer, return path and chronology. | `03` and `05`; no shared mechanism is established and none of these candidate origins is current canon. |
+| AF-OPEN-027 | PARTIALLY RESOLVED / TRANSFER OPEN | Trúc Nha là người Việt Nam từ Fiction 0, cùng thế giới MC1/MC3. | `03` / `40`; cơ chế, tác nhân, thời điểm, body/soul/memory transfer và đường về UNKNOWN; vai trò ML giữ nguyên. |
+| AF-OPEN-028 | PARTIALLY RESOLVED / DEFERRED / OTHER CANDIDATES OPEN | MC4 từ chiều không gian khác, con Cosmos. | `03` / `05`; Cosmos/quan hệ sinh thành DEFERRED; transfer/chronology/quan hệ tầng fiction UNKNOWN; ứng viên khác chưa thành canon, không có cơ chế chung. |
 | AF-OPEN-029 | PROPOSAL / OPEN | Whether to canonize Nguyên Chủ/Nguyên Anh generally, adopt `元主 / 元嬰`, or assign the ontology/title to MC2's mother. | `90`; none of these three decisions is made by the RF retcon. |
 | AF-OPEN-031 | CONFLICT / OPEN | Legacy label `khu nghiên cứu cơ thể người` coexists with canon Academy subjects listed as Elf, Beastman and Dragon. | `10` §5; decide whether this is a technical umbrella label or must be renamed to a species-neutral body-research term. Do not infer personhood from the label. |
 | AF-AC-001 | UNKNOWN / OPEN | DI legal powers and direct sanctions; review/appeal procedures; permitted function overlap; final qualification authority and requalification; advisor/medical/command confidentiality; supervised year-6 missions and professional-unit transfer rules; treatment of students who do not qualify; Academy authority over adjacent facilities. | `14` section 11 and military-training source section 16; `10` §5 for external/site authority. No Marine Corps structure or replacement failure-to-Undie route is inferred. |
@@ -109,7 +152,7 @@ Only explicit current user confirmation can restore an old claim. Restoring one 
 | AF-AV-001 | RESOLVED | AF is the only currently confirmed actor with stable, scalable aviation infrastructure; this is not a universal/permanent monopoly claim and does not negate other actors' flight capability. |
 | AF-AV-004 | RESOLVED | No numeric flight volume is canonized. Exact capacity/throughput remains `UNKNOWN`; current wording is mass, scheduled and scalable operation. |
 | AF-OPEN-030 | RESOLVED / REMOVED | `Academy failure → Undie` is not a current or reconsideration route. Archived occurrence is provenance only. |
-| AF-ML-002 | RESOLVED | Trần Trúc Nha's ML membership and regional role are current canon; her proposed summoned/cross-world origin is `UNDER CONSTRUCTION / NOT CURRENT CANON`. |
+| AF-ML-002 | RESOLVED | Trúc Nha thuộc ML, vai trò giữ nguyên; người Việt Nam từ Fiction 0 đã chốt 2026-10-08. Cơ chế chuyển giới UNKNOWN. |
 | AF-OPEN-032 / AF-ML-009 | RESOLVED / REMOVED | `foreign spy / infiltrator → punitive Undie` is removed from current canon and reconsideration because it no longer fits the political-centric setting. Archived occurrence is provenance only; replacement legal/status handling remains `UNKNOWN`. |
 
 ## 9. Institution/technology/guest-service implementation — 2026-10-03
@@ -436,7 +479,7 @@ Tất cả giữ CHƯA CHỐT. Danh sách là câu hỏi thiết kế, không b�
 
 ## Matriarch / Saint's Fresh — các mục mở 2026-10-06
 
-`40` §25 giữ đủ canon delta, `03` giữ timeline interface. Chỉ Matriarch được chốt origin Fiction 0; AF-OPEN-027/028 về Trúc Nha và các ứng viên khác không đổi.
+`40` §25 giữ đủ canon delta, `03` giữ timeline interface. Matriarch và Trúc Nha đã chốt Fiction 0, không mặc định chung cơ chế; MC4 từ chiều khác/con Cosmos. AF-OPEN-027/028 cập nhật từng phạm vi; ứng viên khác vẫn mở.
 
 | ID | Trạng thái | Phạm vi |
 | --- | --- | --- |
@@ -444,8 +487,8 @@ Tất cả giữ CHƯA CHỐT. Danh sách là câu hỏi thiết kế, không b�
 | AF-ML-ORIGIN-002 | UNKNOWN / OPEN | Holy power transformation và tồn tại trong thi hài; regenerative relic tốc độ/giới hạn/chi phí, lượng fresh/chu kỳ/tiêu hao/biến đổi, counterfeit detection/failure mode; không suy fresh được sao chép. |
 | AF-ML-ORIGIN-003 | UNKNOWN / OPEN | Seal target/renewal/procedure, actor ML cho phép và AF tiếp nhận/vận hành/chứng kiến, custody/ownership/Trinity; access gate Saintess không toàn quyền chính trị. |
 | AF-ML-ORIGIN-004 | UNKNOWN / OPEN | Danh sách/compartmentalization người biết thi hài, AF/Cult knowledge; nguồn gốc divine component và authority không đồng nhất. |
-| AF-ML-ORIGIN-005 | PARTIALLY RESOLVED / OTHER IMPLEMENTATION OPEN | Khung hậu-Creed đã chốt tại `40` §26; hung thủ/hỗ trợ/động cơ/Cult assassination role, chuyển cộng đồng thành polity, Saintess selection/succession/relation và thủ tục triển khai hậu-Creed vẫn UNKNOWN / OPEN; không giữ split-self bypass chain cũ. |
-| AF-ML-ORIGIN-006 | UNKNOWN / CHRONOLOGY CLARIFICATION | Exact transfer actor/mechanism/timing, khoảng từ arrival ≈500 năm trước tới ML foundation ≈500 năm tuổi; thời điểm/ý nghĩa “hệ phép thuật AetherFire” với AF ≈200 năm tuổi. Hai mốc xấp xỉ không buộc zero thời lượng; chưa kết luận conflict hoặc tự đặt luật chung. |
+| AF-ML-ORIGIN-005 | PARTIALLY RESOLVED / OTHER IMPLEMENTATION OPEN | Khung hậu-Creed đã chốt tại `40` §26; hung thủ/hỗ trợ/động cơ ngoài bất bình AF đã chốt/Cult assassination role, chuyển cộng đồng thành polity, Saintess selection/succession/relation và thủ tục triển khai hậu-Creed vẫn UNKNOWN / OPEN; không giữ split-self bypass chain cũ. |
+| AF-ML-ORIGIN-006 | UNKNOWN / CHRONOLOGY CLARIFICATION | Exact transfer actor/mechanism/timing, khoảng từ arrival ≈500 năm trước tới ML foundation ≈500 năm tuổi; thời điểm/ý nghĩa “hệ phép thuật AetherFire” với AF ≈200 năm tuổi. Hai mốc xấp xỉ không buộc zero thời lượng; Không tự đặt luật chung; conflict bất bình AF → ám sát Matriarch ghi riêng tại AF-WMG-CHRON-001. |
 
 ### Đầy đủ 23 câu hỏi nguồn §14
 
@@ -467,7 +510,7 @@ Tất cả giữ CHƯA CHỐT. Danh sách là câu hỏi thiết kế, không b�
 16. Cult biết đến mức nào về Matriarch và Saint's Fresh;
 17. ai ám sát Matriarch;
 18. Cult có liên quan vụ ám sát hay không;
-19. động cơ gốc của vụ ám sát;
+19. động cơ đầy đủ ngoài bất bình chính trị của một số bộ phận AF đã chốt; niên đại nguyên nhân này CONFLICTED / CHRONOLOGY OPEN;
 20. exact quá trình cộng đồng Matriarch trở thành nhà nước ML;
 21. full Saintess selection / succession;
 22. quan hệ giữa Saintess, Matriarch và thần tính ngoài những điểm đã chốt;
@@ -484,7 +527,7 @@ Các UNKNOWN ở §§3/6/9/11/13 và tại các owner vẫn giữ: ngưỡng ng�
 | --- | --- | --- |
 | AF-HN-OPEN-001 | UNKNOWN / OPEN | Màu/quốc kỳ, hình học cuối cùng, Hoa/số cánh/chữ 月, relation lục giác–Lục Kì Nhân; không suy nguyên nhân từ cùng số sáu. |
 | AF-HN-OPEN-002 | UNKNOWN / OPEN | Lịch sử quốc hiệu kép/chữ 華, cơ quan chuẩn hóa, luật/nghi lễ, tên thông tục, dark-foundation disclosure và tri thức từng actor. |
-| AF-HN-OPEN-003 | UNKNOWN / OPEN | Tuyến ML/Raging Fire/phương Bắc nào đang tồn tại, bản đồ/path/mode/hub/tác nhân trung gian, capacity/cost/seasonality/safety và goods/tariffs/treaties. |
+| AF-HN-OPEN-003 | PARTIALLY RESOLVED / IMPLEMENTATION OPEN | Thương mại Hoa Nguyệt–ML/RF đang hoạt động đã chốt; RF mạnh hơn AF–RF. Đối tác RF/lineage, bản đồ/path/mode/hub, capacity/cost/seasonality/safety và goods/tariffs/treaties vẫn UNKNOWN; phương Bắc khác chưa chốt. |
 | AF-HN-OPEN-004 | UNKNOWN / OPEN | Di trú/cư trú/hôn nhân/tị nạn/dẫn độ/citizenship, liên minh/quân sự/chỉ huy/tình báo/political alignment; thương mại không tự cấp các quan hệ ấy. |
 | AF-HN-OPEN-005 | UNKNOWN / DESIGN NOT ADMITTED | Node/tiểu quốc/định cư biên giới/mạng caravan/thương nhân và không gian địa chính trị áp lực vừa phải. Delta chỉ cho nền thiết kế, không xác lập từng thực thể; không khôi phục Quad Night/Holy State gate. |
 

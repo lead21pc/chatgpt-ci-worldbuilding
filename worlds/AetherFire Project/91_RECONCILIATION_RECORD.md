@@ -2,6 +2,19 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## World/meta/Giant — nhập canon 2026-10-08
+
+**Quyền:** tác giả yêu cầu audit/nhập canon, tiếp tục hoàn tất vào file gốc và xoá folder tạm. Chấp nhận đúng nguồn §§1–15, không tự hòa giải §16. Nguồn: `Source_Archive/AetherFire_Canon_Delta_2026-10-08_World_Meta_Giant.md`, SHA-256 `DB6828167D7779E6DB81BC37CA5AC61F973235ED395C1D4223323DF100C088C6`, 26746 bytes; bản gốc lưu byte-exact sau kiểm chứng.
+
+**Baseline:** HEAD `db420d6de9cc3788249f5012753caf9ce14547ce`; nhánh tác vụ `maintenance/aetherfire-world-meta-giant-20261008`. Changes controls/tests/Academy có sẵn được giữ ngoài tác vụ. Không push trong lượt này.
+
+**AF-WMG-001–015:** mỗi ID tương ứng số mục nguồn. 001–002 thương mại HN–ML/RF → `20/01/30/12`; 003 Trúc Nha/Fiction 0 → `03/40`; 004 MC4 → `05/03`; 005 Site Y → `03/10`; 006 tri thức MC2 → `03/04`; 007 POC MC3 → `03/04`; 008 Fictionize MC1 → `03`; 009 firewall → `01/10`; 010 Fiction 1 thương mại/agency → `03`; 011–012 Giant/phong ấn → `01/10/30/40`; 013–015 lập quốc/bất bình/đối kháng–phụ thuộc → `10/12/40`. Chỉ đóng tồn tại/quan hệ đã xác nhận, không đóng cơ chế. UNKNOWN/DEFERRED và giới hạn suy luận nguồn §§17–18 giữ đầy đủ tại `92`.
+
+**AF-WMG-CHRON-001 — CONFLICTED / CHRONOLOGY OPEN:** giữ assassination → mourning community → ML hình thành, ML≈500 năm/AF≈200 năm, đồng thời giữ bất bình AF góp phần ám sát. Không thêm tiền thân, đổi tuổi, thêm Matriarch/vụ ám sát hoặc tráo actor. Giant không tự đồng nhất thực thể cổ khác. Không xoá dependency RF/ML hoặc khung hậu-Creed.
+
+**Kiểm chứng:** đối chiếu assertion và miền trực tiếp bị tác động; không tuyên bố FULL_AUDIT toàn bộ corpus hoặc kiểm chứng runtime ChatGPT. Builder --write/--check PASS: 14 modules, 18 current hashes, không đọc archive; 35 unittest PASS. Chưa kiểm chứng runtime ChatGPT.
+
+
 ## Ba góc nhìn chức năng — thay §1.2, chốt 2026-10-08
 
 **Quyền:** yêu cầu tác giả AUDIT → DESIGN → IMPLEMENT trong tệp đính kèm `Pasted text.txt`; §1.2 phải thay đổi để xử lý lỗi runtime tác giả báo: model dùng taxonomy cũ kéo thế giới về topology/sự kiện/roster MC cũ. SHA-256 yêu cầu: `D66DE59524F7D3FE1DFF76C17262B401DD6F97E986F7B54A3E81691E2D14FD1F`. Đây là quan sát runtime do tác giả cung cấp; lượt này không tái hiện trực tiếp bằng ChatGPT Project.

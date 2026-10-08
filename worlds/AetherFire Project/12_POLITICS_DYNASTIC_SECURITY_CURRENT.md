@@ -359,3 +359,12 @@ Các P1–P11/H1–H6/D1–D4/ma trận ứng viên ở `90` không lấp các m
 ## RF — giao diện quyết định thay thế 2026-10-06
 
 `30_RF_NATIONAL_CANON_CURRENT.md` / `AFM-014` giữ toàn bộ §§1–10 của quyết định RF bỏ tu tiên, các dữ kiện độc lập và các UNKNOWN. RF vẫn là liên hiệp lục địa, không tự có hệ sức mạnh thay thế hoặc mục tiêu kỹ thuật mới. `06_STABLE_AVIATION_RF_AIRSPACE_CURRENT.md` giữ hàng không/không phận; `01` giữ ontology huyết hệ. Không phục hồi tiền đề hoặc so sánh quân sự cũ.
+
+## Nền chính trị AF–ML–RF và Hoa Nguyệt — chốt 2026-10-08
+
+- ML và RF thời cổ hợp lực giết/phong ấn Giant tại long mạch; phong ấn tạo tường lửa. Thẩm quyền/contract/maintenance và việc phân bổ trách nhiệm cho union, member state, bloc hoặc lineage vẫn `UNKNOWN`.
+- Một mục tiêu lúc tạo AF là nhà nước bù nhìn/vùng đệm hấp thụ tổn thất từ phương Bắc. AF về sau phát triển thành nhà nước đa cực có agency; mục đích lịch sử không chứng minh quyền kiểm soát hiện hành của ML/RF.
+- AF hiện đồng thời đối kháng và phụ thuộc vào ML/RF. Một số bộ phận AF bất bình với vai trò vùng đệm; bất bình này liên quan động cơ vụ ám sát Matriarch nhưng chronology còn conflicted và không xác lập hung thủ/chuỗi hành động.
+- Hoa Nguyệt đi đường quan hệ phía sau với RF để gây sức ép vào sườn AF; AF có động cơ chiến lược phá hoại Hoa Nguyệt. Không canon hóa một chiến dịch, cơ quan, authorization, phương thức hay kết quả phá hoại.
+
+Các mệnh đề trên không biến RF thành actor đơn nhất, không chứng minh toàn AF cùng ý chí và không thay các actor/thẩm quyền hiện hành chưa chốt.
