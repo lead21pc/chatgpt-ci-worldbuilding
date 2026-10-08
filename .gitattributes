@@ -1,3 +1,4 @@
 # Preserve CI character counts and historical line endings exactly.
 *.txt -text
 *.md -text
+codex-workflows/Source_Archive/** -text

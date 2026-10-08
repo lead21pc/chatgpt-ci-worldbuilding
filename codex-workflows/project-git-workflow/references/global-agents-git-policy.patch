@@ -1,0 +1,11 @@
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -76,4 +76,1 @@
+-- Use a task-specific branch for substantial work, for example:
+-  bugfix/<short-name>
+-  feature/<short-name>
+-  maintenance/<short-name>
++- Reuse the checkout and branch already bound to this chat/project across milestones. Do not create a branch merely for a new task, test, version, or dirty worktree. Create one only for initial binding when needed or at the user's explicit request. Use project-git-workflow to validate the bound repository, scope, checkout, branch, HEAD, and staged baseline before edits, staging, or commits.
+@@ -81,1 +78,1 @@
+-- Stage only files and hunks created or modified by the current task. Do not use broad staging such as `git add -A` when the baseline was dirty.
++- Stage task-owned changes only; additionally, when the user has authorized automatic tracking, project-git-workflow may receive eligible untracked files within the bound project. Preserve unrelated tracked and pre-staged changes. Do not use broad staging such as `git add -A` when the baseline was dirty.

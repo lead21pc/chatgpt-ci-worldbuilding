@@ -7,6 +7,8 @@ description: Tạo artifact mới bằng cách đối chiếu, sao chép hoặc 
 
 Áp dụng khi tạo artifact mới từ file cũ để đối chiếu, sao chép hoặc làm bản tiền nhiệm. Chuyển các file cũ thuộc tác vụ vào archive sau khi bản mới hoàn tất và được kiểm chứng; giữ bản mới ở vị trí làm việc. Chỉ dẫn cụ thể của người dùng về nguồn, đích và việc giữ bản cũ có ưu tiên cao hơn skill.
 
+Skill này chỉ sở hữu thao tác lưu file, hash và tính chỉ đọc. Skill chuyên môn xác định nguồn nào được phép chuyển, ý nghĩa provenance/canon và quyết định thay thế; không suy canon từ archive. `project-git-workflow` sở hữu mọi thao tác Git và binding. Audit/planning chỉ đọc không chuyển file dù skill archive được chọn cùng lúc.
+
 ## Xác định nguồn và đích
 
 - Ghi rõ file nguồn cũ, artifact mới, thư mục gốc của tác vụ và phạm vi bản mới thay thế. Không gom các file khác chỉ vì cùng thư mục hoặc có tên gần giống.

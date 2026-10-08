@@ -17,7 +17,7 @@ Giữ đúng thao tác người dùng yêu cầu:
 - `COMPACT`: rút gọn nhưng giữ nghĩa và thứ tự quyền hạn.
 - `TEST`: chuẩn bị hoặc đánh giá phép thử hành vi.
 
-Không kết hợp các thao tác nếu không cần. Approval cho một bản vá không cấp quyền tạo branch, ghi changelog, commit, push, merge, cài skill hoặc thay artifact khác. Với thử nghiệm nội bộ, không thực hiện các hành động đó nếu người dùng chưa yêu cầu rõ.
+Không kết hợp các thao tác nếu không cần. Skill này sở hữu phân tích/thiết kế/kiểm chứng CI; `project-git-workflow` sở hữu checkout, branch, stage và commit. Approval bản vá không tự mở quyền Git, cài skill hoặc thay artifact khác, nhưng quyền đã được người dùng cấp trước đó vẫn có hiệu lực trong đúng phạm vi; không hỏi lại chỉ vì chuyển skill. Tái sử dụng binding, không tạo branch cho mỗi thử nghiệm. AUDIT/DESIGN chỉ đọc không stage, commit hoặc archive; push/merge cần yêu cầu riêng.
 
 ## Căn cứ trước khi sửa
 

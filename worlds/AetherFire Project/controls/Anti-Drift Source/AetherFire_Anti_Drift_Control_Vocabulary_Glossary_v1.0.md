@@ -99,7 +99,7 @@ The audit found distributed, compatible distinctions rather than an incompatible
 | Review | [Review Before Merge](../../../../codex-workflows/review-before-merge/SKILL.md): read-only acceptance assessment, not automatic fixes or canon approval. |
 | Behavior | [CI Behavior Engineering](../../../../codex-workflows/ci-behavior-engineering/SKILL.md): observed failure versus wording risk and structural versus behavioral checks. |
 | Archive | [Artifact Source Archive](../../../../codex-workflows/artifact-source-archive/SKILL.md): byte-preserving retirement, not canon admission. |
-| Git workflow | [Git Test Branch](../../../../codex-workflows/git-test-branch/SKILL.md): repository branches, distinct from simulation branches. |
+| Git workflow | [Project Git Workflow](../../../../codex-workflows/project-git-workflow/SKILL.md): stable chat/checkout/branch binding and scoped commits, distinct from simulation branches. |
 | Audit notes | Repository [audit protocol](../../../../codex-workflows/aetherfire-source-audit/references/audit-protocol.md) and [package workflow](../../../../codex-workflows/aetherfire-source-audit/references/package-workflow.md), inspected as terminology evidence only; not invoked or made prerequisites. |
 | Regression | [Control regression documentation](../../tests/control-regressions/README.md): tooling lifecycle, advisory results, and execution limits; dated baseline notes do not select active controls. |
 

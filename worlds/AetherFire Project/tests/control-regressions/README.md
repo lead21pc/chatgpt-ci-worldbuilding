@@ -79,7 +79,7 @@ Chỉ khi có yêu cầu nhập kết quả thủ công, ManualResultJson kiểm
 
 Trong bước kích hoạt, kế hoạch phải nêu phạm vi testable, neo nguồn đang có hiệu lực, neo điều khiển, biến cố ý để ngoài, lý do mỗi probe và DRAFT nào tái dùng được. Nếu nguồn chưa đủ để xác định ranh giới, báo đúng điểm chặn; không điền UNKNOWN hoặc tự tạo canon. Người dùng có thể chấp thuận, yêu cầu sửa, hoãn hoặc bác bỏ. Không tạo registry sẵn sàng toàn dự án, scheduler hay case giữ chỗ. Mỗi thay đổi vòng đời là thao tác sửa kho được duyệt, không phải phản ứng tự động của runner.
 
-Sáu skill giữ vai trò riêng: aetherfire-source-audit cho căn cứ nguồn; ci-behavior-engineering TEST cho hợp đồng và probe; milestone-executor cho triển khai đã duyệt; review-before-merge cho rà soát cuối chỉ đọc; systematic-debugging chỉ khi có lỗi thực tế; git-test-branch chỉ khi người dùng yêu cầu nhánh riêng. Không cần skill hồi quy mới.
+Sáu skill giữ vai trò riêng: aetherfire-source-audit cho căn cứ nguồn; ci-behavior-engineering TEST cho hợp đồng và probe; milestone-executor cho triển khai đã duyệt; review-before-merge cho rà soát cuối chỉ đọc; systematic-debugging chỉ khi có lỗi thực tế; project-git-workflow cho binding chat/checkout/branch và commit đúng phạm vi. Audit chỉ đọc không stage/commit; milestone hoặc phép thử mới không tự tạo branch mới. Không cần skill hồi quy mới.
 
 ## Actor reception coverage (added 2026-10-02)
 

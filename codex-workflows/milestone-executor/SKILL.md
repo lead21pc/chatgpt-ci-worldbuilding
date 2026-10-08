@@ -7,6 +7,8 @@ description: Use when implementing one explicitly defined milestone, task, issue
 
 Execute one bounded unit of work without expanding its scope.
 
+Git coordination belongs to `project-git-workflow`: reuse its chat/project binding and existing authorization. This skill supplies scope, allowed changes, acceptance criteria and verification; it does not create branches per milestone or choose an independent commit policy. A read-only planning/audit request disables all Git mutations.
+
 ## When to use
 
 Use this skill when the user asks to:

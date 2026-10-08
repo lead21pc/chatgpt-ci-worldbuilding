@@ -17,6 +17,8 @@ Use this skill when asked to:
 
 This skill is read-only.
 
+Read-only review takes precedence over automatic Git tracking and archival for this turn: no stage, commit, branch switch, binding creation or archive move. `project-git-workflow` may check an existing binding without writing; this skill returns findings and verification limits, not permission to accept or commit them.
+
 ## Inputs and context
 
 1. Read applicable `AGENTS.md`.

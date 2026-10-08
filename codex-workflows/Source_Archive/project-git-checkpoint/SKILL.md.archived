@@ -1,0 +1,37 @@
+---
+name: project-git-checkpoint
+description: Khi bắt đầu hoặc quét lại nguồn cho tác vụ trong project Git, tự stage các file mới chưa được theo dõi trong phạm vi project; sau khi hoàn tất và kiểm chứng, tạo commit nội bộ gồm các file mới đã nhận và thay đổi của tác vụ. Bảo toàn staged changes có sẵn, tuân gitignore, không tự push. Yêu cầu rõ chỉ đọc hoặc không stage/commit có ưu tiên cao hơn.
+---
+
+# Tự theo dõi file mới và tạo commit nội bộ
+
+Áp dụng cho tác vụ đọc, phân tích hoặc chỉnh sửa project có Git. Việc sử dụng skill này cấp quyền stage file mới trong project và commit nội bộ khi tác vụ hoàn tất; không cần hỏi lại quyền này mỗi lượt. Chỉ dẫn mới nhất của người dùng và quy tắc project về nguồn được theo dõi có ưu tiên cao hơn.
+
+Đây là thao tác do agent thực hiện tại các mốc tác vụ, không phải dịch vụ theo dõi thư mục chạy nền. Không tự quét hoặc commit khi không có tác vụ. Không dùng Git để diễn giải nội dung mới là canon đã chốt hoặc nguồn có thẩm quyền.
+
+## Bắt đầu và quét lại
+
+1. Xác định thư mục project đang được yêu cầu và repository chứa nó. Nếu repository chứa nhiều project, chỉ nhận file trong project của tác vụ; không tự dùng toàn repository làm phạm vi. Đọc hướng dẫn áp dụng. Nếu không có Git, báo và tiếp tục phần độc lập; không tự `git init`.
+2. Ghi baseline trước stage/sửa: repository, branch, HEAD, `git status --short` và danh sách staged files/hunks có sẵn. Giữ nguyên branch trừ khi tác vụ hoặc quy tắc project yêu cầu nhánh riêng.
+3. Liệt kê file untracked trong phạm vi bằng `git ls-files --others --exclude-standard -z -- <project-path>`. Xử lý đầu ra NUL bằng công cụ phù hợp; không tách tên file theo khoảng trắng hoặc suy file từ dòng hiển thị bị cắt. Không đi vào repository lồng nhau, submodule, symlink hoặc junction ngoài phạm vi.
+4. Tự stage từng file mới hợp lệ bằng pathspec literal. Danh sách đủ điều kiện gồm cả file mới có trước lượt này trong project đã xác định, không chỉ file do tác vụ tạo. Ghi lại danh sách và hash/snapshot đã nhận để phân biệt với baseline staged.
+5. Tuân `.gitignore` và chính sách artifact của repository; không force-add, không thêm cache, build output bị cấm hoặc file ngoài project. Nếu một file cần quyết định về chính sách tracking, giữ nguyên và báo riêng; tiếp tục nhận các file đủ điều kiện khác.
+6. Khi quét lại nguồn trong cùng tác vụ, chỉ stage file mới xuất hiện kể từ lần quét trước; không liên tục stage lại file đang chỉnh sửa. Nếu nguồn mới ảnh hưởng tác vụ, đọc theo phạm vi yêu cầu. Không mở nội dung archive chỉ vì Git phát hiện file mới trong đó.
+
+Yêu cầu “chỉ đọc”, “audit-only”, “không sửa”, “không stage” hoặc “không commit” phải được tôn trọng: chỉ báo file mới khi thao tác Git tương ứng bị cấm. Khi không có lệnh cấm rõ, tác vụ phân tích thông thường vẫn có thể nhận file mới vào Git theo skill này.
+
+## Hoàn tất và tạo commit
+
+1. Chỉ commit khi tác vụ đã hoàn tất, không có conflict và kiểm chứng liên quan đạt. Stage không phải bằng chứng hoàn tất; không tạo checkpoint từ công việc còn lỗi, bị chặn hoặc đang dở.
+2. Quét bổ sung lần cuối. Kiểm file mới đã nhận vẫn tồn tại, nội dung/định dạng hợp lệ với loại file và chính sách tracking. Dùng kiểm tra cấu trúc hoặc hash thích hợp cho nguồn tham chiếu; không ép full audit ngữ nghĩa chỉ để lưu phiên bản. File chưa đủ điều kiện được giữ staged/chưa staged theo trạng thái thực tế và báo rõ, không âm thầm chứng nhận.
+3. Stage thay đổi tracked do tác vụ tạo, gồm thêm/sửa/xóa/đổi tên được phép. Không nhận tracked changes không liên quan có từ baseline. Nếu ownership, hunk hoặc nội dung mới xuất hiện đồng thời trên cùng đường dẫn không phân biệt được, giữ nguyên và hỏi đúng phần chồng lấn.
+4. Tập commit chỉ gồm file mới đã nhận theo quy tắc này và thay đổi của tác vụ đã kiểm chứng. Nếu có staged changes từ trước ngoài tập này, không dùng `git commit` mặc định để commit toàn index. Dùng `git commit --only -- <explicit-paths>` khi mọi đường dẫn của tập commit có snapshot toàn file đã kiểm chứng và không chồng staged hunks từ baseline. Lệnh này lấy nội dung worktree, nên phải xác nhận nó khớp snapshot dự định commit ngay trước lệnh. Nếu có chồng lấn hoặc không thể tách an toàn, giữ trạng thái và báo phần cần quyết định; không unstage/stash thay đổi người dùng để tiện commit.
+5. Trước commit, kiểm `git diff --cached --check`, `git diff --cached --stat` và toàn diff của tập commit. Phân biệt staged baseline với tập được phép; kiểm thêm diff theo đường dẫn nếu dùng `--only`. Với CRLF được repository yêu cầu giữ nguyên, dùng cấu hình whitespace theo lệnh để coi CR cuối dòng là hợp lệ; không chuẩn hóa nguồn byte-exact chỉ để vượt kiểm tra.
+6. Tạo commit local với thông điệp mô tả tác vụ và phần nguồn mới đã nhận. Nếu không có thay đổi đủ điều kiện, không tạo empty commit. Không push, tag, tạo PR hoặc đổi remote từ quyền commit này.
+7. Sau commit, kiểm `git status --short`, `git log -1 --oneline` và nội dung commit. Xác nhận tập được phép đã được lưu, các thay đổi/staged hunks có sẵn còn nguyên. Worktree còn dirty không tự có nghĩa commit thất bại.
+
+Không tự sửa identity, bỏ qua hook, force, reset, clean hoặc viết lại lịch sử để tạo commit. Nếu lỗi quyền, hook, identity hoặc Git state chặn thao tác, giữ file và báo đúng lỗi. Sandbox vẫn có hiệu lực; yêu cầu quyền công cụ khi cần, không coi skill là quyền vượt sandbox.
+
+## Bàn giao
+
+Báo ngắn file mới đã nhận, commit hash và phạm vi commit, kiểm chứng đã chạy, cùng file còn chưa lưu hoặc phần bị chặn. Phân biệt rõ `STAGED`, `COMMITTED_LOCAL` và `PUSHED`; chỉ báo trạng thái thực tế. Khi chưa commit được, nói rõ để người dùng không tưởng đã có checkpoint.
