@@ -5,6 +5,10 @@ description: Đọc lại và đối chiếu nguồn Markdown Project Feather Co
 
 # AetherFire source audit
 
+## Ranh giới điều phối
+
+Skill này sở hữu căn cứ nguồn, quyền canon, provenance, phạm vi thay đổi và kiểm chứng package. `project-git-workflow` sở hữu checkout/branch/stage/commit; tái sử dụng binding và quyền Git đã cấp, không tạo branch theo lần chốt. Khi tác vụ được duyệt cần lưu hoặc chuyển nguồn cũ, `artifact-source-archive` sở hữu cơ chế chuyển/hash/chống ghi đè; AetherFire xác định nguồn đủ điều kiện và ý nghĩa lịch sử. Không tự mở archive để lấp dữ kiện; chỉ đọc nguồn lịch sử trong phạm vi người dùng yêu cầu cụ thể. Audit/planning chỉ đọc không stage, commit, tạo binding hoặc chuyển archive.
+
 ## Chọn chế độ trước khi đọc nguồn
 
 Trước khi mở nội dung project, phân loại tác vụ và dùng chế độ nhẹ nhất đủ an toàn:
