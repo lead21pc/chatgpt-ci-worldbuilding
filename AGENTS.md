@@ -22,6 +22,8 @@ A structural change includes:
 - regrouping, flattening, normalizing, or reorganizing paths;
 - any switch, checkout, merge, rebase, reset, restore, or cherry-pick whose resulting tree would change the local directory layout.
 
+Exception for additive external project imports: an explicit user request to import a project from outside this repository authorizes one new isolated destination directory and that project's files without the two-affirmation flow, provided no existing tracked or untracked path is overwritten, deleted, renamed, moved, or absorbed. Before importing, state the source, exact destination, nested-repository handling, and collision result. Any collision, replacement, import into an existing directory, or alteration of a pre-existing path remains a structural change and requires two affirmations.
+
 Read-only inspection is allowed. Before executing any structural change, require two separate explicit affirmations from the user:
 
 1. Present the exact path map and concrete effects, then obtain the first affirmation approving that specific plan.
