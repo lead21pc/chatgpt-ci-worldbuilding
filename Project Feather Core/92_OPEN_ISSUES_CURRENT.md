@@ -519,6 +519,17 @@ Tất cả giữ CHƯA CHỐT. Danh sách là câu hỏi thiết kế, không b�
 
 Các UNKNOWN ở §§3/6/9/11/13 và tại các owner vẫn giữ: ngưỡng người/thần, vật chất/linh hồn/tín đồ/quyền siêu hình, transformation, danh sách người biết, counterfeit/failure, quyền mở các relic khác, nơi tạo/quản lý Saint's Fresh, body location relative Trinity và knowledge của chuyên gia. Không đổi spelling **Saint's Fresh** hoặc **Redemption Rope** theo suy đoán; không tự đổi Fresh thành Flesh.
 
+## Hoa Nguyệt — bảy nguyên tắc nền, các mục mở 2026-10-10
+
+`20` §5 / `AFM-012` đã chốt ba vùng văn hóa Hoa/Nhật/Việt, ba quốc gia tiền thân, căn tính riêng, trang phục đa thời kỳ/quyền mặc xuyên vùng theo nguồn gốc, hệ chữ hiện đại theo vùng và tiếng Trung hiện đại cho văn bản hành chính chung. Các nhãn Hoa/Nhật/Việt chưa là tên vùng chính thức. Không suy quyền hành chính từng vùng hoặc cơ chế truyền văn hóa xuyên thế giới.
+
+| ID | Trạng thái | Phạm vi còn mở |
+| --- | --- | --- |
+| AF-HN-OPEN-006 | UNKNOWN / OPEN | Tên riêng ba vùng/ba quốc gia tiền thân, thời điểm/nguyên nhân/phương thức hợp nhất, địa vị chính trị sau hợp nhất, cơ cấu hành chính; quan hệ thời gian/nhân quả với dark foundation, Lục Kì Nhân và quốc hiệu kép chưa xác lập. |
+| AF-HN-OPEN-007 | UNKNOWN / OPEN | Danh mục/niên đại/hoàn cảnh dùng/quy chế trang phục theo vùng qua các thời kỳ; ngoại lệ phục sức chức vụ, phẩm cấp, nghi lễ. Không cấm theo nguồn gốc không tự thành quyền mặc mọi phục sức. |
+| AF-HN-OPEN-008 | UNKNOWN / OPEN | Dạng Hán tự phồn thể/giản thể, phạm vi chính xác của chuẩn văn bản cấp quốc gia/liên vùng, quy tắc văn kiện địa phương, quy trình dịch và năng lực tương ứng từng công việc quan chức. Không suy nghĩa vụ thông thạo cho toàn dân. |
+| AF-HN-OPEN-009 | UNKNOWN / OPEN | Giáo dục ngôn ngữ và quy định triển khai/bảo tồn di sản chữ viết. Hướng học/bảo tồn cổ văn và văn học truyền thống tự nguyện trong ghi chú nguồn chưa được nhập thành chính sách hoặc nguyên tắc thứ tám. |
+
 ## Hoa Nguyệt — các mục mở sau chốt 2026-10-07
 
 `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát hai quốc hiệu và địa lý giao thương; Hán tự 華 đã RESOLVED, không còn UNKNOWN hiện hành. Một chủ thể nhà nước với hai lớp trình diện không tạo hai quốc gia hoặc hai địa vị công dân.

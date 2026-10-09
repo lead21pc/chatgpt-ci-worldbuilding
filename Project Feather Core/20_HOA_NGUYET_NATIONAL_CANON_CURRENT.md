@@ -2,7 +2,7 @@
 
 > Module ID: `AFM-012`
 > Runtime role: `CURRENT_SOURCE`
-> Domain / Scope: Căn tính quốc gia Hoa Nguyệt, văn hóa/quốc phục, triết lý phép thuật, nguồn gốc lịch sử, quốc hiệu/biểu tượng nội địa và đối ngoại, địa lý tiếp cận và giao thương.
+> Domain / Scope: Căn tính quốc gia Hoa Nguyệt, ba vùng văn hóa/ngôn ngữ/chữ viết, quốc phục, chuẩn văn bản hành chính chung, triết lý phép thuật, nguồn gốc lịch sử, quốc hiệu/biểu tượng nội địa và đối ngoại, địa lý tiếp cận và giao thương.
 > Authority boundary: Kiểm soát canon Hoa Nguyệt trong phạm vi đã chốt; không tự hoàn thiện thể chế, hệ phép thuật, hình học biểu tượng hoặc bản đồ tuyến.
 > Cross-domain owner boundary: Địa chính trị/giao diện thế giới ở `AFM-001`; trang phục nghề Undi ở `AFM-003`; MC2/metafiction ở `AFM-004`; chính trị AF/dynasty ở `AFM-011`; ML ở `AFM-007`; aviation/không phận RF ở `AFM-008`.
 > Load mode: `FULL_FILE`
@@ -11,7 +11,7 @@
 
 ## 1. Căn tính, văn hóa và nguồn gốc hiện hành
 
-**Kính Hoa Thuỷ Nguyệt — 鏡華水月** là quốc hiệu đầy đủ trong nước; **Hoa Nguyệt — 華月** là tên chính thức đối ngoại của cùng quốc gia ở phía tây AetherFire, hợp nhất cảm hứng Trung Hoa + Nhật Bản. Hanfu và Kimono/Yukata thuộc hệ quốc phục/truyền thống của Hoa Nguyệt.
+**Kính Hoa Thuỷ Nguyệt — 鏡華水月** là quốc hiệu đầy đủ trong nước; **Hoa Nguyệt — 華月** là tên chính thức đối ngoại của cùng quốc gia ở phía tây AetherFire. Quốc gia thống nhất gồm ba vùng văn hóa lớn lấy cảm hứng Trung Hoa, Nhật Bản và Việt Nam, hình thành từ ba quốc gia tiền thân ở gần nhau. Ba vùng giữ căn tính riêng; chi tiết văn hóa, trang phục, chữ viết và chuẩn hành chính chung ở §5, chốt 2026-10-10.
 
 Hoa Nguyệt:
 
@@ -96,8 +96,8 @@ Sự thay đổi này chỉ sửa và làm rõ **hệ quốc hiệu và cách d�
 Nó không tự thay đổi các canon hiện hành khác về:
 
 - vị trí Hoa Nguyệt ở phía tây AetherFire;
-- căn tính văn hóa hợp nhất cảm hứng Trung Hoa + Nhật Bản;
-- hệ quốc phục Hanfu và Kimono/Yukata theo vùng;
+- căn tính ba vùng văn hóa lấy cảm hứng Trung Hoa, Nhật Bản và Việt Nam, theo cập nhật 2026-10-10 ở §5;
+- các hệ trang phục truyền thống theo vùng và qua nhiều thời kỳ, theo §5;
 - truyền thống đại hiệp / nam hiệp / nữ hiệp;
 - triết lý phép thuật dựa trên căn tính, tố chất, hòa hợp, võ thuật và huyền học phương Đông;
 - current orientation tôn trọng quyền con người;
@@ -618,3 +618,57 @@ Hoa Nguyệt và ML có quan hệ cùng mạng thương mại đang hoạt độ
 Hoa Nguyệt có quan hệ thương mại đang hoạt động với RF và mức giao thương mạnh hơn AF–RF. Một nguyên nhân là Hoa Nguyệt/RF gần như không có cạnh tranh chính trị trực tiếp như AF/RF. Hoa Nguyệt đi đường quan hệ phía sau với RF nhằm gây sức ép vào sườn AF; AF có động cơ chiến lược phá hoại Hoa Nguyệt.
 
 Không đồng nhất toàn RF, member states, blocs và Raging Fire lineage. Động cơ AF không chứng minh chiến dịch cụ thể đã xảy ra. Tuyến, đối tác, luồng hàng, vận tải, định lượng, điều ước, kênh bí mật và mức chính thức vẫn `UNKNOWN`; không suy alliance/intelligence/military access.
+
+## 5. Bảy nguyên tắc văn hóa, nguồn gốc và ngôn ngữ — chốt 2026-10-10
+
+Nguồn: `Source_Archive/HOA_NGUYET_7_NGUYEN_TAC_DE_XUAT.md`. Tác giả yêu cầu audit và nhập vào canon; bảy nguyên tắc dưới đây được chấp nhận trong phạm vi nguồn. Nhãn đề xuất trong bản nguồn lưu trữ phản ánh trạng thái trước khi nhập, không thay quyết định hiện hành. Phần này mở rộng mô tả Trung Hoa–Nhật Bản trước đây thành ba vùng, không thay quốc hiệu, dark foundation, triết lý phép thuật hoặc quan hệ đối ngoại đã chốt.
+
+### 5.1. Cấu trúc văn hóa
+
+Hoa Nguyệt là một quốc gia thống nhất, bao gồm **ba vùng văn hóa lớn** lấy cảm hứng lần lượt từ **Trung Hoa, Nhật Bản và Việt Nam**. Ba vùng thuộc cùng một quốc gia nhưng không được xem là một nền văn hóa đồng nhất. Các nhãn Hoa/Nhật/Việt bên dưới dùng để phân biệt phạm vi; tên riêng chính thức của từng vùng chưa chốt.
+
+### 5.2. Nguồn gốc hợp nhất
+
+Hoa Nguyệt được hình thành từ **ba quốc gia tiền thân nằm gần nhau**, về sau hợp nhất thành một quốc gia chung. **Thời điểm, nguyên nhân, phương thức hợp nhất và địa vị chính trị về sau của từng vùng chưa được xác định**. Không tự gắn việc hợp nhất với thí nghiệm tạo hình Hoa, Lục Kì Nhân hoặc thời điểm hình thành quốc hiệu kép.
+
+### 5.3. Giữ căn tính riêng
+
+Mỗi vùng tiếp tục duy trì ngôn ngữ, truyền thống và bản sắc văn hóa riêng. Giao lưu, ảnh hưởng qua lại hoặc cùng chung quốc tịch **không đồng nghĩa với việc bắt buộc hòa trộn hay xóa bỏ khác biệt** giữa ba vùng.
+
+### 5.4. Trang phục truyền thống theo chiều dài lịch sử
+
+Mỗi vùng bảo tồn và sử dụng **hệ trang phục truyền thống đa dạng qua các thời kỳ**, không bị thu gọn thành một mẫu duy nhất:
+
+- **Vùng Hoa:** các hệ Hanfu qua lịch sử.
+- **Vùng Nhật:** Kimono, Yukata và các dạng phục sức lịch đại.
+- **Vùng Việt:** áo dài cùng các loại cổ phục Việt Nam qua các thời kỳ.
+
+Danh mục, niên đại, hoàn cảnh sử dụng và quy chế cụ thể của từng loại trang phục **chưa chốt**. Các tên cảm hứng và trang phục không tự nhập lịch sử thực tế hoặc xác lập cơ chế truyền văn hóa xuyên thế giới. Trang phục nghề Undi vẫn do `13_UNDIE_SYSTEM_CURRENT.md` quản lý; bổ sung vùng Việt không tự đổi thiết kế Undi.
+
+### 5.5. Mặc trang phục vùng khác
+
+Người dân Hoa Nguyệt **không bị cấm mặc trang phục truyền thống của vùng văn hóa khác chỉ vì họ không xuất thân từ vùng đó**. Việc mặc trang phục vùng khác không tự động làm thay đổi căn tính dân tộc hoặc nguồn gốc văn hóa của người mặc.
+
+Nguyên tắc này chưa quy định chi tiết về những phục sức gắn với chức vụ, phẩm cấp hoặc nghi lễ đặc thù; không suy quyền mặc mọi phục sức trong mọi hoàn cảnh.
+
+### 5.6. Ngôn ngữ và hệ chữ viết hiện đại theo vùng
+
+Ba vùng sử dụng ngôn ngữ và hệ chữ viết hiện đại tương ứng trong đời sống và các hoạt động thuộc phạm vi vùng:
+
+| Vùng | Ngôn ngữ | Hệ chữ viết hiện đại |
+| --- | --- | --- |
+| Hoa | Tiếng Trung | Chữ Hán hiện đại |
+| Nhật | Tiếng Nhật | Kanji, Hiragana, Katakana trong hệ chữ Nhật hiện đại |
+| Việt | Tiếng Việt | Chữ Quốc ngữ |
+
+Việc dùng chữ Quốc ngữ **không phủ nhận di sản chữ Hán, chữ Nôm** của vùng Việt. Các hệ chữ cổ không mặc nhiên trở thành chữ viết hành chính hiện đại bắt buộc.
+
+### 5.7. Chuẩn văn bản hành chính chung
+
+**Văn bản hành chính chung ở cấp quốc gia hoặc giữa các vùng dùng tiếng Trung hiện đại** làm chuẩn thống nhất. Quan chức thực hiện công việc cần xử lý loại văn bản này phải có năng lực sử dụng chuẩn chung tương ứng.
+
+Quy tắc này **không có nghĩa mọi giấy tờ địa phương đều phải dùng tiếng Trung**, cũng **không tự đặt ra nghĩa vụ thông thạo tiếng Trung đối với mọi người dân**. Dạng chữ cụ thể (phồn thể/giản thể), phạm vi áp dụng chính xác và quy trình dịch văn bản chưa được xác lập. Chuẩn ngôn ngữ không tự giải quyết luật dùng quốc hiệu trong từng văn kiện.
+
+### 5.8. Các ranh giới còn mở
+
+Tên riêng ba vùng, cơ cấu hành chính, cơ chế sáp nhập, giáo dục ngôn ngữ, quy tắc chi tiết đối với văn kiện địa phương và danh mục trang phục chính thức vẫn `UNKNOWN`; `92` giữ AF-HN-OPEN-006–009. Quốc hiệu 鏡華水月 / 華月 giữ nguyên. Hướng học tập/bảo tồn cổ văn và văn học truyền thống tự nguyện trong ghi chú nguồn chưa được nhập thành nguyên tắc thứ tám hoặc chính sách hiện hành.

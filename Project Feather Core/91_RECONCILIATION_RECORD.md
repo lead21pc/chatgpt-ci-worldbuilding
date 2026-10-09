@@ -2,6 +2,22 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Hoa Nguyệt — bảy nguyên tắc nền, nhập 2026-10-10
+
+**Quyền:** tác giả yêu cầu “new task, audit file mới và nhập vào canon”. Nguồn duy nhất mới trong inbox là `HOA_NGUYET_7_NGUYEN_TAC_DE_XUAT.md`, 5010 bytes, SHA-256 `4C08DAA94B20A630EB681E73D19F51280926CEF316B39A78FF849F36C7BAF128`. Nhập đủ bảy nguyên tắc theo yêu cầu hiện tại; nhãn ĐỀ XUẤT và ghi chú không sửa canon trong nguồn mô tả trạng thái tiền nhiệm. Bản gốc lưu byte-exact tại `Source_Archive/HOA_NGUYET_7_NGUYEN_TAC_DE_XUAT.md` sau kiểm chứng.
+
+**Baseline:** `Invariant-System`, HEAD `b0a2e0d640835d69b14ffa9ed20bf86d1aff2f52`; index ban đầu trống. Các deletion có sẵn ngoài package được giữ ngoài tác vụ. Dùng checkout gốc theo quyền đã xác nhận trong chat; không đổi binding hoặc tạo nhánh.
+
+**AF-HN-CULT-001 — SUPERSEDED / RESOLVED:** `20` §1 và §2.1.3 trước đây mô tả cảm hứng Trung Hoa + Nhật Bản. Nguồn mới §§1–3 mở rộng thành một quốc gia thống nhất với ba vùng Hoa/Nhật/Việt có căn tính riêng, hình thành từ ba quốc gia tiền thân gần nhau. Cập nhật hai vị trí hiện hành và đưa chi tiết vào `20` §5.1–5.3; đây là thay thế có giới hạn theo yêu cầu nhập mới. `90` giữ wording lịch sử, không được dùng để phủ định vùng Việt.
+
+**AF-HN-CULT-002 — RESOLVED / CANON ADMITTED:** nguồn §§4–5 → `20` §5.4–5.5. Giữ trang phục đa thời kỳ, thêm áo dài/cổ phục Việt; không cấm mặc trang phục vùng khác chỉ vì nguồn gốc. Không mở rộng thành quyền mặc phục sức chức vụ/phẩm cấp/nghi lễ không giới hạn. `13` giữ Undi và nguồn gốc thiết kế nghề cũ; không suy Undi tự nhận thêm mẫu Việt.
+
+**AF-HN-CULT-003 — RESOLVED / CANON ADMITTED:** nguồn §§6–7 → `20` §5.6–5.7. Giữ đủ ba ngôn ngữ/hệ chữ, di sản Hán/Nôm của vùng Việt và tiếng Trung hiện đại làm chuẩn văn bản hành chính chung cấp quốc gia/liên vùng. Năng lực quan chức áp theo công việc; không suy mọi dân phải thông thạo hoặc mọi văn kiện địa phương dùng tiếng Trung.
+
+**AF-HN-CULT-004 — UNKNOWN / OPEN:** tên vùng/tiền thân, niên đại/nguyên nhân/phương thức hợp nhất và địa vị chính trị, cơ cấu hành chính, danh mục/niên đại/quy chế trang phục, phục sức đặc thù, giáo dục, phồn thể/giản thể, phạm vi văn kiện/dịch thuật còn mở tại `20` §5 và `92` AF-HN-OPEN-006–009. Không liên kết tự động ba tiền thân với Lục Kì Nhân/dark foundation, không nhập lịch sử thực tế từ tên cảm hứng. Ghi chú học/bảo tồn cổ văn tự nguyện chưa được nhập thành canon chính sách.
+
+**Kết quả audit:** không thấy xung đột trực tiếp với quốc hiệu kép, vị trí, thương mại, phép thuật hoặc dark foundation trong owner `20`; nguồn mới không xác lập quan hệ thời gian giữa hợp nhất và các nền lịch sử ấy. Audit bao phủ đầy đủ file mới, owner `20`, routing/index/manifest và các tham chiếu văn hóa hiện hành tìm thấy; không chứng nhận toàn corpus hay hành vi ChatGPT runtime. Mốc tiếp theo cho bảy nguyên tắc là `20` §5.
+
 ## Namespace migration — 2026-10-10
 
 The project/system namespace moved from `AetherFire Project` to `Project Feather Core` (`FTH`), with the package root now `Project Feather Core` at the repository root. `AetherFire` remains the official country name; stable `AFM-*` and `AF-*` identifiers and country-owned filenames remain unchanged. Historical/provenance wording and `Source_Archive` contents are preserved. This migration does not resolve existing `UNKNOWN`, `DEFERRED`, `CONFLICT`, or RF union naming questions.

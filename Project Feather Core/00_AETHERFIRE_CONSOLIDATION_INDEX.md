@@ -1,10 +1,14 @@
 # Project Feather Core — Consolidation Index
-> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-10-08
+> **Generated consolidation baseline:** 2026-09-08; latest integration: 2026-10-10
 > **Location:** self-contained `Project Feather Core/` package. `FTH` is the short/internal project namespace. Current root files are maintained current sources; `Source_Archive/` preserves historical/provenance material only.
 >
 > **Namespace invariant:** `PROJECT FEATHER CORE / FTH != AETHERFIRE THE COUNTRY`. `AetherFire` remains the official country name and the stable `AFM-*` / `AF-*` identifiers are not renamed.
 > **Truth rule:** `ABSENCE OF CANON ≠ CANONICAL NEGATION`; `NOT ESTABLISHED ≠ FALSE`; unresolved relations remain `UNKNOWN / UNRESOLVED`.
 
+
+## Hoa Nguyệt — bảy nguyên tắc nền, nhập 2026-10-10
+
+`20` §5 giữ ba vùng văn hóa Hoa/Nhật/Việt, ba quốc gia tiền thân, căn tính riêng, trang phục đa thời kỳ/quyền mặc xuyên vùng theo nguồn gốc, ngôn ngữ/chữ viết theo vùng và tiếng Trung hiện đại cho văn bản hành chính chung. Cơ chế hợp nhất, tên vùng, phục sức đặc thù, giáo dục, dạng Hán tự và triển khai văn kiện/dịch thuật còn mở ở `92` AF-HN-OPEN-006–009. `91` ghi phạm vi thay thế và nguồn; không đổi quốc hiệu/dark foundation hoặc tự sửa Undi.
 
 ## World/meta/Giant — nhập canon 2026-10-08
 
