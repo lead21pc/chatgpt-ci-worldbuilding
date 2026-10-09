@@ -1,0 +1,34 @@
+{
+  "id": "modular_expertise_authority",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "Anti-Drift Source/Source_Archive/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.1.md:12, Function Allocation And Competence",
+    "note": "Synthetic bounded paired probe; not accepted lore, a historical runtime failure, a model result, or authorization to activate semantic testing."
+  },
+  "operation": "Check whether training expertise supplies medical, qualification, or disciplinary authority.",
+  "boundary": "Synthetic training institution T; not AetherFire Academy canon, medical guidance, or a proposed organization chart.",
+  "input": "A trainer has expert knowledge and authority to conduct an exercise, but no source establishes medical-clearance, qualification, disciplinary, or final command rights. A source restriction forbids one person from holding the whole requirement/training/assessment/qualification/punishment/self-review chain for the same matter; it does not prohibit every pair of functions. BASE: do not give the trainer adjacent rights from expertise or responsibility, and do not invent holders for the missing functions. VARIANT: an explicit design premise grants this trainer a bounded medical-clearance role as well. Affirm that particular overlap without granting qualification, disciplinary, or final command rights, banning all overlap, or removing the whole-chain restriction. Whether clearance is issued and an exercise succeeds remains UNKNOWN.",
+  "protected_distinction": "EXPERTISE != COMMAND; TRAINING AUTHORITY != OTHER AUTHORITY; WHOLE-CHAIN RESTRICTION != UNIVERSAL PAIRWISE SEPARATION",
+  "forbidden_conversion": "Promote training expertise to all authority; invent a medical/qualification board or fixed command chart; reject expressly allowed bounded overlap; treat one permitted pair as permission for the prohibited whole chain.",
+  "recheck_on": [
+    "Project Feather Core CI/source_archive/AetherFire_CI_version_v3.0.md",
+    "Anti-Drift Source/Source_Archive/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+    "Anti-Drift Source/Source_Archive/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.1.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "Project Feather Core CI/source_archive/AetherFire_CI_version_v3.0.md",
+      "sha256": "D51F0EB0ACE499B434F8DCE64125B9232593E570EE940A10D562FB93972B4E96"
+    },
+    {
+      "path": "Anti-Drift Source/Source_Archive/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+      "sha256": "227997F6621B49DB369D807742104E033F448BC04031D7C3102E0053FEF0A694"
+    },
+    {
+      "path": "Anti-Drift Source/Source_Archive/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.1.md",
+      "sha256": "B7639F43A49D2E0B460EC0BAC9E0D60A3A8AA62D91F7A5CB09FF95CB0BD4A874"
+    }
+  ]
+}

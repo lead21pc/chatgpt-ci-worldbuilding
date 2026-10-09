@@ -2,7 +2,7 @@
 
 ## Start here: creative purpose and pipeline interpretation
 
-This is an author's working environment for developing **AetherFire, The Kingdom, and The Academy**, three independent fictional worlds, with ChatGPT and Codex assistance.
+This is an author's working environment for developing **Project Feather Core (FTH), The Kingdom, and The Academy**, three independent fictional worlds, with ChatGPT and Codex assistance. AetherFire is a country inside Project Feather Core, not the project namespace.
 
 The worlds are the creative work. Instructions, source routers, audits, consolidation scripts, regression checks, and Git procedures support that work by preserving consistency, provenance, scope, and reviewable decisions.
 
@@ -30,7 +30,7 @@ When inspecting a pipeline, identify what each step acts on, who performs it, wh
 
 ### Repository organization
 
-The repository separates five working areas: worlds/ for the three independent project packages; authoring/ for cross-paracosm creative methods; llm-controls/ for general instructions and reusable control designs; codex-workflows/ for repository copies of procedural skills; and docs/ for instruction history and analysis.
+The repository keeps Project Feather Core/ at the root and the other independent world packages under worlds/. Supporting areas remain authoring/ for cross-paracosm creative methods; llm-controls/ for general instructions and reusable control designs; codex-workflows/ for repository copies of procedural skills; and docs/ for instruction history and analysis.
 
 Each world keeps its own internal source organization and local controls. Folder grouping establishes navigation, not shared canon or a universal source hierarchy. The relocation changes repository paths only; it does not install skills, update live ChatGPT Project or Library contents, or change the authority and source-loading rules declared by project controls.
 
@@ -63,7 +63,7 @@ The author maintains three separate paracosms in parallel:
 
 - **The Academy**
 - **The Kingdom**
-- **AetherFire**
+- **Project Feather Core (FTH)**
 
 They are not three deployments of one shared fictional architecture.
 

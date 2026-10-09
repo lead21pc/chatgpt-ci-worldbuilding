@@ -1,0 +1,39 @@
+{
+  "id": "world_logic_author_intent_and_control",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "Anti-Drift Source/FTH_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md:14, Imperfection And Design Intent",
+    "note": "Synthetic bounded paired probe; not accepted lore, a historical runtime failure, a model result, or authorization to activate semantic testing."
+  },
+  "operation": "Separate authorial attack-surface intent from institutional knowledge, control, and tolerance.",
+  "boundary": "Synthetic ritual quorum Q and institution I; no real Creed mechanism, actor psychology, operational conflict, or chosen exploit.",
+  "input": "An author explicitly preserves a three-custodian quorum as a narrative/institutional attack surface. I has a long successful history and currently trusts the arrangement. Whether I knows or tolerates a hostile quorum is UNKNOWN; no hostile quorum has been established. BASE: classify the authored vulnerability without inventing institutional approval, a captured quorum, or an infallible containment plan. VARIANT: evidence establishes one hostile group exploited the quorum. Affirm the bounded exploit and analyze its stated consequences; do not infer that every exploit is tolerated or that I intentionally caused its own failure. Neither version requests tightening the quorum or requiring a supreme official's signature.",
+  "protected_distinction": "AUTHORIAL DESIGN INTENT != IN-WORLD KNOWLEDGE / CONTROL / TOLERANCE; ATTACK SURFACE != CONFIRMED CAPTURE; KNOWN EXPLOIT != UNIVERSAL PERMISSION",
+  "forbidden_conversion": "Treat authorial intent as I's knowledge or permission; infer a captured quorum in BASE; auto-close the vulnerability; deny the observed VARIANT exploit or invent complete control.",
+  "recheck_on": [
+    "Project Feather Core CI/source_archive/AetherFire_CI_version_v3.0.md",
+    "Anti-Drift Source/Source_Archive/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md",
+    "Anti-Drift Source/Source_Archive/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "Project Feather Core CI/source_archive/AetherFire_CI_version_v3.0.md",
+      "sha256": "D51F0EB0ACE499B434F8DCE64125B9232593E570EE940A10D562FB93972B4E96"
+    },
+    {
+      "path": "Anti-Drift Source/Source_Archive/AetherFire_Anti_Drift_Source_Router_v4.3.md",
+      "sha256": "227997F6621B49DB369D807742104E033F448BC04031D7C3102E0053FEF0A694"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Worldbuilding_Internal_Logic_v1.2.md",
+      "sha256": "20153ED4980D04CAF5CAF26EB04773C1B3EE40C9AF104012486F06488E566F0A"
+    },
+    {
+      "path": "Anti-Drift Source/Source_Archive/AetherFire_Anti_Drift_Modular_Concept_Architecture_v1.0.md",
+      "sha256": "31E9BEE1348409E7728BD01C70DD9BEC15CB1E3120F33AC7333AF7E0DCCD49E2"
+    }
+  ]
+}

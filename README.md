@@ -1,6 +1,6 @@
 # ChatGPT CI Versioning / Worldbuilding Control Repository
 
-This is a personal, non-commercial workspace for developing three independent fictional worlds: **AetherFire, The Kingdom, and The Academy**, with support from ChatGPT and Codex.
+This is a personal, non-commercial workspace for developing three independent fictional worlds: **Project Feather Core (FTH), The Kingdom, and The Academy**, with support from ChatGPT and Codex. AetherFire remains a country inside Project Feather Core.
 
 The repository contains externalized worldbuilding sources, instructions for working with those sources, design history, and supporting tools. Its source consolidation, routing, audits, regression checks, and Git workflows serve the author's creative work: preserving consistency, tracing decisions, managing revisions, and diagnosing recurring model failures.
 
@@ -62,7 +62,7 @@ A pipeline diagram may describe author actions, model instructions, executable t
 Related repositories may combine prompt collections, worldbuilding templates, lore archives, writing tools, and evaluation workflows. The distinctions below explain this repository's scope; they are not a claim that no other project uses similar methods.
 
 - **Instructions are part of an ongoing authoring workflow.** The repository records why a control was introduced, which failure it addresses, and what evidence supports it. A newer instruction file is a candidate to evaluate, not a universal upgrade.
-- **The fictional worlds are independent.** AetherFire, The Kingdom, and The Academy are not configurations of one shared worldbuilding template. Shared methods do not transfer canon, ontology, or source authority between them.
+- **The fictional worlds are independent.** Project Feather Core, The Kingdom, and The Academy are not configurations of one shared worldbuilding template. Shared methods do not transfer canon, ontology, or source authority between them.
 - **The author retains creative authority.** Model output can support analysis and design, but plausible or repeated output does not become canon without the author's decision.
 - **The archive is a partial externalization.** A world can contain author-established material that has not yet been written into this repository. Missing documentation limits what a reader or model can conclude; it does not prove that an element does not exist.
 - **Controls respond to observed failures.** The infrastructure evolved through actual use, diagnosis, proposed repairs, review, and feedback. Its complexity should be assessed against the creative problem and recurring failure it addresses.
@@ -74,7 +74,7 @@ Read this as an author's working environment for maintaining fictional worlds wi
 
 | Project | Repository entry | Interpretation |
 | --- | --- | --- |
-| AetherFire | [AetherFire Project](./worlds/AetherFire%20Project/) | Its own sources, controls, and project-specific authority. |
+| Project Feather Core (FTH) | [Project Feather Core](./Project%20Feather%20Core/) | Its own sources, controls, and project-specific authority; AetherFire is a country inside it. |
 | The Kingdom | [The Kingdom](./worlds/The%20Kingdom/) | Its own world model and local rules; do not infer its architecture from AetherFire or The Academy. |
 | The Academy | [The Academy Project](./worlds/The%20Academy%20Project/) | Its own world model and source structure; shared terminology does not imply shared fictional objects. |
 
@@ -90,9 +90,9 @@ repository/
 ├── SYSTEM_CONTEXT.md
 ├── AGENTS.md
 ├── worlds/
-│   ├── AetherFire Project/
 │   ├── The Kingdom/
 │   └── The Academy Project/
+├── Project Feather Core/
 ├── authoring/
 │   └── multi_paracosm_hub_model_updated.md
 ├── llm-controls/
@@ -116,7 +116,7 @@ repository/
 - [codex-workflows/](./codex-workflows/) contains repository copies of Codex skills; moving them does not install or update the author's locally installed skills.
 - [docs/](./docs/) contains instruction history, design analysis, and explanatory visuals.
 
-The two AetherFire CI collections remain separate: the [instruction design collection](./llm-controls/project-instruction-designs/Project%20CI/AetherFire%20CI/) and the [collection managed with the AetherFire package](./worlds/AetherFire%20Project/controls/AetherFire%20CI/). Their declared responsibilities and historical baselines still apply; directory placement does not select an active configuration.
+The [FTH instruction collection](./Project%20Feather%20Core/Project%20Feather%20Core%20CI/) is managed with the Project Feather Core package. General instruction designs remain under `llm-controls/`; their separate responsibilities and historical baselines still apply. Directory placement does not select an active configuration.
 
 The Kingdom package retains its declared reference-only status. Source archives retain their original contents and historical path references. Use current indexes for navigation; relocation does not reactivate archived sources.
 

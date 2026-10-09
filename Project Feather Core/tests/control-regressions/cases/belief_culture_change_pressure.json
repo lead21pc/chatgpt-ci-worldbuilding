@@ -1,0 +1,44 @@
+{
+  "id": "belief_culture_change_pressure",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "Anti-Drift Source/FTH_Anti_Drift_Belief_Culture_v1.0.md:5; Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.3.md:7",
+    "note": "Synthetic paired control probe; not historical runtime evidence, accepted lore, a model result, or authorization to activate semantic testing."
+  },
+  "operation": "Compare constraints with established cultural outcomes without building an economy.",
+  "boundary": "Synthetic tool introduction, one material incentive, and one access constraint; no budget, adoption rate, historical trajectory, or actor choice.",
+  "input": "A new tool becomes available and a subsidy reduces its use cost. A bodily limitation prevents group B from using one specified interface. BASE: adoption, norm change, and any response by B are unknown. VARIANT: add observations that cohort C adopted the tool after two named periods while its formal norm N remained unchanged. Report only these constraints and observations. Do not infer instant adoption, secularization, a unique economic response, B's morality or institutions, population-wide change, or indefinite retention. Accept the observed bounded adoption in VARIANT and keep formal norm separate from practice.",
+  "protected_distinction": "INTRODUCTION / MATERIAL PRESSURE / BIOLOGY != DETERMINED CULTURAL OUTCOME; OBSERVED ADOPTION != FORMAL NORM CHANGE",
+  "forbidden_conversion": "Invent a unique outcome or timeline from incentives/biology; expand into macroeconomics; reject established adoption; generalize C to the population.",
+  "recheck_on": [
+    "Project Feather Core CI/FTH_CI_version_v3.2.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.3.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Belief_Culture_v1.0.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Worldbuilding_Internal_Logic_v1.1.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "Project Feather Core CI/FTH_CI_version_v3.2.md",
+      "sha256": "4F4F08C622BEB6DB63061ACAB73216F844C81F9778D068E6B0D9461116739D6E"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.3.md",
+      "sha256": "227997F6621B49DB369D807742104E033F448BC04031D7C3102E0053FEF0A694"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Belief_Culture_v1.0.md",
+      "sha256": "57CE3BF330C515E8EF2CAE355A170B8526C0C178C99C3BD740DD7294A91371DA"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Worldbuilding_Internal_Logic_v1.1.md",
+      "sha256": "6CA481196EFAA946D0CCE222C48BA1B1BB8B41357448EF4C7CC129A48840BDE2"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md",
+      "sha256": "3C9940F55C34D8725517AA0403ECE70D4815B93E0AF393530DEDAEF99308375A"
+    }
+  ]
+}

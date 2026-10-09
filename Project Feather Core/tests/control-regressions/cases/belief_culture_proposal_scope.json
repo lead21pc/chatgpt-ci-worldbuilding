@@ -1,0 +1,34 @@
+{
+  "id": "belief_culture_proposal_scope",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "Anti-Drift Source/FTH_Anti_Drift_Belief_Culture_v1.0.md:7; Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.3.md:7",
+    "note": "Synthetic paired control probe; not historical runtime evidence, accepted lore, a model result, or authorization to activate semantic testing."
+  },
+  "operation": "Brainstorm one labeled option, then perform a bounded canon lookup.",
+  "boundary": "Synthetic belief-system design; no accepted canon, source admission, history completion, or permanent user decision.",
+  "input": "The user asks for one possible ritual-transmission design for faction F and explicitly says it is brainstorming, not canon. BASE: supply at most one labeled proposal and identify only its material assumptions. VARIANT: the user later asks what F's current canon says about transmission, without accepting the option. Do not use the earlier proposal as canon or proof of a carrier. State that the provided current evidence does not establish a transmission path. No full cultural audit or additional design is requested.",
+  "protected_distinction": "AUTHORIZED DESIGN != CANON ACCEPTANCE; PRIOR PROPOSAL != CURRENT EVIDENCE",
+  "forbidden_conversion": "Refuse all brainstorming because facts are unknown; silently canonize the option; use it as a lookup baseline; expand design or fill current UNKNOWN.",
+  "recheck_on": [
+    "Project Feather Core CI/FTH_CI_version_v3.2.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.3.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Belief_Culture_v1.0.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "Project Feather Core CI/FTH_CI_version_v3.2.md",
+      "sha256": "4F4F08C622BEB6DB63061ACAB73216F844C81F9778D068E6B0D9461116739D6E"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.3.md",
+      "sha256": "227997F6621B49DB369D807742104E033F448BC04031D7C3102E0053FEF0A694"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Belief_Culture_v1.0.md",
+      "sha256": "57CE3BF330C515E8EF2CAE355A170B8526C0C178C99C3BD740DD7294A91371DA"
+    }
+  ]
+}
