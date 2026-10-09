@@ -1,0 +1,39 @@
+{
+  "id": "actor_reception_leak_before_notice",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "Anti-Drift Source/FTH_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md:4. Concurrent signals; 5. Time and asymmetric receipt; Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.1.md:7",
+    "note": "Synthetic hypothetical control probe; no historical runtime failure, accepted lore, model result, or testable-scope activation is asserted."
+  },
+  "operation": "Compare an established leak path with official receipt.",
+  "boundary": "Synthetic actor C; leak content, actor credibility appraisal, and timing are explicit hypothetical premises. Actual truth and later official content remain unresolved.",
+  "input": "C receives a leak through an established channel and considers it credible before any official publication or notice. The leak reports a proposed policy. BASE: official content is still unavailable. VARIANT: a later official notice conflicts with part of the leak. Preserve received content, C's credibility appraisal, the established order, and the conflict. Does lack of official publication exclude C's access? Does credibility prove the policy is true, enacted, or accepted by C?",
+  "protected_distinction": "KNOWLEDGE != OFFICIAL RECEIPT; TEMPORAL ORDER MUST BE ESTABLISHED, NOT ASSUMED FROM EVENT LABELS",
+  "forbidden_conversion": "Force official publication before knowledge, erase the established leak path, or turn credible leaked content into confirmed policy/canon.",
+  "recheck_on": [
+    "Project Feather Core CI/FTH_CI_version_v3.2.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.1.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Modular_Concept_Architecture_v1.0.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "Project Feather Core CI/FTH_CI_version_v3.2.md",
+      "sha256": "4F4F08C622BEB6DB63061ACAB73216F844C81F9778D068E6B0D9461116739D6E"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.1.md",
+      "sha256": "5533FB46AA87B9DF1AE98FB4EC9180E1E6017601E454AF2A2A7BBB520A14A316"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md",
+      "sha256": "8981CE3F1C840AAF7F1D4E310557F6803EC6E22B78D7F96A36A5AE9C0A5F2C99"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Modular_Concept_Architecture_v1.0.md",
+      "sha256": "31E9BEE1348409E7728BD01C70DD9BEC15CB1E3120F33AC7333AF7E0DCCD49E2"
+    }
+  ]
+}

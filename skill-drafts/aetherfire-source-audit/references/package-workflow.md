@@ -1,4 +1,4 @@
-# Quy trình cho gói AetherFire Project
+# Quy trình cho gói Project Feather Core
 
 Dùng reference này khi cần chọn mốc package, sửa hoặc chứng nhận gói, hoặc khi metadata package ảnh hưởng trực tiếp tới kết luận. Với LOOKUP hẹp, chỉ đọc metadata tối thiểu để tìm đúng nguồn hiện hành.
 
@@ -31,13 +31,13 @@ Trước thay đổi nhiều domain, build pipeline hoặc retcon có hệ quả
 Chạy kiểm tra chỉ đọc:
 
 ```powershell
-python -B '<AetherFire Project path>\build_consolidation.py' --check
+python -B '<Project Feather Core path>\build_consolidation.py' --check
 ```
 
 Hoặc dùng wrapper của skill; wrapper gọi cùng lệnh và báo lỗi nếu Python trả exit code khác 0:
 
 ```powershell
-& '<skill-root>\scripts\verify_aetherfire_package.ps1' -ProjectRoot '<AetherFire Project path>'
+& '<skill-root>\scripts\verify_aetherfire_package.ps1' -ProjectRoot '<Project Feather Core path>'
 ```
 
 Có thể truyền `-PythonExecutable '<python executable path>'` nếu cần chọn interpreter cụ thể.

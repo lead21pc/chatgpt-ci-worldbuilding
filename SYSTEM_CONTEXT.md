@@ -2,7 +2,7 @@
 
 ## Start here: creative purpose and pipeline interpretation
 
-This is an author's working environment for developing **AetherFire, The Kingdom, and The Academy**, three independent fictional worlds, with ChatGPT and Codex assistance.
+This is an author's working environment for developing **Project Feather Core (FTH), The Kingdom, and The Academy**, three independent fictional worlds, with ChatGPT and Codex assistance. AetherFire is the name of a country inside Project Feather Core, not the project namespace.
 
 The worlds are the creative work. Instructions, source routers, audits, consolidation scripts, regression checks, and Git procedures support that work by preserving consistency, provenance, scope, and reviewable decisions.
 
@@ -57,7 +57,7 @@ The author maintains three separate paracosms in parallel:
 
 - **The Academy**
 - **The Kingdom**
-- **AetherFire**
+- **Project Feather Core (FTH)**
 
 They are not three deployments of one shared fictional architecture.
 

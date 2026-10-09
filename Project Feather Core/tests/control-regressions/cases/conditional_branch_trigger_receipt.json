@@ -1,0 +1,44 @@
+{
+  "id": "conditional_branch_trigger_receipt",
+  "layer": "CONTROL_SEMANTIC",
+  "status": "DRAFT",
+  "provenance": {
+    "kind": "CURRENT_CONTROL_CONTRACT",
+    "reference": "Anti-Drift Source/FTH_Anti_Drift_Modular_Concept_Architecture_v1.2.md:18 (Conditional Response Lifecycle)",
+    "note": "Fixture C. ABSTRACT TEST ONLY / NOT CANON / NOT A HIDDEN SCENARIO. Synthetic paired premises, not observed model behavior or authorization to activate semantic testing."
+  },
+  "operation": "Evaluate a trigger without omniscient actor updates.",
+  "boundary": "Only the stated synthetic branch distinctions; no real actors, lore, source admission, new doctrine, complete lifecycle model, or canon/open-state mutation.",
+  "input": "ABSTRACT TEST ONLY / NOT CANON / NOT A HIDDEN SCENARIO. BASE: FOREIGN ACTOR knows a secret about CLAIMANT, but COUNTERINTELLIGENCE has received no observation, message, or other information path about that knowledge. No automatic detection mechanism exists in these premises. TRACE_LEAK must not self-activate from simulation knowledge. VARIANT: a premise-established automatic detector can observe this specific event and issue its bounded alert under the stated trigger; its required access and operating conditions hold. Affirm only that alert without requiring conscious receipt or a fresh discretionary decision, and without inventing broader coverage, human understanding, or downstream selection.",
+  "protected_distinction": "WORLD STATE != ACTOR OBSERVED STATE != ACTOR INTERPRETED STATE; AUTOMATIC MECHANISM != UNIVERSAL SENSOR",
+  "forbidden_conversion": "Give domestic actors foreign/private knowledge; activate TRACE_LEAK without a path; prohibit an established automatic alert; turn the alert into universal awareness or guaranteed action.",
+  "recheck_on": [
+    "Project Feather Core CI/FTH_CI_version_v3.2.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.4.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Modular_Concept_Architecture_v1.2.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Total_War_RP_v1.1.md",
+    "Anti-Drift Source/FTH_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md"
+  ],
+  "active_control_anchors": [
+    {
+      "path": "Project Feather Core CI/FTH_CI_version_v3.2.md",
+      "sha256": "4F4F08C622BEB6DB63061ACAB73216F844C81F9778D068E6B0D9461116739D6E"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.4.md",
+      "sha256": "3394945CE59FD010D9F44B608DD83D6838A2A55B0BFFF8D905739A7EC8B2AD61"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Modular_Concept_Architecture_v1.2.md",
+      "sha256": "00ED039DCF5B38C13FD2697D6455D05D15A4093A5B5DE840AA105839663E1AB3"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Total_War_RP_v1.1.md",
+      "sha256": "D7D464522B3BE69CB2CBFF70814A28A566DF8F8BA7D2095F0744F4B6BC7F1D2B"
+    },
+    {
+      "path": "Anti-Drift Source/FTH_Anti_Drift_Actor_Reception_Normative_Signals_v1.0.md",
+      "sha256": "8981CE3F1C840AAF7F1D4E310557F6803EC6E22B78D7F96A36A5AE9C0A5F2C99"
+    }
+  ]
+}

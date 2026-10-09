@@ -18,5 +18,5 @@ if (-not (Test-Path -LiteralPath $builder -PathType Leaf)) {
 # Delegate current-package checks to its maintained, read-only validator.
 & $PythonExecutable -B $builder --check
 if ($LASTEXITCODE -ne 0) {
-    throw "AetherFire package verification failed (exit code $LASTEXITCODE)."
+    throw "Project Feather Core package verification failed (exit code $LASTEXITCODE)."
 }

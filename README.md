@@ -1,6 +1,6 @@
 # ChatGPT CI Versioning Audit & Changelog
 
-This is a personal, non-commercial workspace for developing three independent fictional worlds: **AetherFire, The Kingdom, and The Academy**, with support from ChatGPT and Codex.
+This is a personal, non-commercial workspace for developing three independent fictional worlds: **Project Feather Core (FTH), The Kingdom, and The Academy**, with support from ChatGPT and Codex. AetherFire remains the name of a country inside Project Feather Core.
 
 The repository contains externalized worldbuilding sources, instructions for working with those sources, design history, and supporting tools. Its source consolidation, routing, audits, regression checks, and Git workflows serve the author's creative work: preserving consistency, tracing decisions, managing revisions, and diagnosing recurring model failures.
 
@@ -34,7 +34,7 @@ A pipeline diagram may describe author actions, model instructions, executable t
 Related repositories may combine prompt collections, worldbuilding templates, lore archives, writing tools, and evaluation workflows. The distinctions below explain this repository's scope; they are not a claim that no other project uses similar methods.
 
 - **Instructions are part of an ongoing authoring workflow.** The repository records why a control was introduced, which failure it addresses, and what evidence supports it. A newer instruction file is a candidate to evaluate, not a universal upgrade.
-- **The fictional worlds are independent.** AetherFire, The Kingdom, and The Academy are not configurations of one shared worldbuilding template. Shared methods do not transfer canon, ontology, or source authority between them.
+- **The fictional worlds are independent.** Project Feather Core, The Kingdom, and The Academy are not configurations of one shared worldbuilding template. Shared methods do not transfer canon, ontology, or source authority between them.
 - **The author retains creative authority.** Model output can support analysis and design, but plausible or repeated output does not become canon without the author's decision.
 - **The archive is a partial externalization.** A world can contain author-established material that has not yet been written into this repository. Missing documentation limits what a reader or model can conclude; it does not prove that an element does not exist.
 - **Controls respond to observed failures.** The infrastructure evolved through actual use, diagnosis, proposed repairs, review, and feedback. Its complexity should be assessed against the creative problem and recurring failure it addresses.
@@ -46,8 +46,8 @@ Read this as an author's working environment for maintaining fictional worlds wi
 
 | Project | Repository entry | Interpretation |
 | --- | --- | --- |
-| AetherFire | [AetherFire Project](./AetherFire%20Project/) | Its own sources, controls, and project-specific authority. |
-| The Kingdom | [The Kingdom](./The%20Kingdom/) | Its own world model and local rules; do not infer its architecture from AetherFire or The Academy. |
+| Project Feather Core (FTH) | [Project Feather Core](./Project%20Feather%20Core/) | Its own sources, controls, and project-specific authority. AetherFire is a country in this setting. |
+| The Kingdom | [The Kingdom](./The%20Kingdom/) | Its own world model and local rules; do not infer its architecture from Project Feather Core or The Academy. |
 | The Academy | [The Academy Project](./The%20Academy%20Project/) | Its own world model and source structure; shared terminology does not imply shared fictional objects. |
 
 Each project's local documentation determines how to read its sources. Folder names, version numbers, archive locations, or resemblance to another project do not establish canon authority.
