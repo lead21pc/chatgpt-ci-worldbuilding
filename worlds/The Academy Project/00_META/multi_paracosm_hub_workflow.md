@@ -16,7 +16,7 @@ abstract seed
 HUB
     ├─ fork → The Academy
     ├─ fork → The Kingdom
-    └─ fork → AetherFire
+    └─ fork → Project Feather Core
 ```
 
 **Invariant:**
@@ -111,7 +111,7 @@ Do not copy the source branch's implementation, ontology, state, or assumptions 
 
 If The Academy turns `institution` into a Narrative Engine, that does not make `Narrative Engine` part of the original seed.
 
-The Kingdom and AetherFire still receive only the abstract `institution` primitive.
+The Kingdom and Project Feather Core still receive only the abstract `institution` primitive.
 
 ### Local ontology has priority
 
@@ -208,7 +208,7 @@ Modules may interact, remain independent, or reintegrate changed state later.
 
 ---
 
-### AetherFire
+### Project Feather Core
 
 **Modularization target:** sufficiently complex factions or state apparatuses.
 
