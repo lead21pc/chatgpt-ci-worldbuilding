@@ -2,6 +2,21 @@
 
 > Audit/control layer only. Part I summarizes the completed reconciliation. Part II preserves assertion-level conflicts, provenance, priority and resolutions.
 
+## Tách họ Hoa Nguyệt 20–23 — 2026-10-10
+
+**Quyền:** tác giả yêu cầu đề xuất subsystem theo họ 21–29 rồi xác nhận “tách file”. Baseline `Invariant-System`, HEAD `4bb9a01`; không có staged changes, các deletion ngoài package giữ ngoài tác vụ. Chuyển nguồn quản lý và định tuyến, không thay canon, không tạo file 24–29 hoặc chốt các UNKNOWN hiện hành.
+
+| File tiền nhiệm | Nguồn hiện hành | Phạm vi |
+| --- | --- | --- |
+| `20` §1, §5.2 | `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` | Hồ sơ nền, nguồn gốc ba tiền thân, dark foundation/Lục Kì Nhân, phép thuật và quan hệ giữa miền. |
+| `20` §5.1, §5.3–5.8 | `21_HOA_NGUYET_CULTURE_LANGUAGE_DRESS_CURRENT.md` / `AFM-015` | Văn hóa, bản sắc, trang phục, ngôn ngữ/chữ viết và chuẩn văn bản chung; nguồn gốc ở `20` §5.2. |
+| `20` §2, đủ các mục con 1–12 | `22_HOA_NGUYET_STATE_IDENTITY_SYMBOLS_CURRENT.md` / `AFM-016` | Quốc hiệu, biểu tượng và trình diện trong/ngoài nước. |
+| `20` §§3–4 | `23_HOA_NGUYET_GEOGRAPHY_TRADE_RELATIONS_CURRENT.md` / `AFM-017` | Địa lý tiếp cận, thương mại và giao diện đối ngoại. |
+
+Số mục nội dung chuyển được giữ để truy bản tiền nhiệm; `21` không có §5.2 vì nguyên tắc nguồn gốc thuộc file chủ. Các quyết định nhập trước phía dưới giữ địa chỉ lịch sử; khi tra hiện hành dùng bảng này. `20` không thay chi tiết của file con; cây tài liệu không cấp quyền chính trị cho ba vùng văn hóa. `01/10/13`, index, manifest, registry và tests cập nhật địa chỉ nguồn; `92` giữ nguyên ID/trạng thái và dẫn về owner mới. Archive cũ không sửa, không tạo bản sao nguyên module trong archive vì Git giữ tiền nhiệm.
+
+**AF-HN-STRUCT-001 — RESOLVED / DOCUMENT STRUCTURE:** tách nguyên nội dung đã chốt, chỉ sửa header/định tuyến và các tham chiếu nội bộ cần thiết. Dark foundation thuộc `20`, ý nghĩa biểu tượng liên quan vẫn được giải thích trong `22`; dữ kiện nền và giao diện có thể được nhắc lại nhưng không tạo owner cạnh tranh. Phần văn bản hành chính chung ở `21` chưa đủ để lập subsystem thể chế riêng; chính trị/an ninh phía AF vẫn thuộc `12`.
+
 ## Hoa Nguyệt — bảy nguyên tắc nền, nhập 2026-10-10
 
 **Quyền:** tác giả yêu cầu “new task, audit file mới và nhập vào canon”. Nguồn duy nhất mới trong inbox là `HOA_NGUYET_7_NGUYEN_TAC_DE_XUAT.md`, 5010 bytes, SHA-256 `4C08DAA94B20A630EB681E73D19F51280926CEF316B39A78FF849F36C7BAF128`. Nhập đủ bảy nguyên tắc theo yêu cầu hiện tại; nhãn ĐỀ XUẤT và ghi chú không sửa canon trong nguồn mô tả trạng thái tiền nhiệm. Bản gốc lưu byte-exact tại `Source_Archive/HOA_NGUYET_7_NGUYEN_TAC_DE_XUAT.md` sau kiểm chứng.

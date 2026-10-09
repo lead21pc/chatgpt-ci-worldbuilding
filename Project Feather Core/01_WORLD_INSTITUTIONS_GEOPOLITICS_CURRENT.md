@@ -140,7 +140,7 @@ MC2 vẫn có giá trị huyết hệ Raging Fire/Raging Phoenix/True Crown. Gia
 
 ### E. Hoa Nguyệt / Tây quốc — giao diện miền quốc gia
 
-`20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát căn tính, văn hóa, quốc hiệu, biểu tượng và địa lý thương mại Hoa Nguyệt. Đây là quốc gia ở phía tây AF, đối địch nhưng vẫn có thương mại. `13` kiểm soát Undi; phả hệ MC2 không đổi.
+`20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` giữ hồ sơ nền/nguồn gốc Hoa Nguyệt; `21_HOA_NGUYET_CULTURE_LANGUAGE_DRESS_CURRENT.md` / `AFM-015` giữ văn hóa/ngôn ngữ/trang phục, `22_HOA_NGUYET_STATE_IDENTITY_SYMBOLS_CURRENT.md` / `AFM-016` giữ quốc hiệu/biểu tượng, `23_HOA_NGUYET_GEOGRAPHY_TRADE_RELATIONS_CURRENT.md` / `AFM-017` giữ địa lý/giao thương/đối ngoại. Đây là quốc gia ở phía tây AF, đối địch nhưng vẫn có thương mại. `13` kiểm soát Undi; phả hệ MC2 không đổi.
 
 ### F. Hai hướng tích hợp magic–technology
 
@@ -297,7 +297,7 @@ Các quốc gia bên ngoài không có cùng lập trường.
 
 ### 20.0 Hoa Nguyệt / Tây quốc — giao diện địa chính trị
 
-`20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát canon quốc gia Hoa Nguyệt; `01` chỉ giữ giao diện thế giới. Hoa Nguyệt / 華月 là tên đối ngoại của cùng quốc gia Kính Hoa Thuỷ Nguyệt / 鏡華水月 ở phía tây AF, không một chủ thể riêng.
+`20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` giữ hồ sơ quốc gia Hoa Nguyệt; `21` quản lý văn hóa/ngôn ngữ/trang phục, `22` quốc hiệu/biểu tượng, `23` địa lý/giao thương/đối ngoại. `01` chỉ giữ giao diện thế giới. Hoa Nguyệt / 華月 là tên đối ngoại của cùng quốc gia Kính Hoa Thuỷ Nguyệt / 鏡華水月 ở phía tây AF, không một chủ thể riêng.
 
 Đối địch AF và giao thương song phương cùng tồn tại. Con đường Tơ lụa là một trong nhiều kết nối đối ngoại; AF không cô lập Hoa Nguyệt bằng địa lý. Các tuyến ML/Raging Fire/phương Bắc cụ thể vẫn chưa chốt. Trang phục nghề do `13` kiểm soát, ý định appropriation của AF ở `10` §6; hệ tên/biểu tượng không tự thay đổi Undi hoặc tạo sự kiện ngoại giao.
 

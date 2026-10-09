@@ -8,7 +8,7 @@
 
 ## Hoa Nguyệt — bảy nguyên tắc nền, nhập 2026-10-10
 
-`20` §5 giữ ba vùng văn hóa Hoa/Nhật/Việt, ba quốc gia tiền thân, căn tính riêng, trang phục đa thời kỳ/quyền mặc xuyên vùng theo nguồn gốc, ngôn ngữ/chữ viết theo vùng và tiếng Trung hiện đại cho văn bản hành chính chung. Cơ chế hợp nhất, tên vùng, phục sức đặc thù, giáo dục, dạng Hán tự và triển khai văn kiện/dịch thuật còn mở ở `92` AF-HN-OPEN-006–009. `91` ghi phạm vi thay thế và nguồn; không đổi quốc hiệu/dark foundation hoặc tự sửa Undi.
+`20` §5.2 giữ nguồn gốc ba quốc gia tiền thân; `21` §5 giữ ba vùng văn hóa Hoa/Nhật/Việt, căn tính riêng, trang phục đa thời kỳ/quyền mặc xuyên vùng theo nguồn gốc, ngôn ngữ/chữ viết theo vùng và tiếng Trung hiện đại cho văn bản hành chính chung. Cơ chế hợp nhất, tên vùng, phục sức đặc thù, giáo dục, dạng Hán tự và triển khai văn kiện/dịch thuật còn mở ở `92` AF-HN-OPEN-006–009. `91` ghi phạm vi thay thế và nguồn; không đổi quốc hiệu/dark foundation hoặc tự sửa Undi.
 
 ## World/meta/Giant — nhập canon 2026-10-08
 
@@ -23,12 +23,12 @@ Số file là địa chỉ tài liệu theo miền, không phải mức ưu tiê
 | --- | --- | --- |
 | Miền chung/xuyên quốc gia | `01` thế giới; `02` công nghệ; `03` metafiction; `04` narrator; `05` MC4; `06` hàng không/không phận | Không nằm dưới quyền quản lý độc quyền của một quốc gia. File MC4 quản lý căn tính nhân vật, không phủ định membership Học viện. |
 | Quốc gia AF | `10` hồ sơ chủ; `11` luật/Civil/lao động; `12` chính trị/an ninh; `13` Undie; `14` Học viện | Phạm vi AF và các giao diện cần thiết; cùng họ không có nghĩa mọi người/tổ chức đều thuộc nhà nước. |
-| Hoa Nguyệt | `20` hồ sơ chủ | Chưa tạo subsystem riêng. |
+| Hoa Nguyệt | `20` hồ sơ chủ; `21` văn hóa/ngôn ngữ/trang phục; `22` quốc hiệu/biểu tượng; `23` địa lý/giao thương/đối ngoại | Ba nguồn chuyên biệt giữ chi tiết và UNKNOWN theo miền. |
 | RF | `30` hồ sơ chủ | Liên hiệp lục địa, không một vương quốc; chứa các quan hệ nội bộ đã chốt. |
 | Matriarch's Lament | `40` hồ sơ chủ | Nội bộ ML và giao diện khu vực đã chốt; TE/các bộ tộc được tương tác không tự thuộc ML. |
 | Lịch sử/audit | `90` lịch sử; `91` reconciliation; `92` open issues | Không phải quốc gia hoặc nguồn thay thế canon hiện hành. |
 
-`AFM-ID` không đổi theo số file: mười hai ID cũ giữ nguyên; `AFM-013` nhận hồ sơ AF, `AFM-014` nhận RF. Catalog dưới đây là bản đồ ID → đường dẫn, không phải cây sở hữu.
+`AFM-ID` không đổi theo số file: mười hai ID cũ giữ nguyên; `AFM-013` nhận hồ sơ AF, `AFM-014` nhận RF; `AFM-015–017` nhận ba subsystem Hoa Nguyệt `21–23`. Catalog dưới đây là bản đồ ID → đường dẫn, không phải cây sở hữu.
 
 ### Thứ tự đọc theo tác vụ
 
@@ -36,6 +36,7 @@ Số file là địa chỉ tài liệu theo miền, không phải mức ưu tiê
 
 1. `01_WORLD_INSTITUTIONS_GEOPOLITICS_CURRENT.md` — căn tính project/thế giới, ontology xuyên quốc gia và địa chính trị.
 2. Chọn hồ sơ quốc gia: `10_AETHERFIRE_NATIONAL_CANON_CURRENT.md`, `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md`, `30_RF_NATIONAL_CANON_CURRENT.md`, `40_MATRIARCHS_LAMENT_CURRENT.md`.
+   Với Hoa Nguyệt, `20` giữ hồ sơ nền/nguồn gốc; chọn `21_HOA_NGUYET_CULTURE_LANGUAGE_DRESS_CURRENT.md`, `22_HOA_NGUYET_STATE_IDENTITY_SYMBOLS_CURRENT.md` hoặc `23_HOA_NGUYET_GEOGRAPHY_TRADE_RELATIONS_CURRENT.md` theo miền cần đọc.
 3. Với AF, chọn miền chuyên biệt:
    - `11_STATUS_CIVIL_LABOR_CURRENT.md` — địa vị, Civil, POW/Criminal/Yellow, lao động/namespace kinh tế.
    - `12_POLITICS_DYNASTIC_SECURITY_CURRENT.md` — thể chế/kế vị, MC2, kháng chiến, phản gián và bargaining AF–RF.
@@ -73,6 +74,9 @@ Số file là địa chỉ tài liệu theo miền, không phải mức ưu tiê
 | `AFM-012` | `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` |
 | `AFM-013` | `10_AETHERFIRE_NATIONAL_CANON_CURRENT.md` |
 | `AFM-014` | `30_RF_NATIONAL_CANON_CURRENT.md` |
+| `AFM-015` | `21_HOA_NGUYET_CULTURE_LANGUAGE_DRESS_CURRENT.md` |
+| `AFM-016` | `22_HOA_NGUYET_STATE_IDENTITY_SYMBOLS_CURRENT.md` |
+| `AFM-017` | `23_HOA_NGUYET_GEOGRAPHY_TRADE_RELATIONS_CURRENT.md` |
 
 <!-- END GENERATED MODULE CATALOG -->
 
@@ -90,6 +94,9 @@ HỒ SƠ QUỐC GIA
 ├─ 13 Undie professions / Undi
 └─ 14 Battlemage Academy
 20 Hoa Nguyệt
+├─ 21 Culture / language / dress
+├─ 22 State identity / symbols
+└─ 23 Geography / trade / external relations
 30 RF continental union
 40 Matriarch's Lament
 
@@ -130,9 +137,9 @@ STATUS
 
 ## Hoa Nguyệt — quốc hiệu và địa lý thương mại, chốt 2026-10-07
 
-`20` §2 giữ đủ quốc hiệu/biểu tượng: 鏡華水月 trong nước, 華月 đối ngoại, cùng một quốc gia; Hoa chính thức là 華. Nội địa lục giác đầy đủ, đối ngoại bố cục tròn và quốc kỳ vuông; hình học/màu/luật/tri thức tác nhân vẫn mở. `13` giữ Undi, không nhập biểu tượng thành rập nghề bắt buộc.
+`22` §2 giữ đủ quốc hiệu/biểu tượng: 鏡華水月 trong nước, 華月 đối ngoại, cùng một quốc gia; Hoa chính thức là 華. Nội địa lục giác đầy đủ, đối ngoại bố cục tròn và quốc kỳ vuông; hình học/màu/luật/tri thức tác nhân vẫn mở. `13` giữ Undi, không nhập biểu tượng thành rập nghề bắt buộc.
 
-`20` §3 chốt Hoa Nguyệt không bị AF cô lập, có giao thương ngoài AF, Silk Road không là cửa duy nhất. Khả năng phía Bắc/phía Nam/đi vòng AF không xác lập tuyến ML/Raging Fire/phương Bắc cụ thể; không hồi sinh Quad Night/Holy State gate. `91` ghi AF-HN-001–009; `92` giữ các unknown. Theo yêu cầu tách miền, `20` / `AFM-012` là module Hoa Nguyệt riêng; `01` giữ interface. Không tạo quốc gia, tuyến, cơ quan hoặc nghi lễ mới.
+`23` §3 chốt Hoa Nguyệt không bị AF cô lập, có giao thương ngoài AF, Silk Road không là cửa duy nhất. Khả năng phía Bắc/phía Nam/đi vòng AF không xác lập tuyến ML/Raging Fire/phương Bắc cụ thể; không hồi sinh Quad Night/Holy State gate. `91` ghi AF-HN-001–009; `92` giữ các unknown. Theo yêu cầu tách miền, `20` / `AFM-012` giữ hồ sơ Hoa Nguyệt và `21–23` giữ các miền chuyên biệt; `01` giữ interface. Không tạo quốc gia, tuyến, cơ quan hoặc nghi lễ mới.
 
 ## Matriarch / Saint's Fresh — chốt 2026-10-06
 

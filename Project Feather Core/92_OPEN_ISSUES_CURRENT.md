@@ -521,7 +521,7 @@ Các UNKNOWN ở §§3/6/9/11/13 và tại các owner vẫn giữ: ngưỡng ng�
 
 ## Hoa Nguyệt — bảy nguyên tắc nền, các mục mở 2026-10-10
 
-`20` §5 / `AFM-012` đã chốt ba vùng văn hóa Hoa/Nhật/Việt, ba quốc gia tiền thân, căn tính riêng, trang phục đa thời kỳ/quyền mặc xuyên vùng theo nguồn gốc, hệ chữ hiện đại theo vùng và tiếng Trung hiện đại cho văn bản hành chính chung. Các nhãn Hoa/Nhật/Việt chưa là tên vùng chính thức. Không suy quyền hành chính từng vùng hoặc cơ chế truyền văn hóa xuyên thế giới.
+`20` §5.2 / `AFM-012` giữ nguồn gốc ba quốc gia tiền thân; `21_HOA_NGUYET_CULTURE_LANGUAGE_DRESS_CURRENT.md` §5 / `AFM-015` giữ ba vùng văn hóa Hoa/Nhật/Việt, căn tính riêng, trang phục đa thời kỳ/quyền mặc xuyên vùng theo nguồn gốc, hệ chữ hiện đại theo vùng và tiếng Trung hiện đại cho văn bản hành chính chung. AF-HN-OPEN-006 thuộc hồ sơ nguồn gốc `20` và giao diện vùng `21`; AF-HN-OPEN-007–009 thuộc `21`. Các nhãn Hoa/Nhật/Việt chưa là tên vùng chính thức. Không suy quyền hành chính từng vùng hoặc cơ chế truyền văn hóa xuyên thế giới.
 
 | ID | Trạng thái | Phạm vi còn mở |
 | --- | --- | --- |
@@ -532,7 +532,7 @@ Các UNKNOWN ở §§3/6/9/11/13 và tại các owner vẫn giữ: ngưỡng ng�
 
 ## Hoa Nguyệt — các mục mở sau chốt 2026-10-07
 
-`20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát hai quốc hiệu và địa lý giao thương; Hán tự 華 đã RESOLVED, không còn UNKNOWN hiện hành. Một chủ thể nhà nước với hai lớp trình diện không tạo hai quốc gia hoặc hai địa vị công dân.
+`20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` giữ hồ sơ quốc gia. `22_HOA_NGUYET_STATE_IDENTITY_SYMBOLS_CURRENT.md` / `AFM-016` quản lý quốc hiệu/biểu tượng và AF-HN-OPEN-001–002; `23_HOA_NGUYET_GEOGRAPHY_TRADE_RELATIONS_CURRENT.md` / `AFM-017` quản lý địa lý/giao thương/đối ngoại và AF-HN-OPEN-003–005. Hán tự 華 đã RESOLVED, không còn UNKNOWN hiện hành. Một chủ thể nhà nước với hai lớp trình diện không tạo hai quốc gia hoặc hai địa vị công dân.
 
 | ID | Trạng thái | Phạm vi |
 | --- | --- | --- |

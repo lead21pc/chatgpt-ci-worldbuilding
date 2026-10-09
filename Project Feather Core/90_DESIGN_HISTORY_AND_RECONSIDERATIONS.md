@@ -7,7 +7,7 @@
 
 ## Hoa Nguyệt — ranh giới hồ sơ lịch sử, chốt 2026-10-07
 
-`20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` kiểm soát canon Hoa Nguyệt hiện hành; `01` chỉ giữ giao diện thế giới. Những wording cũ tại §24.1 và cây tổng kết về “tên chính thức Hoa Nguyệt” chưa phân biệt nội địa/đối ngoại, cùng UNKNOWN Hán tự “Hoa”, đã được thay thế có giới hạn: 鏡華水月 / 華月, chữ 華. Bản lịch sử vẫn giữ nguyên để truy nguồn, không là fallback.
+Họ Hoa Nguyệt hiện hành gồm `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md` / `AFM-012` hồ sơ nền/nguồn gốc, `21_HOA_NGUYET_CULTURE_LANGUAGE_DRESS_CURRENT.md` / `AFM-015` văn hóa/ngôn ngữ/trang phục, `22_HOA_NGUYET_STATE_IDENTITY_SYMBOLS_CURRENT.md` / `AFM-016` quốc hiệu/biểu tượng và `23_HOA_NGUYET_GEOGRAPHY_TRADE_RELATIONS_CURRENT.md` / `AFM-017` địa lý/giao thương/đối ngoại; `01` chỉ giữ giao diện thế giới. Những wording cũ tại §24.1 và cây tổng kết về “tên chính thức Hoa Nguyệt” chưa phân biệt nội địa/đối ngoại, cùng UNKNOWN Hán tự “Hoa”, đã được thay thế có giới hạn: 鏡華水月 / 華月, chữ 華. Mô tả cảm hứng Trung Hoa–Nhật Bản trong lịch sử không phủ định vùng Việt đã nhập 2026-10-10. Bản lịch sử vẫn giữ nguyên để truy nguồn, không là fallback.
 
 Dark foundation/Lục Kì Nhân, văn hóa/quốc phục, triết lý phép thuật, nhân quyền và Silk Road còn hiệu lực. Nội địa/đối ngoại không thành hai quốc gia; giao thương đa hướng không phục hồi corridor Quad Night/Holy State, không tự tạo route/node nhỏ hoặc viết lại Undi. `91` ghi đối chiếu; `92` giữ mục mở.
 

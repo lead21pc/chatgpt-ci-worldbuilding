@@ -157,7 +157,7 @@ AF **thực sự cố ý vay mượn/chiếm dụng ý tưởng quốc phục Ho
 tương đồng thị giác ≠ ý định thù địch đã được chứng minh công khai
 ```
 
-Trang phục và hệ quả nghề thuộc `13` §10; quốc hiệu/văn hóa Hoa Nguyệt thuộc `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md`. Không xác lập phản ứng ngoại giao chưa chốt.
+Trang phục và hệ quả nghề thuộc `13` §10; hồ sơ chủ Hoa Nguyệt ở `20_HOA_NGUYET_NATIONAL_CANON_CURRENT.md`, văn hóa/trang phục ở `21_HOA_NGUYET_CULTURE_LANGUAGE_DRESS_CURRENT.md`, quốc hiệu/biểu tượng ở `22_HOA_NGUYET_STATE_IDENTITY_SYMBOLS_CURRENT.md`. Không xác lập phản ứng ngoại giao chưa chốt.
 
 AF–RF cách nhau bởi đại dương; Seaborne làm hải vận cực kỳ nguy hiểm nên giao lưu phụ thuộc mạnh vào hàng không. AF–Hoa Nguyệt có Con đường Tơ lụa song phương theo hiệp định thương mại; căng thẳng không tự cắt thương mại, và đây không phải cửa ngõ duy nhất của Hoa Nguyệt. `01` giữ quan hệ địa lý/đối ngoại chung; `06` giữ hàng không.
 

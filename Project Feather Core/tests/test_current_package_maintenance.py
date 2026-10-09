@@ -123,7 +123,8 @@ class MaintenanceTests(unittest.TestCase):
 
     def test_hoa_nguyet_source_and_open_boundaries_survive(self):
         name = tool.ACCEPTED['AFM-012']
-        text = (self.root / name).read_text(encoding='utf-8')
+        text = '\n'.join((self.root / tool.ACCEPTED[key]).read_text(encoding='utf-8')
+                         for key in ('AFM-012', 'AFM-015', 'AFM-016', 'AFM-017'))
         for marker in ('鏡華水月', '華月', 'Lục Kì Nhân', 'Hanfu', 'UNKNOWN',
                        'Con đường Tơ lụa', 'không phải cửa ngõ đối ngoại duy nhất',
                        'Không phục hồi hoặc ánh xạ lại', 'chung chỉ huy'):
@@ -147,6 +148,7 @@ class MaintenanceTests(unittest.TestCase):
             'AFM-007': '40', 'AFM-008': '06', 'AFM-009': '14',
             'AFM-010': '02', 'AFM-011': '12', 'AFM-012': '20',
             'AFM-013': '10', 'AFM-014': '30',
+            'AFM-015': '21', 'AFM-016': '22', 'AFM-017': '23',
         }
         self.assertEqual(set(prefixes), set(tool.ACCEPTED))
         for key, prefix in prefixes.items():
@@ -168,6 +170,42 @@ class MaintenanceTests(unittest.TestCase):
         self.assertEqual(before, self.snapshot())
         self.sync()
         self.assertEqual(self.run_cli('--check').returncode, 0)
+
+    def test_hoa_nguyet_subsystems_bootstrap_and_missing_source(self):
+        self.sync()
+        keys = ('AFM-015', 'AFM-016', 'AFM-017')
+        for key in keys:
+            for filename, prefix in (
+                    (tool.INDEX, f'| `{key}` |'.encode()),
+                    (tool.MANIFEST, f'| `{tool.ACCEPTED[key]}` |'.encode())):
+                path = self.root / filename
+                path.write_bytes(b'\n'.join(line for line in path.read_bytes().split(b'\n')
+                                           if not line.startswith(prefix)))
+        self.assertEqual(self.run_cli('--check').returncode, 2)
+        self.sync()
+        self.assertEqual(self.run_cli('--check').returncode, 0)
+        for key in keys:
+            path = self.root / tool.ACCEPTED[key]
+            original = path.read_bytes()
+            path.unlink()
+            self.rejected_without_writes()
+            path.write_bytes(original)
+
+    def test_hoa_nguyet_owners_keep_canon_and_unknowns(self):
+        sources = {key: (self.root / tool.ACCEPTED[key]).read_text(encoding='utf-8')
+                   for key in ('AFM-012', 'AFM-015', 'AFM-016', 'AFM-017')}
+        for marker in ('ba quốc gia tiền thân', 'Lục Kì Nhân', 'Thời điểm, nguyên nhân'):
+            self.assertIn(marker, sources['AFM-012'])
+        for marker in ('Chữ Quốc ngữ', 'chữ Hán, chữ Nôm', 'áo dài',
+                       'không tự đặt ra nghĩa vụ thông thạo', 'phẩm cấp', 'AF-HN-OPEN-006'):
+            self.assertIn(marker, sources['AFM-015'])
+        for marker in ('### 12. Phạm vi supersession cuối', '鏡華水月', 'bảng màu quốc kỳ'):
+            self.assertIn(marker, sources['AFM-016'])
+        for marker in ('không phải cửa ngõ đối ngoại duy nhất', 'chung chỉ huy',
+                       '### Hoa Nguyệt–Matriarch', 'mạnh hơn AF–RF', 'Không phục hồi hoặc ánh xạ lại'):
+            self.assertIn(marker, sources['AFM-017'])
+        self.assertNotIn('### 12. Phạm vi supersession cuối', sources['AFM-012'])
+        self.assertNotIn('### 5.2. Nguồn gốc hợp nhất', sources['AFM-015'])
 
     def test_exact_predecessor_paths_migrate_only_with_write(self):
         self.sync()
