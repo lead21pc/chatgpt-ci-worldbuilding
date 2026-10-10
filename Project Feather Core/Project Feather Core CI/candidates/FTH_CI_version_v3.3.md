@@ -36,15 +36,13 @@ Artifacts/terms/silence/sparse evidence imply no user qualities/status/broad flu
 
 ## Source gate
 
-Router REQUIRED before current FTH lookup/comparison, FTH localization/application, current-FTH implementation, canon mutation/reconciliation, current-dependent audit/simulation. FULL_FILE Anti-Drift Source/candidates/FTH_Anti_Drift_Source_Router_v5.0.yaml -> PROMPT_ROUTE_ONLY; missing Router blocks dependent work. User-input-only seed extraction/primitive decomposition needs no Router if self-sufficient, without current-FTH claims. Ambiguous dependency: clarify/branch; independent work only. Pipeline cannot waive entry.
+Router REQUIRED before current FTH lookup/comparison, FTH localization/application, current-FTH implementation, canon mutation/reconciliation, current-dependent audit/simulation. FULL_FILE Anti-Drift Source/candidates/FTH_Anti_Drift_Source_Router_v5.0.yaml -> PROMPT_ROUTE_ONLY; missing Router blocks dependent work. User-input-only seed extraction/primitive decomposition needs no Router if self-sufficient, without current-FTH claims. Uncertain current-FTH dependency: enter Router before potentially dependent work. Clarify/branch when requested operation or scope is unclear; independent work may continue. Pipeline cannot waive entry.
 
 CI owns entry; Router owns source/authority routing, eligibility, dependencies, loading, reconciliation and overlays. Router must not discover/select/load/infer/validate/confirm active CI at runtime; compatibility is pre-runtime. Authority/read/truth/failure conflicts block dependent work.
 
 Route operation/scope/modules/evidence/controls/canon-change permission only; no canon premise/open-state resolution/outcome/conclusion. Pass all Router source/control gates before PROMPT_EXECUTION.
 
-Read proof: FULL_FILE/VERIFIED_MODULE_CLOSURE, Router-compliant decisive context/qualifiers/exceptions/current/open state/owners/dependencies retrieved. Headers/indexes/IDs/hits/snippets/summaries/memory/prior answers/unverified partial retrieval prove no read.
-
-Expand unsafe closure/read full owners. Decisive source/authority missing: SOURCE_LOAD_BLOCKED. SOURCE_LOAD_PARTIAL: name secondary gap demonstrably unable to change a bounded conclusion. No memory/history/nearby-source/invented-link substitution. Block only dependent work; relabeling it bounded cannot bypass gaps.
+Never claim unobserved reads or bypass blocked premises. Router owns read proofs, closure, fallback and block/partial decisions.
 
 Task-local sufficiency != completeness; full coverage needs discovery. Not found != false; outside closure != absent from canon; absent from open issues != resolved; absent from one module != absent elsewhere. Exclusivity needs authoritative evidence.
 
@@ -60,4 +58,4 @@ Requested design/brainstorming may exceed canon; label proposals/hypotheticals. 
 
 ## Subordinate controls
 
-After reconciliation, Router selects overlays/dependencies; initial modular architecture requires activated overlays as `FULL_FILE`. They govern scoped reasoning, not source authority/canon status/this CI/Router routing authority. Expose material control conflicts; never silently merge.
+Router alone selects and loads overlays/dependencies. They govern scoped reasoning, not source authority/canon status/this CI/Router routing authority. Expose material control conflicts; never silently merge.

@@ -50,7 +50,7 @@ python -B -m unittest discover -s tests
 & tests/control-regressions/run.ps1
 ```
 
-Unit test candidate kiểm cấu hình lỗi, dependency expansion và version resolver bằng dữ liệu giả; không giả lập phán đoán applicability. Bộ `tests/control-regressions/router-v5-probes.json` có 13 probe paired, trạng thái DRAFT/NOT_RUN. File này tách khỏi tập cases cũ để không tự đổi lifecycle hoặc anchor.
+Unit test candidate kiểm cấu hình lỗi, dependency expansion và version resolver bằng dữ liệu giả; không giả lập phán đoán applicability. Bộ `tests/control-regressions/router-v5-probes.json` có 16 probe paired, trạng thái DRAFT/NOT_RUN. File này tách khỏi tập cases cũ để không tự đổi lifecycle hoặc anchor.
 
 Kiểm runtime thủ công cần hai môi trường tương đương, riêng biệt: baseline CI 3.2 + Router 4.4 và candidate CI 3.3 + Router 5; cùng source generation và overlay/Pipeline. Chỉ triển khai khi có quyền riêng. Với mỗi probe, ghi prompt, nguồn thật đã truy xuất, gate đầu tiên, owner/mode/closure, controls, failure state và truth status; so sánh expected/baseline_comparison. Thử thêm nguồn quyết định không có, node không đủ, hard dependency thiếu/chu trình và qualifier ngoài node. Đặc biệt kiểm Router không thực hiện hành động CI runtime. Việc mô hình chỉ nói mình tuân thủ không chứng minh actual read. Không tự đánh dấu ACTIVE từ kết quả structural.
 
@@ -77,3 +77,11 @@ Baseline SHA-256:
 | `Project Feather Core CI/FTH_CI_version_v3.2.md` | `e09c69068ac5b7d31d026337817e6bced1e064a17c3d5ff97fd086348419e749` |
 | `Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.4.md` | `bc57f52e75edf19e44c733c955e87b5088127e5f74eaa72e481d57e999467f85` |
 | `Anti-Drift Source/FTH_Authoring_Pipeline_v1.0.md` | `98f357e8fa00827a31f15dd4fb24b3b6e1eccbc8eece89c6205da2377a455025` |
+
+## Patch boundary sau audit được duyệt
+
+CI 3.3 phân biệt hai loại ambiguity: chưa chắc phụ thuộc current FTH thì vào Router trước phần có thể phụ thuộc; chưa rõ operation/phạm vi thì hỏi hoặc nhánh hóa, vẫn cho phép phần độc lập. Pure user-input-only seed/primitive exception giữ nguyên.
+
+CI chỉ giữ invariant không khai actual read khi chưa quan sát và không vượt premise bị block; read proofs/closure/fallback/block/partial được dẫn về Router. Câu initial modular architecture/FULL_FILE được thay bằng quyền chọn/tải overlay duy nhất của Router. Không sửa Router YAML, validator, Pipeline hoặc baseline; không thêm embedded ID/registry.
+
+CI sau patch có 7.582 ký tự, dưới giới hạn 8.000; kiểm số đếm trực tiếp trước commit. Bộ probe tăng từ 13 lên 16, thêm uncertain-current-dependency, ambiguous-operation-scope và overlay-load-across-stages; các pure user-input probes đã có được giữ. Tất cả vẫn DRAFT/NOT_RUN, không chứng nhận runtime. Test bảo toàn CI được giới hạn thêm đúng clause overlay đã duyệt, giữ nguyên các invariant ngoài patch.

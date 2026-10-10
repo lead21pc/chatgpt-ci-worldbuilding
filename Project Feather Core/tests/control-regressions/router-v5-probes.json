@@ -55,7 +55,7 @@
     {
       "id": "ambiguous-transition",
       "input": "Rút hạt giống từ giả định một kho tài nguyên dùng chung với lượt sử dụng hữu hạn, rồi xem nó có hợp hệ hiện tại không.",
-      "candidate_expected": "Independent extraction allowed; explicitly route current comparison or clarify scope before it.",
+      "candidate_expected": "Independent extraction may continue; route before current-FTH comparison. Clarification concerns operation/scope, not permission to skip current-dependent routing.",
       "baseline_comparison": "Candidate names transition; never silently execute dependent branch.",
       "runtime_result": "NOT_RUN",
       "setup": "Hai môi trường paired có cùng source generation và controls; chỉ khác cặp CI/Router. Không trộn baseline với candidate."
@@ -115,6 +115,30 @@
       "baseline_comparison": "Deliberate change: remove 4.4 runtime active-CI gate/check, preserve CI subordination.",
       "runtime_result": "NOT_RUN",
       "setup": "Hai môi trường paired có cùng source generation và controls; chỉ khác cặp CI/Router. Không trộn baseline với candidate."
+    },
+    {
+      "id": "uncertain-current-dependency",
+      "input": "Cơ chế giả định: một kho tài nguyên dùng chung, mỗi thành viên có lượt sử dụng hữu hạn. Phân tích chức năng của cơ chế này; tôi chưa biết việc đó có cần dựa vào quy tắc FTH hiện tại hay không.",
+      "candidate_expected": "Enter Router before potentially current-dependent analysis; independent user-input extraction may continue. Do not silently classify the whole task as self-sufficient.",
+      "baseline_comparison": "Candidate explicitly defaults uncertain current-state dependency to Router entry.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Hai môi trường paired có cùng source generation và controls; chỉ khác cặp CI/Router. Không trộn baseline với candidate."
+    },
+    {
+      "id": "ambiguous-operation-scope",
+      "input": "Tôi có ý tưởng kho tài nguyên dùng chung với lượt sử dụng hữu hạn. Giúp tôi xử lý ý tưởng này.",
+      "candidate_expected": "Clarify requested operation/stop point or offer explicit conditional branches. Do not infer current-FTH localization or canon mutation from an unspecified request. Route if a current-dependent branch is actually requested or remains potentially dependent.",
+      "baseline_comparison": "Preserves operation/scope clarification; routing cannot decide the author intention.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Hai môi trường paired có cùng source generation và controls; chỉ khác cặp CI/Router. Không trộn baseline với candidate."
+    },
+    {
+      "id": "overlay-load-across-stages",
+      "input": "Dựa trên trạng thái hiện tại của một actor FTH đã được xác lập, phân tích cách actor tiếp nhận một tín hiệu mới giả định. Sau đó xét biến thể có thêm tín hiệu thể chế.",
+      "candidate_expected": "For each stage, select overlays and expand dependencies through Router. Every selected overlay uses FULL_FILE, including MCA required by ACTOR_RECEPTION. Initial versus later architecture creates no node-mode or dependency exception. Do not claim a fresh read when only an old summary is present.",
+      "baseline_comparison": "Candidate CI delegates overlay loading entirely to Router; both stages obey the same YAML load/dependency contract.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Hai môi trường paired có cùng current source generation và controls. Cung cấp đủ controlling sources về actor, thông tin tiếp cận và premises quyết định; tín hiệu mới được gắn nhãn giả định, không thành canon. Ghi mode và actual coverage riêng cho từng stage. Không trộn CI/Router baseline với candidate hoặc suy actual read từ lời tự xác nhận tuân thủ."
     }
   ]
 }
