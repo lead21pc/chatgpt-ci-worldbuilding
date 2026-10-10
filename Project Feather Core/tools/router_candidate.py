@@ -179,8 +179,10 @@ def validate(data, root):
     require('Source Router v4.4' in refs['baseline_router'].read_text(encoding='utf-8-sig').split('\n', 1)[0], 'Baseline Router mismatch')
     require('Authoring Pipeline v1.0' in refs['pipeline'].read_text(encoding='utf-8-sig').split('\n', 1)[0], 'Pipeline mismatch')
     # The upstream file is a maintenance reference, never runtime discovery.
-    upstream = root.parent / 'ChatGPT Plus+ Era/chatgpt v8.8.txt'
-    require(upstream.is_file(), 'Missing upstream 8.8 baseline')
+    relative = 'ChatGPT Plus+ Era/chatgpt v8.8.txt'
+    upstream_paths = [root.parent / relative,
+                      root.parent / 'llm-controls/global-instructions' / relative]
+    require(any(path.is_file() for path in upstream_paths), 'Missing upstream 8.8 baseline')
     fields(data['runtime'], {'entry', 'stages'}, 'runtime')
     require(data['runtime'] == {'entry': 'PROMPT_ROUTE_ONLY', 'stages': STAGES}, 'Runtime entry/stage order mismatch')
     b = data['bootstrap']
