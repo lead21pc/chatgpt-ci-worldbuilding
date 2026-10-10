@@ -1,0 +1,176 @@
+"""Structural candidate checks and deterministic dependency tests, not LLM evals."""
+from copy import deepcopy
+from pathlib import Path
+import tempfile
+import unittest
+
+from tools.router_candidate import CANDIDATE, CandidateError, check, expand, load, resolve_control, validate
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+class RouterCandidateTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.original = load(ROOT / CANDIDATE)
+
+    def setUp(self):
+        self.data = deepcopy(self.original)
+
+    def rejected(self):
+        with self.assertRaises(CandidateError):
+            validate(self.data, ROOT)
+
+    def test_current_candidate_resolves_all_eight_families(self):
+        self.assertEqual(len(check(ROOT)), 8)
+
+    def test_bad_entry_missing_duplicate_reordered_or_ci_stage_rejected(self):
+        for stages in [self.data['runtime']['stages'][:-1],
+                       self.data['runtime']['stages'] + ['SOURCE_LOAD'],
+                       list(reversed(self.data['runtime']['stages'])),
+                       ['CI_VALIDATE'] + self.data['runtime']['stages']]:
+            with self.subTest(stages=stages):
+                self.data['runtime']['stages'] = stages
+                self.rejected()
+        self.data = deepcopy(self.original)
+        self.data['runtime']['entry'] = 'CI_DISCOVERY'
+        self.rejected()
+
+    def test_duplicate_or_missing_control_id_rejected(self):
+        self.data['controls'].append(deepcopy(self.data['controls'][0]))
+        self.rejected()
+        self.data = deepcopy(self.original)
+        self.data['controls'].pop()
+        self.rejected()
+
+    def test_missing_hard_target_and_conditional_target_rejected(self):
+        for field in ['requires', 'conditional_requires']:
+            self.data = deepcopy(self.original)
+            self.data['controls'][0][field] = ['MISSING'] if field == 'requires' else [{'when': 'material', 'target': 'MISSING'}]
+            self.rejected()
+
+    def test_hard_or_conditional_cycle_rejected_even_before_condition_selected(self):
+        for edge in [None, {'when': 'material', 'target': 'ACTOR_RECEPTION'}]:
+            self.data = deepcopy(self.original)
+            if edge is None:
+                self.data['controls'][0]['requires'] = ['ACTOR_RECEPTION']
+            else:
+                self.data['controls'][0]['conditional_requires'] = [edge]
+            self.rejected()
+
+    def test_missing_reference_and_escape_rejected(self):
+        for path in ['missing.md', '../SYSTEM_CONTEXT.md']:
+            self.data['deployment']['candidate_ci'] = path
+            self.rejected()
+
+    def test_compatibility_tuple_rejected(self):
+        for key, value in [('status', 'ACTIVE'), ('ci_version', '3.2'), ('upstream_base', '8.9'), ('router_version', '4.4')]:
+            self.data = deepcopy(self.original)
+            self.data['deployment'][key] = value
+            self.rejected()
+
+    def test_failure_states_and_load_modes_cannot_silently_weaken(self):
+        for section, key, value in [('failures', 'decisive_source_or_authority_missing', 'SOURCE_LOAD_PARTIAL'),
+                                    ('failures', 'node_uncertain_missing_or_cycle', 'NODE_OR_FULL'),
+                                    ('loading', 'default', 'NODE_OR_FULL'),
+                                    ('loading', 'modes', ['FULL_FILE', 'SNIPPET'])]:
+            self.data = deepcopy(self.original)
+            self.data[section][key] = value
+            self.rejected()
+
+    def test_missing_closure_component_rejected(self):
+        self.data['loading']['closure_components'].pop()
+        self.rejected()
+
+    def test_referenced_ci_version_base_and_status_mismatch_rejected(self):
+        import shutil
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for key in ('candidate_ci', 'baseline_ci', 'baseline_router', 'pipeline'):
+                relative = self.data['deployment'][key]
+                target = root / relative
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(ROOT / relative, target)
+            path = root / self.data['deployment']['candidate_ci']
+            original = path.read_text(encoding='utf-8')
+            for old, new in [('v3.3 (FTH)', 'v3.2 (FTH)'), ('ChatGPT 8.8 base', 'ChatGPT 8.9 base'),
+                             ('Status: CANDIDATE;', 'Status: ACTIVE;'), (original, '')]:
+                path.write_text(original.replace(old, new), encoding='utf-8')
+                with self.assertRaisesRegex(CandidateError, 'Candidate CI'):
+                    validate(self.data, root)
+
+    def test_unknown_field_and_empty_policy_rejected(self):
+        self.data['runtime']['ci_discovery'] = True
+        self.rejected()
+        self.data = deepcopy(self.original)
+        self.data['policies']['authority'] = ''
+        self.rejected()
+
+    def test_duplicate_yaml_keys_and_unsafe_tags_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'bad.yaml'
+            for content in ['a: 1\na: 2\n', 'a: !!python/object:builtins.object {}', '[broken']:
+                path.write_text(content, encoding='utf-8')
+                with self.assertRaises(CandidateError):
+                    load(path)
+
+    def test_dependencies_expand_transitively_without_unjudged_flags(self):
+        rows = self.data['controls']
+        self.assertEqual(expand(rows, ['ACTOR_RECEPTION']), ['ACTOR_RECEPTION', 'MCA'])
+        self.assertEqual(expand(rows, ['BELIEF_CULTURE'], ['actor_reception_material', 'institutional_interface_material', 'economic_mechanism_material']),
+                         ['ACTOR_RECEPTION', 'BELIEF_CULTURE', 'ECONOMY', 'MCA', 'WIL'])
+        self.assertEqual(expand(rows, ['UNDIE']), ['MCA', 'UNDIE'])
+        self.assertEqual(expand(rows, ['UNDIE'], ['mortality_material', 'operational_conflict_material']),
+                         ['MCA', 'MORTALITY', 'TW', 'UNDIE'])
+        self.assertNotIn('TW', expand(rows, ['UNDIE'], ['actor_reception_material']))
+        self.assertEqual(expand(rows, ['WIL'], ['economic_mechanism_material']), ['ECONOMY', 'WIL'])
+        with self.assertRaises(CandidateError):
+            expand(rows, ['UNDIE'], ['mere_scandal'])
+
+    def test_numeric_version_exclusions_direct_children_and_ambiguity(self):
+        excluded = self.data['control_selection']['excluded_statuses']
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name, status in [('FTH_Test_v1.9.md', 'FINAL'), ('FTH_Test_v1.10.md', 'FINAL'),
+                                 ('FTH_Test_v9.0.md', 'CANDIDATE'), ('FTH_Test_v8.0.md', 'SUPERSEDED')]:
+                (root / name).write_text('> Status: ' + status, encoding='utf-8')
+            (root / 'archive').mkdir()
+            (root / 'archive/FTH_Test_v99.0.md').write_text('ignored', encoding='utf-8')
+            self.assertEqual(resolve_control(root, 'FTH_Test', excluded).name, 'FTH_Test_v1.10.md')
+            (root / 'FTH_Test_v1.10.0.md').write_text('> Status: FINAL', encoding='utf-8')
+            with self.assertRaisesRegex(CandidateError, 'Ambiguous'):
+                resolve_control(root, 'FTH_Test', excluded)
+            with self.assertRaisesRegex(CandidateError, 'Missing'):
+                resolve_control(root, 'FTH_Missing', excluded)
+
+    def test_contradictory_status_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'FTH_Test_v2.0.md').write_text('> Status: FINAL\n> Status: DRAFT', encoding='utf-8')
+            with self.assertRaisesRegex(CandidateError, 'Ambiguous status'):
+                resolve_control(root, 'FTH_Test', ['DRAFT'])
+
+    def test_malformed_eligible_version_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'FTH_Test_vfuture.md').write_text('> Status: FINAL', encoding='utf-8')
+            with self.assertRaisesRegex(CandidateError, 'Malformed'):
+                resolve_control(root, 'FTH_Test', [])
+
+    def test_ci_changes_confined_to_entry_and_candidate_header(self):
+        old = (ROOT / 'Project Feather Core CI/FTH_CI_version_v3.2.md').read_text(encoding='utf-8')
+        new = (ROOT / self.data['deployment']['candidate_ci']).read_text(encoding='utf-8')
+        old_intro, old_rest = old.split('## Source gate', 1)
+        new_intro, new_rest = new.split('## Source gate', 1)
+        status = '> Status: CANDIDATE; separate explicit Project deployment required. Rollback: CI 3.2 + Router 4.4.\n\n'
+        self.assertEqual(new_intro.replace('v3.3 (FTH)', 'v3.2 (FTH)', 1).replace(status, ''), old_intro)
+        marker = '`PROMPT_ROUTE_ONLY -> source loading -> reconciliation -> applicable controls -> PROMPT_EXECUTION`.'
+        self.assertEqual(old_rest.split(marker, 1)[1], new_rest.split(marker, 1)[1])
+
+    def test_probes_cover_13_draft_contracts_without_runtime_claim(self):
+        import json
+        suite = json.loads((ROOT / 'tests/control-regressions/router-v5-probes.json').read_text(encoding='utf-8'))
+        self.assertEqual(len(suite['probes']), 13)
+        self.assertEqual(len({p['id'] for p in suite['probes']}), 13)
+        self.assertFalse(suite['model_executed'])
+        self.assertEqual(suite['status'], 'DRAFT')
