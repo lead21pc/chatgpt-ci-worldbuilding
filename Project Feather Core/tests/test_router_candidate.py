@@ -99,6 +99,29 @@ class RouterCandidateTests(unittest.TestCase):
                 with self.assertRaisesRegex(CandidateError, 'Candidate CI'):
                     validate(self.data, root)
 
+    def test_upstream_check_accepts_both_existing_repository_layouts(self):
+        import shutil
+        with tempfile.TemporaryDirectory() as directory:
+            repository = Path(directory)
+            root = repository / 'Project Feather Core'
+            names = [self.data['deployment'][key] for key in
+                     ('candidate_ci', 'baseline_ci', 'baseline_router', 'pipeline')]
+            names += self.data['bootstrap']['full_file'] + [self.data['bootstrap']['reconciliation_record']]
+            names += [str(path.relative_to(ROOT)) for path in check(ROOT).values()]
+            for relative in names:
+                target = root / relative
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(ROOT / relative, target)
+            for relative in ['ChatGPT Plus+ Era/chatgpt v8.8.txt',
+                             'llm-controls/global-instructions/ChatGPT Plus+ Era/chatgpt v8.8.txt']:
+                upstream = repository / relative
+                upstream.parent.mkdir(parents=True, exist_ok=True)
+                upstream.write_text('maintenance file presence fixture', encoding='utf-8')
+                self.assertEqual(len(validate(self.data, root)), 8)
+                upstream.unlink()
+            with self.assertRaisesRegex(CandidateError, 'Missing upstream'):
+                validate(self.data, root)
+
     def test_unknown_field_and_empty_policy_rejected(self):
         self.data['runtime']['ci_discovery'] = True
         self.rejected()

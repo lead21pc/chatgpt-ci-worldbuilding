@@ -62,6 +62,8 @@ Baseline trước sửa: package PASS, 38 unit tests PASS, runner LIMITED_CHECK 
 
 Đối chiếu snapshot 151 file tracked của project/global: chỉ builder và README regression thay đổi trong tập này; 149 file còn lại nguyên byte, gồm baseline CI/Router, Pipeline, overlays, canon, archive và global 8.8/8.9. Sáu file mới là candidate/audit/validator/test/probes đúng phạm vi. Các deletion ngoài project có trước tác vụ được giữ nguyên, không stage.
 
+Trước push, kiểm trên detached checkout từ origin/main bắt được khác biệt bố cục global CI: local đặt ở `ChatGPT Plus+ Era`, bản hosted đặt ở `llm-controls/global-instructions/ChatGPT Plus+ Era`. Validator nay chấp nhận sự tồn tại của base 8.8 ở một trong hai bố cục đã có, không di chuyển file hoặc chọn CI runtime. Thêm một bài kiểm thử cả hai bố cục và trường hợp thiếu cả hai; tổng 57 bài (19 candidate).
+
 ## Rollback và bảo toàn
 
 Khi chưa deploy, rollback chỉ là tiếp tục dùng cặp 3.2/4.4. Nếu sau này thử candidate trong Project, khôi phục đồng bộ CI 3.2 + Router 4.4, bỏ candidate khỏi nguồn control active; không trộn cặp. Không xóa canon hoặc đổi lifecycle để rollback. Chế độ builder cũ vẫn là mặc định.
