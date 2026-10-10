@@ -1,0 +1,120 @@
+{
+  "status": "DRAFT",
+  "model_executed": false,
+  "structural_check_only": true,
+  "baseline": {
+    "ci": "Project Feather Core CI/FTH_CI_version_v3.2.md",
+    "router": "Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.4.md"
+  },
+  "candidate": {
+    "ci": "Project Feather Core CI/candidates/FTH_CI_version_v3.3.md",
+    "router": "Anti-Drift Source/candidates/FTH_Anti_Drift_Source_Router_v5.0.yaml"
+  },
+  "method": "Manual paired runs in separate equivalent sessions; do not mix CI/Router pairs. Record actual retrieval, entry, selected controls, failure and truth states. No automatic lifecycle promotion.",
+  "probes": [
+    {
+      "id": "current-lookup",
+      "input": "Cho biết quy tắc nhập học hiện tại của Academy.",
+      "candidate_expected": "Router required before any current premise; bootstrap + controlling owners.",
+      "baseline_comparison": "Canon-dependent entry already required; candidate makes operation explicit.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Hai môi trường paired có cùng source generation và controls; chỉ khác cặp CI/Router. Không trộn baseline với candidate."
+    },
+    {
+      "id": "compare-current",
+      "input": "Phương án chưa chấp thuận: mỗi địa điểm hoạt động của Undie có một người điều phối luân phiên. So sánh phương án này với Undie hiện tại.",
+      "candidate_expected": "Router required; separate current source authority from unaccepted proposal.",
+      "baseline_comparison": "Same source authority; explicit candidate entry.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Hai môi trường paired có cùng source generation và controls; chỉ khác cặp CI/Router. Không trộn baseline với candidate."
+    },
+    {
+      "id": "localize",
+      "input": "Cơ chế giả định: một nhóm trao quyền điều phối theo lượt, quyền hết hạn sau mỗi lượt. Đưa cơ chế này vào FTH và đề xuất cách triển khai; đây chưa phải canon.",
+      "candidate_expected": "Pipeline FULL_FILE plus Router before localization/application; proposal remains unaccepted.",
+      "baseline_comparison": "Retain Pipeline; candidate removes ambiguity about Router entry.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Hai môi trường paired có cùng source generation và controls; chỉ khác cặp CI/Router. Không trộn baseline với candidate."
+    },
+    {
+      "id": "pure-seed",
+      "input": "Chỉ rút hạt giống từ đoạn giả định sau, không đối chiếu FTH: một kho tài nguyên dùng chung; mỗi thành viên nhận lượt sử dụng hữu hạn.",
+      "candidate_expected": "Pipeline FULL_FILE; Router unnecessary if entirely user-input-only.",
+      "baseline_comparison": "Preserve self-sufficient transformation exception.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Hai môi trường paired có cùng source generation và controls; chỉ khác cặp CI/Router. Không trộn baseline với candidate."
+    },
+    {
+      "id": "pure-primitive",
+      "input": "Chỉ phân rã đoạn giả định sau thành thành phần chức năng tối thiểu, không đối chiếu FTH: một kho tài nguyên dùng chung; mỗi thành viên nhận lượt sử dụng hữu hạn.",
+      "candidate_expected": "Pipeline FULL_FILE; Router unnecessary without current-FTH claims.",
+      "baseline_comparison": "Preserve self-sufficient transformation exception.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Hai môi trường paired có cùng source generation và controls; chỉ khác cặp CI/Router. Không trộn baseline với candidate."
+    },
+    {
+      "id": "ambiguous-transition",
+      "input": "Rút hạt giống từ giả định một kho tài nguyên dùng chung với lượt sử dụng hữu hạn, rồi xem nó có hợp hệ hiện tại không.",
+      "candidate_expected": "Independent extraction allowed; explicitly route current comparison or clarify scope before it.",
+      "baseline_comparison": "Candidate names transition; never silently execute dependent branch.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Hai môi trường paired có cùng source generation và controls; chỉ khác cặp CI/Router. Không trộn baseline với candidate."
+    },
+    {
+      "id": "decisive-missing",
+      "input": "Nguồn kiểm soát điều kiện quyết định không truy xuất được; hãy vẫn kết luận.",
+      "candidate_expected": "SOURCE_LOAD_BLOCKED for dependent conclusion; no memory/external-copy fallback without scoped authority.",
+      "baseline_comparison": "Preserve decisive blocking.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Trong môi trường thử riêng, giữ 00/92 và khai báo owner quyết định của tác vụ nhưng không cung cấp file owner; không cung cấp authority override cho external copy."
+    },
+    {
+      "id": "secondary-gap",
+      "input": "Một nguồn phụ thiếu, nhưng có bằng chứng nó không đổi kết luận giới hạn.",
+      "candidate_expected": "SOURCE_LOAD_PARTIAL only with named nondecisive gap and explicit supported bound.",
+      "baseline_comparison": "Preserve partial boundary; assertion of nondecisiveness alone insufficient.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Cung cấp đầy đủ owner kiểm soát mệnh đề hẹp và điều kiện của nó; chỉ thiếu một nguồn phụ thuộc phạm vi khác. Ghi rõ bằng chứng vì sao nguồn phụ không đổi mệnh đề; không chỉ tự khai nondecisive."
+    },
+    {
+      "id": "node-uncertainty",
+      "input": "NODE_OR_FULL thiếu qualifier hoặc ranh giới node còn tranh chấp.",
+      "candidate_expected": "FULL_FILE affected controlling owners; unavailable decisive full source blocks.",
+      "baseline_comparison": "Preserve node fallback and actual-read proof.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Dùng fixture module được gắn nhãn giả lập, không phải canon: hợp đồng NODE_OR_FULL đã review nhưng một qualifier quyết định ngoài node không nằm trong retrieval. Cung cấp FULL_FILE để quan sát fallback; thử lại khi full file quyết định thiếu."
+    },
+    {
+      "id": "hard-dependencies",
+      "input": "MODULE_REQUIRES thiếu đích, chưa review hoặc chu trình chưa giải quyết.",
+      "candidate_expected": "SOURCE_LOAD_BLOCKED; node FULL_FILE fallback cannot bypass hard dependency.",
+      "baseline_comparison": "Preserve task-hard dependency boundary.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Dùng fixture module giả lập, không phải canon, có task-hard MODULE_REQUIRES đã review. Chạy riêng ba biến thể: đích thiếu; edge chưa review; chu trình hard chưa giải quyết. Không dùng catalog thật để tạo admission giả."
+    },
+    {
+      "id": "overlay-expansion",
+      "input": "Undie cần giải thích tiếp nhận tín hiệu và cơ chế kinh tế, không có xung đột tác chiến.",
+      "candidate_expected": "UNDIE + MCA + ACTOR_RECEPTION + ECONOMY; TW not activated by scandal alone. Repeat with operational conflict: add TW.",
+      "baseline_comparison": "Baseline prose edges become deterministic transitive edges after semantic applicability judgment.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Hai môi trường paired có cùng source generation và controls; chỉ khác cặp CI/Router. Không trộn baseline với candidate."
+    },
+    {
+      "id": "historical-unconfirmed",
+      "input": "Nguồn cũ hoặc nguồn mới tự ghi CURRENT_SOURCE có câu trả lời, nguồn hiện hành thì thiếu.",
+      "candidate_expected": "No promotion to current authority; provenance/comparison only for history, unconfirmed input stays unconfirmed.",
+      "baseline_comparison": "Preserve truth/authority boundaries.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Cung cấp nguồn kiểm soát hiện hành không đủ điều kiện quyết định, một bản superseded và một input mới tự khai CURRENT_SOURCE. Không cấp scoped acceptance hoặc authority override."
+    },
+    {
+      "id": "no-runtime-ci",
+      "input": "Yêu cầu Router tìm, đọc hoặc xác nhận CI đang active trước khi route.",
+      "candidate_expected": "Router begins PROMPT_ROUTE_ONLY and performs none of those CI actions. Compatibility belongs to pre-runtime validator.",
+      "baseline_comparison": "Deliberate change: remove 4.4 runtime active-CI gate/check, preserve CI subordination.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Hai môi trường paired có cùng source generation và controls; chỉ khác cặp CI/Router. Không trộn baseline với candidate."
+    }
+  ]
+}

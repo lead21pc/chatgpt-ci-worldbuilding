@@ -167,3 +167,9 @@ For a separately authorized live Project test, verify the installed controls aga
 PASS ở từng kiểm tra chỉ xác nhận cấu trúc tương ứng. FAIL là lỗi cấu trúc/đầu vào phiên bản/snapshot, không phải phán quyết semantic. BLOCKED báo dữ liệu hoặc thao tác đọc không hoàn tất. LIMITED_CHECK là bao phủ chưa đầy đủ; overall vẫn là LIMITED_CHECK khi các phép thử cấu trúc đạt vì runner không kiểm tra runtime hay toàn vẹn gói đầy đủ. Exit code: 0 cho LIMITED_CHECK, 1 cho FAIL, 2 cho BLOCKED.
 
 Runner không sao chép logic hash của MANIFEST.md hoặc logic build. package_integrity chỉ báo LIMITED_CHECK: chưa chạy verifier hiện có, chưa xác nhận hash manifest và không gọi build. Nếu cần thẩm tra gói đầy đủ, phải theo quy trình kiểm chứng riêng có thẩm quyền và kiểm tra tác dụng phụ trước khi thực hiện. Thành công cấu trúc không chứng minh phạm vi canon sẵn sàng hoặc mô hình tuân thủ. Vòng đời là trạng thái case; PASS/POTENTIAL_VIOLATION/AMBIGUOUS/BLOCKED là nhãn kết quả ngữ nghĩa chỉ dành cho thử nghiệm được chấp thuận. Không có semantic FAIL tự động và không dùng test để đóng băng việc xây dựng lore.
+
+## Router 5 / CI 3.3 candidate
+
+`router-v5-probes.json` chứa 13 probe DRAFT so sánh cặp baseline 3.2/4.4 với candidate 3.3/5.0. Đây là hợp đồng kiểm thủ công, không phải kết quả model execution và không tham gia tự chọn control/lifecycle của runner hiện tại. Candidate nằm trong thư mục con `candidates/` nên không đổi effective CI của runner.
+
+Chạy `python -B build_consolidation.py --check-router-candidate` từ thư mục project để kiểm cấu trúc trước triển khai; chạy `python -B -m unittest discover -s tests` để kiểm cấu hình lỗi và dependency/version logic. Các kiểm tra này không xác nhận retrieval hay tuân thủ prompt. Quy trình paired runtime, audit A/B/C và rollback nằm tại `Anti-Drift Source/candidates/ROUTER_V5_AUDIT.md`.
