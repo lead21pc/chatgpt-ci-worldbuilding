@@ -180,7 +180,7 @@ class RouterCandidateTests(unittest.TestCase):
             with self.assertRaisesRegex(CandidateError, 'Malformed'):
                 resolve_control(root, 'FTH_Test', [])
 
-    def test_ci_changes_confined_to_entry_and_candidate_header(self):
+    def test_ci_changes_confined_to_approved_boundary_sections(self):
         old = (ROOT / 'Project Feather Core CI/FTH_CI_version_v3.2.md').read_text(encoding='utf-8')
         new = (ROOT / self.data['deployment']['candidate_ci']).read_text(encoding='utf-8')
         old_intro, old_rest = old.split('## Source gate', 1)
@@ -188,13 +188,16 @@ class RouterCandidateTests(unittest.TestCase):
         status = '> Status: CANDIDATE; not deployed.\n\n'
         self.assertEqual(new_intro.replace('v3.3 (FTH)', 'v3.2 (FTH)', 1).replace(status, ''), old_intro)
         marker = '## Relations and simulation'
-        self.assertEqual(old_rest.split(marker, 1)[1], new_rest.split(marker, 1)[1])
+        old_tail = old_rest.split(marker, 1)[1]
+        new_tail = new_rest.split(marker, 1)[1]
+        old_overlay_entry = 'After reconciliation, Router selects overlays/dependencies; initial modular architecture requires activated overlays as `FULL_FILE`.'
+        self.assertEqual(new_tail, old_tail.replace(old_overlay_entry, 'Router alone selects and loads overlays/dependencies.'))
         self.assertLessEqual(len((ROOT / self.data['deployment']['candidate_ci']).read_bytes().decode('utf-8')), 8000)
 
-    def test_probes_cover_13_draft_contracts_without_runtime_claim(self):
+    def test_probes_cover_draft_contracts_without_runtime_claim(self):
         import json
         suite = json.loads((ROOT / 'tests/control-regressions/router-v5-probes.json').read_text(encoding='utf-8'))
-        self.assertEqual(len(suite['probes']), 13)
-        self.assertEqual(len({p['id'] for p in suite['probes']}), 13)
+        self.assertEqual(len(suite['probes']), 16)
+        self.assertEqual(len({p['id'] for p in suite['probes']}), 16)
         self.assertFalse(suite['model_executed'])
         self.assertEqual(suite['status'], 'DRAFT')
