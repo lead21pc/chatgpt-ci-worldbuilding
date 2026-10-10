@@ -200,6 +200,28 @@ class RouterCandidateTests(unittest.TestCase):
             with self.subTest(section=section):
                 self.assertEqual(old[section], new[section])
 
+    def test_project_control_authority_namespace(self):
+        for stem in ('Worldbuilding_Internal_Logic_v1.2', 'Total_War_RP_v1.1'):
+            with self.subTest(control=stem):
+                text = (ROOT / f'Anti-Drift Source/FTH_Anti_Drift_{stem}.md').read_text(encoding='utf-8')
+                hook = next(line for line in text.splitlines() if line.startswith('> Authority hook:'))
+                self.assertIn('active FTH control layer', hook)
+                self.assertNotIn('AetherFire control layer', hook)
+
+    def test_economy_import_guard_preserves_requested_target_scope(self):
+        text = (ROOT / 'Anti-Drift Source/FTH_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md').read_text(encoding='utf-8')
+        guard = text.split('# 13. Real-World Reference', 1)[1].split('# 14.', 1)[0]
+        self.assertIn('required structures for the requested FTH target', guard)
+        self.assertIn('the requested FTH target needs a layer', guard)
+        self.assertNotIn('AetherFire', guard)
+
+    def test_country_specific_economy_hook_is_preserved(self):
+        text = (ROOT / 'Anti-Drift Source/FTH_Anti_Drift_Interface_Economy_State_Stabilization_v1.1.md').read_text(encoding='utf-8')
+        hook = text.split('# 8. Multi-Polar State Hook', 1)[1].split('# 9.', 1)[0]
+        self.assertIn('Current AetherFire state authority is multi-polar.', hook)
+        self.assertIn('Mage Council', hook)
+        self.assertNotIn('FTH state authority', hook)
+
     def test_ci_changes_confined_to_approved_boundary_sections(self):
         old = (ROOT / 'Project Feather Core CI/FTH_CI_version_v3.2.md').read_text(encoding='utf-8')
         new = (ROOT / self.data['deployment']['candidate_ci']).read_text(encoding='utf-8')

@@ -457,9 +457,9 @@ Real-world economics may be used only as:
 - mechanism analogy requested by the user;
 - support for a real-world premise that the task explicitly uses.
 
-It must not generate required structures for AetherFire by default.
+It must not generate required structures for the requested FTH target by default.
 
-Do not infer that AetherFire needs a layer merely because real economies often have it.
+Do not infer that the requested FTH target needs a layer merely because real economies often have it.
 
 ---
 

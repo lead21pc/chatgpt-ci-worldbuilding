@@ -522,6 +522,16 @@ class MaintenanceTests(unittest.TestCase):
         self.assertIn("SAINTESS'S OWN HANDS", lore)
         self.assertIn('AF-ML-PC-010', (self.root / '91_RECONCILIATION_RECORD.md').read_text(encoding='utf-8'))
 
+    def test_fiction_one_summary_matches_controlling_project_subject(self):
+        controlling = (self.root / '03_METAFICTION_CANON_TIMELINE_CURRENT.md').read_text(encoding='utf-8')
+        self.assertIn('Fiction 1/Project Feather Core là sản phẩm hư cấu thương mại do MC1 viết', controlling)
+        issues = (self.root / '92_OPEN_ISSUES_CURRENT.md').read_text(encoding='utf-8')
+        row = next(line for line in issues.splitlines() if line.startswith('| Fiction 1 |'))
+        claim, unresolved = [cell.strip() for cell in row.split('|')][2:4]
+        self.assertTrue(claim.startswith('Fiction 1 / Project Feather Core là sản phẩm MC1 viết'))
+        self.assertNotIn('AetherFire', claim)
+        self.assertEqual(unresolved, 'Vật lý siêu hình chính xác của sự hiện thực hóa và vận hành độc lập')
+
     def test_project_namespace_country_and_entity_boundaries(self):
         index = (self.root / tool.INDEX).read_text(encoding='utf-8')
         national = (self.root / '10_AETHERFIRE_NATIONAL_CANON_CURRENT.md').read_text(encoding='utf-8')

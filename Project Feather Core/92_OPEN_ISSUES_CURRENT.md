@@ -30,7 +30,7 @@
 | POC của MC3 ở Fiction 1 | Giảm cấp thành tác động đến cách người đối diện nhìn nhận trong giao tiếp | Điều kiện, giới hạn, kháng cự và duy trì tác dụng |
 | Fictionize của MC1 ở Fiction 1 | Dùng fiction trong các sách/tác phẩm có thể tiếp cận để đi vào trải nghiệm và tập luyện | Toàn bộ giới hạn vận hành và hệ quả xuyên tầng |
 | Tường lửa | Phát sinh từ phong ấn Giant; tác động mạnh lên sinh vật không phải humanoid khi vượt qua | Phân loại hình thái cụ thể, chi phí bảo trì, ritual/authority, điều kiện vô hiệu hóa |
-| Fiction 1 | AetherFire là sản phẩm MC1 viết và thương mại hóa bằng Fictionize | Vật lý siêu hình chính xác của sự hiện thực hóa và vận hành độc lập |
+| Fiction 1 | Fiction 1 / Project Feather Core là sản phẩm MC1 viết và thương mại hóa bằng Fictionize | Vật lý siêu hình chính xác của sự hiện thực hóa và vận hành độc lập |
 | Matriarch | Có nguyên nhân bất bình chính trị từ một số bộ phận AF | **Xung đột niên đại** với nguồn `40`; thủ phạm, hành động và chuỗi thực hiện |
 
 ### 18. Những điều không được suy từ bản bổ sung này

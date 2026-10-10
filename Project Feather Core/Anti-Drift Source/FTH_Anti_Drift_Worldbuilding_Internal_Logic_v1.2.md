@@ -3,7 +3,7 @@
 > Type: design-time worldbuilding and system-coherence overlay.
 > Applies to: ontology design, institution design, social and political structure, systemic propagation, feedback, temporal change, and bounded stress testing.
 > Not: canon, lore generator, economy simulator, state-stabilization model, source router, or replacement for current FTH CI.
-> Authority hook: inherits source priority, truth-status discipline, UNKNOWN preservation, old-canon quarantine, proposal labeling, and typed-relation discipline from the active AetherFire control layer.
+> Authority hook: inherits source priority, truth-status discipline, UNKNOWN preservation, old-canon quarantine, proposal labeling, and typed-relation discipline from the active FTH control layer.
 > Scope hook: this file may structure or test a proposed system. It does not authorize new canon, resolve open issues, or expand a task beyond its active boundary.
 
 ---

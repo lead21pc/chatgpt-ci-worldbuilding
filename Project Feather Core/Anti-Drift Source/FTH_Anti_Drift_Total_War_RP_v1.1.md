@@ -3,7 +3,7 @@
 > Type: simulation-control overlay / anti-drift.
 > Applies to: Total War RP, multi-theater war simulation, large-scale military-political simulation, strategic crisis simulation, and bounded regional, institutional, cultural, diplomatic, logistical, proxy, border, or subsystem conflict.
 > Not: canon, military doctrine, force table, war outcome generator, world bible, replacement for CI, replacement for the source router, or replacement for current canon.
-> Authority hook: inherits authority order, truth-status discipline, source priority, UNKNOWN handling, old-canon quarantine, and typed-relation discipline from the active AetherFire control layer. This file does not override those controls.
+> Authority hook: inherits authority order, truth-status discipline, source priority, UNKNOWN handling, old-canon quarantine, and typed-relation discipline from the active FTH control layer. This file does not override those controls.
 > Scope hook: controls simulation integrity only. It does not create war doctrine, force structure, command chain, logistics capacity, geopolitical outcome, or new lore.
 
 ---
