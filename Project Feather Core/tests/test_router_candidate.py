@@ -94,7 +94,8 @@ class RouterCandidateTests(unittest.TestCase):
             path = root / self.data['deployment']['candidate_ci']
             original = path.read_text(encoding='utf-8')
             for old, new in [('v3.3 (FTH)', 'v3.2 (FTH)'), ('ChatGPT 8.8 base', 'ChatGPT 8.9 base'),
-                             ('Status: CANDIDATE;', 'Status: ACTIVE;'), (original, ''), (original, original + 'x' * 8001)]:
+                             ('Status: CANDIDATE;', 'Status: ACTIVE;'),
+                             ('FTH_Authoring_Pipeline_v1.1.md', 'FTH_Authoring_Pipeline_v1.0.md'), (original, ''), (original, original + 'x' * 8001)]:
                 path.write_text(original.replace(old, new), encoding='utf-8')
                 with self.assertRaisesRegex(CandidateError, 'Candidate CI'):
                     validate(self.data, root)
@@ -180,13 +181,34 @@ class RouterCandidateTests(unittest.TestCase):
             with self.assertRaisesRegex(CandidateError, 'Malformed'):
                 resolve_control(root, 'FTH_Test', [])
 
+    def test_candidate_rejects_country_only_pipeline_baseline(self):
+        self.data['deployment']['pipeline'] = 'Anti-Drift Source/FTH_Authoring_Pipeline_v1.0.md'
+        with self.assertRaisesRegex(CandidateError, 'Pipeline mismatch'):
+            validate(self.data, ROOT)
+
+    def test_pipeline_successor_preserves_baseline_and_transformation_stages(self):
+        import hashlib
+        import re
+        baseline = ROOT / 'Anti-Drift Source/FTH_Authoring_Pipeline_v1.0.md'
+        self.assertEqual(hashlib.sha256(baseline.read_bytes()).hexdigest(),
+                         '98f357e8fa00827a31f15dd4fb24b3b6e1eccbc8eece89c6205da2377a455025')
+        old = re.split(r'(?=^## )', baseline.read_text(encoding='utf-8'), flags=re.M)
+        new = re.split(r'(?=^## )', (ROOT / self.data['deployment']['pipeline']).read_text(encoding='utf-8'), flags=re.M)
+        self.assertEqual([part.splitlines()[0] for part in old[1:]],
+                         [part.splitlines()[0] for part in new[1:]])
+        for section in (3, 4, 6, 7):
+            with self.subTest(section=section):
+                self.assertEqual(old[section], new[section])
+
     def test_ci_changes_confined_to_approved_boundary_sections(self):
         old = (ROOT / 'Project Feather Core CI/FTH_CI_version_v3.2.md').read_text(encoding='utf-8')
         new = (ROOT / self.data['deployment']['candidate_ci']).read_text(encoding='utf-8')
         old_intro, old_rest = old.split('## Source gate', 1)
         new_intro, new_rest = new.split('## Source gate', 1)
         status = '> Status: CANDIDATE; not deployed.\n\n'
-        self.assertEqual(new_intro.replace('v3.3 (FTH)', 'v3.2 (FTH)', 1).replace(status, ''), old_intro)
+        normalized = new_intro.replace('v3.3 (FTH)', 'v3.2 (FTH)', 1).replace(status, '')
+        normalized = normalized.replace('FTH_Authoring_Pipeline_v1.1.md', 'FTH_Authoring_Pipeline_v1.0.md', 1)
+        self.assertEqual(normalized, old_intro)
         marker = '## Relations and simulation'
         old_tail = old_rest.split(marker, 1)[1]
         new_tail = new_rest.split(marker, 1)[1]
@@ -197,7 +219,7 @@ class RouterCandidateTests(unittest.TestCase):
     def test_probes_cover_draft_contracts_without_runtime_claim(self):
         import json
         suite = json.loads((ROOT / 'tests/control-regressions/router-v5-probes.json').read_text(encoding='utf-8'))
-        self.assertEqual(len(suite['probes']), 16)
-        self.assertEqual(len({p['id'] for p in suite['probes']}), 16)
+        self.assertEqual(len(suite['probes']), 18)
+        self.assertEqual(len({p['id'] for p in suite['probes']}), 18)
         self.assertFalse(suite['model_executed'])
         self.assertEqual(suite['status'], 'DRAFT')

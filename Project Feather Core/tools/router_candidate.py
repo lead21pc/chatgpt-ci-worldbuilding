@@ -178,7 +178,10 @@ def validate(data, root):
     require('> Status: CANDIDATE;' in ci and CANDIDATE in ci, 'Candidate CI status/router reference mismatch')
     require(refs['baseline_ci'].read_text(encoding='utf-8-sig').startswith('# Project Feather Core CI v3.2 '), 'Baseline CI mismatch')
     require('Source Router v4.4' in refs['baseline_router'].read_text(encoding='utf-8-sig').split('\n', 1)[0], 'Baseline Router mismatch')
-    require('Authoring Pipeline v1.0' in refs['pipeline'].read_text(encoding='utf-8-sig').split('\n', 1)[0], 'Pipeline mismatch')
+    require(refs['pipeline'].name == 'FTH_Authoring_Pipeline_v1.1.md' and
+            refs['pipeline'].read_text(encoding='utf-8-sig').split('\n', 1)[0] == '# FTH Authoring Pipeline v1.1',
+            'Pipeline mismatch')
+    require(refs['pipeline'].name in ci, 'Candidate CI pipeline reference mismatch')
     # The upstream file is a maintenance reference, never runtime discovery.
     relative = 'ChatGPT Plus+ Era/chatgpt v8.8.txt'
     upstream_paths = [root.parent / relative,

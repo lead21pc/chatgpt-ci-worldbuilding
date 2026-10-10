@@ -4,11 +4,13 @@
   "structural_check_only": true,
   "baseline": {
     "ci": "Project Feather Core CI/FTH_CI_version_v3.2.md",
-    "router": "Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.4.md"
+    "router": "Anti-Drift Source/FTH_Anti_Drift_Source_Router_v4.4.md",
+    "pipeline": "Anti-Drift Source/FTH_Authoring_Pipeline_v1.0.md"
   },
   "candidate": {
     "ci": "Project Feather Core CI/candidates/FTH_CI_version_v3.3.md",
-    "router": "Anti-Drift Source/candidates/FTH_Anti_Drift_Source_Router_v5.0.yaml"
+    "router": "Anti-Drift Source/candidates/FTH_Anti_Drift_Source_Router_v5.0.yaml",
+    "pipeline": "Anti-Drift Source/candidates/FTH_Authoring_Pipeline_v1.1.md"
   },
   "method": "Manual paired runs in separate equivalent sessions; do not mix CI/Router pairs. Record actual retrieval, entry, selected controls, failure and truth states. No automatic lifecycle promotion.",
   "probes": [
@@ -139,6 +141,24 @@
       "baseline_comparison": "Candidate CI delegates overlay loading entirely to Router; both stages obey the same YAML load/dependency contract.",
       "runtime_result": "NOT_RUN",
       "setup": "Hai môi trường paired có cùng current source generation và controls. Cung cấp đủ controlling sources về actor, thông tin tiếp cận và premises quyết định; tín hiệu mới được gắn nhãn giả định, không thành canon. Ghi mode và actual coverage riêng cho từng stage. Không trộn CI/Router baseline với candidate hoặc suy actual read từ lời tự xác nhận tuân thủ."
+    },
+    {
+      "id": "aetherfire-target-preservation",
+      "name": "AETHERFIRE TARGET PRESERVATION",
+      "input": "Candidate chưa chấp thuận: một kho tài nguyên dùng chung có lượt sử dụng hữu hạn. Chỉ đề xuất cách áp dụng vào AetherFire; giữ các giao diện ngoài phạm vi này ở mức thực sự cần cho target, không mở thành thiết kế toàn FTH.",
+      "candidate_expected": "FTH Pipeline 1.1 active; target remains AetherFire-relevant throughout seed/primitives/comparison/localization/proposal as needed. CI-required Router entry precedes current-dependent work. Router may load a decisive cross-domain interface without turning that source load into target expansion. Stop at a bounded unaccepted AetherFire proposal.",
+      "baseline_comparison": "Baseline Pipeline 1.0 can target AetherFire; successor must preserve that bound while operating at FTH level. Broader project-level applicability is not permission for a whole-project scan.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Hai môi trường thử riêng: CI 3.2 / Pipeline 1.0 / Router 4.4 và CI 3.3 / Pipeline 1.1 / Router 5.0. Giữ cùng current sources và overlays. Cung cấp đủ controlling sources về các target cần xét; không trộn control sets. Ghi target trước/sau từng transformation, nguồn/owner được route và điểm dừng. Không suy semantic compliance từ validator."
+    },
+    {
+      "id": "fth-cross-domain-target-preservation",
+      "name": "FTH / CROSS-DOMAIN TARGET PRESERVATION",
+      "input": "Candidate chưa chấp thuận: trao lượt tiếp cận tài nguyên theo một điều kiện công khai. So sánh candidate ở phạm vi FTH, qua các giao diện liên quan của AetherFire và Hoa Nguyet; không thu mặc định về AetherFire, không đề xuất triển khai khi chưa được yêu cầu.",
+      "candidate_expected": "FTH Pipeline 1.1 active; preserve the requested cross-domain target. CI-required Router entry precedes comparison; Router selects relevant controlling owners/interfaces for both requested domains and preserves separate authority. Pipeline does not choose owners or infer containment from names/files. Stop at comparison, not implementation/canonization; block only genuinely dependent gaps under Router rules.",
+      "baseline_comparison": "Baseline country-only Pipeline 1.0 cannot silently serve FTH/cross-domain operations by treating AetherFire as a project alias; candidate repairs this declared-scope mismatch.",
+      "runtime_result": "NOT_RUN",
+      "setup": "Hai môi trường thử riêng: CI 3.2 / Pipeline 1.0 / Router 4.4 và CI 3.3 / Pipeline 1.1 / Router 5.0. Giữ cùng current sources và overlays. Cung cấp đủ controlling sources về các target cần xét; không trộn control sets. Ghi target trước/sau từng transformation, nguồn/owner được route và điểm dừng. Không suy semantic compliance từ validator."
     }
   ]
 }
