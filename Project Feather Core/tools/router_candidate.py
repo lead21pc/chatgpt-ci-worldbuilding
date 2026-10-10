@@ -173,6 +173,7 @@ def validate(data, root):
             ('CANDIDATE', '5.0', '3.3', '8.8'), 'Unsupported candidate compatibility tuple')
     refs = {k: local_file(root, dep[k]) for k in ('candidate_ci', 'baseline_ci', 'baseline_router', 'pipeline')}
     ci = refs['candidate_ci'].read_text(encoding='utf-8-sig')
+    require(len(refs['candidate_ci'].read_bytes().decode('utf-8-sig')) <= 8000, 'Candidate CI exceeds 8000 characters')
     require(ci.split('\n', 1)[0] == '# Project Feather Core CI v3.3 (FTH) - ChatGPT 8.8 base', 'Candidate CI version/base mismatch')
     require('> Status: CANDIDATE;' in ci and CANDIDATE in ci, 'Candidate CI status/router reference mismatch')
     require(refs['baseline_ci'].read_text(encoding='utf-8-sig').startswith('# Project Feather Core CI v3.2 '), 'Baseline CI mismatch')

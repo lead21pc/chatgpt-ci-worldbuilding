@@ -94,7 +94,7 @@ class RouterCandidateTests(unittest.TestCase):
             path = root / self.data['deployment']['candidate_ci']
             original = path.read_text(encoding='utf-8')
             for old, new in [('v3.3 (FTH)', 'v3.2 (FTH)'), ('ChatGPT 8.8 base', 'ChatGPT 8.9 base'),
-                             ('Status: CANDIDATE;', 'Status: ACTIVE;'), (original, '')]:
+                             ('Status: CANDIDATE;', 'Status: ACTIVE;'), (original, ''), (original, original + 'x' * 8001)]:
                 path.write_text(original.replace(old, new), encoding='utf-8')
                 with self.assertRaisesRegex(CandidateError, 'Candidate CI'):
                     validate(self.data, root)
@@ -185,10 +185,11 @@ class RouterCandidateTests(unittest.TestCase):
         new = (ROOT / self.data['deployment']['candidate_ci']).read_text(encoding='utf-8')
         old_intro, old_rest = old.split('## Source gate', 1)
         new_intro, new_rest = new.split('## Source gate', 1)
-        status = '> Status: CANDIDATE; separate explicit Project deployment required. Rollback: CI 3.2 + Router 4.4.\n\n'
+        status = '> Status: CANDIDATE; not deployed.\n\n'
         self.assertEqual(new_intro.replace('v3.3 (FTH)', 'v3.2 (FTH)', 1).replace(status, ''), old_intro)
-        marker = '`PROMPT_ROUTE_ONLY -> source loading -> reconciliation -> applicable controls -> PROMPT_EXECUTION`.'
+        marker = '## Relations and simulation'
         self.assertEqual(old_rest.split(marker, 1)[1], new_rest.split(marker, 1)[1])
+        self.assertLessEqual(len((ROOT / self.data['deployment']['candidate_ci']).read_bytes().decode('utf-8')), 8000)
 
     def test_probes_cover_13_draft_contracts_without_runtime_claim(self):
         import json

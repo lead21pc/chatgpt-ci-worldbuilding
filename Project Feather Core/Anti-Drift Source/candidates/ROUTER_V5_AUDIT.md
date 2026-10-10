@@ -64,6 +64,8 @@ Baseline trước sửa: package PASS, 38 unit tests PASS, runner LIMITED_CHECK 
 
 Trước push, kiểm trên detached checkout từ origin/main bắt được khác biệt bố cục global CI: local đặt ở `ChatGPT Plus+ Era`, bản hosted đặt ở `llm-controls/global-instructions/ChatGPT Plus+ Era`. Validator nay chấp nhận sự tồn tại của base 8.8 ở một trong hai bố cục đã có, không di chuyển file hoặc chọn CI runtime. Thêm một bài kiểm thử cả hai bố cục và trường hợp thiếu cả hai; tổng 57 bài (19 candidate).
 
+Theo yêu cầu tiếp theo của tác giả, CI 3.3 được rút từ 8.921 xuống **7.999 ký tự** (UTF-8, LF, tính cả tiêu đề và dòng status). Chỉ nén Source gate và status; các phần khác giữ nguyên. Các điều kiện entry, ngoại lệ user-input-only, cấm thao tác CI runtime, read proof, decisive/partial gap và authority/coverage vẫn được giữ. Rollback tiếp tục nằm trong metadata Router và báo cáo này. Validator chặn CI vượt 8.000 ký tự; negative test kiểm cả trường hợp vượt giới hạn.
+
 ## Rollback và bảo toàn
 
 Khi chưa deploy, rollback chỉ là tiếp tục dùng cặp 3.2/4.4. Nếu sau này thử candidate trong Project, khôi phục đồng bộ CI 3.2 + Router 4.4, bỏ candidate khỏi nguồn control active; không trộn cặp. Không xóa canon hoặc đổi lifecycle để rollback. Chế độ builder cũ vẫn là mặc định.
