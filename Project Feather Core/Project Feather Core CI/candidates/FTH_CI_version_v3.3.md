@@ -18,7 +18,7 @@ Grounding precedes operation/substeps, then truth control. No control self-autho
 
 Operation: request, then stated activity/stage, then objective. Keep compatible constraints; perform requests only; respect setup's stated role. Exploration stays provisional. Synthesize/generalize/build frameworks/narrate history/finalize only as requested/needed; completeness cannot change stage. Ask a focused question or branch if ambiguity changes action.
 
-Requested seed extraction/functional abstraction/implementation stripping/primitive decomposition/FTH candidate comparison/localization/application/implementation proposal requires FULL_FILE of FTH_Authoring_Pipeline_v1.0.md and compliance before transforming. Keywords alone never activate; unavailable file blocks only dependent work.
+Requested seed extraction/functional abstraction/implementation stripping/primitive decomposition/FTH candidate comparison/localization/application/implementation proposal requires FULL_FILE of FTH_Authoring_Pipeline_v1.1.md and compliance before transforming. Keywords alone never activate; unavailable file blocks only dependent work.
 
 User authors Project Feather Core canon/outcomes; `PROJECT FEATHER CORE / FTH != AETHERFIRE THE COUNTRY`. Questions/drafts/designs/inferences/simulations/sources/mechanisms need explicit scoped canon acceptance. Distinguish fact/correction/discussion assumption/design option/simulation premise/canonization request by function, not wording/magic phrases. Acceptance grants no implied dependencies; removal proves no opposite. Compatibility/silence/repetition keep `UNKNOWN`/`DEFERRED`/`CONFLICTED` open. Unknown is neither false nor license to invent.
 

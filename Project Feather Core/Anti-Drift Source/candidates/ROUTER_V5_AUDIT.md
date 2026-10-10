@@ -50,9 +50,9 @@ python -B -m unittest discover -s tests
 & tests/control-regressions/run.ps1
 ```
 
-Unit test candidate kiểm cấu hình lỗi, dependency expansion và version resolver bằng dữ liệu giả; không giả lập phán đoán applicability. Bộ `tests/control-regressions/router-v5-probes.json` có 16 probe paired, trạng thái DRAFT/NOT_RUN. File này tách khỏi tập cases cũ để không tự đổi lifecycle hoặc anchor.
+Unit test candidate kiểm cấu hình lỗi, dependency expansion và version resolver bằng dữ liệu giả; không giả lập phán đoán applicability. Bộ `tests/control-regressions/router-v5-probes.json` có 18 probe paired, trạng thái DRAFT/NOT_RUN. File này tách khỏi tập cases cũ để không tự đổi lifecycle hoặc anchor.
 
-Kiểm runtime thủ công cần hai môi trường tương đương, riêng biệt: baseline CI 3.2 + Router 4.4 và candidate CI 3.3 + Router 5; cùng source generation và overlay/Pipeline. Chỉ triển khai khi có quyền riêng. Với mỗi probe, ghi prompt, nguồn thật đã truy xuất, gate đầu tiên, owner/mode/closure, controls, failure state và truth status; so sánh expected/baseline_comparison. Thử thêm nguồn quyết định không có, node không đủ, hard dependency thiếu/chu trình và qualifier ngoài node. Đặc biệt kiểm Router không thực hiện hành động CI runtime. Việc mô hình chỉ nói mình tuân thủ không chứng minh actual read. Không tự đánh dấu ACTIVE từ kết quả structural.
+Kiểm runtime thủ công cần hai môi trường tương đương, riêng biệt: baseline CI 3.2 + Router 4.4 và candidate CI 3.3 + Router 5; cùng source generation và overlays; dùng Pipeline tương ứng của từng control set như khai báo trong bộ probe. Chỉ triển khai khi có quyền riêng. Với mỗi probe, ghi prompt, nguồn thật đã truy xuất, gate đầu tiên, owner/mode/closure, controls, failure state và truth status; so sánh expected/baseline_comparison. Thử thêm nguồn quyết định không có, node không đủ, hard dependency thiếu/chu trình và qualifier ngoài node. Đặc biệt kiểm Router không thực hiện hành động CI runtime. Việc mô hình chỉ nói mình tuân thủ không chứng minh actual read. Không tự đánh dấu ACTIVE từ kết quả structural.
 
 Kiểm hiện có không chứng minh platform hết suy giảm, retrieval Library thực tế, semantic applicability, actual closure, hiệu quả token hay xác suất tuân thủ. Control-family graph được validate; dependency graph lore runtime chỉ được xử lý theo policy, không được suy ra từ catalog.
 
@@ -85,3 +85,21 @@ CI 3.3 phân biệt hai loại ambiguity: chưa chắc phụ thuộc current FTH
 CI chỉ giữ invariant không khai actual read khi chưa quan sát và không vượt premise bị block; read proofs/closure/fallback/block/partial được dẫn về Router. Câu initial modular architecture/FULL_FILE được thay bằng quyền chọn/tải overlay duy nhất của Router. Không sửa Router YAML, validator, Pipeline hoặc baseline; không thêm embedded ID/registry.
 
 CI sau patch có 7.582 ký tự, dưới giới hạn 8.000; kiểm số đếm trực tiếp trước commit. Bộ probe tăng từ 13 lên 16, thêm uncertain-current-dependency, ambiguous-operation-scope và overlay-load-across-stages; các pure user-input probes đã có được giữ. Tất cả vẫn DRAFT/NOT_RUN, không chứng nhận runtime. Test bảo toàn CI được giới hạn thêm đúng clause overlay đã duyệt, giữ nguyên các invariant ngoài patch.
+
+## Successor Pipeline 1.1: sửa scope contract
+
+Audit tiếp theo xác nhận OBSERVED STRUCTURAL CONTRACT MISMATCH: CI 3.3 gọi authoring transformation cấp FTH nhưng Pipeline 1.0 tự khai AetherFire-only. Kết luận trước rằng chưa cần successor chỉ xét Router-entry; nó không giải quyết mismatch operating scope đã được xác nhận ở tác vụ này.
+
+Tạo `Anti-Drift Source/candidates/FTH_Authoring_Pipeline_v1.1.md`, giữ nguyên Pipeline 1.0. Header/activation/input basis/flow/early handoff/scope clamp đổi procedure scope sang FTH. Các lần AetherFire trong nội dung 1.0 đều được đối chiếu: chúng khóa procedure vào quốc gia, không mô tả country canon. Bản mới giữ AetherFire có chủ đích trong target boundary: đó là target khi request hoặc routed controlling sources xác lập, không phải alias FTH. Naming/file placement không xác lập semantic containment. Operating scope không mở target AetherFire thành toàn FTH hoặc thu target project/cross-domain về một quốc gia.
+
+Giữ nguyên thứ tự bảy section và nguyên văn các section seed extraction, material primitive decomposition, comparison/proposal, applicable controls/final check. Requested operation vẫn quyết định stop point; seed không phải implementation; decomposition không lấp gap; proposal không tự canonize; không retained state ngoài task. Self-sufficient transformation vẫn chịu Router-entry của CI, không trở thành ngoại lệ do Pipeline tự cấp.
+
+CI 3.3 chỉ đổi reference Pipeline 1.0 thành 1.1, giữ 7.582 ký tự và patch boundary đã duyệt. Router 5 chỉ đổi deployment.pipeline sang candidate 1.1; không thêm scope/ontology logic hoặc runtime CI stage. Validator đổi version/title/name và kiểm reference CI trỏ đúng successor; không có schema/registry/ID mới. Glossary không có wording đồng nhất FTH với AetherFire nên giữ nguyên; đó vẫn là maintenance reference.
+
+Bộ probe hiện có 18 case DRAFT/NOT_RUN, thêm AETHERFIRE TARGET PRESERVATION và FTH / CROSS-DOMAIN TARGET PRESERVATION. Kiểm cấu trúc/reference và bảo toàn section không chứng minh mô hình giữ scope lúc chạy. Runtime cần thực hiện paired probes theo setup, quan sát target và controlling owners thực tế.
+
+Authority sau change: CI sở hữu operation/stage và Router-required entry; Pipeline sở hữu transformation, information-need declaration và stop point; Router sở hữu discovery/authority/owners/dependencies/loading/reconciliation/overlays/fallback/block/partial. Validator chỉ kiểm trước triển khai.
+
+Rollback nguyên vẹn: CI 3.2 + Pipeline 1.0 + Router 4.4. Candidate hiện tại: CI 3.3 + Pipeline 1.1 + Router 5.0. Không archive/xóa 1.0, không sửa canon/overlays/base 8.8, không deploy live.
+
+Kiểm chứng successor: package `--check` PASS; `--check-router-candidate` PASS; toàn bộ 59 unit tests PASS (21 candidate tests). Runner hiện hành trả `LIMITED_CHECK`, effective CI 3.2/base 8.8 và `model_executed: false`; không chuyển candidate thành active.

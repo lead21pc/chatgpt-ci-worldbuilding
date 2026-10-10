@@ -170,6 +170,8 @@ Runner không sao chép logic hash của MANIFEST.md hoặc logic build. package
 
 ## Router 5 / CI 3.3 candidate
 
-`router-v5-probes.json` chứa 16 probe DRAFT so sánh cặp baseline 3.2/4.4 với candidate 3.3/5.0. Đây là hợp đồng kiểm thủ công, không phải kết quả model execution và không tham gia tự chọn control/lifecycle của runner hiện tại. Candidate nằm trong thư mục con `candidates/` nên không đổi effective CI của runner.
+`router-v5-probes.json` chứa 18 probe DRAFT so sánh cặp baseline 3.2/4.4 với candidate 3.3/5.0. Đây là hợp đồng kiểm thủ công, không phải kết quả model execution và không tham gia tự chọn control/lifecycle của runner hiện tại. Candidate nằm trong thư mục con `candidates/` nên không đổi effective CI của runner.
 
 Chạy `python -B build_consolidation.py --check-router-candidate` từ thư mục project để kiểm cấu trúc trước triển khai; chạy `python -B -m unittest discover -s tests` để kiểm cấu hình lỗi và dependency/version logic. Các kiểm tra này không xác nhận retrieval hay tuân thủ prompt. Quy trình paired runtime, audit A/B/C và rollback nằm tại `Anti-Drift Source/candidates/ROUTER_V5_AUDIT.md`.
+
+Hai probe scope mới so sánh baseline CI 3.2 / Pipeline 1.0 / Router 4.4 với candidate CI 3.3 / Pipeline 1.1 / Router 5.0: target AetherFire không mở toàn FTH; target FTH/cross-domain không mặc định thu về AetherFire. Pipeline 1.1 ở `Anti-Drift Source/candidates/`; Pipeline 1.0 giữ nguyên làm rollback. Các probe vẫn DRAFT/NOT_RUN.
